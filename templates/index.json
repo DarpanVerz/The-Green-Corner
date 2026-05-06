@@ -614,6 +614,60 @@
         "enable_border_bottom": false
       }
     },
+    "value_proposition_dbcw6N": {
+      "type": "value-proposition",
+      "blocks": {
+        "feature_iAkXGM": {
+          "type": "feature",
+          "settings": {
+            "position": "right",
+            "icon": "shopify://shop_images/icon_1.png",
+            "heading": "Expert Gardening Guidance",
+            "text": "Providing tips, advice, and support to help every plant thrive"
+          }
+        },
+        "feature_xFwJ6i": {
+          "type": "feature",
+          "settings": {
+            "position": "right",
+            "icon": "shopify://shop_images/icon_2.png",
+            "heading": "Community for Plant Lovers",
+            "text": "A welcoming hub where local enthusiasts connect, learn, and grow together."
+          }
+        },
+        "feature_dfwTBL": {
+          "type": "feature",
+          "settings": {
+            "position": "left",
+            "icon": "shopify://shop_images/icon.png",
+            "heading": "Curated Plant Selection",
+            "text": "Offering a diverse range of indoor and outdoor plants for all skill levels."
+          }
+        },
+        "feature_7PqWyn": {
+          "type": "feature",
+          "settings": {
+            "position": "left",
+            "icon": "shopify://shop_images/icon_3.png",
+            "heading": "Quality Tools & Soil",
+            "text": "Supplying trusted gardening tools and our exclusive soil for healthier plants"
+          }
+        }
+      },
+      "block_order": [
+        "feature_iAkXGM",
+        "feature_xFwJ6i",
+        "feature_dfwTBL",
+        "feature_7PqWyn"
+      ],
+      "name": "Value Proposition",
+      "settings": {
+        "subtitle": "VALUE PROPOSITION",
+        "title": "What Makes Us Unique",
+        "description": "Describe your brand here",
+        "main_image": "shopify://shop_images/Group_261.png"
+      }
+    },
     "1709e182-17ab-4c6c-b6fd-522d6919bc0e": {
       "type": "product-markers",
       "blocks": {
@@ -964,60 +1018,6 @@
         "padding_top": "m",
         "padding_bottom": "no-indent"
       }
-    },
-    "value_proposition_dbcw6N": {
-      "type": "value-proposition",
-      "blocks": {
-        "feature_xFwJ6i": {
-          "type": "feature",
-          "settings": {
-            "position": "right",
-            "icon": "shopify://shop_images/icon_2.png",
-            "heading": "Community for Plant Lovers",
-            "text": "A welcoming hub where local enthusiasts connect, learn, and grow together."
-          }
-        },
-        "feature_iAkXGM": {
-          "type": "feature",
-          "settings": {
-            "position": "right",
-            "icon": "shopify://shop_images/icon_1.png",
-            "heading": "Expert Gardening Guidance",
-            "text": "Providing tips, advice, and support to help every plant thrive"
-          }
-        },
-        "feature_dfwTBL": {
-          "type": "feature",
-          "settings": {
-            "position": "left",
-            "icon": "shopify://shop_images/icon.png",
-            "heading": "Curated Plant Selection",
-            "text": "Offering a diverse range of indoor and outdoor plants for all skill levels."
-          }
-        },
-        "feature_7PqWyn": {
-          "type": "feature",
-          "settings": {
-            "position": "left",
-            "icon": "shopify://shop_images/icon_3.png",
-            "heading": "Quality Tools & Soil",
-            "text": "Supplying trusted gardening tools and our exclusive soil for healthier plants"
-          }
-        }
-      },
-      "block_order": [
-        "feature_xFwJ6i",
-        "feature_iAkXGM",
-        "feature_dfwTBL",
-        "feature_7PqWyn"
-      ],
-      "name": "Value Proposition",
-      "settings": {
-        "subtitle": "VALUE PROPOSITION",
-        "title": "What Makes Us Unique",
-        "description": "Describe your brand here",
-        "main_image": "shopify://shop_images/Group_261.png"
-      }
     }
   },
   "order": [
@@ -1034,13 +1034,13 @@
     "75c2e7ab-c5f2-4447-bc24-c46d50e55cc6",
     "countdown",
     "image-banner",
+    "value_proposition_dbcw6N",
     "1709e182-17ab-4c6c-b6fd-522d6919bc0e",
     "grid-banner",
     "3e747bc6-88b1-4f1b-b3b4-9b87f85ab729",
     "blog-post",
     "split_screen_slideshow_L9t8rQ",
     "image_banner_cak3tz",
-    "newsletter_cbHapY",
-    "value_proposition_dbcw6N"
+    "newsletter_cbHapY"
   ]
 }
