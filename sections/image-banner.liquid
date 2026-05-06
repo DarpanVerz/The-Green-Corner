@@ -37,7 +37,7 @@
 	}
 {%- endstyle -%}
 
-<div class="image-banner 22{% if section.settings.enable_border_top %} section_border_top{% endif %}{% if section.settings.enable_border_bottom %} section_border_bottom{% endif %}">
+<div class="image-banner{% if section.settings.enable_border_top %} section_border_top{% endif %}{% if section.settings.enable_border_bottom %} section_border_bottom{% endif %}">
 	<div class="{% if section.settings.full_width != true %}container{% endif %}">
 		<div class="image-banner-box color-{{ section.settings.color_scheme }} background section-{{ section.id }}-padding">
 			<div class="image-banner__img have-overlay">
