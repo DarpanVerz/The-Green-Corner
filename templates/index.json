@@ -731,6 +731,62 @@
         "padding_bottom": "no-indent"
       }
     },
+    "testimonial_slider_kqWbhp": {
+      "type": "testimonial-slider",
+      "blocks": {
+        "testimonial_EzWTQX": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "content": "“I love shopping at The Green Corner because they make plant care so simple. Their tools and soil are top quality, and I can always find exactly what I need. Every plant I bring home feels like it has a better chance to grow strong and healthy.”",
+            "image": "shopify://shop_images/Ellipse_20.png",
+            "name": "Sarah M.",
+            "designation": "Plant Enthusiast"
+          }
+        },
+        "testimonial_mjcwWL": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "content": "\"The Green Corner has transformed my gardening experience. From rare indoor plants to reliable gardening tools, they have it all. Their advice and support helped me revive a struggling garden into a thriving green space. I can’t imagine going anywhere else for plants and gardening needs!\"",
+            "image": "shopify://shop_images/Ellipse_20.png",
+            "name": "Emily R.",
+            "designation": "Experienced Gardener"
+          }
+        },
+        "testimonial_eDb8yW": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "content": "\"The Green Corner makes gardening easy and enjoyable for beginners like me. Their guides and advice have helped me care for my plants with confidence. I love exploring their range of plants and tools—they really have everything I need. Shopping here always feels welcoming, and inspiring.\"",
+            "image": "shopify://shop_images/Ellipse_21.png",
+            "name": "Mark L.",
+            "designation": "First-Time Gardener"
+          }
+        },
+        "testimonial_kVE4tg": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "content": "“I love shopping at The Green Corner because they make plant care so simple. Their tools and soil are top quality, and I can always find exactly what I need. Every plant I bring home feels like it has a better chance to grow strong and healthy.”",
+            "image": "shopify://shop_images/Ellipse_22.png",
+            "name": "Sarah M.",
+            "designation": "Plant Enthusiast"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_EzWTQX",
+        "testimonial_mjcwWL",
+        "testimonial_eDb8yW",
+        "testimonial_kVE4tg"
+      ],
+      "name": "Testimonial Slider",
+      "settings": {
+        "subtitle": "TESTIMONIALS",
+        "title": "Hear From Our Plant Lovers"
+      }
+    },
     "grid-banner": {
       "type": "grid-banner",
       "blocks": {
@@ -1018,62 +1074,6 @@
         "padding_top": "m",
         "padding_bottom": "no-indent"
       }
-    },
-    "testimonial_slider_kqWbhp": {
-      "type": "testimonial-slider",
-      "blocks": {
-        "testimonial_EzWTQX": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "content": "“I love shopping at The Green Corner because they make plant care so simple. Their tools and soil are top quality, and I can always find exactly what I need. Every plant I bring home feels like it has a better chance to grow strong and healthy.”",
-            "image": "shopify://shop_images/Ellipse_20.png",
-            "name": "Sarah M.",
-            "designation": "Plant Enthusiast"
-          }
-        },
-        "testimonial_mjcwWL": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "content": "\"The Green Corner has transformed my gardening experience. From rare indoor plants to reliable gardening tools, they have it all. Their advice and support helped me revive a struggling garden into a thriving green space. I can’t imagine going anywhere else for plants and gardening needs!\"",
-            "image": "shopify://shop_images/Ellipse_20.png",
-            "name": "Emily R.",
-            "designation": "Experienced Gardener"
-          }
-        },
-        "testimonial_eDb8yW": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "content": "\"The Green Corner makes gardening easy and enjoyable for beginners like me. Their guides and advice have helped me care for my plants with confidence. I love exploring their range of plants and tools—they really have everything I need. Shopping here always feels welcoming, and inspiring.\"",
-            "image": "shopify://shop_images/Ellipse_21.png",
-            "name": "Mark L.",
-            "designation": "First-Time Gardener"
-          }
-        },
-        "testimonial_kVE4tg": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "content": "“I love shopping at The Green Corner because they make plant care so simple. Their tools and soil are top quality, and I can always find exactly what I need. Every plant I bring home feels like it has a better chance to grow strong and healthy.”",
-            "image": "shopify://shop_images/Ellipse_22.png",
-            "name": "Sarah M.",
-            "designation": "Plant Enthusiast"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_EzWTQX",
-        "testimonial_mjcwWL",
-        "testimonial_eDb8yW",
-        "testimonial_kVE4tg"
-      ],
-      "name": "Testimonial Slider",
-      "settings": {
-        "subtitle": "TESTIMONIALS",
-        "title": "Hear From Our Plant Lovers"
-      }
     }
   },
   "order": [
@@ -1092,12 +1092,12 @@
     "image-banner",
     "value_proposition_dbcw6N",
     "1709e182-17ab-4c6c-b6fd-522d6919bc0e",
+    "testimonial_slider_kqWbhp",
     "grid-banner",
     "3e747bc6-88b1-4f1b-b3b4-9b87f85ab729",
     "blog-post",
     "split_screen_slideshow_L9t8rQ",
     "image_banner_cak3tz",
-    "newsletter_cbHapY",
-    "testimonial_slider_kqWbhp"
+    "newsletter_cbHapY"
   ]
 }
