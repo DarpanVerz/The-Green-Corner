@@ -1,0 +1,250 @@
+<section class="value-proposition">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="vp-header">
+      <p class="vp-subtitle">{{ section.settings.subtitle }}</p>
+      <h2 class="vp-title">{{ section.settings.title }}</h2>
+      <p class="vp-desc">{{ section.settings.description }}</p>
+    </div>
+
+    <div class="vp-content">
+
+      <!-- LEFT ITEMS -->
+      <div class="vp-items left">
+        {% for block in section.blocks %}
+          {% if block.settings.position == 'left' %}
+            <div class="vp-item">
+              <div class="icon">
+                {% if block.settings.icon != blank %}
+                  <img src="{{ block.settings.icon | img_url: '100x' }}" alt="">
+                {% endif %}
+              </div>
+              <h4>{{ block.settings.heading }}</h4>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      <!-- CENTER IMAGE -->
+      <div class="vp-image">
+        <div class="bg-shape"></div>
+        {% if section.settings.main_image != blank %}
+          <img src="{{ section.settings.main_image | img_url: '600x' }}" alt="">
+        {% endif %}
+      </div>
+
+      <!-- RIGHT ITEMS -->
+      <div class="vp-items right">
+        {% for block in section.blocks %}
+          {% if block.settings.position == 'right' %}
+            <div class="vp-item">
+              <div class="icon">
+                {% if block.settings.icon != blank %}
+                  <img src="{{ block.settings.icon | img_url: '100x' }}" alt="">
+                {% endif %}
+              </div>
+              <h4>{{ block.settings.heading }}</h4>
+              <p>{{ block.settings.text }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.value-proposition {
+  padding: 80px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.vp-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.vp-subtitle {
+  letter-spacing: 2px;
+  color: #2e7d32;
+  font-size: 14px;
+}
+
+.vp-title {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.vp-desc {
+  color: #666;
+}
+
+.vp-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.vp-items {
+  width: 25%;
+}
+
+.vp-item {
+  margin-bottom: 40px;
+}
+
+.vp-item .icon {
+  width: 50px;
+  height: 50px;
+  background: #1b5e20;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vp-item .icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.vp-item h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.vp-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* CENTER IMAGE */
+.vp-image {
+  position: relative;
+  width: 40%;
+}
+
+.vp-image img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.bg-shape {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background: #8bc34a;
+  border-radius: 200px 200px 0 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .vp-content {
+    flex-direction: column;
+  }
+
+  .vp-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .vp-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .vp-items {
+    flex-direction: column;
+  }
+
+  .vp-title {
+    font-size: 28px;
+  }
+
+  .vp-image {
+    width: 100%;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Value Proposition",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "VALUE PROPOSITION"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "What Makes Us Unique"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Describe your brand here"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_image",
+      "label": "Center Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "select",
+          "id": "position",
+          "label": "Position",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "right", "label": "Right" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Value Proposition",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
