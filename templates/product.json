@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "tags": {
+          "type": "tags",
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "This exquisite piece, available in our art store, showcases the perfect blend of vibrant colors and intricate details, capturing the imagination of art enthusiasts and collectors alike. Each stroke tells a story, inviting the viewer into a world of beauty and inspiration."
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_9AgXC3": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "show_size_guide": false,
+            "size_guide_header": "Header",
+            "size_guide_decription": "",
+            "size_guide_text": "Size Guide",
+            "page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_quantity": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description_heading": "Description",
+            "subheading": "Artistic Expression"
+          }
+        },
+        "additional-1": {
+          "type": "additional_description",
+          "settings": {
+            "subheading": "Essence & Impact",
+            "additional_heading": "Creative Essence",
+            "additional_content": "Explore the harmony of color and emotion in our exquisite, artistically crafted paintings."
+          }
+        },
+        "additional-2": {
+          "type": "additional_description",
+          "settings": {
+            "subheading": "",
+            "additional_heading": "Visual Impact",
+            "additional_content": "Immerse yourself in the striking visual allure of our paintings, where every brushstroke captivates and inspires."
+          }
+        },
+        "about-1": {
+          "type": "about",
+          "settings": {
+            "subheading": "Faq",
+            "heading": "Find quick answers to most common queries.",
+            "about_heading": "Can I view the painting in person before purchasing?",
+            "about_heading_content": "<p>Absolutely! We encourage you to visit our art store to experience the texture, colors, and details of the painting firsthand. Our staff will be happy to assist you and answer any questions during your visit.</p>"
+          }
+        },
+        "about-2": {
+          "type": "about",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "about_heading": "How should I care for and maintain the painting?",
+            "about_heading_content": "<p>To ensure the longevity of your painting, we recommend keeping it out of direct sunlight, maintaining a stable humidity level, and avoiding contact with water or chemicals. For cleaning, gently dust it with a soft, dry cloth. We also suggest framing the painting with UV-protective glass for added protection.</p>"
+          }
+        },
+        "about-3": {
+          "type": "about",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "about_heading": "Do you offer customization options for paintings?",
+            "about_heading_content": "<p>While the original paintings are sold as-is, we offer a range of framing options to suit your taste and decor. For commissioned works, our affiliated artists can create custom paintings based on your preferences in terms of style, subject matter, and size. Feel free to contact us for more details on customization.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "tags",
+        "title",
+        "text",
+        "price",
+        "inventory_9AgXC3",
+        "variant_picker",
+        "buy_buttons",
+        "description",
+        "additional-1",
+        "additional-2",
+        "about-1",
+        "about-2",
+        "about-3"
+      ],
+      "settings": {
+        "image_gallery_collage": "thumbnail_carousel",
+        "desktop_alignment": "left",
+        "mobile_alignment": "after",
+        "image_fit": "cover",
+        "enable_autoheight": false,
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You May Be Interested",
+        "autoplay": false,
+        "stop_autoplay": true,
+        "show_arrows": false,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_sku": false,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "show_desc": false,
+        "margin_top": "s",
+        "margin_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

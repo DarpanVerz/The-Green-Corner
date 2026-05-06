@@ -1,0 +1,23 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "title": "Collections",
+        "collection_per_page": 9,
+        "per_row": 3,
+        "sort": "alphabetical",
+        "image_ratio": "portrait",
+        "card_type": "standart",
+        "text_horizontal": "left",
+        "show_collection_desc": true,
+        "show_collection_button": true,
+        "margin_top": "no-indent",
+        "margin_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

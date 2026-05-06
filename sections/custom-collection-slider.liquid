@@ -1,0 +1,154 @@
+{% assign products = collections[section.settings.collection].products %}
+{% assign product_count = products.size %}
+
+<section class="custom-collection-section">
+  <div class="container">
+
+    <!-- Top Content -->
+    <div class="section-header">
+    <div class="heading">
+      {% if section.settings.subtitle != blank %}
+        <p class="subtitle">{{ section.settings.subtitle }}</p>
+      {% endif %}
+
+      {% if section.settings.title != blank %}
+        <h2>{{ section.settings.title }}</h2>
+      {% endif %}
+    </div>
+    <div class="description">
+      {% if section.settings.description != blank %}
+        <p class="desc">{{ section.settings.description }}</p>
+      {% endif %}
+    </div>
+    <div class="button">
+      {% if section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_link }}" class="browse-btn">
+          {{ section.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+    </div>
+
+    {% assign block_count = section.blocks.size %}
+
+    <!-- Slider / Grid -->
+    <div class="{% if block_count > 4 %}swiper mySwiper-{{ section.id }}{% endif %}">
+      
+      <div class="{% if block_count > 4 %}swiper-wrapper{% else %}grid-layout{% endif %}">
+
+        {% for block in section.blocks %}
+          {% assign collection = block.settings.collection %}
+
+          {% if collection %}
+          <div class="{% if block_count > 4 %}swiper-slide{% else %}grid-item{% endif %}">
+            
+            <div class="card">
+              <a href="{{ collection.url }}">
+                
+                {% if collection.image %}
+                  <img src="{{ collection.image | image_url: width: 600 }}" alt="{{ collection.title }}">
+                {% else %}
+                  <img src="{{ collection.products.first.featured_image | image_url: width: 600 }}" alt="{{ collection.title }}">
+                {% endif %}
+
+                <div class="card-content">
+                  <h3>{{ collection.title }}</h3>
+
+                  <span class="view-btn"></span>
+                </div>
+
+              </a>
+            </div>
+
+          </div>
+          {% endif %}
+        {% endfor %}
+
+      </div>
+
+      {% if block_count > 4 %}
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      {% endif %}
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  if (document.querySelector('.mySwiper-{{ section.id }}')) {
+    new Swiper('.mySwiper-{{ section.id }}', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.mySwiper-{{ section.id }} .swiper-button-next',
+        prevEl: '.mySwiper-{{ section.id }} .swiper-button-prev',
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 4 }
+      }
+    });
+  }
+});
+</script>
+{% schema %}
+{
+  "name": "Collection Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Short Description"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Browse All Categories"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_block",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Slider",
+      "blocks": [
+        { "type": "collection_block" },
+        { "type": "collection_block" },
+        { "type": "collection_block" },
+        { "type": "collection_block" }
+      ]
+    }
+  ]
+}
+{% endschema %}
