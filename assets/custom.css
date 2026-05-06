@@ -531,8 +531,8 @@ color:#A6CE39;
     font-size: 20px;
     font-weight: 600;
 }
-.counters multicolumn_card-desc p {
-    font-size: 18px;
+.counters multicolumn_card-desc {
+    font-size: 18px !important;
 }
 
 @media screen and (min-width: 1100px) {
