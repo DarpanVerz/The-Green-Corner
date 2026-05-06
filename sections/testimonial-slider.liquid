@@ -1,0 +1,240 @@
+<section class="testimonial-section">
+  <div class="page-width">
+
+    <!-- Header -->
+    <div class="ts-header">
+      <p class="ts-subtitle">{{ section.settings.subtitle }}</p>
+      <h2 class="ts-title">{{ section.settings.title }}</h2>
+    </div>
+
+    <!-- Slider -->
+    <div class="swiper testimonial-slider">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+
+              <!-- Stars -->
+              <div class="stars">
+                {% for i in (1..block.settings.rating) %}
+                  ★
+                {% endfor %}
+              </div>
+
+              <!-- Content -->
+              <p class="content">
+                "{{ block.settings.content }}"
+              </p>
+
+              <!-- Profile -->
+              <div class="profile">
+                {% if block.settings.image != blank %}
+                  <img src="{{ block.settings.image | img_url: '100x100' }}" alt="">
+                {% endif %}
+                <div>
+                  <h4>{{ block.settings.name }}</h4>
+                  <span>{{ block.settings.designation }}</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- Arrows -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.testimonial-section {
+  background: #d8c6b6;
+  padding: 80px 20px;
+  border-radius: 20px;
+}
+
+.ts-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ts-subtitle {
+  color: #2e7d32;
+  letter-spacing: 3px;
+  font-size: 14px;
+}
+
+.ts-title {
+  font-size: 36px;
+  margin-top: 10px;
+}
+
+/* Card */
+.testimonial-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.stars {
+  color: #ffb400;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.profile h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.profile span {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Swiper arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  background: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 16px;
+}
+
+/* Layout */
+.testimonial-slider {
+  padding: 10px 40px;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  .swiper-slide {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .swiper-slide {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .ts-title {
+    font-size: 26px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".testimonial-slider", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+});
+</script>
+
+{% schema %}
+{
+  "name": "Testimonial Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "TESTIMONIALS"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Hear From Our Plant Lovers"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Star Rating",
+          "min": 1,
+          "max": 5,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Testimonial Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Profile Image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "designation",
+          "label": "Designation"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Testimonial Slider"
+    }
+  ]
+}
+{% endschema %}
