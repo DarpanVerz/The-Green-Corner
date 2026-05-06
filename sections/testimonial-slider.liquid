@@ -191,11 +191,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".testimonial-slider", {
     slidesPerView: 3,
-    spaceBetween: 20,
+    spaceBetween: 30,
+    loop: true,
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
     breakpoints: {
       0: { slidesPerView: 1 },
       768: { slidesPerView: 2 },
