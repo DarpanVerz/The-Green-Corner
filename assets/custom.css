@@ -515,6 +515,10 @@ color:#A6CE39;
 .new-collection .product-markers__banner__products {
     border-top: none!important;
 }
-.product-markers .card-horizontal__inner .media {
+.new-collection .product-markers .card-horizontal__inner .media {
     border-radius: 10px;
+}
+
+.counters {
+
 }
