@@ -186,17 +186,6 @@
   }
 }
 
-.testimonial-slider {
-  overflow: hidden; /* 🔥 hides 4th slide */
-}
-
-.swiper-wrapper {
-  align-items: stretch;
-}
-
-.swiper-slide {
-  width: auto !important; /* remove manual width override */
-}
 
 </style>
 
@@ -206,8 +195,6 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 3,
     spaceBetween: 30,
     loop: true,
-    centeredSlides: false,
-    watchOverflow: true,
 
     navigation: {
       nextEl: ".swiper-button-next",
