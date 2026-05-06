@@ -529,10 +529,10 @@ color:#A6CE39;
 }
 .counters .multicolumn-card__info-title {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .counters multicolumn_card-desc {
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 
 @media screen and (min-width: 1100px) {
