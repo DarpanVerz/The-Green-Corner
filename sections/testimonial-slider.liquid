@@ -52,61 +52,66 @@
 
 <style>
 .testimonial-section {
-  background: #d8c6b6;
-  padding: 80px 20px;
-  border-radius: 20px;
+  background: #cbb8a6;
+  padding: 80px 0;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
-.ts-header {
-  text-align: center;
-  margin-bottom: 40px;
+/* Container spacing like design */
+.testimonial-slider {
+  padding: 0 80px;
+  position: relative;
 }
 
-.ts-subtitle {
-  color: #2e7d32;
-  letter-spacing: 3px;
-  font-size: 14px;
-}
-
-.ts-title {
-  font-size: 36px;
-  margin-top: 10px;
+/* FORCE 3 CARDS */
+.swiper-slide {
+  height: auto;
 }
 
 /* Card */
 .testimonial-card {
-  background: #fff;
-  padding: 25px;
+  background: #f4f4f4;
+  padding: 30px;
   border-radius: 20px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* Stars */
 .stars {
-  color: #ffb400;
-  margin-bottom: 10px;
+  color: #f5a623;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
+/* Content */
 .content {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 25px;
 }
 
+/* Profile */
 .profile {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .profile img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
 }
 
 .profile h4 {
-  margin: 0;
   font-size: 14px;
+  margin: 0;
+  font-weight: 600;
 }
 
 .profile span {
@@ -114,43 +119,66 @@
   color: #777;
 }
 
-/* Swiper arrows */
+/* HEADER */
+.ts-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ts-subtitle {
+  letter-spacing: 3px;
+  color: #2e7d32;
+  font-size: 13px;
+}
+
+.ts-title {
+  font-size: 40px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* 🔥 PERFECT ARROWS */
 .swiper-button-prev,
 .swiper-button-next {
-  background: #fff;
+  width: 50px;
+  height: 50px;
+  background: #e7ded6;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  color: #333;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+/* Arrow icon */
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  font-size: 16px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
 }
 
-/* Layout */
-.testimonial-slider {
-  padding: 10px 40px;
+/* 🔥 SPACING BETWEEN CARDS */
+.swiper-wrapper {
+  align-items: stretch;
 }
 
-/* Responsive */
-@media (min-width: 1024px) {
-  .swiper-slide {
-    width: 33.33%;
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .testimonial-slider {
+    padding: 0 40px;
   }
 }
 
-@media (max-width: 1023px) {
-  .swiper-slide {
-    width: 50%;
-  }
-}
-
-@media (max-width: 767px) {
-  .swiper-slide {
-    width: 100%;
+@media (max-width: 768px) {
+  .testimonial-slider {
+    padding: 0 20px;
   }
 
   .ts-title {
