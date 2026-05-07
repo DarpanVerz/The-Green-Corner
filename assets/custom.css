@@ -1115,12 +1115,12 @@ color:#A6CE39;
 }
 
 .blog-subtitle {
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: #056839;
     margin-bottom: 18px;
-  font-family: 'didotregular';
+    font-family: 'didotregular';
 }
 
 .blog-main-title {
