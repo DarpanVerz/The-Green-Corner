@@ -1159,31 +1159,37 @@ color:#A6CE39;
   gap: 14px;
 }
 .blog-slider-btn {
-    width: 60px;
-    height: 60px;
-    border: 1px solid #cfcfcf;
-    border-radius: 100%;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: .3s ease;
-}
-.blog-slider-btn:hover {
-  background: #056839;
-  border-color: #056839;
+  width: 68px;
+  height: 68px;
+  border: 1px solid #cfcfcf;
+  border-radius: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 0;
 }
 
-.blog-slider-btn:hover svg {
-  stroke: #fff;
+.blog-slider-btn:hover {
+  background: #111;
+  border-color: #111;
 }
 
 .blog-slider-btn svg {
-  width: 26px;
-  height: 26px;
+  width: 28px;
+  height: 28px;
+}
+
+.blog-slider-btn svg path {
   stroke: #111;
-  transition: .3s ease;
+  stroke-width: 1.5;
+  transition: all .3s ease;
+}
+
+.blog-slider-btn:hover svg path {
+  stroke: #fff;
 }
 
 .blog-listing-slider {
