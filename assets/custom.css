@@ -938,8 +938,8 @@ color:#A6CE39;
 }
 
 .custom-arrow-btn:hover{
-  background:#ffffff;
-  color:#171717;
+  background: #056839;
+  color: #171717;
   transform:translateY(-4px);
   box-shadow:0 10px 30px rgba(0,0,0,0.12);
 }
