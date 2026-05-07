@@ -605,6 +605,7 @@ color:#A6CE39;
 .plant-description {
   font-size: 17px;
   margin-bottom: 35px;
+  line-height: 23px;
 }
 .plant-description p {
   color: #fff;
