@@ -937,4 +937,8 @@ color:#A6CE39;
   }
 }
 
+.collapsible-content .collapsible-content-item {
+    border-top: none;
+}
+
 
