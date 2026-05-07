@@ -829,7 +829,6 @@ color:#A6CE39;
 
 .collapsible-content-item {
   border-bottom: 1px solid #d9d9d9;
-  padding: 28px 0;
 }
 
 .collapsible-content-summery {
@@ -932,7 +931,7 @@ color:#A6CE39;
 }
 
 .collapsible-content .collapsible-content-item {
-    border-top: none;
+    border-top: none !important;
 }
 
 
