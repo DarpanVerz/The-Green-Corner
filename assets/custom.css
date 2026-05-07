@@ -603,11 +603,12 @@ color:#A6CE39;
 }
 
 .plant-description {
-  color: #fff;
   font-size: 18px;
   margin-bottom: 35px;
 }
-
+.plant-description p {
+  color: #fff;
+}
 .plant-btn {
   display: inline-flex;
   align-items: center;
