@@ -800,21 +800,4 @@ color:#A6CE39;
   }
 }
 
-/*** product-markersr ****/
-product-markers__img-box .product-markers__marker {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--marker-background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-}
-
-
 
