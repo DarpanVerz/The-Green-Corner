@@ -931,8 +931,8 @@ color:#A6CE39;
 }
 
 .custom-arrow-btn svg{
-  width:28px;
-  height:28px;
+  width:28px !important;
+  height:28px !important;
   transition:transform .35s ease;
   color: #fff !important;
 }
