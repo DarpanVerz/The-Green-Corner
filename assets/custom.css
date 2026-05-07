@@ -918,8 +918,8 @@ color:#A6CE39;
 }
 
 .custom-arrow-btn{
-  width:72px;
-  height:72px;
+  width:55px;
+  height:55px;
   border-radius:100%;
   background:#171717;
   display:flex;
@@ -934,7 +934,7 @@ color:#A6CE39;
   width:28px;
   height:28px;
   transition:transform .35s ease;
-      color: #fff !important;
+  color: #fff !important;
 }
 
 .custom-arrow-btn:hover{
