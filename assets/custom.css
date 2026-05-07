@@ -997,21 +997,15 @@ color:#A6CE39;
 
 .image-banner__button-wrapper .button,
 .image-banner__button-wrapper a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 220px;
-    height: 62px;
-    padding: 0 35px;
     border-radius: 100px;
-    background: rgba(255,255,255,0.12);
-    border: 1px solid #A6CE39;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid #c9df1a;
     color: #fff;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
-    text-decoration: none;
     backdrop-filter: blur(5px);
     transition: all .3s ease;
+    text-transform: capitalize;
 }
 
 .image-banner__button-wrapper .button:hover,
