@@ -830,13 +830,13 @@ color:#A6CE39;
 }
 
 .collapsible-content__title {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.05;
     font-weight: 400;
     color: #056839;
-    letter-spacing: -3px;
+    letter-spacing: 3px;
     margin: 0;
-    font-family: 'didotbold';
+    font-family: 'didotregular';
 }
 
 .collapsible-content-item {
