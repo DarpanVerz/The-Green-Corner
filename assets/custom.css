@@ -117,8 +117,8 @@ h1, h2, { font-family: 'didotregular' !important; }
 /************ home-page ***********/
 
 .slideshow__swiper {
-    border-radius: 40px;
-    margin: 0 15px;
+    border-radius: 30px;
+    margin: 0 15px !important;
 }
 .slideshow .slideshow-slide__button-bottom {
     border-radius: 50px;
