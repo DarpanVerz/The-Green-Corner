@@ -1074,6 +1074,19 @@
         "padding_top": "m",
         "padding_bottom": "no-indent"
       }
+    },
+    "custom_plant_care_jckTMQ": {
+      "type": "custom-plant-care",
+      "name": "Custom Plant Care",
+      "settings": {
+        "image": "shopify://shop_images/f76d7448c112ca61101691bd2e7cbed6afd5ccee_b09d11cd-e658-484b-9d5d-7a943abe8fa4.jpg",
+        "subtitle": "PLANT CARE",
+        "heading": "Nurture Your Plants the Right Way",
+        "description": "<p>Learn the essentials of plant care to help your indoor and outdoor plants grow healthy and strong.</p>",
+        "button_label": "Explore Tips",
+        "button_link": "",
+        "color_scheme": ""
+      }
     }
   },
   "order": [
@@ -1085,6 +1098,7 @@
     "custom_about_J4h6nf",
     "a2f3c7de-84f4-4228-a61d-9b98a6da2b4f",
     "25349a31-29c3-49a9-a785-fe75eb2579e4",
+    "custom_plant_care_jckTMQ",
     "image_banner_FTnqER",
     "792a6d93-4cad-4ffd-a1f4-0aa7b1ddd1d7",
     "75c2e7ab-c5f2-4447-bc24-c46d50e55cc6",
