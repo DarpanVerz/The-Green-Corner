@@ -1148,6 +1148,10 @@ color:#A6CE39;
     justify-content: center;
     font-weight: 400;
 }
+.blog-view-all .button:hover {
+  background: #056839;
+  border-color: #056839;
+}
 
 .blog-slider-arrows {
   display: flex;
