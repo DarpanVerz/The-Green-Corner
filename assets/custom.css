@@ -830,12 +830,12 @@ color:#A6CE39;
 }
 
 .collapsible-content__title {
-  font-size: 72px;
-  line-height: 1.05;
-  font-weight: 400;
-  color: #111;
-  letter-spacing: -2px;
-  margin: 0;
+    font-size: 20px;
+    line-height: 1.05;
+    font-weight: 400;
+    color: #056839;
+    letter-spacing: -3px;
+    margin: 0;
 }
 
 .collapsible-content-item {
