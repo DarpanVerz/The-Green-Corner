@@ -1,1 +1,78 @@
-{"type":"footer","name":"t:sections.footer.settings.footer-group.label","sections":{"footer":{"type":"footer","blocks":{"footer-0":{"type":"logo_info","settings":{"logo":"shopify:\/\/shop_images\/Vector_1_4f3ce324-272d-40bb-975b-4568188569ca.png","logo_width":190,"copyright_show":false}},"footer-1":{"type":"link_list","settings":{"heading":"Sitemap","menu":"sitemap","mobile_menu_type":"dropdown"}},"footer-2":{"type":"link_list","settings":{"heading":"Useful Links","menu":"useful-links","mobile_menu_type":"dropdown"}},"footer-5":{"type":"subscribe","settings":{"newsletter_text":"<p>Here you can include a brief invitation encouraging visitors to subscribe and stay updated with the latest news, offers, and updates.<\/p>","heading":"Subscription","button_label":"submit","button_style":"primary","newsletter_sub":""}}},"block_order":["footer-0","footer-1","footer-2","footer-5"],"settings":{"color_scheme":"background-1","color_scheme_bottom":"background-3","enable_language_selector":true,"enable_country_selector":true,"enable_follow_on_shop":false,"payment_enable":true,"show_policy":false,"margin_top":"no-indent","padding_top":"m","padding_bottom":"m","enable_border_top":true,"enable_border_bottom":true}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo": "shopify://shop_images/Vector_1_4f3ce324-272d-40bb-975b-4568188569ca.png",
+            "logo_width": 190,
+            "copyright_show": false
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Sitemap",
+            "menu": "sitemap",
+            "mobile_menu_type": "dropdown"
+          }
+        },
+        "footer-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Useful Links",
+            "menu": "useful-links",
+            "mobile_menu_type": "dropdown"
+          }
+        },
+        "footer-5": {
+          "type": "subscribe",
+          "disabled": true,
+          "settings": {
+            "newsletter_text": "",
+            "heading": "",
+            "button_label": "",
+            "button_style": "primary",
+            "newsletter_sub": ""
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-1",
+        "footer-2",
+        "footer-5"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "color_scheme_bottom": "background-3",
+        "enable_language_selector": true,
+        "enable_country_selector": true,
+        "enable_follow_on_shop": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "enable_border_top": true,
+        "enable_border_bottom": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
