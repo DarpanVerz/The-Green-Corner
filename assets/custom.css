@@ -1170,6 +1170,7 @@ color:#A6CE39;
   height: 100%;
   background: #056839;
   border-radius: 60px;
+  transition: width .45s ease;
   z-index: -1;
 }
 
