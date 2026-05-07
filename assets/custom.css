@@ -806,3 +806,132 @@ color:#A6CE39;
 }
 
 
+/*** faq-collapsible-content ****/
+.collapsible-content {
+  background: #f5f5f2;
+}
+
+.collapsible-content-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.collapsible-content__title-box {
+  margin-bottom: 60px;
+}
+
+.collapsible-content__title {
+  font-size: 72px;
+  line-height: 1.05;
+  font-weight: 400;
+  color: #111;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+/* FAQ ITEM */
+.collapsible-content-item {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 28px 0;
+}
+
+/* QUESTION ROW */
+.collapsible-content-summery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+}
+
+/* LEFT SIDE */
+.collapsible-content-block__heading {
+  position: relative;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222;
+  margin: 0;
+  padding-left: 70px;
+  flex: 1;
+}
+
+/* GREEN QUESTION ICON */
+.collapsible-content-block__heading::before {
+  content: "?";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #0c7a43;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RIGHT BLACK CIRCLE */
+.collapsible-content-summery svg {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  background: #111;
+  border-radius: 50%;
+  padding: 22px;
+  fill: #fff;
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+.collapsible-content-item:hover .collapsible-content-summery svg {
+  transform: rotate(180deg);
+}
+
+/* ANSWER */
+.collapsible-content-block__description {
+  padding-left: 70px;
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+  max-width: 1000px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+  .collapsible-content__title {
+    font-size: 42px;
+  }
+
+  .collapsible-content-block__heading {
+    font-size: 18px;
+    padding-left: 55px;
+  }
+
+  .collapsible-content-block__heading::before {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .collapsible-content-summery svg {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    padding: 16px;
+  }
+
+  .collapsible-content-block__description {
+    padding-left: 55px;
+    font-size: 16px;
+  }
+}
+
+
