@@ -50,51 +50,90 @@
 
     </div>
 
-    <div class="swiper blog-listing-slider blog-slider-{{ section.id }}">
-      <div class="swiper-wrapper">
+<div class="swiper blog-listing-slider-{{ section.id }}">
+  <div class="swiper-wrapper">
 
-        {% for article in section.settings.blog.articles limit: section.settings.posts_count %}
-          
-          <div class="swiper-slide">
-            <div class="blog-slide-card">
+    {% for article in section.settings.blog.articles limit: section.settings.posts_count %}
+      
+      <div class="swiper-slide">
+        <div class="blog-slide-card">
 
-              <div class="blog-slide-image">
-                <a href="{{ article.url }}">
-                  {% if article.image %}
-                    <img
-                      src="{{ article.image | image_url: width: 800 }}"
-                      alt="{{ article.title }}"
-                      loading="lazy"
-                      width=""
-                      height=""
-                    >
-                  {% endif %}
-                </a>
-              </div>
-
-              {% if section.settings.show_date %}
-                <div class="blog-slide-date">
-                  {{ article.published_at | date: "%B %d, %Y" }}
-                </div>
+          <div class="blog-slide-image">
+            <a href="{{ article.url }}">
+              {% if article.image %}
+                <img
+                  src="{{ article.image | image_url: width: 800 }}"
+                  alt="{{ article.title }}"
+                  loading="lazy"
+                >
               {% endif %}
-
-              <h3 class="blog-slide-title">
-                <a href="{{ article.url }}">
-                  {{ article.title }}
-                </a>
-              </h3>
-
-            </div>
+            </a>
           </div>
 
-        {% endfor %}
+          {% if section.settings.show_date %}
+            <div class="blog-slide-date">
+              {{ article.published_at | date: "%B %d, %Y" }}
+            </div>
+          {% endif %}
 
+          <h3 class="blog-slide-title">
+            <a href="{{ article.url }}">
+              {{ article.title }}
+            </a>
+          </h3>
+
+        </div>
       </div>
-    </div>
+
+    {% endfor %}
 
   </div>
 </div>
 
+  </div>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const blogSwiper = new Swiper(".blog-listing-slider-{{ section.id }}", {
+    loop: true,
+    speed: 800,
+    slidesPerView: 4,
+    spaceBetween: 28,
+
+    navigation: {
+      nextEl: ".blog-next-{{ section.id }}",
+      prevEl: ".blog-prev-{{ section.id }}"
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 15
+      },
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 18
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      },
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 28
+      }
+    }
+  });
+
+});
+</script>
 
 {% schema %}
 {
