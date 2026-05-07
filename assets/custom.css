@@ -838,6 +838,10 @@ color:#A6CE39;
     margin: 0;
     font-family: 'didotregular';
 }
+.collapsible-content-desc {
+    font-size: 30px;
+    color: #1A1A1A;
+    font-family: 'didotregular';
 
 .collapsible-content-item {
   border-bottom: 1px solid #d9d9d9;
