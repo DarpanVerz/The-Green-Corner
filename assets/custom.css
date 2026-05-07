@@ -992,8 +992,8 @@ color:#A6CE39;
     margin-top: 20px;
 }
 
-.image-banner__button-wrapper .button,
-.image-banner__button-wrapper a {
+.cta-section .image-banner__button-wrapper .button,
+.cta-section .image-banner__button-wrapper a {
     border-radius: 100px;
     background: rgba(5, 104, 58, 0.57);
     border: 1px solid #c9df1a;
@@ -1004,8 +1004,8 @@ color:#A6CE39;
     margin-top: 20px;
 }
 
-.image-banner__button-wrapper .button:hover,
-.image-banner__button-wrapper a:hover {
+.cta-section .image-banner__button-wrapper .button:hover,
+.cta-section .image-banner__button-wrapper a:hover {
     background: #fff;
     color: #056839;
 }
@@ -1033,8 +1033,8 @@ color:#A6CE39;
         line-height: 1.6;
     }
 
-    .image-banner__button-wrapper .button,
-    .image-banner__button-wrapper a {
+    .cta-section .image-banner__button-wrapper .button,
+    .cta-section .image-banner__button-wrapper a {
         min-width: 180px;
         height: 54px;
         font-size: 18px;
