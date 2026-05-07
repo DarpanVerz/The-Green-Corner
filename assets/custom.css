@@ -603,9 +603,8 @@ color:#A6CE39;
 }
 
 .plant-description {
-  color: #f3f3f3;
+  color: #fff;
   font-size: 18px;
-  line-height: 1.8;
   margin-bottom: 35px;
 }
 
@@ -645,9 +644,6 @@ color:#A6CE39;
 .plant-btn:hover {
   color: #000;
   transform: translateY(-3px);
-}
-.plant-description p {
-  color:#fff;
 }
 
 @media screen and (max-width: 991px) {
