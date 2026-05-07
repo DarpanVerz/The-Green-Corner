@@ -70,7 +70,8 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 .header .list-menu--inline>li>.header__menu-item {
     text-transform: capitalize;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    color: #595959;
 }
 
 /* ONLY first-level menu (outside dropdown) */
