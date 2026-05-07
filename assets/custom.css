@@ -801,7 +801,7 @@ color:#A6CE39;
 }
 
 /*** product-markersr ****/
-.product-markers__marker {
+.product-markers__img-box .product-markers__marker {
   width: 54px;
   height: 54px;
   background: rgba(255,255,255,0.35);
