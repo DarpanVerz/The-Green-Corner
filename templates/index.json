@@ -411,16 +411,6 @@
         "color_scheme": ""
       }
     },
-    "custom_floating_product_banner_rCPnrT": {
-      "type": "custom-floating-product-banner",
-      "name": "Floating Product Banner",
-      "settings": {
-        "bg_image": "shopify://shop_images/28ab28f715535a83ac6b2888fa3bc4c8dcd49e35_b3db8fef-3c36-40b3-a5be-b74abc2033a5.jpg",
-        "product": "palette-de-fleur",
-        "card_top": 70,
-        "card_left": 78
-      }
-    },
     "792a6d93-4cad-4ffd-a1f4-0aa7b1ddd1d7": {
       "type": "product-slider",
       "blocks": {
@@ -652,6 +642,19 @@
     "1709e182-17ab-4c6c-b6fd-522d6919bc0e": {
       "type": "product-markers",
       "blocks": {
+        "marker_dbd6dU": {
+          "type": "marker",
+          "settings": {
+            "marker_background": "#ff4600",
+            "marker_color": "#988c63",
+            "marker_background_hover": "#17324e",
+            "marker_color_hover": "#ffffff",
+            "product": "i-love-you-mum-rose",
+            "image_ratio": "portrait",
+            "position_x": 20,
+            "position_y": 30
+          }
+        },
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-1": {
           "type": "marker",
           "settings": {
@@ -673,7 +676,7 @@
             "marker_color": "#ff4600",
             "marker_background_hover": "#1f1f1f",
             "marker_color_hover": "#ffffff",
-            "product": "",
+            "product": "99-romantic-rose-ideas",
             "image_ratio": "portrait",
             "position_x": 40,
             "position_y": 50
@@ -681,10 +684,10 @@
         }
       },
       "block_order": [
+        "marker_dbd6dU",
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-1",
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-2"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "",
         "section_stype": "markers",
@@ -698,7 +701,7 @@
         "show_secondary_image": true,
         "show_color_swatch": true,
         "show_sku": false,
-        "show_vendor": true,
+        "show_vendor": false,
         "button_label": "Button label",
         "button_link": "",
         "button_style": "primary",
@@ -711,6 +714,17 @@
         "margin_bottom": "l",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
+      }
+    },
+    "custom_floating_product_banner_rCPnrT": {
+      "type": "custom-floating-product-banner",
+      "disabled": true,
+      "name": "Floating Product Banner",
+      "settings": {
+        "bg_image": "shopify://shop_images/28ab28f715535a83ac6b2888fa3bc4c8dcd49e35_b3db8fef-3c36-40b3-a5be-b74abc2033a5.jpg",
+        "product": "palette-de-fleur",
+        "card_top": 70,
+        "card_left": 78
       }
     },
     "testimonial_slider_kqWbhp": {
