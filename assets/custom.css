@@ -876,9 +876,9 @@ color:#A6CE39;
 }
 
 .collapsible-content-summery .icon-wrapper {
-  width: 64px;
-  height: 64px;
-  min-width: 64px;
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
   border-radius: 50%;
   background: #111;
   display: flex;
