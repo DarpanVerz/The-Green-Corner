@@ -94,3 +94,60 @@
 
   </div>
 </div>
+
+
+{% schema %}
+{
+  "name": "Custom Blog Listing",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "BLOG LISTING"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Cultivating Green Spaces, Enriching Lives Daily"
+    },
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Select Blog"
+    },
+    {
+      "type": "range",
+      "id": "posts_count",
+      "label": "Posts Count",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show Date",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "VIEW ALL"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Blog Listing"
+    }
+  ]
+}
+{% endschema %}
