@@ -951,12 +951,7 @@ color:#A6CE39;
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        90deg,
-        rgba(0, 80, 35, 0.85) 0%,
-        rgba(0, 110, 50, 0.78) 60%,
-        rgba(0, 120, 55, 0.75) 100%
-    );
+    background: linear-gradient(to right, rgba(0,80,35,.85), rgba(0,120,55,.75));
 }
 
 .cta-section .image-banner__subheading {
