@@ -45,7 +45,9 @@
 									<{{ block.settings.block_heading_tag }} class="collapsible-content-block__heading h4">
 										{{ block.settings.block_heading }}
 									</{{ block.settings.block_heading_tag }}>
-									{% render 'icon-caret-small' %}
+									<div class="icon-wrapper">
+                                      {% render 'icon-caret-small' %}
+                                    </div>
 								</div>
 								{%- if block.settings.text != blank -%}
 									<div
