@@ -934,6 +934,7 @@ color:#A6CE39;
   width:28px;
   height:28px;
   transition:transform .35s ease;
+      color: #fff !important;
 }
 
 .custom-arrow-btn:hover{
