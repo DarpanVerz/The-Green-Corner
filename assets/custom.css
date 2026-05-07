@@ -620,11 +620,31 @@ color:#A6CE39;
   border-radius: 50px;
   font-size: 16px;
   width: fit-content;
-  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.plant-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  transition: all 0.4s ease;
+  z-index: -1;
+}
+
+.plant-btn:hover::before {
+  left: 0;
 }
 
 .plant-btn:hover {
-  background: #000;
+  color: #000;
+  transform: translateY(-3px);
 }
 .plant-description {
   color:#fff;
