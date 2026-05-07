@@ -947,7 +947,7 @@
         "posts_count": 8,
         "show_date": true,
         "button_label": "VIEW ALL",
-        "button_link": ""
+        "button_link": "shopify://blogs/news"
       }
     },
     "blog-post": {
