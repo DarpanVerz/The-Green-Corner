@@ -857,6 +857,7 @@ color:#A6CE39;
     color: #1A1A1A;
     padding-left: 55px;
     font-weight: 400 !important;
+    padding-right: 4rem;
 }
 
 .collapsible-content-block__heading::before {
