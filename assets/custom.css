@@ -968,12 +968,13 @@ color:#A6CE39;
 }
 
 .image-banner__subheading {
-    color: #c9df1a;
+    color: #A6CE39;
     font-size: 18px;
     letter-spacing: 6px;
     text-transform: uppercase;
     margin-bottom: 25px;
     font-weight: 500;
+    font-family: 'didotregular';
 }
 
 .image-banner__heading {
