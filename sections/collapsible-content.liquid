@@ -55,9 +55,28 @@
 									<{{ block.settings.block_heading_tag }} class="collapsible-content-block__heading h4">
 										{{ block.settings.block_heading }}
 									</{{ block.settings.block_heading_tag }}>
-									<div class="icon-wrapper">
-                                      {% render 'icon-caret-small' %}
-                                    </div>
+									<div class="custom-arrow-btn">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 24 24"
+										fill="none"
+										aria-hidden="true"
+									>
+										<path
+										d="M12 5V19"
+										stroke="currentColor"
+										stroke-width="1.7"
+										stroke-linecap="round"
+										/>
+										<path
+										d="M6 13L12 19L18 13"
+										stroke="currentColor"
+										stroke-width="1.7"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										/>
+									</svg>
+									</div>
 								</div>
 								{%- if block.settings.text != blank -%}
 									<div
