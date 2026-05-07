@@ -1168,7 +1168,7 @@ color:#A6CE39;
   top: 0;
   width: 0%;
   height: 100%;
-  background: #ffffff;
+  background: #056839;
   border-radius: 60px;
   transition: width .45s ease;
   z-index: -1;
@@ -1188,11 +1188,11 @@ color:#A6CE39;
 }
 
 .newsletter-submit-btn:hover .button-label {
-  color: #111;
+  color: #1A1A1A;
 }
 
 .newsletter-submit-btn:hover svg path {
-  stroke: #111;
+  stroke: #1A1A1A;
 }
 
 .newsletter-btn-icon {
