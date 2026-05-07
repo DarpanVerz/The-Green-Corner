@@ -626,6 +626,9 @@ color:#A6CE39;
 .plant-btn:hover {
   background: #000;
 }
+.plant-description {
+  color:#fff;
+}
 
 @media screen and (max-width: 991px) {
 
