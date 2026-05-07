@@ -799,3 +799,38 @@ color:#A6CE39;
     font-size: 16px;
   }
 }
+
+/*** product-markersr ****/
+.product-markers__marker {
+  width: 54px;
+  height: 54px;
+  background: rgba(255,255,255,0.35);
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  transition: all 0.3s ease;
+}
+
+.product-markers__marker::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.product-markers__marker:hover {
+  transform: scale(1.08);
+  background: rgba(255,255,255,0.5);
+}
+
+.product-markers__marker:hover::before {
+  transform: scale(0.9);
+}
