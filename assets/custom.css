@@ -945,13 +945,11 @@ color:#A6CE39;
     background: #056839;
     margin:20px;
 }
-
-
 .cta-section .image-banner__img::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,80,35,.85), rgba(0,120,55,.75));
+    background: linear-gradient(to right, rgba(0,80,35,.95), rgba(0,120,55,.85))
 }
 
 .cta-section .image-banner__subheading {
@@ -1055,4 +1053,6 @@ color:#A6CE39;
 .image-banner-section .image-banner__information {
     max-width: 100%;
 }
+
+/*** newsletter ****/
 
