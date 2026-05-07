@@ -1056,7 +1056,8 @@ color:#A6CE39;
 
 /*** newsletter ****/
 .newsletter__form {
-    max-width: 75.5rem !important;
+    max-width: 42.5rem;
+    text-align: center;
 }
 
 
