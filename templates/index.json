@@ -645,14 +645,14 @@
         "marker_dbd6dU": {
           "type": "marker",
           "settings": {
-            "marker_background": "#ff4600",
-            "marker_color": "#988c63",
+            "marker_background": "#ffffff",
+            "marker_color": "#ff4600",
             "marker_background_hover": "#17324e",
             "marker_color_hover": "#ffffff",
             "product": "i-love-you-mum-rose",
-            "image_ratio": "portrait",
-            "position_x": 20,
-            "position_y": 30
+            "image_ratio": "square",
+            "position_x": 70,
+            "position_y": 70
           }
         },
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-1": {
@@ -666,7 +666,7 @@
             "image": "shopify://shop_images/Rectangle_27.png",
             "image_ratio": "portrait",
             "position_x": 20,
-            "position_y": 30
+            "position_y": 95
           }
         },
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-2": {
@@ -679,7 +679,7 @@
             "product": "99-romantic-rose-ideas",
             "image_ratio": "portrait",
             "position_x": 40,
-            "position_y": 50
+            "position_y": 60
           }
         }
       },
