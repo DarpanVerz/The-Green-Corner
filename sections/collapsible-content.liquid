@@ -19,19 +19,29 @@
 			{% if section.settings.heading != blank
 				or section.settings.description != blank
 			%}
-				<div class="collapsible-content__title-box">
-					{%- if section.settings.heading != blank -%}
-						<{{ section.settings.heading_tag }} class="collapsible-content__title h3">
-							{{ section.settings.heading }}
-						</{{ section.settings.heading_tag }}>
-					{%- endif -%}
 
-					{%- if section.settings.description != blank -%}
-						<div class="collapsible-content-desc richtext__content extra-large-font">
-							{{ section.settings.description }}
-						</div>
-					{%- endif -%}
-				</div>
+
+				<div 
+  class="collapsible-content__title-box"
+  style="text-align: {{ section.settings.text_alignment }};"
+>
+  
+  {%- if section.settings.heading != blank -%}
+    <{{ section.settings.heading_tag }} class="collapsible-content__title h3">
+      {{ section.settings.heading }}
+    </{{ section.settings.heading_tag }}>
+  {%- endif -%}
+
+  {%- if section.settings.description != blank -%}
+    <div class="collapsible-content-desc richtext__content extra-large-font">
+      {{ section.settings.description }}
+    </div>
+  {%- endif -%}
+
+</div>
+
+
+
 			{%- endif -%}
 
 			<div class="collapsible-content-box">
@@ -135,6 +145,27 @@
 			"default": "t:sections.collapsible-content.settings.description.default",
 			"label": "t:sections.all.description.label"
 		},
+
+					{
+			"type": "select",
+			"id": "text_alignment",
+			"label": "Text Alignment",
+			"options": [
+				{
+				"value": "left",
+				"label": "Left"
+				},
+				{
+				"value": "center",
+				"label": "Center"
+				},
+				{
+				"value": "right",
+				"label": "Right"
+				}
+			],
+			"default": "center"
+			},
 
 		{
 			"type": "header",
