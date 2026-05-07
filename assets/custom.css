@@ -1174,13 +1174,8 @@ color:#A6CE39;
   z-index: -1;
 }
 
-.newsletter-submit-btn:hover::before {
-  width: 100%;
-}
 
-.newsletter-submit-btn:hover {
-  transform: translateY(-4px);
-}
+
 
 
 /******************* Blog **************/
