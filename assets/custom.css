@@ -959,14 +959,6 @@ color:#A6CE39;
     );
 }
 
-.image-banner__wrapper {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .image-banner__subheading {
     color: #A6CE39;
     font-size: 18px;
