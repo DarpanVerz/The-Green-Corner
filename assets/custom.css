@@ -947,7 +947,7 @@ color:#A6CE39;
 }
 
 
-.image-banner__img::after {
+.cta-section .image-banner__img::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -959,7 +959,7 @@ color:#A6CE39;
     );
 }
 
-.image-banner__subheading {
+.cta-section .image-banner__subheading {
     color: #A6CE39;
     font-size: 18px;
     letter-spacing: 6px;
@@ -969,7 +969,7 @@ color:#A6CE39;
     font-family: 'didotregular';
 }
 
-.image-banner__heading {
+.cta-section  .image-banner__heading {
     color: #fff;
     font-size: 43px;
     line-height: 1.1;
@@ -977,14 +977,14 @@ color:#A6CE39;
     font-family: 'didotregular';
 }
 
-.image-banner__information p {
+.cta-section  .image-banner__information p {
     color: #ffffff !important;
     font-size: 18px;
     line-height: 1.4;
     margin-bottom:10px;
 }
 
-.image-banner__button-wrapper {
+.cta-section .image-banner__button-wrapper {
     margin-top: 20px;
 }
 
