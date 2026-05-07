@@ -411,6 +411,16 @@
         "color_scheme": ""
       }
     },
+    "custom_floating_product_banner_rCPnrT": {
+      "type": "custom-floating-product-banner",
+      "name": "Floating Product Banner",
+      "settings": {
+        "bg_image": "shopify://shop_images/28ab28f715535a83ac6b2888fa3bc4c8dcd49e35_b3db8fef-3c36-40b3-a5be-b74abc2033a5.jpg",
+        "product": "palette-de-fleur",
+        "card_top": 70,
+        "card_left": 78
+      }
+    },
     "792a6d93-4cad-4ffd-a1f4-0aa7b1ddd1d7": {
       "type": "product-slider",
       "blocks": {
@@ -1046,16 +1056,6 @@
         "padding_top": "m",
         "padding_bottom": "no-indent"
       }
-    },
-    "custom_floating_product_banner_rCPnrT": {
-      "type": "custom-floating-product-banner",
-      "name": "Floating Product Banner",
-      "settings": {
-        "bg_image": "shopify://shop_images/28ab28f715535a83ac6b2888fa3bc4c8dcd49e35_b3db8fef-3c36-40b3-a5be-b74abc2033a5.jpg",
-        "product": "palette-de-fleur",
-        "card_top": 70,
-        "card_left": 78
-      }
     }
   },
   "order": [
@@ -1074,13 +1074,13 @@
     "image-banner",
     "value_proposition_dbcw6N",
     "1709e182-17ab-4c6c-b6fd-522d6919bc0e",
+    "custom_floating_product_banner_rCPnrT",
     "testimonial_slider_kqWbhp",
     "grid-banner",
     "3e747bc6-88b1-4f1b-b3b4-9b87f85ab729",
     "blog-post",
     "split_screen_slideshow_L9t8rQ",
     "image_banner_cak3tz",
-    "newsletter_cbHapY",
-    "custom_floating_product_banner_rCPnrT"
+    "newsletter_cbHapY"
   ]
 }
