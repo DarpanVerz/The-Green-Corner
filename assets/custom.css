@@ -1187,12 +1187,6 @@ color:#A6CE39;
   transition: all .35s ease;
 }
 
-
-
-.newsletter-submit-btn:hover .newsletter-btn-icon {
-  transform: translateX(3px);
-}
-
 /******************* Blog **************/
 
 .blog-listing-section {
