@@ -979,11 +979,9 @@ color:#A6CE39;
 
 .image-banner__heading {
     color: #fff;
-    font-size: 72px;
+    font-size: 43px;
     line-height: 1.1;
     font-weight: 400;
-    max-width: 1100px;
-    margin: 0 auto 35px;
 }
 
 .image-banner__information {
