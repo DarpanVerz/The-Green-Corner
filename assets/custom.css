@@ -986,7 +986,7 @@ color:#A6CE39;
 }
 
 .image-banner__information p {
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 18px;
     line-height: 1.2;
 }
