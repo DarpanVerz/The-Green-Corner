@@ -917,6 +917,50 @@ color:#A6CE39;
     border-bottom: none !important;
 }
 
+.custom-arrow-btn{
+  width:72px;
+  height:72px;
+  border-radius:100%;
+  background:#171717;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  cursor:pointer;
+  transition:all .35s ease;
+}
+
+.custom-arrow-btn svg{
+  width:28px;
+  height:28px;
+  transition:transform .35s ease;
+}
+
+.custom-arrow-btn:hover{
+  background:#ffffff;
+  color:#171717;
+  transform:translateY(-4px);
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.custom-arrow-btn:hover svg{
+  transform:translateY(3px);
+}
+
+@media screen and (max-width:767px){
+
+  .custom-arrow-btn{
+    width:58px;
+    height:58px;
+  }
+
+  .custom-arrow-btn svg{
+    width:22px;
+    height:22px;
+  }
+
+}
+
 /*** cta-section ****/
 .image-banner-box {
     position: relative;
