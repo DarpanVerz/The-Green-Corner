@@ -936,4 +936,151 @@ color:#A6CE39;
     border-bottom: none !important;
 }
 
+/*** cta-section ****/
+.image-banner-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+    background: #0c7a3b;
+}
+
+.image-banner__img {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.image-banner__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-banner__img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 80, 35, 0.85) 0%,
+        rgba(0, 110, 50, 0.78) 40%,
+        rgba(0, 120, 55, 0.75) 100%
+    );
+}
+
+.image-banner__wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-banner__subheading {
+    color: #c9df1a;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.image-banner__heading {
+    color: #fff;
+    font-size: 72px;
+    line-height: 1.1;
+    font-weight: 400;
+    max-width: 1100px;
+    margin: 0 auto 35px;
+}
+
+.image-banner__information {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.8;
+    max-width: 1300px;
+    margin: 0 auto 45px;
+    opacity: 0.95;
+}
+
+.image-banner__button-wrapper {
+    margin-top: 20px;
+}
+
+.image-banner__button-wrapper .button,
+.image-banner__button-wrapper a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 220px;
+    height: 62px;
+    padding: 0 35px;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid #c9df1a;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    transition: all .3s ease;
+}
+
+.image-banner__button-wrapper .button:hover,
+.image-banner__button-wrapper a:hover {
+    background: #c9df1a;
+    color: #0b5f2f;
+}
+
+@media screen and (max-width: 991px) {
+
+    .image-banner-box {
+        min-height: auto;
+        padding: 60px 25px;
+        border-radius: 25px;
+    }
+
+    .image-banner__subheading {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .image-banner__heading {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .image-banner__information {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .image-banner__button-wrapper .button,
+    .image-banner__button-wrapper a {
+        min-width: 180px;
+        height: 54px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .image-banner-box {
+        padding: 45px 20px;
+        border-radius: 20px;
+    }
+
+    .image-banner__heading {
+        font-size: 32px;
+    }
+
+    .image-banner__information {
+        font-size: 16px;
+    }
+}
 
