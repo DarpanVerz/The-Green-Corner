@@ -911,9 +911,9 @@ color:#A6CE39;
   }
 
   .collapsible-content-block__heading::before {
-    width: 32px;
-    height: 32px;
-    font-size: 18px;
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 18px !important;
   }
 
   .collapsible-content-summery svg {
