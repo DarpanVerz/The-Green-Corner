@@ -1183,9 +1183,9 @@ color:#A6CE39;
 }
 
 .blog-slider-btn svg path {
-  stroke: #111;
-  stroke-width: 1.5;
-  transition: all .3s ease;
+    stroke: #1A1A1A;
+    stroke-width: 0.8;
+    transition: all .3s ease;
 }
 
 .blog-slider-btn:hover svg path {
