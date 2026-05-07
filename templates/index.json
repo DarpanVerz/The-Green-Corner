@@ -411,48 +411,6 @@
         "color_scheme": ""
       }
     },
-    "image_banner_FTnqER": {
-      "type": "image-banner",
-      "blocks": {
-        "image_M73y9n": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/image.png",
-            "image_ratio": "square",
-            "object_fit": "cover",
-            "animation": true,
-            "aniamtion_effect": "slide"
-          }
-        }
-      },
-      "block_order": [
-        "image_M73y9n"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "hide_mobile_image": true,
-        "full_width": true,
-        "color_scheme": "",
-        "image_size": "small",
-        "overlay_opacity": 20,
-        "subheading": "PLANT CARE",
-        "subheading_tag": "h2",
-        "heading": "Nurture Your Plantsthe Right Way",
-        "heading_tag": "h2",
-        "description": "<p>Learn the essentials of plant care to help your indoor and outdoor plants grow healthy and strong. Discover practical tips on watering, sunlight, soil, and proper maintenance for thriving greenery. Whether you’re a beginner or a seasoned plant enthusiast, our guides are here to support your gardening journey. With the right care and tools, every plant in your space can flourish beautifully.</p>",
-        "text_horizontal": "left",
-        "text_vertical": "center",
-        "button_label": "Explore Tips",
-        "button_link": "",
-        "button_style": "tertiary",
-        "margin_top": "no-indent",
-        "margin_bottom": "no-indent",
-        "padding_top": "s",
-        "padding_bottom": "s",
-        "enable_border_top": false,
-        "enable_border_bottom": false
-      }
-    },
     "792a6d93-4cad-4ffd-a1f4-0aa7b1ddd1d7": {
       "type": "product-slider",
       "blocks": {
@@ -1099,7 +1057,6 @@
     "a2f3c7de-84f4-4228-a61d-9b98a6da2b4f",
     "25349a31-29c3-49a9-a785-fe75eb2579e4",
     "custom_plant_care_jckTMQ",
-    "image_banner_FTnqER",
     "792a6d93-4cad-4ffd-a1f4-0aa7b1ddd1d7",
     "75c2e7ab-c5f2-4447-bc24-c46d50e55cc6",
     "countdown",
