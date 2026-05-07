@@ -1,0 +1,102 @@
+<section class="custom-plant-care-section">
+  <div class="page-width">
+    <div class="plant-care-wrapper">
+
+      <!-- Left Image -->
+      <div class="plant-care-image">
+        {% if section.settings.image != blank %}
+          {{
+            section.settings.image
+            | image_url: width: 2000
+            | image_tag:
+              loading: 'lazy',
+              class: 'main-image'
+          }}
+        {% endif %}
+      </div>
+
+      <!-- Right Content -->
+      <div class="plant-care-content color-{{ section.settings.color_scheme }}">
+
+        {% if section.settings.subtitle != blank %}
+          <p class="plant-subtitle">
+            {{ section.settings.subtitle }}
+          </p>
+        {% endif %}
+
+        {% if section.settings.heading != blank %}
+          <h2 class="plant-heading">
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          <div class="plant-description">
+            {{ section.settings.description }}
+          </div>
+        {% endif %}
+
+        {% if section.settings.button_label != blank %}
+          <a href="{{ section.settings.button_link }}" class="plant-btn">
+            {{ section.settings.button_label }}
+          </a>
+        {% endif %}
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Plant Care",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Left Image"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "PLANT CARE"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Nurture Your Plants the Right Way"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Learn the essentials of plant care to help your indoor and outdoor plants grow healthy and strong.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Explore Tips"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "background-1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Plant Care"
+    }
+  ]
+}
+{% endschema %}
