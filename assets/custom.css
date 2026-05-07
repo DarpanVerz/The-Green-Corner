@@ -983,9 +983,9 @@ color:#A6CE39;
 
 .cta-section  .image-banner__information p {
     color: #ffffff !important;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
-    margin-bottom:10px;
+    margin:25px 0px;
 }
 
 .cta-section .image-banner__button-wrapper {
