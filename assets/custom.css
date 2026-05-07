@@ -990,7 +990,7 @@ color:#A6CE39;
     font-size: 16px;
     transition: all .3s ease;
     text-transform: none;
-        margin-top: 20px;
+    margin-top: 20px;
 }
 
 .image-banner__button-wrapper .button:hover,
@@ -1058,6 +1058,10 @@ color:#A6CE39;
 .newsletter__form {
     max-width: 42.5rem;
     text-align: center;
+}
+.newsletter__title {
+    font-size: 5rem;
+    font-family: 'didotregular';
 }
 
 
