@@ -36,8 +36,14 @@
 
 h1, h2, { font-family: 'didotregular' !important; }
 
-/*** Header ****/
+/*** announcement ****/
+.announcement-wrapper .button-label {
+    font-size: 12px;
+    text-transform: lowercase;
+    font-weight: 500;
+}
 
+/*** Header ****/
 .menu-inline {
   display: flex;
   gap: 20px;
