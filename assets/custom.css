@@ -1223,17 +1223,17 @@ color:#A6CE39;
 
 .blog-slide-date {
   font-size: 15px;
-  color: #7c7c7c;
+  color: #595959;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
 
 .blog-slide-title {
-  font-size: 24px;
-  line-height: 1.35;
-  font-weight: 600;
-  color: #111;
-  margin: 0;
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin: 0;
 }
 
 .blog-slide-title a {
