@@ -398,6 +398,19 @@
         "enable_border_bottom": false
       }
     },
+    "custom_plant_care_jckTMQ": {
+      "type": "custom-plant-care",
+      "name": "Custom Plant Care",
+      "settings": {
+        "image": "shopify://shop_images/f76d7448c112ca61101691bd2e7cbed6afd5ccee_b09d11cd-e658-484b-9d5d-7a943abe8fa4.jpg",
+        "subtitle": "PLANT CARE",
+        "heading": "Nurture Your Plants the Right Way",
+        "description": "<p>Learn the essentials of plant care to help your indoor and outdoor plants grow healthy and strong. Discover practical tips on watering, sunlight, soil, and proper maintenance for thriving greenery. Whether you’re a beginner or a seasoned plant enthusiast, our guides are here to support your gardening journey. With the right care and tools, every plant in your space can flourish beautifully.</p>",
+        "button_label": "Explore Tips",
+        "button_link": "",
+        "color_scheme": ""
+      }
+    },
     "image_banner_FTnqER": {
       "type": "image-banner",
       "blocks": {
@@ -1073,19 +1086,6 @@
         "margin_bottom": "l",
         "padding_top": "m",
         "padding_bottom": "no-indent"
-      }
-    },
-    "custom_plant_care_jckTMQ": {
-      "type": "custom-plant-care",
-      "name": "Custom Plant Care",
-      "settings": {
-        "image": "shopify://shop_images/f76d7448c112ca61101691bd2e7cbed6afd5ccee_b09d11cd-e658-484b-9d5d-7a943abe8fa4.jpg",
-        "subtitle": "PLANT CARE",
-        "heading": "Nurture Your Plants the Right Way",
-        "description": "<p>Learn the essentials of plant care to help your indoor and outdoor plants grow healthy and strong.</p>",
-        "button_label": "Explore Tips",
-        "button_link": "",
-        "color_scheme": ""
       }
     }
   },
