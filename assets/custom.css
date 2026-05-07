@@ -825,12 +825,3 @@ color:#A6CE39;
   display: block;
   transition: all 0.3s ease;
 }
-
-.product-markers__img-box .product-markers__marker:hover {
-  transform: scale(1.08);
-  background: rgba(255,255,255,0.5);
-}
-
-.product-markers__img-box .product-markers__marker:hover::before {
-  transform: scale(0.9);
-}
