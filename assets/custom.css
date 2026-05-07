@@ -992,7 +992,6 @@ color:#A6CE39;
     margin-top: 20px;
 }
 
-.cta-section .image-banner__button-wrapper .button,
 .cta-section .image-banner__button-wrapper a {
     border-radius: 100px;
     background: rgba(5, 104, 58, 0.57);
@@ -1004,7 +1003,6 @@ color:#A6CE39;
     margin-top: 20px;
 }
 
-.cta-section .image-banner__button-wrapper .button:hover,
 .cta-section .image-banner__button-wrapper a:hover {
     background: #000;
     color: #fff;
