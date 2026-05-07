@@ -1,0 +1,96 @@
+<div class="blog-listing-section">
+  <div class="container">
+
+    <div class="blog-listing-header">
+
+      <div class="blog-listing-left">
+
+        {% if section.settings.subtitle != blank %}
+          <div class="blog-subtitle">
+            {{ section.settings.subtitle }}
+          </div>
+        {% endif %}
+
+        {% if section.settings.heading != blank %}
+          <h2 class="blog-main-title">
+            {{ section.settings.heading }}
+          </h2>
+        {% endif %}
+
+      </div>
+
+      <div class="blog-listing-right">
+
+        {% if section.settings.button_label != blank %}
+          <div class="blog-view-all">
+            {% render 'button',
+              layout: section,
+              btn_style: 'primary',
+              btn_label: section.settings.button_label,
+              btn_link: section.settings.button_link
+            %}
+          </div>
+        {% endif %}
+
+        <div class="blog-slider-arrows">
+          <button class="blog-slider-btn blog-prev-{{ section.id }}">
+            <svg fill="none" viewBox="0 0 24 24">
+              <path d="M15 6L9 12L15 18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <button class="blog-slider-btn blog-next-{{ section.id }}">
+            <svg fill="none" viewBox="0 0 24 24">
+              <path d="M9 6L15 12L9 18" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="swiper blog-listing-slider blog-slider-{{ section.id }}">
+      <div class="swiper-wrapper">
+
+        {% for article in section.settings.blog.articles limit: section.settings.posts_count %}
+          
+          <div class="swiper-slide">
+            <div class="blog-slide-card">
+
+              <div class="blog-slide-image">
+                <a href="{{ article.url }}">
+                  {% if article.image %}
+                    <img
+                      src="{{ article.image | image_url: width: 800 }}"
+                      alt="{{ article.title }}"
+                      loading="lazy"
+                      width=""
+                      height=""
+                    >
+                  {% endif %}
+                </a>
+              </div>
+
+              {% if section.settings.show_date %}
+                <div class="blog-slide-date">
+                  {{ article.published_at | date: "%B %d, %Y" }}
+                </div>
+              {% endif %}
+
+              <h3 class="blog-slide-title">
+                <a href="{{ article.url }}">
+                  {{ article.title }}
+                </a>
+              </h3>
+
+            </div>
+          </div>
+
+        {% endfor %}
+
+      </div>
+    </div>
+
+  </div>
+</div>
