@@ -489,7 +489,7 @@
         "show_vendor": false,
         "show_color_swatch": false,
         "show_desc": false,
-        "margin_top": "no-indent",
+        "margin_top": "l",
         "margin_bottom": "l",
         "padding_top": "l",
         "padding_bottom": "l",
