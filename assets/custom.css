@@ -1014,17 +1014,17 @@ color:#A6CE39;
         border-radius: 25px;
     }
 
-    .image-banner__subheading {
+    .cta-section .image-banner__subheading {
         font-size: 14px;
         letter-spacing: 4px;
     }
 
-    .image-banner__heading {
+    .cta-section .image-banner__heading {
         font-size: 42px;
         line-height: 1.2;
     }
 
-    .image-banner__information {
+    .cta-section .image-banner__information {
         font-size: 18px;
         line-height: 1.6;
     }
