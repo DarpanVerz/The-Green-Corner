@@ -1101,18 +1101,18 @@ color:#A6CE39;
       margin: 0 auto;
 }
 .newsletter-submit-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  background: #171717;
-  color: #fff;
-  border: none;
-  border-radius: 60px;
-  padding: 18px 38px;
-  min-height: 64px;
-  cursor: pointer;
-  transition: all .3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #1A1A1A;
+    color: #fff;
+    border: none;
+    border-radius: 60px;
+    padding: 2px 24px;
+    min-height: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
 .newsletter-submit-btn:hover {
