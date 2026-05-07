@@ -554,7 +554,7 @@ color:#A6CE39;
 }
 .custom-plant-care-section .page-width {
       padding: 0rem;
-          max-width: 149rem;
+      max-width: 149rem;
     }
 
 
@@ -648,6 +648,9 @@ color:#A6CE39;
 }
 
 @media screen and (max-width: 575px) {
+  .custom-plant-care-section {
+  padding: 0px 20px;
+}
 
   .plant-heading {
     font-size: 32px;
