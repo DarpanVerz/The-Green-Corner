@@ -877,30 +877,7 @@ color:#A6CE39;
   justify-content: center;
 }
 
-.collapsible-content-summery svg {
-  width: 18px;
-  height: 18px;
-  fill: #fff;
-  transition: 0.3s ease;
-  position: relative;
-  z-index: 2;
-}
 
-.collapsible-content-summery .icon-wrapper {
-  width: 55px;
-  height: 55px;
-  min-width: 55px;
-  border-radius: 50%;
-  background: #111;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s ease;
-}
-
-.collapsible-content-item:hover .icon-wrapper svg {
-  transform: rotate(180deg);
-}
 
 .collapsible-content-block__description {
   padding-left: 55px;
