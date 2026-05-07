@@ -1159,8 +1159,8 @@ color:#A6CE39;
   gap: 14px;
 }
 .blog-slider-btn {
-  width: 68px;
-  height: 68px;
+  width: 60px;
+  height: 60px;
   border: 1px solid #cfcfcf;
   border-radius: 100%;
   background: transparent;
@@ -1173,8 +1173,8 @@ color:#A6CE39;
 }
 
 .blog-slider-btn:hover {
-  background: #111;
-  border-color: #111;
+  background: #056839;
+  border-color: #056839;
 }
 
 .blog-slider-btn svg {
