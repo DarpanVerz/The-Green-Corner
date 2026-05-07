@@ -1078,6 +1078,11 @@ color:#A6CE39;
 .newsletter__button {
       border-radius: 50px;
 }
+.newsletter-form__inner {
+      width: 80%;
+          text-align: center;
+    margin: 0 auto;
+}
 
 
 
