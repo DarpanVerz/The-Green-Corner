@@ -104,8 +104,9 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 .header .list-menu--inline>li>.header__menu-item:hover {
-  color:#056839;
+  color: #056839;
   font-weight: 500;
+  border-bottom:3px solid #056839;
 }
 
 /* Apply ONLY to items that are NOT inside submenu */
