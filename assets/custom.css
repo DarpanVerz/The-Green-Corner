@@ -999,6 +999,7 @@ color:#A6CE39;
     backdrop-filter: blur(5px);
     transition: all .3s ease;
     text-transform: capitalize;
+        margin-top: 20px;
 }
 
 .image-banner__button-wrapper .button:hover,
