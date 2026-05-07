@@ -552,6 +552,10 @@ color:#A6CE39;
 .custom-plant-care-section {
   padding: 60px 0;
 }
+.custom-plant-care-section .page-width {
+      padding: 0rem;
+    }
+
 
 .plant-care-wrapper {
   display: flex;
