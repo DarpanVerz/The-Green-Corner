@@ -1301,5 +1301,13 @@ color:#A6CE39;
   }
 }
 
+.blog-listing-slider-{{ section.id }} {
+  overflow: hidden;
+}
+
+.blog-listing-slider-{{ section.id }} .swiper-slide {
+  height: auto;
+}
+
 
 
