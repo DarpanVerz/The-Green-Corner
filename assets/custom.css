@@ -1006,8 +1006,8 @@ color:#A6CE39;
 
 .cta-section .image-banner__button-wrapper .button:hover,
 .cta-section .image-banner__button-wrapper a:hover {
-    background: #fff;
-    color: #056839;
+    background: #000;
+    color: #fff;
 }
 
 @media screen and (max-width: 991px) {
