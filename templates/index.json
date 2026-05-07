@@ -937,8 +937,22 @@
         "enable_border_bottom": false
       }
     },
+    "custom_blog_slider_B7xL3i": {
+      "type": "custom-blog-slider",
+      "name": "Custom Blog Listing",
+      "settings": {
+        "subtitle": "BLOG LISTING",
+        "heading": "Cultivating Green Spaces, Enriching Lives Daily",
+        "blog": "news",
+        "posts_count": 8,
+        "show_date": true,
+        "button_label": "VIEW ALL",
+        "button_link": ""
+      }
+    },
     "blog-post": {
       "type": "blog-post",
+      "disabled": true,
       "settings": {
         "posts_count": 4,
         "per_row": 4,
@@ -1071,19 +1085,6 @@
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
-    },
-    "custom_blog_slider_B7xL3i": {
-      "type": "custom-blog-slider",
-      "name": "Custom Blog Listing",
-      "settings": {
-        "subtitle": "BLOG LISTING",
-        "heading": "Cultivating Green Spaces, Enriching Lives Daily",
-        "blog": "news",
-        "posts_count": 8,
-        "show_date": true,
-        "button_label": "VIEW ALL",
-        "button_link": ""
-      }
     }
   },
   "order": [
@@ -1106,10 +1107,10 @@
     "testimonial_slider_kqWbhp",
     "grid-banner",
     "3e747bc6-88b1-4f1b-b3b4-9b87f85ab729",
+    "custom_blog_slider_B7xL3i",
     "blog-post",
     "split_screen_slideshow_L9t8rQ",
     "image_banner_cak3tz",
-    "newsletter_cbHapY",
-    "custom_blog_slider_B7xL3i"
+    "newsletter_cbHapY"
   ]
 }
