@@ -518,6 +518,13 @@
 {% endschema %}
 
 <style>
+	.custom-title {
+  color: {{ block.settings.text_color }};
+}
+
+.custom-title span {
+  color: {{ block.settings.span_color }};
+}
 .custom-title {
     font-size: 72px;
     line-height: 1.05;
