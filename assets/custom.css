@@ -344,6 +344,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     display: flex;
     flex-direction: column;
     padding-right: 2.4rem;
+    border-right:inherit;
 }
 
 /* REMOVE OLD FLEX */
