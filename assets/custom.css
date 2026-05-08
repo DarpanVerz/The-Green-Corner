@@ -368,12 +368,10 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 /* IMAGE COLUMN */
 .header-mega-menu__collection-list{
-  grid-column:6 / 7;
-    width:100% !important;
-    max-width:100% !important;
-    display:flex !important;
+   width:100%;
+    display:flex;
     flex-direction:column;
-    gap:12px;
+    gap:14px;
 }
 
 /* IMAGE CARD */
