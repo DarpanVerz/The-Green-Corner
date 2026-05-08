@@ -384,9 +384,9 @@ h1, h2, { font-family: 'didotregular' !important; }
 /* MENU TITLE */
 .subtitle{
     font-size:11px;
-    letter-spacing:3px;
+    letter-spacing:2px;
     text-transform:uppercase;
-    margin-bottom:18px;
+    margin-bottom:14px;
     color:#6b7d63;
     font-weight:600;
 }
