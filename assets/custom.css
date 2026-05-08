@@ -215,6 +215,10 @@ h1, h2, { font-family: 'didotregular' !important; }
     stroke: #1a1a1a;
 }
 
+.header-top__right>*:not(.header__localization) {
+    width: auto;
+}
+
 /* Desktop */
 @media screen and (min-width: 990px) {
     .custom-search-box {
