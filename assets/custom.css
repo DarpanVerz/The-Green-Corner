@@ -1450,4 +1450,5 @@ h1, h2, { font-family: 'didotregular' !important; }
   .announcement-bar_menu {
     display: none;
   }
+  .announcement-wrapper .announcement-wrapper_button { display:block; }
 }
