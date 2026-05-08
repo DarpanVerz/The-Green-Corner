@@ -326,6 +326,85 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 
 
+/*** Mega Menu ****/
+
+.header-mega-menu__wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.header-mega-menu__lists {
+    grid-column: span 5;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.header-mega-menu__list-wrapper {
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+}
+
+.header-mega-menu__list-wrapper:last-child {
+    border-right: none;
+}
+
+.header-mega-menu__collection-list {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-mega-menu__collection {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.header-mega-menu__collection img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #5d7c65;
+    font-weight: 600;
+}
+
+.mega-menu-list li {
+    margin-bottom: 14px;
+}
+
+.mega-menu-list li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #222;
+    line-height: 1.4;
+}
+
+.promo_text {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #fff;
+    z-index: 2;
+}
+
+.image_overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+}
+
 
 /*** contact us button ***/
 
