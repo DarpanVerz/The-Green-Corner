@@ -337,7 +337,9 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 /* REMOVE OLD FLEX */
 .header-mega-menu__lists{
-    display:contents !important;
+    display:grid !important;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:24px;
 }
 
 /* EACH MENU COLUMN */
