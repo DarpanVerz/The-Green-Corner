@@ -243,9 +243,28 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 /* Mobile */
+
 @media screen and (max-width: 767px) {
+
     .custom-search-box {
+        max-width: unset;
+        width: auto;
+    }
+
+    .search-input-wrapper {
+        background: transparent;
+        padding: 0;
+        min-height: auto;
+        border-radius: 0;
+    }
+
+    .search-placeholder {
         display: none;
+    }
+
+    .search-icon svg {
+        width: 22px;
+        height: 22px;
     }
 }
 
