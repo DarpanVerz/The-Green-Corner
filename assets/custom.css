@@ -115,6 +115,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 /* ONLY first-level menu (outside dropdown) */
+
 .header > nav .list-menu--inline > li > a.header__menu-item {
   position: relative;
   display: inline-block;
@@ -146,6 +147,9 @@ h1, h2, { font-family: 'didotregular' !important; }
   position: relative;
 }
 
+.header .list-menu--inline>li>.header__menu-item {
+    padding: 1rem 1rem;
+}
 
 /********************** home-page ********************/
 
