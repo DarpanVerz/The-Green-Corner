@@ -187,9 +187,9 @@ h1, h2, { font-family: 'didotregular' !important; }
     justify-content: space-between;
     background: #f3f3f3;
     border-radius: 40px;
-    padding: 14px 22px;
+    padding: 14px 20px;
     text-decoration: none;
-    min-height: 58px;
+    min-height: 45px;
     transition: all 0.3s ease;
 }
 
