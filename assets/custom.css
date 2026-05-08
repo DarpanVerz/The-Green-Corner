@@ -1676,12 +1676,6 @@ h1, h2, { font-family: 'didotregular' !important; }
   height: auto;
 }
 
-@media screen and (min-width: 750px) {
-.announcement-wrapper {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 @media(max-width:767px){
   .header-top__logo .header__heading-link img {
