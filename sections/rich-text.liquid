@@ -518,48 +518,34 @@
 {% endschema %}
 
 <style>
-	.custom-title {
+
+.custom-title {
   color: {{ block.settings.text_color }};
 }
 
 .custom-title span {
   color: {{ block.settings.span_color }};
 }
+
 .custom-title {
-    font-size: 72px;
-    line-height: 1.05;
-    font-weight: 400;
-    text-align: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    color: {{ block.settings.text_color }};
-  }
+  font-size: 72px;
+  line-height: 1.05;
+  font-weight: 400;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-  .custom-title span {
-    color: {{ block.settings.span_color }};
+@media screen and (max-width: 991px) {
+  .custom-title {
+    font-size: 46px;
   }
+}
 
-  /* Desktop */
-  @media screen and (max-width: 1440px) {
-    .custom-title {
-      font-size: 62px;
-    }
+@media screen and (max-width: 767px) {
+  .custom-title {
+    font-size: 32px;
   }
+}
 
-  /* Tablet */
-  @media screen and (max-width: 991px) {
-    .custom-title {
-      font-size: 46px;
-      line-height: 1.15;
-    }
-  }
-
-  /* Mobile */
-  @media screen and (max-width: 767px) {
-    .custom-title {
-      font-size: 32px;
-      line-height: 1.2;
-      padding: 0 15px;
-    }
-  }
 </style>
