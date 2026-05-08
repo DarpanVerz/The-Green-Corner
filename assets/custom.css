@@ -44,19 +44,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     font-weight: 400;
 }
 
-.announcement-bar__message {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 
-.announcement-bar__icon img,
-.announcement-icon {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-    display: block;
-}
 
 /**************** Header ****************/
 .menu-inline {
