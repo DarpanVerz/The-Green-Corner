@@ -13,6 +13,19 @@
   "sections": {
     "announcement_bar_NPRBDn": {
       "type": "announcement-bar",
+      "blocks": {
+        "social_links_Ng7DhU": {
+          "type": "social-links",
+          "settings": {
+            "button_label": "Follow Us",
+            "button_link": "",
+            "icon_social": "none"
+          }
+        }
+      },
+      "block_order": [
+        "social_links_Ng7DhU"
+      ],
       "name": "t:sections.announcement-bar.name",
       "settings": {
         "announcement_menu": "top-menu",
