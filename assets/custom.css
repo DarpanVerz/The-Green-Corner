@@ -362,11 +362,10 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 /* IMAGE COLUMN */
 .header-mega-menu__collection-list{
-    width:100% !important;
-    max-width:100% !important;
+    grid-column:6 / 7;
     display:flex !important;
     flex-direction:column;
-    gap:20px;
+    gap:12px;
 }
 
 /* IMAGE CARD */
