@@ -36,7 +36,7 @@
 
 h1, h2, { font-family: 'didotregular' !important; }
 
-.slideshow-slide__title .h1 .slide-up-item { font-family: 'didotregular' !important;  } 
+.slideshow-slide__title.h1 .slide-up-item { font-family: 'didotregular' !important;  } 
 
 /*** announcement ****/
 
