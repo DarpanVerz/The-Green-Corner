@@ -234,7 +234,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 
     .search-input-wrapper {
         padding: 12px 18px;
-        min-height: 50px;
+        min-height: 45px;
     }
 
     .search-placeholder {
