@@ -293,6 +293,43 @@ h1, h2, { font-family: 'didotregular' !important; }
     }
 }
 
+
+/*** contact us button ***/
+
+.header-contact-btn {
+    margin-left: 20px;
+}
+
+.header-contact-btn a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    height: 56px;
+    padding: 0 30px;
+    background: #1f1f1f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.header-contact-btn a:hover {
+    background: #056839;
+    color: #fff;
+}
+
+/* Tablet + Mobile */
+@media screen and (max-width: 989px) {
+
+    .header-contact-btn {
+        display: none;
+    }
+}
+
+
 /********************** home-page ********************/
 
 .slideshow__swiper {
