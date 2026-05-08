@@ -73,8 +73,8 @@
             "secondary_button_link": "",
             "show_promo": true,
             "color_scheme": "",
-            "heading": "Discover Your Style",
-            "description": "Navigate through our top categories to shop the latest and greatest selections.",
+            "heading": "FEATURED",
+            "description": "Sweet Basil Plant",
             "promo_alignment": "left",
             "image": "shopify://shop_images/Frame_427320038.png",
             "effect_opacity": 0.2,
@@ -82,13 +82,13 @@
             "button_link": "",
             "show_promo_2": true,
             "color_scheme_2": "",
-            "heading_2": "Shop by Category",
-            "description_2": "Easily explore our wide range of products, from trending items to classic favorites.",
+            "heading_2": "Ficus Lyrata in Box Black",
+            "description_2": "",
             "promo_alignment_2": "right",
             "image_2": "shopify://shop_images/Frame_427320039.png",
             "effect_opacity_2": 0.2,
-            "button_label_2": "Start Shopping",
-            "button_link_2": ""
+            "button_label_2": "View All",
+            "button_link_2": "#"
           }
         }
       },
