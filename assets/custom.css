@@ -348,7 +348,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     min-width:0 !important;
     display:block !important;
     border-right:1px solid #d9d9d9;
-    padding-right:20px;
+    padding-right:16px;
 }
 
 /* REMOVE LAST BORDER */
