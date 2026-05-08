@@ -58,6 +58,18 @@
 				</div>
 
 
+				{% if section.settings.announcement_icon != blank %}
+					<div class="announcement-main-icon">
+					{{
+						section.settings.announcement_icon
+						| image_url: width: 40
+						| image_tag:
+						loading: 'lazy',
+						class: 'announcement-upload-icon'
+					}}
+					</div>
+				{% endif %}
+
 				<div class="swiper announcement-js-{{ section.id }}">
 					<div class="swiper-wrapper announcement-bar__slide-box">
 						{% for block in section.blocks %}
