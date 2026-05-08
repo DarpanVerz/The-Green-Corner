@@ -65,7 +65,8 @@
 								{%- when 'slide' -%}
 									{%- if block.settings.text != blank -%}
 										<div class="announcement-bar__message swiper-slide">
-											{%- if block.settings.image != blank -%}
+											<div class="announcement-bar__text small-text">
+												{%- if block.settings.image != blank -%}
 												<figure class="announcement-bar__image">
 													{{
 														block.settings.image
@@ -76,7 +77,6 @@
 													}}
 												</figure>
 											{%- endif -%}
-											<div class="announcement-bar__text small-text">
 												{{ block.settings.text }}
 											</div>
 										</div>
