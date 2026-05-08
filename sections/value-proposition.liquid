@@ -147,7 +147,7 @@
 
 .vp-item p {
   font-size: 16px;
-  color: ##95959;
+  color: #595959;
 }
 
 .vp-image {
@@ -173,33 +173,127 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 1024px) {
+/* =========================
+   TABLET VIEW
+========================= */
+@media screen and (max-width: 1024px) {
+
+  .vp-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+
   .vp-content {
+    display: flex;
     flex-direction: column;
+    gap: 25px;
   }
 
   .vp-items {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .vp-items.left,
+  .vp-items.right {
+    text-align: center;
+  }
+
+  .vp-items.left .icon,
+  .vp-items.right .icon {
+    justify-content: center;
+    margin: 0 auto 15px;
+  }
+
+  .vp-item {
+    margin-bottom: 0;
   }
 
   .vp-image {
     width: 70%;
-  }
-}
-
-@media (max-width: 768px) {
-  .vp-items {
-    flex-direction: column;
+    margin: 0 auto;
+    order: 3;
   }
 
   .vp-title {
-    font-size: 28px;
+    font-size: 40px;
+  }
+}
+
+
+/* =========================
+   MOBILE VIEW
+========================= */
+@media screen and (max-width: 767px) {
+
+  .value-proposition {
+    padding: 40px 0;
+  }
+
+  .vp-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .vp-subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+
+  .vp-title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .vp-desc {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .vp-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vp-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vp-items.left,
+  .vp-items.right {
+    text-align: center;
+  }
+
+  .vp-items.left .icon,
+  .vp-items.right .icon {
+    justify-content: center;
+    margin: 0 auto 15px;
+  }
+
+  .vp-item h4 {
+    font-size: 20px;
+  }
+
+  .vp-item p {
+    font-size: 15px;
+    line-height: 24px;
   }
 
   .vp-image {
     width: 100%;
+    margin-top: 20px;
+    order: 3;
+  }
+
+  .bg-shape {
+    height: 75%;
   }
 }
 </style>
