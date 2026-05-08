@@ -155,7 +155,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 /******************** Section Layout *********************/
 .custom-collection-section {
-  padding: 80px 0;
+  padding: 0px 0 80px;
 }
 
 .custom-collection-section .section-header {
