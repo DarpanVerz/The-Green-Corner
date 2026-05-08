@@ -37,6 +37,7 @@
     "social_instagram_link": "#",
     "social_tiktok_link": "#",
     "social_youtube_link": "#",
+    "quickview_button_quick_buy": true,
     "show_on_mobile": false,
     "enable_search_modal": true,
     "search_collection_list": [],
