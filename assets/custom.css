@@ -343,8 +343,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 .header .header-mega-menu__list-wrapper {
     display: flex;
     flex-direction: column;
-    padding-right: 1.4rem;
-    border-right:inherit;
+    padding-right: 2.4rem;
 }
 
 /* REMOVE OLD FLEX */
@@ -418,8 +417,8 @@ h1, h2, { font-family: 'didotregular' !important; }
 /* MENU LINK */
 .mega-menu-list li a{
     text-decoration:none;
-    color:#595959 !important;
-    font-size:14px;
+    color:#222;
+    font-size:16px;
     line-height:1.3;
     display:block;
 }
