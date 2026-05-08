@@ -14,17 +14,25 @@
     "announcement_bar_NPRBDn": {
       "type": "announcement-bar",
       "blocks": {
-        "social_links_jGwVfJ": {
+        "slide_4PQbf6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/notification-icon.png",
+            "text": "<p>Use this space for a store update or special offer</p>"
+          }
+        },
+        "social_links_iGAXeA": {
           "type": "social-links",
           "settings": {
             "button_label": "Follow Us",
-            "button_link": "#",
-            "icon_social": "none"
+            "button_link": "",
+            "icon_social": "instagram"
           }
         }
       },
       "block_order": [
-        "social_links_jGwVfJ"
+        "slide_4PQbf6",
+        "social_links_iGAXeA"
       ],
       "name": "t:sections.announcement-bar.name",
       "settings": {
