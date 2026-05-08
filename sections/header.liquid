@@ -406,7 +406,7 @@
 
 						{% comment %} search start {% endcomment %}
 							{%- if section.settings.enable_search -%}
-								<div class="header__search">
+								<div class="header__search sss">
 									<div class="header__details">
 										<a href="{{ routes.search_url }}" class="header__icon header__icon--search focus-inset{% if settings.enable_search_modal and request.page_type != 'search' %} search-modal-trigger{% endif %}" title="{{ 'general.search.search' | t }}" aria-label="{{ 'general.search.search' | t }}">
 											<span>
