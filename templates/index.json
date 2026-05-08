@@ -95,7 +95,9 @@
         "heading_T3BNtr": {
           "type": "heading",
           "settings": {
-            "heading": "The Home of Local Plant Enthusiasts.From Soil to Leaves, Everything You Need to Grow Beautifully,We’ve Got You Covered. Your Corner forGreener Living.",
+            "heading": "<p>&lt;span&gt;The Home &lt;/span&gt;of Local Plant Enthusiasts.<br/>From Soil to Leaves, Everything You Need to Grow Beautifully,<br/>We’ve Got You Covered. Your Corner for<br/>Greener Living.</p>",
+            "text_color": "#111111",
+            "span_color": "#b6d63a",
             "heading_size": "h2",
             "subheading_tag": "h2"
           }
