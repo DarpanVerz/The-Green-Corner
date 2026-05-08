@@ -44,14 +44,15 @@
     margin: 0 auto;
     color: {{ block.settings.text_color }};
   }
+
 .custom-title-{{ block.id }},
 .custom-title-{{ block.id }} * {
   color: {{ block.settings.text_color }} !important;
 }
 
-  .custom-title-{{ block.id }} span {
-    color: {{ block.settings.span_color }};
-  }
+ .custom-title-{{ block.id }} span {
+  color: {{ block.settings.span_color }} !important;
+}
 
   @media screen and (max-width: 991px) {
     .custom-title-{{ block.id }} {
