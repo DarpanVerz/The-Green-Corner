@@ -171,6 +171,8 @@ h1, h2, { font-family: 'didotregular' !important; }
     width: 100%;
 }
 
+.header .list-menu--inline > li.list-menu-has-child > .header__menu-item::after { display:none; }
+
 /********************** home-page ********************/
 
 .slideshow__swiper {
