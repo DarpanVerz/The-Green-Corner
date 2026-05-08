@@ -76,7 +76,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 /**************** Header ****************/
 
 .icon-cart { position:relative; top:5px; }
-
+.header__account { position: relative; top: 5px; left: 5px; }
 
 .menu-inline {
   display: flex;
