@@ -29,51 +29,114 @@
 		<div class="container">
 			<div class="header-mega-menu__wrapper">
 
-<div class="header-mega-menu__lists">
+				<div class="header-mega-menu__lists">
+					{% if block.settings.menu_primary != blank %}
+						<div class="header-mega-menu__list-wrapper">
+							{% if block.settings.primary_heading != blank %}
+								<div class="subtitle">{{ block.settings.primary_heading }}</div>
+							{% endif %}
+							<ul class="mega-menu-list list-unstyled extra-large-font">
+								{% for menu_link in block.settings.menu_primary.links %}
+									<li data-hover-opacity="30">
+										<a
+											href="{{ menu_link.url }}"
+											{% if menu_link.current %}
+												aria-current="page"
+											{% endif %}
+										>
+											{{ menu_link.title | escape }}
+										</a>
+										<ul
+											class="mega-menu__submenu list-menu--disclosure list-menu motion-reduce color-background-1 list-unstyled"
+											tabindex="-1"
+										>
+											{%- for grandchildlink in menu_link.links -%}
+												<li data-hover-opacity="31">
+													<a
+														href="{{ grandchildlink.url }}"
+														{% if grandchildlink.type == 'http_link'
+															and settings.open_new_tab
+														%}
+															target="_blank"
+														{% endif %}
+														class="header__menu-item h5 medium-font list-menu__item focus-inset{% if grandchildlink.current %} header__menu-item--active{% endif %}"
+														{% if grandchildlink.current %}
+															aria-current="page"
+														{% endif %}
+													>
+														<span>
+															{{ grandchildlink.title | escape }}
+														</span>
+													</a>
+												</li>
+											{%- endfor -%}
+										</ul>
+									</li>
+								{% endfor %}
+							</ul>
+							{% render 'button',
+								btn_label: block.settings.primary_button_label,
+								btn_link: block.settings.primary_button_link,
+								btn_style: 'simple'
+							%}
+						</div>
+					{% endif %}
+					{% if block.settings.menu_secondary != blank %}
+						<div class="header-mega-menu__list-wrapper">
+							{% if block.settings.secondary_heading != blank %}
+								<div class="subtitle">
+									{{ block.settings.secondary_heading }}
+								</div>
+							{% endif %}
+							<ul class="mega-menu-list list-unstyled extra-large-font">
+								{% for menu_link in block.settings.menu_secondary.links %}
+									<li data-hover-opacity="40">
+										<a
+											href="{{ menu_link.url }}"
+											{% if menu_link.current %}
+												aria-current="page"
+											{% endif %}
+										>
+											{{ menu_link.title | escape }}
+										</a>
+										<ul
+											class="mega-menu__submenu list-menu--disclosure list-menu motion-reduce color-background-1 list-unstyled"
+											tabindex="-1"
+										>
+											{%- for grandchildlink in menu_link.links -%}
+												<li data-hover-opacity="31">
+													<a
+														href="{{ grandchildlink.url }}"
+														{% if grandchildlink.type == 'http_link'
+															and settings.open_new_tab
+														%}
+															target="_blank"
+														{% endif %}
+														class="header__menu-item h5 medium-font list-menu__item focus-inset{% if grandchildlink.current %} header__menu-item--active{% endif %}"
+														{% if grandchildlink.current %}
+															aria-current="page"
+														{% endif %}
+													>
+														<span>
+															{{ grandchildlink.title | escape }}
+														</span>
+													</a>
+												</li>
+											{%- endfor -%}
+										</ul>
+									</li>
+								{% endfor %}
+							</ul>
+							{% render 'button',
+								btn_label: block.settings.secondary_button_label,
+								btn_link: block.settings.secondary_button_link,
+								btn_style: 'simple'
+							%}
+						</div>
+					{% endif %}
+				</div>
 
-  {% assign menu_list = 
-    "primary,secondary,third,fourth,fifth" | split: "," %}
-
-  {% for item in menu_list %}
-
-    {% assign menu_key = 'menu_' | append: item %}
-    {% assign heading_key = item | append: '_heading' %}
-
-    {% assign menu_handle = block.settings[menu_key] %}
-    {% assign menu_heading = block.settings[heading_key] %}
-
-    {% if menu_handle != blank %}
-
-      <div class="header-mega-menu__list-wrapper">
-
-        {% if menu_heading != blank %}
-          <div class="subtitle">
-            {{ menu_heading }}
-          </div>
-        {% endif %}
-
-        <ul class="mega-menu-list list-unstyled">
-
-          {% for menu_link in menu_handle.links %}
-
-            <li>
-              <a href="{{ menu_link.url }}">
-                {{ menu_link.title }}
-              </a>
-            </li>
-
-          {% endfor %}
-
-        </ul>
-
-      </div>
-
-    {% endif %}
-
-  {% endfor %}
-
-</div>
-
+				
 				{% if block.settings.show_promo or block.settings.show_promo_2 %}
 					<div class="header-mega-menu__collection-list">
 						{% if block.settings.show_promo %}
