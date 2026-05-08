@@ -379,6 +379,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     height:180px;
     object-fit:cover;
     display:block;
+     height:170px;
 }
 
 /* MENU TITLE */
