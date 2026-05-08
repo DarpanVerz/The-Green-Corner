@@ -44,16 +44,20 @@ h1, h2, { font-family: 'didotregular' !important; }
     font-weight: 400;
 }
 
-.announcement-bar__message {
+.announcement-slider-wrap {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.announcement-bar__icon img,
-.announcement-icon {
-    width: 20px;
-    height: 20px;
+.announcement-main-icon {
+    display: flex;
+    align-items: center;
+}
+
+.announcement-upload-icon {
+    width: 18px;
+    height: 18px;
     object-fit: contain;
     display: block;
 }
