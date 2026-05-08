@@ -62,7 +62,7 @@
         "dd39ad99-d6ef-43f4-bd52-574c5c365c61": {
           "type": "mega_menu_collection",
           "settings": {
-            "menu_trigger": "",
+            "menu_trigger": "Plants",
             "menu_primary": "top-menu",
             "primary_heading": "Discover Top Trends",
             "primary_button_label": "Browse All",
