@@ -427,6 +427,14 @@
 							{%- endif -%}
 							{% comment %} search end {% endcomment %}
 
+						{% if section.settings.show_contact_button %}
+							<div class="header-contact-btn">
+								<a href="{{ section.settings.contact_button_link }}">
+								{{ section.settings.contact_button_text }}
+								</a>
+							</div>
+							{% endif %}
+
 						{% comment %} account start {% endcomment %}
 						{%- if shop.customer_accounts_enabled and section.settings.enable_account_btn -%}
 							{% render 'header-account' %}
