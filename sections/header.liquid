@@ -430,7 +430,12 @@
 						{% if section.settings.show_contact_button %}
 							<div class="header-contact-btn">
 								<a href="{{ section.settings.contact_button_link }}">
-								{{ section.settings.contact_button_text }}
+								<span class="contact-btn-text">
+									{{ section.settings.contact_button_text }}
+								</span>
+								<span class="contact-btn-icon">
+									{% render 'icon-phone' %}
+								</span>
 								</a>
 							</div>
 							{% endif %}
