@@ -34,12 +34,13 @@
 
 					{%- when 'heading' -%}
 						<{{ block.settings.subheading_tag }}
-							class="custom-title title--section {{ block.settings.heading_size }}"
-							{{ block.shopify_attributes }}
-						>
-							{{ block.settings.heading | raw }}
-						</{{ block.settings.subheading_tag }}>
+  class="custom-title"
+  {{ block.shopify_attributes }}
+>
+  {{ block.settings.heading }}
+</{{ block.settings.subheading_tag }}>
 					{%- when 'text' -%}
+
 						{%  liquid
 							assign text_horizontal = block.settings.text_horizontal
 							if html_dir == "rtl"
