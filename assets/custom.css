@@ -591,7 +591,6 @@ h1, h2, { font-family: 'didotregular' !important; }
   align-items: flex-start;
   margin-bottom: 40px;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .custom-collection-section .subtitle {
