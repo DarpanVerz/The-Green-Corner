@@ -64,11 +64,11 @@
           "settings": {
             "menu_trigger": "Plants",
             "menu_primary": "top-menu",
-            "primary_heading": "Discover Top Trends",
+            "primary_heading": "Popular",
             "primary_button_label": "Browse All",
             "primary_button_link": "",
             "menu_secondary": "sitemap",
-            "secondary_heading": "Seasonal Favorites",
+            "secondary_heading": "INDOOR PLANTS",
             "secondary_button_label": "View More",
             "secondary_button_link": "",
             "show_promo": true,
