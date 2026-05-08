@@ -44,8 +44,9 @@
     margin: 0 auto;
     color: {{ block.settings.text_color }};
   }
-  .custom-title-{{ block.id }} {
-  color: {{ block.settings.text_color }};
+.custom-title-{{ block.id }},
+.custom-title-{{ block.id }} * {
+  color: {{ block.settings.text_color }} !important;
 }
 
   .custom-title-{{ block.id }} span {
