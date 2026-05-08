@@ -1677,6 +1677,12 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 
+@media(max-width:767px){
+  .header-top__logo .header__heading-link img {
+    width: inherit;
+}
+}
+
 
 @media screen and (max-width: 989px) {
   .announcement-bar_menu {
