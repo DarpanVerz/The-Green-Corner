@@ -434,6 +434,10 @@ h1, h2, { font-family: 'didotregular' !important; }
     grid-row:1 !important;
 }
 
+.header-mega-menu__list-wrapper:last-child{
+    border-right:none;
+}
+
 /* DESKTOP ONLY */
 @media screen and (min-width:1200px){
 
