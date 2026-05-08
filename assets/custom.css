@@ -340,6 +340,13 @@ h1, h2, { font-family: 'didotregular' !important; }
     align-items:flex-start;
 }
 
+.header .header-mega-menu__list-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-right: .1rem solid rgb(var(--color-border));
+    padding-right: 2.4rem;
+}
+
 /* REMOVE OLD FLEX */
 .header-mega-menu__lists{
     display:contents !important;
