@@ -368,10 +368,12 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 /* IMAGE COLUMN */
 .header-mega-menu__collection-list{
-   width:100%;
-    display:flex;
+  grid-column:6 / 7;
+    width:100% !important;
+    max-width:100% !important;
+    display:flex !important;
     flex-direction:column;
-    gap:14px;
+    gap:12px;
 }
 
 /* IMAGE CARD */
@@ -384,9 +386,10 @@ h1, h2, { font-family: 'didotregular' !important; }
 /* IMAGE */
 .header-mega-menu__collection img{
     width:100%;
-    height:220px;
+    height:180px;
     object-fit:cover;
     display:block;
+     height:170px;
 }
 
 /* MENU TITLE */
