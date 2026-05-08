@@ -343,7 +343,6 @@ h1, h2, { font-family: 'didotregular' !important; }
 .header .header-mega-menu__list-wrapper {
     display: flex;
     flex-direction: column;
-    border-right: .1rem solid rgb(var(--color-border));
     padding-right: 2.4rem;
 }
 
@@ -358,7 +357,6 @@ h1, h2, { font-family: 'didotregular' !important; }
     max-width:100% !important;
     min-width:0 !important;
     display:block !important;
-    border-right:1px solid #d9d9d9;
     padding-right:16px;
 }
 
