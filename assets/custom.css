@@ -330,7 +330,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 /* MAIN WRAPPER */
 .header-mega-menu__wrapper{
     display:grid !important;
-    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-columns: 4fr 1.4fr;
     gap:40px;
     align-items:flex-start;
 }
