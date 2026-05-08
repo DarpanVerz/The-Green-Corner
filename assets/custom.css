@@ -433,6 +433,8 @@ h1, h2, { font-family: 'didotregular' !important; }
     }
 }
 
+.slideshow-slide__title .h1 {}
+
 
 /******************** custom collection slider *********************/
 
