@@ -460,6 +460,10 @@ h1, h2, { font-family: 'didotregular' !important; }
     line-height:1.3;
 }
 
+.header .header-mega-menu__list-wrapper {
+    border-right: inherit !important;
+}
+
 /* DESKTOP ONLY */
 @media screen and (min-width:1200px){
 
