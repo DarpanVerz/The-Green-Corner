@@ -1451,4 +1451,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     display: none;
   }
   .announcement-wrapper .announcement-wrapper_button { display:block; }
+  .announcement-main-icon {
+    top: 20px;
+}
 }
