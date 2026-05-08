@@ -331,8 +331,8 @@ h1, h2, { font-family: 'didotregular' !important; }
 /* MAIN WRAPPER */
 .header-mega-menu__wrapper{
     display:grid !important;
-    grid-template-columns: repeat(6, 1fr) !important;
-    gap:40px;
+    grid-template-columns:repeat(6,minmax(0,1fr));
+    gap:24px;
     align-items:flex-start;
 }
 
