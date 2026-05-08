@@ -427,11 +427,6 @@ h1, h2, { font-family: 'didotregular' !important; }
     line-height: 27px;
 }
 
-@media screen and (min-width: 750px) {
-    .slideshow .slideshow-slide__button-bottom {
-        bottom: 180px !important;
-    }
-}
 
 
 /******************** custom collection slider *********************/
