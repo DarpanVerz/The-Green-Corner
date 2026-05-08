@@ -449,6 +449,19 @@ h1, h2, { font-family: 'didotregular' !important; }
     align-items:flex-start;
 }
 
+/* LEFT MENU AREA */
+.header-mega-menu__lists{
+    display:grid !important;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:24px;
+}
+
+/* MENU COLUMN */
+.header-mega-menu__list-wrapper{
+    padding-right:18px;
+}
+
+
 .header-mega-menu__list-wrapper:last-child{
     border-right:none;
 }
