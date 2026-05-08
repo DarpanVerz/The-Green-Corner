@@ -338,10 +338,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 /* REMOVE OLD FLEX */
 .header-mega-menu__lists{
-    display:grid !important;
-    grid-template-columns:repeat(5,minmax(0,1fr));
-    gap:20px;
-    grid-column:1 / 6;
+    display:contents !important;
 }
 
 /* EACH MENU COLUMN */
@@ -361,10 +358,11 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 /* IMAGE COLUMN */
 .header-mega-menu__collection-list{
-    grid-column:6 / 7;
+    width:100% !important;
+    max-width:100% !important;
     display:flex !important;
     flex-direction:column;
-    gap:12px;
+    gap:20px;
 }
 
 /* IMAGE CARD */
