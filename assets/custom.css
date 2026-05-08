@@ -43,7 +43,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     font-weight: 400;
 }
 
-/*** Header ****/
+/**************** Header ****************/
 .menu-inline {
   display: flex;
   gap: 20px;
@@ -115,7 +115,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 
-/************ home-page ***********/
+/********************** home-page ********************/
 
 .slideshow__swiper {
     border-radius: 30px;
@@ -151,14 +151,48 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 /************ section1 ***********/
-.custom-title span {
-color:#A6CE39;
-}
+  .custom-title {
+    font-size: 72px;
+    line-height: 1.05;
+    font-weight: 400;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: {{ block.settings.text_color }};
+  }
+
+  .custom-title span {
+    color: {{ block.settings.span_color }};
+  }
+
+  /* Desktop */
+  @media screen and (max-width: 1440px) {
+    .custom-title {
+      font-size: 62px;
+    }
+  }
+
+  /* Tablet */
+  @media screen and (max-width: 991px) {
+    .custom-title {
+      font-size: 46px;
+      line-height: 1.15;
+    }
+  }
+
+  /* Mobile */
+  @media screen and (max-width: 767px) {
+    .custom-title {
+      font-size: 32px;
+      line-height: 1.2;
+      padding: 0 15px;
+    }
+  }
 
 
-/*** custom collection slider ***/
+/******************** custom collection slider *********************/
 
-/* ===== Section Layout ===== */
+/******************** Section Layout *********************/
 .custom-collection-section {
   padding: 80px 0;
 }
