@@ -37,7 +37,7 @@
 							class="custom-title"
 							{{ block.shopify_attributes }}
 							>
-							{{ block.settings.heading }}
+							{{ block.settings.heading | replace: '&lt;span&gt;', '<span>' | replace: '&lt;/span&gt;', '</span>' }}
 							</{{ block.settings.subheading_tag }}>
 					{%- when 'text' -%}
 
