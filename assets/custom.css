@@ -384,10 +384,9 @@ h1, h2, { font-family: 'didotregular' !important; }
 /* IMAGE */
 .header-mega-menu__collection img{
     width:100%;
-    height:180px;
+    height:220px;
     object-fit:cover;
     display:block;
-     height:170px;
 }
 
 /* MENU TITLE */
