@@ -311,8 +311,8 @@ h1, h2, { font-family: 'didotregular' !important; }
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 400;
     transition: all 0.3s ease;
 }
 
