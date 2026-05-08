@@ -327,7 +327,6 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 
 /*** Mega Menu ****/
-
 .header-mega-menu-container .container {
   padding:0px 40px 0 40px;
 }
@@ -443,8 +442,24 @@ h1, h2, { font-family: 'didotregular' !important; }
 /* VERY IMPORTANT */
 /* PREVENT WRAPPING */
 .header-mega-menu__wrapper > *{
-    grid-row:1 !important;
+     display:grid !important;
+    grid-template-columns: 4fr 1.4fr;
+    gap:40px;
+    align-items:flex-start;
 }
+
+/* LEFT MENU AREA */
+.header-mega-menu__lists{
+    display:grid !important;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:24px;
+}
+
+/* MENU COLUMN */
+.header-mega-menu__list-wrapper{
+    padding-right:18px;
+}
+
 
 .header-mega-menu__list-wrapper:last-child{
     border-right:none;
@@ -469,7 +484,6 @@ h1, h2, { font-family: 'didotregular' !important; }
     }
 
 }
-
 
 /*** contact us button ***/
 
