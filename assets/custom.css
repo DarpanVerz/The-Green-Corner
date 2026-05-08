@@ -355,6 +355,7 @@ h1, h2, { font-family: 'didotregular' !important; }
         align-items: center;
         justify-content: center;
         color: #1a1a1a;
+        margin-right:12px;
     }
 
 }
