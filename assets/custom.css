@@ -321,6 +321,15 @@ h1, h2, { font-family: 'didotregular' !important; }
     color: #fff;
 }
 
+.contact-btn-icon {
+    display: none;
+}
+
+.contact-btn-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
 /* Tablet + Mobile */
 @media screen and (max-width: 989px) {
 
