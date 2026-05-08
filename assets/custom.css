@@ -318,7 +318,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 .slideshow .slideshow-slide__button-bottom {
-    position: absolute;
+    position: absolute !important;
     bottom: 0;
 }
 
