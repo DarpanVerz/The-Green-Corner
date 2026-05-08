@@ -437,9 +437,6 @@ h1, h2, { font-family: 'didotregular' !important; }
 /******************** custom collection slider *********************/
 
 /******************** Section Layout *********************/
-.custom-collection-section {
-  padding: 0px 0 80px;
-}
 
 .custom-collection-section .section-header {
   display: flex;
