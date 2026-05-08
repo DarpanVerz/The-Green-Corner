@@ -358,6 +358,12 @@ h1, h2, { font-family: 'didotregular' !important; }
         margin-right:12px;
     }
 
+    .contact-btn-icon img {
+      width: 22px;
+      height: 22px;
+      display: block;
+  }
+
 }
 
 
