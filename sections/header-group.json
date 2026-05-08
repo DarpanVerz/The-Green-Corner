@@ -14,17 +14,16 @@
     "announcement_bar_NPRBDn": {
       "type": "announcement-bar",
       "blocks": {
-        "social_links_iGAXeA": {
-          "type": "social-links",
+        "slide_zDYyQ9": {
+          "type": "slide",
           "settings": {
-            "button_label": "Follow Us",
-            "button_link": "",
-            "icon_social": "instagram"
+            "image": "shopify://shop_images/notification-icon.png",
+            "text": "<p>Use this space for a store update or special offer</p>"
           }
         }
       },
       "block_order": [
-        "social_links_iGAXeA"
+        "slide_zDYyQ9"
       ],
       "name": "t:sections.announcement-bar.name",
       "settings": {
