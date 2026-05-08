@@ -44,7 +44,7 @@
         "is_hover_stop_autoplay": true,
         "slideshow_speed": 1.1,
         "slideshow_delay": 3,
-        "button_label_about": "Free Delivery above $150* on regular plants. Every $1 spent, you will earn 1 point.",
+        "button_label_about": "",
         "button_link_about": "#"
       }
     },
