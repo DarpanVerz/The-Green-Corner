@@ -136,11 +136,11 @@ h1, h2, { font-family: 'didotregular' !important; }
   width: 100%;
 }
 
-.header .list-menu--inline>li>.header__menu-item:hover {
+/* .header .list-menu--inline>li>.header__menu-item:hover {
   color: #056839;
   font-weight: 500;
   border-bottom:3px solid #056839;
-}
+} */
 
 /* Apply ONLY to items that are NOT inside submenu */
 .header .list-menu--inline > li > a.header__menu-item:not(.header__submenu a) {
@@ -149,6 +149,26 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 .header .list-menu--inline>li>.header__menu-item {
     padding: 3.1rem 1rem;
+}
+
+.header .list-menu--inline > li > .header__menu-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #056839;
+    transition: width 0.3s ease;
+}
+
+.header .list-menu--inline > li > .header__menu-item:hover {
+    color: #056839;
+    font-weight: 500;
+}
+
+.header .list-menu--inline > li > .header__menu-item:hover::after {
+    width: 100%;
 }
 
 /********************** home-page ********************/
