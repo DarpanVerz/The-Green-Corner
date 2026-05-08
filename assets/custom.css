@@ -443,7 +443,10 @@ h1, h2, { font-family: 'didotregular' !important; }
 /* VERY IMPORTANT */
 /* PREVENT WRAPPING */
 .header-mega-menu__wrapper > *{
-    grid-row:1 !important;
+     display:grid !important;
+    grid-template-columns: 4fr 1.4fr;
+    gap:40px;
+    align-items:flex-start;
 }
 
 .header-mega-menu__list-wrapper:last-child{
