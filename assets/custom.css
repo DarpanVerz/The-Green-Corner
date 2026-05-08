@@ -70,6 +70,8 @@ h1, h2, { font-family: 'didotregular' !important; }
     top: 10px;
 }
 
+.button--simple { padding-left:25px; }
+
 /**************** Header ****************/
 .menu-inline {
   display: flex;
