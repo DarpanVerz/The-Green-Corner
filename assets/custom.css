@@ -328,6 +328,10 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 /*** Mega Menu ****/
 
+.header-mega-menu-container .container {
+  margin:0px 15px 0px 15px;
+}
+
 /* MAIN WRAPPER */
 .header-mega-menu__wrapper{
     display:grid !important;
