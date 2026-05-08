@@ -343,7 +343,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 .header .header-mega-menu__list-wrapper {
     display: flex;
     flex-direction: column;
-    padding-right: 2.4rem;
+    padding-right: 1.4rem;
     border-right:inherit;
 }
 
