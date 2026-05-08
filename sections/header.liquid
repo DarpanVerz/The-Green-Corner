@@ -406,17 +406,27 @@
 
 						{% comment %} search start {% endcomment %}
 							{%- if section.settings.enable_search -%}
-								<div class="header__search">
-									<div class="header__details">
-										<a href="{{ routes.search_url }}" class="header__icon header__icon--search focus-inset{% if settings.enable_search_modal and request.page_type != 'search' %} search-modal-trigger{% endif %}" title="{{ 'general.search.search' | t }}" aria-label="{{ 'general.search.search' | t }}">
-											<span>
-												{% render 'icon-search', modal_toggle : true %}
-											</span>
-										</a>
-									</div>
-								</div>
+							<div class="header__search custom-search-box">
+							
+							<a href="{{ routes.search_url }}"
+								class="search-input-wrapper {% if settings.enable_search_modal and request.page_type != 'search' %}search-modal-trigger{% endif %}"
+								title="{{ 'general.search.search' | t }}"
+								aria-label="{{ 'general.search.search' | t }}">
+
+								<span class="search-placeholder">
+									Search for a plant, flower, tool...
+								</span>
+
+								<span class="search-icon">
+									{% render 'icon-search', modal_toggle: true %}
+								</span>
+
+							</a>
+
+							</div>
 							{%- endif -%}
-						{% comment %} search end {% endcomment %}
+							{% comment %} search end {% endcomment %}
+
 						{% comment %} account start {% endcomment %}
 						{%- if shop.customer_accounts_enabled and section.settings.enable_account_btn -%}
 							{% render 'header-account' %}
