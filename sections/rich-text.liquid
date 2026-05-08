@@ -33,13 +33,48 @@
 
 
 					{%- when 'heading' -%}
-						<{{ block.settings.subheading_tag }}
-							class="custom-title"
-							{{ block.shopify_attributes }}
-							>
-							{{ block.settings.heading | replace: '&lt;span&gt;', '<span>' | replace: '&lt;/span&gt;', '</span>' }}
-							</{{ block.settings.subheading_tag }}>
-					{%- when 'text' -%}
+
+<style>
+  .custom-title-{{ block.id }} {
+    font-size: 72px;
+    line-height: 1.05;
+    font-weight: 400;
+    text-align: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: {{ block.settings.text_color }};
+  }
+
+  .custom-title-{{ block.id }} span {
+    color: {{ block.settings.span_color }};
+  }
+
+  @media screen and (max-width: 991px) {
+    .custom-title-{{ block.id }} {
+      font-size: 46px;
+      line-height: 1.15;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .custom-title-{{ block.id }} {
+      font-size: 32px;
+      line-height: 1.2;
+      padding: 0 15px;
+    }
+  }
+</style>
+
+<{{ block.settings.subheading_tag }}
+  class="custom-title-{{ block.id }}"
+  {{ block.shopify_attributes }}
+>
+  {{ block.settings.heading 
+    | replace: '&lt;span&gt;', '<span>' 
+    | replace: '&lt;/span&gt;', '</span>' 
+  }}
+</{{ block.settings.subheading_tag }}>
+
 
 						{%  liquid
 							assign text_horizontal = block.settings.text_horizontal
