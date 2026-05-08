@@ -307,14 +307,13 @@ h1, h2, { font-family: 'didotregular' !important; }
 
 @media screen and (min-width: 1200px) {
     .slideshow-slide__text {
-        padding: var(--slideshow-bottom) 0;
         max-width: 49rem;
     }
 }
 
 @media screen and (min-width: 990px) {
     .slideshow .slideshow-slide__mext {
-        margin: 0 0 -200px 0;
+        margin: 0 0 -200px 0 !important;
     }
 }
 
