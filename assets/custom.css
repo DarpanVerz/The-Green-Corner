@@ -1267,9 +1267,6 @@ h1, .h1 {
 }
 
 @media screen and (max-width: 575px) {
-  .custom-plant-care-section {
-  padding: 0px 20px;
-}
 
   .plant-heading {
     font-size: 32px;
