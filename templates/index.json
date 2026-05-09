@@ -717,7 +717,7 @@
         "banner_link": "",
         "banner_description": "<p>Banner description</p>",
         "margin_top": "no-indent",
-        "margin_bottom": "l",
+        "margin_bottom": "xs",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
