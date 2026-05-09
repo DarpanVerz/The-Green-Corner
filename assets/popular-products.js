@@ -110,14 +110,17 @@
 						type: "progressbar",
 					},
 					breakpoints: {
-						576: {
+						 0: {
+							slidesPerView: 1,
+							spaceBetween: 15
+						},
+						768: {
 							slidesPerView: 2,
+							spaceBetween: 20
 						},
-						990: {
-							slidesPerView: 3,
-						},
-						1100: {
+						1024: {
 							slidesPerView: 4,
+							spaceBetween: 20
 						},
 					},
 					...autoplayParm,
