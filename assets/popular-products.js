@@ -117,7 +117,7 @@
 							slidesPerView: 3,
 						},
 						1100: {
-							slidesPerView: count,
+							slidesPerView: 4,
 						},
 					},
 					...autoplayParm,
