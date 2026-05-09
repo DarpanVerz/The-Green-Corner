@@ -218,12 +218,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const testimonialSlider = document.querySelector(".testimonial-slider");
 
-  if (!testimonialSlider) return;
-
-  // destroy if already initialized
-  if (testimonialSlider.swiper) {
-    testimonialSlider.swiper.destroy(true, true);
-  }
 
   new Swiper(".testimonial-slider", {
     slidesPerView: 3,
