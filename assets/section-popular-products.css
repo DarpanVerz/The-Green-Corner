@@ -202,9 +202,11 @@
 
 /** Product mouse over effect **/
 
+.card-wrapper { overflow:hidden; }
+
 .card-wrapper:before {
   content:'';
   position: absolute;
   background-color:rgba(5,104,57,0.9);
-  
+
 }
