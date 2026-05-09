@@ -2021,6 +2021,7 @@ fieldset.product-form__input .product-form__group-name-legend {
   overflow: hidden;
   border-radius: 32px;
   transition: all 0.4s ease;
+  min-height: 430px;
 }
 
 /* GREEN OVERLAY */
