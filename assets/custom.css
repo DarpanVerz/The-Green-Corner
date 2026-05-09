@@ -1424,6 +1424,9 @@ h1, .h1 {
 }
 
 
+.multicolumn .multicolumn-list__item:not(.hide_border):not(:last-child):before { background:none !important; }
+
+
 /*** faq-collapsible-content ****/
 
 .collapsible-content-wrapper {
