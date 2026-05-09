@@ -51,6 +51,15 @@ h1, h2, { font-family: 'didotregular' !important; }
   font-size: var(--subtitle-font-size)
 }
 
+.container-fluid {
+    width: 100%;
+    padding-right: var(--main-padding);
+    padding-left: var(--main-padding);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--container-width);
+}
+
 .slideshow-slide__title.h1 .slide-up-item { font-family: 'didotregular' !important;  } 
 
 .custom-btn::before {
@@ -690,26 +699,6 @@ h1, .h1 {
 
 /* ===== Card Design ===== */
 
-.collection-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-
-/* Tablet */
-@media (max-width: 991px) {
-  .collection-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-  .collection-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 
 .custom-collection-section .card {
   position: relative;
@@ -753,6 +742,26 @@ h1, .h1 {
     color: #fff;
     font-size: 30px;
     margin: 0 0 35px 0;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===== View Button ===== */
