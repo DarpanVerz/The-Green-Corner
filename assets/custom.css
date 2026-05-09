@@ -948,7 +948,11 @@ h1, .h1 {
 .new-arrivals .price-item {
     font-size: 17px;
 }
+
+
 /* ===== about-section ===== */
+
+
 .about-section {
   color: #2e7d32;
   font-size: 14px;
@@ -962,10 +966,8 @@ h1, .h1 {
   margin: 0 auto;
   gap: 40px;
 }
-.about-section .page-width {
-      padding: 0rem;
-    }
 
+.about-section .page-width { padding: 0rem; }
 
 .about-left,
 .about-right {
