@@ -843,9 +843,7 @@ h1, .h1 {
   }
 
   .custom-collection-section .left-section-header { width:100%; }
-
   .custom-collection-section .right-section-header { display:inline-block; width:100%; text-align:center; }
-
   .custom-collection-section .right-section-header .button { margin-top:20px; }
 
   .custom-collection-section .card img {
