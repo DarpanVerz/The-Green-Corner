@@ -1031,6 +1031,8 @@ h1, .h1 {
     grid-row: auto;
   }
 
+  .about-section::before, .about-section::after { display:none; }
+
 }
 
 /* ===== new-collection ===== */
