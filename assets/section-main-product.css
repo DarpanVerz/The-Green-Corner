@@ -2117,7 +2117,7 @@ fieldset.product-form__input .product-form__group-name-legend {
 }
 
 /* ADD TO CART BUTTON */
-.popular-products .hover-cart-btn {
+.popular-products .hover-cart-btn, .popular-products .hover-cart-btn span {
   background: #1d1d1d;
   color: #ffffff;
 }
