@@ -38,6 +38,7 @@
   --font-heading-family: 'didotregular';
   --heading-size:5rem;
   --subtitle-letter-spacing:3px;
+  --subtitle-font-size:1rem;
 }
 
 h1, h2, { font-family: 'didotregular' !important; }
