@@ -244,7 +244,17 @@
 </style>
 
 <script>
-new Swiper(".testimonial-slider", {
+document.addEventListener("DOMContentLoaded", function () {
+
+  const testimonialSlider = document.querySelector(".testimonial-slider");
+
+  if (!testimonialSlider) return;
+
+  if (testimonialSlider.swiper) {
+    testimonialSlider.swiper.destroy(true, true);
+  }
+
+  new Swiper(".testimonial-slider", {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: false,
@@ -266,6 +276,8 @@ new Swiper(".testimonial-slider", {
       slidesPerView: 3,
     }
   }
+});
+
 });
 </script>
 
