@@ -204,7 +204,7 @@
 
 .card-wrapper { overflow:hidden; }
 
-.card-wrapper:before {
+.card-wrapper:before:hover {
   content:'';
   position: absolute;
   background-color:rgba(5,104,57,0.9);
