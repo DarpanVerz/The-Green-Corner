@@ -1,7 +1,5 @@
 <section class="value-proposition">
   <div class="page-width">
-
-    <!-- Heading -->
     <div class="vp-header d-flex justify-space-between">
      <div> 
       <p class="vp-subtitle">{{ section.settings.subtitle }}</p>
@@ -14,7 +12,6 @@
 
     <div class="vp-content">
 
-      <!-- LEFT ITEMS -->
       <div class="vp-items left">
         {% for block in section.blocks %}
           {% if block.settings.position == 'left' %}
@@ -31,7 +28,6 @@
         {% endfor %}
       </div>
 
-      <!-- CENTER IMAGE -->
       <div class="vp-image">
         <div class="bg-shape"></div>
         {% if section.settings.main_image != blank %}
@@ -39,7 +35,6 @@
         {% endif %}
       </div>
 
-      <!-- RIGHT ITEMS -->
       <div class="vp-items right">
         {% for block in section.blocks %}
           {% if block.settings.position == 'right' %}
@@ -61,6 +56,7 @@
 </section>
 
 <style>
+  
 .value-proposition {
   padding: 0;
   text-align: center;
