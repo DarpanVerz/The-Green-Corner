@@ -179,6 +179,8 @@
   filter: brightness(0) invert(1);
 }
 
+.swiper-button-next svg path, .swiper-button-prev svg path { display:none !important; }
+
 /* Tablet */
 @media screen and (max-width: 991px) {
 
