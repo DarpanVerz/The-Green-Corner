@@ -1417,7 +1417,10 @@ h1, .h1 {
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 }
+}
 
+@media(max-width:991px) and (min-width:768px) {
+  .product-markers__banner__content { padding-left:25px; }
 }
 
 
