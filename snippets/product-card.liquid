@@ -68,6 +68,16 @@
 	class="product-card card-wrapper js-color-swatches-wrapper quickview{%- if settings.quickview_hover and settings.slider_on_hover == false -%}--hover{% endif %}"
 	data-product="{{ product_card_product.handle }}"
 >
+
+	<div class="custom-hover-buttons">
+  <a href="{{ product_card_product.url }}" class="hover-cart-btn">
+    Add to Cart
+  </a>
+  <a href="{{ product_card_product.url }}" class="hover-view-btn">
+    View Product
+  </a>
+</div>
+
 	<span class="visually-hidden">{{ product_card_product.title | escape }}</span>
 	<div class="card card--product" tabindex="-1">
 			{%- if product_card_product.featured_media -%}
