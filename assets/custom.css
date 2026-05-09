@@ -992,23 +992,18 @@ h1, .h1 {
   border-radius: 20px;
 }
 
-/* Responsive */
-
 @media (max-width: 768px) {
+
   .about-wrapper {
     flex-direction: column;
   }
 
-  .about-left {
+  .about-left,
+.about-right {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 
-  }
-  .about-right {
-    width: 100%;
-  }
-
-  .title {
-    font-size: 28px;
-  }
 
   .img-grid {
     grid-template-columns: 1fr;
