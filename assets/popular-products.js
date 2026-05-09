@@ -13,7 +13,7 @@
 			);
 			const buttonNext = section.querySelector(`#${wrapper.dataset.id} .popular-products-progressbar .swiper-button-next`);
 			const swiperSlide = section.querySelectorAll(".swiper-slide.popular-products__slide");
-			let count = 4.4;
+			let count = 4;
 
 			createOffsets();
 
@@ -64,7 +64,7 @@
 				const swiperParms = {
 					speed: speed,
 					keyboard: true,
-					slidesPerView: 1.4,
+					slidesPerView: 1,
 					spaceBetween: 16,
 					on: {
 						slideChange: function () {
