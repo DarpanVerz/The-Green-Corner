@@ -90,6 +90,10 @@ h1, h2, { font-family: 'didotregular' !important; }
     transform: translateY(-3px);
 }
 
+.common-button:hover::before {
+    left: 0;
+}
+
 .container-fluid {
     width: 100%;
     padding-right: var(--main-padding);
