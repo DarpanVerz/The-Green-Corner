@@ -857,6 +857,9 @@ h1, .h1 {
   .custom-collection-section .card {
     height: auto;
   }
+
+  .custom-collection-section .card .view-btn {}
+
 }
 
 /* ===== New Arrivals ===== */
