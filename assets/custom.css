@@ -736,47 +736,7 @@ h1, .h1 {
 
 /* ===== View Button ===== */
 
-.view-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 18px;
-  padding: 12px 18px 12px 28px;
-  background: #ffffff;
-  border-radius: 60px;
-  font-size: 22px;
-  font-weight: 400;
-  color: #111111;
-  position: relative;
-  transition: all 0.4s ease;
-}
 
-/* Arrow Circle */
-.view-btn::after {
-  content: "";
-  width: 78px;
-  height: 78px;
-  border-radius: 50%;
-  background-color: #111111;
-  background-image: url('{{ "arrow-icon.png" | asset_url }}');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 28px;
-  display: block;
-  flex-shrink: 0;
-  transition: all 0.4s ease;
-}
-
-/* Hover Effect */
-.card a:hover .view-btn {
-  background: #007a33;
-  color: #ffffff;
-}
-
-/* Arrow Hover */
-.card a:hover .view-btn::after {
-  background-color: #007a33;
-  transform: translateX(6px);
-}
 
 /* ===== Swiper Arrows ===== */
 .swiper-button-next,
