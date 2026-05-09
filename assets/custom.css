@@ -838,20 +838,6 @@ h1, .h1 {
   letter-spacing: 5px;
 }
 
-.title {
-    font-size: 51px;
-    line-height: 1.1;
-    margin: 20px 0;
-    color: #1A1A1A;
-}
-
-.desc {
-      font-size: 16px;
-    color: #595959;
-    margin-bottom: 50px;
-    line-height: 2.5rem;
-}
-
 .about-btn {
     background: #1b5e20;
     color: #fff;
