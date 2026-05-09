@@ -202,22 +202,39 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
+  const testimonialSlider = document.querySelector(".testimonial-slider");
+
+  if (!testimonialSlider) return;
+
+  // destroy if already initialized
+  if (testimonialSlider.swiper) {
+    testimonialSlider.swiper.destroy(true, true);
+  }
+
   new Swiper(".testimonial-slider", {
     slidesPerView: 3,
     spaceBetween: 30,
-    loop: true,
+    loop: false,
 
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".testimonial-next",
+      prevEl: ".testimonial-prev",
     },
 
     breakpoints: {
-      0: { slidesPerView: 1 },
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
     }
   });
+
 });
 </script>
 
