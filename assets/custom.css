@@ -324,15 +324,10 @@ h1, h2, { font-family: 'didotregular' !important; }
     bottom: 0 !important;
 }
 
-@media screen and (min-width: 1200px) {
-    .slideshow-slide__text {
-        max-width: 35rem !important;
-    }
-}
-
 @media screen and (min-width: 1360px) {
     .slideshow-slide__title {
         font-size: calc(var(--font-heading-h1-scale) * 6.6rem);
+        max-width:40rem;
     }
 }
 
