@@ -759,7 +759,7 @@ h1, .h1 {
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/arrow-icon.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px;
+  background-size: 16px;
   display: block;
   flex-shrink: 0;
   transition: all 0.4s ease;
