@@ -36,6 +36,7 @@
 
 :root {
   --font-heading-family: 'didotregular';
+  --heading-size:3rem;
 }
 
 h1, h2, { font-family: 'didotregular' !important; }
