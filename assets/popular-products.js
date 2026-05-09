@@ -87,7 +87,7 @@
 											element.style.transform = "translateX(0)";
 										} else {
 											element.style.transform =
-												"translateX(calc(40% + 1.6rem))";
+												"translateX(0)";
 										}
 									});
 								} else {
