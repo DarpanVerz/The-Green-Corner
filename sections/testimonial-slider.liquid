@@ -246,27 +246,28 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   new Swiper(".testimonial-slider", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: false,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: false,
+  watchOverflow: true,
 
-    navigation: {
-      nextEl: ".testimonial-next",
-      prevEl: ".testimonial-prev",
+  navigation: {
+    nextEl: ".testimonial-next",
+    prevEl: ".testimonial-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
-
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      }
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
     }
-  });
+  }
+});
 
 });
 </script>
