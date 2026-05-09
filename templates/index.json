@@ -168,20 +168,13 @@
           "settings": {
             "collection": "essentials"
           }
-        },
-        "collection_block_DeRA9g": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "flowers"
-          }
         }
       },
       "block_order": [
         "collection_block_qTg9Vf",
         "collection_block_bQVPdC",
         "collection_block_UGbN77",
-        "collection_block_BdPK7U",
-        "collection_block_DeRA9g"
+        "collection_block_BdPK7U"
       ],
       "name": "Custom Collection Slider",
       "settings": {
