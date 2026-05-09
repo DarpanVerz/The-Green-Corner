@@ -112,5 +112,5 @@
 .popular-products__container { margin:0px 50px !important; }
 
 .card-wrapper {
-    height: auto;
+    height: auto !important;
 }
