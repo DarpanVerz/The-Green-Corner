@@ -2100,6 +2100,8 @@ fieldset.product-form__input .product-form__group-name-legend {
   visibility: visible;
 }
 
+.popular-products .card-wrapper:hover .card__title { color:#fff; }
+
 /* BUTTON COMMON */
 .popular-products .custom-hover-buttons a {
   height: 56px;
