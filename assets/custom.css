@@ -993,6 +993,7 @@ h1, .h1 {
 }
 
 /* Responsive */
+
 @media (max-width: 768px) {
   .about-wrapper {
     flex-direction: column;
