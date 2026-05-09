@@ -94,7 +94,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     left: 0;
 }
 
-.product-card .card-information { bottom : -20px; }
+.product-card .card-information { bottom : -10px; }
 
 .container-fluid {
     width: 100%;
