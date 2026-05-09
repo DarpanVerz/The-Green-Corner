@@ -13,7 +13,7 @@
 			);
 			const buttonNext = section.querySelector(`#${wrapper.dataset.id} .popular-products-progressbar .swiper-button-next`);
 			const swiperSlide = section.querySelectorAll(".swiper-slide.popular-products__slide");
-			let count = 5;
+			let count = 4.4;
 
 			createOffsets();
 
@@ -26,8 +26,8 @@
 							.offsetWidth) /
 					2;
 
-				if (wrapper.dataset.count <= 5 && wrapper.dataset.count != 0) {
-					count = 5;
+				if (wrapper.dataset.count <= 4 && wrapper.dataset.count != 0) {
+					count = 4;
 
 					function changeMediaQueries(mediaQueries) {
 						if (mediaQueries.matches) {
@@ -64,7 +64,7 @@
 				const swiperParms = {
 					speed: speed,
 					keyboard: true,
-					slidesPerView: 1,
+					slidesPerView: 1.4,
 					spaceBetween: 16,
 					on: {
 						slideChange: function () {
@@ -110,17 +110,14 @@
 						type: "progressbar",
 					},
 					breakpoints: {
-						 0: {
-							slidesPerView: 1,
-							spaceBetween: 15
+						576: {
+							slidesPerView: 2.4,
 						},
-						768: {
-							slidesPerView: 2,
-							spaceBetween: 20
+						990: {
+							slidesPerView: 3.4,
 						},
-						1024: {
-							slidesPerView: 5,
-							spaceBetween: 20
+						1100: {
+							slidesPerView: count,
 						},
 					},
 					...autoplayParm,
