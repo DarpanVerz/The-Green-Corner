@@ -331,6 +331,12 @@ h1, h2, { font-family: 'didotregular' !important; }
     }
 }
 
+@media(max-width:767px){
+  .slideshow .slideshow-slide__button-bottom {
+    bottom: 45px !important;
+}
+}
+
 
 /*** Mega Menu ****/
 
