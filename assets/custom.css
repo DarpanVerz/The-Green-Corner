@@ -96,6 +96,8 @@ h1, h2, { font-family: 'didotregular' !important; }
     left: 0;
 }
 
+.about-btn { margin-top:25px; }
+
 .product-card .card-information { bottom : -10px; }
 
 .container-fluid {
