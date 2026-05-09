@@ -655,6 +655,8 @@ h1, .h1 {
     text-decoration: none;
     white-space: nowrap;
     text-transform: capitalize;
+    position: relative;
+    bottom: 10px;
 }
 
 /* ===== Card Design ===== */
