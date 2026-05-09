@@ -2101,7 +2101,7 @@ fieldset.product-form__input .product-form__group-name-legend {
 }
 
 /* BUTTON COMMON */
-.popular-products .custom-hover-buttons a, .popular-products .custom-hover-buttons {
+.popular-products .custom-hover-buttons a, .popular-products .custom-hover-buttons span {
   height: 56px;
   border-radius: 50px;
 
@@ -2117,7 +2117,7 @@ fieldset.product-form__input .product-form__group-name-legend {
 }
 
 /* ADD TO CART BUTTON */
-.popular-products .hover-cart-btn span {
+.popular-products .hover-cart-btn {
   background: #1d1d1d;
   color: #ffffff;
 }
