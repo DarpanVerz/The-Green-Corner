@@ -5,53 +5,63 @@
   <div class="container-fluid">
 
     <div class="section-header">
-    <div class="left-section-header">
-    <div class="heading">
-      {% if section.settings.subtitle != blank %}
-        <p class="subtitle">{{ section.settings.subtitle }}</p>
-      {% endif %}
-      {% if section.settings.title != blank %}
-        <h2>{{ section.settings.title }}</h2>
-      {% endif %}
-    </div>
-    </div>
-    <div class="right-section-header"> 
-    <div class="description">
-      {% if section.settings.description != blank %}
-        <p class="desc">{{ section.settings.description }}</p>
-      {% endif %}
-    </div>
-    <div class="button">
-      {% if section.settings.button_text != blank %}
-        <a href="{{ section.settings.button_link }}" class="browse-btn custom-btn">
-          {{ section.settings.button_text }}
-        </a>
-      {% endif %}
-    </div>
-    </div>
+
+      <div class="left-section-header">
+        <div class="heading">
+
+          {% if section.settings.subtitle != blank %}
+            <p class="subtitle">{{ section.settings.subtitle }}</p>
+          {% endif %}
+
+          {% if section.settings.title != blank %}
+            <h2>{{ section.settings.title }}</h2>
+          {% endif %}
+
+        </div>
+      </div>
+
+      <div class="right-section-header">
+
+        <div class="description">
+          {% if section.settings.description != blank %}
+            <p class="desc">{{ section.settings.description }}</p>
+          {% endif %}
+        </div>
+
+        <div class="button">
+          {% if section.settings.button_text != blank %}
+            <a href="{{ section.settings.button_link }}" class="browse-btn custom-btn">
+              {{ section.settings.button_text }}
+            </a>
+          {% endif %}
+        </div>
+
+      </div>
 
     </div>
 
-    {% assign block_count = section.blocks.size %}
+    <!-- Collection Grid -->
+    <div class="collection-grid">
 
-    <!-- Slider / Grid -->
-    <div class="{% if block_count > 4 %}swiper mySwiper-{{ section.id }}{% endif %}">
-      
-      <div class="{% if block_count > 4 %}swiper-wrapper{% else %}grid-layout{% endif %}">
+      {% for block in section.blocks limit: 4 %}
+        {% assign collection = block.settings.collection %}
 
-        {% for block in section.blocks %}
-          {% assign collection = block.settings.collection %}
+        {% if collection %}
+          <div class="grid-item">
 
-          {% if collection %}
-          <div class="{% if block_count > 4 %}swiper-slide{% else %}grid-item{% endif %}">
-            
             <div class="card">
               <a href="{{ collection.url }}">
-                
+
                 {% if collection.image %}
-                  <img src="{{ collection.image | image_url: width: 600 }}" alt="{{ collection.title }}">
+                  <img
+                    src="{{ collection.image | image_url: width: 600 }}"
+                    alt="{{ collection.title }}"
+                  >
                 {% else %}
-                  <img src="{{ collection.products.first.featured_image | image_url: width: 600 }}" alt="{{ collection.title }}">
+                  <img
+                    src="{{ collection.products.first.featured_image | image_url: width: 600 }}"
+                    alt="{{ collection.title }}"
+                  >
                 {% endif %}
 
                 <div class="card-content">
@@ -64,15 +74,8 @@
             </div>
 
           </div>
-          {% endif %}
-        {% endfor %}
-
-      </div>
-
-      {% if block_count > 4 %}
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      {% endif %}
+        {% endif %}
+      {% endfor %}
 
     </div>
 
