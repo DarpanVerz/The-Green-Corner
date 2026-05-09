@@ -85,6 +85,11 @@ h1, h2, { font-family: 'didotregular' !important; }
     z-index: -1;
 }
 
+.common-button:hover {
+    color: #000;
+    transform: translateY(-3px);
+}
+
 .container-fluid {
     width: 100%;
     padding-right: var(--main-padding);
