@@ -1489,7 +1489,6 @@ const productSlidersData = [];
 					},
 					1100: {
 						spaceBetween: 16,
-						slidesPerView: perRow,
 					},
 				},
 				...arrowsParm,
