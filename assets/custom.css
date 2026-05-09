@@ -1403,7 +1403,7 @@ h1, .h1 {
     padding: 0rem;
 }
 
-@media(){
+@media(max-width:767px){
   .new-collection .product-markers__banner__body { border-radius:40px; }
 }
 
