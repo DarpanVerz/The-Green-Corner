@@ -737,16 +737,18 @@ h1, .h1 {
 /* ===== View Button ===== */
 
 .view-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 18px;
-  padding: 12px 18px 12px 28px;
-  border-radius: 60px;
-  font-size: 22px;
-  font-weight: 400;
-  color: #111111;
-  position: relative;
-  transition: all 0.4s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 12px 18px 12px 28px;
+    border-radius: 60px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #111111;
+    position: relative;
+    transition: all 0.4s ease;
+    margin-left: -50px;
+    margin-bottom: -6px;
 }
 
 /* Arrow Circle */
