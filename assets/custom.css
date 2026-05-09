@@ -1403,6 +1403,10 @@ h1, .h1 {
     padding: 0rem;
 }
 
+@media(){
+  .new-collection .product-markers__banner__body { border-radius:40px; }
+}
+
 
 /*** faq-collapsible-content ****/
 
