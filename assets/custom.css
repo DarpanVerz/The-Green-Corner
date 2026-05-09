@@ -1403,7 +1403,7 @@ h1, .h1 {
     padding: 0rem;
 }
 
-@media(max-width:767px){
+@media(max-width:991px){
   .new-collection .product-markers__banner__body {
     gap: 0rem !important;
     padding: 3.5rem !important;
