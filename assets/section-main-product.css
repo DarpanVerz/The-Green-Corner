@@ -2083,7 +2083,7 @@ fieldset.product-form__input .product-form__group-name-legend {
   position: absolute;
   left: 20px;
   right: 20px;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 5;
   display: flex;
