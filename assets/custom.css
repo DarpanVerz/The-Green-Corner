@@ -1127,6 +1127,7 @@ h1, .h1 {
 .counters .multicolumn-card__info-title {
     font-size: 20px;
     font-weight: 600;
+    font-family: Montserrat, sans-serif; 
 }
 .counters .multicolumn_card-desc p {
     font-size: 16px !important;
