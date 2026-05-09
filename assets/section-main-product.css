@@ -2145,9 +2145,9 @@ fieldset.product-form__input .product-form__group-name-legend {
 }
 
 .popular-products button.custom-hover-buttons {
-  height: 56px;
-  border-radius: 50px;
-  display: flex;
+  height: 56px !important;
+  border-radius: 50px !important;
+  display: flex !important;
   align-items: center;
   justify-content: center;
   font-size: 18px;
