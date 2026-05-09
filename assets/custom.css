@@ -1404,7 +1404,14 @@ h1, .h1 {
 }
 
 @media(max-width:767px){
-  .new-collection .product-markers__banner__body { border-radius:40px; }
+  .new-collection .product-markers__banner__body {
+    gap: 0rem !important;
+    padding: 3.5rem !important;
+    background-color: #F6E3D4;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 40px;
+}
   .new-collection .product-markers__banner__img img {
     border-bottom-left-radius: 0;
     border-top-left-radius: 40px;
