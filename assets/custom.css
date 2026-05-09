@@ -1113,6 +1113,9 @@ h1, .h1 {
     border-radius: 10px;
 }
 .card-horizontal__title a { font-weight:500 !important; }
+.product-markers .card-horizontal__inner .media {
+    border-radius: 10px;
+}
 
 /* ===== counters ===== */
 
