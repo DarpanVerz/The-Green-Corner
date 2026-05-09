@@ -143,7 +143,6 @@
   display: none;
 }
 
-/* LEFT ARROW */
 .popular-products .swiper-button-prev {
   left: 5px;
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/left-slider-arrow.png');
@@ -152,7 +151,6 @@
   background-size: 22px;
 }
 
-/* RIGHT ARROW */
 .popular-products .swiper-button-next {
   right: 5px;
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/slider-arrow.png');
@@ -161,27 +159,22 @@
   background-size: 22px;
 }
 
-/* Hover Effect */
 .popular-products .swiper-button-prev:hover,
 .popular-products .swiper-button-next:hover {
   background-color: #000000;
 }
 
-/* Left Hover Arrow */
 .popular-products .swiper-button-prev:hover {
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/left-slider-arrow.png');
 }
 
-/* Right Hover Arrow */
 .popular-products .swiper-button-next:hover {
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/slider-arrow.png');
 }
 
 .popular-products .swiper-button-next svg path, .popular-products .swiper-button-prev svg path { display:none !important; }
 
-/* Tablet */
 @media screen and (max-width: 991px) {
-
   .popular-products .swiper-button-prev,
   .popular-products .swiper-button-next {
     width: 50px;
@@ -197,14 +190,11 @@
   }
 }
 
-/* Mobile */
 @media screen and (max-width: 767px) {
-
   .popular-products .swiper-button-prev,
   .popular-products .swiper-button-next {
     width: 42px;
     height: 42px;
     top: 50%;
   }
-
 }
