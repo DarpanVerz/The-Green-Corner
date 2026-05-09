@@ -1,151 +1,101 @@
 (function () {
-	const productSlider = () => {
-		function toBoolean(string) {
-			return string === "true" ? true : false;
-		}
 
-		const sections = document.querySelectorAll(".popular-products");
+  const productSlider = () => {
 
-		sections.forEach(function (section) {
-			const wrapper = section.querySelector(".popular-products-slider");
-			const productWrapper = section.querySelector(
-				".popular-products__wrapper"
-			);
-			const buttonNext = section.querySelector(`#${wrapper.dataset.id} .popular-products-progressbar .swiper-button-next`);
-			const swiperSlide = section.querySelectorAll(".swiper-slide.popular-products__slide");
-			let count = 4;
+    function toBoolean(string) {
+      return string === "true" ? true : false;
+    }
 
-			createOffsets();
+    const sections = document.querySelectorAll(".popular-products");
 
-			window.addEventListener("resize", createOffsets);
+    sections.forEach(function (section) {
 
-			function createOffsets() {
-				const offset =
-					(document.body.offsetWidth -
-						section.querySelector(".popular-products-progressbar")
-							.offsetWidth) /
-					2;
+      const wrapper = section.querySelector(".popular-products-slider");
 
-				if (wrapper.dataset.count <= 4 && wrapper.dataset.count != 0) {
-					count = 4;
+      const buttonNext = section.querySelector(".swiper-button-next");
+      const buttonPrev = section.querySelector(".swiper-button-prev");
 
-					function changeMediaQueries(mediaQueries) {
-						if (mediaQueries.matches) {
-							productWrapper.style.marginRight = 0;
-						} else {
-							productWrapper.style.marginRight = checkMobileOffset(offset) + "px";
-						}
-					}
+      const sectionId = wrapper.dataset.id;
 
-					var mediaQueries = window.matchMedia("(max-width: 1099px)");
-					changeMediaQueries(mediaQueries);
-					mediaQueries.addEventListener("change", function () {
-						changeMediaQueries(mediaQueries);
-					});
-				}
+      const speed = wrapper.dataset.speed * 1000;
+      const delay = wrapper.dataset.delay * 1000;
 
-				productWrapper.style.marginLeft = checkMobileOffset(offset) + "px";
+      const autoplay = toBoolean(wrapper.dataset.autoplay);
+      const stopAutoplay = toBoolean(wrapper.dataset.stopAutoplay);
 
-				const sectionId = wrapper.dataset.id;
-				const speed = wrapper.dataset.speed * 1000;
-				const delay = wrapper.dataset.delay * 1000;
-				const autoplay = toBoolean(wrapper.dataset.autoplay);
-				const stopAutoplay = toBoolean(wrapper.dataset.stopAutoplay);
-				let autoplayParm = {};
-				if (autoplay) {
-					autoplayParm = {
-						autoplay: {
-							delay: delay,
-							pauseOnMouseEnter: stopAutoplay,
-							disableOnInteraction: false,
-						},
-					};
-				}
-				const swiperParms = {
-					speed: speed,
-					keyboard: true,
-					slidesPerView: 1,
-					spaceBetween: 16,
-					on: {
-						slideChange: function () {
-							if (this.activeIndex === 0) {
-								productWrapper.style.marginLeft = checkMobileOffset(offset) + "px";
-								productWrapper.style.marginRight = 0 + "px";
-								productWrapper.style.transition = `margin 500ms`;
-								Array.from(swiperSlide).forEach((element) => {
-									element.style.transform = "translateX(0)";
-								});
-							} else {
-								if (this.activeIndex > this.previousIndex) {
-									productWrapper.style.marginRight = checkMobileOffset(offset) + "px";
-									productWrapper.style.marginLeft = 0 + "px";
-									productWrapper.style.transition = `margin 500ms`;
-									Array.from(swiperSlide).forEach((element) => {
-										if (
-											buttonNext.classList.contains("swiper-button-disabled")
-										) {
-											element.style.transform = "translateX(0)";
-										} else {
-											element.style.transform =
-												"translateX(0)";
-										}
-									});
-								} else {
-									productWrapper.style.marginLeft = checkMobileOffset(offset) + "px";
-									productWrapper.style.marginRight = 0 + "px";
-									productWrapper.style.transition = `margin 500ms`;
-									Array.from(swiperSlide).forEach((element) => {
-										element.style.transform = "translateX(0)";
-									});
-								}
-							}
-						},
-					},
-					navigation: {
-						nextEl: `#${sectionId} .popular-products-progressbar .swiper-button-next`,
-						prevEl: `#${sectionId} .popular-products-progressbar .swiper-button-prev`,
-					},
-					pagination: {
-						el: `#${sectionId} .swiper-pagination.popular-products-swiper-pagination`,
-						type: "progressbar",
-					},
-					breakpoints: {
-						0: {
-							slidesPerView: 1,
-							spaceBetween: 16,
-						},
-						576: {
-							slidesPerView: 2,
-							spaceBetween: 16,
-						},
-						990: {
-							slidesPerView: 3,
-							spaceBetween: 20,
-						},
-						1100: {
-							slidesPerView: 4,
-							spaceBetween: 20,
-						},
-						},
-					...autoplayParm,
-				};
-				const swiper = new Swiper(`#${sectionId} .popular-products__swiper.swiper`, swiperParms);
-			}
-		});
-	};
+      let autoplayParm = {};
 
-	function checkMobileOffset(offset) {
-		if (window.innerWidth <= 576 && offset > 20) {
-			offset = 20;
-		}
+      if (autoplay) {
+        autoplayParm = {
+          autoplay: {
+            delay: delay,
+            pauseOnMouseEnter: stopAutoplay,
+            disableOnInteraction: false,
+          },
+        };
+      }
 
-		return offset;
-	}
+      const swiperParms = {
 
-	document.addEventListener("DOMContentLoaded", function () {
-		productSlider();
-		document.addEventListener("shopify:section:load", function () {
-			productSlider();
-		});
-	});
+        speed: speed,
+
+        keyboard: true,
+
+        slidesPerView: 1,
+
+        spaceBetween: 16,
+
+        loop: false,
+
+        watchOverflow: true,
+
+        navigation: {
+          nextEl: buttonNext,
+          prevEl: buttonPrev,
+        },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+          },
+
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+
+          990: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+
+          1100: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+
+        ...autoplayParm,
+      };
+
+      new Swiper(
+        `#${sectionId} .popular-products__swiper.swiper`,
+        swiperParms
+      );
+
+    });
+
+  };
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    productSlider();
+
+    document.addEventListener("shopify:section:load", function () {
+      productSlider();
+    });
+
+  });
+
 })();
