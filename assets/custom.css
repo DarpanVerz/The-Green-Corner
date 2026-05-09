@@ -37,7 +37,7 @@
 :root {
   --font-heading-family: 'didotregular';
   --heading-size:5rem;
-  --subtitle-letter-spacing:3px;
+  --subtitle-letter-spacing:30%;
   --subtitle-font-size:1rem;
   --subtitle-color:#056839;
 }
