@@ -641,7 +641,6 @@ h1, .h1 {
 
 .custom-collection-section h2 {
   font-size: var(--heading-size);
-  font-weight: 500;
   margin: 0;
 }
 
