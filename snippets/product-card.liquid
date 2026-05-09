@@ -447,7 +447,7 @@
 												value="{{ product_card_product.selected_or_first_available_variant.id }}"
 												disabled
 											>
-											<button
+											{% comment %} <button
 												id="{{ product_form_id }}-submit"
 												type="submit"
 												class="card__title card__link--{{ settings.quickview_button_layout }} card-focused"
@@ -481,7 +481,7 @@
 														<circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
 													</svg>
 												</b>
-											</button>
+											</button> {% endcomment %}
 										{%- endform -%}
 									</product-form>
 								{%- endif -%}
