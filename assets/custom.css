@@ -975,12 +975,6 @@ h1, .h1 {
   flex: 0 0 50%;
   max-width: 50%;
 }
-.about-left .subtitle {
-  font-family: 'didotbold';font-size: 20px;
-  color: #056839;
-  font-family: 'didotbold';
-  letter-spacing: 5px;
-}
 
 .about-btn {
     background: #1b5e20;
