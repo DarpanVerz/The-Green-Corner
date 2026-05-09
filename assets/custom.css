@@ -858,7 +858,9 @@ h1, .h1 {
     height: auto;
   }
 
-  .custom-collection-section .card .view-btn {}
+  .custom-collection-section .card .view-btn {
+    gap: 15px;
+  }
 
 }
 
