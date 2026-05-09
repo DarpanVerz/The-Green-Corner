@@ -973,7 +973,7 @@ h1, .h1 {
   height:738px;
   position:absolute;
   left:0;
-  top:-165px;
+  bottom:-165px;
 }
 
 .about-section .about-left .heading h2 { font-size: var(--heading-size) }
