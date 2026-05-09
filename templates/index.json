@@ -214,7 +214,7 @@
         "show_color_swatch": true,
         "show_desc": false,
         "margin_top": "no-indent",
-        "margin_bottom": "m",
+        "margin_bottom": "s",
         "padding_top": "m",
         "padding_bottom": "l",
         "enable_border_top": false,
