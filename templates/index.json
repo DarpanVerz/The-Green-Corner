@@ -478,7 +478,7 @@
         "heading_tag": "h2",
         "description": "<p>Blooming Best Sellers for Your Garden</p>",
         "alignment": "center",
-        "autoplay": true,
+        "autoplay": false,
         "stop_autoplay": true,
         "slideshow_speed": 0.5,
         "slideshow_delay": 3,
