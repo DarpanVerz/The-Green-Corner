@@ -38,7 +38,7 @@
   --font-heading-family: 'didotregular';
   --heading-size:5rem;
   --subtitle-letter-spacing:30%;
-  --subtitle-font-size:1rem;
+  --subtitle-font-size:1.5rem;
   --subtitle-color:#056839;
 }
 
@@ -736,40 +736,7 @@ h1, .h1 {
 
 /* ===== View Button ===== */
 
-.view-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background: #000;
-  border-radius: 50%;
-  text-decoration: none;
-  color: #fff;
-  font-size: 18px;
-  transition: all 0.3s ease;
-  position: relative;
-  right: -35px;
-  top: -3px;
-}
 
-/* Hide text initially */
-.view-btn::after {
-  content: "→";
-}
-
-/* Hover effect */
-.card:hover .view-btn {
-  width: auto;
-  padding: 0 16px;
-  border-radius: 25px;
-}
-
-/* Replace arrow with text */
-.card:hover .view-btn::after {
-  content: "View All";
-  font-size: 14px;
-}
 
 /* ===== Swiper Arrows ===== */
 .swiper-button-next,
