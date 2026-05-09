@@ -952,8 +952,7 @@ h1, .h1 {
 
 /* ===== about-section ===== */
 
-.about-section .about-left .heading h2 {}
-
+.about-section .about-left .heading h2 { font-size: var(--heading-size) }
 
 .about-wrapper {
   display: flex;
