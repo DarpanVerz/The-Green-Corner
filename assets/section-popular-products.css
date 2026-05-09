@@ -63,8 +63,8 @@
   }
 }
 .popular-products .popular-products-progressbar .popular-products-buttons .swiper-button {
-  width: auto;
-  height: auto;
+  width: 40px;
+  height: 40px;
   display: flex;
   margin-bottom: 3.2rem;
 }
