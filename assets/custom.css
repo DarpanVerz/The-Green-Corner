@@ -603,6 +603,14 @@ h1, .h1 {
     max-width: 82% !important;
 }
 
+@media(max-width:767px){
+  .custom-title-heading_T3BNtr {
+    font-size: 35px;
+    line-height: 1.3;
+    margin-top: 2rem;
+}
+}
+
 
 /******************** custom collection slider *********************/
 
