@@ -2085,7 +2085,6 @@ fieldset.product-form__input .product-form__group-name-legend {
   top: 45%;
   transform: translateY(-50%);
   z-index: 5;
-
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -2102,7 +2101,7 @@ fieldset.product-form__input .product-form__group-name-legend {
 }
 
 /* BUTTON COMMON */
-.popular-products .custom-hover-buttons a {
+.popular-products .custom-hover-buttons a, .popular-products .custom-hover-buttons {
   height: 56px;
   border-radius: 50px;
 
