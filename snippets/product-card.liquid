@@ -413,12 +413,12 @@
 					<div
 						class="
 							card-information-item card-information-item-price
-							{% if settings.quickview_button_quick_buy
+							{% comment %} {% if settings.quickview_button_quick_buy
 								and product_card_product.selected_or_first_available_variant.available
 								and product_card_product.has_only_default_variant
 								or product_card_product.options.size == 1
 								and product_card_product.options[0] == settings.trigger_swatch
-							%} hide-price {% endif %}
+							%} hide-price {% endif %} {% endcomment %}
 						"
 					>
 						<div class="product-parameters">
