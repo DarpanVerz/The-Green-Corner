@@ -1093,8 +1093,9 @@ h1, .h1 {
 .new-collection .product-markers__banner__desc p {
     font-size: 15px;
     line-height: 25px;
-    border-bottom: 1px solid #595959;
-    color: #595959;
+    border-bottom: 1px solid #a9a9a9;
+    color : #595959;
+    padding-bottom: 15px;
 }
 .new-collection .product-markers .product-markers__banner .product-markers__banner__header {
     margin-bottom: 0;
