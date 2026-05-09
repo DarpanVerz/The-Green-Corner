@@ -204,5 +204,7 @@
 
 .card-wrapper:before {
   content:'';
+  position: absolute;
+  background-color:rgba(5,104,57,0.9);
   
 }
