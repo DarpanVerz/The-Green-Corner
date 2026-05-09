@@ -41,6 +41,10 @@
 
 h1, h2, { font-family: 'didotregular' !important; }
 
+.subtitle {
+  font-family: var('--font-heading-family')
+}
+
 .slideshow-slide__title.h1 .slide-up-item { font-family: 'didotregular' !important;  } 
 
 .custom-btn::before {
