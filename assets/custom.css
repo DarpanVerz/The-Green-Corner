@@ -686,7 +686,10 @@ h1, .h1 {
     white-space: nowrap;
     text-transform: capitalize;
     position: relative;
-    bottom: 10px;
+    display: inline-flex;
+    overflow:hidden;
+    transition: all 0.4s ease;
+    z-index:1;
 }
 
 /* ===== Card Design ===== */
