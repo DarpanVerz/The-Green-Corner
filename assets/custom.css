@@ -820,7 +820,9 @@ h1, .h1 {
 }
 
 /* ===== Responsive ===== */
+
 @media (max-width: 1024px) {
+
   .custom-collection-section h2 {
     font-size: 32px;
   }
@@ -828,6 +830,7 @@ h1, .h1 {
   .custom-collection-section .card {
     height: 350px;
   }
+  
 }
 
 @media (max-width: 768px) {
