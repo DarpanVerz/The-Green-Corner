@@ -2144,7 +2144,7 @@ fieldset.product-form__input .product-form__group-name-legend {
   color: rgba(255,255,255,0.6) !important;
 }
 
-.popular-products button.custom-hover-buttons {
+.popular-products button.hover-cart-btn {
   height: 56px !important;
   border-radius: 50px !important;
   display: flex !important;
