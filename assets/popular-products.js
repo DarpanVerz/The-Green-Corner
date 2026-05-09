@@ -13,7 +13,7 @@
 			);
 			const buttonNext = section.querySelector(`#${wrapper.dataset.id} .popular-products-progressbar .swiper-button-next`);
 			const swiperSlide = section.querySelectorAll(".swiper-slide.popular-products__slide");
-			let count = 4;
+			let count = 5;
 
 			createOffsets();
 
@@ -26,8 +26,8 @@
 							.offsetWidth) /
 					2;
 
-				if (wrapper.dataset.count <= 4 && wrapper.dataset.count != 0) {
-					count = 4;
+				if (wrapper.dataset.count <= 5 && wrapper.dataset.count != 0) {
+					count = 5;
 
 					function changeMediaQueries(mediaQueries) {
 						if (mediaQueries.matches) {
