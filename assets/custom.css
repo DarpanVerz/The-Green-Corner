@@ -954,10 +954,6 @@ h1, .h1 {
 
 .about-section {}
 
-.about-section {
-  color: #2e7d32;
-  font-size: 14px;
-}
 
 .about-wrapper {
   display: flex;
