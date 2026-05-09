@@ -965,8 +965,6 @@ h1, .h1 {
   gap: 40px;
 }
 
-.about-section .page-width { padding: 0rem; }
-
 .about-left,
 .about-right {
   flex: 0 0 50%;
@@ -1010,7 +1008,7 @@ h1, .h1 {
   .img-large {
     grid-row: auto;
   }
-  
+
 }
 
 /* ===== new-collection ===== */
