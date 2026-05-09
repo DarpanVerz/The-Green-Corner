@@ -5672,19 +5672,7 @@ details[open] > .header__account-modal {
 .products-slider .swiper:not(.swiper-initialized) .swiper-wrapper {
   gap: 2.4rem;
 }
-.products-slider .swiper:not(.swiper-initialized) .swiper-wrapper .swiper-slide {
-  flex: 0 0 100%;
-}
-@media screen and (min-width: 576px) {
-  .products-slider .swiper:not(.swiper-initialized) .swiper-wrapper .swiper-slide {
-    flex: 0 0 calc(50% - 1.2rem);
-  }
-}
-@media screen and (min-width: 1100px) {
-  .products-slider .swiper:not(.swiper-initialized) .swiper-wrapper .swiper-slide {
-    flex: 0 0 calc(100% / var(--slider-per-row) - (2.4rem - 2.4rem / var(--slider-per-row)));
-  }
-}
+
 .products-slider .swiper:not(.swiper-initialized) + .products-slider_navigation {
   display: none;
 }
