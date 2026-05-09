@@ -969,8 +969,8 @@ h1, .h1 {
 .about-section::after {
   content:'';
   background-image:url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/aboutus-icon-bottom.png');
-  width:221px;
-  height:738px;
+  width:386px;
+  height:310px;
   position:absolute;
   left:0;
   bottom:0;
