@@ -966,6 +966,16 @@ h1, .h1 {
   top:-165px;
 }
 
+.about-section::after {
+  content:'';
+  background-image:url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/aboutus-icon-top.png');
+  width:221px;
+  height:738px;
+  position:absolute;
+  left:0;
+  top:-165px;
+}
+
 .about-section .about-left .heading h2 { font-size: var(--heading-size) }
 
 .about-wrapper {
