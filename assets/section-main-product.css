@@ -2152,7 +2152,7 @@ fieldset.product-form__input .product-form__group-name-legend {
     right: 12px;
   }
 
-  .popular-products .custom-hover-buttons a {
+  .popular-products .custom-hover-buttons a, .popular-products .custom-hover-buttons {
     height: 48px;
     font-size: 16px;
   }
