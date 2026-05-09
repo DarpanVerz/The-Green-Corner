@@ -830,7 +830,7 @@ h1, .h1 {
   .custom-collection-section .card {
     height: 350px;
   }
-  
+
 }
 
 @media (max-width: 768px) {
@@ -864,6 +864,10 @@ h1, .h1 {
   .custom-collection-section .card .view-btn {
     gap: 15px;
   }
+
+  .custom-collection-section .desc {
+    margin: 0 auto;
+}
 
 }
 
