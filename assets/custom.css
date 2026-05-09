@@ -644,6 +644,7 @@ h1, .h1 {
   max-width: 400px;
   font-size: 14px;
   color: #666;
+  padding:0;
 }
 
 .browse-btn {
