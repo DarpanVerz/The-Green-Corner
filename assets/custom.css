@@ -842,6 +842,8 @@ h1, .h1 {
     text-align: center;
   }
 
+  .custom-collection-section .left-section-header { width:100%; }
+
   .custom-collection-section h2 {
     font-size: 26px;
   }
