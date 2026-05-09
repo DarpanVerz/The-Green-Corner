@@ -441,16 +441,6 @@ h1, .h1 {
      height:170px;
 }
 
-/* MENU TITLE */
-.subtitle{
-    font-size:11px;
-    letter-spacing:2px;
-    text-transform:uppercase;
-    margin-bottom:14px;
-    color:#6b7d63;
-    font-weight:600;
-    line-height:1.2;
-}
 
 /* MENU LIST */
 .mega-menu-list{
