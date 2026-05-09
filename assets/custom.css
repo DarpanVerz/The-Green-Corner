@@ -1112,7 +1112,7 @@ h1, .h1 {
 .new-collection .product-markers .card-horizontal__inner .media {
     border-radius: 10px;
 }
-.card-horizontal__title a { font-weight:500; }
+.card-horizontal__title a { font-weight:500 !important; }
 
 /* ===== counters ===== */
 
