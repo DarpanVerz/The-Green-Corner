@@ -1493,7 +1493,6 @@ h1, .h1 {
 }
 
 
-
 .collapsible-content-block__description {
   padding-left: 55px;
   padding-top: 0px;
@@ -1578,6 +1577,7 @@ h1, .h1 {
 }
 
 /*** cta-section ****/
+
 .image-banner-box {
     position: relative;
     overflow: hidden;
