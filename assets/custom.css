@@ -719,9 +719,9 @@ h1, .h1 {
 }
 
 /* Hover zoom */
-.custom-collection-section .card:hover img {
+/* .custom-collection-section .card:hover img {
   transform: scale(1.05);
-}
+} */
 
 /* Overlay gradient */
 /* .custom-collection-section .card::after {
@@ -777,7 +777,7 @@ h1, .h1 {
     gap: 5px;
     padding: 0 0 0 12px;
     border-radius: 60px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     position: relative;
     transition: all 0.4s ease;
