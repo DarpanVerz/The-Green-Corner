@@ -604,6 +604,10 @@ h1, .h1 {
 }
 
 @media(max-width:767px){
+  
+  .rich-text.rich-text--full-width .rich-text__wrapper {
+    max-width: 100% !important;
+}
   .custom-title-heading_T3BNtr {
     font-size: 35px;
     line-height: 1.3;
