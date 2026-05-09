@@ -17,7 +17,7 @@
 <div class="popular-products new-arrivals section-{{ section.id }}-padding {% if section.settings.enable_border_top %} section_border_top{% endif %}{% if section.settings.enable_border_bottom %} section_border_bottom{% endif %}">
 	{% render 'section-header', text_size: 'large', section_heading_tag: section.settings.heading_tag %}
 
-	<div class="container">
+	{% comment %} <div class="container">
 		<div class="popular-products-progressbar">
 			<div class="swiper-pagination popular-products-swiper-pagination"></div>
 			<div class="popular-products-buttons">
@@ -29,7 +29,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> {% endcomment %}
 
 	{% assign count = 0 %}
 	{% for product in product_list %}
