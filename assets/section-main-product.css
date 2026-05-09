@@ -2167,6 +2167,10 @@ fieldset.product-form__input .product-form__group-name-legend {
   cursor:pointer; 
 }
 
+.card__badge .color-badge {
+    color: #E94242;
+    font-weight: 600;
+}
 
 /* MOBILE */
 @media screen and (max-width: 767px) {
