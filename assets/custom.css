@@ -774,8 +774,8 @@ h1, .h1 {
 .view-btn {
     display: inline-flex;
     align-items: center;
-    gap: 18px;
-    padding: 12px 18px 12px 28px;
+    gap: 10px;
+    padding: 6px 10px 6px 28px;
     border-radius: 60px;
     font-size: 16px;
     font-weight: 400;
@@ -783,7 +783,7 @@ h1, .h1 {
     position: relative;
     transition: all 0.4s ease;
     margin-left: -50px;
-    margin-bottom: -6px;
+    margin-bottom: -14px;
 }
 
 /* Arrow Circle */
