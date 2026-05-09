@@ -848,6 +848,10 @@ h1, .h1 {
 
   .custom-collection-section .right-section-header .button { margin-top:20px; }
 
+  .custom-collection-section .card img {
+    height: auto;
+}
+
   .custom-collection-section h2 {
     font-size: 26px;
   }
