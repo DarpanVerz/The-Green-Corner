@@ -831,13 +831,15 @@ h1, .h1 {
 }
 
 @media (max-width: 768px) {
-  
+
   .custom-collection-section {
     padding: 50px 0;
   }
 
   .custom-collection-section .section-header {
     flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
 
   .custom-collection-section h2 {
