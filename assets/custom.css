@@ -58,7 +58,18 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 .common-button {
-  
+      background: #222;
+    color: #fff;
+    padding: 15px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
 }
 
 .container-fluid {
