@@ -2063,3 +2063,10 @@ h1, .h1 {
     font-size: 2.5rem;
   }
 }
+
+
+/*** New Arrivals ***/
+
+.new-arrivals .section-header__line .section-header__title-item {
+    max-width: 80rem;
+}
