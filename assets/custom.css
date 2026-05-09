@@ -887,11 +887,12 @@ h1, .h1 {
     border-radius: 34px;
     padding: 35px;
 }
+
 .new-arrivals .section-header__title {
-    font-size: 20px;
-    color: #056839;
+    font-size: var(--subtitle-font-size);
+    color: var(--subtitle-color);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: var(--subtitle-letter-spacing);
 }
 .new-arrivals .section-header__desc p {
     font-size: 50px;
