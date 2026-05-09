@@ -331,7 +331,7 @@
 }
 
 .btn-all-section { text-align:center; margin:50px auto 0 auto; }
-.btn-all {}
+.btn-all { background:#000; border-radius:50px; padding:5px 15px; }
 
 /* MOBILE */
 @media screen and (max-width: 767px) {
