@@ -99,6 +99,15 @@
 
 /** custom css **/
 
+.popular-products__swiper {
+  overflow: hidden;
+}
+
+.popular-products__wrapper {
+  overflow: hidden;
+}
+
+
 /* Main Swiper Wrapper */
 .popular-products__swiper {
   overflow: hidden;
