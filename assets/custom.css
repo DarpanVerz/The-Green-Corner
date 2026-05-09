@@ -600,8 +600,7 @@ h1, .h1 {
 /*** Rich Text ****/
 
 .rich-text.rich-text--full-width .rich-text__wrapper {
-    max-width: 82%;
-    margin: 0 auto;
+    max-width: 82% !important;
 }
 
 
