@@ -689,6 +689,28 @@ h1, .h1 {
 }
 
 /* ===== Card Design ===== */
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .collection-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .custom-collection-section .card {
   position: relative;
   overflow: hidden;
