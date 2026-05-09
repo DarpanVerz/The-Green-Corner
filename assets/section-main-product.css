@@ -2161,6 +2161,7 @@ fieldset.product-form__input .product-form__group-name-legend {
 
 .popular-products button.hover-cart-btn:hover { 
   background:#056839; 
+  cursor:pointer; 
 }
 
 
