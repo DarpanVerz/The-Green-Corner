@@ -621,7 +621,7 @@ h1, .h1 {
 .custom-collection-section .section-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   margin-bottom: 40px;
   gap: 20px;
 }
