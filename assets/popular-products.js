@@ -110,16 +110,23 @@
 						type: "progressbar",
 					},
 					breakpoints: {
+						0: {
+							slidesPerView: 1,
+							spaceBetween: 16,
+						},
 						576: {
-							slidesPerView: 2.4,
+							slidesPerView: 2,
+							spaceBetween: 16,
 						},
 						990: {
-							slidesPerView: 3.4,
+							slidesPerView: 3,
+							spaceBetween: 20,
 						},
 						1100: {
-							slidesPerView: count,
+							slidesPerView: 4,
+							spaceBetween: 20,
 						},
-					},
+						},
 					...autoplayParm,
 				};
 				const swiper = new Swiper(`#${sectionId} .popular-products__swiper.swiper`, swiperParms);
