@@ -756,7 +756,7 @@ h1, .h1 {
   height: 78px;
   border-radius: 50%;
   background-color: #111111;
-  background-image: url('{{ "arrow-icon.png" | asset_url }}');
+  background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/arrow-icon.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 28px;
