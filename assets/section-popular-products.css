@@ -106,3 +106,5 @@
 .popular-products__wrapper {
   overflow: hidden;
 }
+
+.popular-products__wrapper { margin:0 auto !important; }
