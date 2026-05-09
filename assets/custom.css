@@ -857,7 +857,7 @@ h1, .h1 {
   }
 
   .custom-collection-section .card {
-    height: 300px;
+    height: auto;
   }
 }
 
