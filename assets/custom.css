@@ -324,6 +324,11 @@ h1, h2, { font-family: 'didotregular' !important; }
     bottom: 0 !important;
 }
 
+@media screen and (min-width: 1200px) {
+    .slideshow-slide__text {
+        max-width: 40rem;
+    }
+}
 
 
 /*** Mega Menu ****/
