@@ -998,12 +998,10 @@ h1, .h1 {
     flex-direction: column;
   }
 
-  .about-left,
-.about-right {
-  flex: 0 0 50%;
-  max-width: 50%;
+.about-left, .about-right {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
-
 
   .img-grid {
     grid-template-columns: 1fr;
@@ -1012,6 +1010,7 @@ h1, .h1 {
   .img-large {
     grid-row: auto;
   }
+  
 }
 
 /* ===== new-collection ===== */
