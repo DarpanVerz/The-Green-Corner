@@ -2155,6 +2155,7 @@ fieldset.product-form__input .product-form__group-name-legend {
   text-decoration: none;
   transition: all 0.3s ease;
   border:none;
+  background:#272727;
 }
 
 /* MOBILE */
