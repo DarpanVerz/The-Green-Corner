@@ -217,3 +217,5 @@
   z-index:1;
   color:#fff;
 }
+
+.card-wrapper:hover .card__title a { color:#fff; }
