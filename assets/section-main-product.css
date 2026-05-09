@@ -2159,6 +2159,11 @@ fieldset.product-form__input .product-form__group-name-legend {
   width:95%;
 }
 
+.popular-products button.hover-cart-btn { 
+  background:#056839; 
+}
+
+
 /* MOBILE */
 @media screen and (max-width: 767px) {
 
