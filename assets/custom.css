@@ -831,6 +831,7 @@ h1, .h1 {
 }
 
 @media (max-width: 768px) {
+  
   .custom-collection-section {
     padding: 50px 0;
   }
