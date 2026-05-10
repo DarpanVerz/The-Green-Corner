@@ -1517,8 +1517,8 @@ h1, .h1 {
   width:952px;
   height:934px;
   position: absolute;
-  right:0;
-  top:0;
+  left:0;
+  bottom:0;
 }
 
 @media screen and (max-width: 768px) {
