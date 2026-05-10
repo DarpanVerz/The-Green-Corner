@@ -1503,7 +1503,9 @@ h1, .h1 {
 .faq-section { position:relative; }
 .faq-section:before {
   content:'';
-  background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/leafe-icon.png')
+  background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/leafe-icon.png');
+  width:325px;
+  height:841px;
 }
 
 @media screen and (max-width: 768px) {
