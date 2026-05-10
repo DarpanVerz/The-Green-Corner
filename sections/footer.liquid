@@ -293,9 +293,12 @@
       {% if block.settings.phone != blank %}
         <div class="footer-contact-item">
           <div class="footer-contact-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M3.654 1.328a.678.678 0 0 1 .737-.168l2.522 1.01c.329.132.547.455.547.81v2.26c0 .288-.116.564-.322.766l-1.272 1.272a11.72 11.72 0 0 0 5.456 5.456l1.272-1.272a1.08 1.08 0 0 1 .766-.322h2.26c.355 0 .678.218.81.547l1.01 2.522a.678.678 0 0 1-.168.737l-1.272 1.272a2.5 2.5 0 0 1-2.651.57c-2.82-.94-5.44-3.56-6.38-6.38a2.5 2.5 0 0 1 .57-2.651L3.654 1.328z"/>
-            </svg>
+            <img
+  src="{{ 'phone-icon.png' | asset_url }}"
+  alt="Phone Icon"
+  width="16"
+  height="16"
+>
           </div>
 
           <div class="footer-contact-text">
