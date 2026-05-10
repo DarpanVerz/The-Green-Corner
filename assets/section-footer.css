@@ -404,3 +404,46 @@ footer details[open] summary ~ * {
     transform: translateY(-1rem);
   }
 }
+
+/*** contact information css ***/
+
+.footer-block--contact {
+    max-width: 320px;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.footer-contact-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+}
+
+.footer-contact-text,
+.footer-contact-text a {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+.footer-contact-text a:hover {
+    color: #000;
+}
