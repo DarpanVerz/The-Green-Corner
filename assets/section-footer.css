@@ -463,6 +463,8 @@ footer details[open] summary ~ * {
     max-width: 100%;
 }
 
+.footer .footer-block__details-content .footer--button { font-size:16px; }
+
 @media screen and (max-width: 989px) {
     .footer__blocks-wrapper {
         grid-template-columns: repeat(2, 1fr);
