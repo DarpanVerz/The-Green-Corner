@@ -276,9 +276,12 @@
       {% if block.settings.address != blank %}
         <div class="footer-contact-item">
           <div class="footer-contact-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 0a5 5 0 0 0-5 5c0 3.25 5 11 5 11s5-7.75 5-11a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
-            </svg>
+           <img
+  src="{{ 'map-icon.png' | asset_url }}"
+  alt="Map Icon"
+  width="16"
+  height="16"
+>
           </div>
 
           <div class="footer-contact-text">
