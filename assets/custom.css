@@ -1523,6 +1523,23 @@ h1, .h1 {
   bottom: -210px;
 }
 
+@media(){
+  .faq-section:before {
+  content:'';
+  background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/leafe-icon.png');
+  width: 325px;
+  height: 841px;
+  position: absolute;
+  right: -38px;
+  top: -270px;
+}
+
+.faq-section:after {
+ display:none;
+}
+
+}
+
 @media screen and (max-width: 768px) {
 
   .collapsible-content-block__heading {
