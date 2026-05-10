@@ -33,6 +33,7 @@
   position: relative;
   cursor: pointer;
   transition: all var(--duration-default) ease;
+  width:100%;
 }
 .collapsible-content .collapsible-content-summery.active {
   padding-bottom: 0.8rem;
