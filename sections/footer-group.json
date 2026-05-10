@@ -37,12 +37,22 @@
             "menu": "useful-links",
             "mobile_menu_type": "dropdown"
           }
+        },
+        "contact_info_fYJVTt": {
+          "type": "contact_info",
+          "settings": {
+            "heading": "Contact Information",
+            "address": "3A Lor Ah Thia, 5679278",
+            "phone": "+65 8888 3634",
+            "email": "info@example.com"
+          }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
-        "footer-2"
+        "footer-2",
+        "contact_info_fYJVTt"
       ],
       "settings": {
         "color_scheme": "background-1",
