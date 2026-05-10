@@ -1504,11 +1504,11 @@ h1, .h1 {
 .faq-section:before {
   content:'';
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/leafe-icon.png');
-  width:325px;
-  height:841px;
+  width: 325px;
+  height: 841px;
   position: absolute;
-  right:0;
-  top:0;
+  right: -38px;
+  top: -270px;
 }
 
 .faq-section:after {
