@@ -1523,15 +1523,13 @@ h1, .h1 {
   bottom: -210px;
 }
 
-@media(){
+@media(max-width:767px){
   .faq-section:before {
-   display:none;
-}
-
-.faq-section:after {
- display:none;
-}
-
+    display:none;
+  }
+  .faq-section:after {
+  display:none;
+  }
 }
 
 @media screen and (max-width: 768px) {
