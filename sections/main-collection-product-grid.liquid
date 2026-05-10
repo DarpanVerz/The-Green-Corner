@@ -86,16 +86,35 @@
 		{% if section.settings.enable_filtering or section.settings.enable_sorting %}
 			
 			<div class="custom-sidebar">
+
+	<h3 class="sidebar-title">Category</h3>
+
+	<ul class="custom-category-menu">
+
+		<li>
+			<a href="/collections/all" class="{% if collection.handle == 'all' %}active{% endif %}">
+				All
+			</a>
+		</li>
+
+		{% for link in linklists.main-menu.links %}
+			
+			{% if link.type == 'collection_link' %}
 				
-	{% render 'facets',
-		results: collection,
-		enable_filtering: section.settings.enable_filtering,
-		enable_sorting: section.settings.enable_sorting,
-		filter_type: 'vertical',
-		image_filter_ratio: section.settings.image_filter_ratio,
-		image_filter_fit: section.settings.image_filter_fit,
-		image_filter_columns: section.settings.image_filter_columns
-	%}
+				<li>
+					<a 
+						href="{{ link.url }}"
+						class="{% if collection.url == link.url %}active{% endif %}"
+					>
+						{{ link.title }}
+					</a>
+				</li>
+
+			{% endif %}
+
+		{% endfor %}
+
+	</ul>
 
 </div>
 
