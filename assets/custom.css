@@ -1502,10 +1502,6 @@ h1, .h1 {
 
 @media screen and (max-width: 768px) {
 
-  .collapsible-content__title {
-    font-size: 42px;
-  }
-
   .collapsible-content-block__heading {
     font-size: 18px;
     padding-left: 55px;
