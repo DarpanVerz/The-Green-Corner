@@ -2072,10 +2072,8 @@ h1, .h1 {
 
 .collapsible-content__title-box { margin:0 !important; }
 
-@media screen and (min-width: 1600px){
 
 .collapsible-content-wrapper.custom-collapsible {
     margin: 0 140px !important;
 }
 
-}
