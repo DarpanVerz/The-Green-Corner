@@ -259,10 +259,71 @@
 										</div>
 									{% endif %}
 								</div>
-						{%- endcase -%}
-					{%- endfor -%}
+						
+								{%- when 'contact_info' -%}
+  <div
+    class="footer-block footer-block--contact"
+    {{ block.shopify_attributes }}
+  >
+    {% if block.settings.heading != blank %}
+      <h5 class="footer-block__heading">
+        {{ block.settings.heading }}
+      </h5>
+    {% endif %}
 
-					
+    <div class="footer-contact-info">
+
+      {% if block.settings.address != blank %}
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M8 0a5 5 0 0 0-5 5c0 3.25 5 11 5 11s5-7.75 5-11a5 5 0 0 0-5-5zm0 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+            </svg>
+          </div>
+
+          <div class="footer-contact-text">
+            {{ block.settings.address }}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if block.settings.phone != blank %}
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 1 .737-.168l2.522 1.01c.329.132.547.455.547.81v2.26c0 .288-.116.564-.322.766l-1.272 1.272a11.72 11.72 0 0 0 5.456 5.456l1.272-1.272a1.08 1.08 0 0 1 .766-.322h2.26c.355 0 .678.218.81.547l1.01 2.522a.678.678 0 0 1-.168.737l-1.272 1.272a2.5 2.5 0 0 1-2.651.57c-2.82-.94-5.44-3.56-6.38-6.38a2.5 2.5 0 0 1 .57-2.651L3.654 1.328z"/>
+            </svg>
+          </div>
+
+          <div class="footer-contact-text">
+            <a href="tel:{{ block.settings.phone | replace: ' ', '' }}">
+              {{ block.settings.phone }}
+            </a>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if block.settings.email != blank %}
+        <div class="footer-contact-item">
+          <div class="footer-contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-.5a.5.5 0 0 0-.5.5v.217l6.5 4.333 6.5-4.333V4a.5.5 0 0 0-.5-.5H2zm13 2.383-4.708 3.139L15 12.118V5.883zm-.034 7.617-5.555-3.704-1.134.756a1 1 0 0 1-1.11 0l-1.134-.756-5.555 3.704A.5.5 0 0 0 2 13.5h12a.5.5 0 0 0 .966-.5zM1 12.118l4.708-3.096L1 5.883v6.235z"/>
+            </svg>
+          </div>
+
+          <div class="footer-contact-text">
+            <a href="mailto:{{ block.settings.email }}">
+              {{ block.settings.email }}
+            </a>
+          </div>
+        </div>
+      {% endif %}
+
+    </div>
+  </div>
+						
+							{%- endcase -%}
+					{%- endfor -%}
 				</div>
 			</div>
 		{%- endif -%}
