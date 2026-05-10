@@ -557,3 +557,16 @@ h5.footer-block__heading {
     margin-left: 5px;
     position: relative;
     top: 4px; }
+
+    .footer-bottom-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-right img {
+    display: block;
+    height: auto;
+    border-radius: 3px;
+}
