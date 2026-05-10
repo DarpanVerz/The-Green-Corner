@@ -57,11 +57,12 @@
       "settings": {
         "color_scheme": "background-1",
         "color_scheme_bottom": "background-3",
-        "enable_language_selector": true,
+        "enable_language_selector": false,
         "enable_country_selector": true,
         "enable_follow_on_shop": false,
         "payment_enable": true,
         "show_policy": false,
+        "footer_bottom_text": "<p>Copyright © 2026 The Green Corner. All rights reserved. Web Excellence by Verz ▼</p>",
         "margin_top": "no-indent",
         "padding_top": "m",
         "padding_bottom": "m",
