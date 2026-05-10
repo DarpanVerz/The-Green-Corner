@@ -1,33 +1,23 @@
 
 <section class="testimonial-section">
   <div class="container-fluid">
-
-    <!-- Header -->
     <div class="ts-header">
       <p class="ts-subtitle">{{ section.settings.subtitle }}</p>
       <h2 class="ts-title">{{ section.settings.title }}</h2>
     </div>
-
-    <!-- Slider -->
   <div class="testimonial-slider swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
           <div class="swiper-slide">
             <div class="testimonial-card">
-
-              <!-- Stars -->
               <div class="stars">
                 {% for i in (1..block.settings.rating) %}
                   ★
                 {% endfor %}
               </div>
-
-              <!-- Content -->
               <p class="content">
                 "{{ block.settings.content }}"
               </p>
-
-              <!-- Profile -->
               <div class="profile">
                 {% if block.settings.image != blank %}
                   <img src="{{ block.settings.image | img_url: '100x100' }}" alt="">
@@ -37,17 +27,13 @@
                   <span>{{ block.settings.designation }}</span>
                 </div>
               </div>
-
             </div>
           </div>
         {% endfor %}
       </div>
-
-      <!-- Arrows -->
       <div class="swiper-button-prev testimonial-prev"></div>
       <div class="swiper-button-next testimonial-next"></div>
     </div>
-
   </div>
 </section>
 
