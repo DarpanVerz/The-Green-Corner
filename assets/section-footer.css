@@ -445,7 +445,8 @@ footer details[open] summary ~ * {
 }
 
 .footer-contact-text a:hover {
-    color: #000;
+    color:#056839; 
+    font-weight:600;
 }
 
 .footer__blocks-wrapper {
