@@ -34,6 +34,7 @@
     "slider_on_hover": false,
     "enable_vendor_link": true,
     "card_text_alignment": "left",
+    "type_color_swatch": "custom",
     "social_twitter_link": "",
     "social_facebook_link": "#",
     "social_instagram_link": "#",
