@@ -2070,5 +2070,9 @@ h1, .h1 {
     max-width: 80rem;
 }
 
-
 .collapsible-content__title-box { margin:0 !important; }
+
+
+.collapsible-content-wrapper.custom-collapsible {
+    margin: 0 140px;
+}
