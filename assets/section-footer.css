@@ -545,3 +545,7 @@ h5.footer-block__heading {
         grid-template-columns: 1fr;
     }
 }
+
+.footer__content-bottom {
+        padding: 1.8rem 0;
+}
