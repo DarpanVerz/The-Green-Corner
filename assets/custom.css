@@ -1446,7 +1446,7 @@ h1, .h1 {
     font-family: 'didotregular';
 }
 .collapsible-content-desc {
-    font-size: 48px;
+    font-size: var(--heading-size);
     color: #1A1A1A;
     font-family: 'didotregular';
   }
