@@ -312,9 +312,12 @@
       {% if block.settings.email != blank %}
         <div class="footer-contact-item">
           <div class="footer-contact-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-.5a.5.5 0 0 0-.5.5v.217l6.5 4.333 6.5-4.333V4a.5.5 0 0 0-.5-.5H2zm13 2.383-4.708 3.139L15 12.118V5.883zm-.034 7.617-5.555-3.704-1.134.756a1 1 0 0 1-1.11 0l-1.134-.756-5.555 3.704A.5.5 0 0 0 2 13.5h12a.5.5 0 0 0 .966-.5zM1 12.118l4.708-3.096L1 5.883v6.235z"/>
-            </svg>
+           <img
+			src="{{ 'email-icon.png' | asset_url }}"
+			alt="Email Icon"
+			width="16"
+			height="16"
+			>
           </div>
 
           <div class="footer-contact-text">
