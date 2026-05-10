@@ -37,24 +37,12 @@
             "menu": "useful-links",
             "mobile_menu_type": "dropdown"
           }
-        },
-        "footer-5": {
-          "type": "subscribe",
-          "disabled": true,
-          "settings": {
-            "newsletter_text": "",
-            "heading": "",
-            "button_label": "",
-            "button_style": "primary",
-            "newsletter_sub": ""
-          }
         }
       },
       "block_order": [
         "footer-0",
         "footer-1",
-        "footer-2",
-        "footer-5"
+        "footer-2"
       ],
       "settings": {
         "color_scheme": "background-1",
