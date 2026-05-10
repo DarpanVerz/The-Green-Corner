@@ -5,7 +5,10 @@
       <p class="ts-subtitle">{{ section.settings.subtitle }}</p>
       <h2 class="ts-title">{{ section.settings.title }}</h2>
     </div>
-  <div class="testimonial-slider swiper">
+
+
+<div class="testimonial-main"> 
+     <div class="testimonial-slider swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
           <div class="swiper-slide">
@@ -28,11 +31,12 @@
           </div>
         {% endfor %}
       </div>
-      <div class="swiper-button-prev testimonial-prev"></div>
-    <div class="swiper-button-next testimonial-next"></div>
+        <div class="swiper-button-prev testimonial-prev"></div>
+       <div class="swiper-button-next testimonial-next"></div>
     </div>
-    
+  
   </div>
+</div>
 </section>
 
 <style>
