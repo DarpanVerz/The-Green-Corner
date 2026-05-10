@@ -550,3 +550,4 @@ h5.footer-block__heading {
         padding: 1.8rem 0;
         background:#EF9FA2;
 }
+.footer-bottom-text { display:flex; }
