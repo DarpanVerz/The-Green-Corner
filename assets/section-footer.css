@@ -464,6 +464,9 @@ footer details[open] summary ~ * {
 }
 
 .footer .footer-block__details-content .footer--button { font-size:16px; color:#595959; }
+.footer .footer-block__details-content .footer--button:hover { color:#056839; }
+
+
 
 @media screen and (max-width: 989px) {
     .footer__blocks-wrapper {
