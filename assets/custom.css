@@ -1514,8 +1514,8 @@ h1, .h1 {
 .faq-section:after {
   content:'';
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/flower-icon2_f9afa8b1-6ce0-4f82-b5ac-33653a35f944.png');
-  width:375px;
-  height:368px;
+  width:250px;
+  height:245px;
   position: absolute;
   left:0;
   bottom:0;
