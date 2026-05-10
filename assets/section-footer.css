@@ -599,8 +599,14 @@ h5.footer-block__heading {
 }
 
 .footer__list-social .list-social__link svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    transition: all 0.3s ease;
+}
+
+.footer__list-social .list-social__link path {
+    fill: currentColor;
     transition: all 0.3s ease;
 }
 
@@ -609,10 +615,8 @@ h5.footer-block__heading {
     color: #fff;
 }
 
-.footer__list-social .list-social__link:hover svg {
-    fill: #fff;
-}
-
+.footer__list-social .list-social__link:hover svg,
 .footer__list-social .list-social__link:hover path {
     fill: #fff;
+    color: #fff;
 }
