@@ -19,11 +19,9 @@
             <div class="stars">
               {% for i in (1..block.settings.rating) %} ★ {% endfor %}
             </div>
-
             <p class="content">
               "{{ block.settings.content }}"
             </p>
-
             <div class="profile">
               {% if block.settings.image != blank %}
                 <img src="{{ block.settings.image | img_url: '100x100' }}" alt="">
