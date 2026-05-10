@@ -572,3 +572,47 @@ h5.footer-block__heading {
 }
 
 .footer__list-social { margin-top:25px; }
+
+.footer__list-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.footer__list-social .list-social__item {
+    list-style: none;
+}
+
+.footer__list-social .list-social__link {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #111;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.footer__list-social .list-social__link svg {
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s ease;
+}
+
+.footer__list-social .list-social__link:hover {
+    background: #3f6b4f;
+    color: #fff;
+}
+
+.footer__list-social .list-social__link:hover svg {
+    fill: #fff;
+}
+
+.footer__list-social .list-social__link:hover path {
+    fill: #fff;
+}
