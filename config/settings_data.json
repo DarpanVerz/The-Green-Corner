@@ -53,6 +53,7 @@
     "promo_alignment_2": "left",
     "predictive_search_show_clear_button": true,
     "cart_type": "drawer",
+    "show_back_to_top": true,
     "open_new_tab": false,
     "search_collection_card_list": [],
     "type_section_header_font": "cormorant_n4",
