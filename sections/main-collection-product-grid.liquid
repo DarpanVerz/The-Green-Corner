@@ -84,16 +84,21 @@
 			{%- if section.settings.enable_filtering
 				or section.settings.enable_sorting
 			-%}
-			
-				{% render 'facets',
-					results: collection,
-					enable_filtering: section.settings.enable_filtering,
-					enable_sorting: section.settings.enable_sorting,
-					filter_type: 'horizontal_united',
-					image_filter_ratio: section.settings.image_filter_ratio,
-          image_filter_fit: section.settings.image_filter_fit,
-          image_filter_columns: section.settings.image_filter_columns
-				%}
+
+				<div class="custom-collection-layout">
+
+	<div class="custom-sidebar">
+		{% render 'facets',
+			results: collection,
+			enable_filtering: section.settings.enable_filtering,
+			enable_sorting: section.settings.enable_sorting,
+			filter_type: 'vertical',
+			image_filter_ratio: section.settings.image_filter_ratio,
+      image_filter_fit: section.settings.image_filter_fit,
+      image_filter_columns: section.settings.image_filter_columns
+		%}
+	</div>
+
 			{%- endif -%}
 		{%- endif -%}
 
