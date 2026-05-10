@@ -146,7 +146,7 @@
 				<ul
 					id="products-grid"
 					data-id="{{ section.id }}"
-					class="dddd collection-product-list {% if section.settings.show_two_cards %} collection-product-list--2-mobile{% endif %}"
+					class="collection-product-list {% if section.settings.show_two_cards %} collection-product-list--2-mobile{% endif %}"
 				>
 					{% if is_dynamic_loading == false or grid_products.size > 0 %}
 						{%- for product in grid_products
