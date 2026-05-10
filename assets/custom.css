@@ -1500,6 +1500,9 @@ h1, .h1 {
   color: #1A1A1A !important;
 }
 
+.faq-section { position:relative; }
+
+
 @media screen and (max-width: 768px) {
 
   .collapsible-content-block__heading {
