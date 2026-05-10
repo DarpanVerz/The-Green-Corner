@@ -453,7 +453,7 @@
 		<div class="container">
 			<div class="footer__content-middle-container">
 
-				<div class="footer__content-middle-main">
+				{% comment %} <div class="footer__content-middle-main">
 					<div class="footer__content-middle-main-box">
 						{%- if section.settings.enable_country_selector
 							or section.settings.enable_language_selector
@@ -726,10 +726,33 @@
 					{%- endif -%}
 
 					
-				</div>
+				</div> {% endcomment %}
 
 
-				
+				<div class="footer-bottom-custom">
+
+  <div class="footer-bottom-left">
+    {% if section.settings.footer_bottom_text != blank %}
+      <div class="footer-bottom-text">
+        {{ section.settings.footer_bottom_text }}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if section.settings.payment_enable %}
+    <div class="footer-bottom-right">
+      <ul class="list list-payment" role="list">
+        {%- for type in shop.enabled_payment_types -%}
+          <li class="list-payment__item">
+            {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {% endif %}
+
+</div>
+
 			</div>
 		</div>
 	</div>
