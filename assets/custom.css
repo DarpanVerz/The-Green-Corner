@@ -2114,3 +2114,178 @@ h1, .h1 {
 }
 }
 
+
+
+
+/* CARD */
+.popular-products .card-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+  transition: all 0.4s ease;
+  min-height: 430px;
+}
+
+/* GREEN OVERLAY */
+.popular-products .card-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 104, 57, 0.92);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+  border-radius: 32px;
+}
+
+/* SHOW OVERLAY */
+.popular-products .card-wrapper:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* IMAGE */
+.popular-products .card__media img {
+  transition: all 0.5s ease;
+  position: relative;
+  z-index: 0;
+}
+
+/* IMAGE DARK EFFECT */
+.popular-products .card-wrapper:hover .card__media img {
+  opacity: 0.35;
+  transform: scale(1.03);
+}
+
+/* CONTENT */
+.popular-products .card__content {
+  position: relative;
+  z-index: 3;
+  transition: all 0.4s ease;
+}
+
+/* TITLE */
+.popular-products .card-wrapper:hover .card__heading a,
+.popular-products .card-wrapper:hover .card__heading,
+.popular-products .card-wrapper:hover .price,
+.popular-products .card-wrapper:hover .price-item {
+  color: #ffffff !important;
+}
+
+/* SALE LABEL */
+.popular-products .card__badge,
+.popular-products .badge {
+  position: relative;
+  z-index: 3;
+}
+
+/* BUTTON WRAPPER */
+.popular-products .custom-hover-buttons {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+/* SHOW BUTTONS */
+.popular-products .card-wrapper:hover .custom-hover-buttons {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popular-products .card-wrapper:hover .card__title { color:#fff; }
+
+/* BUTTON COMMON */
+.popular-products .custom-hover-buttons a {
+  height: 56px;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+/* ADD TO CART BUTTON */
+.popular-products .hover-cart-btn {
+  background: #1d1d1d;
+  color: #ffffff;
+}
+
+/* VIEW PRODUCT BUTTON */
+.popular-products .hover-view-btn {
+  background: transparent;
+  border: 1px solid #9acd32;
+  color: #ffffff;
+  background-color:rgba(166,206,57,0.2)
+}
+
+/* BUTTON HOVER */
+.popular-products .hover-cart-btn:hover {
+  background: #000000;
+}
+
+.popular-products .hover-view-btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* PRICE */
+.popular-products .card-wrapper:hover .price--on-sale .price-item--regular {
+  color: rgba(255,255,255,0.6) !important;
+}
+
+.popular-products button.hover-cart-btn {
+  height: 56px !important;
+  border-radius: 50px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border:none;
+  background:#272727;
+  width:95%;
+}
+
+.popular-products button.hover-cart-btn:hover { 
+  background:#056839; 
+  cursor:pointer; 
+}
+
+.card__badge .color-badge {
+    color: #E94242;
+    font-weight: 600;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+
+  .popular-products .custom-hover-buttons {
+    left: 12px;
+    right: 12px;
+  }
+
+  .popular-products .custom-hover-buttons a {
+    height: 48px;
+    font-size: 16px;
+  }
+
+}
