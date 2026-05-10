@@ -2077,9 +2077,9 @@ h1, .h1 {
     margin: 0 140px !important;
 }
 
-@media(){
+@media( max-width:768px){
   .collapsible-content-wrapper.custom-collapsible {
-    margin: 0 140px !important;
+    margin: 0 !important;
 }
 }
 
