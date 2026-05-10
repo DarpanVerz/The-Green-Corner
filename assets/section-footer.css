@@ -447,3 +447,31 @@ footer details[open] summary ~ * {
 .footer-contact-text a:hover {
     color: #000;
 }
+
+.footer__blocks-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer__blocks-wrapper .footer-block {
+    width: 100%;
+    max-width: 100%;
+}
+
+.footer-block--contact {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 989px) {
+    .footer__blocks-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .footer__blocks-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
