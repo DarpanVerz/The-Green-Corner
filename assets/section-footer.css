@@ -474,6 +474,65 @@ h5.footer-block__heading {
     text-transform: capitalize;
 }
 
+.footer__content-bottom.ss {
+    background: #e7a7ad;
+    padding: 14px 0;
+}
+
+.footer-bottom-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-text p {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.footer-bottom-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom-right .list-payment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-bottom-right .list-payment__item {
+    list-style: none;
+}
+
+.footer-bottom-right .icon {
+    height: 22px;
+    width: auto;
+}
+
+@media screen and (max-width: 749px) {
+
+    .footer-bottom-custom {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-bottom-right {
+        justify-content: center;
+    }
+
+    .footer-bottom-text p {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 989px) {
     .footer__blocks-wrapper {
         grid-template-columns: repeat(2, 1fr);
