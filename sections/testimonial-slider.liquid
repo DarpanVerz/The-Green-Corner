@@ -8,32 +8,43 @@
 
 
 <div class="testimonial-main"> 
-     <div class="testimonial-slider swiper">
-      <div class="swiper-wrapper">
-        {% for block in section.blocks %}
-          <div class="swiper-slide">
-            <div class="testimonial-card">
-              <div class="stars"> {% for i in (1..block.settings.rating) %} ★ {% endfor %}
-              </div>
-              <p class="content">
-                "{{ block.settings.content }}"
-              </p>
-              <div class="profile">
-                {% if block.settings.image != blank %}
-                  <img src="{{ block.settings.image | img_url: '100x100' }}" alt="">
-                {% endif %}
-                <div>
-                  <h4>{{ block.settings.name }}</h4>
-                  <span>{{ block.settings.designation }}</span>
-                </div>
+
+<div class="testimonial-slider-wrapper">
+
+  <div class="swiper-button-prev testimonial-prev"></div>
+
+  <div class="testimonial-slider swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="stars">
+              {% for i in (1..block.settings.rating) %} ★ {% endfor %}
+            </div>
+
+            <p class="content">
+              "{{ block.settings.content }}"
+            </p>
+
+            <div class="profile">
+              {% if block.settings.image != blank %}
+                <img src="{{ block.settings.image | img_url: '100x100' }}" alt="">
+              {% endif %}
+
+              <div>
+                <h4>{{ block.settings.name }}</h4>
+                <span>{{ block.settings.designation }}</span>
               </div>
             </div>
           </div>
-        {% endfor %}
-      </div>
-        <div class="swiper-button-prev testimonial-prev"></div>
-       <div class="swiper-button-next testimonial-next"></div>
+        </div>
+      {% endfor %}
     </div>
+  </div>
+
+  <div class="swiper-button-next testimonial-next"></div>
+
+</div>
   
   </div>
 </div>
