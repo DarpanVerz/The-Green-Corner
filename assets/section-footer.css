@@ -469,7 +469,7 @@ footer details[open] summary ~ * {
 
 h5.footer-block__heading {
     color: #1A1A1A;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     text-transform: capitalize;
 }
