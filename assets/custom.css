@@ -1501,7 +1501,10 @@ h1, .h1 {
 }
 
 .faq-section { position:relative; }
-
+.faq-section:before {
+  content:'';
+  
+}
 
 @media screen and (max-width: 768px) {
 
