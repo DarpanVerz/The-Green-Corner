@@ -2343,3 +2343,47 @@ button.hover-cart-btn:hover {
 		grid-template-columns:1fr;
 	}
 }
+
+.custom-sidebar{
+	background:#f8e7ec;
+	padding:30px 20px;
+	border-radius:24px;
+}
+
+.sidebar-title{
+	font-size:38px;
+	font-weight:500;
+	margin-bottom:25px;
+	color:#222;
+}
+
+.custom-category-menu{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+.custom-category-menu li{
+	margin-bottom:12px;
+}
+
+.custom-category-menu li a{
+	display:block;
+	padding:14px 18px;
+	border-radius:8px;
+	text-decoration:none;
+	color:#222;
+	font-size:16px;
+	transition:0.3s;
+}
+
+.custom-category-menu li a.active{
+	background:#007a33;
+	color:#fff;
+	font-weight:600;
+}
+
+.custom-category-menu li a:hover{
+	background:#007a33;
+	color:#fff;
+}
