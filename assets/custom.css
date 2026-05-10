@@ -2071,4 +2071,4 @@ h1, .h1 {
 }
 
 
-.collapsible-content__title-box { margin:0; }
+.collapsible-content__title-box { margin:0 !important; }
