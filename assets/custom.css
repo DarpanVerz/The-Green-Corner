@@ -2289,3 +2289,57 @@ button.hover-cart-btn:hover {
   }
 
 }
+
+/**** product grid ****/
+
+.custom-collection-layout{
+	display:flex;
+	gap:30px;
+	align-items:flex-start;
+}
+
+.custom-sidebar{
+	width:280px;
+	min-width:280px;
+	background:#f7e6eb;
+	padding:25px;
+	border-radius:20px;
+	position:sticky;
+	top:20px;
+}
+
+.products-grid{
+	flex:1;
+	width:100%;
+}
+
+.products-grid .collection-product-list{
+	display:grid;
+	grid-template-columns:repeat(3,1fr);
+	gap:25px;
+}
+
+@media screen and (max-width: 991px){
+
+	.custom-collection-layout{
+		flex-direction:column;
+	}
+
+	.custom-sidebar{
+		width:100%;
+		min-width:100%;
+		position:relative;
+		top:0;
+	}
+
+	.products-grid .collection-product-list{
+		grid-template-columns:repeat(2,1fr);
+	}
+}
+
+@media screen and (max-width: 575px){
+
+	.products-grid .collection-product-list{
+		grid-template-columns:1fr;
+	}
+}
