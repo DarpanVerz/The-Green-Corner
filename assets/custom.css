@@ -1934,6 +1934,7 @@ h1, .h1 {
 }
 
 .blog-slide-title {
+    font-family: Montserrat, sans-serif; 
     font-size: 20px;
     line-height: 1.35;
     font-weight: 500;
