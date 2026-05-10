@@ -570,3 +570,5 @@ h5.footer-block__heading {
     height: auto;
     border-radius: 3px;
 }
+
+.footer__list-social { margin-top:25px; }
