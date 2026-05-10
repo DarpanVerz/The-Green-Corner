@@ -1564,8 +1564,9 @@ h1, .h1 {
 @media screen and (max-width:767px){
 
   .custom-arrow-btn{
-    width:58px;
-    height:58px;
+      width: 55px;
+      height: auto;
+      padding: 5px;
   }
 
   .custom-arrow-btn svg{
