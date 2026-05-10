@@ -80,32 +80,35 @@
 			{%- if section.settings.enable_filtering == false and section.settings.enable_sorting == false -%} collection-wrapper_no-facets {% endif %}
 		"
 	>
-		{%- if collection.all_products_count > 0 -%}
-			{%- if section.settings.enable_filtering
-				or section.settings.enable_sorting
-			-%}
+		<div class="custom-collection-layout">
 
+	{% if collection.all_products_count > 0 %}
+		{% if section.settings.enable_filtering or section.settings.enable_sorting %}
+			
+			<div class="custom-sidebar">
+				
 				{% render 'facets',
 					results: collection,
 					enable_filtering: section.settings.enable_filtering,
 					enable_sorting: section.settings.enable_sorting,
-					filter_type: 'horizontal_united',
+					filter_type: 'vertical',
 					image_filter_ratio: section.settings.image_filter_ratio,
-          image_filter_fit: section.settings.image_filter_fit,
-          image_filter_columns: section.settings.image_filter_columns
+					image_filter_fit: section.settings.image_filter_fit,
+					image_filter_columns: section.settings.image_filter_columns
 				%}
-				
-			{%- endif -%}
-		{%- endif -%}
 
-		<div
-			id="ProductGridContainer"
-			class="
-				products-grid
-				{% if section.settings.filter_type != 'vertical' %} full-width {% endif %}
-				{% if section.settings.enable_filtering == false %} products-grid_no-filter {%- endif -%}
-			"
-		>
+			</div>
+
+		{% endif %}
+	{% endif %}
+
+	<div
+		id="ProductGridContainer"
+		class="
+			products-grid
+			{% if section.settings.enable_filtering == false %} products-grid_no-filter {% endif %}
+		"
+	>
 			{%- paginate collection.products by section.settings.products_per_page -%}
 				{%- if collection.products.size == 0 -%}
 					<div
