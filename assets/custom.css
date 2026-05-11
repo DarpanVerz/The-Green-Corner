@@ -2392,6 +2392,6 @@ button.hover-cart-btn:hover {
     padding-left: 0px !important;
 }
 
-.flowers-collection .card-wrapper {
+.flowers-collection .card-wrapper .card-information__wrapper {
     padding: 35px !important;
 }
