@@ -2387,3 +2387,7 @@ button.hover-cart-btn:hover {
 	background:#007a33;
 	color:#fff;
 }
+
+.slideshow-slide__button .button--simple {
+    padding-left: 25px;
+}
