@@ -198,7 +198,7 @@
         ],
         "heading": "New Arrival",
         "heading_tag": "h2",
-        "description": "<p>Fresh Picks for Your Garden</p>",
+        "description": "<p>Fresh Picks for Your Garden.</p>",
         "alignment": "center",
         "button_text": "New Arrivals",
         "button_link": "shopify://collections",
