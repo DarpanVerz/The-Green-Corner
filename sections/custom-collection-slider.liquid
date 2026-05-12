@@ -47,12 +47,17 @@
             <div class="card">
               <a href="{{ collection.url }}">
 
-                {% if collection.image %}
+                {% if block.settings.custom_collection_image %}
+                  <img
+                    src="{{ block.settings.custom_collection_image | image_url: width: 600 }}"
+                    alt="{{ collection.title }}"
+                  >
+                {% elsif collection.image %}
                   <img
                     src="{{ collection.image | image_url: width: 600 }}"
                     alt="{{ collection.title }}"
                   >
-                {% else %}
+                {% elsif collection.products.first.featured_image %}
                   <img
                     src="{{ collection.products.first.featured_image | image_url: width: 600 }}"
                     alt="{{ collection.title }}"
