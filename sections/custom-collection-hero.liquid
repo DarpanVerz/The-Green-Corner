@@ -1,0 +1,185 @@
+<section class="custom-collection-hero">
+  <div class="hero-wrapper">
+
+    <!-- Left Content -->
+    <div class="hero-left">
+      {% if section.settings.left_image != blank %}
+        <img src="{{ section.settings.left_image | image_url }}" alt="">
+      {% endif %}
+
+      <div class="hero-content">
+        <h2>{{ section.settings.heading }}</h2>
+        <p>{{ section.settings.description }}</p>
+      </div>
+    </div>
+
+    <!-- Right Collection Products -->
+    <div class="hero-right">
+
+      <div class="product-slider">
+        {% for product in section.settings.collection.products limit: 2 %}
+          
+          <div class="product-card">
+
+            <a href="{{ product.url }}">
+              <img src="{{ product.featured_image | image_url }}" alt="{{ product.title }}">
+            </a>
+
+            <div class="product-info">
+              <h3>{{ product.title }}</h3>
+              <span>{{ product.price | money }}</span>
+            </div>
+
+          </div>
+
+        {% endfor %}
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Custom Collection Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Left Side Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Featured Products"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Discover our handpicked flower bouquets, thoughtfully arranged to brighten any moment."
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Collection Hero"
+    }
+  ]
+}
+{% endschema %}
+<style>
+.custom-collection-hero{
+  padding:60px 20px;
+}
+
+.hero-wrapper{
+  display:flex;
+  gap:20px;
+  align-items:stretch;
+}
+
+.hero-left{
+  width:35%;
+  position:relative;
+  border-radius:30px;
+  overflow:hidden;
+}
+
+.hero-left img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.hero-content{
+  position:absolute;
+  bottom:40px;
+  left:40px;
+  right:40px;
+  color:#fff;
+  text-align:center;
+}
+
+.hero-content h2{
+  font-size:48px;
+  margin-bottom:15px;
+  color:#fff;
+}
+
+.hero-content p{
+  font-size:16px;
+  line-height:1.6;
+}
+
+.hero-right{
+  width:65%;
+  background:#fdecef;
+  border-radius:30px;
+  padding:40px;
+  display:flex;
+  align-items:center;
+}
+
+.product-slider{
+  display:flex;
+  gap:30px;
+  width:100%;
+}
+
+.product-card{
+  background:#fff;
+  border-radius:25px;
+  padding:30px;
+  width:50%;
+  text-align:left;
+}
+
+.product-card img{
+  width:100%;
+  height:320px;
+  object-fit:contain;
+}
+
+.product-info h3{
+  font-size:24px;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+
+.product-info span{
+  font-size:18px;
+}
+
+@media(max-width:991px){
+
+.hero-wrapper{
+  flex-direction:column;
+}
+
+.hero-left,
+.hero-right{
+  width:100%;
+}
+
+.product-slider{
+  flex-direction:column;
+}
+
+.product-card{
+  width:100%;
+}
+
+.hero-content h2{
+  font-size:34px;
+}
+
+}
+</style>
