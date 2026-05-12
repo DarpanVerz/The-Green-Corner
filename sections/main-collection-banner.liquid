@@ -92,6 +92,11 @@
 						<span>{{ section.settings.add_word }}</span>
 					{% endif %}
 				</h1>
+				<div class="custom-breadcrumb">
+					<a href="{{ routes.root_url }}">Home</a>
+					<span>›</span>
+					<span>{{ collection.title }}</span>
+				</div>
 				{%- if section.settings.show_collection_description
 					and collection_description != blank
 				-%}
