@@ -2405,3 +2405,7 @@ button.hover-cart-btn:hover {
 
 /*** Main-category-banner ***/
 
+.collection-banner__img {
+    border-radius: 40px;
+    overflow: hidden;
+}
