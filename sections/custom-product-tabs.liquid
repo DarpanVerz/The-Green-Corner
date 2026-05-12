@@ -35,7 +35,9 @@
 
             {% if block.settings.list_1 != blank or block.settings.list_2 != blank or block.settings.list_3 != blank or block.settings.list_4 != blank %}
               <ul>
-                {{ product.metafields.custom.tab1_title }}
+                {% if block.settings.list_1 != blank %}
+                  <li>{{ block.settings.list_1 }}</li>
+                {% endif %}
 
                 {% if block.settings.list_2 != blank %}
                   <li>{{ block.settings.list_2 }}</li>
@@ -53,7 +55,15 @@
           </div>
 
           <div class="ap-product-tab-right">
-          {{ product.metafields.custom.tab1_image | image_url: width: 900 }}
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | image_url: width: 900 }}"
+                alt="{{ block.settings.title }}"
+                loading="lazy"
+                width="900"
+                height="700"
+              >
+            {% endif %}
           </div>
 
         </div>
