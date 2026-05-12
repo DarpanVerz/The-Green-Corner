@@ -55,6 +55,35 @@
 </section>
 
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const section = document.querySelector('.ap-product-tabs-section');
+
+    if (!section) return;
+
+    const buttons = section.querySelectorAll('.ap-product-tab-btn');
+    const contents = section.querySelectorAll('.ap-product-tab-content');
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', function () {
+        const tabId = this.getAttribute('data-tab');
+
+        buttons.forEach((btn) => btn.classList.remove('active'));
+        contents.forEach((content) => content.classList.remove('active'));
+
+        this.classList.add('active');
+
+        const activeContent = section.querySelector('#' + tabId);
+
+        if (activeContent) {
+          activeContent.classList.add('active');
+        }
+      });
+    });
+  });
+</script>
+
+
 <style>
     }
 
