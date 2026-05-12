@@ -1051,51 +1051,6 @@
         "margin_bottom": "l"
       }
     },
-    "image_banner_cak3tz": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "hide_mobile_image": true,
-        "full_width": true,
-        "color_scheme": "",
-        "image": "shopify://shop_images/2aab0821538e8c2a6a963c826409555c29ba58c5.jpg",
-        "image_size": "small",
-        "overlay_opacity": 0,
-        "subheading": "CONTACT US",
-        "subheading_tag": "h2",
-        "heading": "We’re Here to Help. Plant a Message With Us.We’d Love to Hear From You",
-        "heading_tag": "h2",
-        "description": "<p>Have a question or need guidance for your garden? Our team at The Green Corner is ready to help every plant enthusiast, whether you’re choosing the right plant, soil, or tools. Reach out and let us support you in growing a thriving, green space.</p>",
-        "text_horizontal": "center",
-        "text_vertical": "center",
-        "button_label": "Send a Message",
-        "button_link": "shopify://pages/contact-us",
-        "button_style": "primary",
-        "margin_top": "no-indent",
-        "margin_bottom": "no-indent",
-        "padding_top": "s",
-        "padding_bottom": "s",
-        "enable_border_top": false,
-        "enable_border_bottom": false
-      }
-    },
-    "newsletter_cbHapY": {
-      "type": "newsletter",
-      "name": "Newsletter",
-      "settings": {
-        "color_scheme": "",
-        "position": "center",
-        "heading": "Subscribe to our Newsletter",
-        "heading_tag": "h3",
-        "text": "<p>Stay connected with The Green Corner and receive the latest plant tips, new arrivals, and gardening inspiration straight to your inbox.</p>",
-        "newsletter_text": "",
-        "button_style": "primary",
-        "margin_top": "m",
-        "margin_bottom": "s",
-        "padding_top": "no-indent",
-        "padding_bottom": "no-indent"
-      }
-    },
     "instagram_gallery_JKcCRW": {
       "type": "instagram-gallery",
       "blocks": {
@@ -1143,6 +1098,51 @@
         "section_padding_top": 40,
         "section_padding_bottom": 40
       }
+    },
+    "image_banner_cak3tz": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "hide_mobile_image": true,
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/2aab0821538e8c2a6a963c826409555c29ba58c5.jpg",
+        "image_size": "small",
+        "overlay_opacity": 0,
+        "subheading": "CONTACT US",
+        "subheading_tag": "h2",
+        "heading": "We’re Here to Help. Plant a Message With Us.We’d Love to Hear From You",
+        "heading_tag": "h2",
+        "description": "<p>Have a question or need guidance for your garden? Our team at The Green Corner is ready to help every plant enthusiast, whether you’re choosing the right plant, soil, or tools. Reach out and let us support you in growing a thriving, green space.</p>",
+        "text_horizontal": "center",
+        "text_vertical": "center",
+        "button_label": "Send a Message",
+        "button_link": "shopify://pages/contact-us",
+        "button_style": "primary",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "newsletter_cbHapY": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "color_scheme": "",
+        "position": "center",
+        "heading": "Subscribe to our Newsletter",
+        "heading_tag": "h3",
+        "text": "<p>Stay connected with The Green Corner and receive the latest plant tips, new arrivals, and gardening inspiration straight to your inbox.</p>",
+        "newsletter_text": "",
+        "button_style": "primary",
+        "margin_top": "m",
+        "margin_bottom": "s",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
     }
   },
   "order": [
@@ -1168,8 +1168,8 @@
     "custom_blog_slider_B7xL3i",
     "blog-post",
     "split_screen_slideshow_L9t8rQ",
+    "instagram_gallery_JKcCRW",
     "image_banner_cak3tz",
-    "newsletter_cbHapY",
-    "instagram_gallery_JKcCRW"
+    "newsletter_cbHapY"
   ]
 }
