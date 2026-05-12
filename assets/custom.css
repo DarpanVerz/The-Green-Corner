@@ -2409,3 +2409,9 @@ button.hover-cart-btn:hover {
     border-radius: 40px;
     overflow: hidden;
 }
+
+.collection-banner__text {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
