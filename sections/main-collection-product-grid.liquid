@@ -97,22 +97,22 @@
 			</a>
 		</li>
 
-		{% for link in linklists.main-menu.links %}
-			
-			{% if link.type == 'collection_link' %}
-				
-				<li>
-					<a 
-						href="{{ link.url }}"
-						class="{% if collection.url == link.url %}active{% endif %}"
-					>
-						{{ link.title }}
-					</a>
-				</li>
+		{% for collection_item in collections %}
 
-			{% endif %}
+  {% unless collection_item.handle == 'frontpage' %}
 
-		{% endfor %}
+    <li>
+      <a 
+        href="{{ collection_item.url }}"
+        class="{% if collection.handle == collection_item.handle %}active{% endif %}"
+      >
+        {{ collection_item.title }}
+      </a>
+    </li>
+
+  {% endunless %}
+
+{% endfor %}
 
 	</ul>
 
