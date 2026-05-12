@@ -203,34 +203,34 @@
 .instagram-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.35);
+  background: rgba(0,0,0,0.28);
   opacity: 0;
   visibility: hidden;
-  transition: 0.4s ease;
+  transition: all .4s ease;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .instagram-icon {
-  width: 45px;
-  height: 45px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-}
-
-.instagram-gallery-item:hover img {
-  transform: scale(1.08);
+  transform: translateY(10px);
+  transition: all .4s ease;
 }
 
 .instagram-gallery-item:hover .instagram-overlay {
   opacity: 1;
   visibility: visible;
+}
+
+.instagram-gallery-item:hover .instagram-icon {
+  transform: translateY(0);
+}
+
+.instagram-gallery-item:hover img {
+  transform: scale(1.06);
 }
 
 @media screen and (max-width: 768px) {
