@@ -2420,25 +2420,6 @@ button.hover-cart-btn:hover {
   color:#fff; 
 }
 
-.collection-banner__wrapper {
-    position: relative;
-    overflow: hidden;
-    border-radius: 30px;
-}
-
-.collection-banner__img {
-    position: relative;
-    border-radius: 30px;
-    overflow: hidden;
-}
-
-.collection-banner__img img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-    display: block;
-    border-radius: 30px;
-}
 
 /* LEFT SIDE DARK OVERLAY */
 .collection-banner__img::after {
@@ -2453,44 +2434,4 @@ button.hover-cart-btn:hover {
         rgba(0,0,0,0.15) 50%,
         rgba(0,0,0,0) 75%
     );
-}
-
-/* CONTENT POSITION */
-.collection-banner__text,
-.collection-banner__text-center {
-    position: absolute;
-    left: 60px;
-    bottom: 50px;
-    z-index: 2;
-}
-
-/* TITLE */
-.collection-banner__title {
-    color: #fff !important;
-    font-size: 58px;
-    line-height: 1.1;
-    margin-bottom: 10px;
-}
-
-/* DESCRIPTION */
-.collection-banner__desc {
-    color: #fff;
-}
-
-/* MOBILE */
-@media screen and (max-width: 767px) {
-
-    .collection-banner__img img {
-        height: 260px;
-    }
-
-    .collection-banner__text,
-    .collection-banner__text-center {
-        left: 25px;
-        bottom: 25px;
-    }
-
-    .collection-banner__title {
-        font-size: 34px;
-    }
 }
