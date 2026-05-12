@@ -148,7 +148,8 @@
         "collection_block_qTg9Vf": {
           "type": "collection_block",
           "settings": {
-            "collection": "flowers"
+            "collection": "flowers",
+            "custom_collection_image": "shopify://shop_images/Vector_1.png"
           }
         },
         "collection_block_bQVPdC": {
