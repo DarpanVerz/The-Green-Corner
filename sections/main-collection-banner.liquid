@@ -100,36 +100,7 @@
 					</div>
 				{%- endif -%}
 
-				{% if settings.show_breadcrumbs %}
-			<nav
-				class=" breadcrumb breadcrumb_margin"
-				role="navigation"
-				aria-label="breadcrumbs"
-				>
-				<a
-					href="{{ routes.root_url }}"
-					title="{{ 'general.breadcrumbs.home' | t }}"
-					class="breadcrumb__link"
-				>
-					<span>{{ 'general.breadcrumbs.home' | t }} </span>
-				</a>
-				<div class="breadcrumb__delimiter">
-					{% render 'icon-breadcrumbs' %}
-				</div>
-				{% if product.collections[0] %}
-					<span class="breadcrumb__link">
-						<a href="{{ product.collections[0].url }}">
-							{{- product.collections[0].title }}
-						</a>
-					</span>
-					<div class="breadcrumb__delimiter">
-						{% render 'icon-breadcrumbs' %}
-					</div>
-				{% endif %}
-				<div>{{ product.title }}</div>
-			</nav>
-		{% endif %}
-		
+				
 			</div>
 		</div>
 	</div>
