@@ -32,10 +32,7 @@
 	<link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
 	<link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-
-<section class="container section-{{ section.id }}-padding main-product-section" id="MainProduct-{{ section.id }}" data-section="{{ section.id }}">
-	<div class="product{% if product.media.size > 0 %} row{% else %} product--no-media{% endif %}{% if section.settings.image_gallery_collage == "grid" %} product__stacked{% endif %}">
-		{% if settings.show_breadcrumbs %}
+{% if settings.show_breadcrumbs %}
 			<nav
 				class=" breadcrumb breadcrumb_margin"
 				role="navigation"
@@ -64,7 +61,8 @@
 				<div>{{ product.title }}</div>
 			</nav>
 		{% endif %}
-
+<section class="container section-{{ section.id }}-padding main-product-section" id="MainProduct-{{ section.id }}" data-section="{{ section.id }}">
+	<div class="product{% if product.media.size > 0 %} row{% else %} product--no-media{% endif %}{% if section.settings.image_gallery_collage == "grid" %} product__stacked{% endif %}">
 		<div class="product__outer{% if section.settings.desktop_alignment == 'left' %} product__outer--desktop-order{% endif %}{% if section.settings.mobile_alignment == 'after' %} product__outer--mobile-order{% endif %} {% if section.settings.image_gallery_collage == "thumbnail_carousel" %} product__outer--center{% endif %} {% if section.settings.image_gallery_collage == "stacked" %} product__outer--stacked{% endif %} {% if section.settings.image_gallery_collage == "grid" %}product__outer--grid{% endif %}">
 			<div class="product__info-wrapper {% if product.media.size == 2 and section.settings.image_gallery_collage == "grid" %} product__media-two{% endif %}">
 				<div id="ProductInfo-{{ section.id }}" class="product__info-container" data-source="{{ section.id }}" data-section="{{ section.id }}">
