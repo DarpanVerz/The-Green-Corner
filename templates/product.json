@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -9,7 +18,9 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "heading_tag": "h1"
+          }
         },
         "text": {
           "type": "text",
@@ -19,7 +30,10 @@
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_tax_info": true,
+            "show_shipping": true
+          }
         },
         "inventory_9AgXC3": {
           "type": "inventory",
@@ -31,6 +45,7 @@
             "picker_type": "button",
             "show_size_guide": false,
             "size_guide_header": "Header",
+            "size_guide_heading_tag": "h3",
             "size_guide_decription": "",
             "size_guide_text": "Size Guide",
             "page": ""
@@ -56,7 +71,9 @@
           "settings": {
             "subheading": "Essence & Impact",
             "additional_heading": "Creative Essence",
-            "additional_content": "Explore the harmony of color and emotion in our exquisite, artistically crafted paintings."
+            "additional_heading_tag": "h3",
+            "additional_content": "Explore the harmony of color and emotion in our exquisite, artistically crafted paintings.",
+            "additional_text_alignment": "center"
           }
         },
         "additional-2": {
@@ -64,7 +81,9 @@
           "settings": {
             "subheading": "",
             "additional_heading": "Visual Impact",
-            "additional_content": "Immerse yourself in the striking visual allure of our paintings, where every brushstroke captivates and inspires."
+            "additional_heading_tag": "h3",
+            "additional_content": "Immerse yourself in the striking visual allure of our paintings, where every brushstroke captivates and inspires.",
+            "additional_text_alignment": "center"
           }
         },
         "about-1": {
@@ -73,6 +92,7 @@
             "subheading": "Faq",
             "heading": "Find quick answers to most common queries.",
             "about_heading": "Can I view the painting in person before purchasing?",
+            "about_heading_tag": "h2",
             "about_heading_content": "<p>Absolutely! We encourage you to visit our art store to experience the texture, colors, and details of the painting firsthand. Our staff will be happy to assist you and answer any questions during your visit.</p>"
           }
         },
@@ -82,6 +102,7 @@
             "subheading": "",
             "heading": "",
             "about_heading": "How should I care for and maintain the painting?",
+            "about_heading_tag": "h2",
             "about_heading_content": "<p>To ensure the longevity of your painting, we recommend keeping it out of direct sunlight, maintaining a stable humidity level, and avoiding contact with water or chemicals. For cleaning, gently dust it with a soft, dry cloth. We also suggest framing the painting with UV-protective glass for added protection.</p>"
           }
         },
@@ -91,6 +112,7 @@
             "subheading": "",
             "heading": "",
             "about_heading": "Do you offer customization options for paintings?",
+            "about_heading_tag": "h2",
             "about_heading_content": "<p>While the original paintings are sold as-is, we offer a range of framing options to suit your taste and decor. For commissioned works, our affiliated artists can create custom paintings based on your preferences in terms of style, subject matter, and size. Feel free to contact us for more details on customization.</p>"
           }
         }
@@ -116,6 +138,8 @@
         "mobile_alignment": "after",
         "image_fit": "cover",
         "enable_autoheight": false,
+        "animation": true,
+        "variant_media_display": "show_all",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
@@ -124,6 +148,9 @@
       "type": "product-recommendations",
       "settings": {
         "heading": "You May Be Interested",
+        "heading_tag": "h2",
+        "products_to_show": 4,
+        "show_two_cards": true,
         "autoplay": false,
         "stop_autoplay": true,
         "show_arrows": false,
@@ -139,10 +166,57 @@
         "margin_top": "s",
         "margin_bottom": "l"
       }
+    },
+    "image_banner_thA7Ty": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "hide_mobile_image": true,
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/2aab0821538e8c2a6a963c826409555c29ba58c5.jpg",
+        "image_size": "small",
+        "overlay_opacity": 20,
+        "subheading": "CONTACT US",
+        "subheading_tag": "h2",
+        "heading": "We’re Here to Help. Plant a Message With Us.We’d Love to Hear From You",
+        "heading_tag": "h2",
+        "description": "<p>Have a question or need guidance for your garden? Our team at The Green Corner is ready to help every plant enthusiast, whether you’re choosing the right plant, soil, or tools. Reach out and let us support you in growing a thriving, green space.</p>",
+        "text_horizontal": "center",
+        "text_vertical": "center",
+        "button_label": "Send a Message",
+        "button_link": "",
+        "button_style": "tertiary",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "newsletter_yqWxmN": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "color_scheme": "",
+        "position": "center",
+        "heading": "Subscribe to our Newsletter",
+        "heading_tag": "h3",
+        "text": "<p>Stay connected with The Green Corner and receive the latest plant tips, new arrivals, and gardening inspiration straight to your inbox.</p>",
+        "newsletter_text": "",
+        "button_style": "primary",
+        "margin_top": "no-indent",
+        "margin_bottom": "l",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "image_banner_thA7Ty",
+    "newsletter_yqWxmN"
   ]
 }
