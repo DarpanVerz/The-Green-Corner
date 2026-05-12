@@ -2397,3 +2397,8 @@ button.hover-cart-btn:hover {
     font-size: 20px;
     font-weight: 500;
 }
+
+.collection-product-card .card-wrapper {
+    border-radius: 34px;
+    padding: 35px;
+}
