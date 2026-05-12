@@ -50,10 +50,28 @@
         "padding_top": "no-indent",
         "padding_bottom": "l"
       }
+    },
+    "newsletter_N6DmJh": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "color_scheme": "",
+        "position": "left",
+        "heading": "Here can be your newsletter title",
+        "heading_tag": "h3",
+        "text": "<p>Here can be a brief explanation of what subscribers will receive—whether it’s exclusive offers, product updates, or industry insights.</p>",
+        "newsletter_text": "<p>I consent to receiving marketing emails and promotional offers.</p>",
+        "button_style": "primary",
+        "margin_top": "no-indent",
+        "margin_bottom": "l",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "newsletter_N6DmJh"
   ]
 }
