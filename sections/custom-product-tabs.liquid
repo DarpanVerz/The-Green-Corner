@@ -1,3 +1,60 @@
+<section class="ap-product-tabs-section">
+
+    {% for block in section.blocks %}
+      <div
+        class="ap-product-tab-content {% if forloop.first %}active{% endif %}"
+        id="tab-{{ block.id }}"
+      >
+        <div class="ap-product-tab-grid">
+
+          <div class="ap-product-tab-left">
+            <h3>{{ block.settings.title }}</h3>
+
+            <div class="ap-product-desc">
+              {{ block.settings.description }}
+            </div>
+
+            {% if block.settings.list_1 != blank or block.settings.list_2 != blank or block.settings.list_3 != blank or block.settings.list_4 != blank %}
+              <ul>
+                {% if block.settings.list_1 != blank %}
+                  <li>{{ block.settings.list_1 }}</li>
+                {% endif %}
+
+                {% if block.settings.list_2 != blank %}
+                  <li>{{ block.settings.list_2 }}</li>
+                {% endif %}
+
+                {% if block.settings.list_3 != blank %}
+                  <li>{{ block.settings.list_3 }}</li>
+                {% endif %}
+
+                {% if block.settings.list_4 != blank %}
+                  <li>{{ block.settings.list_4 }}</li>
+                {% endif %}
+              </ul>
+            {% endif %}
+          </div>
+
+          <div class="ap-product-tab-right">
+            {% if block.settings.image != blank %}
+              <img
+                src="{{ block.settings.image | image_url: width: 900 }}"
+                alt="{{ block.settings.title }}"
+                loading="lazy"
+                width="900"
+                height="700"
+              >
+            {% endif %}
+          </div>
+
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</section>
+
+
 <style>
     }
 
