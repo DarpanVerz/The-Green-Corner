@@ -84,9 +84,9 @@
       "settings": {
         "color_scheme": "",
         "position": "left",
-        "heading": "Here can be your newsletter title",
+        "heading": "Subscribe to our Newsletter",
         "heading_tag": "h3",
-        "text": "<p>Here can be a brief explanation of what subscribers will receive—whether it’s exclusive offers, product updates, or industry insights.</p>",
+        "text": "<p>Stay connected with The Green Corner and receive the latest plant tips, new arrivals, and gardening inspiration straight to your inbox.</p>",
         "newsletter_text": "<p>I consent to receiving marketing emails and promotional offers.</p>",
         "button_style": "primary",
         "margin_top": "no-indent",
