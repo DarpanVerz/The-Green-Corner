@@ -160,11 +160,22 @@
         "margin_top": "no-indent",
         "margin_bottom": "l"
       }
+    },
+    "custom_collection_hero_tD9e3U": {
+      "type": "custom-collection-hero",
+      "name": "Custom Collection Hero",
+      "settings": {
+        "left_image": "shopify://shop_images/72eede86361bbe37a6e27ee62f44b9a9f12ca314.jpg",
+        "heading": "Featured Products",
+        "description": "Discover our handpicked flower bouquets, thoughtfully arranged to brighten any moment.",
+        "collection": "flowers"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
+    "custom_collection_hero_tD9e3U",
     "image_banner_Ui3UzF",
     "newsletter_N6DmJh",
     "split_screen_slideshow_cjMVRj"
