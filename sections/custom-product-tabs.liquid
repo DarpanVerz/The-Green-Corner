@@ -1,77 +1,136 @@
 
 
-<section class="ap-product-tabs-section">
-  <div class="ap-product-tabs-wrapper">
+<div class="ap-product-tabs-buttons">
 
-    <div class="ap-product-tabs-heading">
-      <h2>{{ section.settings.heading }}</h2>
-    </div>
+  <button class="ap-product-tab-btn active" type="button" data-tab="tab1">
+    {{ product.metafields.custom.tab1_title }}
+  </button>
 
-    <div class="ap-product-tabs-buttons">
-      {% for block in section.blocks %}
-        <button
-          class="ap-product-tab-btn {% if forloop.first %}active{% endif %}"
-          type="button"
-          data-tab="tab-{{ block.id }}"
-        >
-          {{ block.settings.tab_title }}
-        </button>
-      {% endfor %}
-    </div>
+  <button class="ap-product-tab-btn" type="button" data-tab="tab2">
+    {{ product.metafields.custom.tab2_title }}
+  </button>
 
-    {% for block in section.blocks %}
-      <div
-        class="ap-product-tab-content {% if forloop.first %}active{% endif %}"
-        id="tab-{{ block.id }}"
-      >
-        <div class="ap-product-tab-grid">
+  <button class="ap-product-tab-btn" type="button" data-tab="tab3">
+    {{ product.metafields.custom.tab3_title }}
+  </button>
 
-          <div class="ap-product-tab-left">
-            <h3>{{ product.metafields.custom.tab1_heading }}</h3>
+  <button class="ap-product-tab-btn" type="button" data-tab="tab4">
+    {{ product.metafields.custom.tab4_title }}
+  </button>
 
-            <div class="ap-product-desc">
-             {{ product.metafields.custom.tab1_description }}
-            </div>
+</div>
 
-            {% if block.settings.list_1 != blank or block.settings.list_2 != blank or block.settings.list_3 != blank or block.settings.list_4 != blank %}
-              <ul>
-                {% if block.settings.list_1 != blank %}
-                  <li>{{ block.settings.list_1 }}</li>
-                {% endif %}
 
-                {% if block.settings.list_2 != blank %}
-                  <li>{{ block.settings.list_2 }}</li>
-                {% endif %}
+<!-- TAB 1 -->
+<div class="ap-product-tab-content active" id="tab1">
+  <div class="ap-product-tab-grid">
 
-                {% if block.settings.list_3 != blank %}
-                  <li>{{ block.settings.list_3 }}</li>
-                {% endif %}
+    <div class="ap-product-tab-left">
+      <h3>{{ product.metafields.custom.tab1_heading }}</h3>
 
-                {% if block.settings.list_4 != blank %}
-                  <li>{{ block.settings.list_4 }}</li>
-                {% endif %}
-              </ul>
-            {% endif %}
-          </div>
-
-          <div class="ap-product-tab-right">
-            {% if block.settings.image != blank %}
-              <img
-                src="{{ block.settings.image | image_url: width: 900 }}"
-                alt="{{ block.settings.title }}"
-                loading="lazy"
-                width="900"
-                height="700"
-              >
-            {% endif %}
-          </div>
-
-        </div>
+      <div class="ap-product-desc">
+        {{ product.metafields.custom.tab1_description }}
       </div>
-    {% endfor %}
+    </div>
+
+    <div class="ap-product-tab-right">
+      {% if product.metafields.custom.tab1_image != blank %}
+        <img
+          src="{{ product.metafields.custom.tab1_image | image_url: width: 900 }}"
+          alt=""
+          loading="lazy"
+          width="900"
+          height="700"
+        >
+      {% endif %}
+    </div>
 
   </div>
-</section>
+</div>
+
+
+<!-- TAB 2 -->
+<div class="ap-product-tab-content" id="tab2">
+  <div class="ap-product-tab-grid">
+
+    <div class="ap-product-tab-left">
+      <h3>{{ product.metafields.custom.tab2_heading }}</h3>
+
+      <div class="ap-product-desc">
+        {{ product.metafields.custom.tab2_description }}
+      </div>
+    </div>
+
+    <div class="ap-product-tab-right">
+      {% if product.metafields.custom.tab2_image != blank %}
+        <img
+          src="{{ product.metafields.custom.tab2_image | image_url: width: 900 }}"
+          alt=""
+          loading="lazy"
+          width="900"
+          height="700"
+        >
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+
+<!-- TAB 3 -->
+<div class="ap-product-tab-content" id="tab3">
+  <div class="ap-product-tab-grid">
+
+    <div class="ap-product-tab-left">
+      <h3>{{ product.metafields.custom.tab3_heading }}</h3>
+
+      <div class="ap-product-desc">
+        {{ product.metafields.custom.tab3_description }}
+      </div>
+    </div>
+
+    <div class="ap-product-tab-right">
+      {% if product.metafields.custom.tab3_image != blank %}
+        <img
+          src="{{ product.metafields.custom.tab3_image | image_url: width: 900 }}"
+          alt=""
+          loading="lazy"
+          width="900"
+          height="700"
+        >
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+
+<!-- TAB 4 -->
+<div class="ap-product-tab-content" id="tab4">
+  <div class="ap-product-tab-grid">
+
+    <div class="ap-product-tab-left">
+      <h3>{{ product.metafields.custom.tab4_heading }}</h3>
+
+      <div class="ap-product-desc">
+        {{ product.metafields.custom.tab4_description }}
+      </div>
+    </div>
+
+    <div class="ap-product-tab-right">
+      {% if product.metafields.custom.tab4_image != blank %}
+        <img
+          src="{{ product.metafields.custom.tab4_image | image_url: width: 900 }}"
+          alt=""
+          loading="lazy"
+          width="900"
+          height="700"
+        >
+      {% endif %}
+    </div>
+
+  </div>
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
