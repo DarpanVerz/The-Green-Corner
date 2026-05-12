@@ -97,10 +97,8 @@
 			</a>
 		</li>
 
-		{% for collection_item in collections %}
-
+{% for collection_item in collections %}
   {% unless collection_item.handle == 'frontpage' %}
-
     <li>
       <a 
         href="{{ collection_item.url }}"
@@ -109,13 +107,10 @@
         {{ collection_item.title }}
       </a>
     </li>
-
   {% endunless %}
-
 {% endfor %}
 
 	</ul>
-
 </div>
 
 		{% endif %}
