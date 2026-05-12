@@ -62,11 +62,10 @@
 	<div class="container">
 {% endif %}
 
-<div class="collection-banner custom-collection-banner" data-id="{{ section.id }}">
-	<div class="collection-banner__body color-{{ section.settings.color_scheme }} background {{ overlay_enable }} {{ show_collection_image }}">
-
-		<div class="custom-banner-wrapper">
-
+<div class="collection-banner" data-id="{{ section.id }}">
+	<div class="collection-banner__body color-{{ section.settings.color_scheme }} background {{ overlay_enable }} {{ show_collection_image }} ">
+	<div class="{% if section.settings.section_size == 'container' %}container-small{% else %}container{% endif %}">
+		<div class="collection-banner__wrapper section-{{ section.id }}-padding">
 			{%- if show_img and collection_image != blank -%}
 				<div class="collection-banner__img">
 					{{
@@ -81,21 +80,18 @@
 					}}
 				</div>
 			{% endif %}
-
-			<div class="custom-banner-overlay"></div>
-
-			<div class="collection-banner__text custom-banner-content">
-				
-				<nav class="custom-breadcrumb">
-					<a href="{{ routes.root_url }}">Home</a>
-					<span>›</span>
-					<span>{{ collection.title }}</span>
-				</nav>
-
-				<h1 class="collection-banner__title">
-					{{ collection.title }}
+			<div class="collection-banner__text{% if section.settings.text_horizontal == 'center' %}-center{% endif %}">
+				<h1 class="collection-banner__title h2">
+					<span class="visually-hidden">
+						{{- 'sections.collection_template.title' | t }}:
+					</span>
+					{{- collection.title | escape -}}
+					{% if section.settings.show_word
+						and section.settings.add_word != blank
+					%}
+						<span>{{ section.settings.add_word }}</span>
+					{% endif %}
 				</h1>
-
 				{%- if section.settings.show_collection_description
 					and collection_description != blank
 				-%}
@@ -103,10 +99,11 @@
 						{{ collection_description }}
 					</div>
 				{%- endif -%}
-
 			</div>
-
 		</div>
+	</div>
+</div>
+</div>
 
 
 {% if section.settings.section_size == 'container' %}
