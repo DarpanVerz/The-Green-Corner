@@ -1,0 +1,246 @@
+{% schema %}
+{
+  "name": "Instagram Gallery",
+  "settings": [
+    {
+      "type": "text",
+      "id": "small_heading",
+      "label": "Small Heading",
+      "default": "FOLLOW US ON INSTAGRAM"
+    },
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Main Heading",
+      "default": "@thegreencornersg"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Desktop Columns",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "label": "Mobile Columns",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top Padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom Padding",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "instagram_post",
+      "name": "Instagram Post",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Post Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Instagram Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Instagram Gallery"
+    }
+  ]
+}
+{% endschema %}
+
+<section
+  class="instagram-gallery-section"
+  style="
+    padding-top: {{ section.settings.section_padding_top }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom }}px;
+  "
+>
+  <div class="instagram-gallery-header">
+    {% if section.settings.small_heading != blank %}
+      <p class="instagram-small-heading">
+        {{ section.settings.small_heading }}
+      </p>
+    {% endif %}
+
+    {% if section.settings.main_heading != blank %}
+      <h2 class="instagram-main-heading">
+        {{ section.settings.main_heading }}
+      </h2>
+    {% endif %}
+  </div>
+
+  <div
+    class="instagram-gallery-grid"
+    style="
+      --desktop-columns: {{ section.settings.columns_desktop }};
+      --mobile-columns: {{ section.settings.columns_mobile }};
+    "
+  >
+    {% for block in section.blocks %}
+      <div class="instagram-gallery-item" {{ block.shopify_attributes }}>
+        {% if block.settings.link != blank %}
+          <a
+            href="{{ block.settings.link }}"
+            target="_blank"
+            class="instagram-gallery-link"
+          >
+        {% endif %}
+
+        {% if block.settings.image != blank %}
+          <img
+            src="{{ block.settings.image | image_url: width: 900 }}"
+            alt="Instagram Post"
+            loading="lazy"
+            width=""
+            height=""
+          >
+        {% else %}
+          {{ 'image' | placeholder_svg_tag }}
+        {% endif %}
+
+        <div class="instagram-overlay">
+          <span class="instagram-icon">
+            ⭘
+          </span>
+        </div>
+
+        {% if block.settings.link != blank %}
+          </a>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+.instagram-gallery-section {
+  width: 100%;
+  background: #fff;
+}
+
+.instagram-gallery-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 15px;
+}
+
+.instagram-small-heading {
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #3f6b57;
+  margin-bottom: 10px;
+}
+
+.instagram-main-heading {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  color: #222;
+}
+
+.instagram-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--desktop-columns), 1fr);
+  width: 100%;
+}
+
+.instagram-gallery-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+}
+
+.instagram-gallery-item img,
+.instagram-gallery-item svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.instagram-gallery-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.instagram-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram-icon {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.instagram-gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.instagram-gallery-item:hover .instagram-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 768px) {
+  .instagram-gallery-grid {
+    grid-template-columns: repeat(var(--mobile-columns), 1fr);
+  }
+
+  .instagram-main-heading {
+    font-size: 28px;
+  }
+
+  .instagram-small-heading {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}
+</style>
