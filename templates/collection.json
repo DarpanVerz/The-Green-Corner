@@ -87,7 +87,7 @@
         "heading": "Subscribe to our Newsletter",
         "heading_tag": "h3",
         "text": "<p>Stay connected with The Green Corner and receive the latest plant tips, new arrivals, and gardening inspiration straight to your inbox.</p>",
-        "newsletter_text": "<p>I consent to receiving marketing emails and promotional offers.</p>",
+        "newsletter_text": "",
         "button_style": "primary",
         "margin_top": "no-indent",
         "margin_bottom": "l",
