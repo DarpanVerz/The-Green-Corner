@@ -15,7 +15,7 @@
         "color_scheme": "",
         "overlay_opacity": 20,
         "section_size": "container",
-        "text_horizontal": "center",
+        "text_horizontal": "left",
         "add_word": "Collection",
         "show_word": true,
         "show_collection_description": true,
