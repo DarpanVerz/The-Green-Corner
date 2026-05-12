@@ -185,7 +185,7 @@
         "text_horizontal": "center",
         "text_vertical": "center",
         "button_label": "Send a Message",
-        "button_link": "",
+        "button_link": "shopify://pages/contact-us",
         "button_style": "tertiary",
         "margin_top": "no-indent",
         "margin_bottom": "no-indent",
