@@ -83,7 +83,7 @@
       "name": "Newsletter",
       "settings": {
         "color_scheme": "",
-        "position": "left",
+        "position": "center",
         "heading": "Subscribe to our Newsletter",
         "heading_tag": "h3",
         "text": "<p>Stay connected with The Green Corner and receive the latest plant tips, new arrivals, and gardening inspiration straight to your inbox.</p>",
@@ -91,7 +91,7 @@
         "button_style": "primary",
         "margin_top": "no-indent",
         "margin_bottom": "l",
-        "padding_top": "no-indent",
+        "padding_top": "l",
         "padding_bottom": "no-indent"
       }
     }
