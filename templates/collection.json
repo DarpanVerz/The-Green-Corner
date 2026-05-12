@@ -67,11 +67,39 @@
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
+    },
+    "image_banner_Ui3UzF": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "hide_mobile_image": true,
+        "full_width": true,
+        "color_scheme": "",
+        "image_size": "small",
+        "overlay_opacity": 20,
+        "subheading": "Title Here",
+        "subheading_tag": "h2",
+        "heading": "Promote A Limited-time Deal, <em>Fresh Arrivals</em>, Or <em>Exciting News</em>",
+        "heading_tag": "h2",
+        "description": "<p>This is where you can tell a brief story, highlight a collection, or introduce an upcoming event, giving your visuals more context and impact.</p>",
+        "text_horizontal": "center",
+        "text_vertical": "center",
+        "button_label": "See Details",
+        "button_link": "",
+        "button_style": "tertiary",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
+    "image_banner_Ui3UzF",
     "newsletter_N6DmJh"
   ]
 }
