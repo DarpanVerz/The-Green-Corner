@@ -394,7 +394,7 @@
         "img_size": "small",
         "swipe_on_mobile": true,
         "margin_top": "no-indent",
-        "margin_bottom": "l",
+        "margin_bottom": "m",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent",
         "enable_border_top": false,
