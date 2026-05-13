@@ -186,7 +186,7 @@
         "title": "Explore Our Plant Collection",
         "description": "Discover a diverse collection of indoor and outdoor plants, carefully selected for plant lovers of all levels. Complete your gardening journey with our range of quality tools and soil designed to help every plant thrive.",
         "button_text": "Browse All Categories",
-        "button_link": "#"
+        "button_link": "shopify://collections"
       }
     },
     "popular-products": {
