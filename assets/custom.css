@@ -2465,7 +2465,7 @@ button.hover-cart-btn:hover {
     );
 }
 
-.product-markers .card-wrapper, .product-markers .card-horizontal-wrapper {
+.product-markers__wrapper .product-markers .card-wrapper, .product-markers .card-horizontal-wrapper {
   border-radius: 20px;
 }
 
