@@ -148,8 +148,8 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 .announcement-upload-icon {
-    width: 18px;
-    height: 18px;
+    width: 108px;
+    height: 108px;
     object-fit: contain;
     display: block;
 }
@@ -2070,7 +2070,10 @@ h1, .h1 {
   .announcement-bar_menu {
     display: none;
   }
-  .announcement-wrapper .announcement-wrapper_button { display:block; }
+  .announcement-wrapper .announcement-wrapper_button { 
+    display:block; 
+  }
+
   .announcement-main-icon {
     top: 20px;
 }
