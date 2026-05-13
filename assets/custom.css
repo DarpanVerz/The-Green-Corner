@@ -2019,7 +2019,9 @@ margin-left:30px;
     font-size: 48px;
   }
 
-
+  .blog-slide-image img {
+    height: 360px;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -2050,10 +2052,6 @@ margin-left:30px;
 
   .blog-main-title {
     font-size: 32px;
-  }
-
-  .blog-slide-image img {
-    height: 300px;
   }
 
   .blog-slide-title {
