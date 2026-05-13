@@ -2464,3 +2464,7 @@ button.hover-cart-btn:hover {
         rgba(0,0,0,0) 85%
     );
 }
+
+.card__badge small-text .badge--bottom-left {
+  color: #7D9531;
+}
