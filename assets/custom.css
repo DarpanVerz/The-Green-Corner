@@ -688,9 +688,10 @@ h1, .h1 {
     margin-bottom: 64px;
     margin-right: 70px;
 }
+
 @media screen and (min-width: 750px) {
-      justify-content: center;
-      margin-bottom: 0px;
+      justify-content: center !important;
+      margin-bottom: 0px !important;
 }
 
 
