@@ -684,6 +684,10 @@ h1, .h1 {
     color: #000;
     display: none;
 }
+.slideshow .slideshow-bottom__wrapper {
+    margin-bottom: 64px;
+    margin-right: 70px;
+}
 
 /*** Rich Text ****/
 
