@@ -148,8 +148,8 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 .announcement-upload-icon {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     object-fit: contain;
     display: block;
 }
