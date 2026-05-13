@@ -680,12 +680,7 @@ h1, .h1 {
         bottom: 140px !important;
     }
 }
-@media screen and (min-width: 767px) {
 
-.slideshow .slideshow-bottom__wrapper .swiper-pagination__wrapper {
-    margin-bottom: 0px !important;
-}
-}
 
 .swiper-button-next, .swiper-button-prev {
     color: #000;
@@ -694,6 +689,12 @@ h1, .h1 {
 .slideshow .slideshow-bottom__wrapper {
     margin-bottom: 64px;
     margin-right: 70px;
+}
+@media screen and (min-width: 767px) {
+
+.slideshow .slideshow-bottom__wrapper {
+    margin-bottom: 0px !important;
+}
 }
 
 
