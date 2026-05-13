@@ -104,7 +104,7 @@
 .vp-item {
   margin-bottom: 40px;
 }
-.vp-items.left .vp-item:after, .vp-items.right .vp-item:after {
+.vp-items.left .vp-item:after {
     content: "";
     border-bottom: 1px solid #000;
     width: 27%;
@@ -112,6 +112,16 @@
     margin-top: 20px;
     mask-repeat: unset;
 }
+.vp-items.right .vp-item:after {
+    content: "";
+    border-bottom: 1px solid #000;
+    width: 27%;
+    position: absolute;
+    margin-top: 20px;
+    mask-repeat: unset;
+    right:0;
+}
+
 .vp-items.left { text-align: left; }
 
 .vp-items.left .icon {
