@@ -259,7 +259,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 .header .list-menu--inline > li > .header__menu-item:hover {
     color: #056839;
     font-weight: 600;
-    font-size:1.7rem;
+    font-size:1.6rem;
 }
 
 .header .list-menu--inline > li > .header__menu-item:hover::after {
