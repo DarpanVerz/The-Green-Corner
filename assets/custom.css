@@ -680,6 +680,11 @@ h1, .h1 {
     }
 }
 
+.swiper-button-next, .swiper-button-prev {
+    color: #000;
+    display: none;
+}
+
 /*** Rich Text ****/
 
 .rich-text.rich-text--full-width .rich-text__wrapper {
