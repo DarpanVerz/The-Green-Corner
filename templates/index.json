@@ -1153,8 +1153,8 @@
         "button_style": "primary",
         "margin_top": "no-indent",
         "margin_bottom": "no-indent",
-        "padding_top": "m",
-        "padding_bottom": "m",
+        "padding_top": "s",
+        "padding_bottom": "s",
         "enable_border_top": false,
         "enable_border_bottom": false
       }
