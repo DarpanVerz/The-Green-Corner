@@ -676,6 +676,7 @@ h1, .h1 {
 @media screen and (min-width: 750px) {
     .slideshow .slideshow-slide__button-bottom {
         bottom: 170px !important;
+        margin-left: 65px;
     }
 }
 
