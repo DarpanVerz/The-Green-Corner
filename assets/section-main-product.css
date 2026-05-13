@@ -2169,6 +2169,7 @@ fieldset.product-form__input .product-form__group-name-legend {
 .card__badge .color-badge {
     color: #E94242;
     font-weight: 600;
+    text-transform: capitalize
 }
 
 /* MOBILE */
