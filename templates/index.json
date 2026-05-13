@@ -1054,17 +1054,17 @@
     "instagram_gallery_JKcCRW": {
       "type": "instagram-gallery",
       "blocks": {
-        "instagram_post_jhptiU": {
-          "type": "instagram_post",
-          "settings": {
-            "image": "shopify://shop_images/4.png",
-            "link": "https://www.instagram.com/"
-          }
-        },
         "instagram_post_tm4446": {
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/3.png",
+            "link": "https://www.instagram.com/"
+          }
+        },
+        "instagram_post_jhptiU": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
             "link": "https://www.instagram.com/"
           }
         },
@@ -1081,13 +1081,45 @@
             "image": "shopify://shop_images/1.png",
             "link": "https://www.instagram.com/"
           }
+        },
+        "instagram_post_CEXcg3": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_13.png",
+            "link": ""
+          }
+        },
+        "instagram_post_RiWbCG": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_12.png",
+            "link": ""
+          }
+        },
+        "instagram_post_AnaRNd": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_11.png",
+            "link": ""
+          }
+        },
+        "instagram_post_pxtWzx": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig-post-_11.jpg",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "instagram_post_jhptiU",
         "instagram_post_tm4446",
+        "instagram_post_jhptiU",
         "instagram_post_Fqk4t9",
-        "instagram_post_eTjCYy"
+        "instagram_post_eTjCYy",
+        "instagram_post_CEXcg3",
+        "instagram_post_RiWbCG",
+        "instagram_post_AnaRNd",
+        "instagram_post_pxtWzx"
       ],
       "name": "Instagram Gallery",
       "settings": {
