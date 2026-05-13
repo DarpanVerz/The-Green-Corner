@@ -159,7 +159,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     position: absolute;
     left: 0;
     align-items: center;
-    top: 10px;
+    top: 12px;
 }
 
 .button--simple { padding-left:25px; }
