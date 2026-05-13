@@ -426,6 +426,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 @media(max-width:767px){
   .slideshow .slideshow-slide__button-bottom {
     bottom: 60px !important;
+    margin-left:0px !important;
 }
 h1, .h1 {
     font-size: calc(var(--font-heading-h1-scale) * 4.2rem);
@@ -677,8 +678,6 @@ h1, .h1 {
 @media screen and (min-width: 750px) {
     .slideshow .slideshow-slide__button-bottom {
         bottom: 140px !important;
-        margin-left:0 !important;
-        
     }
 }
 
