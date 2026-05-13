@@ -412,8 +412,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 .slideshow .slideshow-slide__button-bottom {
     position: absolute !important;
     bottom: 0 !important;
-    margin-left: 65px !important;
-}
+    margin-left: 65px;
 
 @media screen and (min-width: 1360px) {
     .slideshow-slide__title {
