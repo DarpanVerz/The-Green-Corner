@@ -689,8 +689,8 @@ h1, .h1 {
     margin-right: 70px;
 }
 
-@media screen and (min-width: 750px) {
-      justify-content: center !important;
+@media screen and (min-width: 750px) 
+.slideshow .slideshow-bottom__wrapper {
       margin-bottom: 0px !important;
 }
 
