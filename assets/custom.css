@@ -418,6 +418,8 @@ h1, h2, { font-family: 'didotregular' !important; }
     .slideshow-slide__title {
         font-size: calc(var(--font-heading-h1-scale) * 6.6rem) !important;
         max-width:40rem;
+        line-height:65px;
+        padding: 0 0 2rem !important;
     }
 }
 
