@@ -692,7 +692,7 @@ h1, .h1 {
 
 @media screen and (min-width: 767px) {
 
-.slideshow .slideshow-bottom__wrapper {
+.slideshow .slideshow-bottom__wrapper .swiper-pagination__wrapper {
     margin-bottom: 0px !important;
 }
 }
