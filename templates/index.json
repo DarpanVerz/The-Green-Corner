@@ -1128,7 +1128,7 @@
         "columns_desktop": 4,
         "columns_mobile": 2,
         "section_padding_top": 40,
-        "section_padding_bottom": 40
+        "section_padding_bottom": 0
       }
     },
     "image_banner_cak3tz": {
