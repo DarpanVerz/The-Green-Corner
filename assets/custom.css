@@ -730,6 +730,9 @@ h1, .h1 {
   margin-bottom: 38px;
   gap: 20px;
 }
+.left-section-header {
+margin-left:30px;
+}
 
 .custom-collection-section .subtitle {
   margin-bottom: 10px;
