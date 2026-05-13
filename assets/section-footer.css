@@ -464,8 +464,8 @@ footer details[open] summary ~ * {
     max-width: 100%;
 }
 
-.footer .footer-block__details-content .footer--button { font-size:16px; color:#595959; }
-.footer .footer-block__details-content .footer--button:hover { color:#056839; font-weight:500; }
+.footer .footer-block__details-content .footer--button { font-size:16px; color: #595959; }
+.footer .footer-block__details-content .footer--button:hover { color: #056839; font-weight:500; }
 
 h5.footer-block__heading {
     color: #1A1A1A;
