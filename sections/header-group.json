@@ -111,7 +111,7 @@
         "contact_button_link": "shopify://pages/contact-us",
         "show_cart_item_count": false,
         "logo": "shopify://shop_images/Vector.png",
-        "logo_width": 120,
+        "logo_width": 110,
         "header_overlay": false,
         "menu": "main-menu",
         "color_scheme": "",
