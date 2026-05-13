@@ -1153,7 +1153,7 @@
         "button_style": "primary",
         "margin_top": "no-indent",
         "margin_bottom": "no-indent",
-        "padding_top": "s",
+        "padding_top": "no-indent",
         "padding_bottom": "s",
         "enable_border_top": false,
         "enable_border_bottom": false
