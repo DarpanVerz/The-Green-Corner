@@ -12,6 +12,24 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "additional_description_BXcTMx": {
+          "type": "additional_description",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "additional_heading": "Benefits:",
+            "additional_heading_tag": "h3",
+            "additional_content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac feugiat nulla, id eleifend sem. Sed quam dolor, laoreet eget ipsum vel, lacinia vestibulum libero. Donec ipsum tortor, pulvinar et egestas ut, mollis sit amet mi.",
+            "additional_text_alignment": "left"
+          }
+        },
+        "custom_liquid_XwijVt": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac feugiat nulla, id eleifend sem. \n\nSed quam dolor, laoreet eget ipsum vel, lacinia vestibulum libero. Donec ipsum tortor, pulvinar et egestas ut, mollis sit amet mi."
+          }
+        },
         "tags": {
           "type": "tags",
           "settings": {}
@@ -22,12 +40,6 @@
             "heading_tag": "h1"
           }
         },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "This exquisite piece, available in our art store, showcases the perfect blend of vibrant colors and intricate details, capturing the imagination of art enthusiasts and collectors alike. Each stroke tells a story, inviting the viewer into a world of beauty and inspiration."
-          }
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -35,8 +47,15 @@
             "show_shipping": true
           }
         },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Cute Pink Rose is a charming bouquet that captures the delicate beauty of 12 soft pink roses, symbolising grace and admiration. Paired with sweet chamomile blooms, aromatic eucalyptus, and the lush texture of bell fern, this arrangement offers a perfect balance of elegance and freshness.Wrapped in beautifully decorated paper and tied with a satin ribbon, this bouquet is a delightful gift for any occasion. The lovely Cute Pink Rose bouquet will make a lasting impression with its soft hues and enchanting fragrance. Show him or her how you feel today!"
+          }
+        },
         "inventory_9AgXC3": {
           "type": "inventory",
+          "disabled": true,
           "settings": {}
         },
         "variant_picker": {
@@ -118,10 +137,12 @@
         }
       },
       "block_order": [
+        "additional_description_BXcTMx",
+        "custom_liquid_XwijVt",
         "tags",
         "title",
-        "text",
         "price",
+        "text",
         "inventory_9AgXC3",
         "variant_picker",
         "buy_buttons",
