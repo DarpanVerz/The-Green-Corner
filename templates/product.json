@@ -167,6 +167,86 @@
         "margin_bottom": "l"
       }
     },
+    "instagram_gallery_fMzAGe": {
+      "type": "instagram-gallery",
+      "blocks": {
+        "instagram_post_rUpteD": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "link": ""
+          }
+        },
+        "instagram_post_VMTrYg": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "link": ""
+          }
+        },
+        "instagram_post_cg48Tj": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "link": ""
+          }
+        },
+        "instagram_post_3eQ4UP": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "link": ""
+          }
+        },
+        "instagram_post_Fm7U8f": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_13.png",
+            "link": ""
+          }
+        },
+        "instagram_post_4wpVMA": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_12.png",
+            "link": ""
+          }
+        },
+        "instagram_post_ErnMkw": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig-post-_11_0f482fc3-db2e-41d7-bc43-09a951bb9bf2.jpg",
+            "link": ""
+          }
+        },
+        "instagram_post_3gTWX6": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig-post-_11.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "instagram_post_rUpteD",
+        "instagram_post_VMTrYg",
+        "instagram_post_cg48Tj",
+        "instagram_post_3eQ4UP",
+        "instagram_post_Fm7U8f",
+        "instagram_post_4wpVMA",
+        "instagram_post_ErnMkw",
+        "instagram_post_3gTWX6"
+      ],
+      "name": "Instagram Gallery",
+      "settings": {
+        "small_heading": "FOLLOW US ON INSTAGRAM",
+        "main_heading": "@thegreencornersg",
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "section_padding_top": 40,
+        "section_padding_bottom": 40
+      }
+    },
     "image_banner_thA7Ty": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -281,6 +361,7 @@
   "order": [
     "main",
     "product-recommendations",
+    "instagram_gallery_fMzAGe",
     "image_banner_thA7Ty",
     "newsletter_yqWxmN",
     "custom_product_tabs_xUGwdj"
