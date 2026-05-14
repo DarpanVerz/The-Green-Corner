@@ -205,7 +205,7 @@
         "description": "<p>Fresh Picks for Your Garden</p>",
         "alignment": "center",
         "button_text": "Shop New Arrivals",
-        "button_link": "shopify://collections",
+        "button_link": "shopify://collections/new-arrivals",
         "autoplay": false,
         "stop_autoplay": true,
         "slideshow_speed": 0.5,
