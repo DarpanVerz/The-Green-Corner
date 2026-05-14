@@ -876,19 +876,16 @@ margin-left:30px;
     transition: all 0.4s ease;
 }
 
-/* Hover Effect */
 .card a:hover .view-btn {
   background: #007a33;
   color: #ffffff;
 }
 
-/* Arrow Hover */
 .card a:hover .view-btn::after {
   background-color: #007a33;
   transform: translateX(6px);
 }
 
-/* ===== Swiper Arrows ===== */
 .swiper-button-next,
 .swiper-button-prev {
   color: #000;
@@ -938,6 +935,8 @@ margin-left:30px;
 
   .custom-collection-section .card .view-btn {
     gap: 15px;
+    margin-left: -3px;
+    margin-bottom: 5px;
   }
 
   .custom-collection-section .desc {
