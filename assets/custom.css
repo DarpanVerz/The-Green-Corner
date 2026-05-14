@@ -772,6 +772,11 @@ margin-left:30px;
     margin-right:50px;
     margin-bottom:8px;
 }
+@media (max-width: 767px) {
+.custom-collection-section .browse-btn {
+   margin-right:0px;
+}
+}
 
 /* ===== Card Design ===== */
 
