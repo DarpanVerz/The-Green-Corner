@@ -935,14 +935,16 @@ margin-left:30px;
 
   .custom-collection-section .card .view-btn {
     gap: 15px;
-    margin-left: -3px;
-    margin-bottom: 5px;
   }
 
   .custom-collection-section .desc {
     margin: 0 auto;
 }
 
+}
+@media (max-width: 767px) {
+    margin-left: -3px;
+    margin-bottom: 5px;
 }
 
 /* ===== New Arrivals ===== */
