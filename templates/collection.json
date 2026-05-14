@@ -50,6 +50,96 @@
         "padding_bottom": "l"
       }
     },
+    "custom_collection_hero_tD9e3U": {
+      "type": "custom-collection-hero",
+      "name": "Custom Collection Hero",
+      "settings": {
+        "left_image": "shopify://shop_images/72eede86361bbe37a6e27ee62f44b9a9f12ca314.jpg",
+        "heading": "Featured Products",
+        "description": "Discover our handpicked flower bouquets, thoughtfully arranged to brighten any moment.",
+        "collection": "flowers"
+      }
+    },
+    "instagram_gallery_XFQYb4": {
+      "type": "instagram-gallery",
+      "blocks": {
+        "instagram_post_nVkiM6": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "link": ""
+          }
+        },
+        "instagram_post_wJc3M7": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "link": ""
+          }
+        },
+        "instagram_post_JWbETR": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "link": ""
+          }
+        },
+        "instagram_post_gAxpkd": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "link": ""
+          }
+        },
+        "instagram_post_mCQxXj": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_13.png",
+            "link": ""
+          }
+        },
+        "instagram_post_Gtx3jm": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_12.png",
+            "link": ""
+          }
+        },
+        "instagram_post_wjRPF4": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig-post-_11_0f482fc3-db2e-41d7-bc43-09a951bb9bf2.jpg",
+            "link": ""
+          }
+        },
+        "instagram_post_LJB7Vt": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig-post-_11.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "instagram_post_nVkiM6",
+        "instagram_post_wJc3M7",
+        "instagram_post_JWbETR",
+        "instagram_post_gAxpkd",
+        "instagram_post_mCQxXj",
+        "instagram_post_Gtx3jm",
+        "instagram_post_wjRPF4",
+        "instagram_post_LJB7Vt"
+      ],
+      "name": "Instagram Gallery",
+      "settings": {
+        "small_heading": "FOLLOW US ON INSTAGRAM",
+        "main_heading": "@thegreencornersg",
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "section_padding_top": 40,
+        "section_padding_bottom": 40
+      }
+    },
     "image_banner_Ui3UzF": {
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
@@ -160,22 +250,13 @@
         "margin_top": "no-indent",
         "margin_bottom": "l"
       }
-    },
-    "custom_collection_hero_tD9e3U": {
-      "type": "custom-collection-hero",
-      "name": "Custom Collection Hero",
-      "settings": {
-        "left_image": "shopify://shop_images/72eede86361bbe37a6e27ee62f44b9a9f12ca314.jpg",
-        "heading": "Featured Products",
-        "description": "Discover our handpicked flower bouquets, thoughtfully arranged to brighten any moment.",
-        "collection": "flowers"
-      }
     }
   },
   "order": [
     "banner",
     "product-grid",
     "custom_collection_hero_tD9e3U",
+    "instagram_gallery_XFQYb4",
     "image_banner_Ui3UzF",
     "newsletter_N6DmJh",
     "split_screen_slideshow_cjMVRj"
