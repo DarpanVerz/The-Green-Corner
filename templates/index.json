@@ -263,7 +263,7 @@
         "title": "Creating a Supportive Environment for Plant Lovers Across Singapore",
         "description": "The Green Corner, a subsidiary of Prince’s Landscape with over 60 to 70 years of heritage in Singapore, was established to cater to local plant enthusiasts. From our beginnings, we’ve grown into a beloved hub offering a wide range of indoor and outdoor plants, gardening tools, and our exclusive SILLYSOIL brand.",
         "button_text": "Learn Our Story",
-        "button_link": "#",
+        "button_link": "shopify://pages/about-us",
         "image1": "shopify://shop_images/16979b58272cad47f0f22301ea96ce47caad963b_48841f9b-23c2-4b7e-a986-d32126e96ebb.jpg",
         "image2": "shopify://shop_images/Rectangle_27.png",
         "image3": "shopify://shop_images/Rectangle_28.png"
@@ -410,7 +410,7 @@
         "heading": "Nurture Your Plants the Right Way",
         "description": "<p>Learn the essentials of plant care to help your indoor and outdoor plants grow healthy and strong. Discover practical tips on watering, sunlight, soil, and proper maintenance for thriving greenery. Whether you’re a beginner or a seasoned plant enthusiast, our guides are here to support your gardening journey. With the right care and tools, every plant in your space can flourish beautifully.</p>",
         "button_label": "Explore Tips",
-        "button_link": "",
+        "button_link": "shopify://collections/plants",
         "color_scheme": ""
       }
     },
@@ -487,7 +487,7 @@
         "description": "<p>Blooming Best Sellers for Your Garden</p>",
         "alignment": "center",
         "button_text": "Shop New Arrivals",
-        "button_link": "",
+        "button_link": "shopify://collections/new-arrivals",
         "autoplay": false,
         "stop_autoplay": true,
         "slideshow_speed": 0.5,
