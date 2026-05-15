@@ -74,7 +74,7 @@
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
-            "show_quantity": false,
+            "show_quantity": true,
             "show_gift_card_recipient": false
           }
         },
