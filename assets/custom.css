@@ -2471,18 +2471,3 @@ button.hover-cart-btn:hover {
 }
 
 
-.product__media-list-wrapper.thumbnail-position--bottom {
-    display: flex !important;
-    flex-direction: column-reverse !important;
-    gap: 20px !important;
-}
-
-.product__media-sublist {
-    order: 2 !important;
-    width: 100% !important;
-}
-
-.product__media-list {
-    order: 1 !important;
-    width: 100% !important;
-}
