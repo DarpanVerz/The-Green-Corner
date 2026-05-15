@@ -14,6 +14,7 @@
       "blocks": {
         "additional_description_BXcTMx": {
           "type": "additional_description",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "additional_heading": "Benefits:",
@@ -78,6 +79,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "description_heading": "Description",
             "subheading": "Artistic Expression"
@@ -85,6 +87,7 @@
         },
         "additional-1": {
           "type": "additional_description",
+          "disabled": true,
           "settings": {
             "subheading": "Essence & Impact",
             "additional_heading": "Creative Essence",
@@ -95,6 +98,7 @@
         },
         "additional-2": {
           "type": "additional_description",
+          "disabled": true,
           "settings": {
             "subheading": "",
             "additional_heading": "Visual Impact",
