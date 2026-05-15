@@ -524,6 +524,59 @@
 						</div>
 					{% elsif section.settings.image_gallery_collage == "thumbnail_carousel" %}	
 						<div class="product__media-list-wrapper thumbnail-position--bottom">
+							
+							<div class="product__media-list">
+								<div class="js-media-list no-js-hidden swiper">
+								<div class="swiper-wrapper">
+									{%- liquid
+										assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
+										assign media_count = product.media.size 
+										-%}
+
+									{%- if product.selected_or_first_available_variant.featured_media != null -%}
+										{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%} 
+										<div class="product__media-item swiper-slide {% if section.settings.enable_autoheight != true %}auto-diabled{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}" data-media-id="{{ section.id }}-{{ featured_media.id }}">
+											{% render 'product-thumbnail', product_card_product: product, media: featured_media, position: 'featured', modal_id: section.id, lazy_load: false %}
+										</div>
+									{%- endif -%}
+
+									{%- for media in product.media -%}
+										{% if show_only_variant_media %}
+											{% break %}
+										{% endif %}
+
+										{% if section.settings.variant_media_display == 'hide_unselected_variant_media'
+											and variant_images contains media.src
+										%}
+											{% continue %}
+										{% endif %}
+										{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+											<div class="product__media-item swiper-slide {% if section.settings.enable_autoheight != true %}auto-diabled{% endif %} {% if media.media_type != 'image' %} product__media-item--full{% endif %} {% if variant_images contains media.src %} product__media-item--variant{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
+													data-media-id="{{ section.id }}-{{ media.id }}"
+											>
+												{% render 'product-thumbnail', media: media, position: forloop.index, modal_id: section.id, lazy_load: false %}
+											</div>
+										{%- endunless -%}
+									{%- endfor -%}
+									
+								
+							
+								</div>
+								{% if product.media.size > 1 %}
+									<div class="swiper-btn swiper-btn--prev">
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10 15.8718L22 6L15.2 15.8718L22 26L10 15.8718Z" fill="currentColor"/>
+										</svg>
+									</div>
+									<div class="swiper-btn swiper-btn--next">
+										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M22 16.1282L10 26L16.8 16.1282L10 6L22 16.1282Z" fill="currentColor"/>
+										</svg>
+									</div>
+								{% endif %}
+							  </div>
+							</div>
+
 							<div class="product__media-sublist js-media-sublist no-js-hidden swiper">
 								<div class="swiper-wrapper">
 									{%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -584,57 +637,7 @@
 								{%- endfor -%}
 								</div>
 							</div>
-							<div class="product__media-list">
-								<div class="js-media-list no-js-hidden swiper">
-								<div class="swiper-wrapper">
-									{%- liquid
-										assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
-										assign media_count = product.media.size 
-										-%}
-
-									{%- if product.selected_or_first_available_variant.featured_media != null -%}
-										{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%} 
-										<div class="product__media-item swiper-slide {% if section.settings.enable_autoheight != true %}auto-diabled{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}" data-media-id="{{ section.id }}-{{ featured_media.id }}">
-											{% render 'product-thumbnail', product_card_product: product, media: featured_media, position: 'featured', modal_id: section.id, lazy_load: false %}
-										</div>
-									{%- endif -%}
-
-									{%- for media in product.media -%}
-										{% if show_only_variant_media %}
-											{% break %}
-										{% endif %}
-
-										{% if section.settings.variant_media_display == 'hide_unselected_variant_media'
-											and variant_images contains media.src
-										%}
-											{% continue %}
-										{% endif %}
-										{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-											<div class="product__media-item swiper-slide {% if section.settings.enable_autoheight != true %}auto-diabled{% endif %} {% if media.media_type != 'image' %} product__media-item--full{% endif %} {% if variant_images contains media.src %} product__media-item--variant{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
-													data-media-id="{{ section.id }}-{{ media.id }}"
-											>
-												{% render 'product-thumbnail', media: media, position: forloop.index, modal_id: section.id, lazy_load: false %}
-											</div>
-										{%- endunless -%}
-									{%- endfor -%}
-									
-								
 							
-								</div>
-								{% if product.media.size > 1 %}
-									<div class="swiper-btn swiper-btn--prev">
-										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M10 15.8718L22 6L15.2 15.8718L22 26L10 15.8718Z" fill="currentColor"/>
-										</svg>
-									</div>
-									<div class="swiper-btn swiper-btn--next">
-										<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M22 16.1282L10 26L16.8 16.1282L10 6L22 16.1282Z" fill="currentColor"/>
-										</svg>
-									</div>
-								{% endif %}
-							</div>
-							</div>
 						</div>
 						<div class="{% if product.media.size == 1 %} product__media-list__container--large-one{% endif %} product__media-list__container--large no-js-gallery">
 							{% liquid
