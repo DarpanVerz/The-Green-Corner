@@ -77,7 +77,7 @@
 			);
 
 			if (!stickySlider) {
-				const direction = "horizontal";
+				const direction = dir !== "rtl"? "vertical" : 'horizontal';
 				const imgSlider = new Swiper(
 					`#${id} .split-screen-slideshow__img.swiper`,
 					{
