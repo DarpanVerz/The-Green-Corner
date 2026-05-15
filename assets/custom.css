@@ -2473,4 +2473,4 @@ button.hover-cart-btn:hover {
 
 /*** Product Details ***/
 
-.product .product__outer--center { align-items: start; }
+.product .product__outer--center { align-items: start !important; }
