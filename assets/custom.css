@@ -2480,6 +2480,7 @@ button.hover-cart-btn:hover {
     align-items: start !important;
     justify-content: left !important;
     text-align: left !important;
+    line-height:26px;
 }
 .product .price-item {
     line-height: 100%;
