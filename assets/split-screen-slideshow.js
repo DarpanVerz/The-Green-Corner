@@ -85,7 +85,7 @@
 						autoplay: false,
 						breakpoints: {
 							1200: {
-								direction,
+								direction: "horizontal",
 							},
 						},
 					}
