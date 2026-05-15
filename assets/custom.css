@@ -2493,3 +2493,63 @@ button.hover-cart-btn:hover {
 .product__info-wrapper .product__info-container .product__description { text-align:left; }
 .product-form__submit { border-radius: 50px; }
 
+.product-share-icons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.share-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #222;
+    margin-right: 10px;
+}
+
+.share-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #f7dfe7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.share-icon i {
+    color: #fff;
+    font-size: 22px;
+}
+
+.share-icon.facebook {
+    background: #0d6b34;
+}
+
+.share-icon:hover {
+    transform: translateY(-3px);
+}
+
+@media(max-width:767px){
+    .product-share-icons {
+        gap: 10px;
+    }
+
+    .share-title {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .share-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .share-icon i {
+        font-size: 18px;
+    }
+}
