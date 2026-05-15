@@ -2475,3 +2475,6 @@ button.hover-cart-btn:hover {
 
 .product .product__outer--center { align-items: start !important; }
 .product__title__wrapper { align-items: start; justify-content: start; }
+.product .price {
+    justify-content: left !important;
+}
