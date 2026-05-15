@@ -2481,3 +2481,10 @@ button.hover-cart-btn:hover {
     justify-content: left !important;
     text-align: left !important;
 }
+.product .price-item {
+    line-height: 100%;
+    color: #056839;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 25px;
+}
