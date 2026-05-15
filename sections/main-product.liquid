@@ -76,6 +76,9 @@
 								<p class="product__text medium-font" {{ block.shopify_attributes }}>
 									{{- block.settings.text -}}
 								</p>
+								<p>
+									{{ product.description }}
+								</p>
 							{%- when 'title' -%}
 								<div class="product__title__wrapper">
 									<{{ block.settings.heading_tag }} class="product__title h3" {{ block.shopify_attributes }}>
