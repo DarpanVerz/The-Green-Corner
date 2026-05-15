@@ -2530,6 +2530,7 @@ button.hover-cart-btn:hover {
 }
 
 .share-icon:hover {
+    background: #0d6b34;
     transform: translateY(-3px);
 }
 
