@@ -1,23 +1,40 @@
 (function () {
-	function swiperInit() {
+
+	function destroySwiper(selector) {
+		document.querySelectorAll(selector).forEach(function (el) {
+			if (el.swiper) {
+				el.swiper.destroy(true, true);
+			}
+		});
+	}
+
+	function initAllSwipers() {
+
+		destroySwiper('.js-media-list');
+		destroySwiper('.js-media-sublist');
+
 		subSliderInit(true);
 		sliderInit(true);
 	}
 
-	document.addEventListener('shopify:section:load', function (e) {
-		swiperInit();
+	window.swiperInit = initAllSwipers;
+
+	document.addEventListener('shopify:section:load', function () {
+		initAllSwipers();
 	});
+
+	let resizeTimer;
 
 	window.addEventListener('resize', function () {
-		$('.product-section .js-media-list').each(function () {
-			this.swiper.destroy();
-		});
-		$('.product-section .js-media-sublist').each(function () {
-			this.swiper.destroy();
-		});
 
-		swiperInit();
+		clearTimeout(resizeTimer);
+
+		resizeTimer = setTimeout(function () {
+			initAllSwipers();
+		}, 300);
+
 	});
 
-	swiperInit();
+	initAllSwipers();
+
 })();
