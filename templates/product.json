@@ -80,7 +80,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
             "description_heading": "Description",
             "subheading": "Artistic Expression"
