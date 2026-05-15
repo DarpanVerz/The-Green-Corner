@@ -41,7 +41,7 @@
     "social_tiktok_link": "#",
     "social_youtube_link": "",
     "quickview_button_quick_buy": true,
-    "quickview_button_quick_view": false,
+    "quickview_button_quick_view": true,
     "quickview_button_style": "primary",
     "quickview_button_layout": "hover",
     "show_on_mobile": false,
