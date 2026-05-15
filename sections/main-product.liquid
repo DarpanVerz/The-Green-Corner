@@ -158,37 +158,56 @@
 
 											<div class="product-form__buttons">
 												<div class="product-form__buttons-row">
+
 													{% if block.settings.show_quantity %}
-														{%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
-														<div class="product-parameters__item product-parameters__variant product-parameters__variant--quantity">
-															<div id="Quantity-Form-{{ section.id }}" class="product-parameters__item product-parameters__quantity">
-																<div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-																	<quantity-input class="quantity">
-																		<button class="quantity__button no-js-hidden" name="minus" type="button">
-																			<span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-																			{% render 'icon-minus' %}
-																		</button>
-																		<input
-																					 dir="ltr"
-																					 class="quantity__input"
-																					 type="number"
-																					 name="quantity"
-																					 id="Quantity-{{ section.id }}"
-																					 data-cart-quantity="{{ cart_qty }}"
-																					 min="1"
-																					 value="1"
-																					 form="{{ product_form_id }}"
-																					 aria-label="Quantity"
-																		>
-																		<button class="quantity__button no-js-hidden" name="plus" type="button">
-																			<span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-																			{% render 'icon-plus' %}
-																		</button>
-																	</quantity-input>
-																</div>
-															</div>
-														</div>
-													{% endif %}
+  {%- assign cart_qty = cart | item_count_for_variant: product.selected_or_first_available_variant.id -%}
+
+  <div class="product-parameters__item product-parameters__variant product-parameters__variant--quantity">
+    <div id="Quantity-Form-{{ section.id }}" class="product-parameters__item product-parameters__quantity">
+
+      <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
+
+        <div class="custom-quantity-wrapper">
+
+          <!-- Minus Button -->
+          <button
+            type="button"
+            class="qty-btn qty-minus"
+            onclick="this.parentNode.querySelector('input[type=number]').stepDown(); this.parentNode.querySelector('input[type=number]').dispatchEvent(new Event('change'));"
+          >
+            −
+          </button>
+
+          <!-- Quantity Input -->
+          <input
+            dir="ltr"
+            class="quantity__input"
+            type="number"
+            name="quantity"
+            id="Quantity-{{ section.id }}"
+            data-cart-quantity="{{ cart_qty }}"
+            min="1"
+            value="1"
+            form="{{ product_form_id }}"
+            aria-label="Quantity"
+          >
+
+          <!-- Plus Button -->
+          <button
+            type="button"
+            class="qty-btn qty-plus"
+            onclick="this.parentNode.querySelector('input[type=number]').stepUp(); this.parentNode.querySelector('input[type=number]').dispatchEvent(new Event('change'));"
+          >
+            +
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+{% endif %}
 
 													<button
 														id = "ProductSubmitButton-{{ section.id }}"
