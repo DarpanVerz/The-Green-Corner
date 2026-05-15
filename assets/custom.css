@@ -2477,12 +2477,7 @@ button.hover-cart-btn:hover {
 .product__title__wrapper { align-items: start; justify-content: start !important; }
 .product .price { justify-content: left !important; }
 .product__text {
-    display: flex;
-    align-items: start;
-    justify-content: left;
-    gap: .4rem;
-    margin-top: 3.2rem;
-    margin-bottom: 0;
-    text-align: left;
-    font-size: calc(var(--font-body-scale-m) * .8rem);
+    align-items: start !important;
+    justify-content: left !important;
+    text-align: left !important;
 }
