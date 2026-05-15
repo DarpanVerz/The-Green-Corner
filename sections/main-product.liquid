@@ -523,7 +523,7 @@
 							</div>
 						</div>
 					{% elsif section.settings.image_gallery_collage == "thumbnail_carousel" %}	
-						<div class="product__media-list-wrapper">
+						<div class="product__media-list-wrapper thumbnail-position--{{ section.settings.thumbnail_position }}">
 							<div class="product__media-sublist js-media-sublist no-js-hidden swiper">
 								<div class="swiper-wrapper">
 									{%- if product.selected_or_first_available_variant.featured_media != null -%}
