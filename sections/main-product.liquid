@@ -69,14 +69,13 @@
 			<div class="product__info-wrapper {% if product.media.size == 2 and section.settings.image_gallery_collage == "grid" %} product__media-two{% endif %}">
 				<div id="ProductInfo-{{ section.id }}" class="product__info-container" data-source="{{ section.id }}" data-section="{{ section.id }}">
 					{%- assign product_form_id = 'product-form-' | append: section.id -%}
-					<hr>
+					
 					{%- for block in section.blocks -%}
 						{%- case block.type -%}
 							{%- when 'text' -%}
 								<p class="product__text medium-font" {{ block.shopify_attributes }}>
 									{{- block.settings.text -}}
 								</p>
-								<hr>
 							{%- when 'title' -%}
 								<div class="product__title__wrapper">
 									<{{ block.settings.heading_tag }} class="product__title h3" {{ block.shopify_attributes }}>
