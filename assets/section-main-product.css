@@ -2187,3 +2187,60 @@ fieldset.product-form__input .product-form__group-name-legend {
   }
 
 }
+
+
+/* =========================================
+   Thumbnail Position Bottom
+========================================= */
+
+.thumbnail-position--bottom {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.thumbnail-position--bottom .product__media-sublist {
+  width: 100%;
+  max-width: 100%;
+  order: 2;
+}
+
+.thumbnail-position--bottom .product__media-list {
+  width: 100%;
+  order: 1;
+}
+
+.thumbnail-position--bottom .product__media-sublist .swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.thumbnail-position--bottom .product__media-subitem {
+  width: 90px !important;
+  height: auto;
+  cursor: pointer;
+}
+
+.thumbnail-position--bottom .product__media-subitem img {
+  width: 100%;
+  display: block;
+}
+
+.thumbnail-position--bottom .product__media {
+  width: 100%;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 767px) {
+
+  .thumbnail-position--bottom {
+    gap: 12px;
+  }
+
+  .thumbnail-position--bottom .product__media-subitem {
+    width: 70px !important;
+  }
+
+}
