@@ -1,40 +1,23 @@
 (function () {
-
-	function destroySwiper(selector) {
-		document.querySelectorAll(selector).forEach(function (el) {
-			if (el.swiper) {
-				el.swiper.destroy(true, true);
-			}
-		});
-	}
-
-	function initAllSwipers() {
-
-		destroySwiper('.js-media-list');
-		destroySwiper('.js-media-sublist');
-
+	function swiperInit() {
 		subSliderInit(true);
 		sliderInit(true);
 	}
 
-	window.swiperInit = initAllSwipers;
-
-	document.addEventListener('shopify:section:load', function () {
-		initAllSwipers();
+	document.addEventListener('shopify:section:load', function (e) {
+		swiperInit();
 	});
-
-	let resizeTimer;
 
 	window.addEventListener('resize', function () {
+		$('.product-section .js-media-list').each(function () {
+			this.swiper.destroy();
+		});
+		$('.product-section .js-media-sublist').each(function () {
+			this.swiper.destroy();
+		});
 
-		clearTimeout(resizeTimer);
-
-		resizeTimer = setTimeout(function () {
-			initAllSwipers();
-		}, 300);
-
+		swiperInit();
 	});
 
-	initAllSwipers();
-
+	swiperInit();
 })();
