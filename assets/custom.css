@@ -2489,3 +2489,5 @@ button.hover-cart-btn:hover {
     font-weight: 600;
     font-size: 22px;
 }
+
+.product__info-wrapper .product__info-container .product__description { text-align:left; }
