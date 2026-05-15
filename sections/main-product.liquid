@@ -73,12 +73,12 @@
 					{%- for block in section.blocks -%}
 						{%- case block.type -%}
 							{%- when 'text' -%}
-								<p class="product__text medium-font" {{ block.shopify_attributes }}>
+								{% comment %} <p class="product__text medium-font" {{ block.shopify_attributes }}>
 									{{- block.settings.text -}}
-								</p>
-								<p class="product__text medium-font">
+								</p> {% endcomment %}
+								<div class="product__description">
 									{{ product.description }}
-								</p>
+								</div>
 							{%- when 'title' -%}
 								<div class="product__title__wrapper">
 									<{{ block.settings.heading_tag }} class="product__title h3" {{ block.shopify_attributes }}>
