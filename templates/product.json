@@ -166,6 +166,73 @@
         "padding_bottom": "no-indent"
       }
     },
+    "custom_product_tabs_xUGwdj": {
+      "type": "custom-product-tabs",
+      "blocks": {
+        "tab_G4ayND": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Information",
+            "title": "About Cute Pink Rose 3",
+            "description": "<p>Cute Pink Rose is a charming bouquet that captures the delicate beauty of 12 soft pink roses, symbolising grace and admiration. Paired with sweet chamomile blooms, aromatic eucalyptus, and the lush texture of bell fern, this arrangement offers a perfect balance of elegance and freshness.<br/><br/>Wrapped in beautifully decorated paper and tied with a satin ribbon, this bouquet is a delightful gift for any occasion. The lovely Cute Pink Rose bouquet will make a lasting impression with its soft hues and enchanting fragrance. Show him or her how you feel today!<br/><br/>Just as music soothes the soul, flowers offers great appreciation to one who deserve it most.<br/><br/><strong>This item consists of:</strong></p>",
+            "list_1": "12 pink roses",
+            "list_2": "Chamomile",
+            "list_3": "Eucalyptus",
+            "list_4": "Bell Fern",
+            "image": "shopify://shop_images/72eede86361bbe37a6e27ee62f44b9a9f12ca314.jpg"
+          }
+        },
+        "tab_qLrGFN": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Information",
+            "title": "About Cute Pink Rose",
+            "description": "<p>Add your product description here.</p>",
+            "list_1": "",
+            "list_2": "",
+            "list_3": "",
+            "list_4": "",
+            "image": "shopify://shop_images/ig-post-_11_0f482fc3-db2e-41d7-bc43-09a951bb9bf2.jpg"
+          }
+        },
+        "tab_e4McCk": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Information2",
+            "title": "About Cute Pink Rose",
+            "description": "<p>Add your product description here.</p>",
+            "list_1": "",
+            "list_2": "",
+            "list_3": "",
+            "list_4": "",
+            "image": "shopify://shop_images/ig_post_13.png"
+          }
+        },
+        "tab_Pm4pT6": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Information3",
+            "title": "About Cute Pink Rose",
+            "description": "<p>Add your product description here.</p>",
+            "list_1": "",
+            "list_2": "",
+            "list_3": "",
+            "list_4": "",
+            "image": "shopify://shop_images/ig-post-_11.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "tab_G4ayND",
+        "tab_qLrGFN",
+        "tab_e4McCk",
+        "tab_Pm4pT6"
+      ],
+      "name": "AP Product Tabs",
+      "settings": {
+        "heading": "About the Product"
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -313,79 +380,14 @@
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
-    },
-    "custom_product_tabs_xUGwdj": {
-      "type": "custom-product-tabs",
-      "blocks": {
-        "tab_G4ayND": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Information",
-            "title": "About Cute Pink Rose 3",
-            "description": "<p>Cute Pink Rose is a charming bouquet that captures the delicate beauty of 12 soft pink roses, symbolising grace and admiration. Paired with sweet chamomile blooms, aromatic eucalyptus, and the lush texture of bell fern, this arrangement offers a perfect balance of elegance and freshness.<br/><br/>Wrapped in beautifully decorated paper and tied with a satin ribbon, this bouquet is a delightful gift for any occasion. The lovely Cute Pink Rose bouquet will make a lasting impression with its soft hues and enchanting fragrance. Show him or her how you feel today!<br/><br/>Just as music soothes the soul, flowers offers great appreciation to one who deserve it most.<br/><br/><strong>This item consists of:</strong></p>",
-            "list_1": "12 pink roses",
-            "list_2": "Chamomile",
-            "list_3": "Eucalyptus",
-            "list_4": "Bell Fern",
-            "image": "shopify://shop_images/72eede86361bbe37a6e27ee62f44b9a9f12ca314.jpg"
-          }
-        },
-        "tab_qLrGFN": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Information",
-            "title": "About Cute Pink Rose",
-            "description": "<p>Add your product description here.</p>",
-            "list_1": "",
-            "list_2": "",
-            "list_3": "",
-            "list_4": ""
-          }
-        },
-        "tab_e4McCk": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Information",
-            "title": "About Cute Pink Rose",
-            "description": "<p>Add your product description here.</p>",
-            "list_1": "",
-            "list_2": "",
-            "list_3": "",
-            "list_4": ""
-          }
-        },
-        "tab_Pm4pT6": {
-          "type": "tab",
-          "settings": {
-            "tab_title": "Information",
-            "title": "About Cute Pink Rose",
-            "description": "<p>Add your product description here.</p>",
-            "list_1": "",
-            "list_2": "",
-            "list_3": "",
-            "list_4": ""
-          }
-        }
-      },
-      "block_order": [
-        "tab_G4ayND",
-        "tab_qLrGFN",
-        "tab_e4McCk",
-        "tab_Pm4pT6"
-      ],
-      "disabled": true,
-      "name": "AP Product Tabs",
-      "settings": {
-        "heading": "About the Product"
-      }
     }
   },
   "order": [
     "main",
+    "custom_product_tabs_xUGwdj",
     "product-recommendations",
     "instagram_gallery_fMzAGe",
     "image_banner_thA7Ty",
-    "newsletter_yqWxmN",
-    "custom_product_tabs_xUGwdj"
+    "newsletter_yqWxmN"
   ]
 }
