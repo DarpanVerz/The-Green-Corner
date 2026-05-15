@@ -1220,6 +1220,22 @@ customElements.define('product-recommendations--single', ProductRecommendations)
 			"label": "t:sections.main-product.settings.image_fit.label"
 		},
 		{
+		"type": "select",
+		"id": "thumbnail_position",
+		"label": "Thumbnail Position",
+		"options": [
+			{
+			"value": "left",
+			"label": "Left"
+			},
+			{
+			"value": "bottom",
+			"label": "Bottom"
+			}
+		],
+		"default": "left"
+		},
+		{
 			"type": "checkbox",
 			"id": "enable_autoheight",
 			"default": false,
