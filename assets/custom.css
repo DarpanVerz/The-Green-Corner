@@ -2491,3 +2491,4 @@ button.hover-cart-btn:hover {
 }
 
 .product__info-wrapper .product__info-container .product__description { text-align:left; }
+.product-form__submit { border-radius: 50px; }
