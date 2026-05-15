@@ -298,11 +298,24 @@
 .product .price--sold-out .price__badge-sale {
   display: none;
 }
-.product__media-list-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.2rem;
+.product__media-list-wrapper.thumbnail-position--bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+}
+
+.product__media-list-wrapper.thumbnail-position--left {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.product__media-sublist {
+    width: 100%;
+}
+
+.product__media-list {
+    width: 100%;
 }
 @media (min-width: 990px) {
   .product__media-list-wrapper {
