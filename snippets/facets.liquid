@@ -402,7 +402,8 @@
 					</details-disclosure-filter>
 				{% endif %}
 				<div class="facets__sort-wrapper{% if enable_filtering == false %} facets__sort-wrapper_no-filter {% endif %}{% if filter_type == 'vertical' %} facets__sort-wrapper_vertical {% endif %}">
-					<div class="facets__product-count" role="status">
+					
+<div class="facets__product-count" role="status">
 	<h2 class="facets__product-count-text ">
 		<span id="ProductCountDesktop" class="small-text">
 			{%- if results.results_count -%}
@@ -411,7 +412,19 @@
 					| t: terms: results.terms, count: results.results_count
 				}}
 			{%- else -%}
-				Showing {{ results.products_count }} out of {{ results.all_products_count }} results
+
+				{% assign current_count = paginate.page_size %}
+
+				{% if paginate.current_offset > 0 %}
+					{% assign current_count = paginate.current_offset | plus: paginate.page_size %}
+				{% endif %}
+
+				{% if current_count > results.products_count %}
+					{% assign current_count = results.products_count %}
+				{% endif %}
+
+				Showing {{ current_count }} out of {{ results.products_count }} results
+
 			{%- endif -%}
 		</span>
 	</h2>
