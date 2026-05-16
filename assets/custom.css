@@ -2567,5 +2567,14 @@ button.hover-cart-btn:hover {
   left:0;
 }
 
+.banner-content-wrapper:before {
+  content:'';
+  background-image:url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/collection-right-leaf.png');
+  width:211px;
+  height:339px;
+  position: absolute;
+  right:0;
+}
+
 .collection-banner-content { padding:60px 0px; }
 .collection-banner__desc { text-align:center; }
