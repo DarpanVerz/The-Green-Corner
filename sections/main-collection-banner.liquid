@@ -92,13 +92,13 @@
 						<span>{{ section.settings.add_word }}</span>
 					{% endif %}
 				</h1>
-				{%- if section.settings.show_collection_description
+				{% comment %} {%- if section.settings.show_collection_description
 					and collection_description != blank
 				-%}
 					<div class="collection-banner__desc extra-large-font">
 						{{ collection_description }}
 					</div>
-				{%- endif -%}
+				{%- endif -%} {% endcomment %}
 
 				
 			</div>
