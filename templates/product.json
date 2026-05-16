@@ -318,6 +318,69 @@
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
+    },
+    "custom_product_tabs_6wK47H": {
+      "type": "custom-product-tabs",
+      "blocks": {
+        "tab_KTNb7d": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Information",
+            "title": "About Cute Pink Rose",
+            "description": "<p>Add your product description here.</p>",
+            "list_1": "",
+            "list_2": "",
+            "list_3": "",
+            "list_4": ""
+          }
+        },
+        "tab_YE9U9n": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Information",
+            "title": "About Cute Pink Rose",
+            "description": "<p>Add your product description here.</p>",
+            "list_1": "",
+            "list_2": "",
+            "list_3": "",
+            "list_4": ""
+          }
+        },
+        "tab_aLePD3": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Information",
+            "title": "About Cute Pink Rose",
+            "description": "<p>Add your product description here.</p>",
+            "list_1": "",
+            "list_2": "",
+            "list_3": "",
+            "list_4": ""
+          }
+        },
+        "tab_q3ANGp": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Information",
+            "title": "About Cute Pink Rose",
+            "description": "<p>Add your product description here.</p>",
+            "list_1": "",
+            "list_2": "",
+            "list_3": "",
+            "list_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_KTNb7d",
+        "tab_YE9U9n",
+        "tab_aLePD3",
+        "tab_q3ANGp"
+      ],
+      "name": "AP Product Tabs",
+      "settings": {
+        "heading": "About the Product"
+      }
     }
   },
   "order": [
@@ -325,6 +388,7 @@
     "product-recommendations",
     "instagram_gallery_fMzAGe",
     "image_banner_thA7Ty",
-    "newsletter_yqWxmN"
+    "newsletter_yqWxmN",
+    "custom_product_tabs_6wK47H"
   ]
 }
