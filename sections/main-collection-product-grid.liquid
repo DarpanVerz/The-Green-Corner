@@ -120,10 +120,12 @@
 
 {% assign per_page = 12 %}
 
-{% if request.query_string contains 'limit=24' %}
-	{% assign per_page = 24 %}
-{% elsif request.query_string contains 'limit=36' %}
-	{% assign per_page = 36 %}
+{% assign current_url = content_for_header %}
+
+{% if current_url contains 'limit=24' %}
+  {% assign per_page = 24 %}
+{% elsif current_url contains 'limit=36' %}
+  {% assign per_page = 36 %}
 {% endif %}
 
 {%- paginate collection.products by per_page -%}
