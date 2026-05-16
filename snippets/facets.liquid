@@ -412,19 +412,7 @@
 					| t: terms: results.terms, count: results.results_count
 				}}
 			{%- else -%}
-
-				{% assign current_count = paginate.page_size %}
-
-				{% if paginate.current_offset > 0 %}
-					{% assign current_count = paginate.current_offset | plus: paginate.page_size %}
-				{% endif %}
-
-				{% if current_count > results.products_count %}
-					{% assign current_count = results.products_count %}
-				{% endif %}
-
-				Showing {{ current_count }} out of {{ results.products_count }} results
-
+				Showing {{ collection.products.size }} out of {{ results.products_count }} results
 			{%- endif -%}
 		</span>
 	</h2>
