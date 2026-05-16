@@ -403,19 +403,19 @@
 				{% endif %}
 				<div class="facets__sort-wrapper{% if enable_filtering == false %} facets__sort-wrapper_no-filter {% endif %}{% if filter_type == 'vertical' %} facets__sort-wrapper_vertical {% endif %}">
 					<div class="facets__product-count" role="status">
-						<h2 class="facets__product-count-text ">
-							<span id="ProductCountDesktop" class="small-text">
-								{%- if results.results_count -%}
-									{{
-										'templates.search.results_with_count'
-										| t: terms: results.terms, count: results.results_count
-									}}
-								{%- else -%}
-									Showing {{ results.products_count }} out of {{ results.all_products_count }} results
-								{%- endif -%}
-							</span>
-						</h2>
-					</div>
+	<h2 class="facets__product-count-text ">
+		<span id="ProductCountDesktop" class="small-text">
+			{%- if results.results_count -%}
+				{{
+					'templates.search.results_with_count'
+					| t: terms: results.terms, count: results.results_count
+				}}
+			{%- else -%}
+				Showing {{ results.products_count }} out of {{ results.all_products_count }} results
+			{%- endif -%}
+		</span>
+	</h2>
+</div>
 					{%- if enable_sorting -%}
 						<div class="facet-filters facets-sorting sorting">
 							<div class="facets-sorting__label small-text">
