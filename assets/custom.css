@@ -2574,6 +2574,7 @@ button.hover-cart-btn:hover {
   height:418px;
   position: absolute;
   right:0;
+  top:0;
 }
 
 .collection-banner-content { padding:60px 0px; }
