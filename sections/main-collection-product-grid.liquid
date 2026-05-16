@@ -118,6 +118,8 @@
 		{% endif %}
 	{% endif %}
 
+	{%- assign per_page = request.params.limit | default: section.settings.products_per_page | plus: 0 -%}
+
 	<div
 		id="ProductGridContainer"
 		class="products-grid
