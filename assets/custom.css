@@ -2554,3 +2554,5 @@ button.hover-cart-btn:hover {
         font-size: 18px;
     }
 }
+
+.collection-banner__desc { text-align:center; }
