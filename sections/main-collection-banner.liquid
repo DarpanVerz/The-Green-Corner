@@ -104,13 +104,13 @@
 {%- if section.settings.show_collection_description
 					and collection_description != blank
 				-%}
-				<div class="container collection-banner-content"> 
+				<section class="container collection-banner-content"> 
 					<div class="page-width"> 
 					<div class="collection-banner__desc medium-font">
 						{{ collection_description }}
 						</div>
 					</div>
-					</div>
+					</section>
 				{%- endif -%}
 
 {% if section.settings.section_size == 'container' %}
