@@ -99,7 +99,7 @@
 			</a>
 		</li>
 
-{% for collection_item in collections %}
+  {% for collection_item in collections %}
   {% unless collection_item.handle == 'frontpage' %}
     <li>
       <a 
@@ -110,7 +110,7 @@
       </a>
     </li>
   {% endunless %}
-{% endfor %}
+  {% endfor %}
 
 	</ul>
 </div>
