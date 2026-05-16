@@ -43,25 +43,6 @@
         {% if product.metafields.custom.information != blank %}
           <div class="tab-content active" id="info">
             {{ product.metafields.custom.information | metafield_tag }}
-
-            <div class="product-tabs-image">
-
-        {% if product.metafields.custom.tab_image != blank %}
-          {{
-            product.metafields.custom.tab_image
-            | image_url: width: 700
-            | image_tag: loading: 'lazy'
-          }}
-        {% else %}
-          {{
-            product.featured_image
-            | image_url: width: 700
-            | image_tag: loading: 'lazy'
-          }}
-        {% endif %}
-
-      </div>
-      
           </div>
         {% endif %}
 
@@ -85,7 +66,23 @@
 
       </div>
 
-      
+      <div class="product-tabs-image">
+
+        {% if product.metafields.custom.tab_image != blank %}
+          {{
+            product.metafields.custom.tab_image
+            | image_url: width: 700
+            | image_tag: loading: 'lazy'
+          }}
+        {% else %}
+          {{
+            product.featured_image
+            | image_url: width: 700
+            | image_tag: loading: 'lazy'
+          }}
+        {% endif %}
+
+      </div>
 
     </div>
 
