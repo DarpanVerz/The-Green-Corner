@@ -38,53 +38,49 @@
 
     <div class="product-tabs-wrapper">
 
-      <div class="product-tabs-content">
+  {% if product.metafields.custom.information_tab != blank %}
+    <div class="tab-content active info-tab-content" id="info">
 
-        {% if product.metafields.custom.information != blank %}
-          <div class="tab-content active" id="info">
-            {{ product.metafields.custom.information | metafield_tag }}
-          </div>
-        {% endif %}
+      <div class="info-tab-inner">
 
-        {% if product.metafields.custom.care_instructions != blank %}
-          <div class="tab-content" id="care">
-            {{ product.metafields.custom.care_instructions | metafield_tag }}
-          </div>
-        {% endif %}
+        <div class="info-left">
+          {{ product.metafields.custom.information_tab | metafield_tag }}
+        </div>
 
-        {% if product.metafields.custom.delivery_info != blank %}
-          <div class="tab-content" id="delivery">
-            {{ product.metafields.custom.delivery_info | metafield_tag }}
-          </div>
-        {% endif %}
+        <div class="info-right">
 
-        {% if product.metafields.custom.reviews != blank %}
-          <div class="tab-content" id="review">
-            {{ product.metafields.custom.reviews | metafield_tag }}
-          </div>
-        {% endif %}
-
-      </div>
-
-      <div class="product-tabs-image">
-
-        {% if product.metafields.custom.tab_image != blank %}
-          {{
-            product.metafields.custom.tab_image
-            | image_url: width: 700
-            | image_tag: loading: 'lazy'
-          }}
-        {% else %}
           {{
             product.featured_image
             | image_url: width: 700
             | image_tag: loading: 'lazy'
           }}
-        {% endif %}
+
+        </div>
 
       </div>
 
     </div>
+  {% endif %}
+
+  {% if product.metafields.custom.care_instruction_tab != blank %}
+    <div class="tab-content full-width-tab" id="care">
+      {{ product.metafields.custom.care_instruction_tab | metafield_tag }}
+    </div>
+  {% endif %}
+
+  {% if product.metafields.custom.delivery_info_tab != blank %}
+    <div class="tab-content full-width-tab" id="delivery">
+      {{ product.metafields.custom.delivery_info_tab | metafield_tag }}
+    </div>
+  {% endif %}
+
+  {% if product.metafields.custom.review_tab != blank %}
+    <div class="tab-content full-width-tab" id="review">
+      {{ product.metafields.custom.review_tab | metafield_tag }}
+    </div>
+  {% endif %}
+
+</div>
 
   </div>
 
