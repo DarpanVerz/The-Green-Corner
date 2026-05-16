@@ -29,7 +29,7 @@
         </button>
       {% endif %}
 
-      {% if product.metafields.custom.review != blank %}
+      {% if product.metafields.custom.reviews != blank %}
         <button class="tab-btn" data-tab="review">
           {{ section.settings.review_title }}
         </button>
@@ -58,9 +58,9 @@
           </div>
         {% endif %}
 
-        {% if product.metafields.custom.review != blank %}
+        {% if product.metafields.custom.reviews != blank %}
           <div class="tab-content" id="review">
-            {{ product.metafields.custom.review | metafield_tag }}
+            {{ product.metafields.custom.reviews | metafield_tag }}
           </div>
         {% endif %}
 
