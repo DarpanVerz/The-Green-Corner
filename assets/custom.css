@@ -2557,5 +2557,6 @@ button.hover-cart-btn:hover {
 
 /**** Collection Banner ****/
 
+.banner-content-wrapper {}
 .collection-banner-content { padding:60px 0px; }
 .collection-banner__desc { text-align:center; }
