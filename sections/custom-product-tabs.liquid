@@ -11,25 +11,25 @@
     </div>
 
     <div class="product-tabs-buttons">
-      {% if product.metafields.custom.information_tab != blank %}
+      {% if product.metafields.custom.information != blank %}
         <button class="tab-btn active" data-tab="info">
           {{ section.settings.information_title }}
         </button>
       {% endif %}
 
-      {% if product.metafields.custom.care_instruction_tab != blank %}
+      {% if product.metafields.custom.care_instruction != blank %}
         <button class="tab-btn" data-tab="care">
           {{ section.settings.care_title }}
         </button>
       {% endif %}
 
-      {% if product.metafields.custom.delivery_info_tab != blank %}
+      {% if product.metafields.custom.delivery_info != blank %}
         <button class="tab-btn" data-tab="delivery">
           {{ section.settings.delivery_title }}
         </button>
       {% endif %}
 
-      {% if product.metafields.custom.review_tab != blank %}
+      {% if product.metafields.custom.review != blank %}
         <button class="tab-btn" data-tab="review">
           {{ section.settings.review_title }}
         </button>
@@ -40,27 +40,27 @@
 
       <div class="product-tabs-content">
 
-        {% if product.metafields.custom.information_tab != blank %}
+        {% if product.metafields.custom.information != blank %}
           <div class="tab-content active" id="info">
-            {{ product.metafields.custom.information_tab | metafield_tag }}
+            {{ product.metafields.custom.information | metafield_tag }}
           </div>
         {% endif %}
 
-        {% if product.metafields.custom.care_instruction_tab != blank %}
+        {% if product.metafields.custom.care_instruction != blank %}
           <div class="tab-content" id="care">
-            {{ product.metafields.custom.care_instruction_tab | metafield_tag }}
+            {{ product.metafields.custom.care_instruction | metafield_tag }}
           </div>
         {% endif %}
 
-        {% if product.metafields.custom.delivery_info_tab != blank %}
+        {% if product.metafields.custom.delivery_info != blank %}
           <div class="tab-content" id="delivery">
-            {{ product.metafields.custom.delivery_info_tab | metafield_tag }}
+            {{ product.metafields.custom.delivery_info | metafield_tag }}
           </div>
         {% endif %}
 
-        {% if product.metafields.custom.review_tab != blank %}
+        {% if product.metafields.custom.review != blank %}
           <div class="tab-content" id="review">
-            {{ product.metafields.custom.review_tab | metafield_tag }}
+            {{ product.metafields.custom.review | metafield_tag }}
           </div>
         {% endif %}
 
