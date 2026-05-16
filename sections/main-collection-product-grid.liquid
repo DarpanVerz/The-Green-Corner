@@ -121,14 +121,14 @@
 	<div
 		id="ProductGridContainer"
 		class="
-			products-grid
+			aa products-grid
 			{% if section.settings.enable_filtering == false %} products-grid_no-filter {% endif %}
 		"
 	>
 			{%- paginate collection.products by section.settings.products_per_page -%}
 				{%- if collection.products.size == 0 -%}
 					<div
-						class="aa collection collection-product collection--empty container"
+						class="collection collection-product collection--empty container"
 						id="product-grid"
 						data-id="{{ section.id }}"
 					>
