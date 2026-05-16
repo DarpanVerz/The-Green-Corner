@@ -119,6 +119,7 @@
 	{% endif %}
 
 {%- assign per_page = request.params.limit | default: section.settings.products_per_page | plus: 0 -%}
+{%- paginate collection.products by per_page -%}
 {% assign current_products_count = paginate.items %}
 
 	<div
@@ -146,7 +147,7 @@
   {%- endif -%}
 {%- endif -%}	
 		
-			{%- paginate collection.products by section.settings.products_per_page -%}
+			
 				{%- if collection.products.size == 0 -%}
 					<div
 						class="collection collection-product collection--empty container"
