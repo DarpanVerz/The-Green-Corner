@@ -17,7 +17,7 @@
         </button>
       {% endif %}
 
-      {% if product.metafields.custom.care_instruction != blank %}
+      {% if product.metafields.custom.care_instructions != blank %}
         <button class="tab-btn" data-tab="care">
           {{ section.settings.care_title }}
         </button>
@@ -46,9 +46,9 @@
           </div>
         {% endif %}
 
-        {% if product.metafields.custom.care_instruction != blank %}
+        {% if product.metafields.custom.care_instructions != blank %}
           <div class="tab-content" id="care">
-            {{ product.metafields.custom.care_instruction | metafield_tag }}
+            {{ product.metafields.custom.care_instructions | metafield_tag }}
           </div>
         {% endif %}
 
