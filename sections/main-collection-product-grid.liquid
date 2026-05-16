@@ -73,7 +73,9 @@
 -%}
 
 
-
+<section class="collection-des">
+<div class="container"> {{ collection_description }} </div>
+</section>
 
 {%- if section.settings.show_collection_description
 					and collection_description != blank
@@ -83,7 +85,7 @@
 					</div>
 				{%- endif -%}
 
-
+				
 
 <div class="container section-{{ section.id }}-padding">
 	<div
