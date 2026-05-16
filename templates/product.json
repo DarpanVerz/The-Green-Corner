@@ -318,10 +318,22 @@
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
+    },
+    "custom_product_tabs_hDwqcH": {
+      "type": "custom-product-tabs",
+      "name": "Product Tabs",
+      "settings": {
+        "heading": "About the Product",
+        "information_title": "Information",
+        "care_title": "Care Instructions",
+        "delivery_title": "Delivery Info",
+        "review_title": "Reviews"
+      }
     }
   },
   "order": [
     "main",
+    "custom_product_tabs_hDwqcH",
     "product-recommendations",
     "instagram_gallery_fMzAGe",
     "image_banner_thA7Ty",
