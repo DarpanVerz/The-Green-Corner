@@ -1,401 +1,280 @@
+{% comment %}
+  SECTION: product-tabs.liquid
+{% endcomment %}
 
+<section class="product-tabs-section">
 
-<div class="ap-product-tabs-buttons">
+  <div class="page-width">
 
-  <button class="ap-product-tab-btn active" type="button" data-tab="tab1">
-    {{ product.metafields.custom.tab1_title }}
-  </button>
-
-  <button class="ap-product-tab-btn" type="button" data-tab="tab2">
-    {{ product.metafields.custom.tab2_title }}
-  </button>
-
-  <button class="ap-product-tab-btn" type="button" data-tab="tab3">
-    {{ product.metafields.custom.tab3_title }}
-  </button>
-
-  <button class="ap-product-tab-btn" type="button" data-tab="tab4">
-    {{ product.metafields.custom.tab4_title }}
-  </button>
-
-</div>
-
-
-<!-- TAB 1 -->
-<div class="ap-product-tab-content active" id="tab1">
-  <div class="ap-product-tab-grid">
-
-    <div class="ap-product-tab-left">
-      <h3>{{ product.metafields.custom.tab1_heading }}</h3>
-
-      <div class="ap-product-desc">
-        {{ product.metafields.custom.tab1_description }}
-      </div>
+    <div class="product-tabs-heading">
+      <h2>{{ section.settings.heading }}</h2>
     </div>
 
-    <div class="ap-product-tab-right">
-      {% if product.metafields.custom.tab1_image != blank %}
-        <img
-          src="{{ product.metafields.custom.tab1_image | image_url: width: 900 }}"
-          alt=""
-          loading="lazy"
-          width="900"
-          height="700"
-        >
+    <div class="product-tabs-buttons">
+      {% if product.metafields.custom.information_tab != blank %}
+        <button class="tab-btn active" data-tab="info">
+          {{ section.settings.information_title }}
+        </button>
+      {% endif %}
+
+      {% if product.metafields.custom.care_instruction_tab != blank %}
+        <button class="tab-btn" data-tab="care">
+          {{ section.settings.care_title }}
+        </button>
+      {% endif %}
+
+      {% if product.metafields.custom.delivery_info_tab != blank %}
+        <button class="tab-btn" data-tab="delivery">
+          {{ section.settings.delivery_title }}
+        </button>
+      {% endif %}
+
+      {% if product.metafields.custom.review_tab != blank %}
+        <button class="tab-btn" data-tab="review">
+          {{ section.settings.review_title }}
+        </button>
       {% endif %}
     </div>
 
-  </div>
-</div>
+    <div class="product-tabs-wrapper">
 
+      <div class="product-tabs-content">
 
-<!-- TAB 2 -->
-<div class="ap-product-tab-content" id="tab2">
-  <div class="ap-product-tab-grid">
+        {% if product.metafields.custom.information_tab != blank %}
+          <div class="tab-content active" id="info">
+            {{ product.metafields.custom.information_tab | metafield_tag }}
+          </div>
+        {% endif %}
 
-    <div class="ap-product-tab-left">
-      <h3>{{ product.metafields.custom.tab2_heading }}</h3>
+        {% if product.metafields.custom.care_instruction_tab != blank %}
+          <div class="tab-content" id="care">
+            {{ product.metafields.custom.care_instruction_tab | metafield_tag }}
+          </div>
+        {% endif %}
 
-      <div class="ap-product-desc">
-        {{ product.metafields.custom.tab2_description }}
+        {% if product.metafields.custom.delivery_info_tab != blank %}
+          <div class="tab-content" id="delivery">
+            {{ product.metafields.custom.delivery_info_tab | metafield_tag }}
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.review_tab != blank %}
+          <div class="tab-content" id="review">
+            {{ product.metafields.custom.review_tab | metafield_tag }}
+          </div>
+        {% endif %}
+
       </div>
-    </div>
 
-    <div class="ap-product-tab-right">
-      {% if product.metafields.custom.tab2_image != blank %}
-        <img
-          src="{{ product.metafields.custom.tab2_image | image_url: width: 900 }}"
-          alt=""
-          loading="lazy"
-          width="900"
-          height="700"
-        >
-      {% endif %}
-    </div>
+      <div class="product-tabs-image">
 
-  </div>
-</div>
+        {% if product.metafields.custom.tab_image != blank %}
+          {{
+            product.metafields.custom.tab_image
+            | image_url: width: 700
+            | image_tag: loading: 'lazy'
+          }}
+        {% else %}
+          {{
+            product.featured_image
+            | image_url: width: 700
+            | image_tag: loading: 'lazy'
+          }}
+        {% endif %}
 
-
-<!-- TAB 3 -->
-<div class="ap-product-tab-content" id="tab3">
-  <div class="ap-product-tab-grid">
-
-    <div class="ap-product-tab-left">
-      <h3>{{ product.metafields.custom.tab3_heading }}</h3>
-
-      <div class="ap-product-desc">
-        {{ product.metafields.custom.tab3_description }}
       </div>
-    </div>
 
-    <div class="ap-product-tab-right">
-      {% if product.metafields.custom.tab3_image != blank %}
-        <img
-          src="{{ product.metafields.custom.tab3_image | image_url: width: 900 }}"
-          alt=""
-          loading="lazy"
-          width="900"
-          height="700"
-        >
-      {% endif %}
     </div>
 
   </div>
-</div>
 
+</section>
 
-<!-- TAB 4 -->
-<div class="ap-product-tab-content" id="tab4">
-  <div class="ap-product-tab-grid">
+<style>
 
-    <div class="ap-product-tab-left">
-      <h3>{{ product.metafields.custom.tab4_heading }}</h3>
+.product-tabs-section {
+  background: #f7e5ea;
+  padding: 80px 0;
+  border-radius: 30px;
+  margin-top: 60px;
+}
 
-      <div class="ap-product-desc">
-        {{ product.metafields.custom.tab4_description }}
-      </div>
-    </div>
+.product-tabs-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
 
-    <div class="ap-product-tab-right">
-      {% if product.metafields.custom.tab4_image != blank %}
-        <img
-          src="{{ product.metafields.custom.tab4_image | image_url: width: 900 }}"
-          alt=""
-          loading="lazy"
-          width="900"
-          height="700"
-        >
-      {% endif %}
-    </div>
+.product-tabs-heading h2 {
+  font-size: 42px;
+  font-weight: 500;
+  color: #222;
+  margin: 0;
+}
 
-  </div>
-</div>
+.product-tabs-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.product-tabs-buttons .tab-btn {
+  border: 0;
+  background: #fff;
+  color: #555;
+  padding: 12px 24px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+  min-width: 140px;
+}
+
+.product-tabs-buttons .tab-btn.active {
+  background: #0a7a43;
+  color: #fff;
+}
+
+.product-tabs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.product-tabs-content {
+  width: 50%;
+}
+
+.product-tabs-image {
+  width: 50%;
+}
+
+.product-tabs-image img {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.product-tabs-content h1,
+.product-tabs-content h2,
+.product-tabs-content h3,
+.product-tabs-content h4 {
+  margin-top: 0;
+  color: #222;
+}
+
+.product-tabs-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.product-tabs-content ul {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.product-tabs-content li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+@media screen and (max-width: 991px) {
+
+  .product-tabs-wrapper {
+    flex-direction: column;
+  }
+
+  .product-tabs-content,
+  .product-tabs-image {
+    width: 100%;
+  }
+
+  .product-tabs-heading h2 {
+    font-size: 32px;
+  }
+
+}
+
+</style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const section = document.querySelector('.ap-product-tabs-section');
 
-    if (!section) return;
+document.addEventListener('DOMContentLoaded', function () {
 
-    const buttons = section.querySelectorAll('.ap-product-tab-btn');
-    const contents = section.querySelectorAll('.ap-product-tab-content');
+  const buttons = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
 
-    buttons.forEach((button) => {
-      button.addEventListener('click', function () {
-        const tabId = this.getAttribute('data-tab');
+  buttons.forEach(button => {
 
-        buttons.forEach((btn) => btn.classList.remove('active'));
-        contents.forEach((content) => content.classList.remove('active'));
+    button.addEventListener('click', function () {
 
-        this.classList.add('active');
+      const tab = this.getAttribute('data-tab');
 
-        const activeContent = section.querySelector('#' + tabId);
+      buttons.forEach(btn => btn.classList.remove('active'));
+      contents.forEach(content => content.classList.remove('active'));
 
-        if (activeContent) {
-          activeContent.classList.add('active');
-        }
-      });
+      this.classList.add('active');
+
+      document.getElementById(tab).classList.add('active');
+
     });
+
   });
+
+});
+
 </script>
 
 {% schema %}
 {
-  "name": "AP Product Tabs",
+  "name": "Product Tabs",
   "settings": [
     {
       "type": "text",
       "id": "heading",
       "label": "Section Heading",
       "default": "About the Product"
-    }
-  ],
-  "blocks": [
+    },
     {
-      "type": "tab",
-      "name": "Tab",
-      "settings": [
-        {
-          "type": "text",
-          "id": "tab_title",
-          "label": "Tab Button Title",
-          "default": "Information"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Content Title",
-          "default": "About Cute Pink Rose"
-        },
-        {
-          "type": "richtext",
-          "id": "description",
-          "label": "Description",
-          "default": "<p>Add your product description here.</p>"
-        },
-        {
-          "type": "text",
-          "id": "list_1",
-          "label": "List Item 1"
-        },
-        {
-          "type": "text",
-          "id": "list_2",
-          "label": "List Item 2"
-        },
-        {
-          "type": "text",
-          "id": "list_3",
-          "label": "List Item 3"
-        },
-        {
-          "type": "text",
-          "id": "list_4",
-          "label": "List Item 4"
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Right Side Image"
-        }
-      ]
+      "type": "text",
+      "id": "information_title",
+      "label": "Information Tab Title",
+      "default": "Information"
+    },
+    {
+      "type": "text",
+      "id": "care_title",
+      "label": "Care Instructions Tab Title",
+      "default": "Care Instructions"
+    },
+    {
+      "type": "text",
+      "id": "delivery_title",
+      "label": "Delivery Info Tab Title",
+      "default": "Delivery Info"
+    },
+    {
+      "type": "text",
+      "id": "review_title",
+      "label": "Review Tab Title",
+      "default": "Reviews"
     }
   ],
   "presets": [
     {
-      "name": "AP Product Tabs",
-      "blocks": [
-        {
-          "type": "tab"
-        },
-        {
-          "type": "tab"
-        },
-        {
-          "type": "tab"
-        },
-        {
-          "type": "tab"
-        }
-      ]
+      "name": "Product Tabs"
     }
   ]
 }
 {% endschema %}
-
-<style>
-  .ap-product-tabs-section {
-    padding: 60px 20px;
-  }
-
-  .ap-product-tabs-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: #f8dfe8;
-    border-radius: 30px;
-    padding: 60px;
-  }
-
-  .ap-product-tabs-heading {
-    text-align: center;
-    margin-bottom: 35px;
-  }
-
-  .ap-product-tabs-heading h2 {
-    font-size: 52px;
-    line-height: 1.2;
-    color: #2f2f2f;
-    margin: 0;
-    font-family: Georgia, serif;
-    font-weight: 400;
-  }
-
-  .ap-product-tabs-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-  }
-
-  .ap-product-tab-btn {
-    padding: 12px 28px;
-    border-radius: 40px;
-    border: none;
-    cursor: pointer;
-    background: #ffffff;
-    color: #555;
-    font-size: 14px;
-    font-weight: 500;
-    transition: 0.3s ease;
-  }
-
-  .ap-product-tab-btn.active {
-    background: #0c7a43;
-    color: #fff;
-  }
-
-  .ap-product-tab-content {
-    display: none;
-  }
-
-  .ap-product-tab-content.active {
-    display: block;
-  }
-
-  .ap-product-tab-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-  }
-
-  .ap-product-tab-left h3 {
-    font-size: 42px;
-    line-height: 1.2;
-    margin-bottom: 25px;
-    color: #2f2f2f;
-    font-family: Georgia, serif;
-    font-weight: 400;
-  }
-
-  .ap-product-tab-left .ap-product-desc {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #4d4d4d;
-    margin-bottom: 25px;
-  }
-
-  .ap-product-tab-left ul {
-    margin: 0;
-    padding-left: 20px;
-  }
-
-  .ap-product-tab-left ul li {
-    margin-bottom: 12px;
-    color: #333;
-    font-size: 15px;
-  }
-
-  .ap-product-tab-right {
-    position: relative;
-  }
-
-  .ap-product-tab-right img {
-    width: 100%;
-    border-radius: 28px;
-    display: block;
-  }
-
-  .ap-product-tab-right::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 160px;
-    border-radius: 0 0 28px 28px;
-    background: linear-gradient(to top, rgba(0,0,0,0.45), transparent);
-    pointer-events: none;
-  }
-
-  @media screen and (max-width: 991px) {
-    .ap-product-tabs-wrapper {
-      padding: 40px 25px;
-    }
-
-    .ap-product-tab-grid {
-      grid-template-columns: 1fr;
-      gap: 35px;
-    }
-
-    .ap-product-tab-left h3 {
-      font-size: 32px;
-    }
-
-    .ap-product-tabs-heading h2 {
-      font-size: 40px;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    .ap-product-tabs-wrapper {
-      padding: 30px 20px;
-      border-radius: 20px;
-    }
-
-    .ap-product-tabs-heading h2 {
-      font-size: 30px;
-    }
-
-    .ap-product-tab-left h3 {
-      font-size: 26px;
-    }
-
-    .ap-product-tab-btn {
-      width: 100%;
-    }
-  }
-</style>
-
