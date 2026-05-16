@@ -85,12 +85,12 @@
 					<span class="visually-hidden">
 						{{- 'sections.collection_template.title' | t }}:
 					</span>
-					{{- collection.title | escape -}}
+					{% comment %} {{- collection.title | escape -}}
 					{% if section.settings.show_word
 						and section.settings.add_word != blank
 					%}
 						<span>{{ section.settings.add_word }}</span>
-					{% endif %}
+					{% endif %} {% endcomment %}
 				</h1>
 				
 
