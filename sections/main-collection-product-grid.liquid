@@ -125,7 +125,7 @@
 {% elsif request.query_string contains 'limit=36' %}
 	{% assign per_page = 36 %}
 {% endif %}
-{% assign per_page = request.params.limit | default: section.settings.products_per_page | plus: 0 %}
+
 {%- paginate collection.products by per_page -%}
 	<div
 		id="ProductGridContainer"
