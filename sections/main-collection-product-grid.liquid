@@ -129,15 +129,17 @@
   {%- if section.settings.enable_filtering
     or section.settings.enable_sorting
   -%}
-    {% render 'facets',
-      results: collection,
-      enable_filtering: section.settings.enable_filtering,
-      enable_sorting: section.settings.enable_sorting,
-      filter_type: 'horizontal_united',
-      image_filter_ratio: section.settings.image_filter_ratio,
-      image_filter_fit: section.settings.image_filter_fit,
-      image_filter_columns: section.settings.image_filter_columns
-    %}
+    {% assign current_products_count = collection.products | size %}
+{% render 'facets',
+	results: collection,
+	enable_filtering: section.settings.enable_filtering,
+	enable_sorting: section.settings.enable_sorting,
+	filter_type: 'horizontal_united',
+	image_filter_ratio: section.settings.image_filter_ratio,
+	image_filter_fit: section.settings.image_filter_fit,
+	image_filter_columns: section.settings.image_filter_columns,
+	current_products_count: current_products_count
+%}
   {%- endif -%}
 {%- endif -%}	
 		
