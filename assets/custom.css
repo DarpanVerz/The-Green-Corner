@@ -2293,9 +2293,11 @@ button.hover-cart-btn:hover {
     font-weight: 600;
 }
 
+/* Hover Effects */
 
 
-/* MOBILE */
+
+
 @media screen and (max-width: 767px) {
 
   .custom-hover-buttons {
