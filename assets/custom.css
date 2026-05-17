@@ -2336,7 +2336,10 @@ button.hover-cart-btn:hover {
  color:#000 !important; 
 }
 
-
+.custom-collection-layout.flowers button.hover-cart-btn:hover {
+    background: #056839;
+    cursor: pointer;
+}
 
 
 /* MOBILE */
