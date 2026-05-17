@@ -566,7 +566,7 @@
 								</p>
 							</div>
 						</div>
-						
+
 						<div class="mobile-facets__main">
 							{%- if enable_sorting -%}
 
@@ -605,6 +605,11 @@
 							{%- endif -%}
 							{% if enable_filtering %}
 								{%- for filter in results.filters -%}
+
+	{% comment %} Hide Availability and Price filters {% endcomment %}
+	{% if filter.label == 'Availability' or filter.type == 'price_range' %}
+		{% continue %}
+	{% endif %}
 									{% liquid
 										assign presentation = filter.presentation | default: default_presentation
 									%}
