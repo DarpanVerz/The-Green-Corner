@@ -2441,6 +2441,7 @@ button.hover-cart-btn:hover {
 
 .custom-category-menu li a.active{
   position: relative;
+  color:fff;
 }
 
 .custom-category-menu li a.active:after{
