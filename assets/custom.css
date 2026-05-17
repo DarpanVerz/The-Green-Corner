@@ -2444,7 +2444,7 @@ button.hover-cart-btn:hover {
   color:#fff;
 }
 
-.custom-category-menu li a.active:after{
+.custom-category-menu li a.active:after, .custom-category-menu li a:hover:after{
     content: '';
     background: #007a33 !important;
     color: #fff;
@@ -2460,10 +2460,10 @@ button.hover-cart-btn:hover {
     top: 0;
 }
 
-.custom-category-menu li a:hover{
+/* .custom-category-menu li a:hover{
 	background:#007a33;
 	color:#fff;
-}
+} */
 
 .slideshow-slide__button .button--simple {
     padding-left: 0px !important;
