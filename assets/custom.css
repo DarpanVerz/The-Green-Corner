@@ -2563,10 +2563,11 @@ button.hover-cart-btn:hover {
   content:'';
   background-image:url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/flower-left.png');
   background-repeat: no-repeat;
-  width:200px;
-  height:207px;
+  width: 200px;
+  height: 207px;
   position: absolute;
-  left:0;
+  left: -80px;
+  bottom: 0;
 }
 
 .banner-content-wrapper:after {
