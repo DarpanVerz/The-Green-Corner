@@ -529,7 +529,7 @@
 				endif
 			%}
 			{% if product.media.size > 0 %}
-				<div class="product__media-wrapper{% if section.settings.image_gallery_collage == " grid" %}
+				<div class="product__media-wrapper{% if section.settings.image_gallery_collage == "" %}
 					product__media-wrapper-stacked{% endif %}"data-section="product-media-{{ section.id }}">
 					{% if section.settings.image_gallery_collage == "stacked" %}
 						<div class="product__media-list-wrapper">
