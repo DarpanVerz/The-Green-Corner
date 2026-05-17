@@ -2576,7 +2576,7 @@ button.hover-cart-btn:hover {
   width:400px;
   height:318px;
   position: absolute;
-  right:0;
+  right:-150px;
   top:0;
 }
 
