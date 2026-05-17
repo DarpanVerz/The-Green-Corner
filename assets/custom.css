@@ -2580,7 +2580,7 @@ button.hover-cart-btn:hover {
 .collection-banner-content { padding:60px 0px; }
 .collection-banner__desc { text-align:center; }
 
-.collection-breadcrumb { color:#fff; }
+.collection-breadcrumb, .collection-breadcrumb a { color:#fff; }
 
 @media screen and (min-width: 750px) {
     .banner-content-wrapper .page-width {
