@@ -2597,3 +2597,13 @@ button.hover-cart-btn:hover {
 
 
 .facets__form--horizontal_united .facets__horizontal-top { width:100%; }
+
+.facets__form--horizontal_united .facets__horizontal-top .facets__sort-wrapper {
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    flex-wrap: inherit;
+    margin-left: inherit;
+    column-gap: 2.4rem;
+    justify-content: space-between;
+}
