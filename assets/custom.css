@@ -2642,6 +2642,12 @@ button.hover-cart-btn:hover {
     display: inline-block;
 }
 
+.custom-select-wrapper {
+      margin-top: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .select:after,
 .select.field:after,
 .select::after,
