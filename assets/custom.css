@@ -2751,6 +2751,9 @@ button.hover-cart-btn:hover {
     .product__media-list-wrapper {
         flex-direction: column !important;
     }
+    .product__media-sublist {
+        max-width: 100%;
+    }
 }
 
 .swiper-vertical>.swiper-wrapper {
