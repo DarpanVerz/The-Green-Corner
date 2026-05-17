@@ -2685,3 +2685,5 @@ button.hover-cart-btn:hover {
     transform: translateY(-60%) rotate(45deg);
     pointer-events: none;
 }
+
+..custom-select-wrapper.sort-custom { margin-top:0; }
