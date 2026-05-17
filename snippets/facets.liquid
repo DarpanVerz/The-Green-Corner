@@ -470,13 +470,16 @@
 							<div class="facet-filters__field facets-sorting__field">
 
 								<div class="select field small-text">
-									
+
+								<div class="custom-select-wrapper">
+
 									{%- assign sort_by = results.sort_by
 										| default: results.default_sort_by
 									-%}
+
 									<select
 										name="sort_by"
-										class="select__select small-text"
+										class="select__select small-text custom-select"
 										id="SortBy"
 										aria-describedby="a11y-refresh-page-message"
 									>
@@ -491,9 +494,11 @@
 											</option>
 										{%- endfor -%}
 									</select>
-									
+
 								</div>
-								
+
+							</div>
+
 								{% comment %} {% render 'icon-caret-small' %} {% endcomment %}
 							
 							</div>
