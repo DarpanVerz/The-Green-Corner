@@ -2451,11 +2451,11 @@ button.hover-cart-btn:hover {
     font-weight: 600;
     position: absolute;
     right: -19px;
-    width: 100%;
+    width: 108%;
     height: 48px;
     z-index: -1;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
     padding: 10px;
     top: 0;
 }
