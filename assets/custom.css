@@ -2457,6 +2457,7 @@ button.hover-cart-btn:hover {
 .collection-product-card .card-wrapper {
     border-radius: 34px;
     padding: 35px;
+    background-color: #F7F7F7;
 }
 
 /*** Main-category-banner ***/
