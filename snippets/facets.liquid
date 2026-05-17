@@ -65,6 +65,10 @@
 										id="FacetsWrapperDesktop"
 									>
 										{%- for filter in results.filters -%}
+												{% comment %} Show only Category filter {% endcomment %}
+	{% unless filter.label == 'Category' %}
+		{% continue %}
+	{% endunless %}
 											{% liquid
 												assign color_trigger = settings.trigger_swatch | handle | strip
 												assign name_option = filter.label | handle | strip
