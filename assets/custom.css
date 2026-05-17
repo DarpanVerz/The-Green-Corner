@@ -2200,6 +2200,10 @@ margin-left:30px;
   color: #ffffff !important;
 }
 
+.card-wrapper:hover .price-item--sale {
+  color:#ccc;
+}
+
 .card__badge,
 .badge {
   position: relative;
