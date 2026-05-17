@@ -429,32 +429,27 @@
 
 	<div class="facet-filters__field facets-sorting__field">
 		<div class="select field small-text">
-			<select class="select__select small-text"
-	onchange="window.location.href=this.value">
-
-	<option value="{{ collection.url }}?limit=12"
-	{% unless content_for_header contains 'limit=24'
-	or content_for_header contains 'limit=36' %}
-	selected
-	{% endunless %}>
-	12
-	</option>
-
-	<option value="{{ collection.url }}?limit=24"
-	{% if content_for_header contains 'limit=24' %}
-	selected
-	{% endif %}>
-	24
-	</option>
-
-	<option value="{{ collection.url }}?limit=36"
-	{% if content_for_header contains 'limit=36' %}
-	selected
-	{% endif %}>
-	36
-	</option>
-
-</select>
+		<select class="select__select small-text" onchange="window.location.href=this.value">
+			<option value="{{ collection.url }}?limit=12"
+			{% unless content_for_header contains 'limit=24'
+			or content_for_header contains 'limit=36' %}
+			selected
+			{% endunless %}>
+			12
+			</option>
+			<option value="{{ collection.url }}?limit=24"
+			{% if content_for_header contains 'limit=24' %}
+			selected
+			{% endif %}>
+			24
+			</option>
+			<option value="{{ collection.url }}?limit=36"
+			{% if content_for_header contains 'limit=36' %}
+			selected
+			{% endif %}>
+			36
+			</option>
+        </select>
 		</div>
 		{% render 'icon-caret-small' %}
 	</div>
