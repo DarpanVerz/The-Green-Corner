@@ -2332,7 +2332,7 @@ button.hover-cart-btn:hover {
   background-color:#fff;
 }
 
-.custom-collection-layout.flowers .card-information-box:hover .card__title a {
+.custom-collection-layout.flowers .card-wrapper:hover .card__title a {
  color:#000; 
 }
 
