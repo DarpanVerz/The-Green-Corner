@@ -2614,3 +2614,5 @@ button.hover-cart-btn:hover {
     margin-bottom: 0;
     margin-left: 0;
 }
+
+.product-count-right { display: flex; }
