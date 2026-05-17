@@ -2512,6 +2512,11 @@ button.hover-cart-btn:hover {
     font-size: 22px;
 }
 
+.price-item {
+    font-size: 18px;
+    font-weight: 300;
+}
+
 .product__info-wrapper .product__info-container .product__description { text-align:left; }
 .product-form__submit { border-radius: 50px; }
 
