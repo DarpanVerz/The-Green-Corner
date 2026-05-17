@@ -2630,4 +2630,8 @@ button.hover-cart-btn:hover {
   height: 30px;
 }
 
-.facet-filters {}
+.facet-filters {     
+    display : flex;
+    justify-content: center;
+    align-items: center; 
+  }
