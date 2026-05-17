@@ -2752,7 +2752,7 @@ button.hover-cart-btn:hover {
         flex-direction: column !important;
     }
     .product__media-sublist {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 }
 
