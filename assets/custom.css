@@ -2637,7 +2637,7 @@ button.hover-cart-btn:hover {
   }
 
 
-  .select.field {
+.select.field {
     position: relative;
     display: inline-block;
 }
