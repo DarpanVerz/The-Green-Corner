@@ -2587,6 +2587,8 @@ button.hover-cart-btn:hover {
 
 #MainContent .breadcrumb { display:none; }
 
+.facets__horizontal-top details-disclosure-filter { display:none; }
+
 @media screen and (min-width: 750px) {
     .banner-content-wrapper .page-width {
         padding: 0 25rem;
