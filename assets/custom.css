@@ -2342,6 +2342,10 @@ button.hover-cart-btn:hover {
 }
 
 .custom-collection-layout.flowers .custom-category-menu li a.active { background: #EF9FA2; }
+.custom-collection-layout.flowers .custom-category-menu li a:hover {
+    background: #EF9FA2;
+    color: #fff;
+}
 
 
 /* MOBILE */
