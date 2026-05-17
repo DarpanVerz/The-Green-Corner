@@ -2272,12 +2272,13 @@ button.hover-cart-btn {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
   text-decoration: none;
   transition: all 0.3s ease;
   border:none;
   background:#272727;
   width:100%;
+  color:#056839; 
 }
 
 button.hover-cart-btn:hover { 
