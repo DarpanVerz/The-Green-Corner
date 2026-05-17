@@ -2339,10 +2339,10 @@ button.hover-cart-btn:hover {
   background: var(--collection-btn-bg);
 }
 
-.custom-collection-layout.flowers .custom-category-menu li a.active { background: #EF9FA2; }
-.custom-collection-layout.flowers .custom-category-menu li a:hover {
-    background: #EF9FA2;
-    color: #fff;
+.custom-collection-layout .custom-category-menu li a.active,
+.custom-collection-layout .custom-category-menu li a:hover {
+  background: var(--collection-btn-bg);
+  color: #fff;
 }
 
 
