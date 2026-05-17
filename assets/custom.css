@@ -2174,11 +2174,6 @@ margin-left:30px;
   visibility: visible;
 }
 
-.custom-collection-layout.flowers .card-wrapper::before {
-  background-color: rgba(255,230,237,0.8);
-  color:#000;
-}
-
 .card__media img {
   transition: all 0.5s ease;
   position: relative;
@@ -2295,7 +2290,10 @@ button.hover-cart-btn:hover {
 
 /* Hover Effects */
 
-
+.custom-collection-layout.flowers .card-wrapper::before {
+  background-color: rgba(255,230,237,0.8);
+  color:#000;
+}
 
 
 @media screen and (max-width: 767px) {
