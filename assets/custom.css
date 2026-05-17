@@ -2311,6 +2311,21 @@ button.hover-cart-btn:hover {
     font-weight: 600;
 }
 
+/** Hover Effects **/
+
+.custom-collection-layout.flowers .card-wrapper::before {
+  background-color: rgba(255,230,237,0.8);
+  color:#000;
+}
+
+.custom-collection-layout.flowers .hover-view-btn {
+  background: transparent;
+  border: 1px solid rgba(250, 209, 221, 0.8);
+  color: #000;
+  background-color:rgba(250,209,221,0.2)
+}
+
+
 /* MOBILE */
 @media screen and (max-width: 767px) {
 
