@@ -2620,7 +2620,7 @@ button.hover-cart-btn:hover {
 
 .facets-sorting__label { padding-right:10px; }
 .facets-sorting__field {
-  width: 50px;
+  width: auto;
   display : flex;
   justify-content: center;
   align-items: center;
