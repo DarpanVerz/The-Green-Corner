@@ -2583,6 +2583,8 @@ button.hover-cart-btn:hover {
 
 .collection-breadcrumb, .collection-breadcrumb a { color:#fff; text-decoration:none; }
 
+#MainContent .breadcrumb { display:none; }
+
 @media screen and (min-width: 750px) {
     .banner-content-wrapper .page-width {
         padding: 0 20rem;
