@@ -2444,12 +2444,19 @@ button.hover-cart-btn:hover {
 }
 
 .custom-category-menu li a.active:after{
-  content:'';
-	background:#007a33;
-	color:#fff;
-	font-weight:600;
-  position: absolute;
-  right:0;
+    content: '';
+    background: #007a33 !important;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    right: -19px;
+    width: 100%;
+    height: 48px;
+    z-index: -1;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
+    top: 0;
 }
 
 .custom-category-menu li a:hover{
