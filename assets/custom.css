@@ -2752,3 +2752,7 @@ button.hover-cart-btn:hover {
         flex-direction: column !important;
     }
 }
+
+.swiper-vertical>.swiper-wrapper {
+    flex-direction: row;
+}
