@@ -2688,3 +2688,8 @@ button.hover-cart-btn:hover {
 }
 
 .custom-select-wrapper.sort-custom { margin-top:0 !important; }
+
+.facets__product-count-text span {
+    text-transform: capitalize;
+    font-size: 14px;
+}
