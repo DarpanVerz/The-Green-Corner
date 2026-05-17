@@ -41,7 +41,7 @@
         "image_ratio": "portrait",
         "image_fit": "cover",
         "color_scheme": "",
-        "enable_filtering": true,
+        "enable_filtering": false,
         "enable_sorting": true,
         "image_filter_ratio": "4/5",
         "image_filter_fit": "cover",
