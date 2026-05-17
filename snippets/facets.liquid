@@ -429,7 +429,7 @@
 						</div>
 						<div class="facet-filters__field facets-sorting__field">
 							<div class="select field small-text">
-							<select class="select__select small-text" onchange="window.location.href=this.value">
+							<select class="select__select small-text custom-select" onchange="window.location.href=this.value">
 								<option value="{{ collection.url }}?limit=12"
 								{% unless content_for_header contains 'limit=24'
 								or content_for_header contains 'limit=36' %}
