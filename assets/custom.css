@@ -2297,8 +2297,8 @@ button.hover-cart-btn:hover {
 
 .custom-collection-layout.flowers .hover-view-btn {
   background: transparent;
-  border: 1px solid rgba(255,230,237,0.8);
-  color: #ffffff;
+  border: 1px solid rgba(250, 209, 221, 0.8);
+  color: #000;
   background-color:rgba(166,206,57,0.2)
 }
 
