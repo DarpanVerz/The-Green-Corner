@@ -75,6 +75,7 @@
 												assign presentation = filter.presentation | default: default_presentation
 												assign total_active_values = total_active_values | plus: filter.active_values.size
 											%}
+											
 											<div
 												class="facets__disclosure js-filter"
 												id="Details-{{ forloop.index }}-{{ section.id }}"
