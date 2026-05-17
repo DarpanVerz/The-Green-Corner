@@ -2664,14 +2664,11 @@ button.hover-cart-btn:hover {
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
     background-image: none !important;
-
     min-width: 72px;
     height: 38px;
     padding: 0 38px 0 16px;
-
     border: 1px solid #cfcfcf;
     border-radius: 10px;
-
     background-color: #fff;
     font-size: 14px;
     color: #555;
