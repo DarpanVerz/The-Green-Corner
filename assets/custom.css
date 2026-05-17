@@ -2598,7 +2598,7 @@ button.hover-cart-btn:hover {
 
 .facets__form--horizontal_united .facets__horizontal-top { width:100%; }
 
-.facets__form--horizontal_united .facets__horizontal-top .facets__sort-wrapper {
+.facets__horizontal-top .facets__sort-wrapper {
     display: flex;
     flex-direction: inherit;
     align-items: center;
