@@ -639,200 +639,27 @@
 														{% render 'icon-arrow-small' %}
 														{{ filter.label | escape }}
 													</button>
-													<ul
-														class="
-															mobile-facets__list list-unstyled
-															{% if settings.type_color_swatch == 'custom' and color_trigger == name_option -%} mobile-facets__list--color
-															{% elsif settings.type_color_swatch == 'standart' and presentation == 'swatch' %} mobile-facets__list--color
-															{% elsif presentation == 'image' %} mobile-facets__list--image {%- endif -%}
-														"
-														role="list"
-														style="--image_filter_columns: {{ image_filter_columns }};"
-													>
-														{%- for value in filter.values -%}
-															{% liquid
-																if settings.type_color_swatch == 'custom' and color_trigger == name_option
-																	assign color_value = value.value | handle | strip
-																	assign color_value_custom = color_value | remove: '-'
+													<ul class="mobile-category-list">
+    
+    <li>
+      <a href="/collections/all"
+         class="{% if collection.handle == 'all' %}active{% endif %}">
+        All
+      </a>
+    </li>
 
-																	if settings.custom_colors != blank
-																		assign custom_colors_string = settings.custom_colors | strip
-																		assign custom_colors_obj = custom_colors_string | newline_to_br | split: '<br />'
+    {% for collection_item in collections %}
+      {% unless collection_item.handle == 'frontpage' %}
+        <li>
+          <a href="{{ collection_item.url }}"
+             class="{% if collection.handle == collection_item.handle %}active{% endif %}">
+            {{ collection_item.title }}
+          </a>
+        </li>
+      {% endunless %}
+    {% endfor %}
 
-																		for obj in custom_colors_obj
-																			assign obj_strip = obj | strip
-																			assign obj_key = obj_strip | split: ':' | first
-																			assign obj_value = obj_strip | split: ':' | last
-																			assign obj_color_name = obj_key | handle | strip
-
-																			if color_value == obj_color_name
-																				assign obj_color_value = obj_value | strip
-																				if obj_color_value contains 'gradient'
-																					assign color_value_custom = obj_color_value
-																				else
-																					assign color_value_custom = obj_color_value | remove: '-'
-																				endif
-																				break
-																			endif
-																		endfor
-																	endif
-																endif
-
-																assign swatch_value = null
-																if presentation == 'swatch'
-																	assign swatch = value.swatch
-																	if swatch.image
-																		assign image_url = swatch.image | image_url: width: 50
-																		assign swatch_value = 'url(' | append: image_url | append: ')'
-																		assign swatch_focal_point = swatch.image.presentation.focal_point
-																	elsif swatch.color
-																		assign swatch_value = 'rgb(' | append: swatch.color.rgb | append: ')'
-																	endif
-																endif
-															%}
-															<li
-																class="
-																	mobile-facets__item list-menu__item
-																	{% if settings.type_color_swatch == 'custom' and color_trigger == name_option -%} mobile-facets__item--color
-																	{% elsif settings.type_color_swatch == 'standart' and presentation == 'swatch' %} mobile-facets__item--color
-																	{% elsif presentation == 'image' %} mobile-facets__item--image {%- endif -%}
-																"
-																{% if settings.type_color_swatch == 'custom'
-																	and color_trigger == name_option
-																%}
-																	style="--swatch-color: {{ color_value_custom }}; --border-radius: {{ settings.swatch_border_radius }}px;"
-																	{% liquid
-																		if color_value_custom == 'white' or color_value_custom == '#fff' or color_value_custom == '#ffffff' or color_value_custom == '255,255,255' or color_value_custom == '255,255,255,1'
-																			assign swatch_bg = 'rgb(var(--color-border))'
-																			assign disable_color = 'rgb(var(--color-foreground-title))'
-																			assign checkbox_bg = 'rgb(var(--color-border))'
-																			assign checkbox_bg = 'white'
-																		else
-																			assign swatch_bg = 'transparent'
-																			assign disable_color = 'white'
-																		endif
-																	%}
-																{% elsif settings.type_color_swatch
-																		== 'standart'
-																	and presentation == 'swatch'
-																%}
-																	style="
-																		--border-radius: {{ settings.swatch_border_radius }}px;
-																		--swatch-color: {{ swatch_value }};
-																		{% if swatch_focal_point %} --swatch-focal-point: {{ swatch_focal_point }}; {% endif %}
-																	"
-																{% endif %}
-															>
-																<input
-																	dir="ltr"
-																	class="mobile-facets__checkbox"
-																	type="checkbox"
-																	name="{{ value.param_name }}"
-																	value="{{ value.value }}"
-																	id="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
-																	{% if value.active %}
-																		checked
-																	{% endif %}
-																	{% if value.count == 0
-																		and value.active == false
-																	%}
-																		disabled
-																	{% endif %}
-																>
-																<label
-																	for="Filter-{{ filter.label | escape }}-mobile-{{ forloop.index }}"
-																	class="
-																		mobile-facets__label facet-checkbox {% if value.count == 0 and value.active == false %} mobile-facets__label--disabled facet-checkbox--disabled {% endif %}
-																		{%- if settings.type_color_swatch == 'custom' and color_trigger == name_option and presentation != 'swatch' -%} facet-checkbox--color
-																		                  {%- elsif settings.type_color_swatch == 'standart' and presentation == 'swatch' -%} facet-checkbox--color
-																		                  {% elsif presentation == 'image' %} facet-checkbox--image {%- endif -%}
-																	"
-																>
-																	{%- if presentation == 'image' -%}
-																		<div
-																			class="facets__image-wrapper"
-																			style="
-																				--image_filter_ratio: {{ image_filter_ratio }};
-																				--image_filter_fit: {{ image_filter_fit }};
-																			"
-																		>
-																			{% liquid
-																				assign width = 1000 | divided_by: image_filter_columns
-																			%}
-																			{% capture sizes %}
-                                        calc((100vw - 50px) / {{ image_filter_columns }})
-                                      {% endcapture %}
-																			{%- if value.image -%}
-																				{{
-																					value.image
-																					| image_url: width: value.image.width
-																					| image_tag:
-																						class: 'facets__image',
-																						alt: value.alt,
-																						sizes: sizes
-																				}}
-																			{%- endif -%}
-																		</div>
-																	{% else %}
-																		{% comment %}{% if color_trigger != name_option %}{% endcomment %}
-																		<span
-																			class="mobile-facets__highlight"
-																		></span>
-																		<svg
-																			class="icon icon-checkmark"
-																			width="8"
-																			height="7"
-																			viewBox="0 0 8 7"
-																			fill="none"
-																			xmlns="http://www.w3.org/2000/svg"
-																		>
-																			<path d="M1 3.5L3 5.5L7 1.5" stroke="#F9F9F9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-																		</svg>
-																		{% comment %}
-																			{% elsif settings.type_color_swatch
-																					== 'custom'
-																				and presentation == 'swatch'
-																			%}
-																				<span
-																					class="mobile-facets__highlight"
-																				></span>
-																				<svg
-																					class="icon icon-checkmark"
-																					width="8"
-																					height="7"
-																					viewBox="0 0 8 7"
-																					fill="none"
-																					xmlns="http://www.w3.org/2000/svg"
-																				>
-																					<path d="M1 3.5L3 5.5L7 1.5" stroke="#F9F9F9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-																				</svg>
-																			{% elsif settings.type_color_swatch
-																					== 'standart'
-																				and presentation == 'text'
-																			%}
-																				<span
-																					class="mobile-facets__highlight"
-																				></span>
-																				<svg
-																					class="icon icon-checkmark"
-																					width="8"
-																					height="7"
-																					viewBox="0 0 8 7"
-																					fill="none"
-																					xmlns="http://www.w3.org/2000/svg"
-																				>
-																					<path d="M1 3.5L3 5.5L7 1.5" stroke="#F9F9F9" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-																				</svg>
-																			{% endif %}
-																		{% endcomment %}
-																	{% endif %}
-																	<span class="facet-checkbox__label">
-																		{{ value.label | escape }}
-																	</span>
-																</label>
-															</li>
-														{%- endfor -%}
-													</ul>
+  </ul>
 
 													<div class="no-js-hidden mobile-facets__footer">
 														<facet-remove>
