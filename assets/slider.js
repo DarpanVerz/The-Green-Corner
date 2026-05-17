@@ -1,6 +1,6 @@
 var sliderThumbs = new Swiper(".mySwiper", {
-	direction: 'vertical',
-	//direction: "horizontal",
+	// direction: 'vertical',
+	direction: "horizontal",
 	speed: 3000,
 	effect: "cube",
 	//touchRatio: 0.3,
