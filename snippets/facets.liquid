@@ -569,32 +569,6 @@
 						<div class="mobile-facets__main">
 							{%- if enable_sorting -%}
 
-								<div class="mobile-category-menu">
-  <h3 class="mobile-category-title">Category</h3>
-
-  <ul class="mobile-category-list">
-    
-    <li>
-      <a href="/collections/all"
-         class="{% if collection.handle == 'all' %}active{% endif %}">
-        All
-      </a>
-    </li>
-
-    {% for collection_item in collections %}
-      {% unless collection_item.handle == 'frontpage' %}
-        <li>
-          <a href="{{ collection_item.url }}"
-             class="{% if collection.handle == collection_item.handle %}active{% endif %}">
-            {{ collection_item.title }}
-          </a>
-        </li>
-      {% endunless %}
-    {% endfor %}
-
-  </ul>
-</div>
-
 								<div
 									class="mobile-facets__details js-filter"
 									data-index="mobile-{{ forloop.index }}"
