@@ -2686,4 +2686,4 @@ button.hover-cart-btn:hover {
     pointer-events: none;
 }
 
-..custom-select-wrapper.sort-custom { margin-top:0 !important; }
+.custom-select-wrapper.sort-custom { margin-top:0 !important; }
