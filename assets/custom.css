@@ -2643,6 +2643,16 @@ button.hover-cart-btn:hover {
 }
 
 .custom-select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background-image: none !important;
+}
+.custom-select::-ms-expand {
+    display: none;
+}
+
+.custom-select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
