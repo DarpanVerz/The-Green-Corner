@@ -2693,3 +2693,39 @@ button.hover-cart-btn:hover {
 .select.field::after {
     display: none !important;
 }
+
+.select.field {
+    position: relative;
+}
+
+.select.field .custom-select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    background-image: none !important;
+
+    min-width: 72px;
+    height: 38px;
+    padding: 0 38px 0 16px;
+
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+
+    background-color: #fff;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Custom arrow */
+.select.field .custom-select-wrapper::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    border-right: 1.5px solid #555;
+    border-bottom: 1.5px solid #555;
+    transform: translateY(-60%) rotate(45deg);
+    pointer-events: none;
+}
