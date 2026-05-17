@@ -2241,15 +2241,19 @@ margin-left:30px;
 
 .card-wrapper:hover .card__title { color:#fff; }
 
+/* BUTTON COMMON */
 .custom-hover-buttons a {
   height: 56px;
   border-radius: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
+
   transition: all 0.3s ease;
 }
 
@@ -2289,18 +2293,16 @@ button.hover-cart-btn {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
   text-decoration: none;
   transition: all 0.3s ease;
   border:none;
-  background:#fff;
+  background:#272727;
   width:100%;
-  color:#056839; 
 }
 
 button.hover-cart-btn:hover { 
-  background:#056839;
-  color:#fff;
+  background:#056839; 
   cursor:pointer; 
 }
 
@@ -2311,8 +2313,9 @@ button.hover-cart-btn:hover {
 
 /** Hover Effects **/
 
-.custom-collection-layout .card-wrapper::before {
-  background-color: rgb(from var(--collection-hover-bg) r g b / 0.9);
+.custom-collection-layout.flowers .card-wrapper::before {
+  background-color: rgba(255,230,237,0.8);
+  color:#000;
 }
 
 .custom-collection-layout.flowers .hover-view-btn {
@@ -2329,19 +2332,19 @@ button.hover-cart-btn:hover {
   background-color:#fff;
 }
 
-.custom-collection-layout .card-wrapper:hover .card__title a,
-.custom-collection-layout .card-wrapper:hover .price-item {
-  color: var(--collection-text-color) !important;
+.custom-collection-layout.flowers .card-wrapper:hover .card__title a, .custom-collection-layout.flowers .card-wrapper:hover .price-item {
+ color:#000 !important; 
 }
 
-.custom-collection-layout button.hover-cart-btn:hover {
-  background: var(--collection-btn-bg);
+.custom-collection-layout.flowers button.hover-cart-btn:hover {
+    background: #EF9FA2;
+    cursor: pointer;
 }
 
-.custom-collection-layout .custom-category-menu li a.active,
-.custom-collection-layout .custom-category-menu li a:hover {
-  background: var(--collection-btn-bg);
-  color: #fff;
+.custom-collection-layout.flowers .custom-category-menu li a.active { background: #EF9FA2; }
+.custom-collection-layout.flowers .custom-category-menu li a:hover {
+    background: #EF9FA2;
+    color: #fff;
 }
 
 
