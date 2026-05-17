@@ -2745,3 +2745,10 @@ button.hover-cart-btn:hover {
     text-transform: capitalize;
     font-size: 14px;
 }
+
+
+@media (min-width: 990px) {
+    .product__media-list-wrapper {
+        flex-direction: column;
+    }
+}
