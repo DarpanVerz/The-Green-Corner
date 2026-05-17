@@ -2283,7 +2283,8 @@ button.hover-cart-btn {
 
 button.hover-cart-btn:hover { 
   background:#056839; 
-  cursor:pointer; 
+  cursor:pointer;
+  color:#fff;
 }
 
 .card__badge .color-badge {
