@@ -2594,3 +2594,6 @@ button.hover-cart-btn:hover {
         padding: 0 25rem;
     }
 }
+
+
+.facets__form--horizontal_united .facets__horizontal-top { width:100%; }
