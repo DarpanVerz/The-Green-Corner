@@ -242,7 +242,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 .header .list-menu--inline>li>.header__menu-item {
-    padding: 3.3rem 1rem;
+    padding: 3.3rem 0.8rem;
 }
 
 .header .list-menu--inline > li > .header__menu-item::after {
