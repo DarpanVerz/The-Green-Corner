@@ -2303,7 +2303,8 @@ button.hover-cart-btn {
 }
 
 button.hover-cart-btn:hover { 
-  background:#056839; 
+  background:#056839;
+  color:#fff;
   cursor:pointer; 
 }
 
