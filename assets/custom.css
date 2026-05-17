@@ -2313,9 +2313,8 @@ button.hover-cart-btn:hover {
 
 /** Hover Effects **/
 
-.custom-collection-layout.flowers .card-wrapper::before {
-  background-color: rgba(255,230,237,0.8);
-  color:#000;
+.custom-collection-layout .card-wrapper::before {
+  background-color: var(--collection-hover-bg);
 }
 
 .custom-collection-layout.flowers .hover-view-btn {
