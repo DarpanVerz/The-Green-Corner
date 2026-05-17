@@ -2452,7 +2452,8 @@ button.hover-cart-btn:hover {
 }
 
 .collection-banner__text .collection-banner__title.h2 {
-  color:#fff; 
+  color:#fff;
+  font-size:6rem; 
 }
 
 .collection-banner__img::after {
