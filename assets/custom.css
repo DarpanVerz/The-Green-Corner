@@ -2335,9 +2335,8 @@ button.hover-cart-btn:hover {
  color:#000 !important; 
 }
 
-.custom-collection-layout.flowers button.hover-cart-btn:hover {
-    background: #EF9FA2;
-    cursor: pointer;
+.custom-collection-layout button.hover-cart-btn:hover {
+  background: var(--collection-btn-bg);
 }
 
 .custom-collection-layout.flowers .custom-category-menu li a.active { background: #EF9FA2; }
