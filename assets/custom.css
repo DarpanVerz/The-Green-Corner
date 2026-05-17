@@ -2150,6 +2150,9 @@ margin-left:30px;
 }
 
 
+
+
+/* CARD */
 .card-wrapper {
   position: relative;
   overflow: hidden;
@@ -2158,10 +2161,13 @@ margin-left:30px;
   min-height: 430px;
 }
 
+/* GREEN OVERLAY */
+
 .card-wrapper::before {
   content: "";
   position: absolute;
   inset: 0;
+  background: rgba(5, 104, 57, 0.92);
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
@@ -2169,28 +2175,33 @@ margin-left:30px;
   border-radius: 32px;
 }
 
+/* SHOW OVERLAY */
 .card-wrapper:hover::before {
   opacity: 1;
   visibility: visible;
 }
 
+/* IMAGE */
 .card__media img {
   transition: all 0.5s ease;
   position: relative;
   z-index: 0;
 }
 
+/* IMAGE DARK EFFECT */
 .card-wrapper:hover .card__media img {
   opacity: 0.35;
   transform: scale(1.03);
 }
 
+/* CONTENT */
 .card__content {
   position: relative;
   z-index: 3;
   transition: all 0.4s ease;
 }
 
+/* TITLE */
 .card-wrapper:hover .card__heading a,
 .card-wrapper:hover .card__heading,
 .card-wrapper:hover .price,
@@ -2198,12 +2209,14 @@ margin-left:30px;
   color: #ffffff !important;
 }
 
+/* SALE LABEL */
 .card__badge,
 .badge {
   position: relative;
   z-index: 3;
 }
 
+/* BUTTON WRAPPER */
 .custom-hover-buttons {
   position: absolute;
   left: 20px;
@@ -2214,11 +2227,13 @@ margin-left:30px;
   display: flex;
   flex-direction: column;
   gap: 14px;
+
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
 }
 
+/* SHOW BUTTONS */
 .card-wrapper:hover .custom-hover-buttons {
   opacity: 1;
   visibility: visible;
@@ -2226,24 +2241,37 @@ margin-left:30px;
 
 .card-wrapper:hover .card__title { color:#fff; }
 
+/* BUTTON COMMON */
 .custom-hover-buttons a {
   height: 56px;
   border-radius: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 18px;
   font-weight: 500;
   text-decoration: none;
+
   transition: all 0.3s ease;
 }
 
+/* ADD TO CART BUTTON */
 .hover-cart-btn {
   background: #1d1d1d;
   color: #ffffff;
 }
 
+/* VIEW PRODUCT BUTTON */
+.hover-view-btn {
+  background: transparent;
+  border: 1px solid #9acd32;
+  color: #ffffff;
+  background-color:rgba(166,206,57,0.2)
+}
 
+/* BUTTON HOVER */
 .hover-cart-btn:hover {
   background: #000000;
 }
@@ -2253,6 +2281,7 @@ margin-left:30px;
   color: #000000;
 }
 
+/* PRICE */
 .card-wrapper:hover .price--on-sale .price-item--regular {
   color: rgba(255,255,255,0.6) !important;
 }
@@ -2282,21 +2311,7 @@ button.hover-cart-btn:hover {
     font-weight: 600;
 }
 
-/* Hover Effects */
-
-.custom-collection-layout.flowers .card-wrapper::before {
-  background-color: rgba(255,230,237,0.8);
-  color:#000;
-}
-
-.custom-collection-layout.flowers .hover-view-btn {
-  background: transparent;
-  border: 1px solid rgba(250, 209, 221, 0.8);
-  color: #000;
-  background-color:rgba(250,209,221,0.2)
-}
-
-
+/* MOBILE */
 @media screen and (max-width: 767px) {
 
   .custom-hover-buttons {
