@@ -2204,6 +2204,10 @@ margin-left:30px;
   color:#E94242 !important;
 }
 
+.facets__form--horizontal_united .facets__horizontal-top {
+    border-top: inherit;
+}
+
 .card__badge,
 .badge {
   position: relative;
