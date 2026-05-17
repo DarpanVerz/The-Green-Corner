@@ -2298,7 +2298,7 @@ button.hover-cart-btn {
   transition: all 0.3s ease;
   border:none;
   background:#272727;
-  width:95%;
+  width:100%;
 }
 
 button.hover-cart-btn:hover { 
