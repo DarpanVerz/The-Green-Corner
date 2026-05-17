@@ -1066,28 +1066,70 @@
 	</menu-drawer>
 
 	<div class="active-facets active-facets-mobile medium-hide large-up-hide">
+		{%- for filter in results.filters -%}
+			{%- for value in filter.active_values -%}
+				<facet-remove>
+					<a
+						href="{{ value.url_to_remove }}"
+						class="active-facets__button focus-inset"
+					>
+						<span class="active-facets__button-inner">
+							<span>{{ filter.label }}:</span>
+							{{ value.label | escape }}
+							<span class="active-facets__button-close">
+								{%- render 'icon-close' -%}
+							</span>
+							<span class="visually-hidden">
+								{{- 'products.facets.clear_filter' | t -}}
+							</span>
+						</span>
+					</a>
+				</facet-remove>
+			{%- endfor -%}
 
-	{% if collection.handle != 'all' %}
+			{%- if filter.type == 'price_range' -%}
+				{%- if filter.min_value.value != null
+					or filter.max_value.value != null
+				-%}
+					<facet-remove>
+						<a
+							href="{{ filter.url_to_remove }}"
+							class="active-facets__button focus-inset"
+						>
+							<span class="active-facets__button-inner">
+								<span>{{ filter.label }}:</span>
+								{%- if filter.min_value.value -%}
+									{{ filter.min_value.value | money }}
+								{%- else -%}
+									{{ 0 | money }}
+								{%- endif -%}
+								-
+								{%- if filter.max_value.value -%}
+									{{ filter.max_value.value | money }}
+								{%- else -%}
+									{{ filter.range_max | money }}
+								{%- endif -%}
+								<span class="active-facets__button-close">
+									{%- render 'icon-close' -%}
+								</span>
+								<span class="visually-hidden">
+									{{- 'products.facets.clear_filter' | t -}}
+								</span>
+							</span>
+						</a>
+					</facet-remove>
+				{%- endif -%}
+			{%- endif -%}
+		{%- endfor -%}
 		<facet-remove>
 			<a
-				href="/collections/all"
-				class="active-facets__button focus-inset"
+				href="{{ results_url }}"
+				class="active-facets__button-remove focus-inset"
 			>
-				<span class="active-facets__button-inner">
-
-					<span>Category:</span>
-					{{ collection.title }}
-
-					<span class="active-facets__button-close">
-						{%- render 'icon-close' -%}
-					</span>
-
-				</span>
+				<span>{{ 'products.facets.clear_all' | t }}</span>
 			</a>
 		</facet-remove>
-	{% endif %}
-
-</div>
+	</div>
 	<span id="ProductCount" class="visibility-hidden">
 		{%- if results.results_count -%}
 			{{
