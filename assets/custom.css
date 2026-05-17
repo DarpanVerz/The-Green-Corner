@@ -2167,7 +2167,7 @@ margin-left:30px;
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--collection-hover-bg);
+  background: rgba(5, 104, 57, 0.92);
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
