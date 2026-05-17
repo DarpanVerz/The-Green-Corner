@@ -2341,6 +2341,8 @@ button.hover-cart-btn:hover {
     cursor: pointer;
 }
 
+.custom-collection-layout.flowers .custom-category-menu li a.active { background: #ffb6ca; }
+
 
 /* MOBILE */
 @media screen and (max-width: 767px) {
