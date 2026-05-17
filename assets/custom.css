@@ -2167,7 +2167,6 @@ margin-left:30px;
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(5, 104, 57, 0.92);
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
@@ -2179,6 +2178,10 @@ margin-left:30px;
 .card-wrapper:hover::before {
   opacity: 1;
   visibility: visible;
+}
+
+.custom-collection-layout.flowers {
+  background: rgba(5, 104, 57, 0.92);
 }
 
 /* IMAGE */
