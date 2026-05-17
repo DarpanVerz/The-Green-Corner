@@ -2162,6 +2162,7 @@ margin-left:30px;
 }
 
 /* GREEN OVERLAY */
+
 .card-wrapper::before {
   content: "";
   position: absolute;
