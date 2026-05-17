@@ -2448,8 +2448,10 @@ button.hover-cart-btn:hover {
 
 .collection-product-card .unstyled-link {
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    display: inline-block;
 }
 
 .collection-product-card .card-wrapper {
