@@ -2686,3 +2686,10 @@ button.hover-cart-btn:hover {
     transform: translateY(-60%) rotate(45deg);
     pointer-events: none;
 }
+
+.select:after,
+.select.field:after,
+.select::after,
+.select.field::after {
+    display: none !important;
+}
