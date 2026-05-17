@@ -2607,3 +2607,10 @@ button.hover-cart-btn:hover {
     column-gap: 2.4rem;
     justify-content: space-between;
 }
+
+.facets__horizontal-top .facets__product-count {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-left: 0;
+}
