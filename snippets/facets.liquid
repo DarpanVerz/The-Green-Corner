@@ -468,15 +468,11 @@
 								{{ 'products.facets.sort_by_label' | t }}
 							</div>
 							<div class="facet-filters__field facets-sorting__field">
-
 								<div class="select field small-text">
-
 								<div class="custom-select-wrapper">
-
 									{%- assign sort_by = results.sort_by
 										| default: results.default_sort_by
 									-%}
-
 									<select
 										name="sort_by"
 										class="select__select small-text custom-select"
@@ -494,13 +490,9 @@
 											</option>
 										{%- endfor -%}
 									</select>
-
 								</div>
-
 							</div>
-
 								{% comment %} {% render 'icon-caret-small' %} {% endcomment %}
-							
 							</div>
 							<noscript>
 								<button type="submit" class="button button--small focus-inset">
