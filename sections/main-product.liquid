@@ -425,7 +425,20 @@
 										<div class="product-recommendations--single-block">
 											 
 										{% for recommendation in recommendations.products %}
-											<div class="card-wrapper">
+											{% assign hover_bg = 'rgba(5, 104, 57, 0.92)' %}
+
+												{% case collection.handle %}
+												{% when 'flowers' %}
+													{% assign hover_bg = 'rgba(255, 192, 203, 0.92)' %}
+												
+												{% when 'plants' %}
+													{% assign hover_bg = 'rgba(5, 104, 57, 0.92)' %}
+
+												{% when 'essentials' %}
+													{% assign hover_bg = 'rgba(210, 180, 140, 0.92)' %}
+												{% endcase %}
+
+												<div class="card-wrapper" style="--collection-hover-bg: {{ hover_bg }};">
 												
 												{% liquid
 													assign featured_media_aspect_ratio = recommendation.featured_media.aspect_ratio
