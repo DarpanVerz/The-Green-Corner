@@ -2243,12 +2243,6 @@ margin-left:30px;
   color: #ffffff;
 }
 
-.hover-view-btn {
-  background: transparent;
-  border: 1px solid #9acd32;
-  color: #ffffff;
-  background-color:rgba(166,206,57,0.2)
-}
 
 .hover-cart-btn:hover {
   background: #000000;
