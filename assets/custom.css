@@ -2200,7 +2200,7 @@ margin-left:30px;
   color: #ffffff !important;
 }
 
-.card-wrapper:hover .price-item--sale {
+.card-wrapper:hover .price-item.price-item--sale {
   color:#E94242 !important;
 }
 
