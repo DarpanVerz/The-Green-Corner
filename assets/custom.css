@@ -2649,7 +2649,11 @@ button.hover-cart-btn:hover {
     background-image: none !important;
 }
 .custom-select::-ms-expand {
-    display: none;
+    display: none !important;
+}
+.select.field svg,
+.select.field .icon-caret-small {
+    display: none !important;
 }
 
 .custom-select {
