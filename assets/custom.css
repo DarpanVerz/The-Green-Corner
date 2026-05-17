@@ -2606,6 +2606,7 @@ button.hover-cart-btn:hover {
     margin-left: inherit;
     column-gap: 2.4rem;
     justify-content: space-between;
+    width:100%;
 }
 
 .facets__horizontal-top .facets__product-count {
