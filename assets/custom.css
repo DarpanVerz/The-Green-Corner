@@ -2677,7 +2677,7 @@ button.hover-cart-btn:hover {
 .select.field .custom-select-wrapper::after {
     content: "";
     position: absolute;
-    right: 14px;
+    right: 30px;
     top: 50%;
     width: 7px;
     height: 7px;
