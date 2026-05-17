@@ -2624,7 +2624,6 @@ button.hover-cart-btn:hover {
   display : flex;
   justify-content: center;
   align-items: center;
-  border: #999999 solid 1px;
   border-radius: 10px;
   padding: 0px 10px;
   height: 30px;
