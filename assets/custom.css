@@ -958,30 +958,30 @@ margin-left:30px;
     color: #1A1A1A !important;
 
 }
-.new-arrivals .card-wrapper {
+.popular-products.new-arrivals .card-wrapper {
     border-radius: 34px;
     padding: 35px;
 }
 
-.new-arrivals .section-header__title {
+.popular-products.new-arrivals .section-header__title {
     font-size: var(--subtitle-font-size);
     color: var(--subtitle-color);
     text-transform: uppercase;
     letter-spacing: var(--subtitle-letter-spacing);
 }
 
-.new-arrivals .section-header__desc p {
+.popular-products.new-arrivals .section-header__desc p {
     font-size: var(--heading-size);
     font-family: 'didotregular';
      color: #1A1A1A !important;
 }
 
-.new-arrivals .unstyled-link {
+.popular-products.new-arrivals .unstyled-link {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
 }
-.new-arrivals .price-item {
+.popular-products.new-arrivals .price-item {
     font-size: 17px;
 }
 
