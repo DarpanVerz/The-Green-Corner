@@ -82,7 +82,11 @@
 	>
 		
 	
-	<div class="custom-collection-layout {{ collection.handle }}">
+	<div class="custom-collection-layout" style="
+    --collection-hover-bg: {{ collection.metafields.custom.hover_bg }};
+    --collection-btn-bg: {{ collection.metafields.custom.button_bg }};
+    --collection-text-color: {{ collection.metafields.custom.text_color }};
+  ">
 
 	{% if collection.all_products_count > 0 %}
 		{% if section.settings.enable_filtering or section.settings.enable_sorting %}
