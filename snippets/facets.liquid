@@ -66,7 +66,7 @@
 									>
 										{%- for filter in results.filters -%}
 												{% comment %} Show only Category filter {% endcomment %}
-											{% unless filter.label == 'Collection' %}
+											{% unless filter.label == 'Category' %}
 												{% continue %}
 											{% endunless %}
 											{% liquid
@@ -75,12 +75,11 @@
 												assign presentation = filter.presentation | default: default_presentation
 												assign total_active_values = total_active_values | plus: filter.active_values.size
 											%}
-
 											<div
 												class="facets__disclosure js-filter"
 												id="Details-{{ forloop.index }}-{{ section.id }}"
 												data-index="{{ forloop.index }}"
-											 >
+											>
 												<div class="facets__disclosure-header">
 													<div class="subtitle">
 														{{ filter.label | escape }}
@@ -393,7 +392,6 @@
 													{% endcase %}
 												</div>
 											</div>
-											
 										{%- endfor -%}
 										<a href="#" class="close_filter_element">x</a>
 										<noscript>
