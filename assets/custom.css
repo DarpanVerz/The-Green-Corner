@@ -2337,11 +2337,11 @@ button.hover-cart-btn:hover {
 }
 
 .custom-collection-layout.flowers button.hover-cart-btn:hover {
-    background: #ffb6ca;
+    background: #EF9FA2;
     cursor: pointer;
 }
 
-.custom-collection-layout.flowers .custom-category-menu li a.active { background: #ffb6ca; }
+.custom-collection-layout.flowers .custom-category-menu li a.active { background: #EF9FA2; }
 
 
 /* MOBILE */
