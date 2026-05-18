@@ -163,12 +163,23 @@
         "image_gallery_collage": "thumbnail_carousel",
         "desktop_alignment": "left",
         "mobile_alignment": "after",
-        "image_fit": "contain",
+        "image_fit": "cover",
         "enable_autoheight": false,
         "animation": true,
         "variant_media_display": "show_all",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
+      }
+    },
+    "custom_product_tabs_hDwqcH": {
+      "type": "custom-product-tabs",
+      "name": "Product Tabs",
+      "settings": {
+        "heading": "About the Product",
+        "information_title": "Information",
+        "care_title": "Care Instructions",
+        "delivery_title": "Delivery Info",
+        "review_title": "Reviews"
       }
     },
     "product-recommendations": {
@@ -317,17 +328,6 @@
         "margin_bottom": "s",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
-      }
-    },
-    "custom_product_tabs_hDwqcH": {
-      "type": "custom-product-tabs",
-      "name": "Product Tabs",
-      "settings": {
-        "heading": "About the Product",
-        "information_title": "Information",
-        "care_title": "Care Instructions",
-        "delivery_title": "Delivery Info",
-        "review_title": "Reviews"
       }
     }
   },
