@@ -2752,8 +2752,44 @@ button.hover-cart-btn:hover {
         flex-direction: column !important;
     }
 
-    .product__media-sublist {
+    /* .product__media-sublist {
       max-width: inherit !important; 
-    }
+    } */
 
+}
+
+
+/* Horizontal thumbnail slider fix */
+.product-section .js-media-sublist {
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.product-section .js-media-sublist .swiper-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.product-section .js-media-sublist .swiper-slide {
+    width: auto !important;
+    height: auto !important;
+    margin-right: 10px;
+}
+
+.product-section .product__media-subitem {
+    cursor: pointer;
+}
+
+.product-section .product__media-subitem img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* Active thumbnail */
+.product-section .swiper-slide-thumb-active img {
+    border: 2px solid #ff6b81;
 }
