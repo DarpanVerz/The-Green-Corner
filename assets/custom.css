@@ -2758,3 +2758,10 @@ button.hover-cart-btn:hover {
     }
 
 }
+
+
+@media (min-width: 1100px) {
+    .product .product__outer--center .product__media-wrapper {
+        width: calc(40% - 3.2rem);
+    }
+}
