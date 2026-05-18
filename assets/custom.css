@@ -2803,3 +2803,8 @@ button.hover-cart-btn:hover {
         width: 45% !important;
     }
 }
+
+.product__info-wrapper .product__info-container {
+    width: 100%;
+    text-align: center;
+}
