@@ -89,7 +89,7 @@
 				{% endif %}
 			>
 				<span>
-					SGD {{ product.selected_or_first_available_variant.unit_price | money_without_currency }}
+					{{ product.selected_or_first_available_variant.unit_price | money_without_currency }}
 				</span>
 				<span aria-hidden="true">/</span>
 				<span class="visually-hidden"
