@@ -2818,9 +2818,9 @@ font-size: 40px;
 .product__media-subitem .product__media { background:none; }
 
 .custom-slider-arrow {
-    width: 180px;
-    height: 180px;
-    border: 4px solid #9c9c9c;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #9c9c9c;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2829,6 +2829,7 @@ font-size: 40px;
     background: transparent;
     cursor: pointer;
     transition: 0.3s ease;
+    padding: 10px;
 }
 
 /* Arrow Line */
