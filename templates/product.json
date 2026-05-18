@@ -162,7 +162,7 @@
       "settings": {
         "image_gallery_collage": "thumbnail_carousel",
         "desktop_alignment": "left",
-        "mobile_alignment": "after",
+        "mobile_alignment": "before",
         "image_fit": "contain",
         "enable_autoheight": true,
         "animation": true,
