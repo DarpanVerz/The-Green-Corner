@@ -2787,4 +2787,4 @@ font-size: 40px;
 .p-0 { padding:0; }
 
 .breadcrumb__delimiter { padding: 0 10px; line-height: .5; }
-.breadcrumb__link a, .breadcrumb__link span { color:#999999; }
+.breadcrumb__link a, .breadcrumb__link span, .breadcrumb__delimiter { color:#999999; }
