@@ -50,7 +50,7 @@
 				{% endif %}
 			>
 				<span class="price-item price-item--regular">
-					{{ money_price }}
+					SGD {{ price | money_without_currency }}
 				</span>
 			</dd>
 		</div>
@@ -76,7 +76,7 @@
 			</dt>
 			<dd class="price__compare">
 				<span class="price-item price-item--regular">
-					{{ compare_at_price | money }}
+					SGD {{ compare_at_price | money_without_currency }}
 				</span>
 			</dd>
 		</div>
