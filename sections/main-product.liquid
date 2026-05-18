@@ -65,31 +65,6 @@
 			</nav>
 		{% endif %}
 
-		
-	<div class="collection-banner__text{% if section.settings.text_horizontal == 'center' %}-center{% endif %}">
-				<h1 class="collection-banner__title h2">
-	  <span class="visually-hidden">
-		{{- 'sections.collection_template.title' | t }}:
-	  </span>
-
-	  {{- collection.title | escape -}}
-
-	  {% comment %}
-	  {% if section.settings.show_word
-		and section.settings.add_word != blank
-	  %}
-		<span>{{ section.settings.add_word }}</span>
-	  {% endif %}
-	  {% endcomment %}
-  </h1>
-
-  <div class="collection-breadcrumb">
-		<a href="{{ routes.root_url }}">Home</a>
-		<span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
-		<span>{{ collection.title }}</span>
-	</div>
-			</div>
-
 
 		<div class="product__outer{% if section.settings.desktop_alignment == 'left' %} product__outer--desktop-order{% endif %}{% if section.settings.mobile_alignment == 'after' %} product__outer--mobile-order{% endif %} {% if section.settings.image_gallery_collage == "thumbnail_carousel" %} product__outer--center{% endif %} {% if section.settings.image_gallery_collage == "stacked" %} product__outer--stacked{% endif %} {% if section.settings.image_gallery_collage == "grid" %}product__outer--grid{% endif %}">
 			<div class="product__info-wrapper {% if product.media.size == 2 and section.settings.image_gallery_collage == "grid" %} product__media-two{% endif %}">
