@@ -40,9 +40,6 @@
   --subtitle-letter-spacing:30%;
   --subtitle-font-size:1.5rem;
   --subtitle-color:#056839;
-}
-
-:root {
   --menu-bg: {{ collection.metafields.custom.menu_bg_color | default: '#056839' }};
   --menu-text: {{ collection.metafields.custom.menu_text_color | default: '#fff' }};
 }
