@@ -2748,7 +2748,23 @@ button.hover-cart-btn:hover {
 
 
 /* Horizontal thumbnail slider fix */
+.product-section .js-media-sublist {
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+}
 
+.product-section .js-media-sublist .swiper-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.product-section .js-media-sublist .swiper-slide {
+    width: auto !important;
+    height: auto !important;
+    margin-right: 10px;
+}
 
 .product-section .product__media-subitem {
     cursor: pointer;
