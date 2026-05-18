@@ -26,6 +26,13 @@
 	onload="this.onload=null;this.rel='stylesheet'"
 >
 
+<link
+	rel="preload"
+	href="{{ 'component-rte.css' | asset_url }}"
+	as="style"
+	onload="this.onload=null;this.rel='stylesheet'"
+>
+
 <noscript>{{ 'component-price.css' | asset_url | stylesheet_tag }}</noscript>
 {% comment %}<noscript>{{ 'component-badge.css' | asset_url | stylesheet_tag }}</noscript>{% endcomment %}
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
