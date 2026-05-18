@@ -2286,7 +2286,7 @@ button.hover-cart-btn {
   border:none;
   background:#fff;
   width:100%;
-  color:#056839; 
+  color:var(--theme-bg-transparent);; 
 }
 
 button.hover-cart-btn:hover { 
