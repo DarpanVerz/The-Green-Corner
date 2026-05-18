@@ -2597,10 +2597,6 @@ button.hover-cart-btn:hover {
     font-size: 22px;
 }
 
-.share-icon.facebook {
-    background: #0d6b34;
-}
-
 .share-icon:hover {
     background: #0d6b34;
     transform: translateY(-3px);
