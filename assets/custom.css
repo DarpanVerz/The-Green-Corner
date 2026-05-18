@@ -2733,7 +2733,7 @@ button.hover-cart-btn:hover {
 
 @media (min-width: 990px) {
     .product__media {
-        height: auto;
+        height: auto !important;
     }
 }
 
