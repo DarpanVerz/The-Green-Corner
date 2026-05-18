@@ -2458,7 +2458,7 @@ button.hover-cart-btn:hover {
 
 .custom-category-menu li a:hover { color:#fff; }
 .custom-category-menu li a:hover::after {
-  background: #007a33;
+  background: #056839;
   color: #fff !important;
 }
 .custom-category-menu li a.active { color:#fff; }
@@ -2473,7 +2473,7 @@ button.hover-cart-btn:hover {
     border-bottom-left-radius: 12px;
     z-index: -1;
     top: 0;
-    background: #007a33;
+    background: #056839;
     color: #fff !important;
 }
 
