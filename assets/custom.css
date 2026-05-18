@@ -2255,7 +2255,7 @@ margin-left:30px;
 
 .hover-view-btn {
   background: transparent;
-  border: 1px solid var('--theme-bg-light');
+  border: 1px solid var(--theme-bg-light);
   color: #ffffff;
   background-color:rgba(166,206,57,0.2)
 }
