@@ -99,7 +99,7 @@ const subSliderInit = (isUpdate) => {
 		let subSlider = new Swiper(".product-section .js-media-sublist", {
 			centeredSlides: false,
 			centeredSlidesBounds: true,
-			slidesPerView: 3,
+			slidesPerView: 4,
 			spaceBetween: 2,
 			direction: "horizontal",
 			navigation: false,
