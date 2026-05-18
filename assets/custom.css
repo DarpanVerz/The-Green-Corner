@@ -2478,7 +2478,9 @@ button.hover-cart-btn:hover {
 } */
 
 
-.custom-category-menu li a:hover { color:#fff; }
+.custom-category-menu li a:hover { 
+  color: {{ collection.metafields.custom.text_color | default: '#fff' }};
+}
 .custom-category-menu li a:hover::after {
   background: #056839;
   color: #fff !important;
