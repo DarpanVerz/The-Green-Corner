@@ -2799,6 +2799,6 @@ font-size: 40px;
 
 @media (min-width: 1100px) {
     .product__media-list-wrapper {
-        gap: 1.4rem;
+        gap: 1.4rem !important;
     }
 }
