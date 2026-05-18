@@ -2485,7 +2485,9 @@ button.hover-cart-btn:hover {
   background: {{ collection.metafields.custom.bg_color | default: '#056839' }};
   color: {{ collection.metafields.custom.text_color | default: '#fff' }} !important;
 }
-.custom-category-menu li a.active { color:#fff; }
+.custom-category-menu li a.active { 
+  color: {{ collection.metafields.custom.text_color | default: '#fff' }}; 
+}
 .custom-category-menu li a.active::after {
     content: '';
     position: absolute;
