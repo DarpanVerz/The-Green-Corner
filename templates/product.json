@@ -164,7 +164,7 @@
         "desktop_alignment": "left",
         "mobile_alignment": "after",
         "image_fit": "contain",
-        "enable_autoheight": false,
+        "enable_autoheight": true,
         "animation": false,
         "variant_media_display": "show_all",
         "padding_top": "no-indent",
