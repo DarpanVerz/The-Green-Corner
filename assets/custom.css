@@ -2450,7 +2450,7 @@ button.hover-cart-btn:hover {
     left: 0;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    color: #fff;
+    color: #fff !important;
     z-index: -1;
     top: 0;
 }
