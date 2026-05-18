@@ -2809,7 +2809,7 @@ font-size: 40px;
     }
 
     .product .product__outer--center {
-    margin: 0 auto 0 150px;
+    margin: 0 auto 0 150px !important;
 }
 
 }
