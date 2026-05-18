@@ -126,7 +126,7 @@ const subSliderInit = (isUpdate) => {
 				990: {
 					direction: "horizontal",
 					slidesPerView: 4,
-					navigation: false,
+					navigation: true,
 					spaceBetween: 5,
 				},
 			},
