@@ -2440,12 +2440,15 @@ button.hover-cart-btn:hover {
 }
 
 .custom-category-menu li a:after {
-  content:'';
-  background:#fff;
-  position: absolute;
-  right:0;
-  width:100%;
-  height:50px;
+    content: '';
+    background: #000;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    left: 25px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 
