@@ -2795,3 +2795,10 @@ font-size: 40px;
         border-radius: 40px;
     }
 }
+
+
+@media (min-width: 1100px) {
+    .product__media-list-wrapper {
+        gap: 1.4rem;
+    }
+}
