@@ -157,7 +157,7 @@
 												{%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
 											{%- endif -%}
 
-											<div class="product-form__buttons 12">
+											<div class="product-form__buttons">
 												<div class="product-form__buttons-row">
 													
 													{% if block.settings.show_quantity %}
@@ -165,6 +165,7 @@
 														<div class="product-parameters__item product-parameters__variant product-parameters__variant--quantity">
 															<div id="Quantity-Form-{{ section.id }}" class="product-parameters__item product-parameters__quantity">
 																<div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
+																		<span class="qty-text">Qty:</span>
 																	<quantity-input class="quantity">
 																		<button class="quantity__button no-js-hidden" name="minus" type="button">
 																			<span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
