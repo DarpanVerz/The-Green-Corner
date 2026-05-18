@@ -2382,7 +2382,7 @@ button.hover-cart-btn:hover {
     font-weight: 600;
     line-height: 27px;
     display: inline-block;
-    color: var();
+    color: var(--theme-text);
 }
 
 .collection-product-card .card-wrapper {
