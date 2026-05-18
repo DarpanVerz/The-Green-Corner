@@ -2290,7 +2290,7 @@ button.hover-cart-btn {
 }
 
 button.hover-cart-btn:hover { 
-  background:#056839; 
+  background:var(--theme-bg); 
   cursor:pointer;
   color:#fff;
 }
