@@ -2423,6 +2423,7 @@ button.hover-cart-btn:hover {
 	padding:0;
 	margin:0;
 	list-style:none;
+  overflow: hidden;
 }
 
 .custom-category-menu li{
