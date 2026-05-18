@@ -2470,6 +2470,8 @@ button.hover-cart-btn:hover {
     border-bottom-left-radius: 12px;
     z-index: -1;
     top: 0;
+    background: #007a33;
+    color: #fff !important;
 }
 
 /* .custom-category-menu li a.active:after{
