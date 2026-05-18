@@ -2752,3 +2752,32 @@ button.hover-cart-btn:hover {
         flex-direction: column !important;
     }
 }
+
+/* Horizontal Thumbnail Slider */
+.product__media-sublist {
+    width: 100%;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.product__media-sublist .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.product__media-subitem {
+    width: auto !important;
+    cursor: pointer;
+}
+
+.product__media-subitem .product__media img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+/* Active Thumbnail */
+.product__media-subitem.swiper-slide-thumb-active img {
+    border: 2px solid #ff0000;
+}
