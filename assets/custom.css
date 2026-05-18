@@ -306,7 +306,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 .search-icon svg {
     width: 22px;
     height: 22px;
-    stroke: #1a1a1a;
+    stroke: #1A1A1A;
 }
 
 .header-top__right>*:not(.header__localization) {
