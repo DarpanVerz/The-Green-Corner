@@ -2814,7 +2814,3 @@ font-size: 40px;
 }
 
 }
-
-.product__media-subitem.swiper-slide-thumb-active, .product__media-subitem:hover, .product__media-subitem.active
- { border: solid 3px #000;
-}
