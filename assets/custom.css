@@ -2777,3 +2777,8 @@ font-size: 40px;
     font-weight:500;
     color:#222;
 }
+
+.breadcrumb {
+    background: #F7F7F7;
+    padding: 10px;
+}
