@@ -2443,7 +2443,6 @@ button.hover-cart-btn:hover {
 
 .custom-category-menu li a:after {
     content: '';
-    
     position: absolute;
     right: 0;
     width: 109%;
