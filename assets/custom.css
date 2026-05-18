@@ -2292,7 +2292,7 @@ button.hover-cart-btn {
 button.hover-cart-btn:hover { 
   background:var(--theme-bg); 
   cursor:pointer;
-  color:#fff;
+  color: var(--theme-text);
 }
 
 .card__badge .color-badge {
