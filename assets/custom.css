@@ -2442,7 +2442,7 @@ button.hover-cart-btn:hover {
 
 .custom-category-menu li a:after {
     content: '';
-    background: #007a33;
+    
     position: absolute;
     right: 0;
     width: 109%;
@@ -2450,14 +2450,14 @@ button.hover-cart-btn:hover {
     left: 0;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    color: #fff !important;
     z-index: -1;
     top: 0;
 }
 
 
 .custom-category-menu li a:hover::after {
-  
+  background: #007a33;
+  color: #fff !important;
 }
 
 /* .custom-category-menu li a.active{
