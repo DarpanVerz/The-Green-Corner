@@ -2821,4 +2821,36 @@ button.hover-cart-btn:hover {
 }
 
 
+/************************ product-breadcrumb ******************************/
 
+.product-breadcrumb{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+    padding:12px 0;
+    font-size:14px;
+    font-weight:400;
+}
+
+.product-breadcrumb a{
+    text-decoration:none;
+    color:#9b9b9b;
+    transition:0.3s;
+}
+
+.product-breadcrumb a:hover{
+    color:#000;
+}
+
+.product-breadcrumb .breadcrumb-arrow{
+    color:#9b9b9b;
+    font-size:12px;
+    display:flex;
+    align-items:center;
+}
+
+.product-breadcrumb .active-page{
+    color:#222;
+    font-weight:600;
+}
