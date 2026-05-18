@@ -2803,6 +2803,11 @@ button.hover-cart-btn:hover {
     .product .product__outer--center .product__media-wrapper {
         width: 45% !important;
     }
+
+    .product__media-list-wrapper {
+        gap: 0;
+    }
+
 }
 
 .product__info-wrapper .product__info-container {
