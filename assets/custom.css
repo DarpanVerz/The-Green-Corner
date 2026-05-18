@@ -2701,7 +2701,7 @@ button.hover-cart-btn:hover {
 
 /* Active thumbnail */
 .product-section .swiper-slide-thumb-active img {
-    border: 2px solid #ff6b81;
+    border: 2px solid #A6CE39;
 }
 
 @media (min-width: 990px) {
