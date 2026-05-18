@@ -2451,7 +2451,7 @@ button.hover-cart-btn:hover {
 	transition: 0.3s ease;
 }
 
-.custom-category-menu li a.active{
+/* .custom-category-menu li a.active{
   position: relative;
   color:#fff;
 }
@@ -2470,7 +2470,7 @@ button.hover-cart-btn:hover {
     border-bottom-left-radius: 12px;
     padding: 10px;
     top: 0;
-}
+} */
 
 .custom-category-menu li a:hover{
 	color:#fff;
