@@ -2548,6 +2548,8 @@ button.hover-cart-btn:hover {
     border-top: 1px solid #ccc;
     margin-top: 22px;
     padding-top: 10px;
+        font-size: 17px;
+    line-height: 25px;
 }
 
 .product-form__submit { border-radius: 50px; }
