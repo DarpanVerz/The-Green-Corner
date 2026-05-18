@@ -73,7 +73,10 @@
 -%}
 
 <style>
-
+:root {
+  --menu-bg: {{ collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
+  --menu-text: {{ collection.metafields.custom.menu_text_color.value | default: '#fff' }};
+}
 </style>
 
 <div class="container section-{{ section.id }}-padding">
