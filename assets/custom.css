@@ -2441,7 +2441,7 @@ button.hover-cart-btn:hover {
     position: relative;
 }
 
-.custom-category-menu li a:after {
+.custom-category-menu li a:after, .custom-category-menu li a.active {
     content: '';
     position: absolute;
     right: 0;
