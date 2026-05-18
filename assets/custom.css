@@ -2702,6 +2702,7 @@ button.hover-cart-btn:hover {
 /* Active thumbnail */
 .product-section .swiper-slide-thumb-active img {
     border: 2px solid #A6CE39;
+    border-radius: 10px;
 }
 
 @media (min-width: 990px) {
