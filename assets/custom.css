@@ -2797,3 +2797,9 @@ button.hover-cart-btn:hover {
         width: calc(43% - 0rem);
     }
 }
+
+@media (min-width: 1100px) {
+    .product .product__outer--center .product__media-wrapper {
+        width: 45%;
+    }
+}
