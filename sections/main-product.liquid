@@ -33,7 +33,7 @@
 	<link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<section class="container-fluid section-{{ section.id }}-padding main-product-section" id="MainProduct-{{ section.id }}" data-section="{{ section.id }}">
+<section class="container section-{{ section.id }}-padding main-product-section" id="MainProduct-{{ section.id }}" data-section="{{ section.id }}">
 	<div class="product{% if product.media.size > 0 %} row{% else %} product--no-media{% endif %}{% if section.settings.image_gallery_collage == "grid" %} product__stacked{% endif %}">
 		{% if settings.show_breadcrumbs %}
 			<nav
