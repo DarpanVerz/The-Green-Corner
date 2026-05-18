@@ -223,37 +223,37 @@
 
 
 								<div class="product-share-icons">
-    <span class="share-title">Share:</span>
+    			<span class="share-title">Share:</span>
 
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ shop.url }}{{ product.url }}"
-       target="_blank"
-       class="share-icon facebook">
-        <i class="fab fa-facebook-f"></i>
-    </a>
+    			<a href="https://www.facebook.com/sharer/sharer.php?u={{ shop.url }}{{ product.url }}"
+				target="_blank"
+				class="share-icon facebook">
+					<i class="fab fa-facebook-f"></i>
+				</a>
 
-    <a href="https://twitter.com/intent/tweet?url={{ shop.url }}{{ product.url }}"
-       target="_blank"
-       class="share-icon twitter">
-        <i class="fab fa-twitter"></i>
-    </a>
+				<a href="https://twitter.com/intent/tweet?url={{ shop.url }}{{ product.url }}"
+				target="_blank"
+				class="share-icon twitter">
+					<i class="fab fa-twitter"></i>
+				</a>
 
-    <a href="https://pinterest.com/pin/create/button/?url={{ shop.url }}{{ product.url }}"
-       target="_blank"
-       class="share-icon pinterest">
-        <i class="fab fa-pinterest-p"></i>
-    </a>
+				<a href="https://pinterest.com/pin/create/button/?url={{ shop.url }}{{ product.url }}"
+				target="_blank"
+				class="share-icon pinterest">
+					<i class="fab fa-pinterest-p"></i>
+				</a>
 
-    <a href="mailto:?subject={{ product.title }}&body={{ shop.url }}{{ product.url }}"
-       class="share-icon email">
-        <i class="fas fa-envelope"></i>
-    </a>
+					<a href="mailto:?subject={{ product.title }}&body={{ shop.url }}{{ product.url }}"
+					class="share-icon email">
+						<i class="fas fa-envelope"></i>
+					</a>
 
-    <a href="{{ shop.url }}{{ product.url }}"
-       class="share-icon link-copy"
-       onclick="navigator.clipboard.writeText(this.href); return false;">
-        <i class="fas fa-link"></i>
-    </a>
-</div>
+				<a href="{{ shop.url }}{{ product.url }}"
+				class="share-icon link-copy"
+				onclick="navigator.clipboard.writeText(this.href); return false;">
+					<i class="fas fa-link"></i>
+				</a>
+				</div>
 
 							{%- when 'pickup_availability' -%}
 								<div {{ block.shopify_attributes }}>
