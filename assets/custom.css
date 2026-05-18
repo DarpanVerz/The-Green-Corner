@@ -2425,11 +2425,11 @@ button.hover-cart-btn:hover {
 	list-style:none;
 }
 
-.custom-category-menu li{
+.custom-category-menu li {
 	margin-bottom:12px;
 }
 
-.custom-category-menu li a {
+/* .custom-category-menu li a {
 	display:block;
 	padding:14px 18px;
 	border-radius:8px;
@@ -2446,8 +2446,8 @@ button.hover-cart-btn:hover {
   left:auto;
   right:0;
   width:100%;
-  
-}
+
+} */
 
 
 /* .custom-category-menu li a.active{
