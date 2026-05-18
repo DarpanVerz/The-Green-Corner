@@ -2460,9 +2460,20 @@ button.hover-cart-btn:hover {
     top: 0;
 }
 
-.custom-category-menu li a:hover{
-	background:#007a33;
-	color:#fff;
+.custom-category-menu li a:hover {
+	  content: '';
+    background: #007a33 !important;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    right: -19px;
+    width: 108%;
+    height: 48px;
+    z-index: -1;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 10px;
+    top: 0;
 }
 
 .slideshow-slide__button .button--simple {
