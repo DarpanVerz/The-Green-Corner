@@ -2555,6 +2555,9 @@ button.hover-cart-btn:hover {
         font-size: 25px;
         font-weight: 600;
 }
+.product__info-wrapper .product__info-container .product__description .product-custom-icon li {
+  margin-top: 10px;
+}
 .product__info-wrapper .product__info-container .product__description .product-custom-icon li::marker {
      color:#A6CE39;
 }
