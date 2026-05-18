@@ -43,7 +43,7 @@
 }
 
 :root{
-  --menu-bg: {{ collection.metafields.custom.bg_color | default: '#056839' }};
+  --menu-bg: {{ collection.metafields.custom.menu_bg_color | default: '#056839' }};
   --menu-text: {{ collection.metafields.custom.text_color | default: '#fff' }};
 }
 
