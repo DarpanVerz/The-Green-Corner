@@ -2807,5 +2807,10 @@ font-size: 40px;
     .product__media-list-wrapper {
         gap: 1.4rem !important;
     }
+
+    .product .product__outer--center {
+    margin: 0 auto 0 150px;
+}
+
 }
 
