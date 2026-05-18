@@ -2705,6 +2705,8 @@ button.hover-cart-btn:hover {
     border-radius: 10px;
 }
 
+.product-section .product__media-subitem img { border-radius:10px; }
+
 @media (min-width: 990px) {
     .product__media-list-wrapper {
         flex-direction: column !important;
