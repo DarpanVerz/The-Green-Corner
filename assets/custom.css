@@ -2454,6 +2454,7 @@ button.hover-cart-btn:hover {
     top: 0;
 }
 
+.custom-category-menu li a:hover { color:#fff; }
 
 .custom-category-menu li a:hover::after {
   background: #007a33;
