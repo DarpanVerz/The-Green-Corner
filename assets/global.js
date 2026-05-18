@@ -96,7 +96,7 @@ const subSliderInit = (isUpdate) => {
 		document.querySelectorAll(".product-section .js-media-sublist") &&
 		document.querySelectorAll(".product-section .js-media-sublist").length > 0
 	) {
-		let subSlider = new Swiper(".product-section ", {
+		let subSlider = new Swiper(".product-section .js-media-sublist", {
 			centeredSlides: true,
 			centeredSlidesBounds: true,
 			slidesPerView: 3,
