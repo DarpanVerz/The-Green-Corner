@@ -2551,6 +2551,10 @@ button.hover-cart-btn:hover {
         font-size: 17px;
     line-height: 25px;
 }
+.product__info-wrapper .product__info-container .product__description h5 {  
+        font-size: 25px;
+        font-weight: 600;
+}
 
 .product-form__submit { border-radius: 50px; }
 
