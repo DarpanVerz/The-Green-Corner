@@ -2460,9 +2460,16 @@ button.hover-cart-btn:hover {
   color: #fff !important;
 }
 .custom-category-menu li a.active::after {
-  background: #007a33;
-  position: relative;
-  color:#fff;
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 109%;
+    height: 50px;
+    left: 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: -1;
+    top: 0;
 }
 
 /* .custom-category-menu li a.active:after{
