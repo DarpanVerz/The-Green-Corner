@@ -2429,7 +2429,7 @@ button.hover-cart-btn:hover {
 	margin-bottom:12px;
 }
 
-.custom-category-menu li a{
+.custom-category-menu li a {
 	display:block;
 	padding:14px 18px;
 	border-radius:8px;
@@ -2439,12 +2439,12 @@ button.hover-cart-btn:hover {
 	transition:0.3s;
 }
 
-.custom-category-menu li a.active{
+/* .custom-category-menu li a.active{
   position: relative;
   color:#fff;
-}
+} */
 
-.custom-category-menu li a.active:after{
+/* .custom-category-menu li a.active:after{
     content: '';
     background: #007a33 !important;
     color: #fff;
@@ -2458,7 +2458,7 @@ button.hover-cart-btn:hover {
     border-bottom-left-radius: 12px;
     padding: 10px;
     top: 0;
-}
+} */
 
 .custom-category-menu li a:hover{
 	background:#007a33;
