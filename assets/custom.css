@@ -2473,8 +2473,11 @@ button.hover-cart-btn:hover {
 }
 
 .custom-category-menu li a:hover{
-	background:#007a33;
 	color:#fff;
+}
+
+.custom-category-menu li a:hover::after {
+	width: 100%;
 }
 
 .slideshow-slide__button .button--simple {
