@@ -2803,8 +2803,3 @@ font-size: 40px;
     }
 }
 
-.product .product__outer--center {
-    max-width: 1024px !important;
-    margin: auto;
-    gap: 4rem;
-}

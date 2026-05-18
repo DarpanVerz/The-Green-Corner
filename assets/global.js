@@ -127,7 +127,7 @@ const subSliderInit = (isUpdate) => {
 					direction: "horizontal",
 					slidesPerView: 4,
 					navigation: true,
-					spaceBetween: 20,
+					spaceBetween: 30,
 				},
 			},
 		});
