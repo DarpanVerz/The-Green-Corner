@@ -65,17 +65,26 @@
 			</nav>
 		{% endif %}
 
-
-		<div class="product-breadcrumb">
+<div class="product-breadcrumb">
   <a href="{{ routes.root_url }}">Home</a>
 
   {% if collection %}
-    <span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
-    <a href="{{ collection.url }}">{{ collection.title }}</a>
+    <span class="breadcrumb-arrow">
+      <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+    </span>
+
+    <a href="{{ collection.url }}">
+      {{ collection.title }}
+    </a>
   {% endif %}
 
-  <span><i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
-  <span>{{ product.title }}</span>
+  <span class="breadcrumb-arrow">
+    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+  </span>
+
+  <span class="active-page">
+    {{ product.title }}
+  </span>
 </div>
 
 
