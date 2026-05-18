@@ -2860,3 +2860,6 @@ font-size: 40px;
       text-transform: math-auto;
     font-size: 17px;
 }
+.product__info-wrapper .share-title {
+    font-size: 20px;
+}
