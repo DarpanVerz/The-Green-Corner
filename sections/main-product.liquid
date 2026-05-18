@@ -66,31 +66,6 @@
 		{% endif %}
 
 
-<div class="custom-product-breadcrumb">
-  
-  <a href="{{ routes.root_url }}">Home</a>
-
-  {% if collection %}
-    <span class="separator">
-      <i class="fa fa-angle-double-right"></i>
-    </span>
-
-    <a href="{{ collection.url }}">
-      {{ collection.title }}
-    </a>
-  {% endif %}
-
-  <span class="separator">
-    <i class="fa fa-angle-double-right"></i>
-  </span>
-
-  <span class="current-page">
-    {{ product.title }}
-  </span>
-
-</div>
-
-
 		<div class="product__outer{% if section.settings.desktop_alignment == 'left' %} product__outer--desktop-order{% endif %}{% if section.settings.mobile_alignment == 'after' %} product__outer--mobile-order{% endif %} {% if section.settings.image_gallery_collage == "thumbnail_carousel" %} product__outer--center{% endif %} {% if section.settings.image_gallery_collage == "stacked" %} product__outer--stacked{% endif %} {% if section.settings.image_gallery_collage == "grid" %}product__outer--grid{% endif %}">
 			<div class="product__info-wrapper {% if product.media.size == 2 and section.settings.image_gallery_collage == "grid" %} product__media-two{% endif %}">
 				<div id="ProductInfo-{{ section.id }}" class="product__info-container" data-source="{{ section.id }}" data-section="{{ section.id }}">
