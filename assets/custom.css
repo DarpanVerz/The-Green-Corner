@@ -40,8 +40,8 @@
   --subtitle-letter-spacing: 30%;
   --subtitle-font-size: 1.5rem;
   --subtitle-color: #056839;
-  --menu-bg: {{ collection.metafields.custom.menu_bg_color | default: '#056839' }};
-  --menu-text: {{ collection.metafields.custom.menu_text_color | default: '#fff' }};
+  --menu-bg: {{ collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
+  --menu-text: {{ collection.metafields.custom.menu_text_color.value | default: '#fff' }};
 }
 
 @media screen and (min-width: 1100px) {
