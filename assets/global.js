@@ -97,7 +97,7 @@ const subSliderInit = (isUpdate) => {
 		document.querySelectorAll(".product-section .js-media-sublist").length > 0
 	) {
 		let subSlider = new Swiper(".product-section .js-media-sublist", {
-			centeredSlides: true,
+			centeredSlides: false,
 			centeredSlidesBounds: true,
 			slidesPerView: 3,
 			spaceBetween: 2,
@@ -126,7 +126,7 @@ const subSliderInit = (isUpdate) => {
 				990: {
 					direction: "horizontal",
 					slidesPerView: 4,
-					navigation: true,
+					navigation: false,
 					spaceBetween: 30,
 				},
 			},
