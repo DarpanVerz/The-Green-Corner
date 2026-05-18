@@ -2499,8 +2499,8 @@ button.hover-cart-btn:hover {
     border-bottom-left-radius: 12px;
     z-index: -1;
     top: 0;
-    background: #056839;
-    color: #fff !important;
+    background: {{ collection.metafields.custom.bg_color | default: '#056839' }};
+    color: {{ collection.metafields.custom.text_color | default: '#fff' }} !important;
 }
 
 
