@@ -2848,3 +2848,7 @@ product__info-wrapper  .product-form__buttons {
     border-bottom: 1px solid #ccc;
 
 }
+
+product__info-wrapper .product-form__quantity .quantity {
+    border-radius: 15px;
+}
