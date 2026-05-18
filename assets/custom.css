@@ -2731,6 +2731,12 @@ button.hover-cart-btn:hover {
 
 }
 
+@media (min-width: 990px) {
+    .product__media {
+        height: auto;
+    }
+}
+
 .product__info-wrapper .product__info-container {
     width: 100%;
     text-align: center;
