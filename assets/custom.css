@@ -2849,6 +2849,6 @@ product__info-wrapper  .product-form__buttons {
 
 }
 
-product__info-wrapper .product-form__input .quantity {
+product__info-wrapper .product-form__quantity .quantity {
     border-radius: 15px !important;
 }
