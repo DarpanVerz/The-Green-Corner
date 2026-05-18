@@ -42,6 +42,11 @@
   --subtitle-color:#056839;
 }
 
+:root{
+  --menu-bg: {{ collection.metafields.custom.bg_color | default: '#056839' }};
+  --menu-text: {{ collection.metafields.custom.text_color | default: '#fff' }};
+}
+
 @media screen and (min-width: 1100px) {
     :root {
         --main-padding: 2rem;
