@@ -2802,3 +2802,9 @@ font-size: 40px;
         gap: 1.4rem !important;
     }
 }
+
+.product .product__outer--center {
+    max-width: 1024px;
+    margin: auto;
+    gap: 4rem;
+}
