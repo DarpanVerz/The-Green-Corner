@@ -2440,6 +2440,17 @@ button.hover-cart-btn:hover {
 	transition: 0.3s ease;
 }
 
+.custom-category-menu li a::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 0;
+	height: 2px;
+	background: #007a33;
+	transition: 0.3s ease;
+}
+
 .custom-category-menu li a.active{
   position: relative;
   color:#fff;
