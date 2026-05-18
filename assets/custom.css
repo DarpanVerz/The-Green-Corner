@@ -2753,7 +2753,8 @@ button.hover-cart-btn:hover {
     }
 
     .product__media-sublist {
-      max-width: inherit !important; 
+      max-width: 100% !important; 
+      width:100%; 
     }
 
 }
