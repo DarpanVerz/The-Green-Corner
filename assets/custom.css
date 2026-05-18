@@ -2431,7 +2431,7 @@ button.hover-cart-btn:hover {
 
 .custom-category-menu li a {
   position: relative;
-	display:block;
+	display: inline-block;
 	padding:14px 18px;
 	border-radius:8px;
 	text-decoration:none;
