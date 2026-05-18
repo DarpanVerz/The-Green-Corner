@@ -2785,3 +2785,5 @@ font-size: 40px;
 }
 
 .p-0 { padding:0; }
+
+.breadcrumb__delimiter { padding: 0 10px; line-height: .5; }
