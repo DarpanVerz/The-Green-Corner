@@ -2429,15 +2429,14 @@ button.hover-cart-btn:hover {
 	margin-bottom:12px;
 }
 
-.custom-category-menu li a {
-  position: relative;
-	display: inline-block;
+.custom-category-menu li a{
+	display:block;
 	padding:14px 18px;
 	border-radius:8px;
 	text-decoration:none;
 	color:#222;
 	font-size:16px;
-	transition: 0.3s ease;
+	transition:0.3s;
 }
 
 .custom-category-menu li a.active{
