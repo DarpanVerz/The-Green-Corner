@@ -2859,3 +2859,15 @@ font-size: 40px;
 .product__info-wrapper .share-title {
     font-size: 20px;
 }
+
+.product__info-wrapper .product-form__quantity{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.product__info-wrapper .qty-text{
+    font-size:18px;
+    font-weight:500;
+    color:#222;
+}
