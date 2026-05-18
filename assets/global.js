@@ -124,7 +124,7 @@ const subSliderInit = (isUpdate) => {
 			},
 			breakpoints: {
 				990: {
-					direction: "vertical",
+					direction: "horizontal",
 				},
 			},
 		});
