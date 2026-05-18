@@ -2257,7 +2257,7 @@ margin-left:30px;
   background: transparent;
   border: 1px solid var(--theme-bg-light);
   color: #ffffff;
-  background-color:rgba(166,206,57,0.2)
+  background-color: var(--theme-bg-light-transparent);
 }
 
 .hover-cart-btn:hover {
