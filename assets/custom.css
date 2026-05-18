@@ -2838,8 +2838,16 @@ button.hover-cart-btn:hover {
     width: 100% !important;
     max-width: 100% !important;
 }
-
-
 .product__info-wrapper  .product__title__wrapper .product__title {
 font-size: 40px;
+}
+
+.product-form__buttons {
+      display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border-top: 1px solid #ccc;
+    padding: 30px 0px;
+    border-bottom: 1px solid #ccc;
+
 }
