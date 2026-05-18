@@ -2441,7 +2441,7 @@ button.hover-cart-btn:hover {
 
 .custom-category-menu li a:after {
   content:'';
-  
+  background:#fff;
 }
 
 
