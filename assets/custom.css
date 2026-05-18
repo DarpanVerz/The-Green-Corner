@@ -2300,41 +2300,6 @@ button.hover-cart-btn:hover {
     font-weight: 600;
 }
 
-/** Hover Effects **/
-
-.custom-collection-layout.flowers .card-wrapper::before {
-  background-color: rgba(255,230,237,0.8);
-  color:#000;
-}
-
-.custom-collection-layout.flowers .hover-view-btn {
-  background: transparent;
-  border: 1px solid rgba(250, 209, 221, 0.8);
-  color: #000;
-  background-color:rgba(250,209,221,0.2)
-}
-
-.custom-collection-layout.flowers .hover-view-btn:hover {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #000;
-  background-color:#fff;
-}
-
-.custom-collection-layout.flowers .card-wrapper:hover .card__title a, .custom-collection-layout.flowers .card-wrapper:hover .price-item {
- color:#000 !important; 
-}
-
-.custom-collection-layout.flowers button.hover-cart-btn:hover {
-    background: #EF9FA2;
-    cursor: pointer;
-}
-
-.custom-collection-layout.flowers .custom-category-menu li a.active { background: #EF9FA2; }
-.custom-collection-layout.flowers .custom-category-menu li a:hover {
-    background: #EF9FA2;
-    color: #fff;
-}
 
 
 /* MOBILE */
