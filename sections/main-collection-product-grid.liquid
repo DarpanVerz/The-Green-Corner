@@ -77,6 +77,58 @@
   --menu-bg: {{ collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
   --menu-text: {{ collection.metafields.custom.menu_text_color.value | default: '#fff' }};
 
+
+  .custom-sidebar{
+	background:#f8e7ec;
+	padding:30px 20px;
+	border-radius:24px;
+  overflow: hidden;
+}
+
+.sidebar-title{
+	font-size:38px;
+	font-weight:500;
+	margin-bottom:25px;
+	color:#222;
+}
+
+/*** Dynamic Menu ***/
+
+.custom-category-menu{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+.custom-category-menu li {
+	margin-bottom:12px;
+}
+
+.custom-category-menu li a {
+	  display: block;
+    padding: 14px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+    background: var(--menu-bg);
+}
+
+.custom-category-menu li a:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 109%;
+    height: 50px;
+    left: 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    z-index: -1;
+    top: 0;
+}
+
 .custom-category-menu li a:hover,
 .custom-category-menu li a.active{
    color: var(--menu-text);
