@@ -2165,7 +2165,7 @@ margin-left:30px;
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(5, 104, 57, 0.92);
+  background: var(--theme-bg-transparent);
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
