@@ -2439,6 +2439,17 @@ button.hover-cart-btn:hover {
 	transition:0.3s;
 }
 
+.custom-category-menu li a:after {
+	display:block;
+	padding:14px 18px;
+	border-radius:8px;
+	text-decoration:none;
+	color:#222;
+	font-size:16px;
+	transition:0.3s;
+}
+
+
 /* .custom-category-menu li a.active{
   position: relative;
   color:#fff;
