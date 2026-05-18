@@ -1231,13 +1231,10 @@ html.no-js .product .product__media-wrapper .no-js-gallery {
   width: 4rem;
 }
 .product-form__buttons {
-    display: flex;
-    flex-direction: column;
-    gap: .8rem;
-    border-top: 1px solid #ccc;
-    padding: 30px 0px;
-    border-bottom: 1px solid #ccc;
-
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  
 }
 .product-form__buttons-row {
   display: flex;
