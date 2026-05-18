@@ -2488,15 +2488,12 @@ button.hover-cart-btn:hover {
    color: var(--menu-text);
 }
 
-.custom-category-menu li a:hover::after {
-  background: {{ collection.metafields.custom.bg_color | default: '#056839' }};
-  color: {{ collection.metafields.custom.text_color | default: '#fff' }} !important;
-}
-
 .custom-category-menu li a:hover::after,
 .custom-category-menu li a.active::after{
    background: var(--menu-bg);
 }
+
+
 
 .custom-category-menu li a.active::after {
     content: '';
