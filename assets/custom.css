@@ -2444,12 +2444,14 @@ button.hover-cart-btn:hover {
     background: #fff;
     position: absolute;
     right: 0;
-    width: 100%;
+    width: 109%;
     height: 50px;
-    left: 25px;
+    left: 0;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    color:#000;
+    color: #000;
+    z-index: -1;
+    top: 0;
 }
 
 
