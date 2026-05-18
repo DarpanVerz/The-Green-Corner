@@ -2696,7 +2696,6 @@ button.hover-cart-btn:hover {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    border: 1px solid #ddd;
 }
 
 /* Active thumbnail */
