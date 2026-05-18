@@ -2558,7 +2558,7 @@ button.hover-cart-btn:hover {
 
 .collection-breadcrumb, .collection-breadcrumb a { color:#fff; text-decoration:none; }
 
-#MainContent .breadcrumb { display:none; }
+/* #MainContent .breadcrumb { display:none; } */
 
 .facets__horizontal-top details-disclosure-filter { display:none; }
 
