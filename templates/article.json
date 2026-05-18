@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -52,9 +61,12 @@
       "settings": {
         "color_scheme": "",
         "heading": "Related Products",
+        "heading_tag": "h2",
         "description": "",
         "alignment": "center",
-        "collection_list": [],
+        "collection_list": [
+          "flowers"
+        ],
         "product_count": 4,
         "image_ratio": "portrait",
         "show_two_cards": false,
@@ -77,6 +89,7 @@
         "posts_count": 4,
         "per_row": 4,
         "heading": "Latest Posts",
+        "heading_tag": "h2",
         "heading_position": "center",
         "button_label": "",
         "button_link": "",
