@@ -162,10 +162,10 @@
       "settings": {
         "image_gallery_collage": "thumbnail_carousel",
         "desktop_alignment": "left",
-        "mobile_alignment": "before",
+        "mobile_alignment": "after",
         "image_fit": "contain",
-        "enable_autoheight": true,
-        "animation": true,
+        "enable_autoheight": false,
+        "animation": false,
         "variant_media_display": "show_all",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
