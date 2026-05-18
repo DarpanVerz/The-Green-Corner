@@ -2832,6 +2832,10 @@ font-size: 40px;
     padding: 10px;
 }
 
+.custom-slider-arrow:hover {
+  background:#000;
+}
+
 /* Arrow Line */
 .custom-slider-arrow::before {
     content: "";
