@@ -797,3 +797,6 @@
   transform: rotate(0deg) translate(3px);
 }
 
+.card-wrapper::before {
+      background: var(--theme-bg-transparent);
+}
