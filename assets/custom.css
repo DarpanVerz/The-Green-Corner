@@ -3011,7 +3011,11 @@ text-align: left;
     position: relative;
 }
 
-.banner-block .button--simple { 
+.banner-block .custom-view { 
   background: #272727; color:#fff; 
   display:inline-block; padding:10px 15px; 
   border-radius:50px; width:100px; margin-top:10px; }
+
+.banner-block .custom-view:hover {
+  
+}
