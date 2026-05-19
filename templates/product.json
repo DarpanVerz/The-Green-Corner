@@ -187,9 +187,9 @@
       "settings": {
         "heading": "You May Also Like",
         "heading_tag": "h2",
-        "products_to_show": 6,
+        "products_to_show": 4,
         "show_two_cards": true,
-        "autoplay": true,
+        "autoplay": false,
         "stop_autoplay": true,
         "show_arrows": false,
         "slideshow_speed": 1.1,
