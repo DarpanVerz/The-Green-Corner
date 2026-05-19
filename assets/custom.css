@@ -3072,7 +3072,7 @@ text-align: left;
 
 .faq-section:before { display: none; }
 
-.content {
+.testimonial-card .content {
     font-size: 14px;
     line-height: 19px !important;
     color: #444;
