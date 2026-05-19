@@ -3006,3 +3006,7 @@ text-align: left;
     min-height: auto;
     overflow: inherit;
 }
+
+.header .header-mega-menu__collection-list .mega-menu__collection svg, .header .header-mega-menu__collection-list .mega-menu__collection img {
+    position: relative;
+}
