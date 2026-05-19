@@ -201,7 +201,7 @@
         "show_vendor": false,
         "show_color_swatch": false,
         "show_desc": false,
-        "margin_top": "s",
+        "margin_top": "m",
         "margin_bottom": "l"
       }
     },
