@@ -3022,7 +3022,7 @@ text-align: left;
 
 .testimonial-section {
     padding: 40px 0;
-    margin: 50px 20px 0 20px;
+    margin: 50px 20px 0 20px !important;
 }
 
 }
