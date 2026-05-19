@@ -82,10 +82,59 @@
         "enable_border_top": false,
         "enable_border_bottom": false
       }
+    },
+    "collapsible_content_dBDRqw": {
+      "type": "collapsible-content",
+      "blocks": {
+        "text_block_9BN3rB": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "A brief introduction to the collapsible content",
+            "block_heading_tag": "h4",
+            "text": "<p>Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.</p>"
+          }
+        },
+        "text_block_f7LkCK": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "A brief introduction to the collapsible content",
+            "block_heading_tag": "h4",
+            "text": "<p>Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.</p>"
+          }
+        },
+        "text_block_PEiN4G": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "A brief introduction to the collapsible content",
+            "block_heading_tag": "h4",
+            "text": "<p>Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_9BN3rB",
+        "text_block_f7LkCK",
+        "text_block_PEiN4G"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Frequently Asked <em>Questions</em>",
+        "heading_tag": "h3",
+        "description": "Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.",
+        "text_alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "l",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
     }
   },
   "order": [
     "main",
-    "collapsible_content_KmJPJA"
+    "collapsible_content_KmJPJA",
+    "collapsible_content_dBDRqw"
   ]
 }
