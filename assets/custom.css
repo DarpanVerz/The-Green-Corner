@@ -2969,3 +2969,12 @@ text-align: left;
 .mobile-facets__close-button, .mobile-facets__summary>div { 
   font-family: Montserrat, sans-serif !important; 
   padding-bottom: 10px;  }
+
+  .mobile-facets__open {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: #046a3a;
+    border-radius: 40px;
+}
