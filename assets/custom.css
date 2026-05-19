@@ -3010,3 +3010,5 @@ text-align: left;
 .header .header-mega-menu__collection-list .mega-menu__collection svg, .header .header-mega-menu__collection-list .mega-menu__collection img {
     position: relative;
 }
+
+.banner-block .button--simple { background: #272727; color:#fff; }
