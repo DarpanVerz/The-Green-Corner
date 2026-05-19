@@ -19,6 +19,22 @@
     "collapsible_content_KmJPJA": {
       "type": "collapsible-content",
       "blocks": {
+        "text_block_CzgCkW": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "A brief introduction to the collapsible content",
+            "block_heading_tag": "h4",
+            "text": "<p>Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.</p>"
+          }
+        },
+        "text_block_ygnE69": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "A brief introduction to the collapsible content",
+            "block_heading_tag": "h4",
+            "text": "<p>Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.</p>"
+          }
+        },
         "text_block_ReQQqJ": {
           "type": "text-block",
           "settings": {
@@ -45,6 +61,8 @@
         }
       },
       "block_order": [
+        "text_block_CzgCkW",
+        "text_block_ygnE69",
         "text_block_ReQQqJ",
         "text_block_Ucqpyj",
         "text_block_DcjKmm"
