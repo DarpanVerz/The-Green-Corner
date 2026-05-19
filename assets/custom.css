@@ -3021,7 +3021,7 @@ text-align: left;
 }
 
 .testimonial-section {
-    padding: 40px 0;
+    padding: 40px 0 !important;
     margin: 50px 20px 0 20px !important;
 }
 
