@@ -3001,3 +3001,7 @@ text-align: left;
 }
 .header .header-mega-menu__collection-list .mega-menu__collection .image_overlay, .header .header-mega-menu__collection-list .mega-menu__collection .image_overlay { display:none; }
 .header .header-mega-menu__collection-list .mega-menu__collection { background:none; }
+.header .header-mega-menu__collection-list .mega-menu__collection {
+    min-height: auto;
+    overflow: inherit;
+}
