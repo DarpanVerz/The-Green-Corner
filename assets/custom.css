@@ -2459,7 +2459,7 @@ button.hover-cart-btn:hover {
      font-size:30px;
 }
 @media (min-width: 768px) {
-.product__info-wrapper {
+.product__info-wrapper .product__info-container .product__description {
   padding: 20px 10px;
 }
 }
