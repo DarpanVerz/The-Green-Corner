@@ -14,6 +14,7 @@
 <script src="{{ 'update-slider.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'about.js' | asset_url }}" defer="defer"></script>
 
+{% assign current_collection = product.collections.first %}
 <style>
 :root {
   --theme-bg: {{ current_collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
