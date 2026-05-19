@@ -3049,6 +3049,7 @@ text-align: left;
 }
 
 @media(width:1024px){
+
   .view-btn::after {
     content: "";
     width: 35px;
@@ -3078,5 +3079,7 @@ text-align: left;
 .testimonial-section {
     padding: 40px 0px !important;
 }
+
+.faq-section:before { display:none; }
 
 }
