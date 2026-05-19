@@ -2905,7 +2905,6 @@ text-align: left;
 
   .body-template-collection .breadcrumb { display:none; }
 
-
   .pagination__item-arrow span svg { opacity:0; }
   .pagination__item-arrow span {
     left: 5px;
@@ -2955,3 +2954,7 @@ text-align: left;
 .pagination__item--next span:hover {
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/right-white-slider-arrow.png');
 }
+
+
+.mobile-category-list { list-style:none; }
+.mobile-category-list li a { text-decoration:none; }
