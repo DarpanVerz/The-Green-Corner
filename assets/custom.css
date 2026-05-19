@@ -3004,6 +3004,7 @@ text-align: left;
 
 .testimonial-card {
   background-size: contain !important;
+  background-position: top center;
 }
 
 .stars {
