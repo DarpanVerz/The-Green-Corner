@@ -2837,7 +2837,6 @@ font-size: 40px;
   color:#fff;
 }
 
-/* Arrow Line */
 .custom-slider-arrow::before {
     content: "";
     width: 55px;
@@ -2848,7 +2847,6 @@ font-size: 40px;
     margin-left: 18px;
 }
 
-/* Arrow Tail */
 .custom-slider-arrow::after {
     content: "";
     width: 70px;
@@ -2858,7 +2856,6 @@ font-size: 40px;
     left: 58px;
 }
 
-/* Right Arrow */
 .custom-slider-arrow.right {
     transform: rotate(180deg);
 }
