@@ -2989,3 +2989,9 @@ text-align: left;
     background: var(--theme-bg);
 }
 }
+
+@media screen and (min-width: 1360px) {
+    .header .header-mega-menu__collection-list .mega-menu__collection {
+        min-height: inherit;
+    }
+}
