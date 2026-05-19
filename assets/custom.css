@@ -2864,7 +2864,7 @@ font-size: 40px;
    font-size: 5rem;
 }
 
-.scroll-top__block .color-background-3 {
+.scroll-top__block {
     color: #fff;
     background-color: #272727 !important;
     border-radius: 50px !important;
