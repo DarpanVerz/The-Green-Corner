@@ -3000,3 +3000,4 @@ text-align: left;
   object-fit: contain;
 }
 .header .header-mega-menu__collection-list .mega-menu__collection .image_overlay, .header .header-mega-menu__collection-list .mega-menu__collection .image_overlay { display:none; }
+.header .header-mega-menu__collection-list .mega-menu__collection { background:none; }
