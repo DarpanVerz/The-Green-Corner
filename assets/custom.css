@@ -2992,6 +2992,10 @@ text-align: left;
 
 @media screen and (min-width: 1360px) {
     .header .header-mega-menu__collection-list .mega-menu__collection {
-        min-height: inherit;
+        min-height: inherit !important;
     }
+}
+
+.header .header-mega-menu__collection-list .mega-menu__collection svg, .header .header-mega-menu__collection-list .mega-menu__collection img {
+  object-fit: contain;
 }
