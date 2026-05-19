@@ -111,16 +111,19 @@
     order: 0;
   }
 }
-@media (min-width: 768px) {
-  .product__info-wrapper {
-    padding: 10px 25px;
-  }
-}
+
 @media (min-width: 990px) {
   .product .product__outer--desktop-order .product__info-wrapper {
     order: 1;
   }
 }
+
+@media (min-width: 768px) {
+  .product__info-wrapper {
+    padding: 10px 25px;
+  }
+}
+
 .product .product__outer--stacked {
   max-width: 1120px;
   margin: auto;
