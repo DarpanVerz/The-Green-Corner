@@ -2439,9 +2439,9 @@ button.hover-cart-btn:hover {
 
 .price-item--sale { color: #E94242; }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 .product__info-wrapper .product__info-container .product__description {
-  padding: 20px 10px;
+  padding: 0px 15px;
 }
 }
 @media (max-width: 990px) {
