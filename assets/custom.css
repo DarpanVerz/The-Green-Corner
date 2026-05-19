@@ -671,6 +671,10 @@ h1, .h1 {
 }
 }
 
+.slideshow-slide__text {
+    padding: var(--slideshow-bottom) 0 calc(var(--slideshow-bottom) + 0rem) !important;
+}
+
 @media screen and (min-width: 1200px) {
     .slideshow-slide__text {
         max-width: 82rem;
