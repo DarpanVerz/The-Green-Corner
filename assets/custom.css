@@ -2981,7 +2981,10 @@ text-align: left;
 
 @media(max-width:767px){
 .custom-sidebar { display: none; }
-.custom-category-menu li a.active {
+}
+
+@media screen and (width: 768px) {
+  .custom-category-menu li a.active {
     color: var(--theme-text);
     background: var(--theme-bg);
 }
