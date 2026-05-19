@@ -2906,6 +2906,7 @@ text-align: left;
   .body-template-collection .breadcrumb { display:none; }
 
 
+  .pagination__item-arrow span svg { display:none; }
   .pagination__item-arrow span {
     left: 5px;
     background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/left-slider-arrow.png');
