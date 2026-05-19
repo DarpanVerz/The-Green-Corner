@@ -23,7 +23,16 @@
         <li>
           <a href="{{ paginate.previous.url }}{{ anchor }}" class="pagination__item--prev pagination__item-arrow link motion-reduce" aria-label="{{ 'general.pagination.previous' | t }}">
              <span>
-                 {%- render 'icon-caret-pagination' -%}
+                 <svg
+	width="32"
+	height="32"
+	viewBox="0 0 32 32"
+	fill="none"
+	class="icon icon-arrow custom-arrow"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<path d="M22 16.1282L10 26L16.8 16.1282L10 6L22 16.1282Z" fill="currentColor"/>
+</svg>
             </span>
           </a>
         </li>
