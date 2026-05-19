@@ -44,12 +44,7 @@
 							>
 								<div class="product-markers__multi-column__marker">
 									<div class="product-markers__multi-column__marker-icon">
-										<img 
-  src="{{ 'circle-white.png' | asset_url }}" 
-  alt="Circle White"
-  width="44"
-  height="44"
->
+										{% render 'icon-marker' %}
 									</div>
 									<h4 class="product-markers__multi-column__title">
 										{% if block.settings.product != blank %}
