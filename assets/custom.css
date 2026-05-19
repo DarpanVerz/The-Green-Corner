@@ -3047,3 +3047,24 @@ text-align: left;
 .faq-section:before { display: none; }
 
 }
+
+@media(width:1024px){
+  .view-btn::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+}
+.view-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 0 0 12px;
+    border-radius : 46px;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.4s ease;
+    margin-left: -32px;
+    margin-bottom: -18px;
+}
+}
