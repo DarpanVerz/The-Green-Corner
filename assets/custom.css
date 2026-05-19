@@ -2963,4 +2963,5 @@ text-align: left;
     width: 100%;
     display: inline-block;
     padding: 10px 10px;
+    border-bottom: #ededed solid 1px;
 }
