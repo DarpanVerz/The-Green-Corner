@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -12,6 +21,7 @@
       "type": "banner",
       "settings": {
         "full_width": false,
+        "image": "shopify://shop_images/art-about-hero.webp",
         "image_size": "medium",
         "overlay_opacity": 0,
         "margin_top": "no-indent",
@@ -31,8 +41,11 @@
         "template--14703380332579__0eb57b0b-608e-43f9-b209-88547e4add0d-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Nurturing Creativity and Passion, Connecting Hearts Through the Art of Painting",
-            "heading_size": "h2"
+            "heading": "<p>Nurturing Creativity and Passion, Connecting Hearts Through the Art of Painting</p>",
+            "text_color": "#111111",
+            "span_color": "#b6d63a",
+            "heading_size": "h2",
+            "subheading_tag": "h2"
           }
         },
         "template--14703380332579__0eb57b0b-608e-43f9-b209-88547e4add0d-text-1": {
@@ -84,6 +97,7 @@
             "heading": "Worldwide Shipping",
             "desc": "<p>Explore our global art collection, now shipping to every corner of the world.</p>",
             "button_label": "Shipping details",
+            "button_link": "",
             "button_style": "tertiary"
           }
         },
@@ -94,6 +108,7 @@
             "heading": "30 Days Free Returns",
             "desc": "<p>Shop with confidence — enjoy 30 days of hassle-free returns on all purchases.</p>",
             "button_label": "Return Policy",
+            "button_link": "",
             "button_style": "tertiary"
           }
         },
@@ -104,6 +119,7 @@
             "heading": "Customer Support",
             "desc": "<p>Always here for you — our  support team is available to assist with any queries.</p>",
             "button_label": "Get Help",
+            "button_link": "",
             "button_style": "tertiary"
           }
         }
@@ -116,6 +132,7 @@
       "settings": {
         "multicolumn_to_show": 3,
         "horizontal_alignment": "left",
+        "heading_tag": "h3",
         "object_fit": "cover",
         "img_size": "small",
         "swipe_on_mobile": true,
@@ -132,6 +149,7 @@
       "settings": {
         "color_scheme": "",
         "heading": "\"Each brushstroke carries a dream, a feeling. Our passion is to bring these dreams into your world, making every space a canvas of imagination.\"",
+        "heading_tag": "h2",
         "text": "by Rita Hoffman, Founder of Copenhagen",
         "animation": true,
         "aniamtion_effect": "slide",
@@ -159,8 +177,11 @@
         "template--14703380332579__68c21d5c-35cb-4930-a450-22babb02db2e-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "206 Smith Street, Collingwood, Melbourne",
-            "heading_size": "h2"
+            "heading": "<p>206 Smith Street, Collingwood, Melbourne</p>",
+            "text_color": "#111111",
+            "span_color": "#b6d63a",
+            "heading_size": "h2",
+            "subheading_tag": "h2"
           }
         },
         "template--14703380332579__68c21d5c-35cb-4930-a450-22babb02db2e-text-1": {
