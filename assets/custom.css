@@ -655,12 +655,6 @@ h1, .h1 {
     line-height: 23px;
 }
 
-@media screen and (min-width: 750px) {
-    .slideshow .slideshow-slide__button-bottom {
-        bottom: 140px !important;
-    }
-}
-
 
 .swiper-button-next, .swiper-button-prev {
     color: #000;
