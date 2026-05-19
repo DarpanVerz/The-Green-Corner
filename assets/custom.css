@@ -3009,7 +3009,7 @@ text-align: left;
 
 .stars {
     font-size: 16px;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 .content {
