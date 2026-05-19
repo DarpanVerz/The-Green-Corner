@@ -3007,3 +3007,9 @@ text-align: left;
   margin-right: 5px;
 }
 }
+
+@media(){
+  .custom-collection-section .desc {
+    max-width: 100%; 
+  }
+}
