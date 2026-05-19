@@ -2107,7 +2107,6 @@ margin-left:30px;
 
 .collapsible-content__title-box { margin:0 !important; }
 
-
 .collapsible-content-wrapper.custom-collapsible {
     margin: 0 140px !important;
 }
@@ -2268,8 +2267,6 @@ button.hover-cart-btn:hover {
 }
 
 
-
-/* MOBILE */
 @media screen and (max-width: 767px) {
 
   .custom-hover-buttons {
@@ -2332,7 +2329,6 @@ button.hover-cart-btn:hover {
 }
 
 @media screen and (max-width: 575px){
-
 	.products-grid .collection-product-list{
 		grid-template-columns:1fr;
 	}
