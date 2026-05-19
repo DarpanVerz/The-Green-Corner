@@ -642,9 +642,16 @@ h1, .h1 {
   text-transform: capitalize;
 }
 
-    .slideshow .slideshow-slide__mext {
+ .slideshow .slideshow-slide__mext {
         margin: 0;
-    }
+  }
+
+  .slideshow .slideshow-slide__button-bottom
+Specificity: (0,2,0)
+ {
+    position: inherit;
+    bottom: unset;
+}
 
 .slideshow .slideshow-slide__button-bottom { position: inherit; }
 
