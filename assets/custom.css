@@ -3025,4 +3025,8 @@ text-align: left;
     margin: 50px 20px 0 20px !important;
 }
 
+.testimonial-main {
+    padding: 0;
+}
+
 }
