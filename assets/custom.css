@@ -2889,13 +2889,3 @@ text-align: left;
 }
 }
 
-@media screen and (min-width: 750px) {
-    .announcement-wrapper {
-        grid-template-columns: 1fr;
-        padding-top:7px; 
-    }
-        .announcement-main-icon {
-        top: 13px;
-    }
-    
-}
