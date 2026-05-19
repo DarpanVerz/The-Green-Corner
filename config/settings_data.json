@@ -59,6 +59,13 @@
     "search_collection_card_list": [],
     "type_section_header_font": "cormorant_n4",
     "content_for_index": [],
+    "blocks": {
+      "442549160356511856": {
+        "type": "shopify://apps/ck-whatsapp/blocks/app-embed-block/ce4c5d89-06d5-4502-b18d-35d424a3f693",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
