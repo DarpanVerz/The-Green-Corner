@@ -2444,6 +2444,11 @@ button.hover-cart-btn:hover {
   padding: 20px 10px;
 }
 }
+@media (max-width: 990px) {
+    .product__info-wrapper {
+        padding: 0 15px;
+    }
+}
 
 .product__info-wrapper .product__info-container .product__description { 
   text-align:left; 
