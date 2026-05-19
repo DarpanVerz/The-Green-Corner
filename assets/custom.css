@@ -3079,6 +3079,11 @@ text-align: left;
     margin-bottom: 25px;
 }
 
+.profile {
+    padding-left: 51px;
+    bottom: 60px !important;
+}
+
 }
 
 @media(width:1024px){
