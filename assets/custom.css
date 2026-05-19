@@ -2921,7 +2921,16 @@ text-align: left;
 }
 
 .pagination__item--next span {
-  
+    left: 5px;
+    background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/left-slider-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+    border: #ccc solid 1px;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 16px;
 }
 
 .pagination__item--current {
