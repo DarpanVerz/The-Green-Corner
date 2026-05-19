@@ -313,14 +313,12 @@ h1, h2, { font-family: 'didotregular' !important; }
     width: auto;
 }
 
-/* Desktop */
 @media screen and (min-width: 990px) {
     .custom-search-box {
         display: block;
     }
 }
 
-/* Tablet */
 @media screen and (max-width: 989px) {
     .custom-search-box {
         max-width: 280px;
@@ -361,7 +359,6 @@ h1, h2, { font-family: 'didotregular' !important; }
     }
 }
 
-/* Tablet + Mobile */
 @media screen and (max-width: 989px) {
 
     .custom-search-box {
