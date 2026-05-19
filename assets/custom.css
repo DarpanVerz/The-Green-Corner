@@ -2445,11 +2445,6 @@ button.hover-cart-btn:hover {
     }
 
 }
-@media screen and (max-width: 575px) {
-.product__title__wrapper .product__title {
-      text-align: left;
-    }
-}
 
 .product__info-wrapper .product__info-container .product__description { 
   text-align:left; 
