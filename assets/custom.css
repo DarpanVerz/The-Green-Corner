@@ -3040,4 +3040,10 @@ text-align: left;
     margin-top: 50px;
 }
 
+.accordion {
+    border-top: inherit !important;
+}
+
+.faq-section:before { display: none; }
+
 }
