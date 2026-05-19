@@ -75,7 +75,7 @@
         "heading_tag": "h3",
         "description": "Everything You Need to Know",
         "text_alignment": "left",
-        "margin_top": "no-indent",
+        "margin_top": "s",
         "margin_bottom": "l",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent",
