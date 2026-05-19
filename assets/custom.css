@@ -2891,6 +2891,6 @@ text-align: left;
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {
     .announcement-wrapper {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr);
     }
 }
