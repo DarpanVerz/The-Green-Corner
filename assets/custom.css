@@ -642,8 +642,8 @@ h1, .h1 {
   text-transform: capitalize;
 }
 
-      .slideshow .slideshow-slide__mext {
-        margin: 0 0 2rem;
+.slideshow .slideshow-slide__mext {
+        margin: 0 0 2rem !important;
     }
 
 .slideshow .slideshow-slide__button-bottom { position: inherit !important; }
