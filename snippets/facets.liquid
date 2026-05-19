@@ -653,13 +653,6 @@
 
 													<ul class="mobile-category-list">
     
-														<li>
-														<a href="/collections/all"
-															class="{% if collection.handle == 'all' %}active{% endif %}">
-															All
-														</a>
-														</li>
-
 														{% for collection_item in collections %}
 														{% unless collection_item.handle == 'frontpage' %}
 															<li>
