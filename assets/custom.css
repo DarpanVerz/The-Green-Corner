@@ -3009,7 +3009,7 @@ text-align: left;
 }
 
 @media(max-width:768px){
-  
+
   .custom-collection-section .desc {
     max-width: 100%; 
   }
@@ -3018,6 +3018,11 @@ text-align: left;
     bottom: 16px;
     left: 10px;
     right: 23px;
+}
+
+.testimonial-section {
+    padding: 40px 0;
+    margin: 50px 20px 0 20px;
 }
 
 }
