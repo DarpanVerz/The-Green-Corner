@@ -2920,6 +2920,10 @@ text-align: left;
     padding: 16px;
 }
 
+.pagination__item--next span {
+  
+}
+
 .pagination__item--current {
     border: none !important;
     color: #056839 !important;
