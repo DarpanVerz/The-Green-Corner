@@ -2894,4 +2894,7 @@ text-align: left;
         grid-template-columns: 1fr; 
         padding-top:5px;
     }
+        .announcement-main-icon {
+        top: 13px;
+    }
 }
