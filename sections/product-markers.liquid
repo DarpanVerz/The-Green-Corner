@@ -298,10 +298,12 @@
 											style="
 												{{ horizontal_position }} : {{ x }}%;
 												{{ vertical_position }} : {{ y }}%;
-												--marker-background: {{ block.settings.marker_background }};
-												--marker-color: {{ block.settings.marker_color }};
-												--marker-background-hover: {{ block.settings.marker_background_hover }};
-												--marker-color-hover: {{ block.settings.marker_color_hover }};
+												width: 44px;
+												height: 44px;
+												border-radius: 50%;
+												background: rgba(255, 255, 255, 0.5);
+												backdrop-filter: blur(4px);
+												-webkit-backdrop-filter: blur(4px);
 											"
 										>
 											<div
