@@ -2978,3 +2978,7 @@ text-align: left;
     background: #046a3a;
     border-radius: 40px;
 }
+
+@media(max-width:767px){
+.custom-sidebar { display: none; }
+}
