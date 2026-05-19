@@ -2898,3 +2898,9 @@ text-align: left;
         top: 13px;
     }
 }
+
+@media screen and (width: 1024px) {
+    .product .product__outer--center .product__media-wrapper {
+        width: calc(40% - 1.6rem);
+    }
+  }
