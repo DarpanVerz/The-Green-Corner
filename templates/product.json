@@ -188,7 +188,7 @@
         "heading": "You May Also Like",
         "heading_tag": "h2",
         "products_to_show": 4,
-        "show_two_cards": true,
+        "show_two_cards": false,
         "autoplay": false,
         "stop_autoplay": true,
         "show_arrows": false,
