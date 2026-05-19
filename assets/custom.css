@@ -2903,6 +2903,5 @@ text-align: left;
     .product .product__outer--center .product__media-wrapper {
         width: calc(40% - 1.6rem) !important;
     }
-
-    .product .product__outer--center { margin:0px 20px; }
+    .product .product__outer--center { margin:0px 20px !important; }
   }
