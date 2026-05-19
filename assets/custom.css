@@ -2862,3 +2862,7 @@ font-size: 40px;
 .custom-slider-arrow.right {
     transform: rotate(180deg);
 }
+
+.product-recommendations .section-header__title{
+   font-size: 5rem;
+}
