@@ -2925,3 +2925,7 @@ text-align: left;
     color: #056839 !important;
     font-weight: 600 !important;
 }
+
+.pagination__item:not(.pagination__item--current):hover, .pagination__item:focus {
+    border: 1px solid #ccc;
+}
