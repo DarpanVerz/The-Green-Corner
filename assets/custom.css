@@ -2919,3 +2919,8 @@ text-align: left;
     height: 40px;
     padding: 16px;
 }
+
+.pagination__item--current {
+    border: none !important;
+    color: #056839;
+}
