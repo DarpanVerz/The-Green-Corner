@@ -3132,3 +3132,11 @@ text-align: left;
 }
 
 }
+
+  @media (max-width: 565px) {
+    .profile {
+        padding-left: 51px;
+        bottom: 30px !important;
+    }
+}
+
