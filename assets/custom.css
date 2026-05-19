@@ -3019,6 +3019,15 @@ text-align: left;
     min-height: 250px !important;
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 65px;
+    position: relative;
+    bottom: 32px;
+}
+
 @media(max-width:767px){
 
 .newsletter-form__field-wrapper .field .field__input {
