@@ -2902,3 +2902,5 @@ text-align: left;
     }
     .product .product__outer--center { margin:0px 20px !important; }
   }
+
+  .body-template-collection .breadcrumb { display:none; }
