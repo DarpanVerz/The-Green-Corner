@@ -3002,6 +3002,10 @@ text-align: left;
   border:none !important; 
 }
 
+.stars {
+    margin-bottom: 0;
+}
+
 @media(max-width:767px){
 
 .newsletter-form__field-wrapper .field .field__input {
