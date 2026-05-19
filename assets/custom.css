@@ -637,7 +637,6 @@ h1, .h1 {
     background-color: rgba(166, 206, 57, 0.2);
     padding: 15px 30px;
     border: 1px solid #A6CE39;
-    margin-left: 65px;
 }
 .slideshow .slideshow-slide__button-bottom a {
   text-transform: capitalize;
