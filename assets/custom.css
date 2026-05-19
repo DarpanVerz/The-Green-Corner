@@ -3009,8 +3009,8 @@ text-align: left;
 }
 
 .profile {
-    padding-left: 60px;
-    bottom: -38px;
+    padding-left: 60px !important;
+    bottom: -38px !important;
 }
 
 }
