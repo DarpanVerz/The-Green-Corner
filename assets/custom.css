@@ -2999,5 +2999,5 @@ text-align: left;
 }
 
 .vp-items.left .vp-item:after {
-  border:none; 
+  border:none !important; 
 }
