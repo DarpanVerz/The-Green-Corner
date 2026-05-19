@@ -3001,3 +3001,9 @@ text-align: left;
 .vp-items.left .vp-item:after, .vp-items.right .vp-item:after {
   border:none !important; 
 }
+
+@media(max-width:767px){
+.newsletter-form__field-wrapper .field .field__input {
+  margin-right: 5px;
+}
+}
