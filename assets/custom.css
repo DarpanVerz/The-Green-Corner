@@ -3113,4 +3113,9 @@ text-align: left;
     border-bottom: .1rem solid rgb(var(--color-border));
 }
 
+.testimonial-card {
+  background-size: cover !important;
+  background-position: top center !important;
+}
+
 }
