@@ -2889,3 +2889,8 @@ text-align: left;
 }
 }
 
+@media screen and (max-width: 1024) and (min-width:768px) {
+    .announcement-wrapper {
+        grid-template-columns: 2fr;
+    }
+}
