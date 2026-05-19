@@ -2374,7 +2374,7 @@ button.hover-cart-btn:hover {
     padding-left: 0px !important;
 }
 
-.collection-product-card .unstyled-link {
+.collection-product-card .unstyled-link, .card-wrapper .unstyled-link {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
