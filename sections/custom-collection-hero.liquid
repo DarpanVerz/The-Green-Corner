@@ -34,7 +34,7 @@
   <product-form class="hover-product-form">
 
   {%- form 'product',
-    product_card_product,
+    product,
     class: 'form',
     novalidate: 'novalidate',
     data-type: 'add-to-cart-form'
@@ -43,20 +43,18 @@
     <input
       type="hidden"
       name="id"
-      value="{{ product_card_product.selected_or_first_available_variant.id }}"
+      value="{{ product.selected_or_first_available_variant.id }}"
     >
 
     <button
       type="submit"
       name="add"
       class="hover-cart-btn"
-      {% if product_card_product.selected_or_first_available_variant.available == false %}
+      {% if product.selected_or_first_available_variant.available == false %}
         disabled
       {% endif %}
     >
-      <span>
-        Add to Cart
-      </span>
+      <span>Add to Cart</span>
 
       <b class="loading-overlay__spinner hidden">
         <svg
@@ -83,9 +81,11 @@
   {%- endform -%}
 
 </product-form>
-  <a href="{{ product_card_product.url }}" class="hover-view-btn">
-    View Product
-  </a>
+
+<a href="{{ product.url }}" class="hover-view-btn">
+  View Product
+</a>
+
 </div>
 
                 <a href="{{ product.url }}">
