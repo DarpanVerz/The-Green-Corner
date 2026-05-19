@@ -3009,6 +3009,7 @@ text-align: left;
 }
 
 @media(max-width:768px){
+  
   .custom-collection-section .desc {
     max-width: 100%; 
   }
