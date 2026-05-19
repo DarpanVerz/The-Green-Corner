@@ -3067,4 +3067,7 @@ text-align: left;
     margin-left: -32px;
     margin-bottom: -18px;
 }
+.testimonial-main {
+    padding: 0;
+}
 }
