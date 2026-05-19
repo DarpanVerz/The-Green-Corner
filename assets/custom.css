@@ -2952,6 +2952,6 @@ text-align: left;
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/left-white-slider-arrow.png');
 }
 
-.popular-products .swiper-button-next:hover {
+.pagination__item--next span:hover {
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/right-white-slider-arrow.png');
 }
