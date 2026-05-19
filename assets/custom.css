@@ -3025,7 +3025,7 @@ text-align: left;
     gap: 12px;
     padding-left: 65px;
     position: relative;
-    bottom: 32px;
+    bottom: 32px !important;
 }
 
 @media(max-width:767px){
