@@ -2927,5 +2927,5 @@ text-align: left;
 }
 
 .pagination__item:not(.pagination__item--current):hover, .pagination__item:focus {
-    border: 1px solid #ccc;
+    border: 1px solid #ccc !important;
 }
