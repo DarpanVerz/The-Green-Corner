@@ -3082,4 +3082,9 @@ text-align: left;
 
 .faq-section:before { display:none; }
 
+.accordion {
+    border-top: inherit;
+    border-bottom: .1rem solid rgb(var(--color-border));
+}
+
 }
