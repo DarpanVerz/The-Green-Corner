@@ -191,6 +191,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <style>
 
+  .featured-product-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #056839eb;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease;
+    z-index: 1;
+    border-radius: 32px;
+}
+
 .featured-products-section{
   padding:60px 20px;
 }
