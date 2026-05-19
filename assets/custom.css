@@ -2547,6 +2547,9 @@ button.hover-cart-btn:hover {
     font-size: 18px;
     line-height: 27px;
 }
+.banner-content-wrapper p a {
+  color: #A6CE39;
+}
 
 .collection-banner-content { padding:60px 0px; }
 .collection-banner__desc { text-align:center; line-height:23px; }
