@@ -111,6 +111,11 @@
     order: 0;
   }
 }
+@media (min-width: 768px) {
+  .product__outer--mobile-order .product__info-wrapper {
+    padding: 10px 25px;
+  }
+}
 @media (min-width: 990px) {
   .product .product__outer--desktop-order .product__info-wrapper {
     order: 1;
