@@ -3070,4 +3070,7 @@ text-align: left;
 .testimonial-main {
     padding: 0 !important;
 }
+
+.profile {
+      padding-left: 0 !important;
 }
