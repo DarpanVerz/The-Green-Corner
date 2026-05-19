@@ -3098,9 +3098,10 @@ text-align: left;
     padding: 0 !important;
 }
 
-.profile {
-      padding-left: 12px !important;
-}
+    .profile {
+        padding-left: 12px !important;
+        bottom: -24px !important;
+    }
 
 .testimonial-section {
     padding: 40px 0px !important;
