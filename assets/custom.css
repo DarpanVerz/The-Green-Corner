@@ -3011,6 +3011,13 @@ text-align: left;
     margin-bottom: 0;
 }
 
+.content {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 0;
+    min-height: 250px;
+}
+
 @media(max-width:767px){
 
 .newsletter-form__field-wrapper .field .field__input {
