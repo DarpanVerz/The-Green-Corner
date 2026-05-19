@@ -2317,7 +2317,7 @@ button.hover-cart-btn:hover {
 .custom-sidebar{
 	width:280px;
 	min-width:280px;
-	background:#f7e6eb;
+	background: #FFE6ED!important;
 	padding:25px;
 	border-radius:20px;
 	position:sticky;
