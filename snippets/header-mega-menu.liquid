@@ -76,11 +76,8 @@
 
 				{% if block.settings.show_promo or block.settings.show_promo_2 %}
 					<div class="banner-block header-mega-menu__collection-list">
-						 {%- if block.settings.heading != blank -%}
-										<h3>
-											{{ block.settings.heading }}
-										</h3>
-									{%- endif -%}
+		{%- if block.settings.heading != blank -%}
+		<div class="subtitle"> {{ block.settings.heading }} </div> {%- endif -%}
 						{% if block.settings.show_promo %}
 							<div class="mega-menu__collection color-{{ block.settings.color_scheme }}">
 								{% if block.settings.image != blank %}
