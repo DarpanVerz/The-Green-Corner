@@ -2879,7 +2879,7 @@ text-align: left;
     border-radius: 50px !important;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 991px) {
 .custom-collection-section .desc {
     max-width: 600px;
     font-size: 18px;
@@ -2888,4 +2888,5 @@ text-align: left;
 .custom-collection-section .browse-btn {
   margin-right: 0px;
 }
+
 }
