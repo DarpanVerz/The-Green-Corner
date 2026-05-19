@@ -2443,7 +2443,10 @@ button.hover-cart-btn:hover {
     .product__info-wrapper {
         padding: 0 20px;
     }
-    .product__title__wrapper .product__title {
+
+}
+@media screen and (max-width: 575px){ 
+.product__title__wrapper .product__title {
       text-align: left;
     }
 }
