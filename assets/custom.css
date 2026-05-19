@@ -2439,6 +2439,12 @@ button.hover-cart-btn:hover {
 
 .price-item--sale { color: #E94242; }
 
+@media (min-width: 768px) {
+.product__info-wrapper .product__info-container .product__description {
+  padding: 20px 10px;
+}
+}
+
 .product__info-wrapper .product__info-container .product__description { 
   text-align:left; 
     border-top: 1px solid #ccc;
@@ -2458,11 +2464,7 @@ button.hover-cart-btn:hover {
      color:#A6CE39;
      font-size:30px;
 }
-@media (min-width: 768px) {
-.product__info-wrapper .product__info-container .product__description {
-  padding: 20px 10px;
-}
-}
+
 
 .product-form__submit { border-radius: 50px; }
 
