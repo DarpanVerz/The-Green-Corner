@@ -2308,7 +2308,7 @@ button.hover-cart-btn:hover {
 
 /**** product grid ****/
 
-.custom-collection-layout {
+.custom-collection-layout{
 	display:flex;
 	gap:30px;
 	align-items:flex-start;
@@ -2317,15 +2317,11 @@ button.hover-cart-btn:hover {
 .custom-sidebar{
 	width:330px;
 	min-width:280px;
-	background: #FFE6ED!important;
+	background: #FFE6ED;
 	padding:25px;
 	border-radius:25px;
 	position:sticky;
 	top:20px;
-  color: #1A1A1A;
-}
-.custom-collection-layout .custom-sidebar .sidebar-title {
-color: #1A1A1A;
 }
 
 .products-grid{
