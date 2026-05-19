@@ -106,13 +106,13 @@
 											{{ block.settings.description }}
 										</div>
 									{%- endif -%}
-									{% if block.settings.button_label != blank -%}
+									{% comment %} {% if block.settings.button_label != blank -%}
 										{% render 'button',
 											btn_style: 'simple',
 											btn_label: block.settings.button_label,
 											btn_link: block.settings.button_link
 										%}
-									{% endif %}
+									{% endif %} {% endcomment %}
 								</div>
 
 								<a
