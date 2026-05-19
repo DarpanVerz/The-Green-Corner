@@ -3142,3 +3142,10 @@ text-align: left;
 
 #carthike-chat-button-container .whatsappbutton span { display:none !important; }
 .scroll-top__block { bottom: 6rem !important; } 
+
+#carthike-chat-button-container .whatsappbutton svg {
+    width: 24px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    height: 24px;
+}
