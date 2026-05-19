@@ -22,67 +22,34 @@
 
       <div class="swiper featuredProductsSlider">
 
-        <div class="swiper-slide">
+        <div class="swiper-wrapper">
 
-  <div class="featured-product-card">
+          {% for product in section.settings.collection.products %}
 
-    <div class="featured-product-image-wrapper">
+            <div class="swiper-slide">
 
-      <a href="{{ product.url }}">
-        <img 
-          src="{{ product.featured_image | image_url }}" 
-          alt="{{ product.title }}"
-          class="featured-product-image"
-        >
-      </a>
+              <div class="featured-product-card">
 
-      <div class="featured-product-overlay"></div>
+                <a href="{{ product.url }}">
+                  <img 
+                    src="{{ product.featured_image | image_url }}" 
+                    alt="{{ product.title }}"
+                    class="featured-product-image"
+                  >
+                </a>
 
-      <div class="featured-product-hover-content">
+                <div class="featured-product-info">
+                  <h3>{{ product.title }}</h3>
+                  <span>{{ product.price | money }}</span>
+                </div>
 
-        <div class="featured-product-buttons">
+              </div>
 
-          <a href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity=1" class="featured-cart-btn">
-            Add to Cart
-          </a>
+            </div>
 
-          <a href="{{ product.url }}" class="featured-view-btn">
-            View Product
-          </a>
-
-        </div>
-
-        <div class="featured-product-bottom-content">
-
-          {% if product.compare_at_price > product.price %}
-            <span class="featured-sale-text">Sale</span>
-          {% endif %}
-
-          <h3>{{ product.title }}</h3>
-
-          <div class="featured-price-wrapper">
-
-            <span class="featured-price">
-              {{ product.price | money }}
-            </span>
-
-            {% if product.compare_at_price > product.price %}
-              <span class="featured-compare-price">
-                {{ product.compare_at_price | money }}
-              </span>
-            {% endif %}
-
-          </div>
+          {% endfor %}
 
         </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
 
       </div>
 
@@ -333,7 +300,5 @@ document.addEventListener("DOMContentLoaded", function(){
 .featured-products-next:hover {
   background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/right-white-slider-arrow.png');
 }
-
-
 
 </style>
