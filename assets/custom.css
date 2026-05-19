@@ -3003,7 +3003,7 @@ text-align: left;
 }
 
 .testimonial-card {
-  background-size: contain;
+  background-size: contain !important;
 }
 
 .stars {
@@ -3013,9 +3013,9 @@ text-align: left;
 
 .content {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 22px !important;
     margin-bottom: 0;
-    min-height: 250px;
+    min-height: 250px !important;
 }
 
 @media(max-width:767px){
