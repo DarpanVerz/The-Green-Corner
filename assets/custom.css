@@ -336,9 +336,8 @@ h1, h2, { font-family: 'didotregular' !important; }
     }
 }
 
-/* Mobile */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
 
     .custom-search-box {
         max-width: unset;
