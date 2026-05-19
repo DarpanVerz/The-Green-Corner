@@ -3002,6 +3002,10 @@ text-align: left;
   border:none !important; 
 }
 
+.testimonial-card {
+  background-size: contain;
+}
+
 .stars {
     font-size: 16px;
     margin-bottom: 0;
