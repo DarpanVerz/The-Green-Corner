@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "a768c257-bb5b-4475-a8c0-563aea70523c": {
@@ -13,7 +22,8 @@
             "button_label": "Button label",
             "button_link": "",
             "second_button_label": "Button label",
-            "second_button_link": ""
+            "second_button_link": "",
+            "article": ""
           }
         },
         "template--21710482374974__a768c257-bb5b-4475-a8c0-563aea70523c-slideshow_item-2": {
@@ -26,7 +36,8 @@
             "button_label": "Button label",
             "button_link": "",
             "second_button_label": "Button label",
-            "second_button_link": ""
+            "second_button_link": "",
+            "article": ""
           }
         },
         "template--21710482374974__a768c257-bb5b-4475-a8c0-563aea70523c-slideshow_item-3": {
@@ -39,7 +50,8 @@
             "button_label": "Button label",
             "button_link": "",
             "second_button_label": "Button label",
-            "second_button_link": ""
+            "second_button_link": "",
+            "article": ""
           }
         }
       },
@@ -61,6 +73,7 @@
         "slideshow_speed": 1.1,
         "slideshow_delay": 3,
         "slide_effects": "slide",
+        "heading_tag": "h1",
         "margin_top": "no-indent",
         "margin_bottom": "m"
       }
@@ -69,6 +82,7 @@
       "type": "main-blog",
       "settings": {
         "tag_articles_heading": "Highlights",
+        "tag_articles_heading_tag": "h2",
         "tag_articles": "INSPIRATION",
         "tag_text_horizontal": "center",
         "slideshow_speed": 0.5,
@@ -77,9 +91,10 @@
         "show_image_tag": true,
         "show_tags_tag": true,
         "show_date_tag": true,
-        "show_excerpt_tag": false,
+        "show_excerpt_tag": true,
         "show_author_tag": false,
         "heading": "Our stories",
+        "heading_tag": "h2",
         "text_horizontal": "left",
         "image_ratio": "landscape",
         "image_fit": "cover",
