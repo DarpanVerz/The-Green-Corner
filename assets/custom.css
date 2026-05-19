@@ -1359,7 +1359,7 @@ margin-left:30px;
   color: #555;
 }
 
-/* Mobile */
+
 @media screen and (max-width: 991px) {
 
   .floating-banner-image {
@@ -1436,7 +1436,6 @@ margin-left:30px;
 @media(max-width:991px) and (min-width:768px) {
   .product-markers__banner__content { padding-left:25px; }
 }
-
 
 .multicolumn .multicolumn-list__item:not(.hide_border):not(:last-child):before { background:none !important; }
 
