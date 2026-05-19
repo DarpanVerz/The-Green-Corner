@@ -97,7 +97,7 @@
                 </a>
 
                 <div class="featured-product-info card-information left">
-                  <h3 class="card__title">{{ product.title }}</h3>
+                  <h3 class="card__title">{{ product.title }}</h3> <br>
                   <span class="price-item price-item--regular">{{ product.price | money }}</span>
                 </div>
 
@@ -364,7 +364,7 @@ document.addEventListener("DOMContentLoaded", function(){
     color: #fff;
 }
 
-.card-wrapper .unstyled-link {
+.card-wrapper .card__title {
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
