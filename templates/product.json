@@ -212,56 +212,56 @@
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/3.png",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         },
         "instagram_post_VMTrYg": {
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/4.png",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         },
         "instagram_post_cg48Tj": {
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/2.png",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         },
         "instagram_post_3eQ4UP": {
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/1.png",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         },
         "instagram_post_Fm7U8f": {
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/ig_post_13.png",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         },
         "instagram_post_4wpVMA": {
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/ig_post_12.png",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         },
         "instagram_post_ErnMkw": {
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/ig-post-_11_0f482fc3-db2e-41d7-bc43-09a951bb9bf2.jpg",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         },
         "instagram_post_3gTWX6": {
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/ig-post-_11.jpg",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         }
       },
@@ -329,6 +329,26 @@
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
+    },
+    "177921587459370bda": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_deTbQJ": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_deTbQJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -337,6 +357,7 @@
     "product-recommendations",
     "instagram_gallery_fMzAGe",
     "image_banner_thA7Ty",
-    "newsletter_yqWxmN"
+    "newsletter_yqWxmN",
+    "177921587459370bda"
   ]
 }
