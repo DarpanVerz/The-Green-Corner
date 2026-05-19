@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
@@ -75,7 +74,7 @@
         "heading_tag": "h3",
         "description": "Everything You Need to Know",
         "text_alignment": "left",
-        "margin_top": "s",
+        "margin_top": "no-indent",
         "margin_bottom": "l",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent",
