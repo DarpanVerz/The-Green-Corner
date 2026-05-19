@@ -2885,4 +2885,7 @@ text-align: left;
     font-size: 18px;
     line-height: 25px;
 }
+.custom-collection-section .browse-btn {
+  margin-right: 0px;
+}
 }
