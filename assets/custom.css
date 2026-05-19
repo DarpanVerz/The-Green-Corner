@@ -2548,7 +2548,8 @@ button.hover-cart-btn:hover {
     line-height: 27px;
 }
 .banner-content-wrapper p a {
-  color: #A6CE39;
+    color: #A6CE39;
+    text-decoration-color: #A6CE39;
 }
 
 .collection-banner-content { padding:60px 0px; }
