@@ -646,6 +646,10 @@ h1, .h1 {
         margin: 0;
   }
 
+      .slideshow .slideshow-slide__mext {
+        margin: 0 0 2rem;
+    }
+
 .slideshow .slideshow-slide__button-bottom { position: inherit !important; }
 
 @media screen and (min-width: 1360px) {
