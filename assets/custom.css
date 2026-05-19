@@ -2922,5 +2922,6 @@ text-align: left;
 
 .pagination__item--current {
     border: none !important;
-    color: #056839;
+    color: #056839 !important;
+    font-weight: 600 !important;
 }
