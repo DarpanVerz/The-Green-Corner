@@ -2458,6 +2458,11 @@ button.hover-cart-btn:hover {
      color:#A6CE39;
      font-size:30px;
 }
+@media (min-width: 768px) {
+.product__info-wrapper {
+  padding: 20px 10px;
+}
+}
 
 .product-form__submit { border-radius: 50px; }
 
