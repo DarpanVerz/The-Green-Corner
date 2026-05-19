@@ -399,16 +399,6 @@ h1, h2, { font-family: 'didotregular' !important; }
     }
 }
 
-@media screen and (min-width: 990px) {
-    .slideshow .slideshow-slide__mext {
-        margin: 0 0 -100px 65px !important;
-    }
-}
-
-.slideshow .slideshow-slide__button-bottom {
-    position: absolute !important;
-    bottom: 0 !important;
-}
 
 @media screen and (min-width: 1360px) {
     .slideshow-slide__title {
