@@ -2863,3 +2863,7 @@ font-size: 40px;
 .product-recommendations .section-header__title{
    font-size: 5rem;
 }
+
+.scroll-top__block {
+  background-color #000;
+}
