@@ -2082,15 +2082,6 @@ margin-left:30px;
   }
 }
 
-.blog-listing-slider-{{ section.id }} {
-  overflow: hidden;
-}
-
-.blog-listing-slider-{{ section.id }} .swiper-slide {
-  height: auto;
-}
-
-
 @media(max-width:767px){
   .header-top__logo .header__heading-link img {
     width: inherit;
