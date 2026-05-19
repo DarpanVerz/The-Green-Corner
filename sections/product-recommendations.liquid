@@ -15,25 +15,6 @@
 
 {% assign current_collection = product.collections.first %}
 
-<style>
-:root {
-  --theme-bg: {{ current_collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
-  
-  --theme-bg-light: {{ current_collection.metafields.custom.menu_bg_color.value 
-  | color_lighten: 10 }};
-  
-  --theme-text: {{ current_collection.metafields.custom.menu_text_color.value 
-  | default: '#ffffff' }};
-  
-  --theme-bg-transparent: {{ current_collection.metafields.custom.menu_bg_color.value 
-  | color_modify: 'alpha', 0.92 }};
-  
-  --theme-bg-light-transparent: {{ current_collection.metafields.custom.menu_bg_color.value
-  | color_lighten: 25
-  | color_modify: 'alpha', 0.2 }};
-}
-</style>
-
 <product-recommendations
 	class="product-recommendations"
 	data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
