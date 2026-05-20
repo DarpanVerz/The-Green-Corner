@@ -3151,8 +3151,8 @@ text-align: left;
     height: 24px;
 }
 
+/***************/
 
-
-
-
-
+.cta-section .image-banner__button-wrapper .button--tertiary:before {
+   color: #fff;
+}
