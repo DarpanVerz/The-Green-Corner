@@ -654,6 +654,19 @@
     "1709e182-17ab-4c6c-b6fd-522d6919bc0e": {
       "type": "product-markers",
       "blocks": {
+        "marker_Mw93CC": {
+          "type": "marker",
+          "settings": {
+            "marker_background": "#f4eee9",
+            "marker_color": "#988c63",
+            "marker_background_hover": "#17324e",
+            "marker_color_hover": "#ffffff",
+            "product": "asplenium-crispy-wave",
+            "image_ratio": "portrait",
+            "position_x": 20,
+            "position_y": 90
+          }
+        },
         "marker_dbd6dU": {
           "type": "marker",
           "settings": {
@@ -696,6 +709,7 @@
         }
       },
       "block_order": [
+        "marker_Mw93CC",
         "marker_dbd6dU",
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-1",
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-2"
