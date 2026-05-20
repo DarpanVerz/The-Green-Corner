@@ -3171,5 +3171,5 @@ text-align: left;
 }
 
 .product-markers__overlay .have-overlay:before {
- background: none;
+ background: none !important;
 }
