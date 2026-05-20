@@ -1655,6 +1655,9 @@ margin-left:30px;
     font-weight: 400;
     font-family: 'didotregular';
 }
+.cta-section  .image-banner__information {
+    max-width: 100rem;
+}
 
 .cta-section  .image-banner__information p {
     color: #ffffff !important;
