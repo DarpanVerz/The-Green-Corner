@@ -3151,3 +3151,148 @@ text-align: left;
     height: 24px;
 }
 
+
+
+
+
+
+.product-tabs-section {
+  background-color: var(--theme-bg);
+  padding: 80px 0;
+  border-radius: 30px;
+  margin-top: 60px;
+}
+
+.product-tabs-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.product-tabs-heading h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--theme-text);
+  margin: 0;
+}
+
+.product-tabs-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.product-tabs-buttons .tab-btn {
+  border: 0;
+  background: #fff;
+  color: #555;
+  padding: 12px 24px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+  min-width: 140px;
+}
+
+.product-tabs-buttons .tab-btn.active {
+  background: #0a7a43;
+  color: #fff;
+}
+
+.product-tabs-buttons .tab-btn:hover {
+  background-color: var(--theme-bg-light-transparent);
+  color: var(--theme-text);
+}
+
+.product-tabs-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.product-col-content {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.product-tabs-content {
+  width: 100%;
+}
+
+.product-information-content {  width: 50%; }
+
+.product-tabs-image { width: 50%; }
+
+.product-tabs-image img {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+  height: auto;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.product-tabs-content h1,
+.product-tabs-content h2,
+.product-tabs-content h3,
+.product-tabs-content h4 {
+  margin-top: 0;
+  color: var(--theme-text);
+}
+
+.product-tabs-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--theme-text);
+}
+
+.product-tabs-content ul {
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.product-tabs-content li {
+  margin-bottom: 10px;
+  color: var(--theme-text);
+  width: 50%;
+  display: inline-block;
+  position: relative; 
+}
+
+.product-tabs-content li:before {
+    content: '';
+    background: #A6CE39;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    left: -20px;
+    top: 4px;
+}
+
+@media screen and (max-width: 991px) {
+
+  .product-col-content {
+    flex-direction: column;
+  }
+
+  .product-information-content,
+  .product-tabs-image {
+    width: 100%;
+  }
+
+  .product-tabs-heading h2 {
+    font-size: 32px;
+  }
+
+}
