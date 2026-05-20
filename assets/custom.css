@@ -1634,7 +1634,8 @@ margin-left:30px;
     content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--theme-bg-light);
+    background-color: var(--theme-bg);
+    opacity:0.9;
 }
 
 .cta-section .image-banner__subheading {
