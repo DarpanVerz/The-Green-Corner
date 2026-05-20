@@ -3169,7 +3169,3 @@ text-align: left;
 .cta-section .image-banner__button-wrapper .button--tertiary:before {
    color: #000;
 }
-
-.product-markers__overlay .have-overlay:before {
- background: none !important;
-}
