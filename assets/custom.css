@@ -1670,8 +1670,8 @@ margin-left:30px;
 .cta-section .image-banner__button-wrapper a {
     border-radius: 100px;
     background: rgba(120, 200, 150, 0.25) !important;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     border: 1px solid #A6CE39;
     color: #fff;
     font-size: 16px;
