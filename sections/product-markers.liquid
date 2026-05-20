@@ -89,7 +89,7 @@
 												widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
 										}}
 									{% else %}
-										{% assign product_index = forloop.index | modulo: 3 | plus: 1 %}
+										{% assign product_index = forloop.index | modulo: 4 | plus: 1 %}
 										{{
 											'product-' 
 											| append: product_index | placeholder_svg_tag: 'placeholder-svg placeholder'
