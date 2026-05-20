@@ -1,4 +1,8 @@
-{% assign current_collection = collection | default: product.collections.first %}
+{% assign current_collection = collection %}
+
+{% if current_collection == blank and product.collections.size > 0 %}
+  {% assign current_collection = product.collections.first %}
+{% endif %}
 
 <style>
 :root {
