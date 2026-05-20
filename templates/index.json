@@ -664,7 +664,7 @@
             "product": "i-love-you-mum-rose",
             "image_ratio": "square",
             "position_x": 70,
-            "position_y": 70
+            "position_y": 75
           }
         },
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-1": {
@@ -677,8 +677,8 @@
             "product": "palette-de-fleur",
             "image": "shopify://shop_images/Rectangle_27.png",
             "image_ratio": "portrait",
-            "position_x": 55,
-            "position_y": 95
+            "position_x": 43,
+            "position_y": 90
           }
         },
         "template--21710482440510__1709e182-17ab-4c6c-b6fd-522d6919bc0e-marker-2": {
