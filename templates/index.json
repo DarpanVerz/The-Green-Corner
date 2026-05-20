@@ -663,7 +663,7 @@
             "marker_color_hover": "#ffffff",
             "product": "asplenium-crispy-wave",
             "image_ratio": "portrait",
-            "position_x": 20,
+            "position_x": 30,
             "position_y": 90
           }
         },
@@ -676,7 +676,7 @@
             "marker_color_hover": "#ffffff",
             "product": "i-love-you-mum-rose",
             "image_ratio": "square",
-            "position_x": 70,
+            "position_x": 80,
             "position_y": 75
           }
         },
@@ -690,7 +690,7 @@
             "product": "palette-de-fleur",
             "image": "shopify://shop_images/Rectangle_27.png",
             "image_ratio": "portrait",
-            "position_x": 43,
+            "position_x": 53,
             "position_y": 90
           }
         },
@@ -703,7 +703,7 @@
             "marker_color_hover": "#ffffff",
             "product": "99-romantic-rose-ideas",
             "image_ratio": "portrait",
-            "position_x": 55,
+            "position_x": 65,
             "position_y": 70
           }
         }
