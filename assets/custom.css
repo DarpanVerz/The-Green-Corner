@@ -1627,7 +1627,7 @@ margin-left:30px;
     overflow: hidden;
     border-radius: 40px;
     display: flex;
-    background: #056839;
+    background: var(--theme-bg);
     margin:20px;
 }
 .cta-section .image-banner__img::after {
