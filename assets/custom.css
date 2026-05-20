@@ -1669,7 +1669,7 @@ margin-left:30px;
 
 .cta-section .image-banner__button-wrapper a {
     border-radius: 100px;
-    background-color: var(--theme-bg-light-transparent);
+    background-color: linear-gradient(135deg, #4fa66b, #6cbf8b);
     border: 1px solid #A6CE39;
     color: #fff;
     font-size: 16px;
