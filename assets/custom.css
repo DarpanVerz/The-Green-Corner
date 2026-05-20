@@ -3162,10 +3162,3 @@ text-align: left;
     height: 24px;
 }
 
-/***************/
-.cta-section .image-banner__button-wrapper a:hover {
-  color: #000;
-}
-.cta-section .image-banner__button-wrapper .button--tertiary:before {
-   color: #000;
-}
