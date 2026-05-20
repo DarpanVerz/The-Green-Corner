@@ -1627,19 +1627,18 @@ margin-left:30px;
     overflow: hidden;
     border-radius: 40px;
     display: flex;
-    background: var(--theme-bg);
+    background: #056839;
     margin:20px;
 }
 .cta-section .image-banner__img::after {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: var(--theme-bg);
-    opacity:0.9;
+    background: linear-gradient(to right, rgba(0,80,35,.95), rgba(0,120,55,.85))
 }
 
 .cta-section .image-banner__subheading {
-    color: var(--theme-text);
+    color: #A6CE39;
     font-size: 18px;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -1669,8 +1668,8 @@ margin-left:30px;
 
 .cta-section .image-banner__button-wrapper a {
     border-radius: 100px;
-    background-color: var(--theme-bg-light-transparent);
-    border: 1px solid var(--theme-bg-light);
+    background: rgba(5, 104, 58, 0.57);
+    border: 1px solid #c9df1a;
     color: #fff;
     font-size: 16px;
     transition: all .3s ease;
@@ -2293,7 +2292,7 @@ button.hover-cart-btn:hover {
 .custom-sidebar{
 	width:330px;
 	min-width:280px;
-	background: #FFE6ED !important;
+	background: #FFE6ED;
 	padding:25px;
 	border-radius:25px;
 	position:sticky;
