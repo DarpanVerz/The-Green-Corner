@@ -1679,7 +1679,7 @@ margin-left:30px;
 }
 
 .cta-section .image-banner__button-wrapper a:hover {
-    background: var(--theme-bg);
+    background: #000;
     color: var(--theme-text);
 }
 
