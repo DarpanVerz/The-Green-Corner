@@ -1622,7 +1622,14 @@ margin-left:30px;
 
 /*** cta-section ****/
 
-
+.cta-section .image-banner-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    display: flex;
+    background: var(--theme-bg);
+    margin:20px;
+}
 .cta-section .image-banner__img::after {
     content: "";
     position: absolute;
