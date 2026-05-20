@@ -11,9 +11,8 @@
   --theme-bg-light:
     {{ current_collection.metafields.custom.menu_bg_color.value | color_lighten: 10 }};
 
- --theme-bg-light-dark:
-    {{ current_collection.metafields.custom.menu_bg_color.value | color_lighten: 10 }};
-
+  --theme-bg-dark:
+    {{ current_collection.metafields.custom.menu_bg_color.value | color_darken: 10 }};
 
   --theme-text:
     {{ current_collection.metafields.custom.menu_text_color.value | default: '#ffffff' }};
