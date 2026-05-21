@@ -37,7 +37,7 @@
 
      <div class="featured-products-next"> </div>
         <div class="featured-products-prev"> </div>
-        
+
   </div>
 
 </div>
@@ -269,6 +269,78 @@
   }
 }
 
+
+.featured-products-next,
+.featured-products-prev{
+  width:40px;
+  height:40px;
+  border-radius:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:9;
+  cursor:pointer;
+  font-size:24px;
+}
+
+.featured-products-next{
+  right:10px;
+}
+
+.featured-products-prev{
+  left:10px;
+}
+
+@media(max-width:991px){
+
+  .featured-products-wrapper{
+    flex-direction:column;
+  }
+
+  .featured-products-left,
+  .featured-products-right{
+    width:100%;
+  }
+
+  .featured-products-content h2{
+    font-size:34px;
+  }
+
+}
+
+.featured-products-prev {
+    background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/left-slider-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+    border: #ccc solid 1px;
+    padding: 16px;
+}
+
+.featured-products-next {
+    background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/slider-arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 17px;
+    border: #ccc solid 1px;
+    padding: 16px;
+}
+
+.featured-products-prev:hover,
+.featured-products-next:hover {
+  background-color: #000000;
+}
+
+.featured-products-prev:hover {
+  background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/left-white-slider-arrow.png');
+}
+
+.featured-products-next:hover {
+  background-image: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/right-white-slider-arrow.png');
+}
 
 
 </style>
