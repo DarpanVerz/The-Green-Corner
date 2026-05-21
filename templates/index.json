@@ -795,13 +795,35 @@
             "name": "Sarah M.",
             "designation": "Plant Enthusiast"
           }
+        },
+        "testimonial_kXiX8C": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "content": "“I love shopping at The Green Corner because they make plant care so simple. Their tools and soil are top quality, and I can always find exactly what I need. Every plant I bring home feels like it has a better chance to grow strong and healthy.”",
+            "image": "shopify://shop_images/Ellipse_22.png",
+            "name": "Sarah M.",
+            "designation": "Plant Enthusiast"
+          }
+        },
+        "testimonial_RQhrJV": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "content": "“I love shopping at The Green Corner because they make plant care so simple. Their tools and soil are top quality, and I can always find exactly what I need. Every plant I bring home feels like it has a better chance to grow strong and healthy.”",
+            "image": "shopify://shop_images/Ellipse_22.png",
+            "name": "Sarah M.",
+            "designation": "Plant Enthusiast"
+          }
         }
       },
       "block_order": [
         "testimonial_EzWTQX",
         "testimonial_mjcwWL",
         "testimonial_eDb8yW",
-        "testimonial_kVE4tg"
+        "testimonial_kVE4tg",
+        "testimonial_kXiX8C",
+        "testimonial_RQhrJV"
       ],
       "name": "Testimonial Slider",
       "settings": {
