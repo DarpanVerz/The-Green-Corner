@@ -2899,7 +2899,7 @@ text-align: left;
 
 .main-slider-arrow-prev:hover,
 .main-slider-arrow-next:hover {
-  background-color: #000000;
+  background-color: #000000 !important;
 }
 
 .main-slider-arrow-prev:hover {
