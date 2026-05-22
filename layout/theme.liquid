@@ -340,11 +340,26 @@ async function restrictedCartCheck() {
 
   cart.items.forEach(item => {
 
-    // Using product type as category
-    const category = item.product_type;
+    const handle = item.handle || '';
 
-    if(category && !categories.includes(category)) {
-      categories.push(category);
+    // Detect category from product handle/title
+    if(handle.includes('plant')) {
+
+      if(!categories.includes('plants')) {
+        categories.push('plants');
+      }
+
+    }
+
+    if(
+      handle.includes('rose') ||
+      handle.includes('flower')
+    ) {
+
+      if(!categories.includes('flowers')) {
+        categories.push('flowers');
+      }
+
     }
 
   });
@@ -352,17 +367,17 @@ async function restrictedCartCheck() {
   const checkoutBtn =
     document.querySelector('[name="checkout"]') ||
     document.querySelector('.cart__checkout-button') ||
-    document.querySelector('button[type="submit"]');
+    document.querySelector('button[type="submit"]') ||
+    document.querySelector('.drawer-cart-checkout');
 
-  // If more than 1 category exists
   if(categories.length > 1) {
 
     alert('Products from different categories cannot be purchased together. Please split your order.');
 
     if(checkoutBtn) {
       checkoutBtn.disabled = true;
-      checkoutBtn.style.opacity = '0.5';
       checkoutBtn.style.pointerEvents = 'none';
+      checkoutBtn.style.opacity = '0.5';
       checkoutBtn.style.cursor = 'not-allowed';
     }
 
@@ -370,8 +385,8 @@ async function restrictedCartCheck() {
 
     if(checkoutBtn) {
       checkoutBtn.disabled = false;
-      checkoutBtn.style.opacity = '1';
       checkoutBtn.style.pointerEvents = 'auto';
+      checkoutBtn.style.opacity = '1';
       checkoutBtn.style.cursor = 'pointer';
     }
 
@@ -379,21 +394,21 @@ async function restrictedCartCheck() {
 
 }
 
-// Initial load
+// Initial page load
 document.addEventListener('DOMContentLoaded', () => {
 
   restrictedCartCheck();
 
 });
 
-// Recheck after cart actions
+// Recheck after cart updates
 document.body.addEventListener('click', () => {
 
   setTimeout(() => {
 
     restrictedCartCheck();
 
-  }, 1500);
+  }, 1200);
 
 });
 
