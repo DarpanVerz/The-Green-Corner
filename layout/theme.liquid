@@ -335,31 +335,31 @@ document.addEventListener("DOMContentLoaded", async () => {
   const response = await fetch('/cart.js');
   const cart = await response.json();
 
-  let frozen = false;
-  let fresh = false;
+  let flowers = false;
+  let plants = false;
 
   cart.items.forEach(item => {
 
-    if(item.product_type === 'Flowers'){
-      frozen = true;
+    // Check product tags
+    if(item.tags && item.tags.includes('Flowers')){
+      flowers = true;
     }
 
-    if(item.product_type === 'Plants'){
-      fresh = true;
+    if(item.tags && item.tags.includes('Plants')){
+      plants = true;
     }
 
   });
 
-  if(frozen && fresh){
+  if(flowers && plants){
 
-    alert('Frozen and Fresh products cannot be purchased together.');
+    alert('Flowers and Plants cannot be purchased together.');
 
     const checkoutBtn = document.querySelector('[name="checkout"]');
 
     if(checkoutBtn){
       checkoutBtn.disabled = true;
       checkoutBtn.style.opacity = '0.5';
-      checkoutBtn.style.cursor = 'not-allowed';
     }
 
   }
