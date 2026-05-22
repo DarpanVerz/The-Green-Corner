@@ -338,6 +338,7 @@ async function restrictedCartCheck() {
 
   let categories = [];
 
+  // Get all unique product types
   cart.items.forEach(item => {
 
     const category = item.product_type;
@@ -348,37 +349,37 @@ async function restrictedCartCheck() {
 
   });
 
+  // All possible checkout buttons
   const checkoutButtons = document.querySelectorAll(`
     [name="checkout"],
     .cart__checkout-button,
     button[type="submit"],
     .drawer-cart-checkout,
-    .cart__checkout
+    .cart__checkout,
+    a[href="/checkout"]
   `);
 
-  // RESTRICT if more than 1 category
+  // Restrict if cart has multiple categories
   if(categories.length > 1) {
 
-    // Popup
+    // First popup
     alert(
       'Products from different categories cannot be purchased together. Please split your order.'
     );
 
     checkoutButtons.forEach(button => {
 
-      // Disable button
+      // Disabled styling
       button.disabled = true;
-
-      // Style disabled state
-      button.style.pointerEvents = 'none';
       button.style.opacity = '0.5';
       button.style.cursor = 'not-allowed';
 
-      // Prevent checkout click
-      button.addEventListener('click', function(e) {
+      // Fully block checkout
+      button.onclick = function(e) {
 
         e.preventDefault();
         e.stopPropagation();
+        e.stopImmediatePropagation();
 
         alert(
           'Please remove products from different categories before checkout.'
@@ -386,19 +387,20 @@ async function restrictedCartCheck() {
 
         return false;
 
-      });
+      };
 
     });
 
   } else {
 
+    // Enable checkout if only one category
     checkoutButtons.forEach(button => {
 
-      // Enable button again
       button.disabled = false;
-      button.style.pointerEvents = 'auto';
       button.style.opacity = '1';
       button.style.cursor = 'pointer';
+
+      button.onclick = null;
 
     });
 
@@ -413,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// Recheck after AJAX cart updates
+// Recheck after AJAX/cart updates
 document.body.addEventListener('click', () => {
 
   setTimeout(() => {
