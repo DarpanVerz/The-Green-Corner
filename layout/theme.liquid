@@ -331,7 +331,7 @@
 		{%- endif -%}
 		<script>
 
-async function checkRestrictedCart() {
+async function restrictedCartCheck() {
 
   const response = await fetch('/cart.js');
   const cart = await response.json();
@@ -339,22 +339,26 @@ async function checkRestrictedCart() {
   let hasFlowers = false;
   let hasPlants = false;
 
+  // Detect using PRODUCT TITLE
   cart.items.forEach(item => {
 
-    if(item.product_tags && item.product_tags.includes('flowers')) {
+    const title = item.product_title.toLowerCase();
+
+    if(title.includes('rose') || title.includes('flower')) {
       hasFlowers = true;
     }
 
-    if(item.product_tags && item.product_tags.includes('plants')) {
+    if(title.includes('plant')) {
       hasPlants = true;
     }
 
   });
 
+  // Checkout button selectors
   const checkoutBtn =
     document.querySelector('[name="checkout"]') ||
     document.querySelector('.cart__checkout-button') ||
-    document.querySelector('.drawer__checkout');
+    document.querySelector('button[type="submit"]');
 
   if(hasFlowers && hasPlants) {
 
@@ -362,33 +366,37 @@ async function checkRestrictedCart() {
 
     if(checkoutBtn) {
       checkoutBtn.disabled = true;
-      checkoutBtn.style.pointerEvents = 'none';
       checkoutBtn.style.opacity = '0.5';
+      checkoutBtn.style.pointerEvents = 'none';
     }
 
   } else {
 
     if(checkoutBtn) {
       checkoutBtn.disabled = false;
-      checkoutBtn.style.pointerEvents = 'auto';
       checkoutBtn.style.opacity = '1';
+      checkoutBtn.style.pointerEvents = 'auto';
     }
 
   }
 
 }
 
+// Run on load
 document.addEventListener('DOMContentLoaded', () => {
 
-  checkRestrictedCart();
+  restrictedCartCheck();
 
-  document.body.addEventListener('click', () => {
+});
 
-    setTimeout(() => {
-      checkRestrictedCart();
-    }, 1000);
+// Run after add to cart
+document.body.addEventListener('click', () => {
 
-  });
+  setTimeout(() => {
+
+    restrictedCartCheck();
+
+  }, 1500);
 
 });
 
