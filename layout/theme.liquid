@@ -338,7 +338,7 @@ async function restrictedCartCheck() {
 
   let categories = [];
 
-  // Get all unique product types
+  // Collect unique product types
   cart.items.forEach(item => {
 
     const category = item.product_type;
@@ -349,33 +349,47 @@ async function restrictedCartCheck() {
 
   });
 
-  // All possible checkout buttons
+  const restricted = categories.length > 1;
+
+  // All checkout buttons/forms
   const checkoutButtons = document.querySelectorAll(`
     [name="checkout"],
     .cart__checkout-button,
-    button[type="submit"],
-    .drawer-cart-checkout,
     .cart__checkout,
+    button[type="submit"],
     a[href="/checkout"]
   `);
 
-  // Restrict if cart has multiple categories
-  if(categories.length > 1) {
+  const checkoutForms = document.querySelectorAll('form[action="/checkout"]');
 
-    // First popup
-    alert(
-      'Products from different categories cannot be purchased together. Please split your order.'
-    );
+  if(restricted) {
 
+    // Popup only once
+    if(!window.restrictedPopupShown) {
+
+      alert(
+        'Products from different categories cannot be purchased together. Please split your order.'
+      );
+
+      window.restrictedPopupShown = true;
+
+    }
+
+    // Disable all checkout buttons
     checkoutButtons.forEach(button => {
 
-      // Disabled styling
       button.disabled = true;
+      button.setAttribute('disabled', true);
+
       button.style.opacity = '0.5';
       button.style.cursor = 'not-allowed';
 
-      // Fully block checkout
-      button.onclick = function(e) {
+    });
+
+    // BLOCK ALL CHECKOUT FORMS
+    checkoutForms.forEach(form => {
+
+      form.addEventListener('submit', function(e) {
 
         e.preventDefault();
         e.stopPropagation();
@@ -387,20 +401,42 @@ async function restrictedCartCheck() {
 
         return false;
 
-      };
+      }, true);
 
     });
 
+    // BLOCK DIRECT /checkout REDIRECT
+    document.addEventListener('click', function(e) {
+
+      const checkoutLink = e.target.closest('a[href="/checkout"]');
+
+      if(checkoutLink) {
+
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+
+        alert(
+          'Please remove products from different categories before checkout.'
+        );
+
+        return false;
+
+      }
+
+    }, true);
+
   } else {
 
-    // Enable checkout if only one category
+    window.restrictedPopupShown = false;
+
     checkoutButtons.forEach(button => {
 
       button.disabled = false;
+      button.removeAttribute('disabled');
+
       button.style.opacity = '1';
       button.style.cursor = 'pointer';
-
-      button.onclick = null;
 
     });
 
@@ -408,15 +444,15 @@ async function restrictedCartCheck() {
 
 }
 
-// Initial page load
-document.addEventListener('DOMContentLoaded', () => {
+// Initial load
+document.addEventListener('DOMContentLoaded', function() {
 
   restrictedCartCheck();
 
 });
 
-// Recheck after AJAX/cart updates
-document.body.addEventListener('click', () => {
+// Recheck after AJAX cart updates
+document.body.addEventListener('click', function() {
 
   setTimeout(() => {
 
