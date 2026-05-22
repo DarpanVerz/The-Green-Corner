@@ -336,38 +336,34 @@ async function restrictedCartCheck() {
   const response = await fetch('/cart.js');
   const cart = await response.json();
 
-  let hasFlowers = false;
-  let hasPlants = false;
+  let categories = [];
 
-  // Detect using PRODUCT TITLE
   cart.items.forEach(item => {
 
-    const title = item.product_title.toLowerCase();
+    // Using product type as category
+    const category = item.product_type;
 
-    if(title.includes('rose') || title.includes('flower')) {
-      hasFlowers = true;
-    }
-
-    if(title.includes('plant')) {
-      hasPlants = true;
+    if(category && !categories.includes(category)) {
+      categories.push(category);
     }
 
   });
 
-  // Checkout button selectors
   const checkoutBtn =
     document.querySelector('[name="checkout"]') ||
     document.querySelector('.cart__checkout-button') ||
     document.querySelector('button[type="submit"]');
 
-  if(hasFlowers && hasPlants) {
+  // If more than 1 category exists
+  if(categories.length > 1) {
 
-    alert('Flowers and Plants cannot be purchased together.');
+    alert('Products from different categories cannot be purchased together. Please split your order.');
 
     if(checkoutBtn) {
       checkoutBtn.disabled = true;
       checkoutBtn.style.opacity = '0.5';
       checkoutBtn.style.pointerEvents = 'none';
+      checkoutBtn.style.cursor = 'not-allowed';
     }
 
   } else {
@@ -376,20 +372,21 @@ async function restrictedCartCheck() {
       checkoutBtn.disabled = false;
       checkoutBtn.style.opacity = '1';
       checkoutBtn.style.pointerEvents = 'auto';
+      checkoutBtn.style.cursor = 'pointer';
     }
 
   }
 
 }
 
-// Run on load
+// Initial load
 document.addEventListener('DOMContentLoaded', () => {
 
   restrictedCartCheck();
 
 });
 
-// Run after add to cart
+// Recheck after cart actions
 document.body.addEventListener('click', () => {
 
   setTimeout(() => {
