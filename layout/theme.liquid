@@ -348,37 +348,65 @@ async function restrictedCartCheck() {
 
   });
 
-  const checkoutBtn =
-    document.querySelector('[name="checkout"]') ||
-    document.querySelector('.cart__checkout-button') ||
-    document.querySelector('button[type="submit"]') ||
-    document.querySelector('.drawer-cart-checkout');
+  const checkoutButtons = document.querySelectorAll(`
+    [name="checkout"],
+    .cart__checkout-button,
+    button[type="submit"],
+    .drawer-cart-checkout,
+    .cart__checkout
+  `);
 
+  // RESTRICT if more than 1 category
   if(categories.length > 1) {
 
-    alert('Products from different categories cannot be purchased together. Please split your order.');
+    // Popup
+    alert(
+      'Products from different categories cannot be purchased together. Please split your order.'
+    );
 
-    if(checkoutBtn) {
-      checkoutBtn.disabled = true;
-      checkoutBtn.style.pointerEvents = 'none';
-      checkoutBtn.style.opacity = '0.5';
-      checkoutBtn.style.cursor = 'not-allowed';
-    }
+    checkoutButtons.forEach(button => {
+
+      // Disable button
+      button.disabled = true;
+
+      // Style disabled state
+      button.style.pointerEvents = 'none';
+      button.style.opacity = '0.5';
+      button.style.cursor = 'not-allowed';
+
+      // Prevent checkout click
+      button.addEventListener('click', function(e) {
+
+        e.preventDefault();
+        e.stopPropagation();
+
+        alert(
+          'Please remove products from different categories before checkout.'
+        );
+
+        return false;
+
+      });
+
+    });
 
   } else {
 
-    if(checkoutBtn) {
-      checkoutBtn.disabled = false;
-      checkoutBtn.style.pointerEvents = 'auto';
-      checkoutBtn.style.opacity = '1';
-      checkoutBtn.style.cursor = 'pointer';
-    }
+    checkoutButtons.forEach(button => {
+
+      // Enable button again
+      button.disabled = false;
+      button.style.pointerEvents = 'auto';
+      button.style.opacity = '1';
+      button.style.cursor = 'pointer';
+
+    });
 
   }
 
 }
 
-// Initial load
+// Initial page load
 document.addEventListener('DOMContentLoaded', () => {
 
   restrictedCartCheck();
