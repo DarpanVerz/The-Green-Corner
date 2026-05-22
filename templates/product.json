@@ -140,6 +140,10 @@
             "about_heading_tag": "h2",
             "about_heading_content": "<p>While the original paintings are sold as-is, we offer a range of framing options to suit your taste and decor. For commissioned works, our affiliated artists can create custom paintings based on your preferences in terms of style, subject matter, and size. Feel free to contact us for more details on customization.</p>"
           }
+        },
+        "avada_order_limits_app_block_7ap88U": {
+          "type": "shopify://apps/avada-order-limits/blocks/app-block/d3021427-4f7b-49c8-8963-29d1d52b8956",
+          "settings": {}
         }
       },
       "block_order": [
@@ -157,7 +161,8 @@
         "additional-2",
         "about-1",
         "about-2",
-        "about-3"
+        "about-3",
+        "avada_order_limits_app_block_7ap88U"
       ],
       "settings": {
         "image_gallery_collage": "thumbnail_carousel",
