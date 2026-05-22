@@ -357,32 +357,39 @@ async function restrictedCartCheck() {
     a[href="/checkout"]
   `);
 
-  // If multiple categories found
+  // Multiple categories found
   if(categories.length > 1) {
 
-    // Show popup
-    alert(
-      'Products from different categories cannot be purchased together. Please split your order.'
-    );
-
-    // Disable checkout buttons AFTER popup OK
     checkoutButtons.forEach(button => {
 
+      // Disable FIRST
       button.disabled = true;
-      button.setAttribute('disabled', true);
+      button.setAttribute('disabled', true');
 
       button.style.pointerEvents = 'none';
       button.style.opacity = '0.5';
       button.style.cursor = 'not-allowed';
 
-      // Prevent checkout
+      // Remove checkout link
       button.removeAttribute('href');
 
     });
 
+    // THEN popup
+    if(!window.popupShown) {
+
+      window.popupShown = true;
+
+      alert(
+        'Products from different categories cannot be purchased together. Please split your order.'
+      );
+
+    }
+
   } else {
 
-    // Enable buttons again
+    window.popupShown = false;
+
     checkoutButtons.forEach(button => {
 
       button.disabled = false;
@@ -398,7 +405,7 @@ async function restrictedCartCheck() {
 
 }
 
-// Initial load
+// Initial page load
 document.addEventListener('DOMContentLoaded', () => {
 
   restrictedCartCheck();
@@ -412,7 +419,7 @@ document.body.addEventListener('click', () => {
 
     restrictedCartCheck();
 
-  }, 1000);
+  }, 500);
 
 });
 
