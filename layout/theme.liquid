@@ -340,26 +340,10 @@ async function restrictedCartCheck() {
 
   cart.items.forEach(item => {
 
-    const handle = item.handle || '';
+    const category = item.product_type;
 
-    // Detect category from product handle/title
-    if(handle.includes('plant')) {
-
-      if(!categories.includes('plants')) {
-        categories.push('plants');
-      }
-
-    }
-
-    if(
-      handle.includes('rose') ||
-      handle.includes('flower')
-    ) {
-
-      if(!categories.includes('flowers')) {
-        categories.push('flowers');
-      }
-
+    if(category && !categories.includes(category)) {
+      categories.push(category);
     }
 
   });
@@ -394,21 +378,21 @@ async function restrictedCartCheck() {
 
 }
 
-// Initial page load
+// Initial load
 document.addEventListener('DOMContentLoaded', () => {
 
   restrictedCartCheck();
 
 });
 
-// Recheck after cart updates
+// Recheck after AJAX cart updates
 document.body.addEventListener('click', () => {
 
   setTimeout(() => {
 
     restrictedCartCheck();
 
-  }, 1200);
+  }, 1000);
 
 });
 
