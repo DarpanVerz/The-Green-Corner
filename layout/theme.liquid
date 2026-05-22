@@ -330,41 +330,68 @@
 			</script>
 		{%- endif -%}
 		<script>
-document.addEventListener("DOMContentLoaded", async () => {
+
+async function checkRestrictedCart() {
 
   const response = await fetch('/cart.js');
   const cart = await response.json();
 
-  let flowers = false;
-  let plants = false;
+  let hasFlowers = false;
+  let hasPlants = false;
 
   cart.items.forEach(item => {
 
-    // Check product tags
-    if(item.tags && item.tags.includes('Flowers')){
-      flowers = true;
+    if(item.product_tags && item.product_tags.includes('flowers')) {
+      hasFlowers = true;
     }
 
-    if(item.tags && item.tags.includes('Plants')){
-      plants = true;
+    if(item.product_tags && item.product_tags.includes('plants')) {
+      hasPlants = true;
     }
 
   });
 
-  if(flowers && plants){
+  const checkoutBtn =
+    document.querySelector('[name="checkout"]') ||
+    document.querySelector('.cart__checkout-button') ||
+    document.querySelector('.drawer__checkout');
+
+  if(hasFlowers && hasPlants) {
 
     alert('Flowers and Plants cannot be purchased together.');
 
-    const checkoutBtn = document.querySelector('[name="checkout"]');
-
-    if(checkoutBtn){
+    if(checkoutBtn) {
       checkoutBtn.disabled = true;
+      checkoutBtn.style.pointerEvents = 'none';
       checkoutBtn.style.opacity = '0.5';
+    }
+
+  } else {
+
+    if(checkoutBtn) {
+      checkoutBtn.disabled = false;
+      checkoutBtn.style.pointerEvents = 'auto';
+      checkoutBtn.style.opacity = '1';
     }
 
   }
 
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  checkRestrictedCart();
+
+  document.body.addEventListener('click', () => {
+
+    setTimeout(() => {
+      checkRestrictedCart();
+    }, 1000);
+
+  });
+
 });
+
 </script>
 	</body>
 </html>
