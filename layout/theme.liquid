@@ -338,6 +338,7 @@ async function restrictedCartCheck() {
 
   let categories = [];
 
+  // Get unique product types
   cart.items.forEach(item => {
 
     const category = item.product_type;
@@ -348,9 +349,6 @@ async function restrictedCartCheck() {
 
   });
 
-  // Save restriction globally
-  window.cartRestricted = categories.length > 1;
-
   const checkoutButtons = document.querySelectorAll(`
     [name="checkout"],
     .cart__checkout-button,
@@ -359,50 +357,38 @@ async function restrictedCartCheck() {
     a[href="/checkout"]
   `);
 
-  if(window.cartRestricted) {
+  // If multiple categories found
+  if(categories.length > 1) {
 
-    // Show popup once
-    if(!window.popupShown) {
+    // Show popup
+    alert(
+      'Products from different categories cannot be purchased together. Please split your order.'
+    );
 
-      alert(
-        'Products from different categories cannot be purchased together. Please split your order.'
-      );
-
-      window.popupShown = true;
-
-    }
-
+    // Disable checkout buttons AFTER popup OK
     checkoutButtons.forEach(button => {
 
       button.disabled = true;
+      button.setAttribute('disabled', true);
+
+      button.style.pointerEvents = 'none';
       button.style.opacity = '0.5';
       button.style.cursor = 'not-allowed';
 
-      // HARD BLOCK CLICK
-      button.addEventListener('click', function(e) {
-
-        e.preventDefault();
-
-        // STOP CHECKOUT
-        window.location.href = '/cart';
-
-        alert(
-          'Please remove products from different categories before checkout.'
-        );
-
-        return false;
-
-      }, true);
+      // Prevent checkout
+      button.removeAttribute('href');
 
     });
 
   } else {
 
-    window.popupShown = false;
-
+    // Enable buttons again
     checkoutButtons.forEach(button => {
 
       button.disabled = false;
+      button.removeAttribute('disabled');
+
+      button.style.pointerEvents = 'auto';
       button.style.opacity = '1';
       button.style.cursor = 'pointer';
 
@@ -412,15 +398,15 @@ async function restrictedCartCheck() {
 
 }
 
-// Initial check
-document.addEventListener('DOMContentLoaded', function() {
+// Initial load
+document.addEventListener('DOMContentLoaded', () => {
 
   restrictedCartCheck();
 
 });
 
 // Recheck after cart updates
-document.body.addEventListener('click', function() {
+document.body.addEventListener('click', () => {
 
   setTimeout(() => {
 
@@ -429,40 +415,6 @@ document.body.addEventListener('click', function() {
   }, 1000);
 
 });
-
-// EXTRA SAFETY
-// If somehow reaches checkout, redirect back
-if(window.location.pathname.includes('/checkout')) {
-
-  fetch('/cart.js')
-    .then(res => res.json())
-    .then(cart => {
-
-      let categories = [];
-
-      cart.items.forEach(item => {
-
-        const category = item.product_type;
-
-        if(category && !categories.includes(category)) {
-          categories.push(category);
-        }
-
-      });
-
-      if(categories.length > 1) {
-
-        alert(
-          'Products from different categories cannot be purchased together.'
-        );
-
-        window.location.href = '/cart';
-
-      }
-
-    });
-
-}
 
 </script>
 	</body>
