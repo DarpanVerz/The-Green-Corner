@@ -329,7 +329,8 @@
 				}
 			</script>
 		{%- endif -%}
-		<script>
+
+<script>
 
 async function restrictedCartCheck() {
 
@@ -338,7 +339,6 @@ async function restrictedCartCheck() {
 
   let categories = [];
 
-  // Get unique product types
   cart.items.forEach(item => {
 
     const category = item.product_type;
@@ -349,80 +349,55 @@ async function restrictedCartCheck() {
 
   });
 
-  const checkoutButtons = document.querySelectorAll(`
-    [name="checkout"],
-    .cart__checkout-button,
-    .cart__checkout,
-    button[type="submit"],
-    a[href="/checkout"]
-  `);
+  const checkoutBtn =
+    document.querySelector('[name="checkout"]') ||
+    document.querySelector('.cart__checkout-button') ||
+    document.querySelector('button[type="submit"]') ||
+    document.querySelector('.drawer-cart-checkout');
 
-  // Multiple categories found
   if(categories.length > 1) {
 
-    checkoutButtons.forEach(button => {
+    alert('Products from different categories cannot be purchased together. Please split your order.');
 
-      // Disable FIRST
-      button.disabled = true;
-      button.setAttribute('disabled', true');
-
-      button.style.pointerEvents = 'none';
-      button.style.opacity = '0.5';
-      button.style.cursor = 'not-allowed';
-
-      // Remove checkout link
-      button.removeAttribute('href');
-
-    });
-
-    // THEN popup
-    if(!window.popupShown) {
-
-      window.popupShown = true;
-
-      alert(
-        'Products from different categories cannot be purchased together. Please split your order.'
-      );
-
+    if(checkoutBtn) {
+      checkoutBtn.disabled = true;
+      checkoutBtn.style.pointerEvents = 'none';
+      checkoutBtn.style.opacity = '0.5';
+      checkoutBtn.style.cursor = 'not-allowed';
     }
 
   } else {
 
-    window.popupShown = false;
-
-    checkoutButtons.forEach(button => {
-
-      button.disabled = false;
-      button.removeAttribute('disabled');
-
-      button.style.pointerEvents = 'auto';
-      button.style.opacity = '1';
-      button.style.cursor = 'pointer';
-
-    });
+    if(checkoutBtn) {
+      checkoutBtn.disabled = false;
+      checkoutBtn.style.pointerEvents = 'auto';
+      checkoutBtn.style.opacity = '1';
+      checkoutBtn.style.cursor = 'pointer';
+    }
 
   }
 
 }
 
-// Initial page load
+// Initial load
 document.addEventListener('DOMContentLoaded', () => {
 
   restrictedCartCheck();
 
 });
 
-// Recheck after cart updates
+// Recheck after AJAX cart updates
 document.body.addEventListener('click', () => {
 
   setTimeout(() => {
 
     restrictedCartCheck();
 
-  }, 500);
+  }, 1000);
 
 });
 
 </script>
+
 	</body>
 </html>
