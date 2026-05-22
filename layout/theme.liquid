@@ -379,14 +379,12 @@ async function restrictedCartCheck() {
 
 }
 
-// Initial load
 document.addEventListener('DOMContentLoaded', () => {
 
   restrictedCartCheck();
 
 });
 
-// Recheck after AJAX cart updates
 document.body.addEventListener('click', () => {
 
   setTimeout(() => {
