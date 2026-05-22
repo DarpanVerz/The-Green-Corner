@@ -329,5 +329,42 @@
 				}
 			</script>
 		{%- endif -%}
+		<script>
+document.addEventListener("DOMContentLoaded", async () => {
+
+  const response = await fetch('/cart.js');
+  const cart = await response.json();
+
+  let frozen = false;
+  let fresh = false;
+
+  cart.items.forEach(item => {
+
+    if(item.product_type === 'Flowers'){
+      frozen = true;
+    }
+
+    if(item.product_type === 'Plants'){
+      fresh = true;
+    }
+
+  });
+
+  if(frozen && fresh){
+
+    alert('Frozen and Fresh products cannot be purchased together.');
+
+    const checkoutBtn = document.querySelector('[name="checkout"]');
+
+    if(checkoutBtn){
+      checkoutBtn.disabled = true;
+      checkoutBtn.style.opacity = '0.5';
+      checkoutBtn.style.cursor = 'not-allowed';
+    }
+
+  }
+
+});
+</script>
 	</body>
 </html>
