@@ -311,7 +311,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 @media screen and (min-width: 990px) {
     .search__recomendation>* {
         max-height: 60vh;
-        overflow: hidden;
+        overflow: hidden !important;
     }
 }
 
