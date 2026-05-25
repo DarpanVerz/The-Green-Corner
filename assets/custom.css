@@ -3235,7 +3235,6 @@ text-align: left;
   color: #056839;
 }
 
-button[type="submit"],
-button[type="submit"] span {
+#checkout-pay-button ._1m2hr9g1y {
     border-radius: 25px !important;
 }
