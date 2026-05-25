@@ -3245,5 +3245,7 @@ text-align: left;
 text-transform: math-auto;
 }
 
-
+.about-shipping {
+  padding:5px 10px;
+}
 
