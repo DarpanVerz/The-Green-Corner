@@ -29,7 +29,6 @@
         },
         "slideshow_item-2": {
           "type": "slideshow_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/d9474117cd13df8bb14840d12b0c9b2b0089a4b3_f5c23441-b430-46ad-9c04-d65517ec9c84.jpg",
             "color_scheme": "background-2",
@@ -45,7 +44,6 @@
         },
         "slideshow_item-3": {
           "type": "slideshow_item",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/d9474117cd13df8bb14840d12b0c9b2b0089a4b3_f5c23441-b430-46ad-9c04-d65517ec9c84.jpg",
             "color_scheme": "background-2",
