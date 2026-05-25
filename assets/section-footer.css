@@ -465,7 +465,7 @@ footer details[open] summary ~ * {
 }
 
 .footer .footer-block__details-content .footer--button { font-size:16px; color: #595959; }
-.footer .footer-block__details-content .footer--button:hover { color: #056839; font-weight:500; text-decoration:underline; }
+.footer .footer-block__details-content .footer--button:hover { color: #056839; text-decoration:underline; }
 
 h5.footer-block__heading {
     color: #1A1A1A;
