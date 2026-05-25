@@ -3231,6 +3231,6 @@ text-align: left;
 .cart__checkout-button .shopify-challenge__button--full-width, .button--full-width, .customer .button--full-width {
     border-radius: 25px;
 }
-.shopify-challenge__button--simple>span, .button--simple>span, .customer .button--simple>span {
+.drawer__footer .shopify-challenge__button--simple>span, .button--simple>span, .customer .button--simple>span {
   color: #056839;
 }
