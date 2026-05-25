@@ -3240,7 +3240,7 @@ text-align: left;
         margin-left: 100px;
 }
 
-.newsletter-form__field-wrapper .field__label {
+.newsletter-form__field-wrapper .field .field__input:placeholder-shown+label {
 text-transform: math-auto;
 }
 
