@@ -40,6 +40,23 @@
 												{% render 'icon-caret-small' -%}
 											</summary>
 
+{%- if block.settings.menu != blank -%}
+  <ul class="footer-block__details-content list-unstyled">
+    {%- for link in block.settings.menu.links -%}
+      <li>
+        <a
+          href="{{ link.url }}"
+          class="footer--button large-font list-menu__item list-menu__item--link{% if link.current %} list-menu__item--active{% endif %}"
+          {% if link.current %}
+            aria-current="page"
+          {% endif %}
+        >
+          <span>{{ link.title }}</span>
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
 											{% comment %} {%- if block.settings.menu != blank -%}
 												<ul class="footer-block__details-content list-unstyled">
 													{%- for link in block.settings.menu.links -%}
