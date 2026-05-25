@@ -262,7 +262,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 .header .list-menu--inline > li > .header__menu-item:hover::after {
-    width: 90%;
+    width: 100%;
 }
 
 .header .list-menu--inline > li.list-menu-has-child > .header__menu-item::after { display:none; }
