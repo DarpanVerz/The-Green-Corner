@@ -316,7 +316,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 
 @media screen and (min-width: 1360px) {
-  .search-modal .header-mega-menu__collection-list .mega-menu__collection { min-height: 35rem; }
+  .search-modal .header-mega-menu__collection-list .mega-menu__collection { min-height: 35rem !important; }
 }
 
 .header-top__right>*:not(.header__localization) {
