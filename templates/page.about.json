@@ -44,7 +44,7 @@
             "heading": "<p>Nurturing Creativity and Passion, Connecting Hearts Through the Art of Painting</p>",
             "text_color": "#111111",
             "span_color": "#b6d63a",
-            "heading_size": "h2",
+            "heading_size": "h4",
             "subheading_tag": "h2"
           }
         },
@@ -133,7 +133,7 @@
         "multicolumn_to_show": 3,
         "horizontal_alignment": "left",
         "heading_tag": "h3",
-        "object_fit": "cover",
+        "object_fit": "contain",
         "img_size": "small",
         "swipe_on_mobile": true,
         "margin_top": "no-indent",
