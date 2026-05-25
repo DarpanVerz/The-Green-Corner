@@ -308,6 +308,13 @@ h1, h2, { font-family: 'didotregular' !important; }
     stroke: #1a1a1a;
 }
 
+@media screen and (min-width: 990px) {
+    .search__recomendation>* {
+        max-height: 60vh;
+        overflow: hidden;
+    }
+}
+
 .header-top__right>*:not(.header__localization) {
     width: auto;
 }
