@@ -3275,4 +3275,8 @@ text-transform: math-auto;
     height: 2px;
     background: #056839;
 }
+.header__menu-item--active {
+    color: #056839 !important;
+    font-weight: 700;
+}
 
