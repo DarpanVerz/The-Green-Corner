@@ -3248,4 +3248,7 @@ text-transform: math-auto;
 .about-shipping {
   padding:5px 20px;
 }
+.about-shipping .multicolumn .multicolumn-list__item {
+  padding:0px 15px;
+}
 
