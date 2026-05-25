@@ -308,6 +308,10 @@ h1, h2, { font-family: 'didotregular' !important; }
     stroke: #1a1a1a;
 }
 
+.search-modal .header-mega-menu__collection-list .mega-menu__collection .promo_text {
+    padding: inherit;
+}
+
 @media screen and (min-width: 990px) {
     .search__recomendation>* {
         max-height: 60vh;
