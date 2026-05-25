@@ -3257,4 +3257,7 @@ text-transform: math-auto;
         background: rgb(var(--color-border));
     }
 }
+.about-shipping .multicolumn .multicolumn-list__item:not(.hide_border):not(:last-child):before {
+    background: aliceblue !important;
+}
 
