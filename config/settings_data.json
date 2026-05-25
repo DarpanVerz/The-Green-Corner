@@ -47,6 +47,8 @@
     "quickview_button_layout": "hover",
     "show_on_mobile": false,
     "enable_search_modal": true,
+    "search_button_label": "Shop All",
+    "search_button_link": "shopify://collections",
     "search_collection_list": [
       "plants",
       "flowers"
