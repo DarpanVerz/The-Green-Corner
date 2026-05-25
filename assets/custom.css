@@ -3236,3 +3236,7 @@ text-align: left;
   color: #056839;
 }
 
+.newsletter-form__message {
+        margin-left: 100px;
+}
+
