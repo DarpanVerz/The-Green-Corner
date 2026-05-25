@@ -3228,4 +3228,6 @@ text-align: left;
 
 /*********************************/
 
-.cart__checkout-button .button--full-width
+.cart__checkout-button .button--full-width {
+    border-radius: 25px;
+}
