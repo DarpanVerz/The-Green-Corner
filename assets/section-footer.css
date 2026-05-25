@@ -447,6 +447,7 @@ footer details[open] summary ~ * {
 .footer-contact-text a:hover {
     color:#056839; 
     font-weight:500;
+    text-decoration: underline;
 }
 
 .footer__blocks-wrapper {
@@ -465,7 +466,7 @@ footer details[open] summary ~ * {
 }
 
 .footer .footer-block__details-content .footer--button { font-size:16px; color: #595959; }
-.footer .footer-block__details-content .footer--button:hover { color: #056839; font-weight:600; }
+.footer .footer-block__details-content .footer--button:hover { color: #056839; font-weight:500; }
 
 h5.footer-block__heading {
     color: #1A1A1A;
