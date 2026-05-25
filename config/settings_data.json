@@ -49,7 +49,10 @@
     "enable_search_modal": true,
     "search_button_label": "Shop All",
     "search_button_link": "shopify://collections",
-    "search_collection_list": [],
+    "search_collection_list": [
+      "plants",
+      "flowers"
+    ],
     "show_promo": true,
     "promo_alignment": "left",
     "promo_image": "shopify://shop_images/ig_post_834a4ef5-3f4c-4f00-9737-e4a18358b80c.png",
