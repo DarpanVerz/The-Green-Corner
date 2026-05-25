@@ -3235,7 +3235,7 @@ text-align: left;
   color: #056839;
 }
 
-button[type="submit"] {
+button[type="submit"],
+button[type="submit"] span {
     border-radius: 25px !important;
-    overflow: hidden;
 }
