@@ -3235,6 +3235,6 @@ text-align: left;
   color: #056839;
 }
 
-button#checkout-pay-button {
+#checkout-pay-button {
     border-radius: 25px !important;
 }
