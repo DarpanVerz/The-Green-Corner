@@ -41,7 +41,7 @@
 								{% if grandchildlink.type == 'http_link' and settings.open_new_tab %}
 									target="_blank"
 								{% endif %}
-								class="header__menu-item h5 large-font list-menu__item focus-inset{% if grandchildlink.current %} header__menu-item--active{% endif %}"
+								class="header__menu-item h5 large-font list-menu__item focus-inset{% if request.path == grandchildlink.url %} header__menu-item--active{% endif %}"
 								{% if grandchildlink.current %}
 									aria-current="page"
 								{% endif %}
