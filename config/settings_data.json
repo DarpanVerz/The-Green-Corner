@@ -53,6 +53,7 @@
     "promo_alignment_2": "left",
     "predictive_search_show_clear_button": true,
     "cart_type": "drawer",
+    "cart_text": "<p>A quick overview of your selected items.</p>",
     "recently_save_quick_view": false,
     "show_back_to_top": true,
     "open_new_tab": false,
