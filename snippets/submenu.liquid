@@ -15,7 +15,7 @@
 					{% if childlink.type == 'http_link' and settings.open_new_tab %}
 						target="_blank"
 					{% endif %}
-					class="header__menu-item h5 large-font list-menu__item focus-inset {% if childlink.current %} header__menu-item--active{% endif %}"
+					class="header__menu-item h5 large-font list-menu__item focus-inset {% if request.path == childlink.url %} header__menu-item--active{% endif %}"
 					{% if childlink.current %}
 						aria-current="page"
 					{% endif %}
