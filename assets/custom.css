@@ -3235,6 +3235,7 @@ text-align: left;
   color: #056839;
 }
 
-#checkout-pay-button {
+button[type="submit"] {
     border-radius: 25px !important;
+    overflow: hidden;
 }
