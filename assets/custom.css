@@ -205,7 +205,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     text-transform: capitalize;
     font-size: 1.5rem;
     color: #595959;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* ONLY first-level menu (outside dropdown) */
