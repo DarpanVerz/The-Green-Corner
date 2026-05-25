@@ -39,7 +39,8 @@
 												</h5>
 												{% render 'icon-caret-small' -%}
 											</summary>
-											{%- if block.settings.menu != blank -%}
+
+											{% comment %} {%- if block.settings.menu != blank -%}
 												<ul class="footer-block__details-content list-unstyled">
 													{%- for link in block.settings.menu.links -%}
 														<li>
@@ -52,7 +53,8 @@
 														</li>
 													{%- endfor -%}
 												</ul>
-											{%- endif -%}
+											{%- endif -%} {% endcomment %}
+
 										</details>
 									</div>
 								{%- endif -%}
