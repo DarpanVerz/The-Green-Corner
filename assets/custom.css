@@ -3234,3 +3234,7 @@ text-align: left;
 .drawer__footer .shopify-challenge__button--simple>span, .button--simple>span, .customer .button--simple>span {
   color: #056839;
 }
+
+.checkout-pay-button {
+   border-radius: 25px;
+}
