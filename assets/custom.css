@@ -3228,6 +3228,6 @@ text-align: left;
 
 /*********************************/
 
-.cart__checkout-button .button--full-width {
+.cart__checkout-button .shopify-challenge__button--full-width, .button--full-width, .customer .button--full-width {
     border-radius: 25px;
 }
