@@ -140,8 +140,8 @@
         "margin_bottom": "l",
         "padding_top": "s",
         "padding_bottom": "s",
-        "enable_border_top": true,
-        "enable_border_bottom": true
+        "enable_border_top": false,
+        "enable_border_bottom": false
       }
     },
     "2ffae942-74ff-4c56-a915-f729ee947985": {
