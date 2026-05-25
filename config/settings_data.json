@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "dark_mode_toggle": false,
+    "dark_mode_toggle": true,
     "type_header_font": "montserrat_n4",
     "heading_h3_scale": 100,
     "heading_h4_scale": 109,
@@ -56,9 +56,11 @@
     "show_promo": true,
     "promo_alignment": "left",
     "promo_image": "shopify://shop_images/flowers1.png",
+    "promo_button_link": "shopify://collections/plants",
     "show_promo_2": true,
     "promo_alignment_2": "left",
     "promo_image_2": "shopify://shop_images/plants1.png",
+    "promo_button_link_2": "shopify://collections/flowers",
     "predictive_search_show_clear_button": true,
     "cart_type": "drawer",
     "cart_text": "<p>A quick overview of your selected items.</p>",
