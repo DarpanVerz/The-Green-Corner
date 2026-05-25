@@ -108,7 +108,7 @@
     "month_year": "%B %Y"
   },
   "newsletter": {
-    "label": "E-mail",
+    "label": "Enter your email address...",
     "success": "Thanks for subscribing",
     "button_label": "Submit",
     "button_label_request": "Send request"
