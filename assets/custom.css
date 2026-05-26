@@ -3454,6 +3454,8 @@ background-color: #056839;
       color:#000;
     }
 
+    .banner-content-wrapper:before { display:none; }
+
 }
 
 .custom-content-listing p a:hover {
@@ -3485,10 +3487,3 @@ font-size:15px;
     line-height: 27px;
     color: #595959;
 }
-
-
-
-
-
-
-
