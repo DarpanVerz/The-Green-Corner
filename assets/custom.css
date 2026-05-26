@@ -524,7 +524,7 @@ h1, .h1 {
     left: 0;
     bottom: -5px;
     width: 0;
-    height: 1px;
+    height: 1px !important;
     background: #056839;
     transition: width 0.3s ease;
 }
