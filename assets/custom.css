@@ -3248,12 +3248,7 @@ text-align: left;
     height: 24px;
 }
 
-.hide-whatsapp-sticky #carthike-chat-wrapper {
-  /* opacity: 0 !important;
-  visibility: hidden !important;
-  pointer-events: none !important;
-  transition: all 0.3s ease; */
-}
+
 
 /***************/
 .cta-section .image-banner__button-wrapper a:hover {
