@@ -3248,7 +3248,6 @@ text-align: left;
     height: 24px;
 }
 
-/* Hide WhatsApp sticky when popup/modal/cart active */
 .hide-whatsapp-sticky #carthike-chat-wrapper {
   opacity: 0 !important;
   visibility: hidden !important;
