@@ -3454,7 +3454,7 @@ background-color: #056839;
       color:#000;
     }
 
-    .banner-content-wrapper:before { display:none; }
+    .banner-content-wrapper:before, .banner-content-wrapper:after { display:none; }                                                                                                            }
 
 }
 
