@@ -3441,6 +3441,10 @@ background-color: #056839;
     color: #046a3a;
 }
 
+.article-card .article-card__image-wrapper {
+      border-radius: 32px;
+}
+
 
 
 
