@@ -604,7 +604,7 @@ h1, .h1 {
 }
 
 .header-contact-btn a:hover svg {
-    background: #056839;
+    background: none !important;
     color: #fff;
 }
 
