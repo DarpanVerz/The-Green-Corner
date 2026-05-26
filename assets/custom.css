@@ -3508,12 +3508,19 @@ background-color: #056839;
 
 /*** card hover effect ***/
 
-/* .popular-products .custom-hover-buttons {
+.popular-products .custom-hover-buttons {
   top: auto !important;
   bottom: 120px !important;
-} */
+}
 .popular-products .card-wrapper:hover .price-item--sale {
     color: #E94242 !important;
+}
+
+@media only screen and (max-width: 1366px) { 
+  .popular-products .custom-hover-buttons {
+  top: auto !important;
+  bottom: 120px !important;
+}
 }
 
 @media (min-width:1920px) {
