@@ -3378,7 +3378,7 @@ background-color: #056839;
 
 @media (min-width: 1100px) {
     .blockquote__block {
-        min-height: 20;
+        min-height: 20px;
     }
 }
 
