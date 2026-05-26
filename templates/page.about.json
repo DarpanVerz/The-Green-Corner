@@ -97,7 +97,7 @@
             "heading": "Worldwide Shipping",
             "desc": "<p>Explore our global art collection, now shipping to every corner of the world.</p>",
             "button_label": "Shipping details",
-            "button_link": "",
+            "button_link": "#",
             "button_style": "tertiary"
           }
         },
@@ -108,7 +108,7 @@
             "heading": "30 Days Free Returns",
             "desc": "<p>Shop with confidence — enjoy 30 days of hassle-free returns on all purchases.</p>",
             "button_label": "Return Policy",
-            "button_link": "",
+            "button_link": "#",
             "button_style": "tertiary"
           }
         },
@@ -119,7 +119,7 @@
             "heading": "Customer Support",
             "desc": "<p>Always here for you — our  support team is available to assist with any queries.</p>",
             "button_label": "Get Help",
-            "button_link": "",
+            "button_link": "#",
             "button_style": "tertiary"
           }
         }
