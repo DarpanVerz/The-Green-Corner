@@ -3382,7 +3382,6 @@ background-color: #056839;
     }
 }
 
-/* Breadcrumb Main */
 .breadcrumb {
     display: flex;
     align-items: center;
@@ -3393,8 +3392,6 @@ background-color: #056839;
     font-weight: 400;
     justify-content: flex-start
 }
-
-/* Links */
 .breadcrumb a {
     text-decoration: none;
     color: #9c9c9c;
@@ -3405,7 +3402,6 @@ background-color: #056839;
     color: #000;
 }
 
-/* Active Page */
 .breadcrumb div:last-child {
     color: #000;
     font-weight: 500;
@@ -3417,20 +3413,17 @@ background-color: #056839;
     stroke: #000;
 }
 
-/* Arrow Icon */
 .breadcrumb__delimiter {
     display: flex;
     align-items: center;
     color: #9c9c9c;
 }
 
-/* SVG Icon Size */
 .breadcrumb__delimiter svg {
     width: 15px;
     height: 15px;
 }
 
-/* Mobile */
 @media screen and (max-width:767px){
 
     .breadcrumb{
@@ -3442,6 +3435,10 @@ background-color: #056839;
         width:12px;
         height:12px;
     }
+}
+
+.custom-content-listing p a:hover {
+    color: #046a3a;
 }
 
 
