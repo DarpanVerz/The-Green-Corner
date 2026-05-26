@@ -3359,6 +3359,10 @@ text-transform: math-auto;
 .drawer__inner-empty .button--primary {
   border-radius:25px;
 }
+.blockquote__block .blockquote__info-wrapper {
+        flex: none;
+        max-width: 100%;
+}
 
 
 
