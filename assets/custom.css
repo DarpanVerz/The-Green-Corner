@@ -3356,7 +3356,7 @@ text-transform: math-auto;
         background: rgb(var(--color-border)) !important;
     }
 }
-.drawer__inner-empty .button--primary {
+.drawer__inner-empty .button--primary, .button--tertiary {
   border-radius:25px;
 }
 .blockquote__block .blockquote__info-wrapper {
