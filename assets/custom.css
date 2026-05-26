@@ -527,6 +527,7 @@ h1, .h1 {
     height: 1px !important;
     background: #056839;
     transition: width 0.3s ease;
+    color: #056839; 
 }
 
 .header .mega-menu-list li a:hover::after {
