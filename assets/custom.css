@@ -3249,10 +3249,10 @@ text-align: left;
 }
 
 .hide-whatsapp-sticky #carthike-chat-wrapper {
-  opacity: 0 !important;
+  /* opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
 }
 
 /***************/
