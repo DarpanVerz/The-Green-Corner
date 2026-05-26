@@ -3438,6 +3438,9 @@ background-color: #056839;
     .article-template__content-box .article-template__content p {
       margin-top:60px;
     }
+    .article-template__title {
+      color:#000;
+    }
 
 }
 
