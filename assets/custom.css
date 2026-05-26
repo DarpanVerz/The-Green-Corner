@@ -3249,7 +3249,7 @@ text-align: left;
 }
 
 
-.drawer.active #carthike-chat-wrapper { opacity: 0 !important; }
+body .drawer.active #carthike-chat-wrapper { opacity: 0 !important; }
 
 /***************/
 .cta-section .image-banner__button-wrapper a:hover {
