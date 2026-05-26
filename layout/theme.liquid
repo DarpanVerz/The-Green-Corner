@@ -399,7 +399,7 @@ document.body.addEventListener('click', () => {
 </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+function sliderNumbers() {
 
     const bullets = document.querySelectorAll(
         '.slideshow .swiper-pagination-bullet'
@@ -409,13 +409,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let number = index + 1;
 
-        if (number < 10) {
+        if(number < 10){
             number = '0' + number;
         }
 
         bullet.setAttribute('data-number', number);
 
     });
+}
+
+/* Run multiple times because swiper reloads */
+document.addEventListener("DOMContentLoaded", function(){
+
+    sliderNumbers();
+
+    setTimeout(sliderNumbers, 1000);
+    setTimeout(sliderNumbers, 2000);
 
 });
 </script>
