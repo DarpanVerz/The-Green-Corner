@@ -548,15 +548,12 @@ h1, .h1 {
     color:#fff;
 }
 
-/* OVERLAY */
 .image_overlay{
     position:absolute;
     inset:0;
     background:rgba(0,0,0,.25);
 }
 
-/* VERY IMPORTANT */
-/* PREVENT WRAPPING */
 .header-mega-menu__wrapper > *{
     grid-row:1 !important;
 }
@@ -580,13 +577,10 @@ h1, .h1 {
     border-right: inherit !important;
 }
 
-/* DESKTOP ONLY */
 @media screen and (min-width:1200px){
-
     .header-mega-menu__wrapper{
         grid-template-columns: repeat(6, minmax(0,1fr)) !important;
     }
-
 }
 
 
@@ -626,7 +620,7 @@ h1, .h1 {
     height: 22px;
 }
 
-/* Tablet + Mobile */
+
 @media screen and (max-width: 989px) {
 
     .header-contact-btn {
