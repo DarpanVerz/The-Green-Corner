@@ -686,78 +686,68 @@ h1, .h1 {
 }
 .slideshow .slideshow-bottom__wrapper {
     position: absolute;
-    bottom: 25px;
-    left: 25px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    left: 20px;
+    bottom: 20px;
     z-index: 9;
 }
 
+/* Pagination Layout */
 .slideshow .swiper-pagination {
-     position: relative !important;
     display: flex;
     align-items: center;
-    gap: 10px;
-    width: auto !important;
-    bottom: 0 !important;
+    gap: 12px;
+    position: relative !important;
     width: auto !important;
 }
-/* Active Number Circle */
+
+/* Default Dots */
+.slideshow .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    opacity: 1;
+    margin: 0 !important;
+    transition: 0.3s;
+}
+
+/* Active Circle */
 .slideshow .swiper-pagination-bullet-active {
     width: 50px;
     height: 50px;
     border: 1px solid #fff;
-    border-radius: 50%;
     background: transparent !important;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 1;
 }
 
-/* Add Number Inside Active Bullet */
-.slideshow .swiper-pagination-bullet-active::before {
+/* Number */
+.slideshow .swiper-pagination-bullet-active::after {
     content: attr(data-number);
     color: #fff;
-}
-
-/* Other Dots */
-.slideshow .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    opacity: 1;
-    margin: 0 !important;
-}
-
-/* Hide default bullet text */
-.slideshow .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-    font-size: 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 /* .slideshow .slideshow-bottom__wrapper {
     margin-bottom: 64px;
     margin-right: 70px;
 } */
-@media screen and (max-width: 767px) {
-    .slideshow .slideshow-bottom__wrapper {
-        left: 15px;
-        bottom: 15px;
-        gap: 10px;
+@media screen and (max-width:767px){
+
+    .slideshow .slideshow-bottom__wrapper{
+        left:15px;
+        bottom:15px;
     }
 
-    .slideshow .swiper-pagination-bullet-active {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
+    .slideshow .swiper-pagination-bullet-active{
+        width:40px;
+        height:40px;
     }
 
-    .slideshow .swiper-pagination-bullet-active::before {
-        content: "01";
+    .slideshow .swiper-pagination-bullet-active::after{
+        font-size:14px;
     }
 }
 
