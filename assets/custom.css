@@ -514,16 +514,23 @@ h1, .h1 {
     display:block;
 }
 
-.header .mega-menu-list li a:hover { position: relative; }
-.header .mega-menu-list li a:after:hover {
-   content: "";
+.header .mega-menu-list li a {
+    position: relative;
+}
+
+.header .mega-menu-list li a::after {
+    content: "";
     position: absolute;
     left: 0;
     bottom: -33px;
     width: 0;
-    height: 3px !important;
+    height: 3px;
     background: #056839;
     transition: width 0.3s ease;
+}
+
+.header .mega-menu-list li a:hover::after {
+    width: 100%;
 }
 
 /* PROMO TEXT */
