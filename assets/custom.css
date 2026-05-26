@@ -747,12 +747,12 @@ h1, .h1 {
     }
 
     .slideshow .swiper-pagination-bullet-active{
-        width:40px;
-        height:40px;
+        width:30px;
+        height:30px;
     }
 
     .slideshow .swiper-pagination-bullet-active::after{
-        font-size:14px;
+        font-size:10px;
     }
 }
 
