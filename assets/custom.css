@@ -3378,7 +3378,7 @@ background-color: #056839;
 
 
 .blockquote__block {
-        display:inline-block;
+        display:inline-block !important;
     }
 
 
