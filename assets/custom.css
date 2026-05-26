@@ -3505,3 +3505,11 @@ background-color: #056839;
     line-height: 27px;
     color: #595959;
 }
+
+
+/*** card hover effect ***/
+
+.popular-products .custom-hover-buttons {
+  top: auto;
+  bottom:0;
+}
