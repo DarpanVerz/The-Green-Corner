@@ -127,7 +127,7 @@
   position: absolute;
   top: 55%;
   transform: translateY(-50%);
-  z-index: 99;
+  z-index: 9;
   transition: all 0.3s ease;
 }
 
