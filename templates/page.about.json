@@ -80,7 +80,7 @@
         "full_width": true,
         "content_horizontal": "center",
         "margin_top": "no-indent",
-        "margin_bottom": "l",
+        "margin_bottom": "no-indent",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent",
         "enable_border_top": false,
