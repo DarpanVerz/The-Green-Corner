@@ -752,7 +752,7 @@ h1, .h1 {
     }
 
     .slideshow .swiper-pagination-bullet-active::after{
-        font-size:10px;
+        font-size:11px;
     }
 }
 
