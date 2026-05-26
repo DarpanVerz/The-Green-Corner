@@ -3391,7 +3391,7 @@ background-color: #056839;
     margin: 20px 0;
     font-size: 16px;
     font-weight: 400;
-    justify-content: flex-end;
+    justify-content: flex-start
 }
 
 /* Links */
@@ -3420,8 +3420,8 @@ background-color: #056839;
 
 /* SVG Icon Size */
 .breadcrumb__delimiter svg {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 /* Mobile */
