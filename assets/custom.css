@@ -721,7 +721,7 @@ h1, .h1 {
 
 /* Add Number Inside Active Bullet */
 .slideshow .swiper-pagination-bullet-active::before {
-    content: "01";
+    content: attr(data-number);
     color: #fff;
 }
 
