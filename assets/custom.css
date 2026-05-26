@@ -515,7 +515,7 @@ h1, .h1 {
 }
 
 .header .mega-menu-list li a:hover { position: relative; }
-.header .mega-menu-list li a:hover::after {
+.header .mega-menu-list li a:after:hover {
    content: "";
     position: absolute;
     left: 0;
