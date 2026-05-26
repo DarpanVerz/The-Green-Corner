@@ -3441,6 +3441,9 @@ background-color: #056839;
     color: #046a3a;
 }
 
+.article-template .article-template__content-box {
+  margin-top:5rem;
+}
 .article-card .article-card__image-wrapper {
       border-radius: 32px;
       min-height:330px;
