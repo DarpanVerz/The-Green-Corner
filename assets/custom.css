@@ -603,7 +603,7 @@ h1, .h1 {
     color: #fff;
 }
 
-.header-contact-btn a:hover {
+.header-contact-btn a:hover svg {
     background: #056839;
     color: #fff;
 }
