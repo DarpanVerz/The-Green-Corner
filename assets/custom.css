@@ -3510,6 +3510,6 @@ background-color: #056839;
 /*** card hover effect ***/
 
 .popular-products .custom-hover-buttons {
-  top: auto;
-  bottom:0;
+  top: auto !important;
+  bottom:0 !important;
 }
