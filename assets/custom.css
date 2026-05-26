@@ -3293,4 +3293,7 @@ text-transform: math-auto;
         background: rgb(var(--color-border)) !important;
     }
 }
+.button button--primary {
+  border-radius:25px;
+}
 
