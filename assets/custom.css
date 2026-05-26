@@ -3443,6 +3443,10 @@ background-color: #056839;
 
 .article-card .article-card__image-wrapper {
       border-radius: 32px;
+      min-height:330px;
+}
+.article-card .article-card__image {
+  min-height:330px;
 }
 
 
