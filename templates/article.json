@@ -58,14 +58,18 @@
     },
     "collection_tabs_rEpNTY": {
       "type": "collection-tabs",
-      "disabled": true,
       "settings": {
         "color_scheme": "",
         "heading": "Related Products",
         "heading_tag": "h2",
         "description": "",
         "alignment": "center",
-        "collection_list": [],
+        "collection_list": [
+          "all",
+          "essentials",
+          "new-arrivals",
+          "flowers"
+        ],
         "product_count": 4,
         "image_ratio": "portrait",
         "show_two_cards": false,
