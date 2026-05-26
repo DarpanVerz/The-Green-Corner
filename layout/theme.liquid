@@ -409,17 +409,19 @@ function sliderNumbers() {
 
         let number = index + 1;
 
-        if(number < 10){
+        if (number < 10) {
             number = '0' + number;
         }
 
         bullet.setAttribute('data-number', number);
 
+        /* remove existing text */
+        bullet.innerHTML = '';
+
     });
 }
 
-/* Run multiple times because swiper reloads */
-document.addEventListener("DOMContentLoaded", function(){
+window.addEventListener('load', function () {
 
     sliderNumbers();
 
