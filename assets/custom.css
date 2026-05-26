@@ -3508,6 +3508,13 @@ background-color: #056839;
 
 /*** card hover effect ***/
 
+.card__badge .color-badge {
+    color: #e94242;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
 .popular-products .custom-hover-buttons {
   top: auto !important;
   bottom: 100px !important;
