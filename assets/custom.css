@@ -3376,11 +3376,11 @@ background-color: #056839;
         max-width: 100%;
 }
 
-@media (min-width: 1100px) {
-    .blockquote__block {
-        min-height: 40rem;
+
+.blockquote__block {
+        display:inline-block;
     }
-}
+
 
 
 
