@@ -395,6 +395,45 @@ document.body.addEventListener('click', () => {
 
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+
+  function toggleWhatsappSticky() {
+
+    const cartDrawer = document.querySelector(
+      'cart-drawer.drawer.active, cart-drawer.active'
+    );
+
+    const activeModal = document.querySelector(
+      '.modal.active, .popup.active, .search-modal.active, .drawer.active'
+    );
+
+    const bodyModal = document.body.classList.contains('overflow-hidden') ||
+                      document.body.classList.contains('modal-open');
+
+    if (cartDrawer || activeModal || bodyModal) {
+      document.body.classList.add('hide-whatsapp-sticky');
+    } else {
+      document.body.classList.remove('hide-whatsapp-sticky');
+    }
+  }
+
+  // Run initially
+  toggleWhatsappSticky();
+
+  // Observe class changes dynamically
+  const observer = new MutationObserver(() => {
+    toggleWhatsappSticky();
+  });
+
+  observer.observe(document.body, {
+    attributes: true,
+    childList: true,
+    subtree: true,
+    attributeFilter: ['class']
+  });
+
+});
+
 </script>
 
 	</body>
