@@ -245,7 +245,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     padding: 0;
 }
 
-.header .list-menu--inline>li>.header__menu-item {
+.header .list-menu--inline>li> {
     padding: 3.3rem 0.8rem;
 }
 
