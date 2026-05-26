@@ -3296,4 +3296,7 @@ text-transform: math-auto;
 .drawer__inner-empty .button--primary {
   border-radius:25px;
 }
+#checkout-pay-button {
+   border-radius:25px;
+}
 
