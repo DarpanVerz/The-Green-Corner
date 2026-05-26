@@ -398,5 +398,27 @@ document.body.addEventListener('click', () => {
 
 </script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const bullets = document.querySelectorAll(
+        '.slideshow .swiper-pagination-bullet'
+    );
+
+    bullets.forEach((bullet, index) => {
+
+        let number = index + 1;
+
+        if (number < 10) {
+            number = '0' + number;
+        }
+
+        bullet.setAttribute('data-number', number);
+
+    });
+
+});
+</script>
+
 	</body>
 </html>
