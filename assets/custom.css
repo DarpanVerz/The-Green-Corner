@@ -3510,7 +3510,7 @@ background-color: #056839;
 
 .popular-products .custom-hover-buttons {
   top: auto !important;
-  bottom: 120px !important;
+  bottom: 85px !important;
 }
 .popular-products .card-wrapper:hover .price-item--sale {
     color: #E94242 !important;
@@ -3520,12 +3520,5 @@ background-color: #056839;
   .popular-products .custom-hover-buttons {
   top: auto !important;
   bottom: 120px !important;
-}
-}
-
-@media (min-width:1920px) {
-  .popular-products .custom-hover-buttons {
-  top: auto !important;
-  bottom: 85px !important;
 }
 }
