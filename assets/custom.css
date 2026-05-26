@@ -3161,9 +3161,15 @@ text-align: left;
 }
 
 .banner-block .button--custom-view { 
-  background: #272727; color:#fff; 
-  display:inline-block; padding:10px 15px 10px 20px; 
-  border-radius:50px; width:100px; margin-top:10px; font-weight:400; 
+  background: #272727; 
+  color:#fff; 
+  display:inline-block; 
+  padding:10px 15px 10px 20px; 
+  border-radius:50px; 
+  width:100px; 
+  margin-top:10px; 
+  font-weight:400;
+  text-transform: uppercase;
 }
 
 .banner-block .button--custom-view:hover {
