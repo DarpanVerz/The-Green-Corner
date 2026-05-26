@@ -3366,6 +3366,7 @@ text-transform: math-auto;
 }
 .multicolumn-list__item .button--tertiary:before {
 background-color: #056839;
+color: #fff;
 }
 .blockquote__block .blockquote__info-wrapper {
         flex: none;
