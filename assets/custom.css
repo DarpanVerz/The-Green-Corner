@@ -646,6 +646,10 @@ h1, .h1 {
       display: block;
   }
 
+  .header-contact-btn a:hover {
+    background: inherit !important;
+}
+
 }
 
 
