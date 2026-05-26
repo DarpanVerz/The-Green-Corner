@@ -241,9 +241,9 @@ h1, h2, { font-family: 'didotregular' !important; }
   position: relative;
 }
 
-/* .header .list-menu--inline>li>.header__menu-item {
+.header .list-menu--inline>li>.header__menu-item {
     padding: 0;
-} */
+}
 
 .header__menu > .list-menu > li {
     padding: 3.3rem 0.8rem !important;
