@@ -3363,7 +3363,7 @@ text-transform: math-auto;
       border: 1px solid #056839;
           min-height: 4.3rem;
 }
-.multicolumn-list__item .button--tertiary:hover {
+.multicolumn-list__item .button--tertiary:before {
 background-color: #056839;
 }
 .blockquote__block .blockquote__info-wrapper {
