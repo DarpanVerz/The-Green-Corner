@@ -3249,9 +3249,11 @@ text-align: left;
 }
 
 
-body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active) .scroll-top__block {
+body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active) .scroll-top__block, body:has(search-modal.active) #carthike-chat-wrapper {
     display: none !important;
 }
+
+
 
 /***************/
 .cta-section .image-banner__button-wrapper a:hover {
