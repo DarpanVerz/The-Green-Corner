@@ -3455,6 +3455,9 @@ background-color: #056839;
 .article-card__date {
 font-size:15px;
 }
+.article-template__content-box .article-template__content {
+        max-width: 100rem;
+}
 
 
 
