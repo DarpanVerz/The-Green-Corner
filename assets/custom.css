@@ -727,7 +727,12 @@ h1, .h1 {
     display: none !important;
 }
 
-
+.swiper-pagination .swiper-pagination-bullet:after {
+    width: 0px;
+    height: 0px;
+    top: 33%;
+    left: 29%;
+}
 /* Number */
 .slideshow .swiper-pagination-bullet-active::after {
     content: attr(data-number);
