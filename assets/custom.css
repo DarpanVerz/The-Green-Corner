@@ -3249,7 +3249,9 @@ text-align: left;
 }
 
 
-body .drawer.active #carthike-chat-wrapper { opacity: 0 !important; }
+body:has(cart-drawer.active) #carthike-chat-wrapper {
+    display: none !important;
+}
 
 /***************/
 .cta-section .image-banner__button-wrapper a:hover {
