@@ -2268,6 +2268,9 @@ margin-left:30px;
 .card-wrapper:hover .price-item.price-item--sale {
   color:#E94242 !important;
 }
+.card-wrapper:hover .price-item.price-item--sale:hover {
+  color:#E94242 !important;
+}
 
 .facets__form--horizontal_united .facets__horizontal-top {
     border-top: inherit !important;
