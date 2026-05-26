@@ -3515,3 +3515,10 @@ background-color: #056839;
 .popular-products .card-wrapper:hover .price-item--sale {
     color: #E94242 !important;
 }
+
+@media screen (min-width:1900px) {
+  .popular-products .custom-hover-buttons {
+  top: auto !important;
+  bottom: 80px !important;
+}
+}
