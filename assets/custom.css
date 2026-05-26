@@ -3293,7 +3293,7 @@ text-transform: math-auto;
         background: rgb(var(--color-border)) !important;
     }
 }
-.drawer__inner-empty .button .button--primary {
+.drawer__inner-empty .button--primary {
   border-radius:25px;
 }
 
