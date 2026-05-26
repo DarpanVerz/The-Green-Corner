@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "dark_mode_toggle": true,
+    "dark_mode_toggle": false,
     "type_header_font": "montserrat_n4",
     "heading_h3_scale": 100,
     "heading_h4_scale": 109,
