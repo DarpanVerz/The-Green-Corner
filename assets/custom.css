@@ -253,7 +253,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -33px;
     width: 0;
     height: 3px !important;
     background: #056839;
