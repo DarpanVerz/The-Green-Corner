@@ -3482,23 +3482,24 @@ background-color: #056839;
 .article-template .article-template__content-box {
   margin-top:6rem !important;
 }
+
 .article-card .article-card__image-wrapper {
       border-radius: 32px;
       min-height:330px;
 }
+
 .article-card .article-card__image {
   min-height:330px;
 }
+
 .article-card__title {
   font-family: Montserrat, sans-serif;
   font-size:19px;
 }
-.article-card__date {
-font-size:15px;
-}
-.article-template__content-box .article-template__content {
-        max-width: 100rem;
-}
+
+.article-card__date { font-size:15px; }
+
+.article-template__content-box .article-template__content { max-width: 100rem; }
 .article-template__content-box .article-template__content p {
     font-size: 18px;
     line-height: 27px;
