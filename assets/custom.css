@@ -3382,6 +3382,61 @@ background-color: #056839;
     }
 }
 
+/* Breadcrumb Main */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Links */
+.breadcrumb a {
+    text-decoration: none;
+    color: #9c9c9c;
+    transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: #000;
+}
+
+/* Active Page */
+.breadcrumb div:last-child {
+    color: #000;
+    font-weight: 500;
+}
+
+/* Arrow Icon */
+.breadcrumb__delimiter {
+    display: flex;
+    align-items: center;
+    color: #9c9c9c;
+}
+
+/* SVG Icon Size */
+.breadcrumb__delimiter svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* Mobile */
+@media screen and (max-width:767px){
+
+    .breadcrumb{
+        gap:6px;
+        font-size:14px;
+    }
+
+    .breadcrumb__delimiter svg{
+        width:12px;
+        height:12px;
+    }
+}
+
 
 
 
