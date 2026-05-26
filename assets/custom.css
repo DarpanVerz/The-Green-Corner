@@ -3448,6 +3448,9 @@ background-color: #056839;
 .article-card .article-card__image {
   min-height:330px;
 }
+.article-card__title {
+  font-family: Montserrat, sans-serif;
+}
 
 
 
