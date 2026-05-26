@@ -686,7 +686,7 @@ h1, .h1 {
 }
 .slideshow .slideshow-bottom__wrapper {
     position: absolute;
-    left: 20px;
+    right: 80px;
     bottom: 20px;
     z-index: 9;
 }
@@ -743,10 +743,6 @@ h1, .h1 {
     line-height: 1;
 }
 
-/* .slideshow .slideshow-bottom__wrapper {
-    margin-bottom: 64px;
-    margin-right: 70px;
-} */
 @media screen and (max-width:767px){
 
     .slideshow .slideshow-bottom__wrapper{
