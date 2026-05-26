@@ -685,12 +685,33 @@ h1, .h1 {
     display: none;
 }
 .slideshow .slideshow-bottom__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: auto;
+    z-index: 5;
+}
+
+/* Remove default swiper position */
+.slideshow .swiper-pagination {
+    position: relative !important;
+    bottom: 0 !important;
+    width: auto !important;
+}
+
+/* .slideshow .slideshow-bottom__wrapper {
     margin-bottom: 64px;
     margin-right: 70px;
-}
+} */
 @media screen and (min-width: 767px) {
 .slideshow .slideshow-bottom__wrapper {
-    margin-bottom: 0px !important;
+    bottom: 10px;
+        left: 10px;
+        gap: 8px;
 }
 }
 
