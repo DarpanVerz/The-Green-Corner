@@ -89,7 +89,7 @@
         "tag_articles": "",
         "tag_text_horizontal": "center",
         "slideshow_speed": 0.5,
-        "tag_image_ratio": "portrait",
+        "tag_image_ratio": "landscape",
         "tag_image_fit": "cover",
         "show_image_tag": true,
         "show_tags_tag": true,
