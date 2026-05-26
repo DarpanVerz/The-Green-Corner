@@ -708,6 +708,7 @@ h1, .h1 {
     opacity: 1;
     margin: 0 !important;
     transition: 0.3s;
+    padding:0px;
 }
 
 /* Active Circle */
