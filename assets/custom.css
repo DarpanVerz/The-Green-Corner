@@ -3452,6 +3452,9 @@ background-color: #056839;
   font-family: Montserrat, sans-serif;
   font-size:19px;
 }
+.article-card__date {
+font-size:15px;
+}
 
 
 
