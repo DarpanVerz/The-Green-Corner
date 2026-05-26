@@ -518,6 +518,10 @@ h1, .h1 {
     position: relative;
 }
 
+.header .mega-menu-list li a:hover {
+    color:#000;
+}
+
 .header .mega-menu-list li a::after {
     content: "";
     position: absolute;
