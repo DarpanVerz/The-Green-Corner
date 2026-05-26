@@ -3169,7 +3169,7 @@ text-align: left;
   width:100px; 
   margin-top:10px; 
   font-weight:400;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .banner-block .button--custom-view:hover {
