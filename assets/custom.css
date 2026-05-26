@@ -3410,6 +3410,12 @@ background-color: #056839;
     color: #000;
     font-weight: 500;
 }
+.breadcrumb__delimiter svg path {
+  stroke: #b5b5b5;
+}
+.breadcrumb__delimiter:last-of-type svg path {
+    stroke: #000;
+}
 
 /* Arrow Icon */
 .breadcrumb__delimiter {
