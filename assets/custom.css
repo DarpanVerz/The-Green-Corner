@@ -3449,7 +3449,7 @@ background-color: #056839;
 }
 
 .article-template .article-template__content-box {
-  margin-top:6rem;
+  margin-top:6rem !important;
 }
 .article-card .article-card__image-wrapper {
       border-radius: 32px;
