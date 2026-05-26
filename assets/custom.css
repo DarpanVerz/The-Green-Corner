@@ -522,9 +522,9 @@ h1, .h1 {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -33px;
+    bottom: -5px;
     width: 0;
-    height: 3px;
+    height: 1px;
     background: #056839;
     transition: width 0.3s ease;
 }
