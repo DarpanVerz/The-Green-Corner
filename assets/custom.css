@@ -3516,7 +3516,7 @@ background-color: #056839;
     color: #E94242 !important;
 }
 
-@media (min-width:1700px) {
+@media (min-width:1920px) {
   .popular-products .custom-hover-buttons {
   top: auto !important;
   bottom: 85px !important;
