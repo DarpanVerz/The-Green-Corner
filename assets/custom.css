@@ -3249,7 +3249,7 @@ text-align: left;
 }
 
 
-body:has(cart-drawer.active) #carthike-chat-wrapper {
+body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active) .scroll-top__block {
     display: none !important;
 }
 
