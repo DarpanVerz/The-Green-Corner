@@ -3435,6 +3435,10 @@ background-color: #056839;
         width:12px;
         height:12px;
     }
+    .article-template__content-box .article-template__content p {
+      margin-top:50px;
+    }
+
 }
 
 .custom-content-listing p a:hover {
@@ -3466,6 +3470,7 @@ font-size:15px;
     line-height: 27px;
     color: #595959;
 }
+
 
 
 
