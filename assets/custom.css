@@ -3513,5 +3513,5 @@ background-color: #056839;
   bottom: 120px !important;
 }
 .popular-products .card-wrapper:hover:before .price-item--sale {
-    color: #E94242;
+    color: #E94242 !important;
 }
