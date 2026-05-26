@@ -3252,7 +3252,6 @@ text-align: left;
 body:has(cart-drawer.active) #carthike-chat-wrapper,
 body:has(cart-drawer.active) .scroll-top__block,
 body:has(.search-modal.active) #carthike-chat-wrapper,
-body:has(.header-mega-menu) #carthike-chat-wrapper, 
 body:has(.header .list-menu--inline>li.list-menu-has-child:hover>.header__menu-item:before) #carthike-chat-wrapper {
     display: none !important;
 }
