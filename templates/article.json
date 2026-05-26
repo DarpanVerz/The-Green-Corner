@@ -65,9 +65,6 @@
         "description": "",
         "alignment": "center",
         "collection_list": [
-          "all",
-          "essentials",
-          "new-arrivals",
           "flowers"
         ],
         "product_count": 4,
