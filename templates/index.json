@@ -12,6 +12,21 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "slideshow_item_TGFdid": {
+          "type": "slideshow_item",
+          "settings": {
+            "image": "shopify://shop_images/d9474117cd13df8bb14840d12b0c9b2b0089a4b3.jpg",
+            "color_scheme": "background-1",
+            "overlay_opacity": 20,
+            "heading": "Where Every Plant Finds a Home.",
+            "text": "<p>Discover a welcoming hub for plant enthusiasts, offering a wide selection of indoor and outdoor plants, quality gardening tools, and our exclusive SILLYSOIL to help every garden thrive.</p>",
+            "button_label": "Start Your Plant Journey",
+            "button_link": "",
+            "second_button_label": "",
+            "second_button_link": "",
+            "article": ""
+          }
+        },
         "slideshow_item-1": {
           "type": "slideshow_item",
           "settings": {
@@ -59,6 +74,7 @@
         }
       },
       "block_order": [
+        "slideshow_item_TGFdid",
         "slideshow_item-1",
         "slideshow_item-2",
         "slideshow_item-3"
