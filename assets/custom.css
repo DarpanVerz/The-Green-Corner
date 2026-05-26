@@ -3458,6 +3458,11 @@ font-size:15px;
 .article-template__content-box .article-template__content {
         max-width: 100rem;
 }
+.article-template__content-box .article-template__content p {
+    font-size: 18px;
+    line-height: 27px;
+    color: #595959;
+}
 
 
 
