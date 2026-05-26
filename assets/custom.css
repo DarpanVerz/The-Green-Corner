@@ -3362,12 +3362,10 @@ text-transform: math-auto;
 .multicolumn-list__item .button--tertiary {
       border: 1px solid #056839;
           min-height: 4.3rem;
-          color: #056839;
           text-transform:capitalize;
 }
 .multicolumn-list__item .button--tertiary:before {
 background-color: #056839;
-color: #fff !important;
 }
 .blockquote__block .blockquote__info-wrapper {
         flex: none;
