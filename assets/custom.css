@@ -3725,4 +3725,8 @@ background-color: #056839;
 
 .product-share-icons { justify-content:center; }
 
+.page-header__inner .button--simple {
+    padding-left: 0px;
+}
+
 }
