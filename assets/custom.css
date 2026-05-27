@@ -3534,14 +3534,14 @@ background-color: #056839;
 }
 
 .rte li, .rte p {
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
 }
 .rte p {
-    line-height: 24px;
+    line-height: 24px !important;
 }
 .rte a:hover {
-    color: #05693a;
-    font-weight: 500;
+    color: #05693a !important;
+    font-weight: 500 !important;
 }
 
 
