@@ -138,8 +138,8 @@
 											<span class="h3">{{ shop.name }}</span>
 										{%- endif -%}
 									</a>
-									
-{% if settings.social_twitter_link != blank
+
+									{% if settings.social_twitter_link != blank
 	or settings.social_facebook_link != blank
 	or settings.social_pinterest_link != blank
 	or settings.social_instagram_link != blank
@@ -149,37 +149,34 @@
 	or settings.social_youtube_link != blank
 	or settings.social_vimeo_link != blank
 %}
+
+	<!-- Font Awesome CDN -->
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+	/>
+
 	<ul
 		class="footer__list-social list-unstyled list-social"
 		role="list"
 	>
-		
-		{%- if settings.social_twitter_link != blank -%}
-			<li class="list-social__item">
-				<a
-					href="{{ settings.social_twitter_link }}"
-					class="link footer--button link--text list-social__link"
-					aria-label="twitter"
-				>
-					<i class="fab fa-twitter social-fa-icon"></i>
-					<span class="social-svg-icon">
-						{%- render 'icon-twitter' -%}
-					</span>
-				</a>
-			</li>
-		{%- endif -%}
 
 		{%- if settings.social_facebook_link != blank -%}
 			<li class="list-social__item">
 				<a
 					href="{{ settings.social_facebook_link }}"
-					class="link footer--button link--text list-social__link"
+					class="link footer--button link--text list-social__link social-icon-wrapper"
 					aria-label="facebook"
 				>
+
+					<!-- Font Awesome Icon -->
 					<i class="fab fa-facebook-f social-fa-icon"></i>
+
+					<!-- SVG Fallback -->
 					<span class="social-svg-icon">
 						{%- render 'icon-facebook' -%}
 					</span>
+
 				</a>
 			</li>
 		{%- endif -%}
@@ -188,13 +185,34 @@
 			<li class="list-social__item">
 				<a
 					href="{{ settings.social_instagram_link }}"
-					class="link footer--button link--text list-social__link"
+					class="link footer--button link--text list-social__link social-icon-wrapper"
 					aria-label="instagram"
 				>
+
 					<i class="fab fa-instagram social-fa-icon"></i>
+
 					<span class="social-svg-icon">
 						{%- render 'icon-instagram' -%}
 					</span>
+
+				</a>
+			</li>
+		{%- endif -%}
+
+		{%- if settings.social_twitter_link != blank -%}
+			<li class="list-social__item">
+				<a
+					href="{{ settings.social_twitter_link }}"
+					class="link footer--button link--text list-social__link social-icon-wrapper"
+					aria-label="twitter"
+				>
+
+					<i class="fab fa-x-twitter social-fa-icon"></i>
+
+					<span class="social-svg-icon">
+						{%- render 'icon-twitter' -%}
+					</span>
+
 				</a>
 			</li>
 		{%- endif -%}
@@ -203,19 +221,80 @@
 			<li class="list-social__item">
 				<a
 					href="{{ settings.social_youtube_link }}"
-					class="link footer--button link--text list-social__link"
+					class="link footer--button link--text list-social__link social-icon-wrapper"
 					aria-label="youtube"
 				>
+
 					<i class="fab fa-youtube social-fa-icon"></i>
+
 					<span class="social-svg-icon">
 						{%- render 'icon-youtube' -%}
 					</span>
+
+				</a>
+			</li>
+		{%- endif -%}
+
+		{%- if settings.social_pinterest_link != blank -%}
+			<li class="list-social__item">
+				<a
+					href="{{ settings.social_pinterest_link }}"
+					class="link footer--button link--text list-social__link social-icon-wrapper"
+					aria-label="pinterest"
+				>
+
+					<i class="fab fa-pinterest-p social-fa-icon"></i>
+
+					<span class="social-svg-icon">
+						{%- render 'icon-pinterest' -%}
+					</span>
+
 				</a>
 			</li>
 		{%- endif -%}
 
 	</ul>
+
+	<style>
+		/* Hide SVG by default */
+		.social-svg-icon {
+			display: none;
+		}
+
+		.social-fa-icon {
+			display: inline-block;
+			font-size: 20px;
+		}
+	</style>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+
+			const testIcon = document.createElement("i");
+			testIcon.className = "fab fa-facebook-f";
+			document.body.appendChild(testIcon);
+
+			const fontFamily = window.getComputedStyle(testIcon).fontFamily;
+
+			document.body.removeChild(testIcon);
+
+			/* If Font Awesome not loaded */
+			if (!fontFamily.includes("Font Awesome")) {
+
+				document.querySelectorAll(".social-fa-icon").forEach(function (icon) {
+					icon.style.display = "none";
+				});
+
+				document.querySelectorAll(".social-svg-icon").forEach(function (icon) {
+					icon.style.display = "inline-block";
+				});
+
+			}
+		});
+	</script>
+
 {% endif %}
+
 
 									{%- if block.settings.copyright_show != blank -%}
 										<div class="footer__copyright">
