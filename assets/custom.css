@@ -3720,7 +3720,7 @@ background-color: #056839;
 }
 
 .product-form__buttons-row {
-    gap: 3rem;
+    gap: 3rem !important;
 }
 
 }
