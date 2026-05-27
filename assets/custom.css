@@ -2921,13 +2921,6 @@ text-align: left;
 }
 
 
-@media (min-width: 1150px) {
-    .product .product__outer--center {
-        margin: 80px 0 auto 300px !important;
-    }
-}
-
-
 .product__media-subitem .product__media { background:none; }
 
 /* .custom-slider-arrow {
@@ -3609,4 +3602,11 @@ background-color: #056839;
 
     .body-template-product .breadcrumb { padding-left:150px; }
     
+}
+
+@media screen and (min-width: 1366px) {
+    #shopify-section-template--20809573793984__product-recommendations {
+        padding-top: 8rem;
+        padding-bottom: 0;
+    }
 }
