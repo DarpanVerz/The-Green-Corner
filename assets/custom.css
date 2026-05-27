@@ -185,7 +185,6 @@ h1, h2, { font-family: 'didotregular' !important; }
     color: #fff;
     text-decoration: none;
     font-size: 13px;
-    white-space: nowrap;
     font-weight: 400;
     position: relative;
 }
