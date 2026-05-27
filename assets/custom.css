@@ -2920,6 +2920,14 @@ text-align: left;
 }
 }
 
+
+@media (min-width: 1200px) {
+    .product .product__outer--center {
+        margin: 80px 0 auto 300px !important;
+    }
+}
+
+
 .product__media-subitem .product__media { background:none; }
 
 /* .custom-slider-arrow {
