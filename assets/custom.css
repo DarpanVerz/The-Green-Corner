@@ -2921,7 +2921,7 @@ text-align: left;
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1150px) {
     .product .product__outer--center {
         margin: 80px 0 auto 300px !important;
     }
