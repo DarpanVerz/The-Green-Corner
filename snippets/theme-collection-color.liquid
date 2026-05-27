@@ -14,6 +14,8 @@
   --theme-text:
     {{ current_collection.metafields.custom.menu_text_color.value | default: '#ffffff' }};
 
+    --theme-subtitle: {{ collection.metafields.custom.theme_subtitle_color.value | default: '#A6CE39' }};
+
   --theme-bg-transparent:
     {{ current_collection.metafields.custom.menu_bg_color.value
     | color_modify: 'alpha', 0.92 }};
