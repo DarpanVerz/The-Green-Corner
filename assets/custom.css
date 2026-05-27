@@ -2509,9 +2509,7 @@ button.hover-cart-btn:hover {
 
 /*** Product Details ***/
 
-.product .product__outer--center { align-items: start !important; 
-  margin: 80px auto 0 150px !important; 
-}
+.product .product__outer--center { align-items: start !important; }
 .product__title__wrapper { align-items: start; justify-content: start !important; }
 .product .price { justify-content: left !important; }
 .product__text {
@@ -2918,9 +2916,7 @@ text-align: left;
         gap: 1.4rem !important;
     }
 
-    .product .product__outer--center {
-    margin: 0 auto !important;
-}
+    .product .product__outer--center { }
 
 }
 
@@ -3604,5 +3600,5 @@ background-color: #056839;
     }
 
     .body-template-product .breadcrumb { padding-left:150px; }
-
+    
 }
