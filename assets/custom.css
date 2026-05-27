@@ -3719,4 +3719,8 @@ background-color: #056839;
     padding: 0px 15px;
 }
 
+.product-form__buttons-row {
+    gap: 3rem;
+}
+
 }
