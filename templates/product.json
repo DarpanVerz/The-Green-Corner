@@ -179,103 +179,18 @@
     "custom_product_tabs_hDwqcH": {
       "type": "custom-product-tabs",
       "blocks": {
-        "judge_me_reviews_reviews_grid_widget_8PUtXr": {
-          "type": "shopify://apps/judge-me-reviews/blocks/reviews_grid_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "show_sample_reviews": true,
-            "review_selection": "all",
-            "products": [
-              "asplenium-crispy-wave",
-              "crismson-crush",
-              "crismson-crush-1",
-              "cute-pink-rose",
-              "adorable-you",
-              "a-gesture-of-love-rose-bouquet"
-            ],
-            "show_media_only": true,
-            "display_order": "media_first",
-            "card_grouping": "per_media",
-            "columns_desktop": 3,
-            "rows_desktop": 3,
-            "columns_mobile": "2",
-            "rows_mobile": 6,
-            "show_stars": true,
-            "show_reviewer_name": true,
-            "show_review_title_on_hover_desktop": true,
-            "max_width": 1100,
-            "corner_styling": "soft",
-            "card_spacing": "medium",
-            "header_text_color": "#000000",
-            "star_and_reviewer_name_color": "#F9F9F9",
-            "drop_shadow_color": "#000000",
-            "overlay_and_background_color": "#000000",
-            "content_color": "#F9F9F9",
-            "header_text": "From our customers",
-            "show_average_rating": true
-          }
-        },
-        "judge_me_reviews_featured_carousel_WTG6kJ": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1080
-          }
-        },
         "judge_me_reviews_review_widget_e4CH49": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
           "settings": {
             "review_data": "sample_data",
             "max_width": 1200,
             "show_shop_reviews": true,
             "empty_state": "other_products_reviews"
           }
-        },
-        "judge_me_reviews_cards_carousel_NBXCbe": {
-          "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "show_sample_reviews": true,
-            "reviews_selection": "product_reviews",
-            "products": [
-              "99-romantic-rose-ideas",
-              "a-gesture-of-love-rose-bouquet",
-              "adorable-you",
-              "asplenium-crispy-wave",
-              "crismson-crush",
-              "crismson-crush-1",
-              "cute-pink-rose",
-              "dracaena-fragrans"
-            ],
-            "star_rating": "5_star",
-            "show_review_media": true,
-            "display_order": "media_first",
-            "no_image_fallback": "review_text_only",
-            "max_reviews": 20,
-            "review_length": "medium",
-            "text_size": "medium",
-            "image_ratio": "1",
-            "reviews_shown": 4,
-            "show_reviewer_name": true,
-            "show_product_name": true,
-            "hide_arrows_mobile": true,
-            "arrows_position": "sides",
-            "max_width": 1100,
-            "corner_styling": "round",
-            "header_text_color": "#000000",
-            "text_color": "#ffffff",
-            "card_color": "#F9F9F9",
-            "stars_color": "",
-            "arrows_color": "#000000",
-            "transition_speed": 5,
-            "header_text": "Customers are saying",
-            "show_average_rating": true
-          }
         }
       },
       "block_order": [
-        "judge_me_reviews_reviews_grid_widget_8PUtXr",
-        "judge_me_reviews_featured_carousel_WTG6kJ",
-        "judge_me_reviews_review_widget_e4CH49",
-        "judge_me_reviews_cards_carousel_NBXCbe"
+        "judge_me_reviews_review_widget_e4CH49"
       ],
       "name": "Product Tabs",
       "settings": {
