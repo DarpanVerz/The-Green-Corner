@@ -3699,3 +3699,18 @@ background-color: #056839;
         padding-bottom: 0;
     }
 }
+
+@media screen and (max-width:768px){
+  
+.product-section .js-media-sublist .swiper-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    height: inherit;
+}
+.product-section .js-media-sublist .swiper-slide {
+    height: auto !important;
+    width: 25% !important;
+}
+
+}
