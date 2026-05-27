@@ -68,7 +68,7 @@
         "section_alignment": "center",
         "vertical_alignment": "center",
         "text_animation": true,
-        "image_size": "21/9",
+        "image_size": "large",
         "is_autoplay": false,
         "is_hover_stop_autoplay": false,
         "show_bullets": true,
