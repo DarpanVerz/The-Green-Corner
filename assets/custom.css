@@ -3715,4 +3715,8 @@ background-color: #056839;
 
 .main-slider-arrow-next, .main-slider-arrow-prev { top:40%; }
 
+.product .product__outer--center {
+    padding: 0px 15px;
+}
+
 }
