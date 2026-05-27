@@ -3593,7 +3593,6 @@ background-color: #056839;
     padding-right: 25px;
 }
 
-/* Default right arrow */
 .menu-opening summary.menu-drawer__menu-item:after {
     content: "\f105"; /* Font Awesome right arrow */
     font-family: "Font Awesome 6 Free";
@@ -3606,10 +3605,14 @@ background-color: #056839;
     transition: all 0.3s ease;
 }
 
-/* After click/open show down arrow */
 .menu-opening[open] > summary.menu-drawer__menu-item:after,
 .menu-opening details[open] > summary.menu-drawer__menu-item:after {
     content: "\f107"; /* Font Awesome down arrow */
+}
+
+.menu-drawer__navigation-container {
+    display: inline-block;
+    width: 100%;
 }
 
 
