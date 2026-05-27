@@ -3528,6 +3528,11 @@ background-color: #056839;
     background: none; 
   }
 
+.footer__list-social .list-social__link:hover {
+    background: #3f6b4f;
+    color: #fff;
+}
+
 @media only screen and (min-width: 1360px) {
   .card-information {
         min-height: 110px;
