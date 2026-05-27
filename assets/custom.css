@@ -3615,6 +3615,8 @@ background-color: #056839;
     width: 100%;
 }
 
+.signed-out-avatar .header__icon--account .button--primary { border-radius:50px; }
+
 
 @media screen and (min-width: 1200px) {
     .body-template-blog .slideshow-slide__text {
