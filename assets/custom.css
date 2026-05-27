@@ -3138,7 +3138,7 @@ text-align: left;
     border-radius: 40px;
 }
 
-.product__tags { display:none; }
+.product__tags { display:none !important; }
 
 @media(max-width:767px){
 .custom-sidebar { display: none; }
