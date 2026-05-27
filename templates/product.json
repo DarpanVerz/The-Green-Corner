@@ -179,6 +179,15 @@
     "custom_product_tabs_hDwqcH": {
       "type": "custom-product-tabs",
       "blocks": {
+        "judge_me_reviews_review_widget_e4CH49": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": true,
+            "empty_state": "other_products_reviews"
+          }
+        },
         "judge_me_reviews_cards_carousel_NBXCbe": {
           "type": "shopify://apps/judge-me-reviews/blocks/cards_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -221,6 +230,7 @@
         }
       },
       "block_order": [
+        "judge_me_reviews_review_widget_e4CH49",
         "judge_me_reviews_cards_carousel_NBXCbe"
       ],
       "name": "Product Tabs",
