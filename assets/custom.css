@@ -3618,6 +3618,7 @@ background-color: #056839;
     justify-content: left;
 }
 
+.mobile-facets__footer { background-color:rgb(245 244 244); }
 
 @media screen and (max-width:767px) {
 .product-markers .product-markers-for-mobile {
@@ -3637,6 +3638,10 @@ background-color: #056839;
 .article-template--overlay .article-template__info-wrapper {
   height: auto !important;
   color:#fff;
+}
+
+.collection-banner-content {
+    padding: 60px 0px 0px 0px;
 }
 
 }
