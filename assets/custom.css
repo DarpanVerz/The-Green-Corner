@@ -3138,6 +3138,8 @@ text-align: left;
     border-radius: 40px;
 }
 
+.product__tags { display:none; }
+
 @media(max-width:767px){
 .custom-sidebar { display: none; }
 }
