@@ -334,6 +334,12 @@
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
       }
+    },
+    "17798869274dc1203a": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -342,6 +348,7 @@
     "product-recommendations",
     "instagram_gallery_fMzAGe",
     "image_banner_thA7Ty",
-    "newsletter_yqWxmN"
+    "newsletter_yqWxmN",
+    "17798869274dc1203a"
   ]
 }
