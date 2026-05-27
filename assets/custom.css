@@ -3632,6 +3632,16 @@ background-color: #056839;
     border-radius: 10px;
     padding: 10px;
 }
+.article-template__header .breadcrumb {
+    margin-bottom: 4.8rem;
+    justify-content: left;
+    padding: 10px;
+}
+.article-template--overlay .article-template__info-wrapper {
+  height: auto;
+  color:#fff;
+}
+
 }
 
 
