@@ -276,19 +276,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-document.querySelectorAll('.tab-link').forEach(button => {
-  button.addEventListener('click', function () {
+<script>
+document.querySelectorAll('.tab-link').forEach(tab => {
+
+  tab.addEventListener('click', function () {
 
     setTimeout(() => {
 
-      if (window.jdgm) {
+      if (window.jdgm && typeof jdgm.loadBadges === 'function') {
+        jdgm.loadBadges();
+      }
+
+      if (window.jdgm && typeof jdgm.initializeWidgets === 'function') {
         jdgm.initializeWidgets();
       }
 
     }, 300);
 
   });
+
 });
+</script>
 
 </script>
 
