@@ -3436,8 +3436,6 @@ background-color: #056839;
     justify-content: flex-start
 }
 
-.body-template-product .breadcrumb { padding-left:150px; }
-
 .breadcrumb a {
     text-decoration: none;
     color: #9c9c9c;
@@ -3602,4 +3600,7 @@ background-color: #056839;
         background: rgb(var(--color-border)) !important;
         right: 28px;
     }
+
+    .body-template-product .breadcrumb { padding-left:150px; }
+    
 }
