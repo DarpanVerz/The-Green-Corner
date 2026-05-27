@@ -84,34 +84,24 @@
 
         {% if product.metafields.custom.reviews != blank %}
           <div class="tab-content" id="review">
-
   {% for block in section.blocks %}
-
     {% case block.type %}
-
       {% when 'review_app' %}
-
         <div
           class="jdgm-widget jdgm-review-widget"
           data-product-id="{{ product.id }}"
           data-product-title="{{ product.title | escape }}"
           data-auto-install="false">
         </div>
-
       {% when 'custom_liquid' %}
-
         <div class="custom-liquid-block">
           {{ block.settings.custom_liquid }}
         </div>
-
       {% when 'richtext' %}
-
         <div class="review-richtext">
           {{ block.settings.text }}
         </div>
-
       {% when 'image' %}
-
         <div class="review-image">
           {{
             block.settings.image
@@ -119,22 +109,14 @@
             | image_tag: loading: 'lazy'
           }}
         </div>
-
     {% endcase %}
-
   {% endfor %}
-
 </div>
         {% endif %}
-
       </div>
-
     </div>
-
     </div>
-
   </div>
-
 </section>
 
 <style>
