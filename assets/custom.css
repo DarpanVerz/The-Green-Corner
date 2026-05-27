@@ -2471,7 +2471,7 @@ button.hover-cart-btn:hover {
     display: inline-block;
 }
 
-.collection-product-card .card-wrapper, .products-slider__wrapper .card-wrapper {
+.collection-product-card .card-wrapper, .products-slider__wrapper .card-wrapper, .collection-tabs_card  .card-wrapper {
     border-radius: 34px;
     padding: 35px;
     background-color: #F7F7F7;
