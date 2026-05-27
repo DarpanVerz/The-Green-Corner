@@ -127,3 +127,19 @@
 .collection-tabs .text-right .collection-tabs-list {
   margin: 0 0 0 auto;
 }
+
+.card-wrapper:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.card-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--theme-bg-transparent);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
+    border-radius: 25px;
+}
