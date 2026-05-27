@@ -20,8 +20,8 @@
             "overlay_opacity": 20,
             "heading": "Slide heading",
             "text": "<p>Text from here describes your slide</p>",
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Read More",
+            "button_link": "#",
             "second_button_label": "",
             "second_button_link": "",
             "article": ""
