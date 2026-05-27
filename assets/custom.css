@@ -3553,6 +3553,8 @@ background-color: #056839;
     margin: 15px 0px !important;
 }
 
+.facets__product-count-text .small-text strong { color:#000; }
+
 @media screen and (min-width: 1200px) {
     .body-template-blog .slideshow-slide__text {
         margin-bottom: 0 !important;
