@@ -553,8 +553,7 @@ h5.footer-block__heading {
 }
 .footer-bottom-text { display:flex; }
 .footer-bottom-text img {     
-    width: 15px;
-    height: 13px;
+    height: 11px;
     margin-left: 5px;
     position: relative;
     top: 4px; }
