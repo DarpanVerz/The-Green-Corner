@@ -138,122 +138,84 @@
 											<span class="h3">{{ shop.name }}</span>
 										{%- endif -%}
 									</a>
+									
+{% if settings.social_twitter_link != blank
+	or settings.social_facebook_link != blank
+	or settings.social_pinterest_link != blank
+	or settings.social_instagram_link != blank
+	or settings.social_tiktok_link != blank
+	or settings.social_tumblr_link != blank
+	or settings.social_snapchat_link != blank
+	or settings.social_youtube_link != blank
+	or settings.social_vimeo_link != blank
+%}
+	<ul
+		class="footer__list-social list-unstyled list-social"
+		role="list"
+	>
+		
+		{%- if settings.social_twitter_link != blank -%}
+			<li class="list-social__item">
+				<a
+					href="{{ settings.social_twitter_link }}"
+					class="link footer--button link--text list-social__link"
+					aria-label="twitter"
+				>
+					<i class="fab fa-twitter social-fa-icon"></i>
+					<span class="social-svg-icon">
+						{%- render 'icon-twitter' -%}
+					</span>
+				</a>
+			</li>
+		{%- endif -%}
 
-									{% if settings.social_twitter_link != blank
-						or settings.social_facebook_link != blank
-						or settings.social_pinterest_link != blank
-						or settings.social_instagram_link != blank
-						or settings.social_tiktok_link != blank
-						or settings.social_tumblr_link != blank
-						or settings.social_snapchat_link != blank
-						or settings.social_youtube_link != blank
-						or settings.social_vimeo_link != blank
-					%}
-						<ul
-							class="footer__list-social list-unstyled list-social"
-							role="list"
-						>
-							{%- if settings.social_twitter_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_twitter_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="twitter"
-									>
-										{%- render 'icon-twitter' -%}
-									</a>
-								</li>
-							{%- endif -%}
-							{%- if settings.social_facebook_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_facebook_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="facebook"
-									>
-										{%- render 'icon-facebook' -%}
-									</a>
-								</li>
-							{%- endif -%}
-							{%- if settings.social_pinterest_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_pinterest_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="pinterest"
-									>
-										{%- render 'icon-pinterest' -%}
-									</a>
-								</li>
-							{%- endif -%}
-							{%- if settings.social_instagram_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_instagram_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="instagram"
-									>
-										{%- render 'icon-instagram' -%}
-									</a>
-								</li>
-							{%- endif -%}
-							{%- if settings.social_tiktok_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_tiktok_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="tiktok"
-									>
-										{%- render 'icon-tiktok' -%}
-									</a>
-								</li>
-							{%- endif -%}
-							{%- if settings.social_tumblr_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_tumblr_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="tumblr"
-									>
-										{%- render 'icon-tumblr' -%}
-									</a>
-								</li>
-							{%- endif -%}
-							{%- if settings.social_snapchat_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_snapchat_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="snapchat"
-									>
-										{%- render 'icon-snapchat' -%}
-									</a>
-								</li>
-							{%- endif -%}
-							{%- if settings.social_youtube_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_youtube_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="youtube"
-									>
-										{%- render 'icon-youtube' -%}
-									</a>
-								</li>
-							{%- endif -%}
-							{%- if settings.social_vimeo_link != blank -%}
-								<li class="list-social__item">
-									<a
-										href="{{ settings.social_vimeo_link }}"
-										class="link footer--button link--text list-social__link"
-										aria-label="vimeo"
-									>
-										{%- render 'icon-vimeo' -%}
-									</a>
-								</li>
-							{%- endif -%}
-						</ul>
-					{% endif %}
+		{%- if settings.social_facebook_link != blank -%}
+			<li class="list-social__item">
+				<a
+					href="{{ settings.social_facebook_link }}"
+					class="link footer--button link--text list-social__link"
+					aria-label="facebook"
+				>
+					<i class="fab fa-facebook-f social-fa-icon"></i>
+					<span class="social-svg-icon">
+						{%- render 'icon-facebook' -%}
+					</span>
+				</a>
+			</li>
+		{%- endif -%}
+
+		{%- if settings.social_instagram_link != blank -%}
+			<li class="list-social__item">
+				<a
+					href="{{ settings.social_instagram_link }}"
+					class="link footer--button link--text list-social__link"
+					aria-label="instagram"
+				>
+					<i class="fab fa-instagram social-fa-icon"></i>
+					<span class="social-svg-icon">
+						{%- render 'icon-instagram' -%}
+					</span>
+				</a>
+			</li>
+		{%- endif -%}
+
+		{%- if settings.social_youtube_link != blank -%}
+			<li class="list-social__item">
+				<a
+					href="{{ settings.social_youtube_link }}"
+					class="link footer--button link--text list-social__link"
+					aria-label="youtube"
+				>
+					<i class="fab fa-youtube social-fa-icon"></i>
+					<span class="social-svg-icon">
+						{%- render 'icon-youtube' -%}
+					</span>
+				</a>
+			</li>
+		{%- endif -%}
+
+	</ul>
+{% endif %}
 
 									{%- if block.settings.copyright_show != blank -%}
 										<div class="footer__copyright">
