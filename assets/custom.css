@@ -1741,7 +1741,7 @@ margin-left:30px;
 }
 
 .cta-section .image-banner__subheading {
-    color: var(--theme-text);
+    color: var(--theme-subtitle);
     font-size: 18px;
     letter-spacing: 6px;
     text-transform: uppercase;
