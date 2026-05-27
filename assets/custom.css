@@ -3638,7 +3638,7 @@ background-color: #056839;
     padding: 10px;
 }
 .article-template--overlay .article-template__info-wrapper {
-  height: auto;
+  height: auto !important;
   color:#fff;
 }
 
