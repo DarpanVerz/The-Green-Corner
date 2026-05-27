@@ -26,10 +26,10 @@
 				<span>{{ 'general.breadcrumbs.home' | t }} </span>
 			</a>
 			{% if template contains 'page' %}
-				<div class="breadcrumb__delimiter">{% render 'icon-breadcrumbs' %}</div>
+				<div class="breadcrumb__delimiter"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
 				<div>{{ page.title }}</div>
 			{% elsif template contains 'product' %}
-				<div class="breadcrumb__delimiter">{% render 'icon-breadcrumbs' %}</div>
+				<div class="breadcrumb__delimiter"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
 				{% if product.collections[0] %}
 					<span
 						><a href="{{ product.collections[0].url }}">
@@ -37,41 +37,41 @@
 						</a></span
 					>
 					<div class="breadcrumb__delimiter">
-						{% render 'icon-breadcrumbs' %}
+						<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 					</div>
 				{% endif %}
 				<div>{{ product.title }}</div>
 			{% elsif template contains 'collection' and collection.handle %}
-				<div class="breadcrumb__delimiter">{% render 'icon-breadcrumbs' %}</div>
+				<div class="breadcrumb__delimiter"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
 				{% if current_tags %}
 					{% capture url %}/collections/{{ collection.handle }}
           {% endcapture %}
 					{{ collection.title | link_to: url }}
 					<div class="breadcrumb__delimiter">
-						{% render 'icon-breadcrumbs' %}
+						<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 					</div>
 					<span>{{ current_tags | join: ' + ' }} </span>
 				{% endif %}
 				<div>{{ collection.title }}</div>
 			{% elsif template == 'blog' %}
-				<div class="breadcrumb__delimiter">{% render 'icon-breadcrumbs' %}</div>
+				<div class="breadcrumb__delimiter"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
 				{% if current_tags %}
 					<span>{{ blog.title | link_to: blog.url }}</span>
 					<div class="breadcrumb__delimiter">
-						{% render 'icon-breadcrumbs' %}
+						<i class="fa fa-angle-double-right" aria-hidden="true"></i>
 					</div>
 					<div>{{ current_tags | join: ' + ' }}</div>
 				{% else %}
 					<div>{{ blog.title }}</div>
 				{% endif %}
 			{% elsif template == 'customers/order' %}
-				<div class="breadcrumb__delimiter">{% render 'icon-breadcrumbs' %}</div>
+				<div class="breadcrumb__delimiter"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
 				<span>
 					<a href="{{ routes.account_profile_url }}">
 						{{- 'customer.account.title' | t }}
 					</a>
 				</span>
-				<div class="breadcrumb__delimiter">{% render 'icon-breadcrumbs' %}</div>
+				<div class="breadcrumb__delimiter"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
 				<div>{{ order.name }}</div>
 			{% elsif template == 'customers/addresses' %}
 				<div class="breadcrumb__delimiter">{% render 'icon-breadcrumbs' %}</div>
