@@ -340,6 +340,12 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "17798873861ef72d7b": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -349,6 +355,7 @@
     "instagram_gallery_fMzAGe",
     "image_banner_thA7Ty",
     "newsletter_yqWxmN",
-    "17798869274dc1203a"
+    "17798869274dc1203a",
+    "17798873861ef72d7b"
   ]
 }
