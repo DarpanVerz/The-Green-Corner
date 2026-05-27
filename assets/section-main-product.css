@@ -2147,7 +2147,7 @@ fieldset.product-form__input .product-form__group-name-legend {
   transition: all 0.3s ease;
   border:none;
   background:#272727;
-  width:95%;
+  width:100%;
 }
 
 .popular-products button.hover-cart-btn:hover { 
