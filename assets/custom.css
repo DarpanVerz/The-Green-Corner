@@ -2916,7 +2916,11 @@ text-align: left;
         gap: 1.4rem !important;
     }
 
-    .product .product__outer--center { }
+    .product .product__outer--center {
+      max-width: 1040px;
+      margin: 0 auto;
+      width: 100%;
+}
 
 }
 
