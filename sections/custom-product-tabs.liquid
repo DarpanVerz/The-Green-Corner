@@ -273,6 +273,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+document.querySelectorAll('.tab-link').forEach(button => {
+  button.addEventListener('click', function () {
+
+    setTimeout(() => {
+
+      if (window.jdgm) {
+        jdgm.initializeWidgets();
+      }
+
+    }, 300);
+
+  });
+});
+
 </script>
 
 {% schema %}
