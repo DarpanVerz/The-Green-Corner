@@ -3713,4 +3713,6 @@ background-color: #056839;
     width: 25% !important;
 }
 
+.main-slider-arrow-next, .main-slider-arrow-prev { top:20%; }
+
 }
