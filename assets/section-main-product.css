@@ -2162,6 +2162,10 @@ fieldset.product-form__input .product-form__group-name-legend {
     font-size: 14px;
 }
 
+.popular-products .card-wrapper:before .price--on-sale .price-item--regular {
+   text-decoration-color:rgb(255, 255, 255);
+}
+
 @media screen and (max-width: 767px) {
 
   .popular-products .custom-hover-buttons {
