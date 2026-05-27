@@ -3550,7 +3550,7 @@ background-color: #056839;
     .body-template-page-about .multicolumn .multicolumn-list__item:not(.hide_border):not(:last-child):before {
         content: "";
         height: 100%;
-        background: rgb(var(--color-border));
+        background: rgb(var(--color-border)) !important;
         right: 28px;
     }
 }
