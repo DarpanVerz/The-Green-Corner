@@ -83,10 +83,16 @@
         {% endif %}
 
         {% if product.metafields.custom.reviews != blank %}
-          <div class="tab-content" id="review">
-  
-  <div id="judgeme-product-reviews">
-    {{ product.metafields.judgeme.widget }}
+ <div class="tab-content" id="review">
+
+  <div
+    class="jdgm-widget jdgm-review-widget"
+    data-product-title="{{ product.title | escape }}"
+    data-id="{{ product.id }}"
+    data-auto-install="false">
+    
+    {{ product.description }}
+
   </div>
 
 </div>
