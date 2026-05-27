@@ -3436,7 +3436,7 @@ background-color: #056839;
     justify-content: flex-start
 }
 
-.breadcrumb { padding-left:150px; }
+.body-template-product .breadcrumb { padding-left:150px; }
 
 .breadcrumb a {
     text-decoration: none;
