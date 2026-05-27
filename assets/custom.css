@@ -2690,7 +2690,7 @@ button.hover-cart-btn:hover {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  padding: 0px 10px;
+  padding: 0;
   height: 30px;
 }
 
