@@ -2694,6 +2694,10 @@ button.hover-cart-btn:hover {
   height: 30px;
 }
 
+.facets-sorting {
+  gap:0;
+}
+
 .facet-filters {     
     display : flex;
     justify-content: center;
