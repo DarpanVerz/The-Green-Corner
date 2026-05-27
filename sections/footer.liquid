@@ -32,7 +32,7 @@
 									and block.settings.heading != blank
 								-%}
 									<div class="accordion {% if block.settings.mobile_menu_type == "static" %}static-footer-menu__accordion{% endif %}">
-										<details>
+										<details open>
 											<summary>
 												<h5 class="footer-block__heading">
 													{{ block.settings.heading | escape }}
