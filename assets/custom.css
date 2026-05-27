@@ -3533,6 +3533,18 @@ background-color: #056839;
     color: #fff;
 }
 
+.rte li, .rte p {
+    font-size: 1.4rem;
+}
+.rte p {
+    line-height: 24px;
+}
+.rte a:hover {
+    color: #05693a;
+    font-weight: 500;
+}
+
+
 @media only screen and (min-width: 1360px) {
   .card-information {
         min-height: 110px;
