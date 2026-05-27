@@ -2363,7 +2363,8 @@ button.hover-cart-btn {
   border:none;
   background:#fff;
   width:100%;
-  color:var(--theme-bg); 
+  color:var(--theme-bg);
+  padding:0; 
 }
 
 button.hover-cart-btn:hover { 
