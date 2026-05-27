@@ -3653,6 +3653,10 @@ background-color: #056839;
 }
 }
 
+@media screen and (max-width:991px){
+  .faq-section:after { display:none; }
+}
+
 @media screen and (min-width: 1100px) {
     .body-template-page-about .multicolumn .multicolumn-list__item:not(.hide_border):not(:last-child):before {
         content: "";
