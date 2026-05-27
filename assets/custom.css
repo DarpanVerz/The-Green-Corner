@@ -2926,10 +2926,10 @@ text-align: left;
 
 @media (min-width: 1600px) {
     .product .product__outer--center {
-    margin: 80px auto 0 350px !important;
+    margin: 80px auto 0 300px !important;
 }
     .body-template-product .breadcrumb {
-        padding-left: 350px;
+        padding-left: 300px !important;
     }
 }
 
