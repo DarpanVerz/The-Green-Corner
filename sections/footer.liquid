@@ -31,7 +31,7 @@
 								{%- if block.type == 'link_list'
 									and block.settings.heading != blank
 								-%}
-									<div>
+									<div class="accordion {% if block.settings.mobile_menu_type == "static" %}static-footer-menu__accordion{% endif %}">
 										<details>
 											<summary>
 												<h5 class="footer-block__heading">
