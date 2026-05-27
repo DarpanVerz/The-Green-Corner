@@ -199,6 +199,26 @@
 			</li>
 		{%- endif -%}
 
+		{%- if settings.social_tiktok_link != blank -%}
+	<li class="list-social__item">
+		<a
+			href="{{ settings.social_tiktok_link }}"
+			class="link footer--button link--text list-social__link social-icon-wrapper"
+			aria-label="tiktok"
+		>
+
+			<!-- Font Awesome Icon -->
+			<i class="fab fa-tiktok social-fa-icon"></i>
+
+			<!-- SVG Fallback -->
+			<span class="social-svg-icon">
+				{%- render 'icon-tiktok' -%}
+			</span>
+
+		</a>
+	</li>
+{%- endif -%}
+
 		{%- if settings.social_twitter_link != blank -%}
 			<li class="list-social__item">
 				<a
