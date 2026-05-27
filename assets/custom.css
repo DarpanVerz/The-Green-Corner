@@ -3579,10 +3579,10 @@ background-color: #056839;
 }
 
 .account-button__avatar {
-    background: #ef9fa2;
-    margin-top: -8px;
-    color: #fff;
-    border: none;
+    background: #ef9fa2 !important;
+    margin-top: -8px !important;
+    color: #fff !important;
+    border: none !important;
 }
 
 @media screen and (min-width: 1200px) {
