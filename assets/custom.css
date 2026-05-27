@@ -2928,6 +2928,9 @@ text-align: left;
     .product .product__outer--center {
     margin: 80px auto 0 350px !important;
 }
+    .body-template-product .breadcrumb {
+        padding-left: 350px;
+    }
 }
 
 
