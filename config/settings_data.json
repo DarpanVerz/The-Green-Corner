@@ -233,11 +233,11 @@
           "colors_primary_button_background_hover": "#1e2630",
           "colors_secondary_button_labels": "#ffffff",
           "colors_secondary_button_labels_hover": "#ffffff",
-          "colors_secondary_button_background": "#ff4600",
+          "colors_secondary_button_background": "#ef9fa2",
           "colors_secondary_button_background_hover": "#837663",
           "colors_tertiary_button_labels": "#1f1f1f",
           "colors_tertiary_button_labels_hover": "#1f1f1f",
-          "colors_tertiary_button_background": "#ff4600",
+          "colors_tertiary_button_background": "#ef9fa2",
           "colors_tertiary_button_background_hover": "#efeee8",
           "colors_input_background": "#efeee8",
           "colors_input_border": "#efeee8",
@@ -245,7 +245,7 @@
           "colors_input_hover_background": "#efeee8",
           "colors_background_overlay": "#efeee8",
           "color_border": "#dcd9c5",
-          "color_accent": "#ff4600"
+          "color_accent": "#ef9fa2"
         }
       },
       "scheme-65649add-12be-4268-b1d0-b90b92b6f6ec": {
