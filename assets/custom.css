@@ -2915,11 +2915,9 @@ text-align: left;
     .product__media-list-wrapper {
         gap: 1.4rem !important;
     }
-
     .product .product__outer--center {
     margin: 80px auto 0 150px !important;
 }
-
 }
 
 .product__media-subitem .product__media { background:none; }
