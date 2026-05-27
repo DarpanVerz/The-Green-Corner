@@ -2509,7 +2509,9 @@ button.hover-cart-btn:hover {
 
 /*** Product Details ***/
 
-.product .product__outer--center { align-items: start !important; }
+.product .product__outer--center { align-items: start !important; 
+  margin: 80px auto 0 150px !important; 
+}
 .product__title__wrapper { align-items: start; justify-content: start !important; }
 .product .price { justify-content: left !important; }
 .product__text {
