@@ -3618,7 +3618,7 @@ background-color: #056839;
     justify-content: left;
 }
 
-.mobile-facets__footer { background-color:rgb(245 244 244); }
+.mobile-facets__footer { background-color:rgb(245 244 244) !important; }
 
 @media screen and (max-width:767px) {
 .product-markers .product-markers-for-mobile {
