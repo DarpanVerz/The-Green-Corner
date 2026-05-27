@@ -3702,6 +3702,11 @@ background-color: #056839;
         padding-top: 8rem;
         padding-bottom: 0;
     }
+
+    .header .header-mega-menu__collection-list .mega-menu__collection img {
+  width: 200px;
+}
+
 }
 
 @media screen and (max-width:768px){
