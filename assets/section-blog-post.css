@@ -195,7 +195,7 @@
 }
 .article-template__header .breadcrumb {
   margin-bottom: 4.8rem;
-  justify-content: center;
+  justify-content: left;
 }
 .article-template__header .breadcrumb span {
   letter-spacing: -0.02rem;
