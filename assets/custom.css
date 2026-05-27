@@ -3544,6 +3544,11 @@ background-color: #056839;
     font-weight: 500 !important;
 }
 
+.body-template-blog .slideshow-slide__title { 
+    text-align: center;
+    max-width: 100%;
+}
+
 
 @media only screen and (min-width: 1360px) {
   .card-information {
