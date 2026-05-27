@@ -2695,7 +2695,7 @@ button.hover-cart-btn:hover {
 }
 
 .facets-sorting {
-  gap:0;
+  gap:0 !important;
 }
 
 .facet-filters {     
