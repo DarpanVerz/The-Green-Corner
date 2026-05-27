@@ -3541,8 +3541,5 @@ background-color: #056839;
 }
 }
 
-@media only screen and (min-width: 1900px) {
-  .banner-content-wrapper:before { left: -13%; }
-}
 
 
