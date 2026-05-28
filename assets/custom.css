@@ -2239,6 +2239,10 @@ margin-left:30px;
   min-height: 430px;
 }
 
+.has-theme-bg.collection-product-card .card-wrapper::before {
+  background-color: #056839eb;
+}
+
 .card-wrapper::before {
   content: "";
   position: absolute;
@@ -2249,10 +2253,6 @@ margin-left:30px;
   transition: all 0.4s ease;
   z-index: 1;
   border-radius: 25px;
-}
-
-.has-theme-bg.collection-product-card .card-wrapper::before {
-  background-color: #056839eb;
 }
 
 .card-wrapper:hover::before {
