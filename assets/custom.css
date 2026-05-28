@@ -3749,3 +3749,6 @@ background-color: #056839;
 }
 
 }
+.cart__warnings .button {
+    border-radius:25px;
+}
