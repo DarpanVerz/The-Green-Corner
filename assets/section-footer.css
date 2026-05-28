@@ -551,14 +551,6 @@ h5.footer-block__heading {
         background: #EF9FA2;
 }
 
-.footer-bottom-left .footer-bottom-text {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex-wrap: nowrap !important;
-  width: 100% !important;
-}
-
 .footer-bottom-text img {     
     height: 10px;
     margin-left:0px;
