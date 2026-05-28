@@ -5707,7 +5707,7 @@ details[open] > .header__account-modal {
   display: none;
 }
 
-.custom-headeracc.header__account .account-button__avatar:before {
+.account-button__avatar:before {
     background: #ef9fa2 !important;
     margin-top: -8px !important;
     color: #fff !important;
