@@ -488,9 +488,9 @@ h5.footer-block__heading {
     flex-wrap: wrap;
 }
 
-.footer-bottom-text p {
-   margin: 0;
-  display: inline;
+.footer-bottom-left .footer-bottom-text p {
+  margin: 0 !important;
+  display: inline !important;
   color: #fff;
 }
 
