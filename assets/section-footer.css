@@ -491,6 +491,7 @@ h5.footer-block__heading {
 .footer-bottom-text p {
   margin: 0;
   white-space: nowrap;
+  color: #fff;
 }
 
 .footer-bottom-text a {
