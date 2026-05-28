@@ -2243,7 +2243,7 @@ margin-left:30px;
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #056839eb;
+  background: var(--theme-bg-transparent);
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
@@ -2252,7 +2252,7 @@ margin-left:30px;
 }
 
 .has-theme-bg.collection-product-card .card-wrapper::before {
-  background: var(--theme-bg-transparent);
+  background-color: #056839eb;
 }
 
 .card-wrapper:hover::before {
