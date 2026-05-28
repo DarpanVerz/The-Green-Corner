@@ -556,7 +556,7 @@ h5.footer-block__heading {
     height: 11px;
     margin-left: 5px;
     position: relative;
-    top: 4px; }
+   }
 
     .footer-bottom-right {
     display: flex;
@@ -624,10 +624,20 @@ h5.footer-block__heading {
 
 
 
-.footer-bottom-text a img{
+.verz-logo-link{
+  display: inline-flex;
+  align-items: center;
   transition: all 0.3s ease;
 }
 
-.footer-bottom-text a:hover{
+.verz-logo-link img{
+  transition: all 0.3s ease;
+}
+
+.verz-logo-link:hover{
   color: #056839;
+}
+
+.verz-logo-link:hover img{
+  filter: brightness(0) saturate(100%) invert(28%) sepia(67%) saturate(621%) hue-rotate(108deg) brightness(95%) contrast(101%);
 }
