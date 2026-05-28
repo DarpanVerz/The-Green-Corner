@@ -490,7 +490,6 @@ h5.footer-block__heading {
 
 .footer-bottom-text p {
   margin: 0;
-  white-space: nowrap;
   color: #fff;
 }
 
@@ -552,10 +551,10 @@ h5.footer-block__heading {
 }
 
 .footer-bottom-text {
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .footer-bottom-text img {     
