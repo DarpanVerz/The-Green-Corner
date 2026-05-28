@@ -454,8 +454,8 @@
     {{ 'templates.cart.cart' | t }}
   </span>
 
-  <span class="cart-count-bubble {% if cart.item_count > 0 %}show-count{% endif %}">
-  <span aria-hidden="true">{{ cart.item_count }}</span>
+<span class="cart-count-bubble {% if cart.item_count > 0 %}show-count{% endif %}">
+  <span aria-hidden="true" id="cart-count">{{ cart.item_count }}</span>
 </span>
 
 </a>
