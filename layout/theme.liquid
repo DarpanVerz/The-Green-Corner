@@ -432,47 +432,30 @@ window.addEventListener('load', function () {
 </script>
 
 <script>
-console.log(document.querySelectorAll('.cart-count-bubble'));
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-  function updateCartBubble() {
+  document.addEventListener("avada:cart:updated", function () {
 
     fetch('/cart.js')
-      .then(response => response.json())
+      .then(res => res.json())
       .then(cart => {
 
-        const cartBubble = document.querySelector('#cart-icon-bubble .cart-count-bubble');
+        const bubble = document.querySelector('#cart-icon-bubble .cart-count-bubble');
 
-        if (!cartBubble) return;
+        if (!bubble) return;
 
-        cartBubble.innerHTML = `
+        bubble.innerHTML = `
           <span aria-hidden="true">${cart.item_count}</span>
         `;
 
         if (cart.item_count > 0) {
-          cartBubble.classList.add('show-count');
+          bubble.classList.add('show-count');
         } else {
-          cartBubble.classList.remove('show-count');
+          bubble.classList.remove('show-count');
         }
 
       });
 
-  }
-
-  /*
-    Shopify themes dispatch this event
-    after ajax cart update
-  */
-  document.addEventListener('ajaxProduct:added', function () {
-    updateCartBubble();
-  });
-
-  document.addEventListener('cart:refresh', function () {
-    updateCartBubble();
-  });
-
-  document.addEventListener('cart:updated', function () {
-    updateCartBubble();
   });
 
 });
