@@ -3678,6 +3678,9 @@ background-color: #056839;
     top: 35%;
     transform: translateY(-50%);
 }
+
+.featured-products-prev { left: -44px; }
+
 }
 
 
