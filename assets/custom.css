@@ -2237,9 +2237,9 @@ margin-left:30px;
 }
 }
 
-@media( max-width:425px){
+@media( max-width:320px){
   .collapsible-content__title-box {
-    max-width: 300px;
+    max-width: 200px;
 }
 }
 
