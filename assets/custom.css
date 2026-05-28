@@ -523,7 +523,8 @@ h1, .h1 {
 }
 
 .header .mega-menu-list li a:hover {
-    color:#000;
+    color: #056839;
+    font-weight:500px;
 }
 
 .header .mega-menu-list li a::after {
