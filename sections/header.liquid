@@ -443,18 +443,22 @@
 						{%- if shop.customer_accounts_enabled and section.settings.enable_account_btn -%}
 							{% render 'header-account' %}
 						{%- endif -%}
-							<a href="{{ routes.cart_url }}" class="{% if request.page_type != 'cart' %}header__cart{% endif %} {%- if cart.item_count < 1 -%}header__cart--empt	{% endif %} header__icon header__icon--cart focus-inset {% if section.settings.show_cart_item_count %} show-cart-item-count {% endif %}" id="cart-icon-bubble" aria-label="{{ 'accessibility.cart_link' | t }}">
-								{%- render 'icon-cart' -%}
-								<span class="header__cart-text hidden">{{ 'templates.cart.cart' | t }}</span>
-								<span class="cart-count-bubble {% if cart.item_count > 0 %}show-count{% endif %}">
-								{% if cart.item_count < 100 %}
-									<span aria-hidden="true">{{ cart.item_count }}</span>
-								{% endif %}
-								<span class="visually-hidden">
-									{{ cart.item_count }} items
-								</span>
-								</span>
-							</a>
+							<a href="{{ routes.cart_url }}"
+   class="{% if request.page_type != 'cart' %}header__cart{% endif %} {% if cart.item_count < 1 %}header__cart--empty{% endif %} header__icon header__icon--cart focus-inset"
+   id="cart-icon-bubble"
+   aria-label="{{ 'accessibility.cart_link' | t }}">
+
+  {% render 'icon-cart' %}
+
+  <span class="header__cart-text hidden">
+    {{ 'templates.cart.cart' | t }}
+  </span>
+
+  <span class="cart-count-bubble {% if cart.item_count > 0 %}show-count{% endif %}">
+    <span aria-hidden="true">{{ cart.item_count }}</span>
+  </span>
+
+</a>
 					</div>
 				</div>
 			</div>
