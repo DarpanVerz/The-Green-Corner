@@ -2232,7 +2232,12 @@ margin-left:30px;
   .collapsible-content-wrapper.custom-collapsible {
     margin: 0 !important;
 }
+.collapsible-content__title-box {
+    max-width: 500px;
 }
+}
+
+
 
 .card-wrapper {
   position: relative;
