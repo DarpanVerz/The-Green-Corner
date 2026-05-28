@@ -59,7 +59,7 @@
     <div class="menu-drawer__utility-links">
       {%- if customer -%}
         <div class="menu-drawer__utility-account">
-          <div class="menu-drawer__utility-account-header ss">
+          <div class="menu-drawer__utility-account-header">
             <a class="menu-drawer__utility-name" href="{{ routes.account_profile_url }}">{{ customer.name }}</a>
             <a class="menu-drawer__utility-logout" href="{{ routes.account_logout_url }}">{{ 'customer.log_out' | t }}</a>
           </div>
