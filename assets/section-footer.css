@@ -622,16 +622,12 @@ h5.footer-block__heading {
     stroke: #fff !important;
 }
 
-.footer-bottom-text{
-  display: inline-flex;
-  align-items: center;
-  transition: all 0.3s ease;
-}
+
 
 .footer-bottom-text a img{
   transition: all 0.3s ease;
 }
 
-.footer-bottom-text a img:hover{
+.footer-bottom-text a:hover{
   color: #056839;
 }
