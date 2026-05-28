@@ -489,7 +489,8 @@ h5.footer-block__heading {
 }
 
 .footer-bottom-text p {
-  margin: 0;
+   margin: 0;
+  display: inline;
   color: #fff;
 }
 
@@ -551,10 +552,10 @@ h5.footer-block__heading {
 }
 
 .footer-bottom-text {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .footer-bottom-text img {     
@@ -630,13 +631,15 @@ h5.footer-block__heading {
 
 
 .verz-logo-link{
-   display: inline-flex;
+  display: inline-flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .verz-logo-link img{
- max-width: 55px;
+  max-width: 55px;
   height: auto;
+  display: block;
 }
 
 .verz-logo-link:hover{
@@ -647,25 +650,23 @@ h5.footer-block__heading {
   filter: brightness(0) saturate(100%) invert(28%) sepia(67%) saturate(621%) hue-rotate(108deg) brightness(95%) contrast(101%);
 }
 
-
-
-
-
 /* Mobile Responsive Fix */
 @media screen and (max-width: 767px) {
  .footer-bottom-text {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+    flex-wrap: nowrap;
+    gap: 4px;
   }
 
   .footer-bottom-text p {
+    margin: 0;
     display: inline;
+    font-size: 12px;
   }
 
-  .verz-logo-link {
-    display: inline-flex;
-    vertical-align: middle;
+  .verz-logo-link img {
+    max-width: 45px;
   }
 }
