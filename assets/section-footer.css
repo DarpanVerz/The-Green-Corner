@@ -670,3 +670,52 @@ h5.footer-block__heading {
     max-width: 45px;
   }
 }
+
+
+
+.footer-bottom-left .footer-bottom-text {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+}
+
+.footer-bottom-left .footer-bottom-text p {
+  margin: 0 !important;
+  display: inline !important;
+}
+
+.footer-bottom-left .verz-logo-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+}
+
+.footer-bottom-left .verz-logo-link img {
+  width: 55px !important;
+  height: auto !important;
+  display: block !important;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+  .footer-bottom-left .footer-bottom-text {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .footer-bottom-left .footer-bottom-text p {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+  }
+
+  .footer-bottom-left .verz-logo-link img {
+    width: 45px !important;
+  }
+}
