@@ -628,10 +628,10 @@ h5.footer-block__heading {
   transition: all 0.3s ease;
 }
 
-.footer-bottom-text img{
+.footer-bottom-text a img{
   transition: all 0.3s ease;
 }
 
-.footer-bottom-text img:hover{
+.footer-bottom-text a img:hover{
   color: #056839;
 }
