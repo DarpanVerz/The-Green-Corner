@@ -440,12 +440,9 @@
 							</div>
 							{% endif %}
 
-						{% comment %} account start {% endcomment %}
 						{%- if shop.customer_accounts_enabled and section.settings.enable_account_btn -%}
 							{% render 'header-account' %}
 						{%- endif -%}
-						{% comment %} account end {% endcomment %}
-						{% comment %} cart start {% endcomment %}
 							<a href="{{ routes.cart_url }}" class="{% if request.page_type != 'cart' %}header__cart{% endif %} {%- if cart.item_count < 1 -%}header__cart--empt	{% endif %} header__icon header__icon--cart focus-inset {% if section.settings.show_cart_item_count %} show-cart-item-count {% endif %}" id="cart-icon-bubble" aria-label="{{ 'accessibility.cart_link' | t }}">
 								{%- render 'icon-cart' -%}
 								<span class="header__cart-text hidden">{{ 'templates.cart.cart' | t }}</span>
@@ -456,7 +453,6 @@
 									<span class="visually-hidden hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
 								</span>
 							</a>
-						{% comment %} cart end {% endcomment %}
 					</div>
 				</div>
 			</div>
