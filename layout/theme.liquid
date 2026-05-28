@@ -431,5 +431,58 @@ window.addEventListener('load', function () {
 });
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  document.addEventListener('cart:updated', updateCartBubble);
+
+  function updateCartBubble() {
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(cart => {
+
+        const bubble = document.querySelector('.cart-count-bubble');
+        const cartIcon = document.querySelector('#cart-icon-bubble');
+
+        if (!bubble) return;
+
+        if (cart.item_count > 0) {
+
+          bubble.classList.add('show-count');
+
+          bubble.innerHTML = `
+            <span aria-hidden="true">${cart.item_count}</span>
+            <span class="visually-hidden">${cart.item_count} items</span>
+          `;
+
+          cartIcon.classList.remove('header__cart--empty');
+
+        } else {
+
+          bubble.classList.remove('show-count');
+
+          bubble.innerHTML = '';
+
+          cartIcon.classList.add('header__cart--empty');
+        }
+      });
+  }
+
+  // Detect add to cart form submit
+  document.querySelectorAll('form[action="/cart/add"]').forEach(form => {
+
+    form.addEventListener('submit', function () {
+
+      setTimeout(() => {
+        updateCartBubble();
+      }, 700);
+
+    });
+
+  });
+
+});
+</script>
+
 	</body>
 </html>
