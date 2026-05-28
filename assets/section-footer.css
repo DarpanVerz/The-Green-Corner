@@ -646,30 +646,6 @@ h5.footer-block__heading {
 
 
 
-
-.footer-bottom-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.footer-bottom-text p {
-  margin: 0;
-}
-
-.verz-logo-link {
-  display: inline-flex;
-  align-items: center;
-}
-
-.verz-logo-link img {
-  max-width: 60px;
-  height: auto;
-}
-
 /* Mobile Responsive Fix */
 @media screen and (max-width: 767px) {
   .footer-bottom-text {
