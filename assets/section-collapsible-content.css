@@ -55,7 +55,7 @@
 }
 .collapsible-content-block__heading {
   margin: 0;
-  padding-right: 2rem;
+  /* padding-right: 2rem; */
 }
 @media screen and (min-width: 1200px) {
   .collapsible-content-block__heading {
