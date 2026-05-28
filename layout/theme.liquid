@@ -432,38 +432,46 @@ window.addEventListener('load', function () {
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
 
-  document.addEventListener('click', function(e){
+  function updateCartBubble() {
 
-    const addBtn = e.target.closest('[name="add"]');
+    fetch('/cart.js')
+      .then(response => response.json())
+      .then(cart => {
 
-    if (!addBtn) return;
+        const cartBubble = document.querySelector('#cart-icon-bubble .cart-count-bubble');
 
-    setTimeout(() => {
+        if (!cartBubble) return;
 
-      fetch('/cart.js')
-        .then(res => res.json())
-        .then(cart => {
+        cartBubble.innerHTML = `
+          <span aria-hidden="true">${cart.item_count}</span>
+        `;
 
-          const bubble = document.querySelector('#cart-icon-bubble .cart-count-bubble');
+        if (cart.item_count > 0) {
+          cartBubble.classList.add('show-count');
+        } else {
+          cartBubble.classList.remove('show-count');
+        }
 
-          if (!bubble) return;
+      });
 
-          bubble.innerHTML = `
-            <span aria-hidden="true">${cart.item_count}</span>
-          `;
+  }
 
-          if(cart.item_count > 0){
-            bubble.classList.add('show-count');
-          } else {
-            bubble.classList.remove('show-count');
-          }
+  /*
+    Shopify themes dispatch this event
+    after ajax cart update
+  */
+  document.addEventListener('ajaxProduct:added', function () {
+    updateCartBubble();
+  });
 
-        });
+  document.addEventListener('cart:refresh', function () {
+    updateCartBubble();
+  });
 
-    }, 1500);
-
+  document.addEventListener('cart:updated', function () {
+    updateCartBubble();
   });
 
 });
