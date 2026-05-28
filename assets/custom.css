@@ -1576,7 +1576,6 @@ margin-left:30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
   cursor: pointer;
   padding: 0rem;
 }
