@@ -630,14 +630,12 @@ h5.footer-block__heading {
 
 
 .verz-logo-link{
-  display: inline-flex;
+   display: inline-flex;
   align-items: center;
-  line-height: 0;
 }
 
 .verz-logo-link img{
-   display: block;
-  max-width: 55px;
+ max-width: 55px;
   height: auto;
 }
 
@@ -656,16 +654,18 @@ h5.footer-block__heading {
 /* Mobile Responsive Fix */
 @media screen and (max-width: 767px) {
  .footer-bottom-text {
-    flex-direction: column;
-    gap: 2px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
   .footer-bottom-text p {
-    font-size: 12px;
-    white-space: normal;
+    display: inline;
   }
 
   .verz-logo-link {
-    margin-top: -2px;
+    display: inline-flex;
+    vertical-align: middle;
   }
 }
