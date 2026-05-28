@@ -551,7 +551,15 @@ h5.footer-block__heading {
         padding: 1rem 0;
         background: #EF9FA2;
 }
-.footer-bottom-text { display:flex; }
+
+.footer-bottom-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+
 .footer-bottom-text img {     
     height: 11px;
     margin-left: 5px;
