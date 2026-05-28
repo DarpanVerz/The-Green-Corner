@@ -489,10 +489,8 @@ h5.footer-block__heading {
 }
 
 .footer-bottom-text p {
-    margin: 0;
-    color: #fff;
-    font-size: 13px;
-    line-height: 1.5;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .footer-bottom-text a {
@@ -635,11 +633,13 @@ h5.footer-block__heading {
 .verz-logo-link{
   display: inline-flex;
   align-items: center;
-  transition: all 0.3s ease;
+  line-height: 0;
 }
 
 .verz-logo-link img{
-  transition: all 0.3s ease;
+   display: block;
+  max-width: 55px;
+  height: auto;
 }
 
 .verz-logo-link:hover{
@@ -656,12 +656,17 @@ h5.footer-block__heading {
 
 /* Mobile Responsive Fix */
 @media screen and (max-width: 767px) {
-  .footer-bottom-text {
+ .footer-bottom-text {
     flex-direction: column;
-    gap: 4px;
+    gap: 2px;
   }
 
   .footer-bottom-text p {
-    white-space: nowrap;
+    font-size: 12px;
+    white-space: normal;
+  }
+
+  .verz-logo-link {
+    margin-top: -2px;
   }
 }
