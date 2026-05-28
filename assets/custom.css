@@ -2237,7 +2237,11 @@ margin-left:30px;
 }
 }
 
-@media( max-width:425px){ }
+@media( max-width:425px){
+  .collapsible-content__title-box {
+    max-width: 350px;
+}
+}
 
 .card-wrapper {
   position: relative;
