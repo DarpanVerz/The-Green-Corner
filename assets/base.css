@@ -5707,6 +5707,8 @@ details[open] > .header__account-modal {
   display: none;
 }
 
+.custom-headeracc.header__account { margin-top:-6px; }
+
 .account-button__avatar:before {
     background: #ef9fa2 !important;
     margin-top: -8px !important;
