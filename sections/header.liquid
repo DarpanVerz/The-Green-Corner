@@ -443,22 +443,16 @@
 						{%- if shop.customer_accounts_enabled and section.settings.enable_account_btn -%}
 							{% render 'header-account' %}
 						{%- endif -%}
-							<a href="{{ routes.cart_url }}"
-   class="{% if request.page_type != 'cart' %}header__cart{% endif %} {% if cart.item_count < 1 %}header__cart--empty{% endif %} header__icon header__icon--cart focus-inset"
-   id="cart-icon-bubble"
-   aria-label="{{ 'accessibility.cart_link' | t }}">
-
-  {% render 'icon-cart' %}
-
-  <span class="header__cart-text hidden">
-    {{ 'templates.cart.cart' | t }}
-  </span>
-
-<span class="cart-count-bubble {% if cart.item_count > 0 %}show-count{% endif %}">
-  <span aria-hidden="true" id="cart-count">{{ cart.item_count }}</span>
-</span>
-
-</a>
+							<a href="{{ routes.cart_url }}" class="{% if request.page_type != 'cart' %}header__cart{% endif %} {%- if cart.item_count < 1 -%}header__cart--empt	{% endif %} header__icon header__icon--cart focus-inset {% if section.settings.show_cart_item_count %} show-cart-item-count {% endif %}" id="cart-icon-bubble" aria-label="{{ 'accessibility.cart_link' | t }}">
+								{%- render 'icon-cart' -%}
+								<span class="header__cart-text hidden">{{ 'templates.cart.cart' | t }}</span>
+								<span class="cart-count-bubble {% if cart.item_count > 0 %}show-count{% endif %}">
+									{%- if cart.item_count < 100 -%}
+										<span aria-hidden="true">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+									{%- endif -%}
+									<span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+								</span>
+							</a>
 					</div>
 				</div>
 			</div>
@@ -648,54 +642,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	//});
 
 </script>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-
-  async function updateCartCount() {
-
-    try {
-
-      const response = await fetch('/cart.js');
-      const cart = await response.json();
-
-      const cartCount = document.getElementById('cart-count');
-
-      if (cartCount) {
-        cartCount.textContent = cart.item_count;
-      }
-
-    } catch (e) {
-      console.log('Cart update error');
-    }
-
-  }
-
-  /*
-    Detect ALL ajax requests
-    from theme/apps/cart drawer
-  */
-
-  const originalFetch = window.fetch;
-
-  window.fetch = async (...args) => {
-
-    const response = await originalFetch(...args);
-
-    if (args[0].includes('/cart/add')) {
-
-      setTimeout(() => {
-        updateCartCount();
-      }, 500);
-
-    }
-
-    return response;
-  };
-
-});
-</script>
-
 
 {%- if request.page_type == 'index' -%}
 	{% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
