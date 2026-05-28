@@ -5706,3 +5706,10 @@ details[open] > .header__account-modal {
 .products-slider .products-slider_navigation .swiper-button.swiper-button-disabled + .swiper-button-disabled {
   display: none;
 }
+
+.custom-headeracc.header__account .account-button__avatar:before {
+    background: #ef9fa2 !important;
+    margin-top: -8px !important;
+    color: #fff !important;
+    border: none !important;
+}
