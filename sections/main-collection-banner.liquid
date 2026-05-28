@@ -73,7 +73,7 @@ endif
 	<div class="collection-banner__body color-{{ section.settings.color_scheme }} background {{ overlay_enable }} {{ show_collection_image }} ">
 	  <div class="{% if section.settings.section_size == 'container' %}container-small{% else %}container{% endif %}">
 		<div class="collection-banner__wrapper section-{{ section.id }}-padding">
-			{%- if show_img and collection_image != blank -%}
+			{%- if collection_image != blank -%}
 				<div class="collection-banner__img">
 					{{
 						collection_image
