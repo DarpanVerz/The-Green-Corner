@@ -556,7 +556,6 @@ h5.footer-block__heading {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
-  gap: 5px;
 }
 
 .footer-bottom-text img {     
