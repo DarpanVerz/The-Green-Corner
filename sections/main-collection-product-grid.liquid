@@ -183,13 +183,11 @@
 	<h3 class="sidebar-title">Category</h3>
 
 	<ul class="custom-category-menu">
-{% comment %} 
 		<li>
 			<a href="/collections/all" class="{% if collection.handle == 'all' %}active{% endif %}">
 				All
 			</a>
-		</li> {% endcomment %}
-
+		</li>
   {% for collection_item in collections %}
   {% unless collection_item.handle == 'frontpage' %}
     <li>
