@@ -31,9 +31,9 @@
 	endcase
 
 	assign collection_image = collection.image
-	if collection_image == blank and collection.id == blank
-		assign collection_image = section.settings.image_products
-	endif
+	if collection_image == blank
+	assign collection_image = section.settings.image_products
+endif
 	assign image_height = collection_image.width | divided_by: collection_image.aspect_ratio
 	assign adapt_height = 1 | divided_by: collection_image.aspect_ratio | times: 100 | append: '%'
 	if image_size == 'adapt'
