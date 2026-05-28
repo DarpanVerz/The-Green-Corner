@@ -1646,7 +1646,7 @@ margin-left:30px;
     display:none;
   }
   .faq-section:after {
-  display:none;
+  display:none !important;
   }
 }
 
