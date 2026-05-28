@@ -637,10 +637,10 @@ h5.footer-block__heading {
   flex-shrink: 0 !important;
 }
 
-.verz-logo-link img{
-  max-width: 55px;
-  height: auto;
-  display: block;
+.footer-bottom-left .verz-logo-link img {
+  width: 55px !important;
+  height: auto !important;
+  display: block !important;
 }
 
 .verz-logo-link:hover{
