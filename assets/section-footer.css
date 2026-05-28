@@ -631,10 +631,10 @@ h5.footer-block__heading {
 
 
 
-.verz-logo-link{
-  display: inline-flex;
-  align-items: center;
-  flex-shrink: 0;
+.footer-bottom-left .verz-logo-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
 }
 
 .verz-logo-link img{
