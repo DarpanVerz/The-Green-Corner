@@ -622,20 +622,16 @@ h5.footer-block__heading {
     stroke: #fff !important;
 }
 
-.verz-logo-link{
+.footer-bottom-text{
   display: inline-flex;
   align-items: center;
   transition: all 0.3s ease;
 }
 
-.verz-logo-link img{
+.footer-bottom-text img{
   transition: all 0.3s ease;
 }
 
-.verz-logo-link:hover{
+.footer-bottom-text img:hover{
   color: #056839;
-}
-
-.verz-logo-link:hover img{
-  filter: brightness(0) saturate(100%) invert(28%) sepia(67%) saturate(621%) hue-rotate(108deg) brightness(95%) contrast(101%);
 }
