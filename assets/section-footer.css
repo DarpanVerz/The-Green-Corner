@@ -641,3 +641,43 @@ h5.footer-block__heading {
 .verz-logo-link:hover img{
   filter: brightness(0) saturate(100%) invert(28%) sepia(67%) saturate(621%) hue-rotate(108deg) brightness(95%) contrast(101%);
 }
+
+
+
+
+
+
+.footer-bottom-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-bottom-text p {
+  margin: 0;
+}
+
+.verz-logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.verz-logo-link img {
+  max-width: 60px;
+  height: auto;
+}
+
+/* Mobile Responsive Fix */
+@media screen and (max-width: 767px) {
+  .footer-bottom-text {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .footer-bottom-text p {
+    white-space: nowrap;
+  }
+}
