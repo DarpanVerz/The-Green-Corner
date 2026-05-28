@@ -3589,7 +3589,7 @@ background-color: #056839;
     padding: 50px 0px;
 }
 
-.account-button__avatar:before {
+.custom-headeracc.header__account .account-button__avatar:before {
     background: #ef9fa2 !important;
     margin-top: -8px !important;
     color: #fff !important;
