@@ -32,9 +32,11 @@
 
 	assign collection_image = collection.image
 
-	if collection_image == blank
-		assign collection_image = section.settings.image_products
-	endif
+if collection.handle == 'all'
+	assign collection_image = section.settings.image_products
+elsif collection_image == blank
+	assign collection_image = section.settings.image_products
+endif
 
 	assign image_height = collection_image.width | divided_by: collection_image.aspect_ratio
 	assign adapt_height = 1 | divided_by: collection_image.aspect_ratio | times: 100 | append: '%'
