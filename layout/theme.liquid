@@ -432,52 +432,45 @@ window.addEventListener('load', function () {
 </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", () => {
 
-  document.addEventListener('cart:updated', updateCartBubble);
+  function updateCartCount() {
 
-  function updateCartBubble() {
     fetch('/cart.js')
-      .then(response => response.json())
+      .then(res => res.json())
       .then(cart => {
 
         const bubble = document.querySelector('.cart-count-bubble');
-        const cartIcon = document.querySelector('#cart-icon-bubble');
+        const cartLink = document.querySelector('#cart-icon-bubble');
 
         if (!bubble) return;
 
+        bubble.innerHTML = `<span aria-hidden="true">${cart.item_count}</span>`;
+
         if (cart.item_count > 0) {
-
           bubble.classList.add('show-count');
-
-          bubble.innerHTML = `
-            <span aria-hidden="true">${cart.item_count}</span>
-            <span class="visually-hidden">${cart.item_count} items</span>
-          `;
-
-          cartIcon.classList.remove('header__cart--empty');
-
+          cartLink.classList.remove('header__cart--empty');
         } else {
-
           bubble.classList.remove('show-count');
-
-          bubble.innerHTML = '';
-
-          cartIcon.classList.add('header__cart--empty');
+          cartLink.classList.add('header__cart--empty');
         }
+
       });
+
   }
 
-  // Detect add to cart form submit
-  document.querySelectorAll('form[action="/cart/add"]').forEach(form => {
+  // Shopify AJAX add to cart detection
+  document.body.addEventListener('click', function(e) {
 
-    form.addEventListener('submit', function () {
+    const addToCartBtn = e.target.closest('[name="add"]');
+
+    if (addToCartBtn) {
 
       setTimeout(() => {
-        updateCartBubble();
-      }, 700);
+        updateCartCount();
+      }, 1000);
 
-    });
+    }
 
   });
 
