@@ -36,7 +36,7 @@
 @media screen and (min-width: 990px) {
   .blockquote__info-wrapper {
     padding: 4rem 0;
-    flex: 0 0 40%;
+    flex: 0 0 40% !important;
     max-width: 40%;
     order: unset;
   }
