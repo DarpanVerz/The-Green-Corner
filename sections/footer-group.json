@@ -27,7 +27,7 @@
           "settings": {
             "heading": "Sitemap",
             "menu": "sitemap",
-            "mobile_menu_type": "dropdown"
+            "mobile_menu_type": "static"
           }
         },
         "footer-2": {
