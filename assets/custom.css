@@ -3948,7 +3948,7 @@ button.hover-cart-btn {
 }
 
 button.hover-cart-btn:hover { 
-  background:var(--theme-bg); 
+  background:#000; 
   cursor:pointer;
-  color: var(--theme-text);
+  color: #fff;
 }
