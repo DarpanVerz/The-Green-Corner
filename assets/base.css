@@ -5381,6 +5381,7 @@ details[open] > .header__account-modal {
 .popup-main .newsletter-form .button {
   max-width: 100%;
   min-width: 12rem;
+  border-radius:50px;
 }
 .popup-main .list-social {
   margin-top: 1.2rem;
