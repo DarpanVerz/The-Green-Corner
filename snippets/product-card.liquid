@@ -1,9 +1,9 @@
-{% assign current_product_type = product_card_product.type | downcase %}
+{% assign current_product_type = product_card_product.type | downcase | strip %}
 {% assign theme_color = '#000000' %}
 
-{% for item in shop.metaobjects.product_type_theme.values %}
+{% for item in shop.metaobjects.custom.color_themes.values %}
 
-  {% assign mapped_type = item.product_type.value | downcase %}
+  {% assign mapped_type = item.product_type.value | downcase | strip %}
 
   {% if mapped_type == current_product_type %}
     {% assign theme_color = item.theme_color.value %}
