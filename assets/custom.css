@@ -2398,29 +2398,6 @@ margin-left:30px;
   color: rgba(255,255,255,0.6) !important;
 }
 
-button.hover-cart-btn {
-  height: 56px !important;
-  border-radius: 50px !important;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 300;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border:none;
-  background:#fff;
-  width:100%;
-  color:var(--theme-bg);
-  padding:0; 
-}
-
-button.hover-cart-btn:hover { 
-  background:var(--theme-bg); 
-  cursor:pointer;
-  color: var(--theme-text);
-}
-
 .card__badge .color-badge {
     color: #E94242;
     font-weight: 600;
@@ -3941,4 +3918,30 @@ background-color: #056839;
     height: auto !important;
   }
 
+}
+
+
+
+
+button.hover-cart-btn {
+  height: 56px !important;
+  border-radius: 50px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border:none;
+  background:#fff;
+  width:100%;
+  color:var(--theme-bg);
+  padding:0; 
+}
+
+button.hover-cart-btn:hover { 
+  background:var(--theme-bg); 
+  cursor:pointer;
+  color: var(--theme-text);
 }
