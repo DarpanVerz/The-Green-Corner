@@ -2813,11 +2813,11 @@ button.hover-cart-btn:hover {
     align-items: center;
 }
 
-.product-section .js-media-sublist .swiper-slide {
+/* .product-section .js-media-sublist .swiper-slide {
     width: auto !important;
     height: auto !important;
     margin-right: 10px;
-}
+} */
 
 .product-section .product__media-subitem {
     cursor: pointer;
