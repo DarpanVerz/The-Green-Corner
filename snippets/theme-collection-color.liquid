@@ -1,6 +1,6 @@
 {% assign current_collection = collection | default: product.collections.first %}
 
-<style>
+{% comment %} <style>
 :root {
   --theme-bg: {{ current_collection.metafields.custom.color_themes.value | default: '#056839' }};
 
@@ -24,5 +24,12 @@
     {{ current_collection.metafields.custom.color_themes.value
     | color_lighten: 25
     | color_modify: 'alpha', 0.2 }};
+}
+</style> {% endcomment %}
+
+
+<style>
+:root {
+  --theme-bg: {{ current_collection.metafields.custom.color_themes.value | default: '#056839' }};
 }
 </style>
