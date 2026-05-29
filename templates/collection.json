@@ -19,7 +19,7 @@
         "add_word": "Collection",
         "show_word": true,
         "show_collection_description": true,
-        "description_products": "Explore complete range of our offerings.",
+        "description_products": "",
         "image_products": "shopify://shop_images/Vector_1.webp",
         "image_size": "large",
         "show_collection_image": true,
