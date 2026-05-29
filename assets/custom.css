@@ -299,6 +299,7 @@ h1, h2, { font-family: 'didotregular' !important; }
 }
 .predictive-search__results-groups-wrapper { padding:0px 25px; }
 
+.product-form__submit span { text-transform:none !important; }
 
 /*** Search ****/
 
