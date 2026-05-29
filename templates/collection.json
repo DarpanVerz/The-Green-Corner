@@ -116,7 +116,7 @@
           "type": "instagram_post",
           "settings": {
             "image": "shopify://shop_images/ig-post-_11.jpg",
-            "link": ""
+            "link": "https://www.instagram.com/thegreencornersg/"
           }
         }
       },
@@ -136,7 +136,7 @@
         "main_heading": "@thegreencornersg",
         "columns_desktop": 4,
         "columns_mobile": 2,
-        "section_padding_top": 40,
+        "section_padding_top": 0,
         "section_padding_bottom": 40
       }
     },
