@@ -2707,7 +2707,7 @@ button.hover-cart-btn:hover {
 
 .collection-breadcrumb, .collection-breadcrumb a { color:#fff; text-decoration:none; }
 
-.collection-breadcrumb, .collection-breadcrumb a:hover { text-decoration: underline; }
+.collection-breadcrumb a:hover { text-decoration: underline; }
 
 /* #MainContent .breadcrumb { display:none; } */
 
