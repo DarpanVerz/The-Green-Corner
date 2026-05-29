@@ -16,7 +16,7 @@
 <script src="{{ 'about.js' | asset_url }}" defer="defer"></script>
 
 {% assign current_collection = product.collections.first %}
-{% comment %} <style>
+<style>
 :root {
   --theme-bg: {{ current_collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
   
@@ -33,7 +33,7 @@
   | color_lighten: 25
   | color_modify: 'alpha', 0.2 }};
 }
-</style> {% endcomment %}
+</style>
 
 {%- style -%}
   {% render 'section-padding' %}
