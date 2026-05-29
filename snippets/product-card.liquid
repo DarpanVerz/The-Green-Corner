@@ -79,8 +79,11 @@
 {% endif %}
 <div
 	class="product-card flowers-collection card-wrapper js-color-swatches-wrapper quickview{%- if settings.quickview_hover and settings.slider_on_hover == false -%}--hover{% endif %}"
-	data-product="{{ product_card_product.handle }}"
->
+	data-product="{{ product_card_product.handle }}" style="
+     --theme-bg-color: {{ theme_color }};
+     --theme-bg-color-transparent: {{ theme_color | color_modify: 'alpha', 0.92 }};
+     --theme-bg-color-light-transparent: {{ theme_color | color_modify: 'alpha', 0.2 }};
+     ">
 
 	<div class="custom-hover-buttons">
   <product-form class="hover-product-form">
