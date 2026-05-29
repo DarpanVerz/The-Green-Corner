@@ -3843,4 +3843,4 @@ background-color: #056839;
     padding: 50px 0px;
 }
 
-.notification-banner { display:none; }
+.notification-banner { display:none !important; }
