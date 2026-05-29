@@ -84,9 +84,9 @@
     "main": {
       "type": "main-blog",
       "settings": {
-        "tag_articles_heading": "",
+        "tag_articles_heading": "Highlights",
         "tag_articles_heading_tag": "h2",
-        "tag_articles": "",
+        "tag_articles": "Highlights",
         "tag_text_horizontal": "center",
         "slideshow_speed": 0.5,
         "tag_image_ratio": "landscape",
