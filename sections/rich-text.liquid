@@ -7,9 +7,7 @@
 {%- endstyle -%}
 {%- capture html_dir %}{% include 'direction' %}{% endcapture %}
 <div
-	class="
-										rich-text {% if section.settings.full_width %} rich-text--full-width{% else %} container {% endif %}
-	"
+	class="rich-text {% if section.settings.full_width %} rich-text--full-width{% else %} container {% endif %}"
 >
 	<div
 		class="rich-text__blocks section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} background {% if section.settings.enable_border_top %} section_border_top{% endif %}{% if section.settings.enable_border_bottom %} section_border_bottom{% endif %}"
