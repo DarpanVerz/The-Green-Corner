@@ -65,7 +65,7 @@
         "payment_icon_1": "shopify://shop_images/default_payment_method.png",
         "footer_bottom_text": "<p>Copyright © 2026 The Green Corner. All rights reserved. Web Excellence by</p>",
         "margin_top": "no-indent",
-        "padding_top": "no-indent",
+        "padding_top": "l",
         "padding_bottom": "m",
         "enable_border_top": true,
         "enable_border_bottom": false
