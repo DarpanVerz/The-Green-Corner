@@ -22,7 +22,7 @@
         "description_products": "Explore complete range of our offerings.",
         "image_size": "large",
         "show_collection_image": true,
-        "margin_top": "xs",
+        "margin_top": "no-indent",
         "margin_bottom": "s",
         "padding_top": "no-indent",
         "padding_bottom": "no-indent"
