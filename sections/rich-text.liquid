@@ -13,96 +13,103 @@
 		class="rich-text__blocks section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} background {% if section.settings.enable_border_top %} section_border_top{% endif %}{% if section.settings.enable_border_bottom %} section_border_bottom{% endif %}"
 		style="text-align: {{ section.settings.content_horizontal }}"
 	>
+		
+		
 		<div class="rich-text__wrapper">
-			{%- for block in section.blocks -%}
-				{%- case block.type -%}
-					{%- when 'subheading' -%}
-						<div
-							class="rich-text__subheading subtitle {% if block.settings.animation %}rich-text__subheading-animation{% endif %}"
-							{{ block.shopify_attributes }}
-							{% if block.settings.animation %}
-								data-text="{{- block.settings.subheading | escape -}}"
-							{% endif %}
-						>
-							{% if block.settings.animation == false %}
-								{{- block.settings.subheading -}}
-							{% endif %}
-						</div>
+  {%- for block in section.blocks -%}
+    {%- case block.type -%}
 
+      {%- when 'subheading' -%}
+        <div
+          class="rich-text__subheading subtitle {% if block.settings.animation %}rich-text__subheading-animation{% endif %}"
+          {{ block.shopify_attributes }}
+          {% if block.settings.animation %}
+            data-text="{{- block.settings.subheading | escape -}}"
+          {% endif %}
+        >
+          {% if block.settings.animation == false %}
+            {{- block.settings.subheading -}}
+          {% endif %}
+        </div>
 
-					{%- when 'heading' -%}
+      {%- when 'heading' -%}
 
-<style>
-  .custom-title-{{ block.id }} {
-    font-size: 72px;
-    line-height: 1.05;
-    font-weight: 400;
-    text-align: center;
-    max-width: 1400px;
-    margin: 0 auto;
-    color: {{ block.settings.text_color }};
-  }
+        <style>
+          .custom-title-{{ block.id }} {
+            font-size: 72px;
+            line-height: 1.05;
+            font-weight: 400;
+            text-align: center;
+            max-width: 1400px;
+            margin: 0 auto;
+            color: {{ block.settings.text_color }};
+          }
 
-.custom-title-{{ block.id }},
-.custom-title-{{ block.id }} * {
-  color: {{ block.settings.text_color }} !important;
-}
+          .custom-title-{{ block.id }},
+          .custom-title-{{ block.id }} * {
+            color: {{ block.settings.text_color }} !important;
+          }
 
- .custom-title-{{ block.id }} span {
-  color: {{ block.settings.span_color }} !important;
-}
+          .custom-title-{{ block.id }} span {
+            color: {{ block.settings.span_color }} !important;
+          }
 
-  @media screen and (max-width: 991px) {
-    .custom-title-{{ block.id }} {
-      font-size: 46px;
-      line-height: 1.15;
-    }
-  }
+          @media screen and (max-width: 991px) {
+            .custom-title-{{ block.id }} {
+              font-size: 46px;
+              line-height: 1.15;
+            }
+          }
 
-  @media screen and (max-width: 767px) {
-    .custom-title-{{ block.id }} {
-      font-size: 32px;
-      line-height: 1.2;
-      padding: 0 15px;
-    }
-  }
-</style>
+          @media screen and (max-width: 767px) {
+            .custom-title-{{ block.id }} {
+              font-size: 32px;
+              line-height: 1.2;
+              padding: 0 15px;
+            }
+          }
+        </style>
 
-<{{ block.settings.subheading_tag }}
-  class="custom-title-{{ block.id }}"
-  {{ block.shopify_attributes }}
->
-  {{ block.settings.heading 
-    | replace: '&lt;span&gt;', '<span>' 
-    | replace: '&lt;/span&gt;', '</span>' 
-  }}
-</{{ block.settings.subheading_tag }}>
+        <{{ block.settings.subheading_tag }}
+          class="custom-title-{{ block.id }}"
+          {{ block.shopify_attributes }}
+        >
+          {{ block.settings.heading
+            | replace: '&lt;span&gt;', '<span>'
+            | replace: '&lt;/span&gt;', '</span>'
+          }}
+        </{{ block.settings.subheading_tag }}>
 
+      {%- when 'text' -%}
 
-						{%  liquid
-							assign text_horizontal = block.settings.text_horizontal
-							if html_dir == "rtl"
-								if text_horizontal == "left"
-									assign text_horizontal = "right"
-								elsif text_horizontal == "right"
-									assign text_horizontal = "left"
-								endif
-							endif
-						%}
-						<div
-							class="rich-text__text rich-text__text-{{ block.settings.container_size }} rich-text__text-{{ section.settings.content_horizontal }}{% if block.settings.text_size == "large" %} extra-large-font{% else %} large-font{% endif %}{% if block.settings.text_color == "heading" %} text-color-second{% endif %}"
-							style="text-align: {{ text_horizontal }}"
-							{{ block.shopify_attributes }}
-						>
-							{{ block.settings.text }}
-						</div>
-					{%- when 'button' -%}
-						{% if block.settings.button_label != blank %}
-							{% render 'button', layout: block %}
-						{% endif %}
-				{%- endcase -%}
-			{%- endfor -%}
-		</div>
+        {% liquid
+          assign text_horizontal = block.settings.text_horizontal
+
+          if html_dir == "rtl"
+            if text_horizontal == "left"
+              assign text_horizontal = "right"
+            elsif text_horizontal == "right"
+              assign text_horizontal = "left"
+            endif
+          endif
+        %}
+
+        <div
+          class="rich-text__text rich-text__text-{{ block.settings.container_size }} rich-text__text-{{ section.settings.content_horizontal }}{% if block.settings.text_size == "large" %} extra-large-font{% else %} large-font{% endif %}{% if block.settings.text_color == "heading" %} text-color-second{% endif %}"
+          style="text-align: {{ text_horizontal }}"
+          {{ block.shopify_attributes }}
+        >
+          {{ block.settings.text }}
+        </div>
+
+      {%- when 'button' -%}
+        {% if block.settings.button_label != blank %}
+          {% render 'button', layout: block %}
+        {% endif %}
+
+    {%- endcase -%}
+  {%- endfor -%}
+</div>
 		
 	</div>
 </div>
