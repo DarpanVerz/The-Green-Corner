@@ -73,7 +73,7 @@
 -%}
 
 <style>
-:root {
+{% comment %} :root {
   --theme-bg: {{ collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
   --theme-bg-light: {{ collection.metafields.custom.menu_bg_color.value | color_lighten: 10 }};
   --theme-text: {{ collection.metafields.custom.menu_text_color.value | default: '#fff' }};
@@ -83,7 +83,7 @@
   | color_lighten: 25 
   | color_modify: 'alpha', 0.2 
 }};
-}
+} {% endcomment %}
 
   .custom-sidebar{
 	background:#FFE6ED;
