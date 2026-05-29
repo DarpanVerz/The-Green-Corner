@@ -3812,3 +3812,9 @@ background-color: #056839;
     justify-content: center;
     align-items: center;
 }
+
+.body-template-page-about .multicolumn__wrapper {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 50px 0px;
+}
