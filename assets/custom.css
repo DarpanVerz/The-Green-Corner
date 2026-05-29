@@ -3767,6 +3767,22 @@ background-color: #056839;
     padding-left: 0px;
 }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .product-markers .product-markers-for-mobile {
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 2;
+    left: 100px;
+    padding: 10px;
+    top: auto;
+    bottom: 45%;
+}
+.card-horizontal__information {
+    padding: 10px;
+}
+}
+
 .cart__warnings .button {
     border-radius:25px;
 }
