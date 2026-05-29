@@ -2275,31 +2275,6 @@ margin-left:30px;
 }
 }
 
-.card-wrapper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 32px;
-  transition: all 0.4s ease;
-  min-height: 430px;
-}
-
-.card-wrapper::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--hover-color);
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease;
-  z-index: 1;
-  border-radius: 25px;
-}
-
-.card-wrapper:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
-
 .card__media img {
   transition: all 0.5s ease;
   position: relative;
@@ -3867,6 +3842,7 @@ background-color: #056839;
 
 
 /*** View more button ***/
+
 .custom-hover-buttons {
   position: absolute;
   left: 20px;
