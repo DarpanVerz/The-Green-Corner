@@ -281,7 +281,7 @@ h1, h2, { font-family: 'didotregular' !important; }
     font-weight:600;
 }
 
-.header .list-menu--inline > li > .header__menu-item.current-link:after {
+.header .list-menu--inline > li > a.header__menu-item.current-link:after {
     content: "";
     position: absolute;
     left: 0;
