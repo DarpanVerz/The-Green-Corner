@@ -3679,8 +3679,8 @@ background-color: #056839;
     transform: translateY(-50%);
 }
 
-.featured-products-prev { left: -44px; }
-.featured-products-next { right: -44px; }
+.featured-products-prev { left: -44px !important; }
+.featured-products-next { right: -44px !important; }
 }
 
 @media screen (max-width: 1023px){
