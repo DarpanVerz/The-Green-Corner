@@ -2064,7 +2064,7 @@ fieldset.product-form__input .product-form__group-name-legend {
 .popular-products .card-wrapper:hover .card__heading a,
 .popular-products .card-wrapper:hover .card__heading,
 .popular-products .card-wrapper:hover .price,
-.popular-products .card-wrapper:hover .price-item--sale {
+.popular-products .card-wrapper:hover .price-item--sale, .popular-products .card-wrapper:hover .price-item--sale {
   color: #E94242 !important;
 }
 
