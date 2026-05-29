@@ -3789,3 +3789,18 @@ background-color: #056839;
 .cart__warnings .button {
     border-radius:25px;
 }
+
+.cart-count-bubble {
+    position: absolute;
+    top: -8px;
+    right: -2px;
+    font-size: 1.2rem;
+    background: #05693a;
+    color: #ffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
