@@ -3684,7 +3684,7 @@ background-color: #056839;
 }
 
 @media screen (max-width: 1023px){
-  .featured-products-prev, .featured-products-next { display:none; }
+  .featured-products-prev, .featured-products-next { display:none !important; }
 }
 
 
