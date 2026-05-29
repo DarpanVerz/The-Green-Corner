@@ -3683,6 +3683,10 @@ background-color: #056839;
 .featured-products-next { right: -44px; }
 }
 
+@media screen (max-width: 1023px){
+
+}
+
 
 @media screen and (min-width: 1200px) {
     .body-template-blog .slideshow-slide__text {
