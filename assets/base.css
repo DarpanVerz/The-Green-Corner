@@ -3014,7 +3014,7 @@ cart-remove-button a:hover {
   font-size: 0.9rem;
   display: inline-block;
   position: absolute;
-  top: 0.5rem;
+  top: 1.9rem;
   left: 2rem;
   transform: translateY(0);
 }
