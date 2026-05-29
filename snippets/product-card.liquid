@@ -1,16 +1,3 @@
-{% assign current_product_type = product_card_product.type | downcase | strip %}
-{% assign theme_color = '#000000' %}
-
-{% for item in shop.metaobjects.custom.color_themes.values %}
-
-  {% assign mapped_type = item.product_type.value | downcase | strip %}
-
-  {% if mapped_type == current_product_type %}
-    {% assign theme_color = item.theme_color.value %}
-  {% endif %}
-
-{% endfor %}
-
 {% comment %}
 		Renders a product card
 		Accepts:
@@ -77,24 +64,10 @@
 {% if loop_index == blank %}
 	{% assign loop_index = 1 %}
 {% endif %}
-
-{% for item in shop.metaobjects.custom.color_themes.values %}
-
-  Product Type = {{ item.product_type }}
-  <br>
-
-  Theme Color = {{ item.theme_color }}
-  <br><br>
-
-{% endfor %}
-
 <div
 	class="product-card flowers-collection card-wrapper js-color-swatches-wrapper quickview{%- if settings.quickview_hover and settings.slider_on_hover == false -%}--hover{% endif %}"
-	data-product="{{ product_card_product.handle }}" style="
-     --theme-bg-color: {{ theme_color }};
-     --theme-bg-color-transparent: {{ theme_color | color_modify: 'alpha', 0.92 }};
-     --theme-bg-color-light-transparent: {{ theme_color | color_modify: 'alpha', 0.2 }};
-     ">
+	data-product="{{ product_card_product.handle }}"
+>
 
 	<div class="custom-hover-buttons">
   <product-form class="hover-product-form">
