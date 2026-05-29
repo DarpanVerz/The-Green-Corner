@@ -2409,9 +2409,9 @@ button.hover-cart-btn {
   text-decoration: none;
   transition: all 0.3s ease;
   border:none;
-  background:var(--button-color);
+  background:#fff;
   width:100%;
-  color:#056839;
+  color:var(--theme-bg);
   padding:0; 
 }
 
