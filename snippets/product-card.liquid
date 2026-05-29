@@ -1,3 +1,16 @@
+{% assign current_product_type = product.type | downcase %}
+{% assign theme_color = '#000000' %}
+
+{% for item in shop.metaobjects.product_type_theme.values %}
+
+  {% assign mapped_type = item.product_type.value | downcase %}
+
+  {% if mapped_type == current_product_type %}
+    {% assign theme_color = item.theme_color.value %}
+  {% endif %}
+
+{% endfor %}
+
 {% comment %}
 		Renders a product card
 		Accepts:
