@@ -74,10 +74,14 @@
 				{% if section.settings.heading != blank %}
 					<{{ section.settings.heading_tag }} class="main-blog__title h3">{{ section.settings.heading }}</{{ section.settings.heading_tag }}>
 				{% endif %}
-				<ul
+
+				{% comment %} <ul
 					class="blog-articles load-more-grid list-unstyled"
 					style="--per-row: 4"
-				>
+				> {% endcomment %}
+
+				  <ul class="blog-articles list-unstyled">
+					
 					{% for article in blog.articles %}
 						<li>
 							{% render 'article-card',
