@@ -281,6 +281,16 @@ h1, h2, { font-family: 'didotregular' !important; }
     font-weight:600;
 }
 
+.header .list-menu--inline > li > .header__menu-item.current-link a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+    width: 0;
+    height: 3px !important;
+    background: #056839;
+    transition: width 0.3s ease;
+}
 
 
 /*** Search ****/
