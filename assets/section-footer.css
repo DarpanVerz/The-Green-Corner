@@ -124,7 +124,7 @@ label.field__label {
   .static-footer-menu__dropdown {
     display: block;
     margin-top: 1.5rem;
-    border-bottom: 0.1rem solid rgb(var(--color-border));
+    /* border-bottom: 0.1rem solid rgb(var(--color-border)); */
   }
 }
 
