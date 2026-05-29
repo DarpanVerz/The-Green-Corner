@@ -1,7 +1,7 @@
 {% assign current_collection = collection | default: product.collections.first %}
 
 <style>
-:root {
+{% comment %} :root {
   --theme-bg: {{ current_collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
 
   --theme-bg-light:
@@ -24,5 +24,11 @@
     {{ current_collection.metafields.custom.menu_bg_color.value
     | color_lighten: 25
     | color_modify: 'alpha', 0.2 }};
-}
+} {% endcomment %}
+
+:root {
+    --theme-bg: {{ product.metafields.custom.color_themes.value | default: '#056839' }};
+    --theme-bg-transparent: {{ product.metafields.custom.color_themes.value | color_modify: 'alpha', 0.2 }};
+  }
+  
 </style>
