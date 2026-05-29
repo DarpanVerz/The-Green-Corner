@@ -77,6 +77,17 @@
 {% if loop_index == blank %}
 	{% assign loop_index = 1 %}
 {% endif %}
+
+{% for item in shop.metaobjects.custom.color_themes.values %}
+
+  Product Type = {{ item.product_type }}
+  <br>
+
+  Theme Color = {{ item.theme_color }}
+  <br><br>
+
+{% endfor %}
+
 <div
 	class="product-card flowers-collection card-wrapper js-color-swatches-wrapper quickview{%- if settings.quickview_hover and settings.slider_on_hover == false -%}--hover{% endif %}"
 	data-product="{{ product_card_product.handle }}" style="
