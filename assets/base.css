@@ -5383,6 +5383,9 @@ details[open] > .header__account-modal {
   min-width: 12rem;
   border-radius:50px;
 }
+.popup-main .newsletter-form_field-wrapper .field .field_input {
+  margin-right: 0px;
+}
 .popup-main .list-social {
   margin-top: 1.2rem;
 }
