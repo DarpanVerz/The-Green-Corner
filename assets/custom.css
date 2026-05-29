@@ -3841,9 +3841,9 @@ background-color: #056839;
 }
 
 .footer-block__details-content>li a.list-menu__item--active {
-color: #056839;
+color: #056839 !important;
 font-weight: 500;
-text-decoration: underline;
+text-decoration: underline !important;
 }
 
 
