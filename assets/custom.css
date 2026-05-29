@@ -2795,8 +2795,8 @@ button.hover-cart-btn:hover {
     font-size: 14px;
 }
 
-.facets-sorting__label {
-    text-transform: none;
+.facets-sorting__label, .select.field .custom-select {
+    text-transform: none !important;
 }
 
 /* Horizontal thumbnail slider fix */
