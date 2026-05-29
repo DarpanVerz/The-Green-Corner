@@ -5383,7 +5383,7 @@ details[open] > .header__account-modal {
   min-width: 12rem;
   border-radius:50px;
 }
-.popup-main .newsletter-form_field-wrapper .field .field_input {
+.popup-main .newsletter-form__field-wrapper .field .field__input {
   margin-right: 0px;
 }
 .popup-main .list-social {
