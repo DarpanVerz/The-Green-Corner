@@ -3470,7 +3470,7 @@ background-color: #056839;
     transition: 0.3s;
 }
 
-.breadcrumb a:hover {
+.breadcrumb a:hover, .breadcrumb a:hover span {
     color: #000;
 }
 
