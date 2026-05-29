@@ -3843,4 +3843,4 @@ background-color: #056839;
     padding: 50px 0px;
 }
 
-.inner-page { min-height:500px; }
+.rte, .rte.inner-page { min-height:500px; }
