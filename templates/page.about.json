@@ -160,8 +160,8 @@
         "image_ratio_second": "portrait",
         "margin_top": "no-indent",
         "margin_bottom": "no-indent",
-        "padding_top": "no-indent",
-        "padding_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m",
         "enable_border_top": false,
         "enable_border_bottom": false
       }
