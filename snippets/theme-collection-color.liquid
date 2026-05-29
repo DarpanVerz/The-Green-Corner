@@ -2,13 +2,13 @@
 
 <style>
 :root {
-  --theme-bg: {{ current_collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
+  --theme-bg: {{ current_collection.metafields.custom.color_themes.value | default: '#056839' }};
 
   --theme-bg-light:
-    {{ current_collection.metafields.custom.menu_bg_color.value | color_lighten: 10 }};
+    {{ current_collection.metafields.custom.color_themes.value | color_lighten: 10 }};
 
 --theme-bg-dark:
-  {{ current_collection.metafields.custom.menu_bg_color.value | color_darken: 10 }};
+  {{ current_collection.metafields.custom.color_themes.value | color_darken: 10 }};
 
 
   --theme-text:
@@ -17,11 +17,11 @@
     --theme-subtitle: {{ collection.metafields.custom.theme_subtitle_color.value | default: '#A6CE39' }};
 
   --theme-bg-transparent:
-    {{ current_collection.metafields.custom.menu_bg_color.value
+    {{ current_collection.metafields.custom.color_themes.value
     | color_modify: 'alpha', 0.92 }};
 
   --theme-bg-light-transparent:
-    {{ current_collection.metafields.custom.menu_bg_color.value
+    {{ current_collection.metafields.custom.color_themes.value
     | color_lighten: 25
     | color_modify: 'alpha', 0.2 }};
 }
