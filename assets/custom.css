@@ -3921,7 +3921,7 @@ text-decoration: underline !important;
   background: transparent;
   border: 1px solid var(--theme-bg-light);
   color: #ffffff;
-  background-color: var(--theme-bg-light-transparent);
+  background-color: var(--hover-color);
 }
 
 .hover-cart-btn:hover {
