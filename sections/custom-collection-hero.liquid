@@ -28,9 +28,15 @@
 
             <div class="swiper-slide">
 
-              <div class="featured-product-card card-wrapper" style="--hover-color: {{ product_card_product.metafields.custom.color_themes.value | color_modify: 'alpha', 0.9 | default: 'rgba(5,104,57,0.9)' }};
+   
+
+       <div
+	class="featured-product-card product-card flowers-collection card-wrapper js-color-swatches-wrapper quickview{%- if settings.quickview_hover and settings.slider_on_hover == false -%}--hover{% endif %}"
+	data-product="{{ product_card_product.handle }}"
+	style="--hover-color: {{ product_card_product.metafields.custom.color_themes.value | color_modify: 'alpha', 0.9 | default: 'rgba(5,104,57,0.9)' }};
 	       --button-color: {{ product_card_product.metafields.custom.color_themes.value | color_modify: 'alpha', 0.3 | default: 'rgba(5,104,57,0.3)' }};
-		   --button-border-color: {{ product_card_product.metafields.custom.color_themes.value | color_darken: 10 | default: 'rgba(5,104,57,1)' }};">
+		   --button-border-color: {{ product_card_product.metafields.custom.color_themes.value | color_darken: 10 | default: 'rgba(5,104,57,1)' }};"
+>
 
                 <div class="custom-hover-buttons">
   <product-form class="hover-product-form">
