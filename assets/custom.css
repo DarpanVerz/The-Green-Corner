@@ -3919,7 +3919,7 @@ text-decoration: underline !important;
 
 .hover-view-btn {
   background: transparent;
-  border: 1px solid var(--theme-bg-light);
+  border: 1px solid var(--hover-color);
   color: #ffffff;
   background-color: var(--button-color);
 }
