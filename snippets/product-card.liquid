@@ -69,7 +69,7 @@
 	data-product="{{ product_card_product.handle }}"
 	style="--hover-color: {{ product_card_product.metafields.custom.color_themes.value | color_modify: 'alpha', 0.9 | default: 'rgba(5,104,57,0.9)' }};
 	       --button-color: {{ product_card_product.metafields.custom.color_themes.value | color_modify: 'alpha', 0.3 | default: 'rgba(5,104,57,0.3)' }};
-		   --button-border-color: {{ product_card_product.metafields.custom.color_themes.value | color_modify: 'alpha', 1 | default: 'rgba(5,104,57,1)' }};"
+		   --button-border-color: {{ product_card_product.metafields.custom.color_themes.value | color_darken: 20 | default: 'rgba(5,104,57,1)' }};"
 >
 
 	<div class="custom-hover-buttons">
