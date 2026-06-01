@@ -44,42 +44,6 @@
     "header": {
       "type": "header",
       "blocks": {
-        "mega_menu_collection_WXqaQe": {
-          "type": "mega_menu_collection",
-          "settings": {
-            "menu_trigger": "flowers",
-            "menu_primary": "main-menu",
-            "primary_heading": "Discover Top Trends",
-            "primary_button_label": "Browse All",
-            "primary_button_link": "",
-            "menu_secondary": "",
-            "secondary_heading": "Seasonal Favorites",
-            "secondary_button_label": "View More",
-            "secondary_button_link": "",
-            "third_heading": "",
-            "menu_third": "",
-            "fourth_heading": "",
-            "menu_fourth": "",
-            "fifth_heading": "",
-            "menu_fifth": "",
-            "show_promo": true,
-            "color_scheme": "background-2",
-            "heading": "Discover Your Style",
-            "description": "Navigate through our top categories to shop the latest and greatest selections.",
-            "promo_alignment": "center",
-            "effect_opacity": 0.2,
-            "button_label": "Explore Now",
-            "button_link": "",
-            "show_promo_2": true,
-            "color_scheme_2": "background-2",
-            "heading_2": "Shop by Category",
-            "description_2": "Easily explore our wide range of products, from trending items to classic favorites.",
-            "promo_alignment_2": "center",
-            "effect_opacity_2": 0.2,
-            "button_label_2": "Start Shopping",
-            "button_link_2": ""
-          }
-        },
         "dropdown": {
           "type": "dropdown",
           "disabled": true,
@@ -132,12 +96,50 @@
             "button_label_2": "View All",
             "button_link_2": "shopify://collections"
           }
+        },
+        "mega_menu_collection_HQgR6B": {
+          "type": "mega_menu_collection",
+          "settings": {
+            "menu_trigger": "Flowers",
+            "menu_primary": "main-menu",
+            "primary_heading": "Popular",
+            "primary_button_label": "Browse All",
+            "primary_button_link": "",
+            "menu_secondary": "indoor-plants",
+            "secondary_heading": "INDOOR PLANTS",
+            "secondary_button_label": "View More",
+            "secondary_button_link": "",
+            "third_heading": "Exotic plants",
+            "menu_third": "exotic-plants",
+            "fourth_heading": "Office plants",
+            "menu_fourth": "office-plants",
+            "fifth_heading": "By size",
+            "menu_fifth": "by-size",
+            "show_promo": true,
+            "color_scheme": "",
+            "heading": "FEATURED",
+            "description": "",
+            "promo_alignment": "center",
+            "image": "shopify://shop_images/Frame_427320038.png",
+            "effect_opacity": 0.2,
+            "button_label": "",
+            "button_link": "",
+            "show_promo_2": true,
+            "color_scheme_2": "",
+            "heading_2": "",
+            "description_2": "",
+            "promo_alignment_2": "center",
+            "image_2": "shopify://shop_images/Frame_427320039.png",
+            "effect_opacity_2": 0.2,
+            "button_label_2": "View All",
+            "button_link_2": "shopify://collections"
+          }
         }
       },
       "block_order": [
-        "mega_menu_collection_WXqaQe",
         "dropdown",
-        "dd39ad99-d6ef-43f4-bd52-574c5c365c61"
+        "dd39ad99-d6ef-43f4-bd52-574c5c365c61",
+        "mega_menu_collection_HQgR6B"
       ],
       "settings": {
         "full_width": true,
