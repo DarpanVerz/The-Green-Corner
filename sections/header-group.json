@@ -101,8 +101,8 @@
           "type": "mega_menu_collection",
           "settings": {
             "menu_trigger": "Flowers",
-            "menu_primary": "main-menu",
-            "primary_heading": "Flower Bouquet",
+            "menu_primary": "",
+            "primary_heading": "",
             "primary_button_label": "Browse All",
             "primary_button_link": "",
             "menu_secondary": "table-flower-arrangement",
