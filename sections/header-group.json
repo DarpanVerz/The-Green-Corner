@@ -48,7 +48,7 @@
           "type": "mega_menu_collection",
           "settings": {
             "menu_trigger": "flowers",
-            "menu_primary": "",
+            "menu_primary": "main-menu",
             "primary_heading": "Discover Top Trends",
             "primary_button_label": "Browse All",
             "primary_button_link": "",
