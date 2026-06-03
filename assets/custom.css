@@ -3963,3 +3963,7 @@ button.hover-cart-btn:hover {
 .main-product-section .product__description img {
    width:120%;
 }
+
+.main-product-section .product__description h4 {
+      font-size: 22px;
+}
