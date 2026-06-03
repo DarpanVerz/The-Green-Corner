@@ -3919,7 +3919,7 @@ text-decoration: underline !important;
 
 .hover-view-btn {
   background: transparent;
-  border: 1px solid var(--hover-color);
+  border: 1px solid var(--button-border-color);
   color: #ffffff;
   background-color: var(--button-color);
 }
@@ -3957,4 +3957,9 @@ button.hover-cart-btn:hover {
   background:#000; 
   cursor:pointer;
   color: #fff;
+}
+
+
+.main-product-section .product__description img {
+   width:120%;
 }
