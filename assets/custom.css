@@ -683,6 +683,7 @@ margin-left: -3px; margin-bottom: 5px; }
 .gpo-form__group .gpo-dropdown .dropdown-button { font-family: Montserrat, sans-serif !important; padding: 1.5rem 2rem 1.5rem !important; border-radius: var(--border-radius) !important; background: rgb(var(--color-background-input)) !important; border-color: transparent !important; }
 .gpo-label, .gpo-label span.label-content, .gpo-label span.addOn, .gpo-label.required span.label-content::after, .gpo-dimension-label,.gpo-dropdown, .gpo-dropdown .dropdown-button, .gpo-dropdown .dropdown-suggestion, .gpo-dropdown input+label { font-family: Montserrat, sans-serif !important; }
 .gpo-form__group .gpo-group__wrapper .gpo-form__group .gpo-label { margin-bottom: 10px; }
+.custom-collection-layout .custom-sidebar .custom-category-menu { max-height: 620px !important; overflow: hidden !important; overflow-y: auto !important; }
 
 @media (min-width:990px) {
     .product__media-list-wrapper { flex-direction: column !important; }
