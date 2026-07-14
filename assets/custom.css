@@ -685,7 +685,7 @@ margin-left: -3px; margin-bottom: 5px; }
 .gpo-form__group .gpo-group__wrapper .gpo-form__group .gpo-label { margin-bottom: 10px; }
 .custom-collection-layout .custom-sidebar .custom-category-menu,.mobile-facets__details .mobile-category-list { max-height: 500px !important; overflow: hidden !important; overflow-y: auto !important; }
 
-.collection-banner__img img { object-fit: contain !important; }
+/* .collection-banner__img img { object-fit: contain !important; } */
 
 @media (min-width:990px) {
     .product__media-list-wrapper { flex-direction: column !important; }
