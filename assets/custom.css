@@ -680,7 +680,7 @@ margin-left: -3px; margin-bottom: 5px; }
 /*14-07-2026*/
 .gpo-form__group .gpo-group__wrapper .gpo-form__group { margin-bottom: 15px; }
 .gpo-dropdown .dropdown-button { padding: 1.5rem 2rem 1.5rem; border-radius: var(--border-radius); background: rgb(var(--color-background-input)); border-color: transparent !important; }
-
+.gpo-label, .gpo-label span.label-content, .gpo-label span.addOn, .gpo-label.required span.label-content::after, .gpo-dimension-label { font-family: var(--font-heading-family) !important; }
 
 @media (min-width:990px) {
     .product__media-list-wrapper { flex-direction: column !important; }
