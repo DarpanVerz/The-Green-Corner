@@ -21,7 +21,7 @@
         "show_collection_description": true,
         "description_products": "",
         "image_products": "shopify://shop_images/Vector_1.webp",
-        "image_size": "large",
+        "image_size": "adapt",
         "show_collection_image": true,
         "margin_top": "no-indent",
         "margin_bottom": "s",
