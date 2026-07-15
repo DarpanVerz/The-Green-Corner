@@ -19,10 +19,8 @@
 <style>
 :root {
   --theme-bg: {{ current_collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
-  
   --theme-bg-light: {{ current_collection.metafields.custom.menu_bg_color.value 
   | color_lighten: 10 }};
-  
   --theme-text: {{ current_collection.metafields.custom.menu_text_color.value 
   | default: '#ffffff' }};
   
