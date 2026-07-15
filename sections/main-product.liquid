@@ -15,21 +15,18 @@
 <script src="{{ 'update-slider.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'about.js' | asset_url }}" defer="defer"></script>
 
-{% assign current_collection = product.collections.first %}
+{%- liquid
+  assign source_collection = current_collection | default: product.collections.first
+  assign bg_color = source_collection.metafields.custom.menu_bg_color.value | default: '#056839'
+  assign text_color = source_collection.metafields.custom.menu_text_color.value | default: '#ffffff'
+-%}
 <style>
 :root {
-  --theme-bg: {{ current_collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
-  --theme-bg-light: {{ current_collection.metafields.custom.menu_bg_color.value 
-  | color_lighten: 10 }};
-  --theme-text: {{ current_collection.metafields.custom.menu_text_color.value 
-  | default: '#ffffff' }};
-  
-  --theme-bg-transparent: {{ current_collection.metafields.custom.menu_bg_color.value 
-  | color_modify: 'alpha', 0.92 }};
-  
-  --theme-bg-light-transparent: {{ current_collection.metafields.custom.menu_bg_color.value
-  | color_lighten: 25
-  | color_modify: 'alpha', 0.2 }};
+  --theme-bg: {{ bg_color }};
+  --theme-bg-light: {{ bg_color | color_lighten: 10 }};
+  --theme-text: {{ text_color }};
+  --theme-bg-transparent: {{ bg_color | color_modify: 'alpha', 0.92 }};
+  --theme-bg-light-transparent: {{ bg_color | color_lighten: 25 | color_modify: 'alpha', 0.2 }};
 }
 </style>
 
