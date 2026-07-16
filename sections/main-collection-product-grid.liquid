@@ -111,7 +111,6 @@
 -%}
 
 
-
 <style>
 :root {
     --theme-bg: {{ parent_bg_color }};
@@ -270,14 +269,7 @@
 	{% if collection.all_products_count > 0 %}
 		{% if section.settings.enable_filtering or section.settings.enable_sorting %}
 			
-{%- if matched_parent == nil and collection.metafields.custom.fallback_parent_handle.value != blank -%}
-	{%- assign fallback_handle = collection.metafields.custom.fallback_parent_handle.value -%}
-	{%- for link in nav_menu.links -%}
-		{%- if link.object.handle == fallback_handle -%}
-			{%- assign matched_parent = link -%}
-		{%- endif -%}
-	{%- endfor -%}
-{%- endif -%}
+
 
 {% if matched_parent %}
 <div class="custom-sidebar">
