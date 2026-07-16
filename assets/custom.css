@@ -13,9 +13,15 @@
     display: none;
 }
 
-ul.header__submenu li.list-menu-has-child a.header__menu-item::before{
-    content:"" !important;
-     background-image:url(https://cdn.shopify.com/s/files/1/0757/6767/7120/files/menu-arrow1.svg?v=1784174701)
+ul.header__submenu li.list-menu-has-child > a.header__menu-item::before {
+    content: "" !important;
+    background-image: url(/cdn/shop/files/menu-arrow1.svg?v=1784174701);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
 }
 
 @media screen and (min-width: 1100px) {
