@@ -20,6 +20,7 @@
 }
 
 
+
 h1, h2 { font-family: 'didotregular' !important; }
 .subtitle { font-family: var(--font-heading-family); letter-spacing: var(--subtitle-letter-spacing); color: var(--subtitle-color); font-size: var(--subtitle-font-size) }
 .common-button { background: #222; color: #fff; padding: 15px 31px; border-radius: 25px; text-decoration: none; white-space: nowrap; text-transform: capitalize; position: relative; display: inline-flex; overflow: hidden; transition: all 0.4s ease; z-index: 1; font-size: 1.4rem; }
