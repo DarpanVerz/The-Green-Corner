@@ -12,7 +12,6 @@
 	{% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
-
 {%- if settings.quickview_button_quick_buy
 	or settings.quickview_button_quick_view
 -%}
@@ -69,9 +68,9 @@
 <div
 	class="product-card flowers-collection card-wrapper js-color-swatches-wrapper quickview{%- if settings.quickview_hover and settings.slider_on_hover == false -%}--hover{% endif %}"
 	data-product="{{ product_card_product.handle }}"
-	style="--hover-color: {{ collection.metafields.custom.menu_bg_color.value | default: '#056839' | color_modify: 'alpha', 0.9 }};
-       --button-color: {{ collection.metafields.custom.menu_bg_color.value | default: '#056839' | color_modify: 'alpha', 0.3 }};
-       --button-border-color: {{ collection.metafields.custom.menu_bg_color.value | default: '#056839' | color_darken: 10 }};"
+	style="--hover-color: {{ accent_color | default: '#056839' | color_modify: 'alpha', 0.9 }};
+       --button-color: {{ accent_color | default: '#056839' | color_modify: 'alpha', 0.3 }};
+       --button-border-color: {{ accent_color | default: '#056839' | color_darken: 10 }};"
 >
 
 	<div class="custom-hover-buttons">
