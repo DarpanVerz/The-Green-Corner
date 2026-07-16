@@ -110,26 +110,7 @@
   assign parent_bg_color = matched_parent.object.metafields.custom.menu_bg_color.value | default: '#056839'
 -%}
 
-<div style="background:#fff;border:2px solid red;padding:20px;margin:20px;font-family:monospace;font-size:12px;white-space:pre-wrap;">
-	<strong>DEBUG</strong><br>
-	Current collection.handle: {{ collection.handle }}<br>
-	Current collection.url: {{ collection.url }}<br>
-	matched_parent: {{ matched_parent.title | default: 'NIL - no match found' }}<br>
-	<br>
-	<strong>main-menu structure:</strong><br>
-	{% for link in linklists['main-menu'].links %}
-		L1: {{ link.title }} | type: {{ link.type }} | handle: {{ link.object.handle }} | url: {{ link.url }}<br>
-		{% for l2 in link.links %}
-			&nbsp;&nbsp;L2: {{ l2.title }} | type: {{ l2.type }} | handle: {{ l2.object.handle }} | url: {{ l2.url }}<br>
-			{% for l3 in l2.links %}
-				&nbsp;&nbsp;&nbsp;&nbsp;L3: {{ l3.title }} | type: {{ l3.type }} | handle: {{ l3.object.handle }} | url: {{ l3.url }}<br>
-				{% for l4 in l3.links %}
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L4: {{ l4.title }} | type: {{ l4.type }} | handle: {{ l4.object.handle }} | url: {{ l4.url }}<br>
-				{% endfor %}
-			{% endfor %}
-		{% endfor %}
-	{% endfor %}
-</div>
+
 
 <style>
 :root {
