@@ -251,11 +251,17 @@
         "margin_top": "no-indent",
         "margin_bottom": "l"
       }
+    },
+    "collection_description_Vt8LDV": {
+      "type": "collection-description",
+      "name": "Collection Description",
+      "settings": {}
     }
   },
   "order": [
     "banner",
     "product-grid",
+    "collection_description_Vt8LDV",
     "custom_collection_hero_tD9e3U",
     "instagram_gallery_XFQYb4",
     "image_banner_Ui3UzF",
