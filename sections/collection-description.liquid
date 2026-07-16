@@ -1,0 +1,43 @@
+{%- if collection.description != blank -%}
+  <div class="collection-description-wrapper container">
+    <div class="collection-description rte">
+      {{ collection.description }}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Collection Description",
+  "tag": "section",
+  "class": "collection-description-section",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Collection Description"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+.collection-description-wrapper {
+  padding: 30px 20px;
+}
+
+.collection-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+}
+
+.collection-description p {
+  margin-bottom: 12px;
+}
+
+.collection-description a {
+  color: inherit;
+  text-decoration: underline;
+}
+</style>
