@@ -13,11 +13,18 @@
     display: none;
 }
 
+ul.header__submenu li.list-menu-has-child a.header__menu-item::before{
+    display:block !important;
+    
+}
+
 @media screen and (min-width: 1100px) {
 .custom-collection-layout.new-arrivals .products-grid .collection-product-list {
     grid-template-columns: repeat(4, 1fr);
 }
 }
+
+
 
 
 
