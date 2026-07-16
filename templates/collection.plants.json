@@ -1,0 +1,265 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "color_scheme": "",
+        "overlay_opacity": 20,
+        "section_size": "container",
+        "text_horizontal": "left",
+        "add_word": "Collection",
+        "show_word": true,
+        "show_collection_description": true,
+        "description_products": "",
+        "image_products": "shopify://shop_images/Vector_1.webp",
+        "image_size": "medium",
+        "show_collection_image": true,
+        "margin_top": "no-indent",
+        "margin_bottom": "s",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "show_two_cards": true,
+        "show_secondary_image": true,
+        "show_sku": false,
+        "show_vendor": false,
+        "show_desc": false,
+        "show_color_swatch": false,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "color_scheme": "",
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "image_filter_ratio": "4/5",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 2,
+        "padding_top": "no-indent",
+        "padding_bottom": "s"
+      }
+    },
+    "custom_collection_hero_tD9e3U": {
+      "type": "custom-collection-hero",
+      "name": "Custom Collection Hero",
+      "settings": {
+        "left_image": "shopify://shop_images/72eede86361bbe37a6e27ee62f44b9a9f12ca314.jpg",
+        "heading": "Featured Products",
+        "description": "Discover our handpicked flower bouquets, thoughtfully arranged to brighten any moment.",
+        "collection": "flowers"
+      }
+    },
+    "instagram_gallery_XFQYb4": {
+      "type": "instagram-gallery",
+      "blocks": {
+        "instagram_post_nVkiM6": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "link": "https://www.instagram.com/thegreencornersg/"
+          }
+        },
+        "instagram_post_wJc3M7": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/4.png",
+            "link": "https://www.instagram.com/thegreencornersg/"
+          }
+        },
+        "instagram_post_JWbETR": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/2.png",
+            "link": "https://www.instagram.com/thegreencornersg/"
+          }
+        },
+        "instagram_post_gAxpkd": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/1.png",
+            "link": "https://www.instagram.com/thegreencornersg/"
+          }
+        },
+        "instagram_post_mCQxXj": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_13.png",
+            "link": "https://www.instagram.com/thegreencornersg/"
+          }
+        },
+        "instagram_post_Gtx3jm": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig_post_12.png",
+            "link": "https://www.instagram.com/thegreencornersg/"
+          }
+        },
+        "instagram_post_wjRPF4": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig-post-_11_0f482fc3-db2e-41d7-bc43-09a951bb9bf2.jpg",
+            "link": "https://www.instagram.com/thegreencornersg/"
+          }
+        },
+        "instagram_post_LJB7Vt": {
+          "type": "instagram_post",
+          "settings": {
+            "image": "shopify://shop_images/ig-post-_11.jpg",
+            "link": "https://www.instagram.com/thegreencornersg/"
+          }
+        }
+      },
+      "block_order": [
+        "instagram_post_nVkiM6",
+        "instagram_post_wJc3M7",
+        "instagram_post_JWbETR",
+        "instagram_post_gAxpkd",
+        "instagram_post_mCQxXj",
+        "instagram_post_Gtx3jm",
+        "instagram_post_wjRPF4",
+        "instagram_post_LJB7Vt"
+      ],
+      "name": "Instagram Gallery",
+      "settings": {
+        "small_heading": "FOLLOW US ON INSTAGRAM",
+        "main_heading": "@thegreencornersg",
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "section_padding_top": 0,
+        "section_padding_bottom": 40
+      }
+    },
+    "image_banner_Ui3UzF": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "hide_mobile_image": true,
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/2aab0821538e8c2a6a963c826409555c29ba58c5.jpg",
+        "image_size": "small",
+        "overlay_opacity": 20,
+        "subheading": "CONTACT US",
+        "subheading_tag": "h2",
+        "heading": "We’re Here to Help. Plant a Message With Us.We’d Love to Hear From You",
+        "heading_tag": "h2",
+        "description": "<p>Have a question or need guidance for your garden? Our team at The Green Corner is ready to help every plant enthusiast, whether you’re choosing the right plant, soil, or tools. Reach out and let us support you in growing a thriving, green space.</p>",
+        "text_horizontal": "center",
+        "text_vertical": "center",
+        "button_label": "Send a Message",
+        "button_link": "shopify://pages/contact-us",
+        "button_style": "tertiary",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "newsletter_N6DmJh": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "color_scheme": "",
+        "position": "center",
+        "heading": "Subscribe to our Newsletter",
+        "heading_tag": "h3",
+        "text": "<p>Stay connected with The Green Corner and receive the latest plant tips, new arrivals, and gardening inspiration straight to your inbox.</p>",
+        "newsletter_text": "",
+        "button_style": "primary",
+        "margin_top": "no-indent",
+        "margin_bottom": "l",
+        "padding_top": "l",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "split_screen_slideshow_cjMVRj": {
+      "type": "split-screen-slideshow",
+      "blocks": {
+        "slide_QzER6N": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "subheading": "Main Focus",
+            "heading": "Slide Title Here",
+            "text": "<p>This section allows you to showcase multiple slides featuring different promotions, collections, or brand messages</p>",
+            "slide_index": true,
+            "button_label": "Discover More",
+            "button_link": "",
+            "button_style": "tertiary"
+          }
+        },
+        "slide_iUWfA3": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "subheading": "Main Focus",
+            "heading": "Highlight Your Best",
+            "text": "<p>This section allows you to showcase multiple slides featuring different promotions, collections, or brand messages</p>",
+            "slide_index": true,
+            "button_label": "Discover More",
+            "button_link": "",
+            "button_style": "tertiary"
+          }
+        },
+        "slide_xaW3dR": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "",
+            "subheading": "Main Focus",
+            "heading": "Your Feature Showcase",
+            "text": "<p>This section allows you to showcase multiple slides featuring different promotions, collections, or brand messages</p>",
+            "slide_index": true,
+            "button_label": "Discover More",
+            "button_link": "",
+            "button_style": "tertiary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_QzER6N",
+        "slide_iUWfA3",
+        "slide_xaW3dR"
+      ],
+      "disabled": true,
+      "name": "t:sections.split_screen_slideshow.name",
+      "settings": {
+        "sliding_types": "navigation",
+        "image_size": "42.8",
+        "parallax": false,
+        "is_autoplay": true,
+        "is_hover_stop_autoplay": true,
+        "show_arrows": true,
+        "show_bullets": true,
+        "slideshow_speed": 1.1,
+        "slideshow_delay": 3,
+        "slide_effects": "fade",
+        "subheading_tag": "h2",
+        "margin_top": "no-indent",
+        "margin_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "custom_collection_hero_tD9e3U",
+    "instagram_gallery_XFQYb4",
+    "image_banner_Ui3UzF",
+    "newsletter_N6DmJh",
+    "split_screen_slideshow_cjMVRj"
+  ]
+}
