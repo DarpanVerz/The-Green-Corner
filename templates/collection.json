@@ -51,13 +51,6 @@
         "padding_bottom": "s"
       }
     },
-    "custom_liquid_UrikUB": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<div class=\"featured-products-content\">\n  <h2>{{ section.settings.heading }}</h2>\n  <p>{{ section.settings.description }}</p>\n\n  {%- if featured_collection.description != blank -%}\n    <div class=\"featured-collection-description rte\">\n      {{ featured_collection.description }}\n    </div>\n  {%- endif -%}\n</div>"
-      }
-    },
     "custom_collection_hero_tD9e3U": {
       "type": "custom-collection-hero",
       "name": "Custom Collection Hero",
@@ -263,7 +256,6 @@
   "order": [
     "banner",
     "product-grid",
-    "custom_liquid_UrikUB",
     "custom_collection_hero_tD9e3U",
     "instagram_gallery_XFQYb4",
     "image_banner_Ui3UzF",
