@@ -173,31 +173,45 @@
 	{% if collection.all_products_count > 0 %}
 		{% if section.settings.enable_filtering or section.settings.enable_sorting %}
 			
+{%- liquid
+  assign nav_menu = linklists['main-menu']
+  assign matched_parent = nil
+
+  for link in nav_menu.links
+    if link.type == 'collection_link' and link.object.handle == collection.handle
+      assign matched_parent = link
+    endif
+    unless matched_parent
+      for sublink in link.links
+        if sublink.type == 'collection_link' and sublink.object.handle == collection.handle
+          assign matched_parent = link
+        endif
+      endfor
+    endunless
+  endfor
+-%}
+
+{% if matched_parent %}
 <div class="custom-sidebar">
 
-	<h3 class="sidebar-title">Category</h3>
+	<h3 class="sidebar-title">{{ matched_parent.title }}</h3>
 
 	<ul class="custom-category-menu">
 		<li>
-			<a href="/collections/all" class="{% if collection.handle == 'all' %}active{% endif %}">
-				All
+			<a href="{{ matched_parent.url }}" class="{% if collection.handle == matched_parent.object.handle %}active{% endif %}">
+				All {{ matched_parent.title }}
 			</a>
 		</li>
-  {% for collection_item in collections %}
-  {% unless collection_item.handle == 'frontpage' %}
-    <li>
-      <a 
-        href="{{ collection_item.url }}"
-        class="{% if collection.handle == collection_item.handle %}active{% endif %}"
-      >
-        {{ collection_item.title }}
-      </a>
-    </li>
-  {% endunless %}
-  {% endfor %}
-
+		{% for sublink in matched_parent.links %}
+			<li>
+				<a href="{{ sublink.url }}" class="{% if collection.handle == sublink.object.handle %}active{% endif %}">
+					{{ sublink.title }}
+				</a>
+			</li>
+		{% endfor %}
 	</ul>
 </div>
+{% endif %}
 
 		{% endif %}
 	{% endif %}
