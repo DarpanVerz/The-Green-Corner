@@ -1,5 +1,44 @@
 <section class="featured-products-section">
 
+{%- liquid
+  assign nav_menu = linklists['main-menu']
+  assign featured_collection = section.settings.collection
+  assign matched_parent = nil
+  assign current_path = featured_collection.url
+
+  for link in nav_menu.links
+    if link.object.handle == featured_collection.handle or link.url == current_path
+      assign matched_parent = link
+    endif
+
+    unless matched_parent
+      for l2 in link.links
+        if l2.object.handle == featured_collection.handle or l2.url == current_path
+          assign matched_parent = link
+        endif
+
+        unless matched_parent
+          for l3 in l2.links
+            if l3.object.handle == featured_collection.handle or l3.url == current_path
+              assign matched_parent = link
+            endif
+
+            unless matched_parent
+              for l4 in l3.links
+                if l4.object.handle == featured_collection.handle or l4.url == current_path
+                  assign matched_parent = link
+                endif
+              endfor
+            endunless
+          endfor
+        endunless
+      endfor
+    endunless
+  endfor
+
+  assign featured_accent_color = matched_parent.object.metafields.custom.menu_bg_color.value | default: '#056839'
+-%}
+
   <div class="featured-products-wrapper">
 
     <div class="featured-products-left">
@@ -28,9 +67,9 @@
 
             <div class="swiper-slide">
 
-              <div class="featured-product-card card-wrapper" style="--hover-color: {{ product_card_product.metafields.custom.color_themes.value | color_modify: 'alpha', 0.9 | default: 'rgba(5,104,57,0.9)' }};
-	       --button-color: {{ product_card_product.metafields.custom.color_themes.value | color_modify: 'alpha', 0.3 | default: 'rgba(5,104,57,0.3)' }};
-		   --button-border-color: {{ product_card_product.metafields.custom.color_themes.value | color_darken: 10 | default: 'rgba(5,104,57,1)' }};">
+              <div class="featured-product-card card-wrapper" style="--hover-color: {{ featured_accent_color | color_modify: 'alpha', 0.9 }};
+   --button-color: {{ featured_accent_color | color_modify: 'alpha', 0.3 }};
+   --button-border-color: {{ featured_accent_color | color_darken: 10 }};">
 
                 <div class="custom-hover-buttons">
   <product-form class="hover-product-form">
