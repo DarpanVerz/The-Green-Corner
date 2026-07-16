@@ -15,6 +15,7 @@
 
 ul.header__submenu li.list-menu-has-child a.header__menu-item::before{
     content:"" !important;
+     background-image:url(https://cdn.shopify.com/s/files/1/0757/6767/7120/files/menu-arrow1.svg?v=1784174701)
 }
 
 @media screen and (min-width: 1100px) {
