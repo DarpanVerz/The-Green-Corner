@@ -156,6 +156,59 @@
     top: 0;
 }
 
+.menu-item-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-item-row a {
+	flex: 1;
+}
+
+.accordion-toggle {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 8px 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #222;
+	transition: transform 0.25s ease;
+}
+
+.menu-item.is-open .accordion-toggle {
+	transform: rotate(180deg);
+}
+
+.submenu-level-3 {
+	list-style: none;
+	margin: 4px 0 8px 16px;
+	padding-left: 12px;
+	border-left: 2px solid #eee;
+}
+
+.submenu-level-3 li {
+	margin-bottom: 6px;
+}
+
+.submenu-level-3 a {
+	display: block;
+	padding: 8px 12px;
+	font-size: 14px;
+	color: #555;
+	text-decoration: none;
+	border-radius: 6px;
+	transition: 0.2s;
+}
+
+.submenu-level-3 a:hover,
+.submenu-level-3 a.active {
+	color: var(--theme-text);
+	background: var(--theme-bg);
+}
+
 </style>
 
 <div class="container section-{{ section.id }}-padding">
@@ -181,11 +234,20 @@
     if link.type == 'collection_link' and link.object.handle == collection.handle
       assign matched_parent = link
     endif
+
     unless matched_parent
       for sublink in link.links
         if sublink.type == 'collection_link' and sublink.object.handle == collection.handle
           assign matched_parent = link
         endif
+
+        unless matched_parent
+          for subsublink in sublink.links
+            if subsublink.type == 'collection_link' and subsublink.object.handle == collection.handle
+              assign matched_parent = link
+            endif
+          endfor
+        endunless
       endfor
     endunless
   endfor
@@ -202,16 +264,79 @@
 				All {{ matched_parent.title }}
 			</a>
 		</li>
+
 		{% for sublink in matched_parent.links %}
-			<li>
-				<a href="{{ sublink.url }}" class="{% if collection.handle == sublink.object.handle %}active{% endif %}">
-					{{ sublink.title }}
-				</a>
+			{%- liquid
+				assign is_sub_active = false
+				if collection.handle == sublink.object.handle
+					assign is_sub_active = true
+				endif
+
+				assign has_children = false
+				if sublink.links.size > 0
+					assign has_children = true
+				endif
+
+				assign is_expanded = is_sub_active
+				for subsublink in sublink.links
+					if collection.handle == subsublink.object.handle
+						assign is_expanded = true
+					endif
+				endfor
+			-%}
+			<li class="menu-item{% if has_children %} has-children{% endif %}{% if is_expanded %} is-open{% endif %}">
+				<div class="menu-item-row">
+					<a href="{{ sublink.url }}" class="{% if is_sub_active %}active{% endif %}">
+						{{ sublink.title }}
+					</a>
+					{% if has_children %}
+						<button
+							type="button"
+							class="accordion-toggle"
+							aria-expanded="{% if is_expanded %}true{% else %}false{% endif %}"
+							aria-label="Toggle {{ sublink.title }} submenu"
+						>
+							<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</button>
+					{% endif %}
+				</div>
+
+				{% if has_children %}
+					<ul class="submenu-level-3"{% unless is_expanded %} style="display:none;"{% endunless %}>
+						{% for subsublink in sublink.links %}
+							<li>
+								<a href="{{ subsublink.url }}" class="{% if collection.handle == subsublink.object.handle %}active{% endif %}">
+									{{ subsublink.title }}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+				{% endif %}
 			</li>
 		{% endfor %}
 	</ul>
 </div>
 {% endif %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	document.querySelectorAll('.accordion-toggle').forEach(function (btn) {
+		btn.addEventListener('click', function () {
+			var li = btn.closest('.menu-item');
+			var submenu = li.querySelector('.submenu-level-3');
+			var isOpen = li.classList.contains('is-open');
+
+			li.classList.toggle('is-open', !isOpen);
+			btn.setAttribute('aria-expanded', !isOpen);
+			submenu.style.display = isOpen ? 'none' : 'block';
+		});
+	});
+});
+</script>
+
+
 
 		{% endif %}
 	{% endif %}
