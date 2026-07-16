@@ -75,23 +75,32 @@
 {%- liquid
   assign nav_menu = linklists['main-menu']
   assign matched_parent = nil
+  assign current_path = collection.url
 
   for link in nav_menu.links
-    if link.type == 'collection_link' and link.object.handle == collection.handle
+    if link.object.handle == collection.handle or link.url == current_path
       assign matched_parent = link
     endif
 
     unless matched_parent
-      for sublink in link.links
-        if sublink.type == 'collection_link' and sublink.object.handle == collection.handle
+      for l2 in link.links
+        if l2.object.handle == collection.handle or l2.url == current_path
           assign matched_parent = link
         endif
 
         unless matched_parent
-          for subsublink in sublink.links
-            if subsublink.type == 'collection_link' and subsublink.object.handle == collection.handle
+          for l3 in l2.links
+            if l3.object.handle == collection.handle or l3.url == current_path
               assign matched_parent = link
             endif
+
+            unless matched_parent
+              for l4 in l3.links
+                if l4.object.handle == collection.handle or l4.url == current_path
+                  assign matched_parent = link
+                endif
+              endfor
+            endunless
           endfor
         endunless
       endfor
