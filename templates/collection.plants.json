@@ -17,8 +17,8 @@
         "section_size": "container",
         "text_horizontal": "left",
         "add_word": "Collection",
-        "show_word": true,
-        "show_collection_description": true,
+        "show_word": false,
+        "show_collection_description": false,
         "description_products": "",
         "image_products": "shopify://shop_images/Vector_1.webp",
         "image_size": "medium",
@@ -51,12 +51,10 @@
         "padding_bottom": "s"
       }
     },
-    "custom_liquid_NttkRE": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<div class=\"featured-products-content\">\n  <h2>{{ section.settings.heading }}</h2>\n  <p>{{ section.settings.description }}</p>\n\n  {%- if featured_collection.description != blank -%}\n    <div class=\"featured-collection-description rte\">\n      {{ featured_collection.description }}\n    </div>\n  {%- endif -%}\n</div>"
-      }
+    "collection_description_t6Vw4q": {
+      "type": "collection-description",
+      "name": "Collection Description",
+      "settings": {}
     },
     "custom_collection_hero_tD9e3U": {
       "type": "custom-collection-hero",
@@ -263,7 +261,7 @@
   "order": [
     "banner",
     "product-grid",
-    "custom_liquid_NttkRE",
+    "collection_description_t6Vw4q",
     "custom_collection_hero_tD9e3U",
     "instagram_gallery_XFQYb4",
     "image_banner_Ui3UzF",
