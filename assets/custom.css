@@ -35,13 +35,6 @@ ul.header__submenu li.list-menu-has-child > a.header__menu-item::before {
 
 
 
-@media screen and (min-width: 1024px) and (max-width: 1280px){
-	.header__menu > .list-menu > li {
-    padding: 3.3rem 0.6rem !important;
-}
-	
-}
-
 
 
 
@@ -364,6 +357,18 @@ margin-left: -3px; margin-bottom: 5px; }
 .counters .multicolumn_card-text { color: #A6CE39 !important; font-size: 8rem !important; font-family: 'didotregular'; }
 .counters .multicolumn-card__info-title { font-size: 16px; font-weight: 600; font-family: Montserrat, sans-serif; }
 .counters .multicolumn_card-desc p { font-size: 16px !important; }
+
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+	.header__menu > .list-menu > li {
+    padding: 3.3rem 0.6rem !important;
+}
+	
+}
+
+
 @media screen and (min-width:1100px) {
     .counters .multicolumn-card { padding: 0 2rem 0 0 !important; }
 }
