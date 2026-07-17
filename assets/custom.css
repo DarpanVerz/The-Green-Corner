@@ -15,6 +15,11 @@ ul.header__submenu li.list-menu-has-child > a.header__menu-item::before {content
 .custom-collection-layout.new-arrivals .products-grid .collection-product-list {grid-template-columns: repeat(4, 1fr);}
 }
 
+.metafield-rich_text_field > p >a {
+    color: #FFF;
+    text-decoration: underline;
+    margin-left: 2px;
+}
 
 
 h1, h2 { font-family: 'didotregular' !important; }
