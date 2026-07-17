@@ -12,6 +12,8 @@
 		assign show_arrows = false
 	endif
 %}
+{% capture accent_color_value %}{% render 'theme-bg-color-value', source_collection: product.collections.first %}{% endcapture %}
+{% assign accent_color_value = accent_color_value | strip %}
 
 <style>
 button.hover-cart-btn {
