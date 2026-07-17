@@ -711,6 +711,7 @@ margin-left: -3px; margin-bottom: 5px; }
 .gpo-label, .gpo-label span.label-content, .gpo-label span.addOn, .gpo-label.required span.label-content::after, .gpo-dimension-label,.gpo-dropdown, .gpo-dropdown .dropdown-button, .gpo-dropdown .dropdown-suggestion, .gpo-dropdown input+label { font-family: Montserrat, sans-serif !important; }
 .gpo-form__group .gpo-group__wrapper .gpo-form__group .gpo-label { margin-bottom: 10px; }
 
+
 /*collection description */
 .collection-description {
     max-width: unset !important;
