@@ -1,17 +1,3 @@
-document.querySelectorAll('.metafield-rich_text_field p').forEach(p => {
-  let prevBr = false;
-
-  p.childNodes.forEach(node => {
-    if (node.nodeName === 'BR') {
-      if (prevBr) {
-        node.style.display = 'none';
-      }
-      prevBr = true;
-    } else if (node.textContent.trim() !== '') {
-      prevBr = false;
-    }
-  });
-});
 
 
 const selectors = {
