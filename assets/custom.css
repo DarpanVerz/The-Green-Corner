@@ -17,7 +17,13 @@ ul.header__submenu li.list-menu-has-child > a.header__menu-item::before {content
 
 
 
+.metafield-rich_text_field br + br {
+    display: none;
+}
 
+.metafield-rich_text_field br:not(:first-of-type) {
+    display: none;
+}
 
 
 
