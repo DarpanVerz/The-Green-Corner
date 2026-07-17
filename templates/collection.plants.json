@@ -21,6 +21,7 @@
         "show_collection_description": false,
         "description_products": "",
         "image_products": "shopify://shop_images/Vector_1.webp",
+        "default_banner_image": "shopify://shop_images/placeholder-image.jpg",
         "image_size": "medium",
         "show_collection_image": true,
         "margin_top": "no-indent",
