@@ -1,28 +1,56 @@
-{% assign current_collection = collection | default: product.collections.first %}
+{%- liquid
+  assign current_collection = collection | default: product.collections.first
+  assign nav_menu = linklists['main-menu']
+  assign matched_parent = nil
+
+  if current_collection != blank
+    assign current_path = current_collection.url
+
+    for link in nav_menu.links
+      if link.object.handle == current_collection.handle or link.url == current_path
+        assign matched_parent = link
+      endif
+
+      unless matched_parent
+        for l2 in link.links
+          if l2.object.handle == current_collection.handle or l2.url == current_path
+            assign matched_parent = link
+          endif
+
+          unless matched_parent
+            for l3 in l2.links
+              if l3.object.handle == current_collection.handle or l3.url == current_path
+                assign matched_parent = link
+              endif
+
+              unless matched_parent
+                for l4 in l3.links
+                  if l4.object.handle == current_collection.handle or l4.url == current_path
+                    assign matched_parent = link
+                  endif
+                endfor
+              endunless
+            endfor
+          endunless
+        endfor
+      endunless
+    endfor
+  endif
+
+  assign color_source = matched_parent.object | default: current_collection
+  assign bg_color = color_source.metafields.custom.menu_bg_color.value | default: '#056839'
+  assign text_color = color_source.metafields.custom.menu_text_color.value | default: '#ffffff'
+  assign subtitle_color = color_source.metafields.custom.theme_subtitle_color.value | default: '#A6CE39'
+-%}
 
 <style>
 :root {
-  --theme-bg: {{ current_collection.metafields.custom.menu_bg_color.value | default: '#056839' }};
-
-  --theme-bg-light:
-    {{ current_collection.metafields.custom.menu_bg_color.value | color_lighten: 10 }};
-
---theme-bg-dark:
-  {{ current_collection.metafields.custom.menu_bg_color.value | color_darken: 10 }};
-
-
-  --theme-text:
-    {{ current_collection.metafields.custom.menu_text_color.value | default: '#ffffff' }};
-
-    --theme-subtitle: {{ collection.metafields.custom.theme_subtitle_color.value | default: '#A6CE39' }};
-
-  --theme-bg-transparent:
-    {{ current_collection.metafields.custom.menu_bg_color.value
-    | color_modify: 'alpha', 0.92 }};
-
-  --theme-bg-light-transparent:
-    {{ current_collection.metafields.custom.menu_bg_color.value
-    | color_lighten: 25
-    | color_modify: 'alpha', 0.2 }};
+  --theme-bg: {{ bg_color }};
+  --theme-bg-light: {{ bg_color | color_lighten: 10 }};
+  --theme-bg-dark: {{ bg_color | color_darken: 10 }};
+  --theme-text: {{ text_color }};
+  --theme-subtitle: {{ subtitle_color }};
+  --theme-bg-transparent: {{ bg_color | color_modify: 'alpha', 0.92 }};
+  --theme-bg-light-transparent: {{ bg_color | color_lighten: 25 | color_modify: 'alpha', 0.2 }};
 }
 </style>
