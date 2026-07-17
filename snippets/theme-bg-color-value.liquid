@@ -1,0 +1,41 @@
+{%- liquid
+  assign nav_menu = linklists['main-menu']
+  assign matched_parent = nil
+
+  if source_collection != blank
+    assign current_path = source_collection.url
+
+    for link in nav_menu.links
+      if link.object.handle == source_collection.handle or link.url == current_path
+        assign matched_parent = link
+      endif
+
+      unless matched_parent
+        for l2 in link.links
+          if l2.object.handle == source_collection.handle or l2.url == current_path
+            assign matched_parent = link
+          endif
+
+          unless matched_parent
+            for l3 in l2.links
+              if l3.object.handle == source_collection.handle or l3.url == current_path
+                assign matched_parent = link
+              endif
+
+              unless matched_parent
+                for l4 in l3.links
+                  if l4.object.handle == source_collection.handle or l4.url == current_path
+                    assign matched_parent = link
+                  endif
+                endfor
+              endunless
+            endfor
+          endunless
+        endfor
+      endunless
+    endfor
+  endif
+
+  assign color_source = matched_parent.object | default: source_collection
+  assign bg_color = color_source.metafields.custom.menu_bg_color.value | default: '#056839'
+-%}{{- bg_color -}}
