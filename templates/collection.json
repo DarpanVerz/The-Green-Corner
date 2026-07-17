@@ -17,10 +17,11 @@
         "section_size": "container",
         "text_horizontal": "left",
         "add_word": "Collection",
-        "show_word": true,
-        "show_collection_description": true,
+        "show_word": false,
+        "show_collection_description": false,
         "description_products": "",
         "image_products": "shopify://shop_images/Vector_1.webp",
+        "default_banner_image": "shopify://shop_images/placeholder-image.jpg",
         "image_size": "medium",
         "show_collection_image": true,
         "margin_top": "no-indent",
@@ -50,6 +51,11 @@
         "padding_top": "no-indent",
         "padding_bottom": "s"
       }
+    },
+    "collection_description_Vt8LDV": {
+      "type": "collection-description",
+      "name": "Collection Description",
+      "settings": {}
     },
     "custom_collection_hero_tD9e3U": {
       "type": "custom-collection-hero",
@@ -251,11 +257,6 @@
         "margin_top": "no-indent",
         "margin_bottom": "l"
       }
-    },
-    "collection_description_Vt8LDV": {
-      "type": "collection-description",
-      "name": "Collection Description",
-      "settings": {}
     }
   },
   "order": [
