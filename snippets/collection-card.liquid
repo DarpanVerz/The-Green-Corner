@@ -74,9 +74,27 @@
 						widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
 				}}
 			{%- else -%}
-				{{
-					'collection-'	| append: loop_index	| placeholder_svg_tag: 'placeholder-svg placeholder placeholder-svg-hover-effect'
-				}}
+				{%- if default_collection_image != blank -%}
+					{%- liquid
+						assign image_height = default_collection_image.width | divided_by: default_collection_image.aspect_ratio
+						assign image_width = default_collection_image.width
+						assign sizes = '(min-width: 750px) 50vw, 100vw'
+					-%}
+					{{-
+						default_collection_image
+						| image_url: width: 3840
+						| image_tag:
+							loading: 'lazy',
+							width: image_width,
+							height: image_height,
+							sizes: sizes,
+							widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+					-}}
+				{%- else -%}
+					{{
+						'collection-'	| append: loop_index	| placeholder_svg_tag: 'placeholder-svg placeholder placeholder-svg-hover-effect'
+					}}
+				{%- endif -%}
 			{% endif %}
 		</a>
 	</div>

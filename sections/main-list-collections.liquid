@@ -60,7 +60,8 @@
 							btn_link: collection.url,
 							text_align: section.settings.text_horizontal,
 							aniamtion_effect: settings.collection_aniamtion_effect,
-							animation: settings.collection_animation
+							animation: settings.collection_animation,
+							default_collection_image: section.settings.default_collection_image
 						%}
 					</li>
 				{% endif %}
@@ -201,6 +202,11 @@
 			"id": "show_collection_button",
 			"default": true,
 			"label": "t:sections.all.collection.show_collection_button"
+		},
+		{
+			"type": "image_picker",
+			"id": "default_collection_image",
+			"label": "Default Collection Image"
 		},
 		{
 			"type": "header",
