@@ -29,52 +29,55 @@
 					<div class="swiper-product-slider swiper-container">
 						<div class="product-slider__wrapper swiper-wrapper">
 							{%- for block in section.blocks -%}
-								{% if block.settings.product != blank %}
-									<div
-										data-type="{{ product.type }}"
-										class="
-											  collection-product-card product-slider-data collection-slider-card swiper-slide lazy
-											  quickview{%- if settings.quickview_hover and settings.slider_on_hover == false -%}--hover{% endif %}
-											{% unless product == 0 %} show {% endunless %}
-										"
-										data-id="{{ block.id }}"
-										data-color-scheme="color-{{ section.settings.color_scheme }}"
-									>
-										{% render 'product-card',
-											product_card_product: block.settings.product,
-											media_size: section.settings.image_ratio,
-											media_fit: section.settings.image_fit,
-											show_secondary_image: section.settings.show_secondary_image,
-											show_vendor: section.settings.show_vendor,
-											show_desc: section.settings.show_desc,
-											show_color_swatch: section.settings.show_color_swatch,
-											section_id: section.id,
-											show_sku: section.settings.show_sku,
-											text_alignment: settings.card_text_alignment
-										%}
-									</div>
-								{% else %}
-									<div
-										class="collection-product-card collection-slider-card collection-slider-card--placeholder swiper-slide"
-										data-id="{{ block.id }}"
-										data-type="{{ product.type }}"
-									>
-										{% assign loop_index = forloop.index | modulo: 3 | plus: 1 %}
-										{% render 'product-card-placeholder',
-											media_size: section.settings.image_ratio,
-											text_alignment: settings.card_text_alignment,
-											loop_index: loop_index
-										%}
-									</div>
-								{% endif %}
-							{%- else -%}
-								<div class="collection-product-card collection-slider-card collection-slider-card--placeholder">
-									{% render 'product-card-placeholder',
+							{% if block.settings.product != blank %}
+								{% capture card_accent_color %}{% render 'theme-bg-color-value', source_collection: block.settings.product.collections.first %}{% endcapture %}
+								{% assign card_accent_color = card_accent_color | strip %}
+								<div
+									data-type="{{ product.type }}"
+									class="
+										collection-product-card product-slider-data collection-slider-card swiper-slide lazy
+										quickview{%- if settings.quickview_hover and settings.slider_on_hover == false -%}--hover{% endif %}
+										{% unless product == 0 %} show {% endunless %}
+									"
+									data-id="{{ block.id }}"
+									data-color-scheme="color-{{ section.settings.color_scheme }}"
+								>
+									{% render 'product-card',
+										product_card_product: block.settings.product,
 										media_size: section.settings.image_ratio,
-										text_alignment: settings.card_text_alignment
+										media_fit: section.settings.image_fit,
+										show_secondary_image: section.settings.show_secondary_image,
+										show_vendor: section.settings.show_vendor,
+										show_desc: section.settings.show_desc,
+										show_color_swatch: section.settings.show_color_swatch,
+										section_id: section.id,
+										show_sku: section.settings.show_sku,
+										text_alignment: settings.card_text_alignment,
+										accent_color: card_accent_color
 									%}
 								</div>
-							{%- endfor -%}
+							{% else %}
+								<div
+									class="collection-product-card collection-slider-card collection-slider-card--placeholder swiper-slide"
+									data-id="{{ block.id }}"
+									data-type="{{ product.type }}"
+								>
+									{% assign loop_index = forloop.index | modulo: 3 | plus: 1 %}
+									{% render 'product-card-placeholder',
+										media_size: section.settings.image_ratio,
+										text_alignment: settings.card_text_alignment,
+										loop_index: loop_index
+									%}
+								</div>
+							{% endif %}
+						{%- else -%}
+							<div class="collection-product-card collection-slider-card collection-slider-card--placeholder">
+								{% render 'product-card-placeholder',
+									media_size: section.settings.image_ratio,
+									text_alignment: settings.card_text_alignment
+								%}
+							</div>
+						{%- endfor -%}
 						</div>
 					</div>
 				</div>
