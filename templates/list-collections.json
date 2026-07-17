@@ -21,6 +21,7 @@
         "text_horizontal": "left",
         "show_collection_desc": false,
         "show_collection_button": false,
+        "default_collection_image": "shopify://shop_images/placeholder-image.jpg",
         "margin_top": "no-indent",
         "margin_bottom": "l"
       }
