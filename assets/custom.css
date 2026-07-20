@@ -1148,6 +1148,6 @@ body .main-product-section .product__description img {
 /*** Add to cart ****/
 button.hover-cart-btn { height: 56px !important; border-radius: 50px !important; display: flex !important; align-items: center; justify-content: center; font-size: 18px; font-weight: 300; text-decoration: none; transition: all 0.3s ease; border: none; background: #fff; width: 100%; color: var(--theme-bg); padding: 0; }
 button.hover-cart-btn:hover { background: #000; cursor: pointer; color: #fff; }
-.main-product-section .product__description img { width: 120%; height: auto; }
+.main-product-section .product__description img { width: 100%; height: auto; }
 .main-product-section .product__description h4 { font-size: 20px; margin-top: 20px; }
 .gpo-group__childs .gpo-form__group { border: #e3e3e3 solid 1px !important; border-radius: 5px !important; padding: 15px !important; }
