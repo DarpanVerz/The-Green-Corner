@@ -8,9 +8,14 @@
 }
 
 
-.product-form__group-name {
+.product-parameters .product-form__group-name {
     text-align: left;
     font-weight: bold;
+}
+.product-parameters fieldset.product-form__input {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
