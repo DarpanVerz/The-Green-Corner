@@ -12,17 +12,8 @@
 
 
 
-.product-tabs-wrapper .product-tabs-content li {
-    padding-right: 30px;
-    vertical-align: text-top;
-}
-
-
-
-.collection-description a:hover {
-    text-decoration:none;
-}
-
+.product-tabs-wrapper .product-tabs-content li {padding-right: 30px;vertical-align: text-top;}
+.collection-description a:hover {    text-decoration:none;}
 body .product-custom-icon {list-style: none;padding-left: 0;}
 .product-custom-icon li {position: relative;padding-left: 24px;}
 .product-custom-icon li::before {content: "";position: absolute; left: 0;top:7px; width: 10px;height: 10px;background: #A6CE39;border-radius: 50%;}
