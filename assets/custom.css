@@ -22,7 +22,7 @@ body .product-custom-icon {list-style: none;padding-left: 0;}
 ul.header__submenu li.list-menu-has-child > a.header__menu-item::before {content: "" !important;background-image: url(/cdn/shop/files/menu-arrow1.svg?v=1784174701);width: 20px;height: 20px;display: inline-block;position: absolute;right: 0;top: 10px;}
 
 body .product__media-wrapper .swiper-btn {top: 41px;}
-.body-template-product .metafield-rich_text_field > p >a {color: #FFF;text-decoration: underline;margin-left: 2px;}
+.body-template-product .metafield-rich_text_field > p >a {color: #FFF;text-decoration: underline;margin-left:5px;}
 .body-template-product .metafield-rich_text_field > p >a:hover{text-decoration:none;}
 
 table.christmas-trees-table {border-collapse: collapse;}
