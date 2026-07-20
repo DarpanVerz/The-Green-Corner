@@ -12,7 +12,7 @@
     text-align: left;
     font-weight: bold;
 }
-fieldset.product-form__input {
+body fieldset.product-form__input {
     border: 0;
     padding-left: 0;
 }
