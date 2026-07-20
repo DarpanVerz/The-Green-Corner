@@ -8,6 +8,14 @@
 }
 
 
+.product__description table {
+      width: 100% !important;
+  max-width: 100%;
+  height: auto !important;
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
 
 .field input[type=text]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=email]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=tel]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=password]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field .field__input:not(input[type=checkbox]):not(:placeholder-shown)+label
  {  
@@ -1105,14 +1113,6 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 
 body .main-product-section .product__description img {
     width: 100%;
-}
-.product__description table {
-      width: 100% !important;
-  max-width: 100%;
-  height: auto !important;
-  display: block;
-  overflow-x: auto;
-  border-collapse: collapse;
 }
 
 .product-tabs-wrapper .product-tabs-content li {
