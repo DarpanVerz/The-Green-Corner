@@ -15,10 +15,7 @@ ul.header__submenu li.list-menu-has-child > a.header__menu-item::before {content
 .custom-collection-layout.new-arrivals .products-grid .collection-product-list {grid-template-columns: repeat(4, 1fr);}
 }
 
-.product__media-wrapper .swiper-btn {
-    top: 40px;
-}
-
+body .product__media-wrapper .swiper-btn {top: 41px;}
 .body-template-product .metafield-rich_text_field > p >a {
     color: #FFF;
     text-decoration: underline;
