@@ -1026,6 +1026,9 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 .page-header__inner .button--simple { padding-left: 0px; }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
+
+.collection-product-card .card-wrapper, .products-slider__wrapper .card-wrapper, .collection-tabs_card .card-wrapper {padding: 10px;}	
+	
 .product-markers .product-markers-for-mobile { margin-bottom: 0; position: absolute; z-index: 2; left: 100px; padding: 10px; top: auto; bottom: 30%; }
 .card-horizontal__information { padding: 10px; }
 }
