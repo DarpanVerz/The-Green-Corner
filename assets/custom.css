@@ -31,6 +31,8 @@ body .product__media-wrapper .swiper-btn {top: 41px;}
 
 .christmas-trees-table td, .christmas-trees-table tr {
     border: 1px solid gray !important;
+    border-collapse: collapse;
+    border: 1px solid #000;
 }
 
 
