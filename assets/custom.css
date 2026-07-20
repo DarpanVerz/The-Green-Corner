@@ -8,24 +8,11 @@
 }
 
 
-.product__description table {
-      width: 100% !important;
-  max-width: 100%;
-  height: auto !important;
-  display: block;
-  overflow-x: auto;    box-shadow: 0 0;
-  border-collapse: collapse;
-}
 
+.product__description table {width: 100% !important;max-width: 100%;height: auto !important;display: block;overflow-x: auto;    box-shadow: 0 0;border-collapse: collapse;}
 .field input[type=text]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=email]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=tel]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=password]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field .field__input:not(input[type=checkbox]):not(:placeholder-shown)+label
- {  
-    top: 0.5rem;
-}
-
-.body-template-page-contact .rte {
-    min-height: inherit;
-}
-
+{top: 0.5rem;}
+.body-template-page-contact .rte {min-height: inherit;}
 .product-tabs-wrapper .product-tabs-content li {padding-right: 30px;vertical-align: text-top;}
 .collection-description a:hover {    text-decoration:none;}
 body .product-custom-icon {list-style: none;padding-left: 0;}
@@ -38,27 +25,12 @@ body .product__media-wrapper .swiper-btn {top: 41px;}
 .body-template-product .metafield-rich_text_field > p >a {color: #FFF;text-decoration: underline;margin-left: 2px;}
 .body-template-product .metafield-rich_text_field > p >a:hover{text-decoration:none;}
 
-@media screen and (min-width: 1100px) {
-.custom-collection-layout.new-arrivals .products-grid .collection-product-list {grid-template-columns: repeat(4, 1fr);}
-}
+table.christmas-trees-table {border-collapse: collapse;}
+.christmas-trees-table td, .christmas-trees-table tr {border: 1px solid gray !important;border-collapse: collapse;border: 1px solid #000;}
+.christmas-trees-table td{padding: 15px 12px;}
+.collection-description hr {margin-block: 20px;border: none;    border-bottom: 1px solid currentColor;opacity: .2;}
 
-table.christmas-trees-table {
-    border-collapse: collapse;
-}
-.christmas-trees-table td, .christmas-trees-table tr {
-    border: 1px solid gray !important;
-    border-collapse: collapse;
-    border: 1px solid #000;
-}
-.christmas-trees-table td{
-padding: 15px 12px;
-}
-.collection-description hr {
-    margin-block: 20px;
-    border: none;    border-bottom: 1px solid currentColor;
-    opacity: .2;
-}
-    
+@media screen and (min-width: 1100px) {.custom-collection-layout.new-arrivals .products-grid .collection-product-list {grid-template-columns: repeat(4, 1fr);}}
 
 
 
