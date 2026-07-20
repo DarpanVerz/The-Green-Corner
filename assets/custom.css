@@ -28,7 +28,9 @@ body .product__media-wrapper .swiper-btn {top: 41px;}
 .custom-collection-layout.new-arrivals .products-grid .collection-product-list {grid-template-columns: repeat(4, 1fr);}
 }
 
-
+table.christmas-trees-table {
+    border-collapse: collapse;
+}
 .christmas-trees-table td, .christmas-trees-table tr {
     border: 1px solid gray !important;
     border-collapse: collapse;
