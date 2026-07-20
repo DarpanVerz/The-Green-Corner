@@ -12,6 +12,9 @@
 
 
 
+.product-tabs-content li {
+    padding-right: 30px;
+}
 
 .collection-description a:hover {
     text-decoration:none;
