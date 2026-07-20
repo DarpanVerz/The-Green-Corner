@@ -1081,7 +1081,11 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 }
 @media screen and (max-width:767px) {
 
-    body .product__info-wrapper{padding-left:0; padding-right:0;}
+.product-recommendations .section-header__title {
+    font-size: 4rem;
+}    
+
+body .product__info-wrapper{padding-left:0; padding-right:0;}
 
 body .main-product-section .product__description img {
     width: 100%;
