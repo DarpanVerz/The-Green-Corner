@@ -1081,6 +1081,10 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 }
 @media screen and (max-width:767px) {
 
+.product__info-wrapper .product__title__wrapper .product__title {
+    font-size: 32px;
+}    
+
 .product-recommendations .section-header__title {
     font-size: 4rem;
 }    
