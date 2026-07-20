@@ -968,6 +968,8 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 .breadcrumb__delimiter { display: flex; align-items: center; color: #9c9c9c; }
 .breadcrumb__delimiter svg { width: 15px; height: 15px; }
 @media screen and (max-width:767px) {
+
+
     .breadcrumb { gap: 6px; font-size: 14px; }
     .breadcrumb__delimiter svg { width: 12px; height: 12px; }
     .article-template__title { color: #fff; }
@@ -1092,6 +1094,10 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 .blog-articles { grid-template-columns: repeat(2, 1fr) !important; }
 }
 @media screen and (max-width:767px) {
+
+body .main-product-section .product__description img {
+    width: 100%;
+}
 
 .product-tabs-wrapper .product-tabs-content li {
     padding-right: 0;
