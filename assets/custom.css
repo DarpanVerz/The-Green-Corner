@@ -29,6 +29,10 @@ body .product__media-wrapper .swiper-btn {top: 41px;}
 }
 
 
+.christmas-trees-table td, .christmas-trees-table tr {
+    border: 1px solid gray !important;
+}
+
 
 
 h1, h2 { font-family: 'didotregular' !important; }
