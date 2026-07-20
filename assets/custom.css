@@ -8,6 +8,15 @@
 }
 
 
+
+.field input[type=text]:focus + label,
+.field input[type=email]:focus + label {
+    top: -size;
+    top: .5rem;
+    transform: translateY(0);
+    display: inline-block;
+}
+
 .collection-description a:hover {
     text-decoration:none;
 }
