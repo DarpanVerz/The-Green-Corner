@@ -61,7 +61,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button",
+            "picker_type": "dropdown",
             "show_size_guide": false,
             "size_guide_header": "Header",
             "size_guide_heading_tag": "h3",
