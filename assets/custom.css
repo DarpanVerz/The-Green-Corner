@@ -9,43 +9,22 @@
 
 
 
-body .product-custom-icon {
-  list-style: none;
-  padding-left: 0;
-}
-
-.product-custom-icon li {
-  position: relative;
-  padding-left: 24px;
-}
-
-.product-custom-icon li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 8px; /* અહીં value વધારી-ઘટાડી નીચે/ઉપર કરો */
-  width: 10px;
-  height: 10px;
-  background: #A6CE39;
-  border-radius: 50%;
-}
-
+body .product-custom-icon {list-style: none;padding-left: 0;}
+.product-custom-icon li {position: relative;padding-left: 24px;}
+.product-custom-icon li::before {content: "";position: absolute; left: 0;top: 8px; width: 10px;height: 10px;background: #A6CE39;border-radius: 50%;}
 .custom-collection-layout.new-arrivals .custom-sidebar {display: none;}
 ul.header__submenu li.list-menu-has-child > a.header__menu-item::before {content: "" !important;background-image: url(/cdn/shop/files/menu-arrow1.svg?v=1784174701);width: 20px;height: 20px;display: inline-block;position: absolute;right: 0;top: 10px;}
+
+body .product__media-wrapper .swiper-btn {top: 41px;}
+.body-template-product .metafield-rich_text_field > p >a {color: #FFF;text-decoration: underline;margin-left: 2px;}
+.body-template-product .metafield-rich_text_field > p >a:hover{text-decoration:none;}
+
 @media screen and (min-width: 1100px) {
 .custom-collection-layout.new-arrivals .products-grid .collection-product-list {grid-template-columns: repeat(4, 1fr);}
 }
 
-body .product__media-wrapper .swiper-btn {top: 41px;}
-.body-template-product .metafield-rich_text_field > p >a {
-    color: #FFF;
-    text-decoration: underline;
-    margin-left: 2px;
-}
 
-.body-template-product .metafield-rich_text_field > p >a:hover{
-    text-decoration:none;
-}
+
 
 h1, h2 { font-family: 'didotregular' !important; }
 .subtitle { font-family: var(--font-heading-family); letter-spacing: var(--subtitle-letter-spacing); color: var(--subtitle-color); font-size: var(--subtitle-font-size) }
