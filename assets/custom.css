@@ -36,8 +36,10 @@ table.christmas-trees-table {
     border-collapse: collapse;
     border: 1px solid #000;
 }
-
-
+.christmas-trees-table td{
+padding: 15px 12px;
+}
+    
 
 h1, h2 { font-family: 'didotregular' !important; }
 .subtitle { font-family: var(--font-heading-family); letter-spacing: var(--subtitle-letter-spacing); color: var(--subtitle-color); font-size: var(--subtitle-font-size) }
