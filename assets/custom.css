@@ -1080,7 +1080,10 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 @media screen and (max-width:991px) {
 .blog-articles { grid-template-columns: repeat(2, 1fr) !important; }
 }
+
 @media screen and (max-width:767px) {
+ 
+.newsletter__title {font-size: 4rem;}
 
 .product__info-wrapper .product__title__wrapper .product__title {
     font-size: 32px;
