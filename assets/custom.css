@@ -136,7 +136,7 @@ h1, h2 { font-family: 'didotregular' !important; }
     .search-placeholder { font-size: 14px; }
 }
 @media screen and (max-width:1024px) {
-    .breadcrumb {
+    body .breadcrumb {
         padding: 10px 20px;
     }
     .custom-search-box { max-width: unset; width: auto; }
