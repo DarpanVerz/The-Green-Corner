@@ -10,7 +10,7 @@
 
 
 .field input[type=text]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=email]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=tel]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=password]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field .field__input:not(input[type=checkbox]):not(:placeholder-shown)+label
- {    text-transform: inherit;
+ {  
     top: 0.5rem;
 }
 
