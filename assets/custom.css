@@ -9,19 +9,8 @@
 
 
 
-.field input[type=text]:focus + label,
-.field input[type=email]:focus + label {
-    top: -size;
-    top: .5rem;
-    transform: translateY(0);
-    display: inline-block;
-}
 
-.newsletter-form .field__input:focus + .field__label,
-.newsletter-form .field__input:not(:placeholder-shown) + .field__label {
-    top: 8px;
-    transform: none;
-}
+
 
 
 .collection-description a:hover {
