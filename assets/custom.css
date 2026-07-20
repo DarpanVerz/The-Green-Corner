@@ -1048,7 +1048,7 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
     line-height: 21px;
 }	
 
-.collection-product-card .card-wrapper, .products-slider__wrapper .card-wrapper, .collection-tabs_card .card-wrapper {padding: 10px;}	
+.collection-product-card .card-wrapper, .collection-tabs_card .card-wrapper {padding: 10px;}	
 	
 }
 
