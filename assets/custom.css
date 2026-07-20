@@ -39,6 +39,11 @@ table.christmas-trees-table {
 .christmas-trees-table td{
 padding: 15px 12px;
 }
+.collection-description hr {
+    margin-block: 20px;
+    border: none;
+    opacity: .2;
+}
     
 
 h1, h2 { font-family: 'didotregular' !important; }
