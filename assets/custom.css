@@ -21,6 +21,9 @@ ul.header__submenu li.list-menu-has-child > a.header__menu-item::before {content
     margin-left: 2px;
 }
 
+.body-template-product .metafield-rich_text_field > p >a:hover{
+    text-decoration:none;
+}
 
 h1, h2 { font-family: 'didotregular' !important; }
 .subtitle { font-family: var(--font-heading-family); letter-spacing: var(--subtitle-letter-spacing); color: var(--subtitle-color); font-size: var(--subtitle-font-size) }
