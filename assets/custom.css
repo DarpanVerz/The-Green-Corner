@@ -17,6 +17,12 @@
     display: inline-block;
 }
 
+.newsletter-form .field__input:focus + .field__label,
+.newsletter-form .field__input:not(:placeholder-shown) + .field__label {
+    top: 8px;
+    transform: none;
+}
+
 .collection-description a:hover {
     text-decoration:none;
 }
