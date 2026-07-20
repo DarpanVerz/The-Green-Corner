@@ -1058,7 +1058,7 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 .main-blog__title { font-size: 58px; font-weight: 400; margin-bottom: 30px; }
 
 /* Top line */
-.blog-articles__wrapper { border-top: 1px solid #d9d9d9; padding-top: 40px; }
+.blog-articles__wrapper {border-top:1px solid #d9d9d9; padding-top:40px; }
 
 /* Responsive */
 @media screen and (max-width:991px) {
