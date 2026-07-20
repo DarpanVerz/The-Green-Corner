@@ -1026,6 +1026,11 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 .page-header__inner .button--simple { padding-left: 0px; }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
+	
+.collection-product-card .unstyled-link, .card-wrapper .unstyled-link {
+    font-size: 15px;
+    line-height: 21px;
+}	
 
 .collection-product-card .card-wrapper, .products-slider__wrapper .card-wrapper, .collection-tabs_card .card-wrapper {padding: 10px;}	
 	
