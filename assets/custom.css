@@ -1098,6 +1098,14 @@ body:has(cart-drawer.active) #carthike-chat-wrapper, body:has(cart-drawer.active
 body .main-product-section .product__description img {
     width: 100%;
 }
+.product__description table {
+      width: 100% !important;
+  max-width: 100%;
+  height: auto !important;
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
 
 .product-tabs-wrapper .product-tabs-content li {
     padding-right: 0;
