@@ -54,6 +54,11 @@
     },
     "custom_liquid_dgfJ7t": {
       "type": "custom-liquid",
+      "custom_css": [
+        "h2,.metafield-rich_text_field {margin-left: 40px; margin-right: 40px;}",
+        "h2 {text-align: center;}",
+        "@media (max-width: 749px) {h2, .metafield-rich_text_field {margin-left: 16px; margin-right: 16px; }}"
+      ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "{{ collection.metafields.custom.why_choose_us | metafield_tag }}"
@@ -61,6 +66,11 @@
     },
     "custom_liquid_qWyWkg": {
       "type": "custom-liquid",
+      "custom_css": [
+        "h2 {margin-top: 40px !important; margin-bottom: 20px; text-align: center;}",
+        ".metafield-rich_text_field {margin-left: 40px; margin-right: 40px;}",
+        "@media (max-width: 749px) {h2 {margin-top: 24px !important; } .metafield-rich_text_field {margin-left: 16px; margin-right: 16px; }}"
+      ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "{{ collection.metafields.custom.faqs | metafield_tag }}"
