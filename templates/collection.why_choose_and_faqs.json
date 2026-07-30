@@ -52,6 +52,20 @@
         "padding_bottom": "s"
       }
     },
+    "custom_liquid_dgfJ7t": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{{ collection.metafields.custom.why_choose_us | metafield_tag }}"
+      }
+    },
+    "custom_liquid_qWyWkg": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{{ collection.metafields.custom.faqs | metafield_tag }}"
+      }
+    },
     "collection_description_Vt8LDV": {
       "type": "collection-description",
       "name": "Collection Description",
@@ -262,6 +276,8 @@
   "order": [
     "banner",
     "product-grid",
+    "custom_liquid_dgfJ7t",
+    "custom_liquid_qWyWkg",
     "collection_description_Vt8LDV",
     "custom_collection_hero_tD9e3U",
     "instagram_gallery_XFQYb4",
