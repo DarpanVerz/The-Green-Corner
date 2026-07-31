@@ -33,10 +33,11 @@
     "custom_liquid_QQ4bpw": {
       "type": "custom-liquid",
       "custom_css": [
-        "p {margin: 0; padding-left: 32px; padding-right: 32px; line-height: 1.6;}",
-        "p + p {margin-top: 18px;}",
-        "p:first-child {padding-top: 28px;}",
-        "p:last-child {padding-bottom: 28px;}"
+        "p {margin: 0 !important; padding-left: 32px; padding-right: 32px; font-size: 15px !important; line-height: 1.6 !important;}",
+        "p span {font-size: inherit !important; line-height: inherit !important;}",
+        "p + p {margin-top: 20px !important;}",
+        "p:first-of-type {padding-top: 40px !important;}",
+        "p:last-of-type {padding-bottom: 40px !important;}"
       ],
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
