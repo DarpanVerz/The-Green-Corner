@@ -33,7 +33,7 @@
     "custom_liquid_QQ4bpw": {
       "type": "custom-liquid",
       "custom_css": [
-        "p {margin: 0 !important; padding-left: 32px; padding-right: 32px; font-size: 15px !important; line-height: 1.6 !important;}",
+        "p {margin: 0 !important; padding-left: 32px; padding-right: 32px; font-size: 17px !important; line-height: 1.6 !important;}",
         "p span {font-size: inherit !important; line-height: inherit !important;}",
         "p + p {margin-top: 20px !important;}",
         "p:first-of-type {padding-top: 40px !important;}",
