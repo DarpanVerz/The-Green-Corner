@@ -30,15 +30,18 @@
         "padding_bottom": "no-indent"
       }
     },
-    "collection_description_Vt8LDV": {
-      "type": "collection-description",
+    "custom_liquid_QQ4bpw": {
+      "type": "custom-liquid",
       "custom_css": [
-        "& {padding-top: 20px !important; padding-bottom: 20px !important;}",
-        "p:first-child {margin-top: 0 !important;}",
-        "p:last-child {margin-bottom: 0 !important;}"
+        "p {margin: 0; padding-left: 32px; padding-right: 32px; line-height: 1.6;}",
+        "p + p {margin-top: 18px;}",
+        "p:first-child {padding-top: 28px;}",
+        "p:last-child {padding-bottom: 28px;}"
       ],
-      "name": "Collection Description",
-      "settings": {}
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "{{collection.description}}"
+      }
     },
     "product-grid": {
       "type": "main-collection-product-grid",
@@ -290,7 +293,7 @@
   },
   "order": [
     "banner",
-    "collection_description_Vt8LDV",
+    "custom_liquid_QQ4bpw",
     "product-grid",
     "custom_liquid_dgfJ7t",
     "custom_liquid_qWyWkg",
