@@ -28,7 +28,7 @@ body .product__media-wrapper .swiper-btn.swiper-btn--prev{
     left: -40px;
 }
 
-body .product-section .js-media-sublist {
+body.body-template-product .product-section .js-media-sublist {
     overflow: visible;
 }
 
