@@ -309,6 +309,8 @@ h1, h2 { font-family: 'didotregular' !important; }
 /* ===== Responsive ===== */
 @media (max-width:1024px) {
 
+    .product .product__outer--center .product__media-wrapper{padding-left: 30px;padding-right: 30px;}
+
     body .product__media-wrapper .swiper-btn.swiper-btn--prev {
         left:-35px;
         width: 2rem;
