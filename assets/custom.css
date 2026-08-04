@@ -327,6 +327,12 @@ h1, h2 { font-family: 'didotregular' !important; }
     .custom-collection-section .card { height: 350px; }
 }
 @media (max-width:768px) {
+
+    .product .product__outer--center .product__media-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .custom-collection-section { padding: 50px 0; }
     .custom-collection-section .section-header { flex-direction: column; width: 100%; text-align: center; }
     .custom-collection-section .left-section-header { width: 100%; }
