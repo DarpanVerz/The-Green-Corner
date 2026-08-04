@@ -22,10 +22,10 @@
 }
 
 body .product__media-wrapper .swiper-btn.swiper-btn--next {
-    right: -40px;
+    right: -42px;
 }
 body .product__media-wrapper .swiper-btn.swiper-btn--prev{
-    left: -40px;
+    left: -42px;
 }
 
 body.body-template-product .product-section .js-media-sublist {
