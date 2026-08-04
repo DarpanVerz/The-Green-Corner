@@ -101,21 +101,32 @@
 					<div class="slideshow-swiper__slide swiper-slide">
 						<div class="slideshow-slide background color-{{ slide_color }} {% if block_img == blank %}slideshow-slide_empty-bg{% endif %}" data-id="{{ block.id }}" data-color-scheme="color-{{ slide_color }}" style="align-items: {{ vertical_alignment }}">
 							<div class="container overlay-header-paddings">
-							<div class="slideshow-slide__img have-overlay">
-								{% if block_img != blank %}
-									{{
+							{%- liquid
+							assign img_alt = block_img.alt
+							if img_alt == blank
+								assign img_alt = block.settings.heading
+							endif
+							if img_alt == blank
+								assign img_alt = block.settings.subheading
+							endif
+							assign img_alt = img_alt | strip_html | escape
+							-%}
+
+								<div class="slideshow-slide__img have-overlay">
+									{% if block_img != blank %}
+										{{
 										block_img
 										| image_url: width: 3840
 										| image_tag:
 											loading: 'lazy',
 											width: block_img.width,
-											alt: img_alt,
 											height: image_height,
-											sizes: '200vw, (min-width: 1023px) 100vw',
+											alt: img_alt,
+											sizes: '100vw',
 											widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-									}}
-								{% elsif block.settings.video != blank %}
-									{{
+										}}
+									{% elsif block.settings.video != blank %}
+										{{
 										block.settings.video
 										| video_tag:
 											image_size: '1100x',
@@ -123,13 +134,13 @@
 											loop: true,
 											controls: false,
 											muted: true
-									}}
+										}}
 									{% else %}
 										{% assign loop_index = forloop.index | modulo: 3 | plus: 1 %}
 										{{ 'product-' | append: loop_index | placeholder_svg_tag: 'placeholder' }}
-								{% endif %}
-							</div>
-							<div class="slideshow-slide__text" style="{{ section_style }}">
+									{% endif %}
+								</div>
+								<div class="slideshow-slide__text" style="{{ section_style }}">
 								<div class="slideshow-slide__mext">
 								{% if block_heading != blank %}
 									<{{ section.settings.heading_tag }}
