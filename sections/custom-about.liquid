@@ -23,17 +23,17 @@
 
         <div class="img-large">
           {% if section.settings.image1 != blank %}
-            <img src="{{ section.settings.image1 | img_url: 'master' }}" />
+            <img src="{{ section.settings.image1 | img_url: 'master' }}" alt="image1" />
           {% endif %}
         </div>
         <div class="img-small">
           {% if section.settings.image2 != blank %}
-            <img src="{{ section.settings.image2 | img_url: 'master' }}" />
+            <img src="{{ section.settings.image2 | img_url: 'master' }}" alt="image2" />
           {% endif %}
         </div>
         <div class="img-small">
           {% if section.settings.image3 != blank %}
-            <img src="{{ section.settings.image3 | img_url: 'master' }}" />
+            <img src="{{ section.settings.image3 | img_url: 'master' }}" alt="image3" />
           {% endif %}
         </div>
 
