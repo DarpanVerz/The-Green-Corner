@@ -18,23 +18,54 @@
     </div>
 
     <div class="about-right">
+
       <div class="img-grid">
+
         <div class="img-large">
-          {% if section.settings.image1 != blank %}
-            <img src="{{ section.settings.image1 | img_url: 'master' }}" />
-          {% endif %}
-        </div>
-        <div class="img-small">
-          {% if section.settings.image2 != blank %}
-            <img src="{{ section.settings.image2 | img_url: 'master' }}" />
-          {% endif %}
-        </div>
-        <div class="img-small">
-          {% if section.settings.image3 != blank %}
-            <img src="{{ section.settings.image3 | img_url: 'master' }}" />
-          {% endif %}
-        </div>
+            {% if section.settings.image1 != blank %}
+              {{
+                section.settings.image1
+                | image_url: width: 1500
+                | image_tag:
+                  alt: section.settings.image1.alt,
+                  loading: 'lazy',
+                  sizes: '(min-width: 1023px) 50vw, 100vw',
+                  widths: '375, 550, 750, 1100, 1500'
+              }}
+            {% endif %}
+          </div>
+
+          <div class="img-small">
+            {% if section.settings.image2 != blank %}
+              {{
+                section.settings.image2
+                | image_url: width: 900
+                | image_tag:
+                  alt: section.settings.image2.alt,
+                  loading: 'lazy',
+                  sizes: '(min-width: 1023px) 25vw, 50vw',
+                  widths: '275, 375, 550, 750, 900'
+              }}
+            {% endif %}
+          </div>
+
+          <div class="img-small">
+            {% if section.settings.image3 != blank %}
+              {{
+                section.settings.image3
+                | image_url: width: 900
+                | image_tag:
+                  alt: section.settings.image3.alt,
+                  loading: 'lazy',
+                  sizes: '(min-width: 1023px) 25vw, 50vw',
+                  widths: '275, 375, 550, 750, 900'
+              }}
+            {% endif %}
+          </div>
+
+        
       </div>
+
     </div>
   </div>
 </section>
