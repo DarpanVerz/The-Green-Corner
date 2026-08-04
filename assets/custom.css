@@ -21,6 +21,10 @@
     height: 50px;
 }
 
+.product__media-wrapper .swiper-btn.swiper-btn--next {
+    right: -40px;
+}
+
 .product__description table {width: 100% !important;max-width: 100%;height: auto !important;display: block;overflow-x: auto;    box-shadow: 0 0;border-collapse: collapse;}
 .field input[type=text]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=email]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=tel]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field input[type=password]:not(input[type=checkbox]):not(:placeholder-shown)+label, .field .field__input:not(input[type=checkbox]):not(:placeholder-shown)+label
 {top: 0.5rem;}
