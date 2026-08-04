@@ -274,7 +274,7 @@ h1, h2 { font-family: 'didotregular' !important; }
 /* ===== Card Content ===== */
 .custom-collection-section .card-content { position: absolute; bottom: 20px; left: 20px; right: 20px; z-index: 2; }
 .custom-collection-section .card-content h3 { color: #fff; font-size: 30px; margin: 0 0 35px 0; }
-.collection-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.collection-grid { display: grid; grid-template-columns: repeat(var(--collection-columns, 4), 1fr); gap: 20px; }
 
 /* Tablet */
 @media (max-width:991px) {
