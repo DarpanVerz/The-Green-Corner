@@ -602,43 +602,43 @@
 							
 							<div class="product__media-list">
 								<div class="js-media-list no-js-hidden swiper">
-								<div class="swiper-wrapper">
-									{%- liquid
-										assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
-										assign media_count = product.media.size 
-										-%}
+										<div class="swiper-wrapper">
+											{%- liquid
+												assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src'
+												assign media_count = product.media.size 
+												-%}
 
-									{%- if product.selected_or_first_available_variant.featured_media != null -%}
-										{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%} 
-										<div class="product__media-item swiper-slide {% if section.settings.enable_autoheight != true %}auto-diabled{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}" data-media-id="{{ section.id }}-{{ featured_media.id }}">
-											{% render 'product-thumbnail', product_card_product: product, media: featured_media, position: 'featured', modal_id: section.id, lazy_load: false %}
-										</div>
-									{%- endif -%}
+											{%- if product.selected_or_first_available_variant.featured_media != null -%}
+												{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%} 
+												<div class="product__media-item swiper-slide {% if section.settings.enable_autoheight != true %}auto-diabled{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}" data-media-id="{{ section.id }}-{{ featured_media.id }}">
+													{% render 'product-thumbnail', product_card_product: product, media: featured_media, position: 'featured', modal_id: section.id, lazy_load: false %}
+												</div>
+											{%- endif -%}
 
-									{%- for media in product.media -%}
-										{% if show_only_variant_media %}
-											{% break %}
-										{% endif %}
+											{%- for media in product.media -%}
+												{% if show_only_variant_media %}
+													{% break %}
+												{% endif %}
 
-										{% if section.settings.variant_media_display == 'hide_unselected_variant_media'
-											and variant_images contains media.src
-										%}
-											{% continue %}
-										{% endif %}
-										{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-											<div class="product__media-item swiper-slide {% if section.settings.enable_autoheight != true %}auto-diabled{% endif %} {% if media.media_type != 'image' %} product__media-item--full{% endif %} {% if variant_images contains media.src %} product__media-item--variant{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
-													data-media-id="{{ section.id }}-{{ media.id }}"
-											>
-												{% render 'product-thumbnail', media: media, position: forloop.index, modal_id: section.id, lazy_load: false %}
-											</div>
-										{%- endunless -%}
-									{%- endfor -%}
+												{% if section.settings.variant_media_display == 'hide_unselected_variant_media'
+													and variant_images contains media.src
+												%}
+													{% continue %}
+												{% endif %}
+												{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+													<div class="product__media-item swiper-slide {% if section.settings.enable_autoheight != true %}auto-diabled{% endif %} {% if media.media_type != 'image' %} product__media-item--full{% endif %} {% if variant_images contains media.src %} product__media-item--variant{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
+															data-media-id="{{ section.id }}-{{ media.id }}"
+													>
+														{% render 'product-thumbnail', media: media, position: forloop.index, modal_id: section.id, lazy_load: false %}
+													</div>
+												{%- endunless -%}
+											{%- endfor -%}
+											
+										
 									
+										</div>
 								
-							
 								</div>
-								
-							  </div>
 							</div>
 
 							<div class="product__media-sublist js-media-sublist no-js-hidden swiper">
