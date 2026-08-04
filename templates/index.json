@@ -195,6 +195,13 @@
             "collection": "essentials",
             "custom_collection_image": "shopify://shop_images/Vector_6.png"
           }
+        },
+        "collection_block_MhVmBQ": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "essentials",
+            "custom_collection_image": "shopify://shop_images/Vector_6.png"
+          }
         }
       },
       "block_order": [
@@ -202,13 +209,16 @@
         "collection_block_bQVPdC",
         "collection_block_UGbN77",
         "collection_block_BdPK7U",
-        "collection_block_EU8B3p"
+        "collection_block_EU8B3p",
+        "collection_block_MhVmBQ"
       ],
       "name": "Custom Collection Slider",
       "settings": {
         "subtitle": "Our categories",
         "title": "Explore Our Plant Collection",
         "description": "Discover a diverse collection of indoor and outdoor plants, carefully selected for plant lovers of all levels. Complete your gardening journey with our range of quality tools and soil designed to help every plant thrive.",
+        "columns_desktop": 4,
+        "card_button_text": "View All",
         "button_text": "Browse All Categories",
         "button_link": "shopify://collections"
       }
