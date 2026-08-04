@@ -1,8 +1,6 @@
 <section class="custom-plant-care-section">
   <div class="container-fluid">
     <div class="plant-care-wrapper">
-
-      <!-- Left Image -->
       <div class="plant-care-image">
         {% if section.settings.image != blank %}
           {{
@@ -10,12 +8,11 @@
             | image_url: width: 2000
             | image_tag:
               loading: 'lazy',
+              
               class: 'main-image'
           }}
         {% endif %}
       </div>
-
-      <!-- Right Content -->
       <div class="plant-care-content color-{{ section.settings.color_scheme }}">
 
         {% if section.settings.subtitle != blank %}
