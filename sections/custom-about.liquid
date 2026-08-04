@@ -22,46 +22,20 @@
       <div class="img-grid">
 
         <div class="img-large">
-            {% if section.settings.image1 != blank %}
-              {{
-                section.settings.image1
-                | image_url: width: 1500
-                | image_tag:
-                  alt: section.settings.image1.alt,
-                  loading: 'lazy',
-                  sizes: '(min-width: 1023px) 50vw, 100vw',
-                  widths: '375, 550, 750, 1100, 1500'
-              }}
-            {% endif %}
-          </div>
-
-          <div class="img-small">
-            {% if section.settings.image2 != blank %}
-              {{
-                section.settings.image2
-                | image_url: width: 900
-                | image_tag:
-                  alt: section.settings.image2.alt,
-                  loading: 'lazy',
-                  sizes: '(min-width: 1023px) 25vw, 50vw',
-                  widths: '275, 375, 550, 750, 900'
-              }}
-            {% endif %}
-          </div>
-
-          <div class="img-small">
-            {% if section.settings.image3 != blank %}
-              {{
-                section.settings.image3
-                | image_url: width: 900
-                | image_tag:
-                  alt: section.settings.image3.alt,
-                  loading: 'lazy',
-                  sizes: '(min-width: 1023px) 25vw, 50vw',
-                  widths: '275, 375, 550, 750, 900'
-              }}
-            {% endif %}
-          </div>
+          {% if section.settings.image1 != blank %}
+            <img src="{{ section.settings.image1 | img_url: 'master' }}" />
+          {% endif %}
+        </div>
+        <div class="img-small">
+          {% if section.settings.image2 != blank %}
+            <img src="{{ section.settings.image2 | img_url: 'master' }}" />
+          {% endif %}
+        </div>
+        <div class="img-small">
+          {% if section.settings.image3 != blank %}
+            <img src="{{ section.settings.image3 | img_url: 'master' }}" />
+          {% endif %}
+        </div>
 
         
       </div>
@@ -101,13 +75,7 @@
     {"type": "url", "id": "button_link", "label": "Button Link"},
     {"type": "image_picker", "id": "image1", "label": "Main Image"},
     {"type": "image_picker", "id": "image2", "label": "Top Right Image"},
-    {"type": "image_picker", "id": "image3", "label": "Bottom Right Image"},
-    {
-      "type": "text",
-      "id": "image1_alt",
-      "label": "Image 1 alt text",
-      "info": "Describe what's in the image for SEO and screen readers"
-    }
+    {"type": "image_picker", "id": "image3", "label": "Bottom Right Image"}
   ],
   "presets": [
     {"name": "Custom About Section"}
