@@ -188,29 +188,13 @@
             "collection": "essentials",
             "custom_collection_image": "shopify://shop_images/Vector_6.png"
           }
-        },
-        "collection_block_miaF9x": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "essentials",
-            "custom_collection_image": "shopify://shop_images/Vector_6.png"
-          }
-        },
-        "collection_block_FFWqPh": {
-          "type": "collection_block",
-          "settings": {
-            "collection": "essentials",
-            "custom_collection_image": "shopify://shop_images/Vector_6.png"
-          }
         }
       },
       "block_order": [
         "collection_block_qTg9Vf",
         "collection_block_bQVPdC",
         "collection_block_UGbN77",
-        "collection_block_BdPK7U",
-        "collection_block_miaF9x",
-        "collection_block_FFWqPh"
+        "collection_block_BdPK7U"
       ],
       "name": "Custom Collection Slider",
       "settings": {
