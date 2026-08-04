@@ -54,6 +54,7 @@
 							loading: 'lazy',
 							width: section.settings.image.width,
 							height: image_height,
+							alt:"",
 							sizes: '100vw',
 							widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
 					}}
@@ -91,7 +92,7 @@
 
 					{% if section.settings.button_label != blank %}
 						<div class="image-banner__button-wrapper">
-							{% render 'custom-button', layout: section, %}
+							{% render 'button', layout: section, %}
 						</div>
 					{% endif %}
 				</div>
