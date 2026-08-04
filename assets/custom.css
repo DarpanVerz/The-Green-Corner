@@ -310,12 +310,12 @@ h1, h2 { font-family: 'didotregular' !important; }
 @media (max-width:1024px) {
 
     body .product__media-wrapper .swiper-btn.swiper-btn--prev {
-        left: 0;
+        left:-35px;
         width: 2rem;
         height: 2rem;
     }
     body .product__media-wrapper .swiper-btn.swiper-btn--next {
-        right: 0;
+        right: -35px;
         width: 2rem;
         height: 2rem;
     }
