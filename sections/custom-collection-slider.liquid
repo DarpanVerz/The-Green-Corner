@@ -16,7 +16,6 @@
       </div>
 
       <div class="right-section-header">
-
         <div class="description">
           {% if section.settings.description != blank %}
             <p class="desc">{{ section.settings.description }}</p>
@@ -30,80 +29,64 @@
             </a>
           {% endif %}
         </div>
-
       </div>
-
     </div>
 
     <!-- Collection Grid -->
-    <div class="collection-grid">
-
-      {% for block in section.blocks limit: 4 %}
+    <div
+      class="collection-grid"
+      style="--collection-columns: {{ section.settings.columns_desktop }};"
+    >
+      {% for block in section.blocks %}
         {% assign collection = block.settings.collection %}
 
-        {% if collection %}
-          <div class="grid-item">
-
+        {% if collection != blank %}
+          <div class="grid-item" {{ block.shopify_attributes }}>
             <div class="card">
               <a href="{{ collection.url }}">
+                {%- if block.settings.custom_collection_image != blank -%}
+                  {%- assign card_image = block.settings.custom_collection_image -%}
+                {%- elsif collection.image != blank -%}
+                  {%- assign card_image = collection.image -%}
+                {%- elsif collection.products.first.featured_image != blank -%}
+                  {%- assign card_image = collection.products.first.featured_image -%}
+                {%- else -%}
+                  {%- assign card_image = blank -%}
+                {%- endif -%}
 
-                {% if block.settings.custom_collection_image %}
+                {% if card_image != blank %}
                   <img
-                    src="{{ block.settings.custom_collection_image | image_url: width: 600 }}"
-                    alt="{{ collection.title }}"
-                  >
-                {% elsif collection.image %}
-                  <img
-                    src="{{ collection.image | image_url: width: 600 }}"
-                    alt="{{ collection.title }}"
-                  >
-                {% elsif collection.products.first.featured_image %}
-                  <img
-                    src="{{ collection.products.first.featured_image | image_url: width: 600 }}"
-                    alt="{{ collection.title }}"
+                    src="{{ card_image | image_url: width: 600 }}"
+                    srcset="
+                      {{ card_image | image_url: width: 400 }} 400w,
+                      {{ card_image | image_url: width: 600 }} 600w,
+                      {{ card_image | image_url: width: 900 }} 900w
+                    "
+                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw"
+                    width="{{ card_image.width }}"
+                    height="{{ card_image.height }}"
+                    alt="{{ collection.title | escape }}"
+                    loading="lazy"
                   >
                 {% endif %}
 
                 <div class="card-content">
                   <h3>{{ collection.title }}</h3>
-
-                  <span class="view-btn">View All</span>
+                  <span class="view-btn">{{ section.settings.card_button_text | default: 'View All' }}</span>
                 </div>
-
               </a>
             </div>
-
           </div>
         {% endif %}
       {% endfor %}
-
     </div>
-
   </div>
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  if (document.querySelector('.mySwiper-{{ section.id }}')) {
-    new Swiper('.mySwiper-{{ section.id }}', {
-      slidesPerView: 4,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: '.mySwiper-{{ section.id }} .swiper-button-next',
-        prevEl: '.mySwiper-{{ section.id }} .swiper-button-prev',
-      },
-      breakpoints: {
-        0: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 4 }
-      }
-    });
-  }
-});
-</script>
 {% schema %}
 {
   "name": "Collection Slider",
+  "max_blocks": 20,
   "settings": [
     {
       "type": "text",
@@ -119,6 +102,21 @@ document.addEventListener("DOMContentLoaded", function () {
       "type": "textarea",
       "id": "description",
       "label": "Short Description"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "text",
+      "id": "card_button_text",
+      "label": "Card Button Text",
+      "default": "View All"
     },
     {
       "type": "text",
@@ -143,10 +141,10 @@ document.addEventListener("DOMContentLoaded", function () {
           "label": "Select Collection"
         },
         {
-        "type": "image_picker",
-        "id": "custom_collection_image",
-        "label": "Custom Collection Image"
-      },
+          "type": "image_picker",
+          "id": "custom_collection_image",
+          "label": "Custom Collection Image"
+        }
       ]
     }
   ],
