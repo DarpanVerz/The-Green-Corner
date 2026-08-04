@@ -311,10 +311,15 @@ h1, h2 { font-family: 'didotregular' !important; }
 
     body .product__media-wrapper .swiper-btn.swiper-btn--prev {
         left: 0;
+        width: 2rem;
+        height: 2rem;
     }
     body .product__media-wrapper .swiper-btn.swiper-btn--next {
         right: 0;
+        width: 2rem;
+        height: 2rem;
     }
+    
 
     .custom-collection-section h2 { font-size: 32px; }
     .custom-collection-section .card { height: 350px; }
