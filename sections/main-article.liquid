@@ -147,12 +147,12 @@
 									</div>
 									<div class="article-template__text{% if no_desk %} article-template__item{% endif %}">
 								
-										<h2
+										<h1
 											class="article-template__title"
 											itemprop="headline"
 										>
 											{{ article.title | escape }}
-										</h2>
+										</h1>
 										{% if no_desk == false and article.excerpt.size > 0 and block.settings.blog_show_excerpt %}
 											<div class="article-template__item">
 										{% endif %}
