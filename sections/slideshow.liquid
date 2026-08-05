@@ -1,8 +1,5 @@
 {{ 'section-slideshow.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'slideshow.js' | asset_url }}" defer="defer"></script>
-{% style %}
-	{% render 'section-margin' %}
-{% endstyle %}
 
 {%- capture html_dir %}{% include 'direction' %}{% endcapture %}
 
@@ -37,18 +34,64 @@
 		when 'center'
 			assign section_style = 'margin : auto; text-align : center;'
 		else
-			assign section_style = 'auto 0'
+			assign section_style = 'margin : auto; text-align : center;'
 	endcase
 
 	if html_dir == "rtl" and alignment == "left"
 		assign section_style = 'margin : auto 0 auto auto; text-align: right;'
  	endif
 
-	assign count = 0
-	for block in section.blocks
-		assign count = count | plus: 1
-	endfor
+	assign count = section.blocks.size
 %}
+
+{%- comment -%}
+	All per-block CSS lives here, OUTSIDE the slideshow markup.
+
+	It used to sit inside the for loop, which put a <style> element
+	between every .swiper-slide as a direct child of .swiper-wrapper.
+	Swiper counts wrapper children when it clones slides for loop mode, so
+	those stray nodes threw the slide indexes off — that is why the bullet
+	count was wrong and why clicking bullet 2 jumped to slide 3.
+{%- endcomment -%}
+{% style %}
+	{% render 'section-margin' %}
+
+	{%- for block in section.blocks -%}
+		{%- liquid
+			if block.settings.article != blank
+				assign style_img = block.settings.article.image
+			else
+				assign style_img = block.settings.image
+			endif
+
+			assign slide_size = section_size
+
+			if image_size == 'adapt'
+				if style_img != blank and style_img.aspect_ratio != blank
+					assign slide_size = 1 | divided_by: style_img.aspect_ratio | times: 100 | append: '%'
+				else
+					comment
+						No image on this slide (video or placeholder): aspect_ratio is nil,
+						which used to resolve to --slide-height: 0 and collapse the slide.
+					endcomment
+					assign slide_size = '56.25%'
+				endif
+			endif
+		-%}
+
+		[data-id="{{ block.id }}"].slideshow-slide {
+			--slide-height : {{ slide_size }};
+			{% if image_size != 'adapt' and image_size != 'large' %}
+				aspect-ratio : {{ image_size }};
+			{% endif %}
+		}
+
+		[data-id="{{ block.id }}"] .have-overlay {
+			--overlay-alpha : {{ block.settings.overlay_opacity }}%;
+		}
+	{%- endfor -%}
+{% endstyle %}
+
 <div
 	class="slideshow {{ slide_class }}"
 	data-id="shopify-section-{{ section.id }}"
@@ -68,7 +111,7 @@
 		<div class="slideshow__wrapper swiper-wrapper">
 			{% for block in section.blocks %}
 				{% liquid
-					
+
 					if block.settings.article != blank
 						assign block_img = block.settings.article.image
 						assign block_heading = block.settings.article.title | escape
@@ -80,24 +123,8 @@
 					endif
 
 					assign image_height = block_img.width | divided_by: block_img.aspect_ratio
-					assign adapt_height = 1 | divided_by: block_img.aspect_ratio | times: 100 | append: '%'
 					assign slide_color = block.settings.color_scheme
-					if image_size == 'adapt'
-						assign section_size = adapt_height
-					endif
 				%}
-				{% style %}
-					[data-id="{{ block.id }}"].slideshow-slide {
-						--slide-height : {{ section_size }};
-						{% if image_size != 'adapt' and image_size != 'large' %}
-							aspect-ratio : {{ image_size }};
-						{% endif %}
-					}
-
-					[data-id="{{ block.id }}"] .have-overlay {
-						--overlay-alpha : {{ block.settings.overlay_opacity }}%;
-					}
-				{% endstyle %}
 					<div class="slideshow-swiper__slide swiper-slide">
 						<div class="slideshow-slide background color-{{ slide_color }} {% if block_img == blank %}slideshow-slide_empty-bg{% endif %}" data-id="{{ block.id }}" data-color-scheme="color-{{ slide_color }}" style="align-items: {{ vertical_alignment }}">
 							<div class="container overlay-header-paddings">
@@ -114,17 +141,36 @@
 
 								<div class="slideshow-slide__img have-overlay">
 									{% if block_img != blank %}
-										{{
-										block_img
-										| image_url: width: 3840
-										| image_tag:
-											loading: 'lazy',
-											width: block_img.width,
-											height: image_height,
-											alt: img_alt,
-											sizes: '100vw',
-											widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
-										}}
+										{%- comment -%}
+											The first slide is the LCP element on most storefronts,
+											so it must not be lazy-loaded.
+										{%- endcomment -%}
+										{% if forloop.first %}
+											{{
+											block_img
+											| image_url: width: 3840
+											| image_tag:
+												loading: 'eager',
+												fetchpriority: 'high',
+												width: block_img.width,
+												height: image_height,
+												alt: img_alt,
+												sizes: '100vw',
+												widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+											}}
+										{% else %}
+											{{
+											block_img
+											| image_url: width: 3840
+											| image_tag:
+												loading: 'lazy',
+												width: block_img.width,
+												height: image_height,
+												alt: img_alt,
+												sizes: '100vw',
+												widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+											}}
+										{% endif %}
 									{% elsif block.settings.video != blank %}
 										{{
 										block.settings.video
@@ -189,23 +235,24 @@
 				</div>
 			{% endfor %}
 		</div>
-		{% if section.settings.show_bullets and count != 1 %}
+		{% if count != 1 and section.settings.show_bullets or count != 1 and section.settings.show_arrows %}
 			<div class="slideshow-bottom slider-pagiantion-bullet {% for block in section.blocks %}color-{{ block.settings.color_scheme }}{% break %}{% endfor %}">
 				<div class="container">
 					<div class="slideshow-bottom__wrapper  {% if alignment == "left" %} slideshow-bottom__wrapper-right {% endif %}">
 						{% if section.settings.show_bullets %}
-								<div class="swiper-pagination__wrapper">
-									<div class="swiper-pagination swiper-pagination__button"></div>
-								</div>
+							<div class="swiper-pagination__wrapper">
+								<div class="swiper-pagination swiper-pagination__button"></div>
+							</div>
 						{% endif %}
-					
+
+						{% if section.settings.show_arrows %}
 							<div class="swiper-button swiper-button-prev">
 								{% render 'icon-arrow' %}
 							</div>
 							<div class="swiper-button swiper-button-next">
 								{% render 'icon-arrow' %}
 							</div>
-						
+						{% endif %}
 					</div>
 				</div>
 			</div>
@@ -327,13 +374,13 @@
 			{
 				"type": "checkbox",
 				"id": "is_autoplay",
-				"default": false,
+				"default": true,
 				"label": "t:sections.all.slider_options.slider_is_autoplay.label"
 			},
 			{
 				"type": "checkbox",
 				"id": "is_hover_stop_autoplay",
-				"default": false,
+				"default": true,
 				"label": "t:sections.all.slider_options.slider_hover_autoplay_stop.label"
 			},
 			{
@@ -341,6 +388,12 @@
 				"id": "show_bullets",
 				"default": true,
 				"label": "t:sections.all.slider_options.navigation.label"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_arrows",
+				"default": true,
+				"label": "Show arrows"
 			},
 			{
 				"type": "checkbox",
@@ -365,7 +418,7 @@
 				"min": 0,
 				"max": 8,
 				"step": 0.1,
-				"default": 3,
+				"default": 5,
 				"unit": "s",
 				"label": "t:sections.all.slider_options.delay.label"
 			},
