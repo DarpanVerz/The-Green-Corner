@@ -11,6 +11,11 @@
     max-width: 90rem;
 }
 
+
+.body-template-index .slideshow-slide__button {
+    margin-top: 15px;
+}
+
 .product-parameters .product-form__group-name {
     text-align: left;
     font-weight: bold;
