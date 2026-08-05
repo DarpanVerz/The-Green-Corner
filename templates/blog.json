@@ -20,8 +20,8 @@
             "overlay_opacity": 20,
             "heading": "Lorem Ipsum",
             "text": "<p>Lorem Ipsum is simply dummy text of the</p>",
-            "button_label": "Read More",
-            "button_link": "#",
+            "button_label": "",
+            "button_link": "",
             "second_button_label": "",
             "second_button_link": "",
             "article": ""
