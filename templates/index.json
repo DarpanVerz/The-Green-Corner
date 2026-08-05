@@ -92,7 +92,7 @@
         "slideshow_speed": 1.1,
         "slideshow_delay": 3,
         "slide_effects": "slide",
-        "heading_tag": "h2",
+        "heading_tag": "h1",
         "margin_top": "no-indent",
         "margin_bottom": "s"
       }
