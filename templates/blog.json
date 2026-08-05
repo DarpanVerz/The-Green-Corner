@@ -27,10 +27,10 @@
             "article": ""
           }
         },
-        "template--21710482374974__a768c257-bb5b-4475-a8c0-563aea70523c-slideshow_item-2": {
+        "slideshow_item_ftLaTg": {
           "type": "slideshow_item",
           "settings": {
-            "image": "shopify://shop_images/flowers-banner.png",
+            "image": "shopify://shop_images/d9474117cd13df8bb14840d12b0c9b2b0089a4b3.jpg",
             "color_scheme": "background-2",
             "overlay_opacity": 20,
             "heading": "Lorem Ipsum",
@@ -50,8 +50,8 @@
             "overlay_opacity": 20,
             "heading": "Lorem Ipsum",
             "text": "<p>Lorem Ipsum is simply dummy text of the</p>",
-            "button_label": "Read More",
-            "button_link": "#",
+            "button_label": "",
+            "button_link": "",
             "second_button_label": "",
             "second_button_link": "",
             "article": ""
@@ -60,7 +60,7 @@
       },
       "block_order": [
         "template--21710482374974__a768c257-bb5b-4475-a8c0-563aea70523c-slideshow_item-1",
-        "template--21710482374974__a768c257-bb5b-4475-a8c0-563aea70523c-slideshow_item-2",
+        "slideshow_item_ftLaTg",
         "template--21710482374974__a768c257-bb5b-4475-a8c0-563aea70523c-slideshow_item-3"
       ],
       "settings": {
