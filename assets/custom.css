@@ -7,6 +7,9 @@
     :root { --main-padding: 2rem; }
 }
 
+.body-template-index .slideshow-slide__title {
+    max-width: 90rem;
+}
 
 .product-parameters .product-form__group-name {
     text-align: left;
