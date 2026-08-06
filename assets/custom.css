@@ -768,7 +768,7 @@ h1, h2 { font-family: 'didotregular' !important; }
 
 /* Horizontal thumbnail slider fix */
 .product-section .js-media-sublist { width: 100%; margin-top: 15px; overflow: hidden; }
-
+.product-section .js-media-sublist .swiper-wrapper { display: flex !important; flex-direction: row !important; align-items: center; }
 
 /* .product-section .js-media-sublist .swiper-slide {
     width: auto !important;
