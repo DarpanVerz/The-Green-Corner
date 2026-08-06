@@ -10,7 +10,7 @@
 .announcement-wrapper .announcement-wrapper_button span.button-label {
     transform: none !important;
 }
-.announcement-wrapper a[href="#"] {
+.announcement-wrapper .a[href="#"].button--simple {
   cursor: context-menu;
 }
 
