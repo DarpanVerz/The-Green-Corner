@@ -126,8 +126,8 @@
         "text_alignment": "center",
         "margin_top": "no-indent",
         "margin_bottom": "l",
-        "padding_top": "no-indent",
-        "padding_bottom": "no-indent",
+        "padding_top": "l",
+        "padding_bottom": "l",
         "enable_border_top": false,
         "enable_border_bottom": false
       }
