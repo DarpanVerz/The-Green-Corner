@@ -7,6 +7,10 @@
     :root { --main-padding: 2rem; }
 }
 
+.announcement-wrapper .announcement-wrapper_button span.button-label {
+    transform: none !important;
+}
+
 .body-template-index .slideshow-slide__title {
     max-width: 90rem;
 }
