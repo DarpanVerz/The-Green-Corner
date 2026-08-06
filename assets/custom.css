@@ -10,6 +10,9 @@
 .announcement-wrapper .announcement-wrapper_button span.button-label {
     transform: none !important;
 }
+.announcement-wrapper a[href="#"] {
+  cursor: context-menu;
+}
 
 .body-template-index .slideshow-slide__title {
     max-width: 90rem;
