@@ -11,7 +11,7 @@
     transform: none !important;
 }
 .announcement-wrapper a[href="#"].button--simple {
-  cursor: context-menu;
+ cursor: text;
 }
 
 .body-template-index .slideshow-slide__title {
