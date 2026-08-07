@@ -46,6 +46,25 @@
 									</span>
 								</button>
 								<div class="drawer__accordion-content" style="display: none">
+
+									{%- comment -%}
+										Parent (dhaa. "Flowers" / "Plants") <button> che, etle tena par
+										tap karvathi fakt accordion khule che — page redirect nathi thato.
+										Etle submenu ni sauthi upar "View all" row aapiye chhie.
+									{%- endcomment -%}
+									{%- if link.url != blank and link.url != '#' -%}
+										<div class="medium-font" data-hover-opacity="21">
+											<div class="second_level drawer__view-all">
+												<a
+													href="{{ link.url }}"
+													class="menu-drawer__menu-item list-menu__item focus-inset"
+												>
+													View all {{ link.title | escape }}
+												</a>
+											</div>
+										</div>
+									{%- endif -%}
+
 									{%- for childlink in link.links -%}
 										<div class="medium-font" data-hover-opacity="21">
 											<div class="second_level">
