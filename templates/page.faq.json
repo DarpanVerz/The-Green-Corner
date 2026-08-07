@@ -149,11 +149,235 @@
         "enable_border_top": false,
         "enable_border_bottom": false
       }
+    },
+    "collapsible_content_Xyi7jx": {
+      "type": "collapsible-content",
+      "blocks": {
+        "text_block_FYR6z6": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Where do your Christmas Trees come from?",
+            "block_heading_tag": "h4",
+            "text": "<p>Our Premium Grade Noble Fir comes all the way from Oregon, USA!</p><p>Our Noble Fir Christmas Trees are SERF Certified (Socially and Environmentally Responsible Farm). They are grown in the Pacific Northwest and are inspected by the Washington and Oregon Department of Agriculture. This ensures that these farms implement environmentally sustainable practices that build and conserve the soil and water, protect riparian zones, maintain biodiversity and preserve wildlife habitat.</p>"
+          }
+        },
+        "text_block_3WzQME": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "How long can a Live Christmas Tree last? How do I keep my Christmas Trees green and fresh?",
+            "block_heading_tag": "h4",
+            "text": "<p>A live Noble Fir Christmas Tree can last 3-4 weeks when taken care of!</p><p>Always ensure that the base of the Noble Fir Christmas Tree is filled with water. Without water, the Christmas Tree will dry up quickly!</p><p>On the night before delivery, our team will chainsaw a straight cut at the bottom of the tree to ensure that water can be absorbed by the tree.</p><p>Do keep your Christmas Tree at least 2 metres away from any light and heat source. LED fairy lights that are commonly used for decorating Christmas Trees do not produce much heat. As part of a green initiative, you may turn them off whenever they are not in use.</p>"
+          }
+        },
+        "text_block_WmxUwk": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "What tree height should I pick?",
+            "block_heading_tag": "h4",
+            "text": "<p>We would recommend going a height of 1ft-2ft (30cm-60cm) below the height of your ceiling. This allowance will ensure that you have sufficient space for a star topper.</p><p>If you have a 8ft (240cm) tall ceiling, a 6ft (180cm) Christmas Tree would fit perfectly.</p><p>The width of a Christmas Tree is usually 0.4 – 0.5 times the height of the Christmas Tree. A 6ft tree would have a width of 72cm-80cm.</p><p>As all trees are live and natural, the true beauty comes with how each and every tree are of different shape and size.</p>"
+          }
+        },
+        "text_block_433RyQ": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Does the Christmas Tree come with decorations?",
+            "block_heading_tag": "h4",
+            "text": "<p>We have 4 unique Christmas tree decorations themes this year and you have the option of adding them to your order! Prices will vary according to the height of the tree!</p><p>Each theme were specially curated and designed by our inhouse team and designers, with each and every decorative ornament handpicked by our specialist.</p>"
+          }
+        },
+        "text_block_8ThHKg": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I come down to choose my Christmas Tree before ordering?",
+            "block_heading_tag": "h4",
+            "text": "<p>Unfortunately, we do not allow our customers to pick their Christmas Trees. Our Christmas Trees are wrapped and stored in a cold room and will only be taken out the night before delivery to maintain their freshness.</p>"
+          }
+        },
+        "text_block_G9TFG4": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I self-collect my Christmas Tree?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes, you can! Please email us <a href=\"mailto:@thegreencorner@prince.com.sg\">@thegreencorner@prince.com.sg</a> with your order number and we will assist you further.</p>"
+          }
+        },
+        "text_block_iymttt": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I choose my preferred delivery and dismantle date?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes you can! Once you have added your Christmas Trees into the cart, you may select your preferred delivery and dismantle date at the checkout page.</p><p>You may also additionally choose a specific time frame on your selected delivery and dismantle date. However, please note that additional charges will apply if the time falls outside our regular delivery hours.</p><p>Delivery and dismantle dates are subjected to limited availability!</p>"
+          }
+        },
+        "text_block_a7Q9xb": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I change my delivery and dismantle date after ordering?",
+            "block_heading_tag": "h4",
+            "text": "<p>Delivery and dismantle dates are subjected to availability and we will do our best to cater to your schedule.</p><p>There will be an additional charge for each postponement/ rescheduling of delivery or/and dismantling date if the request was made less than 1 week before the scheduled delivery date or/ and dismantling date.</p>"
+          }
+        },
+        "text_block_MyRhKB": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I choose a specific time frame for delivery and dismantle?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes, you may choose a specific time frame on your selected delivery and dismantle date. However, please note that additional charges will apply if the time falls outside our regular delivery hours.</p>"
+          }
+        },
+        "text_block_pAgJJV": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "What can I expect on the day of delivery?",
+            "block_heading_tag": "h4",
+            "text": "<p>We will be delivering your Christmas Tree based on the delivery date which you have pre-selected. Before delivery, our dedicated driver will call you to give you a heads-up. Once we have arrived, we will place the Christmas Tree into the Christmas Tree stand and place the Christmas Tree at your preferred spot before removing its netting.</p><p>Our set up does not include watering the Christmas Tree stand; please ensure to water it as soon as you can!</p>"
+          }
+        },
+        "text_block_iNDmre": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "What can I expect on the day of dismantling?",
+            "block_heading_tag": "h4",
+            "text": "<p>Our dedicated drivers will call you before arriving to give you a heads-up. Please ensure that any personal ornaments/ ornaments you purchased from us are removed from the tree before we remove the Christmas Tree. This is to allow us to ensure a smooth and efficient dismantling process. We will also dispose any ornaments that are left on the tree.</p>"
+          }
+        },
+        "text_block_gkcJEq": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I cancel my Christmas Tree order?",
+            "block_heading_tag": "h4",
+            "text": "<p>A cancellation fee shall apply for all cancellations. For cancellations made within 2 weeks prior to the stipulated delivery dates mentioned in the invoice, the fee is 90% for the order/orders cancelled. All other cancellations made after the confirmed invoice date are subject to a fee of 10% of the order/orders cancelled.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_FYR6z6",
+        "text_block_3WzQME",
+        "text_block_WmxUwk",
+        "text_block_433RyQ",
+        "text_block_8ThHKg",
+        "text_block_G9TFG4",
+        "text_block_iymttt",
+        "text_block_a7Q9xb",
+        "text_block_MyRhKB",
+        "text_block_pAgJJV",
+        "text_block_iNDmre",
+        "text_block_gkcJEq"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Christmas FAQ",
+        "heading_tag": "h3",
+        "description": "",
+        "text_alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "l",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
+    },
+    "collapsible_content_hzCe49": {
+      "type": "collapsible-content",
+      "blocks": {
+        "text_block_YDC9Fg": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Where do your Chinese New Year Plants come from?",
+            "block_heading_tag": "h4",
+            "text": "<p>Our Chinese New Year plants come from both Mainland China and Malaysia!</p>"
+          }
+        },
+        "text_block_LGmX7n": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "What are some lucky plants to purchase for the Year of the Snake?",
+            "block_heading_tag": "h4",
+            "text": "<p>Every Chinese New Year plant carries its own auspicious meaning, so you can’t go wrong with choosing one that you like!</p><p>For the Year of the Snake, consider purchasing a Sansevieria, also known as the Snake Plant. This plant is believed to bring health and wealth, making it a perfect choice for this zodiac year.</p>"
+          }
+        },
+        "text_block_NGd6Gc": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Do Chinese New Year plants and flowers bloom all year round?",
+            "block_heading_tag": "h4",
+            "text": "<p>Chinese New Year plants and flowers, like other plants, do not bloom all year round. These plants are typically cultivated to bloom during the Chinese New Year period. It is normal for their flowers to shed after this period, and certain species, such as Azaleas, may rarely bloom due to Singapore’s tropical climate.</p><p>Since these plants are grown to flower around Chinese New Year, they may not arrive with flowers if delivered early. To increase the chances of blooming, ensure your plant receives sufficient sunlight and water every day. For more care tips, refer to the product description of the plants you ordered or reach out to us at via email at <a href=\"mailto:thegreencorner@prince.com.sg\">thegreencorner@prince.com.sg</a>.</p>"
+          }
+        },
+        "text_block_kBF3Qa": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "How do I care for Chinese New Year plants?",
+            "block_heading_tag": "h4",
+            "text": "<p>Caring for Chinese New Year plants is relatively simple. Here are some tips for different types of plants:</p><p>Flowering Plants (e.g., Celosia and Cockscomb): Ensure they receive bright and direct sunlight throughout the day. Water them daily as they are exposed to the sun to keep the soil moist.</p><p>Fruiting Plants (e.g., Mandarin Oranges and Four Season Kumquats): Place them where they can receive morning sun (east) and afternoon shade to prevent excessive fruit drop. Water them daily to prevent the soil from drying out.</p><p>For more detailed care tips, refer to the product description of the plants you ordered or reach out to us via email at <a href=\"mailto:thegreencorner@prince.com.sg\">thegreencorner@prince.com.sg</a>.</p>"
+          }
+        },
+        "text_block_xxzQKc": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Do the Chinese New Year plants come with decorations?",
+            "block_heading_tag": "h4",
+            "text": "<p>Our Chinese New Year plants do not come with decorations.</p><p>However, we offer pussy-willow arrangements that are beautifully decorated by our design specialists, perfect as a gift to enhance your Chinese New Year celebrations.</p>"
+          }
+        },
+        "text_block_cPy3BF": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I visit your retail store to purchase Chinese New Year plants?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes, you most definitely can! Visit our retail outlet located at 3A Lor Ah Thia, Singapore 679278, during our opening hours to purchase our Chinese New Year plants. For more information, follow us on Facebook or Instagram <a href=\"https://www.instagram.com/thegreencornersg/\" target=\"_blank\">@thegreencornersg</a> or email us at <a href=\"mailto:thegreencorner@prince.com.sg\">thegreencorner@prince.com.sg</a> for updates.</p>"
+          }
+        },
+        "text_block_UXqYkk": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I self-collect my Chinese New Year plants?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes, you can! When you place an order online at thegreencorner.com.sg, you can select the self-collect option. You will receive an automated email once your order is ready for collection.</p>"
+          }
+        },
+        "text_block_KiHXJ8": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Do you offer disposal services for Chinese New Year plants?",
+            "block_heading_tag": "h4",
+            "text": "<p>Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_YDC9Fg",
+        "text_block_LGmX7n",
+        "text_block_NGd6Gc",
+        "text_block_kBF3Qa",
+        "text_block_xxzQKc",
+        "text_block_cPy3BF",
+        "text_block_UXqYkk",
+        "text_block_KiHXJ8"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Chinese New Year FAQ",
+        "heading_tag": "h3",
+        "description": "",
+        "text_alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "l",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "enable_border_top": false,
+        "enable_border_bottom": false
+      }
     }
   },
   "order": [
     "main",
     "collapsible_content_KmJPJA",
-    "collapsible_content_dBDRqw"
+    "collapsible_content_dBDRqw",
+    "collapsible_content_Xyi7jx",
+    "collapsible_content_hzCe49"
   ]
 }
