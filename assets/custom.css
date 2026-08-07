@@ -37,10 +37,10 @@
 }
 
 body .product__media-wrapper .swiper-btn.swiper-btn--next {
-    right: -42px;
+    right:0px;
 }
 body .product__media-wrapper .swiper-btn.swiper-btn--prev{
-    left: -42px;
+    left: 0px;
 }
 
 body.body-template-product .product-section .js-media-sublist {
