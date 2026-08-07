@@ -208,6 +208,15 @@
 					cscoDarkMode.init();
 				}, 100);
 			});
+
+			document.querySelectorAll('.mobile-menu__parent-link').forEach((a) => {
+				a.addEventListener('click', (e) => {
+					e.preventDefault();   // details toggle atkave
+					e.stopPropagation();
+					window.location.href = a.href;
+				});
+			});
+
 		</script>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
