@@ -1,4 +1,4 @@
-@font-face { font-family: 'didotbold'; src: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot_bold.woff2') format('woff2'), url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot_bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+	@font-face { font-family: 'didotbold'; src: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot_bold.woff2') format('woff2'), url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot_bold.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'didotitalic'; src: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot_italic.woff2') format('woff2'), url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot_italic.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'didot_titleregular'; src: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot_title.woff2') format('woff2'), url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot_title.woff') format('woff'); font-weight: normal; font-style: normal; }
 @font-face { font-family: 'didotregular'; src: url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot.woff2') format('woff2'), url('https://cdn.shopify.com/s/files/1/0757/6767/7120/files/didot.woff') format('woff'); font-weight: normal; font-style: normal; }
@@ -44,7 +44,7 @@ body .product__media-wrapper .swiper-btn.swiper-btn--prev{
 }
 
 body.body-template-product .product-section .js-media-sublist {
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 .product__description table {width: 100% !important;max-width: 100%;height: auto !important;display: block;overflow-x: auto;    box-shadow: 0 0;border-collapse: collapse;}
@@ -768,7 +768,7 @@ h1, h2 { font-family: 'didotregular' !important; }
 
 /* Horizontal thumbnail slider fix */
 .product-section .js-media-sublist { width: 100%; margin-top: 15px; overflow: hidden; }
-.product-section .js-media-sublist .swiper-wrapper { display: flex !important; flex-direction: row !important; align-items: center; }
+/* .product-section .js-media-sublist .swiper-wrapper { display: flex !important; flex-direction: row !important; align-items: center; } */
 
 /* .product-section .js-media-sublist .swiper-slide {
     width: auto !important;
