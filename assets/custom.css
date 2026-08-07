@@ -348,8 +348,8 @@ h1, h2 { font-family: 'didotregular' !important; }
         padding-right: 0;
     }
     
-    body .product__media-wrapper .swiper-btn.swiper-btn--prev {left: -10px;}
-    body .product__media-wrapper .swiper-btn.swiper-btn--next {right: -10px;}
+    body .product__media-wrapper .swiper-btn.swiper-btn--prev {left: 0px;}
+    body .product__media-wrapper .swiper-btn.swiper-btn--next {right: 0px;}
 
     .custom-collection-section { padding: 50px 0; }
     .custom-collection-section .section-header { flex-direction: column; width: 100%; text-align: center; }
