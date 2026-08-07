@@ -320,6 +320,10 @@ h1, h2 { font-family: 'didotregular' !important; }
 
 /* Tablet */
 @media (max-width:991px) {
+
+    .body-template-page-faq h2.collapsible-content__title.h3 {
+        font-size: 30px;
+    }
     .collection-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
