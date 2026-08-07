@@ -8,6 +8,11 @@
 }
 
 
+h2.collapsible-content__title.h3 {
+    font-size: 35px;
+}
+
+
 .mobile-menu__summary { display: flex; align-items: center; justify-content: space-between; list-style: none; }
 .mobile-menu__summary::-webkit-details-marker { display: none; }
 .mobile-menu__parent-link { flex: 1; padding: 12px 0; }
