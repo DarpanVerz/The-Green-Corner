@@ -14,7 +14,7 @@
   gap: 0.5rem;
 }
 
-.header__menu .list-menu-has-child > a::after {
+.header .header__menu .list-menu-has-child > a::after {
     content: "" !important;
     width: 20px !important;
     display: block !important;
