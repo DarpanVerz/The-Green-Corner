@@ -268,9 +268,9 @@
       "settings": {
         "color_scheme": "",
         "heading": "Christmas FAQ",
-        "heading_tag": "h3",
+        "heading_tag": "h2",
         "description": "",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "margin_top": "no-indent",
         "margin_bottom": "l",
         "padding_top": "l",
@@ -433,9 +433,9 @@
       "settings": {
         "color_scheme": "",
         "heading": "Chinese New Year FAQ",
-        "heading_tag": "h3",
+        "heading_tag": "h2",
         "description": "",
-        "text_alignment": "center",
+        "text_alignment": "left",
         "margin_top": "no-indent",
         "margin_bottom": "l",
         "padding_top": "l",
