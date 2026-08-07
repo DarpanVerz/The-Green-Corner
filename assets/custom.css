@@ -17,6 +17,7 @@
 .header__menu .list-menu-has-child > a::after {
   content: '' !important;
   width: 1rem;
+  display:block !important; 
   height: 1rem;
   flex-shrink: 0;
   background-color: currentColor;
