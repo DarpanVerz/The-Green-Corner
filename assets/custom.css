@@ -1197,3 +1197,6 @@ button.hover-cart-btn:hover { background: #000; cursor: pointer; color: #fff; }
 .main-product-section .product__description img { width: 100%; height: auto; }
 .main-product-section .product__description h4 { font-size: 20px; margin-top: 20px; }
 .gpo-group__childs .gpo-form__group { border: #e3e3e3 solid 1px !important; border-radius: 5px !important; padding: 15px !important; }
+
+/*  */
+.loyalty-program.custom-content-listing ul, .loyalty-program.custom-content-listing ol {margin-left: 0px;}
