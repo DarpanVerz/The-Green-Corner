@@ -149,14 +149,7 @@
 														</button>
 														<ul class="menu-drawer__menu list-menu list-unstyled" role="list" tabindex="-1">
 
-															{%- comment -%} ---- LEVEL 2 VIEW ALL (Popular / Indoor Plants) ---- {%- endcomment -%}
-															{%- if childlink.url != blank and childlink.url != '#' -%}
-																<li>
-																	<a href="{{ childlink.url }}" class="menu-drawer__menu-item list-menu__item focus-inset menu-drawer__view-all">
-																		View all {{ childlink.title | escape }}
-																	</a>
-																</li>
-															{%- endif -%}
+														
 
 															{%- for grandchildlink in childlink.links -%}
 																<li>
