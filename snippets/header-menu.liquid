@@ -3,45 +3,64 @@
 		<ul class="list-menu list-menu--inline list-unstyled" role="list">
 			{%- for link in section.settings.menu.links -%}
 				<li
-					class="{%liquid
+					class="{%- liquid
 							if link.active
-							echo 'current-link '
+								echo 'current-link '
 							endif
+
+							assign has_child = false
+
 							if link.links != blank
-								echo 'list-menu-has-child '
+								assign has_child = true
 							else
-							for block in section.blocks
-								assign menu_trigger = block.settings.menu_trigger | handle | strip
-								if link.handle == menu_trigger
-									echo 'list-menu-has-child '
-									break
-								endif
-							endfor
-						endif %}"
+								for block in section.blocks
+									assign menu_trigger = block.settings.menu_trigger | handle | strip
+									assign mega_submenu_trigger = block.settings.mega_submenu_trigger | handle | strip
+
+									if menu_trigger != blank and link.handle == menu_trigger
+										assign has_child = true
+										break
+									endif
+
+									if mega_submenu_trigger != blank and link.handle == mega_submenu_trigger
+										assign has_child = true
+										break
+									endif
+								endfor
+							endif
+
+							if has_child
+								echo 'list-menu-has-child '
+							endif
+						-%}"
 				>
-					{% liquid
+					{%- liquid
+						assign rendered = false
+
 						for block in section.blocks
 							assign menu_trigger = block.settings.menu_trigger | handle | strip
 							assign mega_submenu_trigger = block.settings.mega_submenu_trigger | handle | strip
-							if link.handle == menu_trigger
+
+							if menu_trigger != blank and link.handle == menu_trigger
 								render 'header-mega-menu', block: block, link: link
+								assign rendered = true
 								break
-							elsif link.handle == mega_submenu_trigger
-								render 'header-mega-submenu', block: block, link: link
-								break
-							elsif forloop.last
-								render 'header-link', link: link
-								render 'submenu', link: link
 							endif
-						else
-							if link.links != blank
-								render 'header-link', link: link
-								render 'submenu', link: link
-							else
-								render 'header-link', link: link
+
+							if mega_submenu_trigger != blank and link.handle == mega_submenu_trigger
+								render 'header-mega-submenu', block: block, link: link
+								assign rendered = true
+								break
 							endif
 						endfor
-					%}
+
+						unless rendered
+							render 'header-link', link: link
+							if link.links != blank
+								render 'submenu', link: link
+							endif
+						endunless
+					-%}
 				</li>
 			{%- endfor -%}
 		</ul>
