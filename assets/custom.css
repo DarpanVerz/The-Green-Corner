@@ -7,6 +7,12 @@
     :root { --main-padding: 2rem; }
 }
 
+
+.mobile-menu__summary { display: flex; align-items: center; justify-content: space-between; list-style: none; }
+.mobile-menu__summary::-webkit-details-marker { display: none; }
+.mobile-menu__parent-link { flex: 1; padding: 12px 0; }
+.mobile-menu__caret { padding: 12px 16px; } /* tap target moto rakho */
+
 .announcement-wrapper .announcement-wrapper_button span.button-label {
     transform: none !important;
 }
