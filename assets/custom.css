@@ -161,6 +161,11 @@ h1, h2 { font-family: 'didotregular' !important; }
     .search-placeholder { font-size: 14px; }
 }
 @media screen and (max-width:1024px) {
+
+    .menu-opening summary.menu-drawer__menu-item:after{
+            margin-top: -6px;
+    }
+
     body .breadcrumb {
         padding: 10px 20px;
     }
