@@ -700,7 +700,7 @@ h1, h2 { font-family: 'didotregular' !important; }
 /*** Main-category-banner ***/
 .collection-banner__img { border-radius: 40px; overflow: hidden; }
 .collection-banner__text { position: relative; bottom: 100px; left: 50px; }
-.collection-banner__text .collection-banner__title.h2 { color: #fff; font-size: 6rem; }
+.collection-banner__text .collection-banner__title.h2 { color: #fff;  }
 .collection-banner__img::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(90deg, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.88) 20%, rgba(0, 0, 0, 0.65) 40%, rgba(0, 0, 0, 0.30) 60%, rgba(0, 0, 0, 0) 85%); }
 
 /*** Product Details ***/
