@@ -114,9 +114,9 @@
         "text_block_PEiN4G": {
           "type": "text-block",
           "settings": {
-            "block_heading": "A brief introduction to the collapsible content",
+            "block_heading": "How do I earn points when I shop online at <a href=\"https://thegreencorner.com.sg/\" target=\"_blank\">TheGreenCorner.com.sg</a>?",
             "block_heading_tag": "h4",
-            "text": "<p>Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.</p>"
+            "text": "<p>For every $1 you spend, you will earn 1 point. For every 100 points, you can redeem $5 off your next purchase with NO minimum purchase! It is that simple. Start shopping online today!</p>"
           }
         }
       },
