@@ -343,7 +343,71 @@
           "settings": {
             "block_heading": "Do you offer disposal services for Chinese New Year plants?",
             "block_heading_tag": "h4",
-            "text": "<p>Here can be a brief overview of the information available in this section, explaining its purpose and how users can interact with it.</p>"
+            "text": "<p>Yes, we do! If you need disposal services for your Chinese New Year plants, please reach out to us via email at <a href=\"mailto:thegreencorner@prince.com.sg\">thegreencorner@prince.com.sg</a>. We will assist in arranging the disposal service. Please note that disposal charges will vary based on the order volume.</p>"
+          }
+        },
+        "text_block_thrmmF": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I choose my preferred delivery and disposal date?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes you can! This only applies to the Big Chinese New Year Plants that requires our team to specially deliver to you as they require proper care. Once you have added your the plant into the cart, you may select your preferred delivery and disposal if applicable at the checkout page.</p><p>Delivery and disposal dates are subjected to limited availability.</p>"
+          }
+        },
+        "text_block_48tNpk": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I change my delivery and disposal date after ordering?",
+            "block_heading_tag": "h4",
+            "text": "<p>Delivery and disposal dates are subject to availability, and we will do our best to accommodate your schedule.</p><p>Please note that there will be an additional charge for each postponement or rescheduling request made less than one week before the scheduled delivery or disposal date.</p><p>We recommend selecting a delivery or disposal date that works well within your schedule.</p>"
+          }
+        },
+        "text_block_LQrwib": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "I entered inaccurate information for my delivery address. Can I amend it?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes, you can! Please contact us via email at <a href=\"mailto:thegreencorner@prince.com.sg\">thegreencorner@prince.com.sg</a>, and we will be happy to help you update your delivery address.</p>"
+          }
+        },
+        "text_block_FYKCaf": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I choose a specific time frame for delivery and disposal?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes, you may choose a specific time frame on your selected delivery and dismantle date. However, please note that additional charges will apply if the time falls outside our regular delivery hours.</p>"
+          }
+        },
+        "text_block_RBrrAq": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "What can I expect on the day of delivery?",
+            "block_heading_tag": "h4",
+            "text": "<p>Your Chinese New Year order will be delivered on the pre-selected date. Our dedicated team will call you before or upon arrival. We recommend watering your Chinese New Year plants upon receiving them.</p>"
+          }
+        },
+        "text_block_A86bg6": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "What can I expect on the day of disposal?",
+            "block_heading_tag": "h4",
+            "text": "<p>Our dedicated team will call you before or upon arrival. Please ensure that any personal decorations are removed from the plant before we remove the Chinese New Year Plant. This is to allow us to ensure a smooth and efficient disposal process. We will also dispose any ornaments that are left on the plant.</p>"
+          }
+        },
+        "text_block_cY6LJ6": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I cancel my Chinese New Year order?",
+            "block_heading_tag": "h4",
+            "text": "<p>A cancellation fee shall apply for all cancellations. For cancellations made within 2 weeks prior to the stipulated delivery dates mentioned in the invoice, the fee is 90% for the order/orders cancelled. All other cancellations made after the confirmed invoice date are subject to a fee of 10% of the order/orders cancelled.</p>"
+          }
+        },
+        "text_block_UPFAHb": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "Can I gift Chinese New Year plants to others?",
+            "block_heading_tag": "h4",
+            "text": "<p>Yes, gifting these plants is a common practice during Chinese New Year, symbolizing good wishes for the recipient’s prosperity and happiness in the coming year. It’s believed that such gifts bring luck and auspiciousness to both the giver and the receiver.</p><p>They make meaningful presents for family, friends, and colleagues, fostering goodwill and celebrating the spirit of renewal and growth that Chinese New Year represents.</p>"
           }
         }
       },
@@ -355,7 +419,15 @@
         "text_block_xxzQKc",
         "text_block_cPy3BF",
         "text_block_UXqYkk",
-        "text_block_KiHXJ8"
+        "text_block_KiHXJ8",
+        "text_block_thrmmF",
+        "text_block_48tNpk",
+        "text_block_LQrwib",
+        "text_block_FYKCaf",
+        "text_block_RBrrAq",
+        "text_block_A86bg6",
+        "text_block_cY6LJ6",
+        "text_block_UPFAHb"
       ],
       "name": "t:sections.collapsible-content.name",
       "settings": {
