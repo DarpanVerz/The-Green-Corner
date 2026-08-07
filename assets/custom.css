@@ -729,6 +729,7 @@ h1, h2 { font-family: 'didotregular' !important; }
     .share-title { width: 100%; margin-bottom: 10px; font-size: 24px; }
     .share-icon { width: 48px; height: 48px; }
     .share-icon i { font-size: 18px; }
+    .collection-banner__text{left: 0;}
 }
 
 /**** Collection Banner ****/
