@@ -118,13 +118,22 @@
             "block_heading_tag": "h4",
             "text": "<p>For every $1 you spend, you will earn 1 point. For every 100 points, you can redeem $5 off your next purchase with NO minimum purchase! It is that simple. Start shopping online today!</p>"
           }
+        },
+        "text_block_Ckkkm6": {
+          "type": "text-block",
+          "settings": {
+            "block_heading": "What is the delivery timeframe for orders placed?",
+            "block_heading_tag": "h4",
+            "text": "<p>Our delivery team will deliver your orders within 3 to 5 business working days. Deliveries are scheduled between 10am to 7pm.</p>"
+          }
         }
       },
       "block_order": [
         "text_block_9BN3rB",
         "text_block_f7LkCK",
         "text_block_VPyQPB",
-        "text_block_PEiN4G"
+        "text_block_PEiN4G",
+        "text_block_Ckkkm6"
       ],
       "name": "t:sections.collapsible-content.name",
       "settings": {
