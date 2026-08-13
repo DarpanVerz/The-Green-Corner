@@ -28,7 +28,16 @@
 			<link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
 		{%- endunless -%}
 
-		<title>{{ page_title }}</title>
+		<title>
+		{%- if request.page_type == 'password' -%}
+			{{- shop.name -}}
+		{%- else -%}
+			{{- page_title -}}
+			{%- if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ meta_tags }}{% endif -%}
+			{%- if current_page != 1 %} &ndash; {{ current_page }}{% endif -%}
+			{%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+		{%- endif -%}
+		</title>
 
 		{% if page_description %}
 			<meta name="description" content="{{ page_description | escape }}">
