@@ -310,7 +310,7 @@
             "marker_color": "#988c63",
             "marker_background_hover": "#17324e",
             "marker_color_hover": "#ffffff",
-            "product": "glacial-heart",
+            "product": "glacial-heart-2",
             "image_ratio": "portrait",
             "position_x": 40,
             "position_y": 50
@@ -492,7 +492,7 @@
         "product_list": [
           "a-gesture-of-love-rose-bouquet",
           "crismson-crush",
-          "glacial-heart",
+          "glacial-heart-2",
           "palette-de-fleur",
           "crismson-crush-1",
           "cute-pink-rose",
