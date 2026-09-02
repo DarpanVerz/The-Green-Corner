@@ -493,7 +493,7 @@
           "a-gesture-of-love-rose-bouquet-1",
           "crismson-crush",
           "glacial-heart-2",
-          "palette-de-fleur",
+          "palette-de-fleur-2",
           "crismson-crush-1",
           "cute-pink-rose-1",
           "enchanted-blooms-bouquet",
@@ -703,7 +703,7 @@
             "marker_color": "#ff4600",
             "marker_background_hover": "#1f1f1f",
             "marker_color_hover": "#ffffff",
-            "product": "palette-de-fleur",
+            "product": "palette-de-fleur-2",
             "image": "shopify://shop_images/Rectangle_27.png",
             "image_ratio": "portrait",
             "position_x": 53,
@@ -764,7 +764,7 @@
       "name": "Floating Product Banner",
       "settings": {
         "bg_image": "shopify://shop_images/28ab28f715535a83ac6b2888fa3bc4c8dcd49e35_b3db8fef-3c36-40b3-a5be-b74abc2033a5.jpg",
-        "product": "palette-de-fleur",
+        "product": "palette-de-fleur-2",
         "card_top": 70,
         "card_left": 78
       }
